@@ -1,0 +1,8 @@
+.DS_Store
+.codex-question-review/
+.playwright-cli/
+output/playwright/
+node_modules/
+*.tmp
+*.swp
+~$*

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Private LSU GEOL 1001 practice quiz lab">
+  <title>GEOL 1001 Study Lab</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22><rect width=%2264%22 height=%2264%22 rx=%2214%22 fill=%22%23254f3d%22/><path d=%22M12 47 27 19l9 15 6-9 10 22z%22 fill=%22%23e3b856%22/></svg>">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell header-grid">
+      <div>
+        <p class="eyebrow">LSU · GEOL 1001-002 · Fall 2026</p>
+        <h1>Geology Study Lab</h1>
+        <p class="lede">Turn lecture evidence into shuffled, explainable practice.</p>
+      </div>
+      <div class="header-badge" aria-label="Application cost">
+        <span>$0</span>
+        <small>per attempt</small>
+      </div>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section id="library-view" aria-labelledby="library-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow dark">Practice library</p>
+          <h2 id="library-title">Choose a drill</h2>
+        </div>
+        <button id="clear-progress" class="button ghost" type="button">Clear saved progress</button>
+      </div>
+
+      <div class="exam-lanes" aria-label="Course exam coverage">
+        <article><strong>Exam 1</strong><span>Chapters 1–6</span></article>
+        <article><strong>Exam 2</strong><span>Chapters 7–12</span></article>
+        <article><strong>Final</strong><span>Chapters 1–19</span></article>
+      </div>
+
+      <div id="quiz-library" class="quiz-library"></div>
+
+      <aside class="evidence-callout">
+        <strong>The rule:</strong> every answer needs a source and an explanation. Confidence without evidence is just decorative necromancy.
+      </aside>
+    </section>
+
+    <section id="quiz-view" class="hidden" aria-live="polite">
+      <div class="quiz-toolbar">
+        <button id="back-to-library" class="button ghost" type="button">← Library</button>
+        <div class="progress-copy"><span id="progress-label">Question 1 of 1</span><strong id="score-label">0 correct</strong></div>
+      </div>
+      <div class="progress-track" aria-hidden="true"><div id="progress-fill"></div></div>
+
+      <article class="question-card">
+        <div class="question-meta">
+          <span id="question-topic" class="pill"></span>
+          <span id="question-source"></span>
+        </div>
+        <h2 id="question-prompt"></h2>
+        <form id="answer-form">
+          <fieldset id="answer-options"></fieldset>
+          <button id="check-answer" class="button primary" type="submit">Check answer</button>
+        </form>
+        <div id="feedback" class="feedback hidden" role="status"></div>
+        <div class="question-actions">
+          <button id="next-question" class="button primary hidden" type="button">Next question</button>
+        </div>
+      </article>
+    </section>
+
+    <section id="results-view" class="hidden" aria-labelledby="results-title">
+      <article class="results-card">
+        <p class="eyebrow dark">Attempt complete</p>
+        <h2 id="results-title">Results</h2>
+        <div id="result-score" class="result-score"></div>
+        <p id="result-message"></p>
+        <div class="result-actions">
+          <button id="retry-missed" class="button primary" type="button">Retry missed</button>
+          <button id="restart-quiz" class="button ghost" type="button">Restart full quiz</button>
+          <button id="print-results" class="button ghost" type="button">Print</button>
+          <button id="results-library" class="button ghost" type="button">Library</button>
+        </div>
+        <div id="missed-review" class="missed-review"></div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="shell site-footer">
+    <span>Private study tool · Original practice only</span>
+    <span id="build-label">Static build</span>
+  </footer>
+
+  <script src="quizzes/quiz-bank.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
