@@ -112,6 +112,286 @@ window.GEOL_QUIZZES = [
     ]
   },
   {
+    id: "chapter-one-boss-drill",
+    title: "Chapter 1 Boss Drill",
+    description: "A 30-question, source-linked cumulative retrieval run covering the complete Lecture 1 evidence set.",
+    lane: "Exam 1",
+    chapters: "Chapter 1",
+    status: "Verified pilot bank",
+    questions: [
+      {
+        type: "single",
+        topic: "Research method",
+        source: "Original practice · Lecture 1b s2",
+        prompt: "Which action belongs immediately after testing a hypothesis in the lecture sequence?",
+        choices: ["Observe again without recording data", "Adjust the hypothesis using new data", "Declare the model permanent", "Skip directly to publication"],
+        answer: 1,
+        explanation: "The sequence is observe, describe, question, hypothesize, test, adjust using new data, then build a model or interpretation."
+      },
+      {
+        type: "single",
+        topic: "Research method",
+        source: "Original practice · Lecture 1b s2",
+        prompt: "Which statement is a testable hypothesis?",
+        choices: ["Basalt is the nicest rock", "If a mineral is harder than glass, it should scratch glass", "Earth has a hidden purpose", "All mountains are beautiful"],
+        answer: 1,
+        explanation: "A scratch test produces an observable result that can support or falsify the claim."
+      },
+      {
+        type: "single",
+        topic: "Observation and inference",
+        source: "Original practice · Lecture 1b s9",
+        prompt: "Which statement is an observation rather than an inference?",
+        choices: ["The cliff formed during one flood", "A brown block rests near the edge", "The lower layer eroded fastest", "The block will fall next year"],
+        answer: 1,
+        explanation: "The block's color and position are visible. Formation process, erosion rate, and future timing are interpretations."
+      },
+      {
+        type: "single",
+        topic: "ILEA reasoning",
+        source: "Original practice · Lecture 1a s18",
+        prompt: "What is the final move in the ILEA cycle?",
+        choices: ["Predict", "Draw", "Research", "Revise understanding"],
+        answer: 3,
+        explanation: "ILEA uses Predict -> Draw -> Justify -> Research -> Revise Understanding."
+      },
+      {
+        type: "single",
+        topic: "Hazards",
+        source: "Original practice · Lecture 1b s5",
+        prompt: "Which geologic feature is most directly associated with earthquake hazard in the lecture landscape?",
+        choices: ["Fault", "Beach", "Lake", "Soil nutrient"],
+        answer: 0,
+        explanation: "The lecture explicitly links earthquakes to faults."
+      },
+      {
+        type: "single",
+        topic: "Hazards",
+        source: "Original practice · Lecture 1b s5",
+        prompt: "Why can a steep slope constrain settlement even without an active volcano?",
+        choices: ["It guarantees rich soil", "It can be difficult to build on and may fail as a landslide", "It removes flood risk everywhere", "It converts crust into core"],
+        answer: 1,
+        explanation: "Steepness can limit construction and increase mass-movement hazard."
+      },
+      {
+        type: "multi",
+        topic: "Streams",
+        source: "Original practice · Lecture 1b s5",
+        prompt: "Which roles of streams appear in the lecture? Select all that apply.",
+        choices: ["Flood hazard", "Water supply", "Transport of soil nutrients", "Prevention of all earthquakes"],
+        answer: [0, 1, 2],
+        explanation: "Streams can be both resources and hazards; they do not control earthquake occurrence."
+      },
+      {
+        type: "single",
+        topic: "Resources",
+        source: "Original practice · Lecture 1b s7; map visual unavailable, claim text verified",
+        prompt: "Why is mineral-resource distribution not treated as random in the lecture?",
+        choices: ["Mines are placed alphabetically", "Deposits track rock age and geologic history", "Every rock contains equal ore", "Atmosphere never affects minerals"],
+        answer: 1,
+        explanation: "Old iron deposits and younger copper deposits are linked to different atmospheric and tectonic histories."
+      },
+      {
+        type: "single",
+        topic: "Continents",
+        source: "Original practice · Lecture 1b s8",
+        prompt: "What marks the edge of the continent in the Australia figure?",
+        choices: ["The current shoreline", "The outer edge of the continental shelf", "The nearest river", "The deepest ocean trench anywhere"],
+        answer: 1,
+        explanation: "The shallow continental shelf extends offshore; its outer edge marks the continent's edge in the figure."
+      },
+      {
+        type: "single",
+        topic: "Geologic evidence",
+        source: "Original practice · Lecture 1b s9",
+        prompt: "Which claim about a layered cliff requires additional evidence?",
+        choices: ["Tan and brown layers are exposed", "Blocks sit near the edge", "Differential erosion produced the shape", "The upper cliff is brown"],
+        answer: 2,
+        explanation: "Differential erosion is a process interpretation, while the other statements describe visible features."
+      },
+      {
+        type: "single",
+        topic: "Climate evidence",
+        source: "Original practice · Lecture 1b s10",
+        prompt: "What does the 28,000-years-ago versus present comparison directly show?",
+        choices: ["Changed ice-sheet extent", "One proven cause", "No climate change", "A constant shoreline"],
+        answer: 0,
+        explanation: "The comparison documents change in ice extent but does not by itself prove one cause."
+      },
+      {
+        type: "multi",
+        topic: "Ancient life",
+        source: "Original practice · Lecture 1b s11",
+        prompt: "Which evidence could help reconstruct ancient animal life? Select all that apply.",
+        choices: ["Bones and teeth", "Tracks and burrows", "Other trace fossils", "The illustrator's color palette"],
+        answer: [0, 1, 2],
+        explanation: "Body and trace fossils are physical evidence. Artistic choices are not evidence from the Jurassic."
+      },
+      {
+        type: "single",
+        topic: "Compositional layers",
+        source: "Original practice · Lecture 1b s12",
+        prompt: "Which sequence lists Earth's major compositional layers from outside inward?",
+        choices: ["Crust, mantle, core", "Lithosphere, asthenosphere, core", "Mantle, crust, atmosphere", "Core, mantle, crust"],
+        answer: 0,
+        explanation: "The compositional sequence is crust, mantle, and core."
+      },
+      {
+        type: "single",
+        topic: "Core",
+        source: "Original practice · Lecture 1b s12-13",
+        prompt: "Which description matches the core?",
+        choices: ["Silicate crust with two surface types", "Iron-nickel region with molten outer and solid inner parts", "Entirely liquid mantle", "Strong crust plus uppermost mantle"],
+        answer: 1,
+        explanation: "The lecture identifies an iron-nickel core with a molten outer core and solid inner core."
+      },
+      {
+        type: "single",
+        topic: "Mechanical layers",
+        source: "Original practice · Lecture 1b s14",
+        prompt: "What material does the lithosphere include?",
+        choices: ["Crust only", "Crust plus uppermost mantle", "Asthenosphere only", "Outer and inner core"],
+        answer: 1,
+        explanation: "The strong lithosphere crosses the crust-mantle compositional boundary."
+      },
+      {
+        type: "true-false",
+        topic: "Mechanical layers",
+        source: "Original practice · Lecture 1b s14",
+        prompt: "The asthenosphere is hot and weak but mostly solid.",
+        choices: ["True", "False"],
+        answer: 0,
+        explanation: "That is the deck's explicit description; weak does not mean completely liquid."
+      },
+      {
+        type: "single",
+        topic: "Isostasy",
+        source: "Original practice · Lecture 1b s15-16",
+        prompt: "If two floating blocks have equal density, which should ride higher?",
+        choices: ["The thicker block", "The thinner block", "They must be identical", "The darker block"],
+        answer: 0,
+        explanation: "The lecture analogy shows thicker blocks riding higher than thinner blocks."
+      },
+      {
+        type: "single",
+        topic: "Isostasy",
+        source: "Original practice · Lecture 1b s16",
+        prompt: "If two floating blocks have equal thickness, which should ride lower?",
+        choices: ["The less-dense block", "The denser block", "The wider block regardless of density", "Neither can float"],
+        answer: 1,
+        explanation: "Greater density lowers the exposed height in the floating-block analogy."
+      },
+      {
+        type: "single",
+        topic: "Earth-system drivers",
+        source: "Original practice · Lecture 1b s17",
+        prompt: "Which process is an internal driver?",
+        choices: ["Solar radiation", "Wind", "Radioactive decay", "Atmospheric pressure"],
+        answer: 2,
+        explanation: "Radioactive decay contributes heat within Earth; the other choices are surface-linked or atmospheric."
+      },
+      {
+        type: "multi",
+        topic: "Atmosphere",
+        source: "Original practice · Lecture 1b s18",
+        prompt: "Which functions of the atmosphere appear in the lecture? Select all that apply.",
+        choices: ["Stores water vapor, drops, and ice", "Produces precipitation and wind", "Blocks some light, UV, and infrared", "Stops all energy transfer"],
+        answer: [0, 1, 2],
+        explanation: "The atmosphere moves water and moderates radiation; it does not stop all energy transfer."
+      },
+      {
+        type: "multi",
+        topic: "Sedimentary environments",
+        source: "Original practice · Lecture 1b s19-22",
+        prompt: "Which settings are associated with sedimentary rocks in the lecture? Select all that apply.",
+        choices: ["Rivers", "Glaciers", "Sand dunes", "Only molten magma"],
+        answer: [0, 1, 2],
+        explanation: "The lecture shows numerous normal surface environments as sedimentary settings."
+      },
+      {
+        type: "single",
+        topic: "Igneous rocks",
+        source: "Original practice · Lecture 1b s23; classroom stopping point",
+        prompt: "What process defines igneous-rock formation?",
+        choices: ["Solidification of magma", "Weathering alone", "Precipitation from hot water", "Compaction of fossils"],
+        answer: 0,
+        explanation: "Igneous rock forms when magma solidifies, whether at depth or in volcanic settings."
+      },
+      {
+        type: "single",
+        topic: "Metamorphic rocks",
+        source: "Original practice · Lecture 1b s26-27; deck continuation",
+        prompt: "Which process produces metamorphic rock in the continuation material?",
+        choices: ["Change by heat and pressure", "Solidification of magma", "Evaporation of seawater only", "Freezing of atmospheric vapor"],
+        answer: 0,
+        explanation: "Metamorphic rock is existing rock changed by increased temperature and pressure or heating near magma."
+      },
+      {
+        type: "single",
+        topic: "Hydrothermal rocks",
+        source: "Original practice · Lecture 1b s26 and s28; deck continuation",
+        prompt: "What process is linked to hydrothermal rock in the lecture?",
+        choices: ["Precipitation from hot water", "Compaction of snow", "Wind abrasion", "Core solidification"],
+        answer: 0,
+        explanation: "The continuation slide defines hydrothermal material through precipitation from hot water."
+      },
+      {
+        type: "single",
+        topic: "Rock cycle",
+        source: "Original practice · Lecture 1b s29; deck continuation",
+        prompt: "Which statement best describes the rock cycle?",
+        choices: ["It has one required starting point", "Rocks can enter linked processes at different stages", "It excludes melting", "Uplift occurs only once"],
+        answer: 1,
+        explanation: "The cycle links weathering, transport, burial, metamorphism, melting, solidification, and uplift without one required beginning."
+      },
+      {
+        type: "single",
+        topic: "Earth's spheres",
+        source: "Original practice · Lecture 1b s30; deck continuation",
+        prompt: "Which list contains the four spheres named in the lecture?",
+        choices: ["Atmosphere, hydrosphere, biosphere, lithosphere", "Crust, mantle, core, magnetosphere", "Troposphere, mantle, ocean, core", "Biosphere, core, magma, shelf"],
+        answer: 0,
+        explanation: "The figure names atmosphere, hydrosphere, biosphere, and lithosphere."
+      },
+      {
+        type: "true-false",
+        topic: "Solar-system scale",
+        source: "Original practice · Lecture 1b s31; deck continuation",
+        prompt: "The solar-system figure preserves the true relative sizes and proximities of all objects.",
+        choices: ["True", "False"],
+        answer: 1,
+        explanation: "The slide explicitly warns that size and proximity are not to scale."
+      },
+      {
+        type: "single",
+        topic: "Crust and elevation",
+        source: "Original practice · Lecture 1b s15-16",
+        prompt: "Which relationship is supported by the elevation figures?",
+        choices: ["Thin crust is always highest", "Thick continental crust commonly supports higher elevation", "Oceanic crust is always thicker", "Density has no effect"],
+        answer: 1,
+        explanation: "The figures link thick, less-dense continental crust with higher elevation and deeper crustal roots."
+      },
+      {
+        type: "single",
+        topic: "Crust types",
+        source: "Original practice · Lecture 1b s12 and s15",
+        prompt: "Which statement correctly compares continental and oceanic crust in the lecture?",
+        choices: ["They are two types of crust", "Oceanic crust is the inner core", "Continental crust is the whole lithosphere", "They are both atmosphere"],
+        answer: 0,
+        explanation: "Continental and oceanic crust are two types within the crustal compositional layer."
+      },
+      {
+        type: "single",
+        topic: "Evidence",
+        source: "Original practice · Lecture 1b s8-11",
+        prompt: "Which answer uses evidence most carefully?",
+        choices: ["The image proves one complete history", "The pattern supports an interpretation, but additional data are needed to test it", "A reconstruction is identical to a fossil", "Visible color proves exact age"],
+        answer: 1,
+        explanation: "Geologic figures constrain interpretations, but responsible reasoning keeps the remaining uncertainty visible."
+      }
+    ]
+  },
+  {
     id: "exam-one-shell",
     title: "Exam 1 Build Slot",
     description: "Reserved for an evidence-backed Chapters 1–6 mock exam after lecture decks and professor materials are dissected.",
@@ -139,4 +419,3 @@ window.GEOL_QUIZZES = [
     questions: []
   }
 ];
-

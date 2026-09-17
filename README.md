@@ -1,60 +1,24 @@
-# LSU GEOL 1001 Study Lab
+# Geology Study Lab
 
-Private study workspace for **GEOL 1001-002: General Geology — Physical** (Fall 2026).
+A browser-based learning tool that combines guided explanations, original practice questions, interactive activities, and confidence-aware mastery tracking.
 
-This repository is built around three exam lanes:
+**[Open the demo](https://ethanheinrick01-ctrl.github.io/lsu-geol-1001-study-lab/)**
 
-- **Exam 1:** Chapters 1–6
-- **Exam 2:** Chapters 7–12
-- **Final:** Cumulative, Chapters 1–19
+## Try it
 
-The quiz runner is a static website. It has no paid services, API keys, tracking, or server-side code, so each practice attempt costs **$0**.
+Open `index.html` in a browser, or run `python3 -m http.server 8000` in this folder and visit `http://localhost:8000`.
 
-## Open the quiz lab
+## What it demonstrates
 
-Either open `index.html` directly, or run a small local server from this folder:
+- Retrieval practice with answer explanations and hints.
+- Progress saved in the browser, without an account.
+- Responsive study, lab, and mastery views.
+- Coverage: Chapters 1–5; later chapters remain marked as pending.
 
-```bash
-python3 -m http.server 8000
-```
+## Public edition
 
-Then visit `http://localhost:8000`.
+This is an independent student-built portfolio project. It is not affiliated with or endorsed by LSU. It is not a complete course or a source of official assessment answers.
 
-## Repository map
+Instructor slide screenshots, source documents, private audit files, and personal progress exports are excluded. Figure positions are marked explicitly; the full private study edition remains separate. Textual source references remain to explain the basis for original practice material.
 
-```text
-.
-├── index.html                 # Quiz dashboard
-├── assets/
-│   ├── app.js                 # Reusable quiz engine
-│   └── styles.css             # Responsive interface
-├── quizzes/
-│   └── quiz-bank.js           # All quiz content
-├── practice-exams/            # Original practice exams + answer keys
-├── study-guides/              # Chapter and exam study guides
-└── source-materials/          # Private evidence used to build study tools
-```
-
-## Add a quiz
-
-1. Open `quizzes/quiz-bank.js`.
-2. Duplicate one quiz object.
-3. Give it a unique `id`, title, exam lane, chapter list, and questions.
-4. Use `single`, `multi`, or `true-false` question types.
-5. Add a concise explanation and a source note for every question.
-6. Reload `index.html`.
-
-The engine automatically shuffles questions and answer choices, stores local progress, supports missed-question review, and prints a clean result sheet.
-
-## Evidence rules
-
-- Use original practice questions; do not copy live Connect questions or graded assessments.
-- Record the source for every answer: lecture number/slide, textbook chapter/page, or instructor handout.
-- Mark uncertain or reconstructed material clearly.
-- Keep this repository private while it contains course files or instructor materials.
-- Put answer keys in a clearly named file and verify them independently before calling an exam ready.
-
-## Course source of truth
-
-Course logistics were initialized from the verified Fall 2026 GEOL 1001 course context. Moodle and instructor announcements supersede this repository when newer and clearly dated.
-
+The app runs locally without APIs, analytics, or per-use charges. Browser data stays on the device.

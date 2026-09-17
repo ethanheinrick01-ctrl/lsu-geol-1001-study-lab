@@ -1,8 +1,6 @@
 .DS_Store
-.codex-question-review/
-.playwright-cli/
-output/playwright/
+.env*
 node_modules/
-*.tmp
-*.swp
-~$*
+*progress*.json
+source-materials/*
+!source-materials/README.md

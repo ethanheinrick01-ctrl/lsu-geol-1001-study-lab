@@ -1,0 +1,17 @@
+.ch45-update {margin:1rem auto; padding:1rem 1.25rem; border:1px solid #74896d; border-radius:14px; background:#18241e; color:#edf0e4;}
+.ch45-update p {margin:.4rem 0; max-width:90ch;}
+.ch45-update button {margin-top:.7rem;}
+.ch45-controls {display:flex; flex-wrap:wrap; gap:1rem; margin:1rem 0;}
+.ch45-controls label {display:grid; gap:.4rem; font-weight:700;}
+.ch45-controls select {font:inherit; padding:.7rem; border-radius:8px; background:#fff; color:#14251c; border:1px solid #5a7165; max-width:100%;}
+.ch45-table-wrap {overflow-x:auto;}
+.ch45-table {border-collapse:collapse; width:100%; color:inherit;}
+.ch45-table caption {text-align:left; margin:.8rem 0; font-weight:700;}
+.ch45-table th,.ch45-table td {border:1px solid #9aa898; padding:.7rem; text-align:left; vertical-align:top;}
+#ch45-chart-result {padding:1rem; border-left:4px solid #456f56; font-weight:650;}
+.reference-figure-grid {display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr)); gap:1rem;}
+.reference-figure-grid figure {margin:0; padding:.75rem; border:1px solid var(--line,#74896d); border-radius:12px; min-width:0;}
+.reference-figure-grid button {display:block; width:100%; padding:.5rem; background:#fff; border:0; border-radius:8px; cursor:zoom-in;}
+.reference-figure-grid img {width:100%; height:180px; object-fit:contain;}
+.reference-figure-grid figcaption {padding-top:.7rem;}
+.reference-figure-grid small {overflow-wrap:anywhere;}
