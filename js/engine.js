@@ -86,7 +86,7 @@
       s.teach[it.id] = { ts: Date.now(), self: r.self, response: r.response || '', rubric: r.rubric || null };
     }
     var key = ref ? refKey(ref) : it.id;
-    var a = { i: key, c: it.c, ok: !!g.ok, sc: Math.round((g.sc || 0) * 100) / 100, cf: conf || 'm', m: mode || 'practice', t: Date.now() };
+    var a = { i: key, root: it.masteryRoot || key, c: it.c, ok: !!g.ok, sc: Math.round((g.sc || 0) * 100) / 100, cf: conf || 'm', m: mode || 'practice', t: Date.now() };
     if (it.t === 'teach') { a.self = true; a.response = r.response || ''; a.rubric = r.rubric || null; s.teach[it.id].ts = a.t; }
     if (assisted) a.h = 1;
     s.attempts.push(a); L.store.save();
@@ -139,9 +139,18 @@
       st.rawStatus=!h.length?'new':st.highConfidenceMiss?'misconception':st.reviewOpen?'shaky':earned?'mastered':'learning';
       st.status=earned || (!ignoreCredits && state.masteryCredits && state.masteryCredits[c])?'mastered':st.rawStatus;
       st.masterySource=autoEarned?'earned':earned?'self':state.masteryCredits&&state.masteryCredits[c]||null;
+      st.independentCorrect=Object.keys(roots).length;
+      st.reviewCorrect=Object.keys(clearRoots).length;
       st.earned=earned;st.due=st.last?U.addDays(U.todayKey(new Date(st.last)),BOX_DAYS[st.box]):today;st.isDue=!!st.last&&st.due<=today;
     });return out;
   }
+  function masteryNote(st) {
+    if(st.status==='mastered')return 'Mastery earned'+(st.masterySource==='self'?' (includes self-assessment)':'')+(st.reviewOpen?' · recent miss needs review.':'.');
+    if(st.independentCorrect>=2)return 'Two different questions correct without hints. Finish with a correct answer at medium/high confidence.';
+    if(st.independentCorrect===1)return '1/2 different questions correct without hints. Get another right at medium/high confidence.';
+    return 'Get two different questions right without hints; use medium/high confidence on the second.';
+  }
+  function practicePriority(st) { return st.reviewOpen?0:st.status!=='mastered'?1:2; }
   function isClearedAfter(history,miss){
     var roots={},after=history.slice(history.indexOf(miss)+1);
     // A later wrong answer starts a fresh review requirement.
@@ -218,7 +227,8 @@
   function practiceRefs(opt) {
     var n = opt.n || 12, concepts = opt.concepts;
     if (!concepts) concepts = Object.keys(L.CONCEPTS).filter(function (c) { var con = L.CONCEPTS[c]; return (!opt.sec || con.sec === opt.sec) && (!opt.ch || chapterOfSec(con.sec) === opt.ch) && hasPracticeContent(c); });
-    var refs = [], used = {}, pool = U.shuffle(concepts), i = 0, guard = 0;
+    var stats=conceptStats();
+    var refs = [], used = {}, pool = U.shuffle(concepts).sort(function(a,b){return practicePriority(stats[a])-practicePriority(stats[b]) || stats[a].att-stats[b].att;}), i = 0, guard = 0;
     while (refs.length < n && guard < n * 8 && pool.length) {
       var c = pool[i % pool.length]; i++; guard++;
       var r = pickFor(c, used); if (!r) continue;
@@ -336,5 +346,5 @@
     reviewPlan: reviewPlan, pickFor: pickFor, newSession: newSession, currentSession: currentSession, endSession: endSession,
     answerInSession: answerInSession, advance: advance, practiceRefs: practiceRefs, reviewRefs: reviewRefs, caseRefs: caseRefs, caseById: caseById,
     bossRefs: bossRefs, finishBoss: finishBoss, buildMock: buildMock, submitMock: submitMock, mockPools: mockPools, itemsFor: itemsFor,
-    allAttempts: allAttempts, captureMastery: captureMastery, hasPracticeContent: hasPracticeContent, REG: function () { return REG; }, BY_CONCEPT: function () { return BY_CONCEPT; }, CASE_OF: function () { return CASE_OF; }, WHY: WHY };
+    allAttempts: allAttempts, captureMastery: captureMastery, masteryNote: masteryNote, practicePriority: practicePriority, hasPracticeContent: hasPracticeContent, REG: function () { return REG; }, BY_CONCEPT: function () { return BY_CONCEPT; }, CASE_OF: function () { return CASE_OF; }, WHY: WHY };
 })(typeof window !== 'undefined' ? window : globalThis);

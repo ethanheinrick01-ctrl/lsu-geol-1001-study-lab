@@ -194,6 +194,7 @@
         var res = E.answerInSession(resp, conf, assisted);
         if (it.t !== 'teach') IU.showFeedback(host, it, resp, res.grade, {});
         showNext();
+        showMastery();
       }
     });
     var s0 = S.load(); if (s0.session) { s0.session.orders[key] = ui.order; if (ui.rights) s0.session.orders[key + 'r'] = ui.rights; S.save(); }
@@ -203,7 +204,8 @@
       nr.appendChild(nb); nb.focus({ preventScroll: true });
     }
     if(done&&it.t==='teach')host.querySelector('.feedback').innerHTML='<div class="fb"><b>Saved rubric self-assessment: '+esc(sess.results[sess.idx].resp.self)+'</b><p>'+it.model+'</p><p class="small muted">This rating is included in your shared concept record.</p></div>';
-    if (done) showNext();
+    function showMastery(){var old=host.querySelector('.mastery-feedback');if(old)old.remove();var st=E.conceptStats()[it.c];host.insertAdjacentHTML('beforeend','<p class="mastery-feedback small">'+esc(E.masteryNote(st))+' <a href="#progress">See progress</a></p>');}
+    if (done) { showNext(); showMastery(); }
     document.onkeydown = function (e) {
       if (/INPUT|TEXTAREA|SELECT/.test(e.target.tagName)) return;
       if (e.key === 'Enter' && $('#nextBtn')) { e.preventDefault(); $('#nextBtn').click(); return; }
@@ -326,8 +328,8 @@
     h.push('<div class="card"><h2>Confidence calibration</h2><div class="bars">' + [['l', 'Low'], ['m', 'Medium'], ['h', 'High']].map(function (x) { var c = cal[x[0]]; return '<div class="barrow"><span>' + x[1] + '</span><div class="b"><i style="width:' + U.pct(c[0], c[1]) + '%"></i></div><span>' + (c[1] ? U.pct(c[0], c[1]) + '% of ' + c[1] : 'n/a') + '</span></div>'; }).join('') + '</div><p class="small muted">Automatic first responses from every exercise mode. Corrections, hints, and rubric self-ratings are kept out of confidence calibration.</p></div>');
     if (s.legacy) h.push('<div class="infobox small">Old-lab history imported ' + U.fmtDate(s.legacy.imported) + ' (' + esc((s.legacy.sources || []).join(', ')) + '): ' + s.legacy.mapped + ' mappings. Shown as "old lab" badges; it does not grant v3 mastery.</div>');
     for (var ch = 1; ch <= 6; ch++) {
-      h.push('<details class="card" open><summary><b>' + esc(L.CHAPTERS[ch].name) + '</b></summary><table class="t"><tr><th>Concept</th><th>Status</th><th>Right/tries</th><th>Next review</th></tr>');
-      secsOfCh(ch).forEach(function (sec) { conceptsOfSec(sec.id).filter(E.hasPracticeContent).forEach(function (c) { var x = st[c]; h.push('<tr><td>' + esc(L.CONCEPTS[c].name) + ' <span class="small muted">' + esc(sec.n) + '</span>' + (x.prior ? ' <span class="badge" title="' + esc('Old lab: ' + x.prior.ok + '/' + x.prior.att + (x.prior.mastered ? ', marked mastered' : '')) + '">old lab</span>' : '') + (x.reviewOpen ? ' <span class="badge st-shaky">'+(x.highConfidenceMiss?'high-confidence miss':'review needed')+'</span>' : '') + '</td><td>' + statusBadge(x.status) + (x.masterySource==='self'?' <span class="tiny muted">includes self-assessment</span>':'') + '</td><td>' + (x.att ? x.ok + '/' + x.att : 'n/a') + '</td><td class="small">' + (x.att ? (x.isDue ? 'due now' : x.due) : 'n/a') + '</td></tr>'); }); });
+      h.push('<details class="card" open><summary><b>' + esc(L.CHAPTERS[ch].name) + '</b></summary><table class="t"><tr><th>Concept</th><th>Status</th><th>Saved correct/checks</th><th>Next review</th></tr>');
+      secsOfCh(ch).forEach(function (sec) { conceptsOfSec(sec.id).filter(E.hasPracticeContent).forEach(function (c) { var x = st[c]; h.push('<tr><td>' + esc(L.CONCEPTS[c].name) + ' <span class="small muted">' + esc(sec.n) + '</span>' + (x.prior ? ' <span class="badge" title="' + esc('Old lab: ' + x.prior.ok + '/' + x.prior.att + (x.prior.mastered ? ', marked mastered' : '')) + '">old lab</span>' : '') + (x.reviewOpen ? ' <span class="badge st-shaky">'+(x.highConfidenceMiss?'high-confidence miss':'review needed')+'</span>' : '') + '</td><td>' + statusBadge(x.status) + '<p class="small muted">'+esc(E.masteryNote(x))+'</p>' + '</td><td>' + (x.att ? x.ok + '/' + x.att : 'n/a') + '</td><td class="small">' + (x.att ? (x.isDue ? 'due now' : x.due) : 'n/a') + '</td></tr>'); }); });
       h.push('</table></details>');
     }
     var bk = Object.keys(s.boss);
@@ -358,7 +360,7 @@
   // ---------------- Data ----------------
   function pData() {
     var s = S.load(), leg = S.readLegacyInBrowser(), h = [banner(), '<h1>Data</h1>'];
-    h.push('<div class="card"><h2>Export</h2><p>Progress lives only in this browser (key <code>' + esc(S.KEY) + '</code>). Export a backup before clearing browser data or switching browsers.</p><div class="row"><button class="btn pri" id="exp">Download backup (.json)</button><button class="btn" id="expCopy">Copy to clipboard</button></div><p class="small muted">' + s.attempts.length + ' attempts · ' + s.mocks.length + ' old-format mocks · ' + s.examRuns.length + ' Exam 1 runs · ' + Object.keys(s.boss).length + ' Boss records.</p></div>');
+    h.push('<div class="card"><h2>Export</h2><p>Progress lives only in this browser (key <code>' + esc(S.KEY) + '</code>). Export a backup before clearing browser data or switching browsers.</p><div class="row"><button class="btn pri" id="exp">Download backup (.json)</button><button class="btn" id="expCopy">Copy to clipboard</button></div><p class="small muted">' + E.allAttempts(s).length + ' saved checks across all modes · ' + s.mocks.length + ' old-format mocks · ' + s.examRuns.length + ' Exam 1 runs · ' + Object.keys(s.boss).length + ' Boss records.</p></div>');
     h.push('<div class="card"><h2>Import</h2><p>Accepts a v3 export (merged without deleting anything) or an old-lab backup file (<code>geol1001-progress-backup-v1</code>, imported as review signals).</p><input type="file" id="file" aria-label="Choose a backup or old-lab progress file to import" accept=".json,application/json"><details><summary>Or paste JSON</summary><textarea id="paste" rows="5" aria-label="Paste JSON"></textarea><button class="btn" id="pasteGo">Import pasted JSON</button></details><p id="impMsg" role="status"></p></div>');
     h.push('<div class="card"><h2>Old lab (v1) in this browser</h2>' + (leg ? '<p>Found old keys: ' + (leg.guided ? '<code>' + esc(CFG.legacyKeys.guided) + '</code> (' + Object.keys(leg.guided.concepts || {}).length + ' concepts) ' : '') + (leg.drills ? '<code>' + esc(CFG.legacyKeys.drills) + '</code>' : '') + '. They are read, never modified.</p><button class="btn" id="impLeg2">Import as review signals</button>' : '<p class="muted">No old-lab progress is visible from this page\'s browser origin. If you have a backup file from the old lab, import it above.</p>') + '</div>');
     h.push('<div class="card danger"><h2>Reset v3 progress</h2><p>Deletes this lab\'s progress in this browser only. The old lab\'s keys are untouched.</p><button class="btn warnbtn" id="reset">Reset v3 progress</button></div>');
