@@ -3,7 +3,7 @@
   'use strict';
   var L = root.L = root.L || {}, U = L.util;
   var BOX_DAYS = [0, 1, 2, 4, 7];
-  var REG = {}, BY_CONCEPT = {}, CASE_OF = {}, SEC_OF = {};
+  var FRESH = {}, REG = {}, BY_CONCEPT = {}, CASE_OF = {}, SEC_OF = {};
 
   // ---------------- Registry ----------------
   function chapterOfSec(secId) { var s = SEC_OF[secId]; return s ? s.ch : 0; }
@@ -19,7 +19,7 @@
     return o;
   }
   function build() {
-    REG = {}; BY_CONCEPT = {}; CASE_OF = {}; SEC_OF = {};
+    FRESH = {}; REG = {}; BY_CONCEPT = {}; CASE_OF = {}; SEC_OF = {};
     L.SECTIONS.forEach(function (s) { SEC_OF[s.id] = s; });
     (L.ITEMS || []).forEach(function (it) { var n = norm(it); REG[n.id] = n; });
     (L.CASES || []).forEach(function (cs) {
@@ -30,7 +30,10 @@
   function resolve(ref) {
     if (!ref) return null;
     if (ref.gen) { var g = L.GEN[ref.gen]; if (!g) return null; var it = g.build(ref.seed, ref.opt || {}); it.id = 'g:' + ref.gen + ':' + ref.seed; it.generated = ref.gen; return norm(it); }
-    return REG[ref.id] || null;
+    if(REG[ref.id])return REG[ref.id];
+    if(FRESH[ref.id])return FRESH[ref.id];
+    if(String(ref.id).indexOf('fresh1-')===0){var runs=L.store.load().examRuns||[];for(var i=0;i<runs.length;i++){var saved=runs[i].freshItems&&runs[i].freshItems[ref.id];if(saved)return FRESH[ref.id]=norm(saved);}}
+    return null;
   }
   function refKey(ref) { return ref.gen ? 'g:' + ref.gen + ':' + ref.seed : ref.id; }
   function itemsFor(f) { return Object.keys(REG).map(function (k) { return REG[k]; }).filter(f); }
@@ -97,7 +100,7 @@
       var entry=r.answers[id], it=resolve({id:id}); if(!entry || !it)return;
       [entry.first].concat(entry.tries || []).forEach(function(x, n){
         if(!x || !x.grade)return;
-        out.push({i:id,c:it.c,ok:!!x.grade.ok,sc:x.grade.sc||0,cf:x.cf||'m',m:'exam1',t:x.at||r.started||0,
+        out.push({i:id,root:it.masteryRoot||id,c:it.c,ok:!!x.grade.ok,sc:x.grade.sc||0,cf:x.cf||'m',m:'exam1',t:x.at||r.started||0,
           self:!!x.self,h:x.assisted?1:0,correction:n>0,run:r.id,attemptId:x.id});
       });
     }); });
@@ -119,14 +122,14 @@
       h.forEach(function(a,i){
         if(!a.ok)lastMiss=i;
         if(a.ok && !a.h){
-          roots[a.i]=true;if(!a.self)autoRoots[a.i]=true;
+          roots[a.root||a.i]=true;if(!a.self)autoRoots[a.root||a.i]=true;
           if(Object.keys(roots).length>=2 && a.cf!=='l')earned=true;
           if(Object.keys(autoRoots).length>=2 && a.cf!=='l' && !a.self)autoEarned=true;
           st.box=a.cf==='l'?Math.max(st.box,1):Math.min(st.box+1,4);
         }
       });
       var after=lastMiss>=0?h.slice(lastMiss+1).filter(function(a){return a.ok&&!a.h;}):[],clearRoots={};
-      after.forEach(function(a){clearRoots[a.i]=true;});
+      after.forEach(function(a){clearRoots[a.root||a.i]=true;});
       var cleared=Object.keys(clearRoots).length>=2 && after.length && after[after.length-1].cf!=='l';
       st.reviewOpen=lastMiss>=0&&!cleared;
       st.highConfidenceMiss=st.reviewOpen&&h.some(function(a){return !a.ok&&a.cf==='h' && !isClearedAfter(h,a);});
@@ -144,7 +147,7 @@
     // A later wrong answer starts a fresh review requirement.
     var latestWrong=-1;after.forEach(function(a,i){if(!a.ok)latestWrong=i;});
     after=after.slice(latestWrong+1).filter(function(a){return a.ok&&!a.h;});
-    after.forEach(function(a){roots[a.i]=true;});
+    after.forEach(function(a){roots[a.root||a.i]=true;});
     return Object.keys(roots).length>=2 && after.length>0 && after[after.length-1].cf!=='l';
   }
   function captureMastery(state){
