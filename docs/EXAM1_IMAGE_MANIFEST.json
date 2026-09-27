@@ -1,0 +1,17 @@
+{
+  "heat-tectonics.png": {
+    "sha256": "e5b423b44e15437e94aba5703598462f47a941f20df08e496dff5ca53b176875",
+    "bytes": 375567,
+    "source": "Chapter 5_ Earth Materials PG 4.pdf, page 8; pdfimages extraction, unaltered pixels"
+  },
+  "heat-transfer.png": {
+    "sha256": "36793bac0faf83e3d846025ca5087a5bf04b526cc13e9e734fe3d068aeb25d48",
+    "bytes": 423150,
+    "source": "Chapter 5_ Earth Materials PG 4.pdf, page 8; pdfimages extraction, unaltered pixels"
+  },
+  "class-chart.jpg": {
+    "sha256": "ad47c1cf4aa6dbf6e67d6c4104f65d631befc445cf7b69ef03cc21d0f84ddd38",
+    "bytes": 1507527,
+    "source": "EXAM ONE/IMG_5737.JPG (unchanged copy)"
+  }
+}

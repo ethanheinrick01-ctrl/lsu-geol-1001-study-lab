@@ -1,0 +1,398 @@
+[
+  {
+    "id": "ch6-visual-1",
+    "module": "ch6-recognition",
+    "title": "A volcanic rock is not always a volcano",
+    "notice": "A mesa can preserve lava far from its original vent. Separate the source of eruption from the eroded remnant.",
+    "caption": "A mesa can preserve lava far from its original vent. Separate the source of eruption from the eroded remnant.",
+    "alt": "Textbook figure: A volcanic rock is not always a volcano. A mesa can preserve lava far from its original vent. Separate the source of eruption from the eroded remnant.",
+    "conceptIds": [
+      "ch6-vent"
+    ],
+    "src": "assets/visuals/ch6/figure-01.png",
+    "source": "Exploring Geology 6.1, supplied PDF page 3; textbook evidence, lecture emphasis unconfirmed",
+    "status": "textbook",
+    "sourceId": "ch6-source-1",
+    "page": 3,
+    "imageIndex": 3,
+    "assetSHA256": "2b32bd132ca48a6a86df21cdbfc3c9c52341283766a9ce011572c4bb31523a5a"
+  },
+  {
+    "id": "ch6-visual-2",
+    "module": "ch6-recognition",
+    "title": "Compare volcano shapes",
+    "notice": "Compare broad shields, steep composite cones, small scoria cones, and domes. The source comparison is not to a single true scale.",
+    "caption": "Compare broad shields, steep composite cones, small scoria cones, and domes. The source comparison is not to a single true scale.",
+    "alt": "Textbook figure: Compare volcano shapes. Compare broad shields, steep composite cones, small scoria cones, and domes. The source comparison is not to a single true scale.",
+    "conceptIds": [
+      "ch6-types"
+    ],
+    "src": "assets/visuals/ch6/figure-02.png",
+    "source": "Exploring Geology 6.1, supplied PDF page 6; textbook evidence, lecture emphasis unconfirmed",
+    "status": "textbook",
+    "sourceId": "ch6-source-1",
+    "page": 6,
+    "imageIndex": 4,
+    "assetSHA256": "4b2dd6f434934e2415ddc2a23e45c49346d7ecfcca38020d09e0e2551469d43e"
+  },
+  {
+    "id": "ch6-visual-3",
+    "module": "ch6-eruption",
+    "title": "Pressure release and gas bubbles",
+    "notice": "Follow rising magma: lower confining pressure allows dissolved gas to form expanding bubbles.",
+    "caption": "Follow rising magma: lower confining pressure allows dissolved gas to form expanding bubbles.",
+    "alt": "Textbook figure: Pressure release and gas bubbles. Follow rising magma: lower confining pressure allows dissolved gas to form expanding bubbles.",
+    "conceptIds": [
+      "ch6-gas"
+    ],
+    "src": "assets/visuals/ch6/figure-03.png",
+    "source": "Exploring Geology 6.2, supplied PDF page 6; textbook evidence, lecture emphasis unconfirmed",
+    "status": "textbook",
+    "sourceId": "ch6-source-2",
+    "page": 6,
+    "imageIndex": 2,
+    "assetSHA256": "bd2771fc4705eefe5a42a7f91a19eebaefbfb79627bb0ef4c37535b959cc7cc8"
+  },
+  {
+    "id": "ch6-visual-4",
+    "module": "ch6-eruption",
+    "title": "Column collapse and pyroclastic flow",
+    "notice": "An unsupported eruption column can collapse into a dense, hot flow moving down the slope.",
+    "caption": "An unsupported eruption column can collapse into a dense, hot flow moving down the slope.",
+    "alt": "Textbook figure: Column collapse and pyroclastic flow. An unsupported eruption column can collapse into a dense, hot flow moving down the slope.",
+    "conceptIds": [
+      "ch6-products"
+    ],
+    "src": "assets/visuals/ch6/figure-04.png",
+    "source": "Exploring Geology 6.2, supplied PDF page 5; textbook evidence, lecture emphasis unconfirmed",
+    "status": "textbook",
+    "sourceId": "ch6-source-2",
+    "page": 5,
+    "imageIndex": 1,
+    "assetSHA256": "477b00b937831f6677b254bb01f8ab7d10513bb3786436fdb3c0140b05073f00"
+  },
+  {
+    "id": "ch6-visual-5",
+    "module": "ch6-basalt",
+    "title": "Basaltic flow features",
+    "notice": "Compare the insulating lava tube, rough aa, and ropy pahoehoe examples in the full-page source view.",
+    "caption": "Compare the insulating lava tube, rough aa, and ropy pahoehoe examples in the full-page source view.",
+    "alt": "Textbook figure: Basaltic flow features. Compare the insulating lava tube, rough aa, and ropy pahoehoe examples in the full-page source view.",
+    "conceptIds": [
+      "ch6-flow-textures"
+    ],
+    "src": "assets/visuals/ch6/figure-05.png",
+    "source": "Exploring Geology 6.3, supplied PDF page 4; textbook evidence, lecture emphasis unconfirmed",
+    "status": "textbook",
+    "sourceId": "ch6-source-3",
+    "page": 4,
+    "imageIndex": "full page",
+    "assetSHA256": "c69d0836cdeaed7e08d290ffdb2d6d543402a16534d1eb5d83301946fe5f9012"
+  },
+  {
+    "id": "ch6-visual-6",
+    "module": "ch6-basalt",
+    "title": "Scoria cone to lava flow",
+    "notice": "Early gas-rich magma can build a cone; later less-gassy magma may flow from its base.",
+    "caption": "Early gas-rich magma can build a cone; later less-gassy magma may flow from its base.",
+    "alt": "Textbook figure: Scoria cone to lava flow. Early gas-rich magma can build a cone; later less-gassy magma may flow from its base.",
+    "conceptIds": [
+      "ch6-scoria"
+    ],
+    "src": "assets/visuals/ch6/figure-06.png",
+    "source": "Exploring Geology 6.3, supplied PDF page 5; textbook evidence, lecture emphasis unconfirmed",
+    "status": "textbook",
+    "sourceId": "ch6-source-3",
+    "page": 5,
+    "imageIndex": 1,
+    "assetSHA256": "fda1ffd307066bdf83e64b1310e1e6ade7d71d4dd18eefb102c667aa36452d24"
+  },
+  {
+    "id": "ch6-visual-7",
+    "module": "ch6-shields-floods",
+    "title": "Fluid lava and shield slopes",
+    "notice": "Low-viscosity basalt can travel and spread, building broad, gentle slopes over repeated eruptions.",
+    "caption": "Low-viscosity basalt can travel and spread, building broad, gentle slopes over repeated eruptions.",
+    "alt": "Textbook figure: Fluid lava and shield slopes. Low-viscosity basalt can travel and spread, building broad, gentle slopes over repeated eruptions.",
+    "conceptIds": [
+      "ch6-shields"
+    ],
+    "src": "assets/visuals/ch6/figure-07.png",
+    "source": "Exploring Geology 6.4, supplied PDF page 4; textbook evidence, lecture emphasis unconfirmed",
+    "status": "textbook",
+    "sourceId": "ch6-source-4",
+    "page": 4,
+    "imageIndex": 2,
+    "assetSHA256": "9665bb660e71d8e137ec11a9ee099e8dc3ffbd789f20e5950f4d7d787ae3da72"
+  },
+  {
+    "id": "ch6-visual-8",
+    "module": "ch6-shields-floods",
+    "title": "Flood-basalt fissure eruption",
+    "notice": "A long fissure and large supply of fluid basalt allow a widespread lava sheet, not just one central cone.",
+    "caption": "A long fissure and large supply of fluid basalt allow a widespread lava sheet, not just one central cone.",
+    "alt": "Textbook figure: Flood-basalt fissure eruption. A long fissure and large supply of fluid basalt allow a widespread lava sheet, not just one central cone.",
+    "conceptIds": [
+      "ch6-floods"
+    ],
+    "src": "assets/visuals/ch6/figure-08.png",
+    "source": "Exploring Geology 6.5, supplied PDF page 4; textbook evidence, lecture emphasis unconfirmed",
+    "status": "textbook",
+    "sourceId": "ch6-source-5",
+    "page": 4,
+    "imageIndex": 1,
+    "assetSHA256": "e11a5e3851e41b9b9c9bef96c687ac59acb4e805547b876703c1c628ea6c2c4b"
+  },
+  {
+    "id": "ch6-visual-9",
+    "module": "ch6-shields-floods",
+    "title": "Mantle plume beneath the lithosphere",
+    "notice": "The rising plume is mostly solid; melting is associated with decompression and heating of surrounding rock.",
+    "caption": "The rising plume is mostly solid; melting is associated with decompression and heating of surrounding rock.",
+    "alt": "Textbook figure: Mantle plume beneath the lithosphere. The rising plume is mostly solid; melting is associated with decompression and heating of surrounding rock.",
+    "conceptIds": [
+      "ch6-floods"
+    ],
+    "src": "assets/visuals/ch6/figure-09.png",
+    "source": "Exploring Geology 6.5, supplied PDF page 5; textbook evidence, lecture emphasis unconfirmed",
+    "status": "textbook",
+    "sourceId": "ch6-source-5",
+    "page": 5,
+    "imageIndex": 1,
+    "assetSHA256": "e035e689dd3c952148a02a07d0e45461a64dfadb5f3e5111e60af87d61380195"
+  },
+  {
+    "id": "ch6-visual-10",
+    "module": "ch6-composites",
+    "title": "Inside a composite volcano",
+    "notice": "Interlayered lava, pyroclastic deposits, and mudflow deposits record repeated eruptions and different processes.",
+    "caption": "Interlayered lava, pyroclastic deposits, and mudflow deposits record repeated eruptions and different processes.",
+    "alt": "Textbook figure: Inside a composite volcano. Interlayered lava, pyroclastic deposits, and mudflow deposits record repeated eruptions and different processes.",
+    "conceptIds": [
+      "ch6-composite"
+    ],
+    "src": "assets/visuals/ch6/figure-10.png",
+    "source": "Exploring Geology 6.8, supplied PDF page 4; textbook evidence, lecture emphasis unconfirmed",
+    "status": "textbook",
+    "sourceId": "ch6-source-8",
+    "page": 4,
+    "imageIndex": 1,
+    "assetSHA256": "ea14d4426fb560f0b139c51efccf28302e1bec0d1e6398225b14bd9e09e3af4f"
+  },
+  {
+    "id": "ch6-visual-11",
+    "module": "ch6-composites",
+    "title": "Lahars and downstream damage",
+    "notice": "The damaged bridge illustrates a water-rich volcanic debris flow. Remote sensors can detect the rumble of a moving lahar.",
+    "caption": "The damaged bridge illustrates a water-rich volcanic debris flow. Remote sensors can detect the rumble of a moving lahar.",
+    "alt": "Textbook figure: Lahars and downstream damage. The damaged bridge illustrates a water-rich volcanic debris flow. Remote sensors can detect the rumble of a moving lahar.",
+    "conceptIds": [
+      "ch6-lahar"
+    ],
+    "src": "assets/visuals/ch6/figure-11.png",
+    "source": "Exploring Geology 6.13, supplied PDF page 7; textbook evidence, lecture emphasis unconfirmed",
+    "status": "textbook",
+    "sourceId": "ch6-source-13",
+    "page": 7,
+    "imageIndex": "full page",
+    "assetSHA256": "0bc9803a543739df0497b0522340e2531b4b3f963f59e5a8aa2e207e02da9369"
+  },
+  {
+    "id": "ch6-visual-12",
+    "module": "ch6-composites",
+    "title": "Mount St. Helens: unloading and blast",
+    "notice": "A landslide removed pressure from magma, helping trigger the lateral blast and eruption column in 1980.",
+    "caption": "A landslide removed pressure from magma, helping trigger the lateral blast and eruption column in 1980.",
+    "alt": "Textbook figure: Mount St. Helens: unloading and blast. A landslide removed pressure from magma, helping trigger the lateral blast and eruption column in 1980.",
+    "conceptIds": [
+      "ch6-composite"
+    ],
+    "src": "assets/visuals/ch6/figure-12.png",
+    "source": "Exploring Geology 6.8, supplied PDF page 6; textbook evidence, lecture emphasis unconfirmed",
+    "status": "textbook",
+    "sourceId": "ch6-source-8",
+    "page": 6,
+    "imageIndex": 1,
+    "assetSHA256": "c3b41ac80704fdfb5119d04e8030b676b571b8c12c2290aae0c39989183fc20d"
+  },
+  {
+    "id": "ch6-visual-13",
+    "module": "ch6-domes-calderas",
+    "title": "A dome grows",
+    "notice": "Viscous lava inflates a dome from within or breaks out as short, thick flows.",
+    "caption": "Viscous lava inflates a dome from within or breaks out as short, thick flows.",
+    "alt": "Textbook figure: A dome grows. Viscous lava inflates a dome from within or breaks out as short, thick flows.",
+    "conceptIds": [
+      "ch6-dome"
+    ],
+    "src": "assets/visuals/ch6/figure-13.png",
+    "source": "Exploring Geology 6.9, supplied PDF page 2; textbook evidence, lecture emphasis unconfirmed",
+    "status": "textbook",
+    "sourceId": "ch6-source-9",
+    "page": 2,
+    "imageIndex": 1,
+    "assetSHA256": "809a7764c32e501913e7fb0e4e0b269090e7db74d775b39315f2e10ec4559c4c"
+  },
+  {
+    "id": "ch6-visual-14",
+    "module": "ch6-domes-calderas",
+    "title": "Dome collapse and explosion",
+    "notice": "Steep dome material can collapse; trapped gas can also cause an explosion. Both can produce hazardous fragments.",
+    "caption": "Steep dome material can collapse; trapped gas can also cause an explosion. Both can produce hazardous fragments.",
+    "alt": "Textbook figure: Dome collapse and explosion. Steep dome material can collapse; trapped gas can also cause an explosion. Both can produce hazardous fragments.",
+    "conceptIds": [
+      "ch6-dome"
+    ],
+    "src": "assets/visuals/ch6/figure-14.png",
+    "source": "Exploring Geology 6.9, supplied PDF page 3; textbook evidence, lecture emphasis unconfirmed",
+    "status": "textbook",
+    "sourceId": "ch6-source-9",
+    "page": 3,
+    "imageIndex": "full page",
+    "assetSHA256": "eab81463f4e8631f500e5f091a9e4822b479bbdc9647023288ef991a3ca09975"
+  },
+  {
+    "id": "ch6-visual-15",
+    "module": "ch6-domes-calderas",
+    "title": "Caldera formation sequence",
+    "notice": "Track magma withdrawal and downward roof collapse, then later volcanic activity within the depression.",
+    "caption": "Track magma withdrawal and downward roof collapse, then later volcanic activity within the depression.",
+    "alt": "Textbook figure: Caldera formation sequence. Track magma withdrawal and downward roof collapse, then later volcanic activity within the depression.",
+    "conceptIds": [
+      "ch6-caldera"
+    ],
+    "src": "assets/visuals/ch6/figure-15.png",
+    "source": "Exploring Geology 6.10, supplied PDF page 4; textbook evidence, lecture emphasis unconfirmed",
+    "status": "textbook",
+    "sourceId": "ch6-source-10",
+    "page": 4,
+    "imageIndex": "full page",
+    "assetSHA256": "fb427e75b89be0e809b92aba10260ddf1d936d19232f2635cb4b214dcc92e6f2"
+  },
+  {
+    "id": "ch6-visual-16",
+    "module": "ch6-domes-calderas",
+    "title": "Krakatau: collapse and sea waves",
+    "notice": "A coastal eruption can couple pyroclastic activity and collapse with destructive waves beyond the island.",
+    "caption": "A coastal eruption can couple pyroclastic activity and collapse with destructive waves beyond the island.",
+    "alt": "Textbook figure: Krakatau: collapse and sea waves. A coastal eruption can couple pyroclastic activity and collapse with destructive waves beyond the island.",
+    "conceptIds": [
+      "ch6-caldera"
+    ],
+    "src": "assets/visuals/ch6/figure-16.png",
+    "source": "Exploring Geology 6.11, supplied PDF page 4; textbook evidence, lecture emphasis unconfirmed",
+    "status": "textbook",
+    "sourceId": "ch6-source-11",
+    "page": 4,
+    "imageIndex": "full page",
+    "assetSHA256": "ce87e7055db6a187fb3ddf4d7b38a91522495fd3e696a8bd3ba8d3677461071a"
+  },
+  {
+    "id": "ch6-visual-17",
+    "module": "ch6-risk",
+    "title": "Hazard versus exposed community",
+    "notice": "The lava is the physical hazard; people, homes, and infrastructure in its path create societal risk.",
+    "caption": "The lava is the physical hazard; people, homes, and infrastructure in its path create societal risk.",
+    "alt": "Textbook figure: Hazard versus exposed community. The lava is the physical hazard; people, homes, and infrastructure in its path create societal risk.",
+    "conceptIds": [
+      "ch6-hazard-risk"
+    ],
+    "src": "assets/visuals/ch6/figure-17.png",
+    "source": "Exploring Geology 6.6, supplied PDF page 2; textbook evidence, lecture emphasis unconfirmed",
+    "status": "textbook",
+    "sourceId": "ch6-source-6",
+    "page": 2,
+    "imageIndex": 2,
+    "assetSHA256": "ca0c4fcdb4ff6cc25734bc2626ae79eacf222dc93bfe3870276960f5b4c98962"
+  },
+  {
+    "id": "ch6-visual-18",
+    "module": "ch6-risk",
+    "title": "Read the hazard pathways",
+    "notice": "Trace valleys for flows and wind direction for ash. Distance alone does not determine which site is safer.",
+    "caption": "Trace valleys for flows and wind direction for ash. Distance alone does not determine which site is safer.",
+    "alt": "Textbook figure: Read the hazard pathways. Trace valleys for flows and wind direction for ash. Distance alone does not determine which site is safer.",
+    "conceptIds": [
+      "ch6-pathways"
+    ],
+    "src": "assets/visuals/ch6/figure-18.png",
+    "source": "Exploring Geology 6.12, supplied PDF page 3; textbook evidence, lecture emphasis unconfirmed",
+    "status": "textbook",
+    "sourceId": "ch6-source-12",
+    "page": 3,
+    "imageIndex": 0,
+    "assetSHA256": "f9ca2b4e8a07dc418a2ea3b26ad086b690662b483bc538a9c25fb5279af0f702"
+  },
+  {
+    "id": "ch6-visual-19",
+    "module": "ch6-monitoring",
+    "title": "Seismic monitoring",
+    "notice": "Changes in earthquake activity provide evidence of movement and deformation, not an exact eruption clock.",
+    "caption": "Changes in earthquake activity provide evidence of movement and deformation, not an exact eruption clock.",
+    "alt": "Textbook figure: Seismic monitoring. Changes in earthquake activity provide evidence of movement and deformation, not an exact eruption clock.",
+    "conceptIds": [
+      "ch6-monitor-tools"
+    ],
+    "src": "assets/visuals/ch6/figure-19.png",
+    "source": "Exploring Geology 6.13, supplied PDF page 2; textbook evidence, lecture emphasis unconfirmed",
+    "status": "textbook",
+    "sourceId": "ch6-source-13",
+    "page": 2,
+    "imageIndex": "full page",
+    "assetSHA256": "eb99eb2fca3509ced32072268cbe23fae19fd02ff3ad67fb563d867f167d9bf9"
+  },
+  {
+    "id": "ch6-visual-20",
+    "module": "ch6-monitoring",
+    "title": "Measuring ground deformation",
+    "notice": "GPS tracks position, tiltmeters track tilt, and repeat radar observations reveal surface deformation.",
+    "caption": "GPS tracks position, tiltmeters track tilt, and repeat radar observations reveal surface deformation.",
+    "alt": "Textbook figure: Measuring ground deformation. GPS tracks position, tiltmeters track tilt, and repeat radar observations reveal surface deformation.",
+    "conceptIds": [
+      "ch6-monitor-tools"
+    ],
+    "src": "assets/visuals/ch6/figure-20.png",
+    "source": "Exploring Geology 6.13, supplied PDF page 5; textbook evidence, lecture emphasis unconfirmed",
+    "status": "textbook",
+    "sourceId": "ch6-source-13",
+    "page": 5,
+    "imageIndex": "full page",
+    "assetSHA256": "768e388bca9b069fa2f296a97f32dbe6e39b60e115ec0225d9fe9a2ec62c7ac9"
+  },
+  {
+    "id": "ch6-visual-21",
+    "module": "ch6-monitoring",
+    "title": "Rainier and the Cascadia subduction zone",
+    "notice": "Trace oceanic Juan de Fuca lithosphere beneath North America and connect the setting to the Cascade volcanoes.",
+    "caption": "Trace oceanic Juan de Fuca lithosphere beneath North America and connect the setting to the Cascade volcanoes.",
+    "alt": "Textbook figure: Rainier and the Cascadia subduction zone. Trace oceanic Juan de Fuca lithosphere beneath North America and connect the setting to the Cascade volcanoes.",
+    "conceptIds": [
+      "ch6-rainier"
+    ],
+    "src": "assets/visuals/ch6/figure-21.png",
+    "source": "Exploring Geology 6.14, supplied PDF page 3; textbook evidence, lecture emphasis unconfirmed",
+    "status": "textbook",
+    "sourceId": "ch6-source-14",
+    "page": 3,
+    "imageIndex": 1,
+    "assetSHA256": "644a052619c6131374ffc81a189c9b12a6a572b22a4e599cd1a7e140c5150969"
+  },
+  {
+    "id": "ch6-visual-22",
+    "module": "ch6-monitoring",
+    "title": "Rainier hazard map",
+    "notice": "Read the map legend, then trace the lahar paths down valleys toward developed areas. This is a textbook study map, not a current emergency forecast.",
+    "caption": "Read the map legend, then trace the lahar paths down valleys toward developed areas. This is a textbook study map, not a current emergency forecast.",
+    "alt": "Textbook figure: Rainier hazard map. Read the map legend, then trace the lahar paths down valleys toward developed areas. This is a textbook study map, not a current emergency forecast.",
+    "conceptIds": [
+      "ch6-rainier"
+    ],
+    "src": "assets/visuals/ch6/figure-22.png",
+    "source": "Exploring Geology 6.14, supplied PDF page 4; textbook evidence, lecture emphasis unconfirmed",
+    "status": "textbook",
+    "sourceId": "ch6-source-14",
+    "page": 4,
+    "imageIndex": 2,
+    "assetSHA256": "b7397a00c080b3c16994857267c5ad12c77763368dd72d8345444eb446d3f4ff"
+  }
+]

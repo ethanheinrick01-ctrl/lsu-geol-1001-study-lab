@@ -1,0 +1,25 @@
+{
+  "legacyRecordsUnchanged": true,
+  "gradingEngineByteIdentical": true,
+  "oldModules": 21,
+  "oldConcepts": 42,
+  "newModules": 9,
+  "newConcepts": 18,
+  "newGradedActivities": 39,
+  "newChoiceQuestions": 36,
+  "newDrills": [
+    {
+      "id": "chapter-four-core-drill",
+      "count": 16
+    },
+    {
+      "id": "chapter-five-core-drill",
+      "count": 16
+    },
+    {
+      "id": "chapters-four-five-boss-drill",
+      "count": 32
+    }
+  ],
+  "existingBrowserStorageModified": false
+}

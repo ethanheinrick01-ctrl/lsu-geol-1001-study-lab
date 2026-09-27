@@ -1,0 +1,58 @@
+{
+  "ok": false,
+  "validator": "build-course-study-lab-v2",
+  "mode": "hydrated",
+  "target": "/Users/ethanheinrick/Desktop/GEOL-1001/STUDY LAB",
+  "offline": true,
+  "counts": {
+    "files": 153,
+    "exams": 0,
+    "liveExams": 0,
+    "modules": 0,
+    "concepts": 0,
+    "lessons": 0,
+    "activities": 0,
+    "gradedActivities": 0,
+    "visualRecords": 0,
+    "missingVisuals": 0,
+    "quizzes": 0,
+    "questions": 0,
+    "hashedFiles": 10
+  },
+  "hashes": {
+    "index.html": "645cdb46368e1b1f8269e6655186f1b9a479de248c9c29098ac41f03791c9a08",
+    "quizzes/quiz-bank.js": "7ac0674841b2b3a8c7891e21bef1ac0e76b6a45e46cb51298ff80e63d41e7dec",
+    "quizzes/chapter-02-bank.js": "31e5730b78386a0133b084db438e3eb2bfbcfa3f2ec07df37c06b8708844954a",
+    "study-guides/chapter-01-modules.js": "741018ad884103fed6faa56d8980edf9d1134940070e3ec3656031c8b1673ae5",
+    "study-guides/chapter-01-visuals.js": "62dc7b17d1b0714228aa33caf989f33de7e28c90542b478c25ae55e17bc39241",
+    "study-guides/chapter-02-modules.js": "b08c17646a347d01ab8225261ec095b45fc40ad430380e2a244aab62e2e9cb74",
+    "study-guides/chapter-02-visuals.js": "62dc8ac304f565cf623e73ac0196010baaf4e05ffbc05aa1cd31ec6c1f75f5d8",
+    "study-guides/chapter-03-modules.js": "ed796a628f08c0a1f9c01835a25bd9d8cea13262ee048a87885d14f9629f5144",
+    "study-guides/chapter-03-visuals.js": "be75584ba71fb3d8dc1dec089d710dc61cadfdba3d56e3ba57548eecdaf7446b",
+    "quizzes/chapter-03-bank.js": "521d4f78bbc4199f4c0a36e892aa62433e5624fb936c218e76eff742be22eb65"
+  },
+  "handoff": null,
+  "errors": [
+    {
+      "code": "missing-config",
+      "path": "course-config.js",
+      "message": "window.STUDY_SYSTEM_CONFIG was not defined."
+    },
+    {
+      "code": "incomplete-course-config",
+      "path": "course-config.js",
+      "message": "Configure courseCode, courseTitle, term, and systemTitle/labTitle."
+    },
+    {
+      "code": "missing-storage-key",
+      "path": "course-config.js:storage",
+      "message": "Quiz and guided-learning storage keys are both required."
+    },
+    {
+      "code": "missing-exam-lanes",
+      "path": "config.exams",
+      "message": "Configure at least one exam lane."
+    }
+  ],
+  "warnings": []
+}

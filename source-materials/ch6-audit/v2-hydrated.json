@@ -1,0 +1,67 @@
+{
+  "ok": false,
+  "validator": "build-course-study-lab-v2",
+  "mode": "hydrated",
+  "target": "/Users/ethanheinrick/Desktop/GEOL-1001/STUDY LAB",
+  "offline": true,
+  "counts": {
+    "files": 893,
+    "exams": 0,
+    "liveExams": 0,
+    "modules": 0,
+    "concepts": 0,
+    "lessons": 0,
+    "activities": 0,
+    "gradedActivities": 0,
+    "visualRecords": 0,
+    "missingVisuals": 0,
+    "quizzes": 0,
+    "questions": 0,
+    "hashedFiles": 14
+  },
+  "hashes": {
+    "index.html": "1b020985a13ed38074f95ac11c880a436075f585ed5c8e8b1b18f11ce92ce671",
+    "quizzes/quiz-bank.js": "7ac0674841b2b3a8c7891e21bef1ac0e76b6a45e46cb51298ff80e63d41e7dec",
+    "quizzes/chapter-02-bank.js": "31e5730b78386a0133b084db438e3eb2bfbcfa3f2ec07df37c06b8708844954a",
+    "study-guides/chapter-01-modules.js": "741018ad884103fed6faa56d8980edf9d1134940070e3ec3656031c8b1673ae5",
+    "study-guides/chapter-01-visuals.js": "62dc7b17d1b0714228aa33caf989f33de7e28c90542b478c25ae55e17bc39241",
+    "study-guides/chapter-02-modules.js": "b08c17646a347d01ab8225261ec095b45fc40ad430380e2a244aab62e2e9cb74",
+    "study-guides/chapter-02-visuals.js": "62dc8ac304f565cf623e73ac0196010baaf4e05ffbc05aa1cd31ec6c1f75f5d8",
+    "study-guides/chapter-03-modules.js": "ed796a628f08c0a1f9c01835a25bd9d8cea13262ee048a87885d14f9629f5144",
+    "study-guides/chapter-03-visuals.js": "8cab5ab5b0ed06f08b7fa5843d37078fea883e89d635cfd54b54f6411d30d5ba",
+    "quizzes/chapter-03-bank.js": "521d4f78bbc4199f4c0a36e892aa62433e5624fb936c218e76eff742be22eb65",
+    "study-guides/chapter-04-05-extension.js": "9e5f0a76af5465bc39a3cc233efee83381ec3d22765fb3eb680dcc889b76be5b",
+    "study-guides/chapter-04-05-visuals.js": "25b96aad5fa1b333a2ef74c73d0faa5e4db75c30a9542199f7b5b870cebdc4f1",
+    "study-guides/chapter-04-05-expanded-visuals.js": "7e8bf43c1f7d61865ca53e3fe61fd5a72b16208555ece0cfeb1359a1193a1d9a",
+    "study-guides/chapter-06-extension.js": "1638eb4c8cf2ac464fc5fdad31fece84f0d90b795367dcf219bcdc9d358208ac"
+  },
+  "handoff": null,
+  "errors": [
+    {
+      "code": "data-script-failed",
+      "path": "assets/ch4-ch5-tools.js",
+      "message": "Could not evaluate data-only script: document is not defined"
+    },
+    {
+      "code": "missing-config",
+      "path": "course-config.js",
+      "message": "window.STUDY_SYSTEM_CONFIG was not defined."
+    },
+    {
+      "code": "incomplete-course-config",
+      "path": "course-config.js",
+      "message": "Configure courseCode, courseTitle, term, and systemTitle/labTitle."
+    },
+    {
+      "code": "missing-storage-key",
+      "path": "course-config.js:storage",
+      "message": "Quiz and guided-learning storage keys are both required."
+    },
+    {
+      "code": "missing-exam-lanes",
+      "path": "config.exams",
+      "message": "Configure at least one exam lane."
+    }
+  ],
+  "warnings": []
+}

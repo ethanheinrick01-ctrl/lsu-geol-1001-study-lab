@@ -1,0 +1,3306 @@
+{
+  "hashes": {
+    "assets/app.js": "c6c691b1ddb61269ef5c280d2497d08ea0398c7b10fc46801856fed269989d2a",
+    "quizzes/quiz-bank.js": "7ac0674841b2b3a8c7891e21bef1ac0e76b6a45e46cb51298ff80e63d41e7dec",
+    "quizzes/chapter-02-bank.js": "31e5730b78386a0133b084db438e3eb2bfbcfa3f2ec07df37c06b8708844954a",
+    "study-guides/chapter-01-modules.js": "741018ad884103fed6faa56d8980edf9d1134940070e3ec3656031c8b1673ae5",
+    "study-guides/chapter-01-visuals.js": "62dc7b17d1b0714228aa33caf989f33de7e28c90542b478c25ae55e17bc39241",
+    "study-guides/chapter-02-modules.js": "b08c17646a347d01ab8225261ec095b45fc40ad430380e2a244aab62e2e9cb74",
+    "study-guides/chapter-02-visuals.js": "62dc8ac304f565cf623e73ac0196010baaf4e05ffbc05aa1cd31ec6c1f75f5d8"
+  },
+  "globals": {
+    "GEOL_QUIZZES": [
+      {
+        "id": "foundations-starter",
+        "title": "Foundations Starter Drill",
+        "description": "An original orientation drill for core physical-geology reasoning. Replace or expand it as lecture evidence accumulates.",
+        "lane": "Exam 1",
+        "chapters": "Chapters 1–2",
+        "status": "Starter bank",
+        "questions": [
+          {
+            "type": "single",
+            "topic": "Scientific reasoning",
+            "source": "Original practice · verify with Lecture 1",
+            "prompt": "Which statement is a testable scientific hypothesis?",
+            "choices": [
+              "Granite is more beautiful than basalt.",
+              "A mineral sample will scratch glass if its hardness exceeds the hardness of glass.",
+              "Earth's history has a hidden purpose.",
+              "Volcanoes are inherently evil."
+            ],
+            "answer": 1,
+            "explanation": "A testable hypothesis predicts an observable result. A scratch test can support or falsify the hardness claim; the other statements are value judgments or non-testable claims."
+          },
+          {
+            "type": "true-false",
+            "topic": "Geologic time",
+            "source": "Original practice · verify with Chapter 1",
+            "prompt": "Uniformitarianism requires geologic processes to have always occurred at exactly the same rates seen today.",
+            "choices": [
+              "True",
+              "False"
+            ],
+            "answer": 1,
+            "explanation": "Uniformitarian reasoning uses present processes to interpret the past, but it does not require constant rates or exclude rare, high-magnitude events."
+          },
+          {
+            "type": "single",
+            "topic": "Earth systems",
+            "source": "Original practice · verify with Chapter 1",
+            "prompt": "A volcanic eruption adds ash to the atmosphere, which changes rainfall and accelerates erosion. What does this best demonstrate?",
+            "choices": [
+              "Earth systems operate independently.",
+              "Only the solid Earth controls geology.",
+              "The geosphere, atmosphere, hydrosphere, and biosphere can exchange matter and energy.",
+              "Weather and geology occur on unrelated timescales."
+            ],
+            "answer": 2,
+            "explanation": "The example is a chain of interactions among Earth systems. Matter and energy cross system boundaries, producing feedbacks."
+          },
+          {
+            "type": "single",
+            "topic": "Hazards and risk",
+            "source": "Original practice · verify with Lecture 1",
+            "prompt": "Two towns face the same probability of earthquake shaking. Town A has enforced seismic building codes; Town B has not. Which statement is strongest?",
+            "choices": [
+              "The seismic hazard is necessarily greater in Town A.",
+              "Town B can have greater risk because vulnerability is greater.",
+              "Both towns must have identical risk because the hazard is identical.",
+              "Building codes change the earthquake's magnitude."
+            ],
+            "answer": 1,
+            "explanation": "Risk depends on hazard, exposure, and vulnerability. Similar shaking hazard can produce different losses when infrastructure vulnerability differs."
+          },
+          {
+            "type": "multi",
+            "topic": "Evidence",
+            "source": "Original practice · verify with Lecture 1",
+            "prompt": "Which observations could help a geologist reconstruct an ancient environment? Select all that apply.",
+            "choices": [
+              "Sedimentary structures",
+              "Fossil assemblages",
+              "Mineral composition",
+              "The researcher's favorite color"
+            ],
+            "answer": [
+              0,
+              1,
+              2
+            ],
+            "explanation": "Structures, fossils, and minerals preserve environmental information. Personal preference is not physical evidence about the ancient setting."
+          },
+          {
+            "type": "single",
+            "topic": "Scale",
+            "source": "Original practice · verify with Chapter 1",
+            "prompt": "Why can a very slow geologic process still produce a major landscape change?",
+            "choices": [
+              "Small rates accumulated over long intervals can yield large total change.",
+              "Slow processes violate conservation of energy.",
+              "Landscapes respond only to sudden events.",
+              "Geologic time is too short for accumulation."
+            ],
+            "answer": 0,
+            "explanation": "Rate multiplied by time gives total change. Even a small annual rate can produce a large result over thousands or millions of years."
+          },
+          {
+            "type": "single",
+            "topic": "Models",
+            "source": "Original practice · verify with Lecture 1",
+            "prompt": "What is the best use of a scientific model in geology?",
+            "choices": [
+              "To reproduce every detail of Earth without assumptions",
+              "To replace observation with authority",
+              "To simplify a system so predictions and explanations can be tested",
+              "To prove a conclusion permanently"
+            ],
+            "answer": 2,
+            "explanation": "Models deliberately simplify reality. Their value comes from organizing evidence and producing predictions that can be compared with observations."
+          },
+          {
+            "type": "true-false",
+            "topic": "Resources",
+            "source": "Original practice · verify with Lecture 1",
+            "prompt": "A geologic resource can be abundant in Earth's crust yet economically unavailable at a particular location.",
+            "choices": [
+              "True",
+              "False"
+            ],
+            "answer": 0,
+            "explanation": "Economic availability depends on concentration, accessibility, extraction technology, environmental constraints, and cost—not abundance alone."
+          }
+        ]
+      },
+      {
+        "id": "chapter-one-boss-drill",
+        "title": "Chapter 1 Boss Drill",
+        "description": "A 30-question, source-linked cumulative retrieval run covering the complete Lecture 1 evidence set.",
+        "lane": "Exam 1",
+        "chapters": "Chapter 1",
+        "status": "Verified pilot bank",
+        "questions": [
+          {
+            "type": "single",
+            "topic": "Research method",
+            "source": "Original practice · Lecture 1b s2",
+            "prompt": "Which action belongs immediately after testing a hypothesis in the lecture sequence?",
+            "choices": [
+              "Observe again without recording data",
+              "Adjust the hypothesis using new data",
+              "Declare the model permanent",
+              "Skip directly to publication"
+            ],
+            "answer": 1,
+            "explanation": "The sequence is observe, describe, question, hypothesize, test, adjust using new data, then build a model or interpretation."
+          },
+          {
+            "type": "single",
+            "topic": "Research method",
+            "source": "Original practice · Lecture 1b s2",
+            "prompt": "Which statement is a testable hypothesis?",
+            "choices": [
+              "Basalt is the nicest rock",
+              "If a mineral is harder than glass, it should scratch glass",
+              "Earth has a hidden purpose",
+              "All mountains are beautiful"
+            ],
+            "answer": 1,
+            "explanation": "A scratch test produces an observable result that can support or falsify the claim."
+          },
+          {
+            "type": "single",
+            "topic": "Observation and inference",
+            "source": "Original practice · Lecture 1b s9",
+            "prompt": "Which statement is an observation rather than an inference?",
+            "choices": [
+              "The cliff formed during one flood",
+              "A brown block rests near the edge",
+              "The lower layer eroded fastest",
+              "The block will fall next year"
+            ],
+            "answer": 1,
+            "explanation": "The block's color and position are visible. Formation process, erosion rate, and future timing are interpretations."
+          },
+          {
+            "type": "single",
+            "topic": "ILEA reasoning",
+            "source": "Original practice · Lecture 1a s18",
+            "prompt": "What is the final move in the ILEA cycle?",
+            "choices": [
+              "Predict",
+              "Draw",
+              "Research",
+              "Revise understanding"
+            ],
+            "answer": 3,
+            "explanation": "ILEA uses Predict -> Draw -> Justify -> Research -> Revise Understanding."
+          },
+          {
+            "type": "single",
+            "topic": "Hazards",
+            "source": "Original practice · Lecture 1b s5",
+            "prompt": "Which geologic feature is most directly associated with earthquake hazard in the lecture landscape?",
+            "choices": [
+              "Fault",
+              "Beach",
+              "Lake",
+              "Soil nutrient"
+            ],
+            "answer": 0,
+            "explanation": "The lecture explicitly links earthquakes to faults."
+          },
+          {
+            "type": "single",
+            "topic": "Hazards",
+            "source": "Original practice · Lecture 1b s5",
+            "prompt": "Why can a steep slope constrain settlement even without an active volcano?",
+            "choices": [
+              "It guarantees rich soil",
+              "It can be difficult to build on and may fail as a landslide",
+              "It removes flood risk everywhere",
+              "It converts crust into core"
+            ],
+            "answer": 1,
+            "explanation": "Steepness can limit construction and increase mass-movement hazard."
+          },
+          {
+            "type": "multi",
+            "topic": "Streams",
+            "source": "Original practice · Lecture 1b s5",
+            "prompt": "Which roles of streams appear in the lecture? Select all that apply.",
+            "choices": [
+              "Flood hazard",
+              "Water supply",
+              "Transport of soil nutrients",
+              "Prevention of all earthquakes"
+            ],
+            "answer": [
+              0,
+              1,
+              2
+            ],
+            "explanation": "Streams can be both resources and hazards; they do not control earthquake occurrence."
+          },
+          {
+            "type": "single",
+            "topic": "Resources",
+            "source": "Original practice · Lecture 1b s7; map visual unavailable, claim text verified",
+            "prompt": "Why is mineral-resource distribution not treated as random in the lecture?",
+            "choices": [
+              "Mines are placed alphabetically",
+              "Deposits track rock age and geologic history",
+              "Every rock contains equal ore",
+              "Atmosphere never affects minerals"
+            ],
+            "answer": 1,
+            "explanation": "Old iron deposits and younger copper deposits are linked to different atmospheric and tectonic histories."
+          },
+          {
+            "type": "single",
+            "topic": "Continents",
+            "source": "Original practice · Lecture 1b s8",
+            "prompt": "What marks the edge of the continent in the Australia figure?",
+            "choices": [
+              "The current shoreline",
+              "The outer edge of the continental shelf",
+              "The nearest river",
+              "The deepest ocean trench anywhere"
+            ],
+            "answer": 1,
+            "explanation": "The shallow continental shelf extends offshore; its outer edge marks the continent's edge in the figure."
+          },
+          {
+            "type": "single",
+            "topic": "Geologic evidence",
+            "source": "Original practice · Lecture 1b s9",
+            "prompt": "Which claim about a layered cliff requires additional evidence?",
+            "choices": [
+              "Tan and brown layers are exposed",
+              "Blocks sit near the edge",
+              "Differential erosion produced the shape",
+              "The upper cliff is brown"
+            ],
+            "answer": 2,
+            "explanation": "Differential erosion is a process interpretation, while the other statements describe visible features."
+          },
+          {
+            "type": "single",
+            "topic": "Climate evidence",
+            "source": "Original practice · Lecture 1b s10",
+            "prompt": "What does the 28,000-years-ago versus present comparison directly show?",
+            "choices": [
+              "Changed ice-sheet extent",
+              "One proven cause",
+              "No climate change",
+              "A constant shoreline"
+            ],
+            "answer": 0,
+            "explanation": "The comparison documents change in ice extent but does not by itself prove one cause."
+          },
+          {
+            "type": "multi",
+            "topic": "Ancient life",
+            "source": "Original practice · Lecture 1b s11",
+            "prompt": "Which evidence could help reconstruct ancient animal life? Select all that apply.",
+            "choices": [
+              "Bones and teeth",
+              "Tracks and burrows",
+              "Other trace fossils",
+              "The illustrator's color palette"
+            ],
+            "answer": [
+              0,
+              1,
+              2
+            ],
+            "explanation": "Body and trace fossils are physical evidence. Artistic choices are not evidence from the Jurassic."
+          },
+          {
+            "type": "single",
+            "topic": "Compositional layers",
+            "source": "Original practice · Lecture 1b s12",
+            "prompt": "Which sequence lists Earth's major compositional layers from outside inward?",
+            "choices": [
+              "Crust, mantle, core",
+              "Lithosphere, asthenosphere, core",
+              "Mantle, crust, atmosphere",
+              "Core, mantle, crust"
+            ],
+            "answer": 0,
+            "explanation": "The compositional sequence is crust, mantle, and core."
+          },
+          {
+            "type": "single",
+            "topic": "Core",
+            "source": "Original practice · Lecture 1b s12-13",
+            "prompt": "Which description matches the core?",
+            "choices": [
+              "Silicate crust with two surface types",
+              "Iron-nickel region with molten outer and solid inner parts",
+              "Entirely liquid mantle",
+              "Strong crust plus uppermost mantle"
+            ],
+            "answer": 1,
+            "explanation": "The lecture identifies an iron-nickel core with a molten outer core and solid inner core."
+          },
+          {
+            "type": "single",
+            "topic": "Mechanical layers",
+            "source": "Original practice · Lecture 1b s14",
+            "prompt": "What material does the lithosphere include?",
+            "choices": [
+              "Crust only",
+              "Crust plus uppermost mantle",
+              "Asthenosphere only",
+              "Outer and inner core"
+            ],
+            "answer": 1,
+            "explanation": "The strong lithosphere crosses the crust-mantle compositional boundary."
+          },
+          {
+            "type": "true-false",
+            "topic": "Mechanical layers",
+            "source": "Original practice · Lecture 1b s14",
+            "prompt": "The asthenosphere is hot and weak but mostly solid.",
+            "choices": [
+              "True",
+              "False"
+            ],
+            "answer": 0,
+            "explanation": "That is the deck's explicit description; weak does not mean completely liquid."
+          },
+          {
+            "type": "single",
+            "topic": "Isostasy",
+            "source": "Original practice · Lecture 1b s15-16",
+            "prompt": "If two floating blocks have equal density, which should ride higher?",
+            "choices": [
+              "The thicker block",
+              "The thinner block",
+              "They must be identical",
+              "The darker block"
+            ],
+            "answer": 0,
+            "explanation": "The lecture analogy shows thicker blocks riding higher than thinner blocks."
+          },
+          {
+            "type": "single",
+            "topic": "Isostasy",
+            "source": "Original practice · Lecture 1b s16",
+            "prompt": "If two floating blocks have equal thickness, which should ride lower?",
+            "choices": [
+              "The less-dense block",
+              "The denser block",
+              "The wider block regardless of density",
+              "Neither can float"
+            ],
+            "answer": 1,
+            "explanation": "Greater density lowers the exposed height in the floating-block analogy."
+          },
+          {
+            "type": "single",
+            "topic": "Earth-system drivers",
+            "source": "Original practice · Lecture 1b s17",
+            "prompt": "Which process is an internal driver?",
+            "choices": [
+              "Solar radiation",
+              "Wind",
+              "Radioactive decay",
+              "Atmospheric pressure"
+            ],
+            "answer": 2,
+            "explanation": "Radioactive decay contributes heat within Earth; the other choices are surface-linked or atmospheric."
+          },
+          {
+            "type": "multi",
+            "topic": "Atmosphere",
+            "source": "Original practice · Lecture 1b s18",
+            "prompt": "Which functions of the atmosphere appear in the lecture? Select all that apply.",
+            "choices": [
+              "Stores water vapor, drops, and ice",
+              "Produces precipitation and wind",
+              "Blocks some light, UV, and infrared",
+              "Stops all energy transfer"
+            ],
+            "answer": [
+              0,
+              1,
+              2
+            ],
+            "explanation": "The atmosphere moves water and moderates radiation; it does not stop all energy transfer."
+          },
+          {
+            "type": "multi",
+            "topic": "Sedimentary environments",
+            "source": "Original practice · Lecture 1b s19-22",
+            "prompt": "Which settings are associated with sedimentary rocks in the lecture? Select all that apply.",
+            "choices": [
+              "Rivers",
+              "Glaciers",
+              "Sand dunes",
+              "Only molten magma"
+            ],
+            "answer": [
+              0,
+              1,
+              2
+            ],
+            "explanation": "The lecture shows numerous normal surface environments as sedimentary settings."
+          },
+          {
+            "type": "single",
+            "topic": "Igneous rocks",
+            "source": "Original practice · Lecture 1b s23; classroom stopping point",
+            "prompt": "What process defines igneous-rock formation?",
+            "choices": [
+              "Solidification of magma",
+              "Weathering alone",
+              "Precipitation from hot water",
+              "Compaction of fossils"
+            ],
+            "answer": 0,
+            "explanation": "Igneous rock forms when magma solidifies, whether at depth or in volcanic settings."
+          },
+          {
+            "type": "single",
+            "topic": "Metamorphic rocks",
+            "source": "Original practice · Lecture 1b s26-27; deck continuation",
+            "prompt": "Which process produces metamorphic rock in the continuation material?",
+            "choices": [
+              "Change by heat and pressure",
+              "Solidification of magma",
+              "Evaporation of seawater only",
+              "Freezing of atmospheric vapor"
+            ],
+            "answer": 0,
+            "explanation": "Metamorphic rock is existing rock changed by increased temperature and pressure or heating near magma."
+          },
+          {
+            "type": "single",
+            "topic": "Hydrothermal rocks",
+            "source": "Original practice · Lecture 1b s26 and s28; deck continuation",
+            "prompt": "What process is linked to hydrothermal rock in the lecture?",
+            "choices": [
+              "Precipitation from hot water",
+              "Compaction of snow",
+              "Wind abrasion",
+              "Core solidification"
+            ],
+            "answer": 0,
+            "explanation": "The continuation slide defines hydrothermal material through precipitation from hot water."
+          },
+          {
+            "type": "single",
+            "topic": "Rock cycle",
+            "source": "Original practice · Lecture 1b s29; deck continuation",
+            "prompt": "Which statement best describes the rock cycle?",
+            "choices": [
+              "It has one required starting point",
+              "Rocks can enter linked processes at different stages",
+              "It excludes melting",
+              "Uplift occurs only once"
+            ],
+            "answer": 1,
+            "explanation": "The cycle links weathering, transport, burial, metamorphism, melting, solidification, and uplift without one required beginning."
+          },
+          {
+            "type": "single",
+            "topic": "Earth's spheres",
+            "source": "Original practice · Lecture 1b s30; deck continuation",
+            "prompt": "Which list contains the four spheres named in the lecture?",
+            "choices": [
+              "Atmosphere, hydrosphere, biosphere, lithosphere",
+              "Crust, mantle, core, magnetosphere",
+              "Troposphere, mantle, ocean, core",
+              "Biosphere, core, magma, shelf"
+            ],
+            "answer": 0,
+            "explanation": "The figure names atmosphere, hydrosphere, biosphere, and lithosphere."
+          },
+          {
+            "type": "true-false",
+            "topic": "Solar-system scale",
+            "source": "Original practice · Lecture 1b s31; deck continuation",
+            "prompt": "The solar-system figure preserves the true relative sizes and proximities of all objects.",
+            "choices": [
+              "True",
+              "False"
+            ],
+            "answer": 1,
+            "explanation": "The slide explicitly warns that size and proximity are not to scale."
+          },
+          {
+            "type": "single",
+            "topic": "Crust and elevation",
+            "source": "Original practice · Lecture 1b s15-16",
+            "prompt": "Which relationship is supported by the elevation figures?",
+            "choices": [
+              "Thin crust is always highest",
+              "Thick continental crust commonly supports higher elevation",
+              "Oceanic crust is always thicker",
+              "Density has no effect"
+            ],
+            "answer": 1,
+            "explanation": "The figures link thick, less-dense continental crust with higher elevation and deeper crustal roots."
+          },
+          {
+            "type": "single",
+            "topic": "Crust types",
+            "source": "Original practice · Lecture 1b s12 and s15",
+            "prompt": "Which statement correctly compares continental and oceanic crust in the lecture?",
+            "choices": [
+              "They are two types of crust",
+              "Oceanic crust is the inner core",
+              "Continental crust is the whole lithosphere",
+              "They are both atmosphere"
+            ],
+            "answer": 0,
+            "explanation": "Continental and oceanic crust are two types within the crustal compositional layer."
+          },
+          {
+            "type": "single",
+            "topic": "Evidence",
+            "source": "Original practice · Lecture 1b s8-11",
+            "prompt": "Which answer uses evidence most carefully?",
+            "choices": [
+              "The image proves one complete history",
+              "The pattern supports an interpretation, but additional data are needed to test it",
+              "A reconstruction is identical to a fossil",
+              "Visible color proves exact age"
+            ],
+            "answer": 1,
+            "explanation": "Geologic figures constrain interpretations, but responsible reasoning keeps the remaining uncertainty visible."
+          }
+        ]
+      },
+      {
+        "id": "exam-one-shell",
+        "title": "Exam 1 Build Slot",
+        "description": "Reserved for an evidence-backed Chapters 1–6 mock exam after lecture decks and professor materials are dissected.",
+        "lane": "Exam 1",
+        "chapters": "Chapters 1–6",
+        "status": "Needs evidence",
+        "questions": []
+      },
+      {
+        "id": "exam-two-shell",
+        "title": "Exam 2 Build Slot",
+        "description": "Reserved for original Chapters 7–12 practice questions and explanations.",
+        "lane": "Exam 2",
+        "chapters": "Chapters 7–12",
+        "status": "Needs evidence",
+        "questions": []
+      },
+      {
+        "id": "final-shell",
+        "title": "Cumulative Final Build Slot",
+        "description": "Reserved for a balanced Chapters 1–19 cumulative bank with missed-concept recycling.",
+        "lane": "Final",
+        "chapters": "Chapters 1–19",
+        "status": "Needs evidence",
+        "questions": []
+      },
+      {
+        "id": "chapter-two-boss-drill",
+        "title": "Chapter 2 Boss Drill",
+        "description": "Thirty original, source-linked questions spanning exact terms, figures, calculations, event sequences, and competing-model reasoning.",
+        "lane": "Exam 1",
+        "chapters": "Chapter 2",
+        "status": "Verified lecture bank",
+        "questions": [
+          {
+            "type": "single",
+            "topic": "Observation",
+            "source": "Lecture 2 s2–4",
+            "prompt": "Which statement is an observation?",
+            "choices": [
+              "Water widened the fractures.",
+              "Three vertical fractures cut a pale layer.",
+              "The cliff formed in a desert.",
+              "The upper unit is younger because it resisted erosion."
+            ],
+            "answer": 1,
+            "explanation": "Fracture count, orientation, and position are directly visible; the other claims infer cause, setting, or history."
+          },
+          {
+            "type": "single",
+            "topic": "Representation",
+            "source": "Lecture 2 s2–4",
+            "prompt": "What makes a geologic sketch a representation rather than a complete copy?",
+            "choices": [
+              "It selects and emphasizes relationships relevant to the question.",
+              "It is always less accurate than a photograph.",
+              "It cannot include measurements.",
+              "It proves the artist's interpretation."
+            ],
+            "answer": 0,
+            "explanation": "Representations deliberately select information; their value depends on whether they preserve the relationships needed for reasoning."
+          },
+          {
+            "type": "multi",
+            "topic": "Outcrop scan",
+            "source": "Lecture 2 s3",
+            "prompt": "Which are appropriate features to record before interpreting an outcrop? Select all that apply.",
+            "choices": [
+              "Layer contacts",
+              "Fractures",
+              "Rounded versus angular corners",
+              "The final cause of the landscape"
+            ],
+            "answer": [
+              0,
+              1,
+              2
+            ],
+            "explanation": "Contacts, fractures, and edge shape are observations. A cause is an inference to test after the scan."
+          },
+          {
+            "type": "single",
+            "topic": "Clast transport",
+            "source": "Lecture 2 s5–8",
+            "prompt": "Rounded clasts most directly support which process?",
+            "choices": [
+              "Transport with collision and abrasion",
+              "Instant crystallization",
+              "Contact metamorphism",
+              "Fault displacement"
+            ],
+            "answer": 0,
+            "explanation": "Repeated movement and collisions remove sharp edges, although rounding alone does not identify one exact environment."
+          },
+          {
+            "type": "single",
+            "topic": "Deposits",
+            "source": "Lecture 2 s5–8",
+            "prompt": "Why is a modern deposit comparison useful?",
+            "choices": [
+              "It guarantees the ancient setting was identical.",
+              "It links observable texture to a process that can be tested.",
+              "It replaces field evidence.",
+              "It supplies a numerical age."
+            ],
+            "answer": 1,
+            "explanation": "The comparison supports a process where observable textures match; other evidence is needed to constrain the setting and age."
+          },
+          {
+            "type": "single",
+            "topic": "Landscape evolution",
+            "source": "Lecture 2 s9",
+            "prompt": "Which sequence shows progressive erosion of a resistant layered remnant?",
+            "choices": [
+              "Knobs → butte → mesa",
+              "Mesa → knobs → butte",
+              "Mesa → butte → knobs",
+              "Butte → mesa → knobs"
+            ],
+            "answer": 2,
+            "explanation": "The lecture sequence narrows from a broad mesa to a butte and then small knobs."
+          },
+          {
+            "type": "single",
+            "topic": "Superposition",
+            "source": "Lecture 2 s10",
+            "prompt": "In an undeformed sedimentary sequence, which layer is normally oldest?",
+            "choices": [
+              "The uppermost",
+              "The thickest",
+              "The lowest",
+              "The darkest"
+            ],
+            "answer": 2,
+            "explanation": "Superposition places lower deposited layers before upper layers, provided the sequence has not been overturned."
+          },
+          {
+            "type": "single",
+            "topic": "Cross-cutting",
+            "source": "Lecture 2 s11",
+            "prompt": "A fault offsets four sedimentary layers. What must be true?",
+            "choices": [
+              "The fault is older than all four layers.",
+              "The fault is younger than all four layers.",
+              "The fault and layers have identical ages.",
+              "Color is needed before any order can be inferred."
+            ],
+            "answer": 1,
+            "explanation": "A cutting feature is younger than what it cuts."
+          },
+          {
+            "type": "single",
+            "topic": "Inclusions",
+            "source": "Lecture 2 s12",
+            "prompt": "Granite clasts occur inside a conglomerate. Which material is older?",
+            "choices": [
+              "The conglomerate",
+              "The granite clasts",
+              "They must be the same age",
+              "Age cannot be compared"
+            ],
+            "answer": 1,
+            "explanation": "The included clasts had to exist before the sediment containing them was deposited and lithified."
+          },
+          {
+            "type": "single",
+            "topic": "Contact effects",
+            "source": "Lecture 2 s13",
+            "prompt": "Country rock is baked next to an intrusion. Which event is younger?",
+            "choices": [
+              "Formation of the country rock",
+              "Emplacement of the intrusion",
+              "Both are necessarily simultaneous",
+              "Erosion of the modern surface"
+            ],
+            "answer": 1,
+            "explanation": "The country rock existed before the younger magma heated it at the contact."
+          },
+          {
+            "type": "multi",
+            "topic": "Relative dating",
+            "source": "Lecture 2 s10–14",
+            "prompt": "Which principles can independently help order geologic events? Select all that apply.",
+            "choices": [
+              "Superposition",
+              "Cross-cutting",
+              "Inclusions",
+              "Personal preference"
+            ],
+            "answer": [
+              0,
+              1,
+              2
+            ],
+            "explanation": "All three are observable relative-dating principles; preference is not evidence."
+          },
+          {
+            "type": "single",
+            "topic": "Map types",
+            "source": "Lecture 2 s15–18",
+            "prompt": "Which map is designed to show rock units, contacts, and faults at the surface?",
+            "choices": [
+              "Topographic map",
+              "Geologic map",
+              "Shaded-relief map",
+              "Road map"
+            ],
+            "answer": 1,
+            "explanation": "A geologic map encodes mapped rock bodies and structural relationships."
+          },
+          {
+            "type": "single",
+            "topic": "Topographic maps",
+            "source": "Lecture 2 s17–19",
+            "prompt": "What do closely spaced contour lines generally indicate?",
+            "choices": [
+              "Low elevation",
+              "Steep slope",
+              "Old rock",
+              "High relief everywhere on the map"
+            ],
+            "answer": 1,
+            "explanation": "A large elevation change over a short horizontal distance produces close contours and a steep slope."
+          },
+          {
+            "type": "single",
+            "topic": "Relief",
+            "source": "Lecture 2 s19",
+            "prompt": "The highest point is 1,240 m and the lowest is 680 m. What is the relief?",
+            "choices": [
+              "560 m",
+              "1,920 m",
+              "1.82 m",
+              "560 m/km"
+            ],
+            "answer": 0,
+            "explanation": "Relief = 1,240 m − 680 m = 560 m."
+          },
+          {
+            "type": "single",
+            "topic": "Elevation",
+            "source": "Lecture 2 s19",
+            "prompt": "Elevation is best defined as:",
+            "choices": [
+              "elevation change divided by distance",
+              "height above sea level",
+              "highest minus lowest point",
+              "apparent height in a photograph"
+            ],
+            "answer": 1,
+            "explanation": "Elevation is one location's vertical position relative to sea level."
+          },
+          {
+            "type": "single",
+            "topic": "Cross section",
+            "source": "Lecture 2 s20",
+            "prompt": "Which representation is a vertical slice through the subsurface?",
+            "choices": [
+              "Satellite image",
+              "Cross section",
+              "Topographic map",
+              "Shaded-relief map"
+            ],
+            "answer": 1,
+            "explanation": "A cross section exposes geometry along a vertical plane."
+          },
+          {
+            "type": "single",
+            "topic": "Block diagram",
+            "source": "Lecture 2 s20",
+            "prompt": "What advantage does a block diagram have over a simple stratigraphic section?",
+            "choices": [
+              "It supplies absolute dates automatically.",
+              "It combines surface and subsurface relationships in 3-D.",
+              "It eliminates interpretation.",
+              "It shows only unit names."
+            ],
+            "answer": 1,
+            "explanation": "The 3-D block preserves spatial geometry that a simplified vertical column omits."
+          },
+          {
+            "type": "single",
+            "topic": "Stratigraphic section",
+            "source": "Lecture 2 s20",
+            "prompt": "Which representation most directly records unit order and thickness at a location?",
+            "choices": [
+              "Stratigraphic section",
+              "Satellite image",
+              "Shaded relief",
+              "Weather map"
+            ],
+            "answer": 0,
+            "explanation": "A stratigraphic section is an ordered vertical record of the units and their thicknesses."
+          },
+          {
+            "type": "single",
+            "topic": "Data types",
+            "source": "Lecture 2 s22",
+            "prompt": "Which observation is quantitative?",
+            "choices": [
+              "The rim contains angular blocks.",
+              "The layers bend upward.",
+              "The crater is 1.2 km across.",
+              "The central rock is reddish."
+            ],
+            "answer": 2,
+            "explanation": "A number with a unit makes the crater-width observation quantitative."
+          },
+          {
+            "type": "single",
+            "topic": "Integrated data",
+            "source": "Lecture 2 s22",
+            "prompt": "Why combine qualitative and quantitative data?",
+            "choices": [
+              "Descriptions can identify patterns and measurements can constrain their magnitude.",
+              "Numbers make observations unnecessary.",
+              "Sketches automatically prove causation.",
+              "The two data types cannot test the same model."
+            ],
+            "answer": 0,
+            "explanation": "Patterns guide what to measure; measurements compare observations with model predictions."
+          },
+          {
+            "type": "single",
+            "topic": "Geologic time",
+            "source": "Lecture 2 s23–24",
+            "prompt": "Which order is oldest to youngest?",
+            "choices": [
+              "Cenozoic → Mesozoic → Paleozoic → Precambrian",
+              "Precambrian → Paleozoic → Mesozoic → Cenozoic",
+              "Paleozoic → Precambrian → Cenozoic → Mesozoic",
+              "Mesozoic → Paleozoic → Precambrian → Cenozoic"
+            ],
+            "answer": 1,
+            "explanation": "The lecture figure orders Precambrian, Paleozoic, Mesozoic, then Cenozoic."
+          },
+          {
+            "type": "single",
+            "topic": "Mesozoic periods",
+            "source": "Lecture 2 s24",
+            "prompt": "Which order is oldest to youngest within the Mesozoic?",
+            "choices": [
+              "Cretaceous → Jurassic → Triassic",
+              "Jurassic → Triassic → Cretaceous",
+              "Triassic → Jurassic → Cretaceous",
+              "Triassic → Cretaceous → Jurassic"
+            ],
+            "answer": 2,
+            "explanation": "Triassic is followed by Jurassic and then Cretaceous."
+          },
+          {
+            "type": "single",
+            "topic": "Paleozoic periods",
+            "source": "Lecture 2 s24",
+            "prompt": "Which period is older than the Ordovician?",
+            "choices": [
+              "Cambrian",
+              "Silurian",
+              "Devonian",
+              "Permian"
+            ],
+            "answer": 0,
+            "explanation": "The Paleozoic begins with Cambrian, followed by Ordovician."
+          },
+          {
+            "type": "single",
+            "topic": "Investigation",
+            "source": "Lecture 2 s25",
+            "prompt": "Why did the buried-tank gasoline model fail?",
+            "choices": [
+              "No leak was found and the gasoline type did not match.",
+              "The model was proposed first.",
+              "Groundwater was absent from Earth.",
+              "Chemical comparisons cannot test sources."
+            ],
+            "answer": 0,
+            "explanation": "Inspection and chemical evidence contradicted predictions of the buried-tank source model."
+          },
+          {
+            "type": "single",
+            "topic": "Model testing",
+            "source": "Lecture 2 s26–29",
+            "prompt": "What makes a new observation especially useful for choosing among models?",
+            "choices": [
+              "All models predict the same result.",
+              "The models predict different results.",
+              "The observation is visually dramatic.",
+              "The favorite model predicts it."
+            ],
+            "answer": 1,
+            "explanation": "A discriminating test produces different expected outcomes under competing explanations."
+          },
+          {
+            "type": "single",
+            "topic": "Volcanic model",
+            "source": "Lecture 2 s26–29",
+            "prompt": "Which evidence would most directly favor a volcanic-explosion crater model?",
+            "choices": [
+              "A volcanic vent and eruption deposits",
+              "A buried salt body only",
+              "Shock quartz and impact melt",
+              "Horizontal undeformed layers everywhere"
+            ],
+            "answer": 0,
+            "explanation": "A vent and volcanic deposits are specific predictions of a volcanic origin."
+          },
+          {
+            "type": "single",
+            "topic": "Salt model",
+            "source": "Lecture 2 s26–29",
+            "prompt": "Which evidence would most directly favor rising salt?",
+            "choices": [
+              "A salt body at depth with salt-related deformation",
+              "Meteorite fragments",
+              "A volcanic ash cone",
+              "Only a circular outline"
+            ],
+            "answer": 0,
+            "explanation": "Salt at depth and deformation consistent with its rise distinguish the salt model from appearance alone."
+          },
+          {
+            "type": "single",
+            "topic": "Impact model",
+            "source": "Lecture 2 s26–29",
+            "prompt": "Which evidence would most directly favor meteoroid impact?",
+            "choices": [
+              "Shock features or impact melt",
+              "Ordinary river gravel",
+              "A buried salt body",
+              "A soil horizon"
+            ],
+            "answer": 0,
+            "explanation": "Shock metamorphism, impact melt, and meteoritic material are model-specific impact predictions."
+          },
+          {
+            "type": "single",
+            "topic": "Upheaval Dome",
+            "source": "Lecture 2 s30–32",
+            "prompt": "Which statement correctly separates observation from inference at Upheaval Dome?",
+            "choices": [
+              "Bent layers are an inference and rising salt is an observation.",
+              "Bent layers are an observation and rising salt is an inference.",
+              "Both are direct observations.",
+              "Neither can be investigated."
+            ],
+            "answer": 1,
+            "explanation": "The geometry is visible; its cause is proposed and must be tested."
+          },
+          {
+            "type": "single",
+            "topic": "Integrated sequence",
+            "source": "Lecture 2 s30–32",
+            "prompt": "Which broad sequence is most defensible for Upheaval Dome?",
+            "choices": [
+              "Erosion → deposition → deformation",
+              "Deformation → deposition → erosion",
+              "Deposition → deformation → erosion",
+              "Investigation → deposition → deformation"
+            ],
+            "answer": 2,
+            "explanation": "The layers had to be deposited before they were deformed, and erosion later exposed the structure."
+          }
+        ]
+      }
+    ],
+    "GEOL_MODULES": [
+      {
+        "id": "method-ilea",
+        "number": 1,
+        "title": "Think Like a Geologist",
+        "kicker": "Method + ILEA",
+        "description": "Move from observation to a testable interpretation, then revise it when evidence changes.",
+        "source": "Lecture 1a s18; Lecture 1b s2",
+        "emphasis": "Taught in class",
+        "concepts": [
+          {
+            "id": "research-method",
+            "label": "Research method"
+          },
+          {
+            "id": "ilea-cycle",
+            "label": "ILEA cycle"
+          }
+        ],
+        "activities": [
+          {
+            "id": "m1-lesson",
+            "type": "lesson",
+            "title": "Evidence before interpretation",
+            "source": "Lecture 1b s2",
+            "body": [
+              "Geology begins with what can be observed or measured. Description comes before explanation.",
+              "A hypothesis must be testable. New evidence can force an adjustment before a model or interpretation is built."
+            ],
+            "keyPoints": [
+              "Observe -> describe -> question -> hypothesis -> test -> adjust -> model.",
+              "Revision is a strength of the method, not a failure."
+            ]
+          },
+          {
+            "id": "m1-order",
+            "type": "match",
+            "concept": "research-method",
+            "prompt": "Assign each research-method action its correct position.",
+            "rows": [
+              {
+                "label": "Observe",
+                "answer": "1"
+              },
+              {
+                "label": "Describe",
+                "answer": "2"
+              },
+              {
+                "label": "Ask a question",
+                "answer": "3"
+              },
+              {
+                "label": "Form a hypothesis",
+                "answer": "4"
+              },
+              {
+                "label": "Test the hypothesis",
+                "answer": "5"
+              },
+              {
+                "label": "Adjust using new data",
+                "answer": "6"
+              },
+              {
+                "label": "Build a model or interpretation",
+                "answer": "7"
+              }
+            ],
+            "options": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7"
+            ],
+            "hint": "The sequence starts with visible evidence and ends with a defensible interpretation.",
+            "explanation": "The deck places adjustment after testing and before the final model. That ordering prevents a favored explanation from outrunning the evidence.",
+            "source": "Lecture 1b s2"
+          },
+          {
+            "id": "m1-hypothesis",
+            "type": "single",
+            "concept": "research-method",
+            "prompt": "Which statement is a testable geologic hypothesis?",
+            "choices": [
+              "This cliff is the most impressive feature in the region.",
+              "If the lower layer erodes faster than the upper layer, undercutting should increase after heavy rain.",
+              "The landscape was designed to look dramatic.",
+              "Brown rocks are always older than gray rocks."
+            ],
+            "answer": 1,
+            "hint": "Choose the claim that predicts an observable result.",
+            "explanation": "The erosion statement predicts a measurable change and can be supported or falsified. Preference, purpose, and an absolute color rule are not defensible tests.",
+            "source": "Original practice derived from Lecture 1b s2 and s9"
+          },
+          {
+            "id": "m1-ilea-map",
+            "type": "match",
+            "concept": "ilea-cycle",
+            "prompt": "Match each ILEA move to what it contributes.",
+            "rows": [
+              {
+                "label": "Predict",
+                "answer": "State an initial expectation"
+              },
+              {
+                "label": "Draw",
+                "answer": "Make relationships visible"
+              },
+              {
+                "label": "Justify",
+                "answer": "Defend the prediction with reasoning"
+              },
+              {
+                "label": "Research",
+                "answer": "Seek relevant evidence"
+              },
+              {
+                "label": "Revise",
+                "answer": "Update understanding from evidence"
+              }
+            ],
+            "options": [
+              "State an initial expectation",
+              "Make relationships visible",
+              "Defend the prediction with reasoning",
+              "Seek relevant evidence",
+              "Update understanding from evidence"
+            ],
+            "hint": "Think of the cycle as claim -> representation -> defense -> evidence -> correction.",
+            "explanation": "ILEA grading emphasizes the reasoning chain, not merely the final answer.",
+            "source": "Lecture 1a s18"
+          },
+          {
+            "id": "m1-ilea-teach",
+            "type": "teachback",
+            "concept": "ilea-cycle",
+            "prompt": "Teach back why an ILEA answer can improve even when the original prediction was wrong.",
+            "rubric": [
+              "Names evidence or research as the basis for revision.",
+              "Explains that justification makes the reasoning inspectable.",
+              "Treats revision as learning rather than hiding the first prediction."
+            ],
+            "hint": "Focus on the movement from prediction to revised understanding.",
+            "explanation": "A wrong prediction can still produce strong learning when its reasoning is explicit and the revision follows evidence.",
+            "source": "Lecture 1a s18"
+          }
+        ]
+      },
+      {
+        "id": "observation-inference",
+        "number": 2,
+        "title": "Observation vs. Inference",
+        "kicker": "The central habit",
+        "description": "Separate what a figure shows from the history or process proposed to explain it.",
+        "source": "Lecture 1b s3-4, s9-11",
+        "emphasis": "Taught in class",
+        "concepts": [
+          {
+            "id": "observation-inference",
+            "label": "Observation vs. inference"
+          }
+        ],
+        "activities": [
+          {
+            "id": "m2-lesson",
+            "type": "lesson",
+            "title": "Do not smuggle the explanation into the observation",
+            "source": "Lecture 1b s9-11",
+            "body": [
+              "An observation reports what is visible or measured. An inference proposes an event, process, age, or future outcome.",
+              "Maps, photographs, and artistic reconstructions are representations. They still require evidence and do not explain themselves."
+            ],
+            "keyPoints": [
+              "Observation: layered tan and brown rock is exposed.",
+              "Inference: differential erosion produced the cliff."
+            ]
+          },
+          {
+            "id": "m2-sort",
+            "type": "sort",
+            "concept": "observation-inference",
+            "prompt": "Classify each statement about a layered cliff.",
+            "groups": [
+              "Observation",
+              "Inference"
+            ],
+            "items": [
+              {
+                "text": "Tan, brown, and yellowish layers are exposed.",
+                "group": "Observation"
+              },
+              {
+                "text": "Several blocks are perched near the cliff edge.",
+                "group": "Observation"
+              },
+              {
+                "text": "The lower layer eroded more quickly.",
+                "group": "Inference"
+              },
+              {
+                "text": "A future rockfall is possible.",
+                "group": "Inference"
+              },
+              {
+                "text": "The upper cliff is brown.",
+                "group": "Observation"
+              },
+              {
+                "text": "Water helped shape the slope.",
+                "group": "Inference"
+              }
+            ],
+            "hint": "Ask whether a camera or measurement could record the statement directly.",
+            "explanation": "Colors, layers, and positions are observations. Erosion history and future instability are interpretations that require testing.",
+            "source": "Original practice derived from Lecture 1b s9"
+          },
+          {
+            "id": "m2-reconstruction",
+            "type": "single",
+            "concept": "observation-inference",
+            "prompt": "A Jurassic scene shows dinosaurs beside a lake. What is the scene itself?",
+            "choices": [
+              "Direct evidence collected in the Jurassic",
+              "An artistic interpretation that must be supported by preserved evidence",
+              "Proof that every illustrated species lived together",
+              "A measurement of the Jurassic atmosphere"
+            ],
+            "answer": 1,
+            "hint": "The slide explicitly distinguishes the image from the evidence behind it.",
+            "explanation": "The scene is a reconstruction. Fossils, tracks, burrows, bones, teeth, and other traces are evidence that could support parts of it.",
+            "source": "Lecture 1b s11"
+          },
+          {
+            "id": "m2-teach",
+            "type": "teachback",
+            "concept": "observation-inference",
+            "prompt": "Write one observation and one inference for a cliff with horizontal layers and a detached block below it.",
+            "rubric": [
+              "Observation is limited to visible geometry, color, position, or measurement.",
+              "Inference proposes a process or history such as erosion or rockfall.",
+              "The inference is framed as testable rather than certain."
+            ],
+            "hint": "Start the observation with 'I can see...' and the inference with 'This may indicate...'.",
+            "explanation": "Clean separation makes the interpretation testable and reveals what additional evidence is needed.",
+            "source": "Original practice derived from Lecture 1b s9"
+          }
+        ]
+      },
+      {
+        "id": "hazards-resources",
+        "number": 3,
+        "title": "Hazards, Resources, and Settlement",
+        "kicker": "Geology controls choices",
+        "description": "Read a landscape as a set of interacting risks, resources, and constraints.",
+        "source": "Lecture 1b s5-7",
+        "emphasis": "Taught in class",
+        "concepts": [
+          {
+            "id": "hazard-siting",
+            "label": "Hazard-aware siting"
+          },
+          {
+            "id": "resource-distribution",
+            "label": "Resource distribution"
+          }
+        ],
+        "activities": [
+          {
+            "id": "m3-lesson",
+            "type": "lesson",
+            "title": "A feature can be both useful and dangerous",
+            "source": "Lecture 1b s5-7",
+            "body": [
+              "Volcanoes, faults, steep slopes, streams, and soil influence settlement and infrastructure.",
+              "A stream can supply water and nutrients while also creating flood hazard. Resource locations reflect rock age and geologic history rather than random placement."
+            ],
+            "keyPoints": [
+              "Risk depends on where people and structures sit relative to the hazard.",
+              "Resource patterns can preserve atmospheric and tectonic history."
+            ]
+          },
+          {
+            "id": "m3-hazard-map",
+            "type": "hazard",
+            "concept": "hazard-siting",
+            "prompt": "Choose the strongest preliminary settlement zone on the original hazard schematic.",
+            "choices": [
+              "Zone A - volcanic flank",
+              "Zone B - stable upland away from mapped hazards",
+              "Zone C - active floodplain",
+              "Zone D - fault beside a steep slope"
+            ],
+            "answer": 1,
+            "hint": "Avoid the active channel, fault, steep slope, and volcanic flank while retaining access to water.",
+            "explanation": "Zone B is the strongest preliminary choice because it is separated from the mapped fault, floodplain, steep slope, and volcanic flank. A real siting decision would still require field and subsurface data.",
+            "source": "Original schematic derived from Lecture 1b s5"
+          },
+          {
+            "id": "m3-streams",
+            "type": "multi",
+            "concept": "hazard-siting",
+            "prompt": "Which consequences are linked to streams in the lecture? Select all that apply.",
+            "choices": [
+              "Flood hazard",
+              "Water supply",
+              "Soil nutrients",
+              "Elimination of all slope hazards"
+            ],
+            "answer": [
+              0,
+              1,
+              2
+            ],
+            "hint": "The same feature can provide resources and create risk.",
+            "explanation": "Streams can flood, supply water, and transport nutrients. They do not eliminate hazards elsewhere in a landscape.",
+            "source": "Lecture 1b s5"
+          },
+          {
+            "id": "m3-resources",
+            "type": "single",
+            "concept": "resource-distribution",
+            "prompt": "What is the strongest conclusion supported by the lecture's iron-versus-copper example?",
+            "choices": [
+              "Mine locations are random once enough deposits are mapped.",
+              "Iron and copper must form at the same time.",
+              "Resource distributions can reflect rock age, atmospheric change, and mountain-building history.",
+              "Every old rock contains an economic iron deposit."
+            ],
+            "answer": 2,
+            "hint": "Connect location and age to the geologic process recorded by the rocks.",
+            "explanation": "The verified slide text links old iron deposits to early atmospheric change and younger western copper deposits to mountain building. It does not support universal or random claims.",
+            "source": "Lecture 1b s7; map visual unavailable, claim text verified"
+          },
+          {
+            "id": "m3-resource-teach",
+            "type": "teachback",
+            "concept": "resource-distribution",
+            "prompt": "Explain why a mineral-resource map is evidence of geologic history rather than merely a list of mine locations.",
+            "rubric": [
+              "Connects mine location to rock age or geologic setting.",
+              "Names atmospheric change or mountain building as an example.",
+              "Avoids claiming that location alone proves a single cause."
+            ],
+            "hint": "Use the chain location -> rock age/setting -> geologic process.",
+            "explanation": "Spatial patterns become geologic evidence when they are tied to dated rocks and a process capable of producing the deposit.",
+            "source": "Lecture 1b s7; map visual unavailable, claim text verified"
+          },
+          {
+            "id": "m3-ilea-teach",
+            "type": "teachback",
+            "concept": "hazard-siting",
+            "prompt": "Use the ILEA cycle to explain how new flood data could change your settlement choice.",
+            "rubric": [
+              "States an initial prediction or zone choice.",
+              "Uses flood evidence to justify a revision.",
+              "Keeps other hazards and resources in the updated reasoning."
+            ],
+            "hint": "Do not jump from new data straight to an unsupported conclusion.",
+            "explanation": "A strong revision preserves the full landscape model while changing the parts contradicted by new evidence.",
+            "source": "Original practice derived from Lecture 1a s18 and Lecture 1b s5"
+          }
+        ]
+      },
+      {
+        "id": "geologic-evidence",
+        "number": 4,
+        "title": "Read Evidence Across Time",
+        "kicker": "Coasts, cliffs, ice, life",
+        "description": "Use present patterns to constrain past environments without turning a figure into proof of one cause.",
+        "source": "Lecture 1b s8-11",
+        "emphasis": "Taught in class",
+        "concepts": [
+          {
+            "id": "geologic-evidence",
+            "label": "Geologic evidence"
+          }
+        ],
+        "activities": [
+          {
+            "id": "m4-lesson",
+            "type": "lesson",
+            "title": "Representations carry different kinds of evidence",
+            "source": "Lecture 1b s8-11",
+            "body": [
+              "The present shoreline is not the edge of the continent; the continental shelf continues offshore.",
+              "A comparison of ice extent is evidence of change, but it does not identify a single cause by itself. An artistic reconstruction is not the same as a fossil or trace."
+            ],
+            "keyPoints": [
+              "Describe the pattern first.",
+              "State what the evidence constrains and what remains uncertain."
+            ]
+          },
+          {
+            "id": "m4-shelf",
+            "type": "single",
+            "concept": "geologic-evidence",
+            "prompt": "Why is the current shoreline not necessarily the edge of a continent?",
+            "choices": [
+              "Continents end only at mountain ranges.",
+              "The continental shelf extends beneath shallow water to its outer edge.",
+              "Shorelines never change position.",
+              "Oceanic crust is exposed on every beach."
+            ],
+            "answer": 1,
+            "hint": "Separate the land-water boundary from the crustal boundary.",
+            "explanation": "The shoreline marks today's land-water boundary. The outer edge of the shallow continental shelf marks the continent's edge in the lecture figure.",
+            "source": "Lecture 1b s8"
+          },
+          {
+            "id": "m4-fossils",
+            "type": "multi",
+            "concept": "geologic-evidence",
+            "prompt": "Which findings could support a reconstruction of ancient animal life? Select all that apply.",
+            "choices": [
+              "Bones or teeth",
+              "Tracks or burrows",
+              "Coprolites or other traces",
+              "An artist's preference for color"
+            ],
+            "answer": [
+              0,
+              1,
+              2
+            ],
+            "hint": "Choose preserved physical evidence rather than choices made by the illustrator.",
+            "explanation": "Body fossils and trace fossils constrain ancient organisms and behavior. Artistic choices are not Jurassic evidence.",
+            "source": "Lecture 1b s11; examples clarified in the Lecture 1 study guide"
+          },
+          {
+            "id": "m4-climate",
+            "type": "single",
+            "concept": "geologic-evidence",
+            "prompt": "What does the 28,000-years-ago versus present ice comparison directly establish?",
+            "choices": [
+              "The extent of glaciers and ice sheets changed.",
+              "One specific cause produced all of the change.",
+              "Continents occupied identical positions throughout Earth history.",
+              "No additional climate evidence is needed."
+            ],
+            "answer": 0,
+            "hint": "Choose the pattern visible in the comparison, not a cause that the figure alone cannot prove.",
+            "explanation": "The comparison documents a major change in ice extent. Identifying causes requires additional evidence and testing.",
+            "source": "Lecture 1b s10"
+          },
+          {
+            "id": "m4-seafloor",
+            "type": "sort",
+            "concept": "geologic-evidence",
+            "prompt": "Classify what the Australia figure shows versus what it suggests.",
+            "groups": [
+              "Shown directly",
+              "Interpretation to test"
+            ],
+            "items": [
+              {
+                "text": "A shallow shelf surrounds much of the land.",
+                "group": "Shown directly"
+              },
+              {
+                "text": "The brown-blue boundary is the current shoreline.",
+                "group": "Shown directly"
+              },
+              {
+                "text": "Different seafloor complexity records different histories.",
+                "group": "Interpretation to test"
+              },
+              {
+                "text": "Every complex seafloor feature formed in one event.",
+                "group": "Interpretation to test"
+              }
+            ],
+            "hint": "Visible boundaries and relief are observations; histories are interpretations.",
+            "explanation": "The figure shows shelf geometry and seafloor relief. Geologic history is inferred from those patterns and must be tested with additional data.",
+            "source": "Original practice derived from Lecture 1b s8"
+          },
+          {
+            "id": "m4-teach",
+            "type": "teachback",
+            "concept": "geologic-evidence",
+            "prompt": "Explain why a reconstruction can be scientifically useful without being direct evidence.",
+            "rubric": [
+              "Identifies the reconstruction as a model or interpretation.",
+              "Names physical evidence that can support or challenge it.",
+              "Acknowledges uncertainty rather than treating the image as proof."
+            ],
+            "hint": "A useful model organizes evidence and makes claims that can be checked.",
+            "explanation": "Reconstructions are valuable when they synthesize evidence transparently and remain revisable.",
+            "source": "Lecture 1b s11"
+          }
+        ]
+      },
+      {
+        "id": "earth-layers",
+        "number": 5,
+        "title": "Two Ways to Divide Earth",
+        "kicker": "Composition vs. behavior",
+        "description": "Label Earth's compositional layers without confusing them with the mechanical layers.",
+        "source": "Lecture 1b s12-14",
+        "emphasis": "Taught in class",
+        "concepts": [
+          {
+            "id": "compositional-layers",
+            "label": "Compositional layers"
+          },
+          {
+            "id": "mechanical-layers",
+            "label": "Mechanical layers"
+          }
+        ],
+        "activities": [
+          {
+            "id": "m5-lesson",
+            "type": "lesson",
+            "title": "The classifications overlap",
+            "source": "Lecture 1b s12-14",
+            "body": [
+              "By composition, Earth has crust, mantle, and an iron-nickel core. The core includes a molten outer part and solid inner part.",
+              "By mechanical behavior, the strong lithosphere includes crust plus uppermost mantle. The asthenosphere below it is hot, weak, and mostly solid."
+            ],
+            "keyPoints": [
+              "Lithosphere is not a synonym for crust.",
+              "Asthenosphere is weak, not a global ocean of liquid magma."
+            ]
+          },
+          {
+            "id": "m5-label",
+            "type": "label",
+            "concept": "compositional-layers",
+            "prompt": "Place the three compositional labels on the original Earth cross-section.",
+            "labels": [
+              "Crust",
+              "Mantle",
+              "Core"
+            ],
+            "zones": [
+              {
+                "id": "crust",
+                "answer": "Crust"
+              },
+              {
+                "id": "mantle",
+                "answer": "Mantle"
+              },
+              {
+                "id": "core",
+                "answer": "Core"
+              }
+            ],
+            "hint": "The thinnest outer shell is crust; the mantle is the thickest layer; the core is deepest.",
+            "explanation": "Crust, mantle, and core are compositional divisions. Continental and oceanic crust are both parts of the outer compositional layer.",
+            "source": "Original diagram derived from Lecture 1b s12"
+          },
+          {
+            "id": "m5-comp-match",
+            "type": "match",
+            "concept": "compositional-layers",
+            "prompt": "Match each compositional layer to its defining lecture fact.",
+            "rows": [
+              {
+                "label": "Crust",
+                "answer": "Continental and oceanic types"
+              },
+              {
+                "label": "Mantle",
+                "answer": "Thickest compositional layer"
+              },
+              {
+                "label": "Core",
+                "answer": "Iron-nickel; outer molten and inner solid"
+              }
+            ],
+            "options": [
+              "Continental and oceanic types",
+              "Thickest compositional layer",
+              "Iron-nickel; outer molten and inner solid"
+            ],
+            "hint": "Use composition and position, not strength.",
+            "explanation": "These are material-based divisions. Strength belongs to the mechanical classification.",
+            "source": "Lecture 1b s12-13"
+          },
+          {
+            "id": "m5-lithosphere",
+            "type": "single",
+            "concept": "mechanical-layers",
+            "prompt": "Which description of the lithosphere is correct?",
+            "choices": [
+              "Only continental crust",
+              "All of the mantle",
+              "Strong crust plus the uppermost mantle",
+              "The molten outer core"
+            ],
+            "answer": 2,
+            "hint": "The mechanical boundary crosses the crust-mantle compositional boundary.",
+            "explanation": "The lithosphere is a strong mechanical layer that contains the crust and uppermost mantle.",
+            "source": "Lecture 1b s14"
+          },
+          {
+            "id": "m5-asthenosphere",
+            "type": "single",
+            "concept": "mechanical-layers",
+            "prompt": "Which statement best matches the lecture's asthenosphere?",
+            "choices": [
+              "Cold, rigid, and completely liquid",
+              "Hot, weak, and mostly solid",
+              "Identical to oceanic crust",
+              "Made only of molten iron"
+            ],
+            "answer": 1,
+            "hint": "Weak does not mean completely liquid.",
+            "explanation": "The deck explicitly describes the asthenosphere as hot and weak but mostly solid.",
+            "source": "Lecture 1b s14"
+          },
+          {
+            "id": "m5-teach",
+            "type": "teachback",
+            "concept": "mechanical-layers",
+            "prompt": "Explain why a diagram can place mantle material inside both the lithosphere and asthenosphere.",
+            "rubric": [
+              "Distinguishes composition from mechanical behavior.",
+              "States that uppermost mantle can be strong and lithospheric.",
+              "States that deeper mantle material can be weak and asthenospheric."
+            ],
+            "hint": "The same compositional material can behave differently at different depths.",
+            "explanation": "The classifications answer different questions: what the material is versus how it behaves.",
+            "source": "Lecture 1b s12 and s14"
+          }
+        ]
+      },
+      {
+        "id": "isostasy",
+        "number": 6,
+        "title": "Make Isostasy Move",
+        "kicker": "Thickness up, density down",
+        "description": "Manipulate a floating-block model and predict how crustal thickness and density affect elevation.",
+        "source": "Lecture 1b s15-16",
+        "emphasis": "Taught in class",
+        "concepts": [
+          {
+            "id": "isostasy",
+            "label": "Isostasy"
+          }
+        ],
+        "activities": [
+          {
+            "id": "m6-lesson",
+            "type": "lesson",
+            "title": "Elevation reflects both thickness and density",
+            "source": "Lecture 1b s15-16",
+            "body": [
+              "The floating-block analogy gives two rules: thick blocks ride higher than thin blocks, and denser blocks ride lower than less-dense blocks.",
+              "Continental crust is generally higher than oceanic crust, and high mountain regions may have deep crustal roots."
+            ],
+            "keyPoints": [
+              "Increasing thickness raises the exposed height.",
+              "Increasing density lowers the exposed height."
+            ]
+          },
+          {
+            "id": "m6-simulator",
+            "type": "isostasy",
+            "concept": "isostasy",
+            "prompt": "Use the sliders, then choose the block expected to ride highest.",
+            "choices": [
+              "Thick and relatively low-density",
+              "Thin and relatively low-density",
+              "Thick and relatively high-density",
+              "Thin and relatively high-density"
+            ],
+            "answer": 0,
+            "hint": "Both greater thickness and lower density favor greater exposed height.",
+            "explanation": "The thick, low-density block combines both elevation-raising effects in the lecture analogy.",
+            "source": "Original interactive model derived from Lecture 1b s15-16"
+          },
+          {
+            "id": "m6-scenario",
+            "type": "single",
+            "concept": "isostasy",
+            "prompt": "Two blocks have equal thickness. Block X is denser than Block Y. Which prediction follows?",
+            "choices": [
+              "X rides higher",
+              "Y rides higher",
+              "Both must ride at the same height",
+              "Thickness reverses density"
+            ],
+            "answer": 1,
+            "hint": "Hold thickness constant and vary only density.",
+            "explanation": "When thickness is equal, the less-dense block rides higher in the floating-block analogy.",
+            "source": "Original practice derived from Lecture 1b s16"
+          },
+          {
+            "id": "m6-teach",
+            "type": "teachback",
+            "concept": "isostasy",
+            "prompt": "Explain why a mountain belt may have a deep crustal root rather than being only material piled on top.",
+            "rubric": [
+              "Connects high elevation with thick crust.",
+              "Uses the floating or isostatic relationship.",
+              "Avoids claiming density is irrelevant."
+            ],
+            "hint": "Think of how much of a thick floating block lies below the waterline.",
+            "explanation": "A thick crustal block can extend downward into the mantle while also supporting higher topography.",
+            "source": "Lecture 1b s15-16; Lecture 1 study guide"
+          }
+        ]
+      },
+      {
+        "id": "drivers-atmosphere",
+        "number": 7,
+        "title": "Trace Forces, Energy, and Water",
+        "kicker": "Inside, outside, atmosphere",
+        "description": "Classify Earth-system drivers and follow causal chains through the atmosphere and surface.",
+        "source": "Lecture 1b s17-18",
+        "emphasis": "Taught in class",
+        "concepts": [
+          {
+            "id": "earth-drivers",
+            "label": "Earth-system drivers"
+          },
+          {
+            "id": "atmosphere",
+            "label": "Atmospheric effects"
+          }
+        ],
+        "activities": [
+          {
+            "id": "m7-lesson",
+            "type": "lesson",
+            "title": "Memorize arrows, not a flat list",
+            "source": "Lecture 1b s17-18",
+            "body": [
+              "External or surface-linked drivers include solar energy, atmospheric pressure, wind, ocean currents, and gravity acting at the surface.",
+              "Internal drivers include radioactive decay, heat transfer, and forces within Earth. The atmosphere moves water and energy while blocking some incoming and outgoing radiation."
+            ],
+            "keyPoints": [
+              "Driver -> transfer -> material response.",
+              "The atmosphere mediates both the water cycle and energy balance."
+            ]
+          },
+          {
+            "id": "m7-sort",
+            "type": "sort",
+            "concept": "earth-drivers",
+            "prompt": "Classify each driver using the lecture's inside-versus-outside framing.",
+            "groups": [
+              "External or surface-linked",
+              "Internal"
+            ],
+            "items": [
+              {
+                "text": "Sun's energy",
+                "group": "External or surface-linked"
+              },
+              {
+                "text": "Wind and ocean currents",
+                "group": "External or surface-linked"
+              },
+              {
+                "text": "Radioactive decay",
+                "group": "Internal"
+              },
+              {
+                "text": "Heat transfer from Earth's interior",
+                "group": "Internal"
+              },
+              {
+                "text": "Atmospheric pressure",
+                "group": "External or surface-linked"
+              },
+              {
+                "text": "Forces within Earth",
+                "group": "Internal"
+              }
+            ],
+            "hint": "Ask whether the energy or force originates inside Earth or acts mainly at the surface.",
+            "explanation": "The classification is a starting point; many processes interact across the boundary.",
+            "source": "Lecture 1b s17"
+          },
+          {
+            "id": "m7-driver-chain",
+            "type": "single",
+            "concept": "earth-drivers",
+            "prompt": "Which chain begins with an internal driver?",
+            "choices": [
+              "Solar energy -> evaporation -> precipitation",
+              "Radioactive decay -> internal heat -> movement of Earth materials",
+              "Wind -> waves -> coastal erosion",
+              "Atmospheric pressure -> moving air"
+            ],
+            "answer": 1,
+            "hint": "Look for the energy source located within Earth.",
+            "explanation": "Radioactive decay contributes internal heat. The other chains begin with surface-linked or atmospheric drivers.",
+            "source": "Original practice derived from Lecture 1b s17"
+          },
+          {
+            "id": "m7-atmosphere",
+            "type": "multi",
+            "concept": "atmosphere",
+            "prompt": "Which atmospheric effects appear in the lecture figure? Select all that apply.",
+            "choices": [
+              "Stores water vapor, droplets, and ice crystals",
+              "Produces precipitation and wind",
+              "Blocks some light, UV, and infrared energy",
+              "Stops all solar energy from reaching Earth"
+            ],
+            "answer": [
+              0,
+              1,
+              2
+            ],
+            "hint": "The atmosphere modifies energy flow; it does not eliminate it.",
+            "explanation": "The figure links the atmosphere to water storage, precipitation, wind, and selective blocking of radiation.",
+            "source": "Lecture 1b s18"
+          },
+          {
+            "id": "m7-teach",
+            "type": "teachback",
+            "concept": "atmosphere",
+            "prompt": "Trace one complete water-and-energy pathway from the Sun to precipitation.",
+            "rubric": [
+              "Begins with solar energy absorbed by land or water.",
+              "Includes evaporation and atmospheric water.",
+              "Ends with condensation/precipitation or another explicit return pathway."
+            ],
+            "hint": "Use arrows: solar energy -> surface heating -> evaporation -> atmospheric water -> precipitation.",
+            "explanation": "Causal tracing turns the lecture figure into a working Earth-system model.",
+            "source": "Lecture 1b s18"
+          }
+        ]
+      },
+      {
+        "id": "rocks-spheres-scale",
+        "number": 8,
+        "title": "Rocks, Spheres, and Scale",
+        "kicker": "Core + continuation",
+        "description": "Distinguish surface and magma-formed rocks, then preview the continuation material without overstating classroom emphasis.",
+        "source": "Lecture 1b s19-31",
+        "emphasis": "Slides 24-31: class emphasis unconfirmed",
+        "continuation": true,
+        "concepts": [
+          {
+            "id": "rock-forming",
+            "label": "Rock-forming logic"
+          },
+          {
+            "id": "continuation-context",
+            "label": "Continuation concepts"
+          },
+          {
+            "id": "earth-context",
+            "label": "Spheres and scale"
+          }
+        ],
+        "activities": [
+          {
+            "id": "m8-lesson",
+            "type": "lesson",
+            "title": "Master the stopping point; preview what follows",
+            "source": "Lecture 1b s19-31; speaker note on s23",
+            "status": "continuation",
+            "body": [
+              "Sedimentary rocks form in ordinary surface environments. Igneous rock is defined by solidification of magma; slide 23 is the recorded classroom stopping point.",
+              "Slides 24-31 continue into metamorphic and hydrothermal rocks, the rock cycle, Earth's four spheres, and solar-system scale. Those ideas are represented in the deck but not assigned equal classroom emphasis here."
+            ],
+            "keyPoints": [
+              "Sedimentary: surface environments.",
+              "Igneous: solidification of magma.",
+              "Continuation material stays visibly marked."
+            ]
+          },
+          {
+            "id": "m8-sedimentary",
+            "type": "multi",
+            "concept": "rock-forming",
+            "prompt": "Which settings are associated with sedimentary rocks in the lecture? Select all that apply.",
+            "choices": [
+              "Rivers",
+              "Glaciers",
+              "Beaches and offshore settings",
+              "Only molten magma chambers"
+            ],
+            "answer": [
+              0,
+              1,
+              2
+            ],
+            "hint": "The lecture groups many ordinary surface environments together.",
+            "explanation": "Rivers, glaciers, lakes, mountain fronts, dunes, beaches, and offshore settings are presented as sedimentary environments.",
+            "source": "Lecture 1b s19-22"
+          },
+          {
+            "id": "m8-igneous",
+            "type": "single",
+            "concept": "rock-forming",
+            "prompt": "What single process defines igneous-rock formation in this lecture?",
+            "choices": [
+              "Burial of sediment",
+              "Solidification of magma",
+              "Precipitation from hot water",
+              "Increased temperature and pressure"
+            ],
+            "answer": 1,
+            "hint": "The process can occur at depth or after eruption.",
+            "explanation": "Igneous rock forms when magma solidifies, including volcanic and intrusive settings.",
+            "source": "Lecture 1b s23; recorded classroom stopping point"
+          },
+          {
+            "id": "m8-rock-match",
+            "type": "match",
+            "concept": "continuation-context",
+            "prompt": "Match each rock family to its defining formation logic.",
+            "status": "continuation",
+            "rows": [
+              {
+                "label": "Sedimentary",
+                "answer": "Forms in normal surface environments"
+              },
+              {
+                "label": "Igneous",
+                "answer": "Solidification of magma"
+              },
+              {
+                "label": "Metamorphic",
+                "answer": "Changed by heat and pressure"
+              },
+              {
+                "label": "Hydrothermal",
+                "answer": "Precipitation from hot water"
+              }
+            ],
+            "options": [
+              "Forms in normal surface environments",
+              "Solidification of magma",
+              "Changed by heat and pressure",
+              "Precipitation from hot water"
+            ],
+            "hint": "Use the process, not the rock's appearance.",
+            "explanation": "The later two families appear after the recorded stop and therefore remain marked as continuation content.",
+            "source": "Lecture 1b s19, s23, s26-28; s24-31 continuation"
+          },
+          {
+            "id": "m8-cycle",
+            "type": "single",
+            "concept": "continuation-context",
+            "status": "continuation",
+            "prompt": "Which statement best describes the rock-cycle figure?",
+            "choices": [
+              "Every rock begins as sedimentary rock.",
+              "A rock can enter different linked processes; the cycle has no single required starting point.",
+              "Uplift and burial are identical processes.",
+              "Melting directly produces sedimentary rock."
+            ],
+            "answer": 1,
+            "hint": "A cycle has linked pathways rather than one privileged beginning.",
+            "explanation": "Weathering, transport, deposition, burial, metamorphism, melting, solidification, and uplift connect in multiple pathways.",
+            "source": "Lecture 1b s29; deck continuation"
+          },
+          {
+            "id": "m8-spheres",
+            "type": "single",
+            "concept": "earth-context",
+            "status": "continuation",
+            "prompt": "Which set matches the four spheres named in the lecture?",
+            "choices": [
+              "Atmosphere, hydrosphere, biosphere, lithosphere",
+              "Crust, mantle, outer core, inner core",
+              "Troposphere, stratosphere, mantle, core",
+              "Oceanic crust, continental crust, magma, sediment"
+            ],
+            "answer": 0,
+            "hint": "The spheres group air, water, life, and the strong rocky exterior.",
+            "explanation": "The deck names atmosphere, hydrosphere, biosphere, and lithosphere.",
+            "source": "Lecture 1b s30; deck continuation"
+          },
+          {
+            "id": "m8-scale",
+            "type": "single",
+            "concept": "earth-context",
+            "status": "continuation",
+            "prompt": "Why should the solar-system figure not be read literally for size or spacing?",
+            "choices": [
+              "It omits Earth.",
+              "It states that object size and proximity are not to scale.",
+              "Planetary orbits are perfectly square.",
+              "The Sun is smaller than Mercury."
+            ],
+            "answer": 1,
+            "hint": "Read the explicit warning at the bottom of the figure.",
+            "explanation": "The diagram organizes the objects but deliberately distorts their relative size and proximity.",
+            "source": "Lecture 1b s31; deck continuation"
+          },
+          {
+            "id": "m8-teach",
+            "type": "teachback",
+            "concept": "continuation-context",
+            "status": "continuation",
+            "prompt": "Explain how a rock could move from exposure at the surface to metamorphism and then become igneous rock.",
+            "rubric": [
+              "Includes weathering/transport/deposition and burial or another defensible path inward.",
+              "Includes heat and pressure for metamorphism.",
+              "Includes melting followed by solidification for igneous rock."
+            ],
+            "hint": "Build a process chain; do not simply list rock names.",
+            "explanation": "Rock-cycle reasoning follows transformations: burial and deformation can produce metamorphism; melting and later solidification produce igneous rock.",
+            "source": "Lecture 1b s29; deck continuation"
+          }
+        ]
+      },
+      {
+        "id": "ch2-observe-represent",
+        "number": 9,
+        "title": "Observe, Represent, Then Infer",
+        "kicker": "Chapter 2 · Evidence discipline",
+        "description": "Extract visible features from outcrops and representations before proposing processes or histories.",
+        "source": "Lecture 2 s2–8",
+        "emphasis": "Current Fall 2026 lecture",
+        "concepts": [
+          {
+            "id": "ch2-observation-coding",
+            "label": "Observation coding"
+          },
+          {
+            "id": "ch2-deposit-comparison",
+            "label": "Modern-deposit comparison"
+          }
+        ],
+        "activities": [
+          {
+            "id": "ch2-m9-lesson",
+            "type": "lesson",
+            "title": "Look before the story",
+            "source": "Lecture 2 s2–8",
+            "body": [
+              "Record colors, layers, contacts, fractures, ledges, loose material, bedrock, and rounded versus angular corners before naming a cause.",
+              "A photograph, map, sketch, cross section, or model is a representation: it selects information rather than reproducing all of reality."
+            ],
+            "keyPoints": [
+              "Observation is directly visible or measurable.",
+              "Inference is a proposed process, history, or relationship.",
+              "A useful sketch preserves the relationships needed to test an explanation."
+            ]
+          },
+          {
+            "id": "ch2-m9-observe-sort",
+            "type": "sort",
+            "concept": "ch2-observation-coding",
+            "prompt": "Classify each statement about an outcrop.",
+            "groups": [
+              "Observation",
+              "Inference"
+            ],
+            "items": [
+              {
+                "text": "Three reddish layers form ledges.",
+                "group": "Observation"
+              },
+              {
+                "text": "Vertical fractures cut the pale unit.",
+                "group": "Observation"
+              },
+              {
+                "text": "Water enlarged the fractures.",
+                "group": "Inference"
+              },
+              {
+                "text": "The lower unit eroded more rapidly.",
+                "group": "Inference"
+              }
+            ],
+            "hint": "Could a camera or ruler record it directly?",
+            "explanation": "Colors, layers, ledges, and fractures are visible. Causes and histories require tests.",
+            "source": "Original practice derived from Lecture 2 s2–4"
+          },
+          {
+            "id": "ch2-m9-observe-fill",
+            "type": "fillblank",
+            "concept": "ch2-observation-coding",
+            "prompt": "A direct visible or measurable feature is an ____.",
+            "answers": [
+              "observation"
+            ],
+            "hint": "It comes before explanation.",
+            "explanation": "Observation names what is present without smuggling in a cause.",
+            "source": "Lecture 2 s2–4"
+          },
+          {
+            "id": "ch2-m9-deposit-match",
+            "type": "match",
+            "concept": "ch2-deposit-comparison",
+            "prompt": "Match the visible clue to the strongest initial interpretation.",
+            "rows": [
+              {
+                "label": "Rounded clasts",
+                "answer": "Transport and abrasion"
+              },
+              {
+                "label": "Angular clasts",
+                "answer": "Limited transport or nearby breakage"
+              },
+              {
+                "label": "Cemented clasts",
+                "answer": "Burial and lithification"
+              },
+              {
+                "label": "Mixed clast sizes",
+                "answer": "Variable transport energy"
+              }
+            ],
+            "options": [
+              "Transport and abrasion",
+              "Limited transport or nearby breakage",
+              "Burial and lithification",
+              "Variable transport energy"
+            ],
+            "hint": "Compare edge shape, sorting, and whether the material is loose or rock.",
+            "explanation": "Modern deposits help interpret rock only when the inference is anchored to matching observable texture.",
+            "source": "Lecture 2 s5–8"
+          },
+          {
+            "id": "ch2-m9-deposit-teach",
+            "type": "teachback",
+            "concept": "ch2-deposit-comparison",
+            "prompt": "Explain why rounded pebbles in rock support transport but do not by themselves prove one exact environment.",
+            "rubric": [
+              "Links rounding to collision and abrasion.",
+              "Names transport as the supported process.",
+              "States that other evidence is needed to identify the exact environment."
+            ],
+            "hint": "Separate the process clue from the final setting.",
+            "explanation": "Rounding supports transport and abrasion; grain size, sorting, structures, fossils, and context narrow the setting.",
+            "source": "Lecture 2 s5–8"
+          }
+        ]
+      },
+      {
+        "id": "ch2-relative-time",
+        "number": 10,
+        "title": "Relative Time and Event Order",
+        "kicker": "Chapter 2 · Reconstruct history",
+        "description": "Sequence landscapes, layers, faults, clasts, and intrusions using explicit relative-dating principles.",
+        "source": "Lecture 2 s9–14",
+        "emphasis": "Current Fall 2026 lecture",
+        "concepts": [
+          {
+            "id": "ch2-landscape-evolution",
+            "label": "Landscape evolution"
+          },
+          {
+            "id": "ch2-relative-dating",
+            "label": "Relative dating"
+          }
+        ],
+        "activities": [
+          {
+            "id": "ch2-m10-lesson",
+            "type": "lesson",
+            "title": "Order without a numerical date",
+            "source": "Lecture 2 s9–14",
+            "body": [
+              "Mesa → butte → knobs models progressive erosion of a resistant, layered remnant.",
+              "Superposition, cross-cutting, inclusions, and contact effects provide independent rules for placing units and events in order."
+            ],
+            "keyPoints": [
+              "Lower undeformed layers formed first.",
+              "A cutting feature is younger than what it cuts.",
+              "Clasts are older than their container.",
+              "Magma that bakes adjacent rock is younger than that rock."
+            ]
+          },
+          {
+            "id": "ch2-m10-landscape-order",
+            "type": "match",
+            "concept": "ch2-landscape-evolution",
+            "prompt": "Assign each erosional landform its stage.",
+            "rows": [
+              {
+                "label": "Mesa",
+                "answer": "1 · broad remnant"
+              },
+              {
+                "label": "Butte",
+                "answer": "2 · narrowed remnant"
+              },
+              {
+                "label": "Knobs",
+                "answer": "3 · small remnants"
+              }
+            ],
+            "options": [
+              "1 · broad remnant",
+              "2 · narrowed remnant",
+              "3 · small remnants"
+            ],
+            "hint": "Progressive erosion reduces the protected remnant.",
+            "explanation": "The lecture sequence is mesa → butte → knobs as slopes retreat and the cap-rock remnant narrows.",
+            "source": "Lecture 2 s9"
+          },
+          {
+            "id": "ch2-m10-landscape-sketch",
+            "type": "teachback",
+            "concept": "ch2-landscape-evolution",
+            "prompt": "On paper, sketch mesa → butte → knobs. Then describe the three labels that make your sketch explanatory.",
+            "rubric": [
+              "Shows three stages connected by arrows.",
+              "Labels resistant cap rock.",
+              "Labels retreating slopes and decreasing remnant width."
+            ],
+            "hint": "The exam asks for concept sketching, so make the process visible.",
+            "explanation": "A strong concept sketch shows change, direction, and the controlling resistant layer—not merely three silhouettes.",
+            "source": "Lecture 2 s9 · syllabus concept-sketch format"
+          },
+          {
+            "id": "ch2-m10-principles-match",
+            "type": "match",
+            "concept": "ch2-relative-dating",
+            "prompt": "Match each relationship to the principle that establishes it.",
+            "rows": [
+              {
+                "label": "Lower layer is older in an undeformed sequence",
+                "answer": "Superposition"
+              },
+              {
+                "label": "Fault is younger than offset layers",
+                "answer": "Cross-cutting"
+              },
+              {
+                "label": "Granite clasts are older than conglomerate",
+                "answer": "Inclusions"
+              },
+              {
+                "label": "Intrusion is younger than baked country rock",
+                "answer": "Contact effects"
+              }
+            ],
+            "options": [
+              "Superposition",
+              "Cross-cutting",
+              "Inclusions",
+              "Contact effects"
+            ],
+            "hint": "Name the evidence rule, not just older or younger.",
+            "explanation": "Each principle establishes a different observable relationship. Strong answers state both order and proof.",
+            "source": "Lecture 2 s10–13"
+          },
+          {
+            "id": "ch2-m10-superposition-fill",
+            "type": "fillblank",
+            "concept": "ch2-relative-dating",
+            "prompt": "The rule that lower undeformed layers were deposited before upper layers is ____.",
+            "answers": [
+              "superposition",
+              "principle of superposition"
+            ],
+            "hint": "Think vertical position.",
+            "explanation": "Superposition orders deposited layers where later deformation has not overturned them.",
+            "source": "Lecture 2 s10"
+          },
+          {
+            "id": "ch2-m10-event-teach",
+            "type": "teachback",
+            "concept": "ch2-relative-dating",
+            "prompt": "Four layers are cut by a fault and later by an intrusion that bakes the fault zone. Reconstruct the order and justify each step.",
+            "rubric": [
+              "Places deposition of the four layers first using superposition.",
+              "Places the fault after the layers using cross-cutting.",
+              "Places the intrusion after the fault using cross-cutting/contact effects."
+            ],
+            "hint": "Every placement needs a named principle.",
+            "explanation": "The defensible sequence is layer deposition → faulting → intrusion, with superposition and cross-cutting/contact evidence as receipts.",
+            "source": "Original integrative practice derived from Lecture 2 s10–14"
+          }
+        ]
+      },
+      {
+        "id": "ch2-maps-subsurface",
+        "number": 11,
+        "title": "Maps, Relief, and the Subsurface",
+        "kicker": "Chapter 2 · Change viewpoints",
+        "description": "Choose the representation that answers the question, calculate relief, and translate surface patterns into subsurface geometry.",
+        "source": "Lecture 2 s15–21",
+        "emphasis": "Current Fall 2026 lecture",
+        "concepts": [
+          {
+            "id": "ch2-map-types",
+            "label": "Map types"
+          },
+          {
+            "id": "ch2-topography",
+            "label": "Elevation, relief, and slope"
+          },
+          {
+            "id": "ch2-subsurface-sequence",
+            "label": "Subsurface representations"
+          }
+        ],
+        "activities": [
+          {
+            "id": "ch2-m11-lesson",
+            "type": "lesson",
+            "title": "Every representation answers a different question",
+            "source": "Lecture 2 s15–21",
+            "body": [
+              "Topographic, shaded-relief, geologic, and satellite views emphasize different surface information.",
+              "Cross sections, block diagrams, and stratigraphic sections expose different aspects of the subsurface and event sequence."
+            ],
+            "keyPoints": [
+              "Elevation is height above sea level.",
+              "Relief is highest minus lowest elevation.",
+              "Closer contours generally indicate steeper slope.",
+              "A cross section is a vertical slice; a block diagram adds 3-D context; a stratigraphic section records unit order and thickness."
+            ]
+          },
+          {
+            "id": "ch2-m11-map-match",
+            "type": "match",
+            "concept": "ch2-map-types",
+            "prompt": "Match the representation to its primary information.",
+            "rows": [
+              {
+                "label": "Topographic map",
+                "answer": "Elevation contours"
+              },
+              {
+                "label": "Shaded-relief map",
+                "answer": "Terrain appearance from light and shadow"
+              },
+              {
+                "label": "Geologic map",
+                "answer": "Rock units, contacts, and faults"
+              },
+              {
+                "label": "Satellite image",
+                "answer": "Remotely sensed surface patterns"
+              }
+            ],
+            "options": [
+              "Elevation contours",
+              "Terrain appearance from light and shadow",
+              "Rock units, contacts, and faults",
+              "Remotely sensed surface patterns"
+            ],
+            "hint": "Ask what variable is encoded.",
+            "explanation": "The same place can look different because each representation selects a different evidence layer.",
+            "source": "Lecture 2 s15–18"
+          },
+          {
+            "id": "ch2-m11-map-choice",
+            "type": "single",
+            "concept": "ch2-map-types",
+            "prompt": "Which representation best shows the surface distribution and contacts of rock units?",
+            "choices": [
+              "Topographic map",
+              "Geologic map",
+              "Shaded-relief map",
+              "Satellite image"
+            ],
+            "answer": 1,
+            "hint": "Choose the map designed to encode rock bodies.",
+            "explanation": "A geologic map shows mapped rock units, ages, contacts, faults, and other surface geology.",
+            "source": "Lecture 2 s16–18"
+          },
+          {
+            "id": "ch2-m11-relief-single",
+            "type": "single",
+            "concept": "ch2-topography",
+            "prompt": "A map's highest point is 860 m and lowest point is 315 m. What is the relief?",
+            "choices": [
+              "545 m",
+              "1,175 m",
+              "2.73 m",
+              "545 m/km"
+            ],
+            "answer": 0,
+            "hint": "Relief = high elevation − low elevation.",
+            "explanation": "860 m − 315 m = 545 m. Relief is an elevation difference, not a slope unless horizontal distance is included.",
+            "source": "Original quantitative practice derived from Lecture 2 s19"
+          },
+          {
+            "id": "ch2-m11-relief-fill",
+            "type": "fillblank",
+            "concept": "ch2-topography",
+            "prompt": "The elevation difference between the highest and lowest points is ____.",
+            "answers": [
+              "relief"
+            ],
+            "hint": "It is not elevation or slope.",
+            "explanation": "Relief compares two elevations; slope compares elevation change with horizontal distance.",
+            "source": "Lecture 2 s19"
+          },
+          {
+            "id": "ch2-m11-subsurface-match",
+            "type": "match",
+            "concept": "ch2-subsurface-sequence",
+            "prompt": "Match each subsurface representation to its job.",
+            "rows": [
+              {
+                "label": "Cross section",
+                "answer": "Vertical slice through geology"
+              },
+              {
+                "label": "Block diagram",
+                "answer": "3-D surface and subsurface view"
+              },
+              {
+                "label": "Stratigraphic section",
+                "answer": "Ordered record of units and thicknesses"
+              }
+            ],
+            "options": [
+              "Vertical slice through geology",
+              "3-D surface and subsurface view",
+              "Ordered record of units and thicknesses"
+            ],
+            "hint": "Slice, 3-D block, or column.",
+            "explanation": "These views can represent the same geology while answering different geometric and historical questions.",
+            "source": "Lecture 2 s20"
+          },
+          {
+            "id": "ch2-m11-sequence-teach",
+            "type": "teachback",
+            "concept": "ch2-subsurface-sequence",
+            "prompt": "Explain how a block diagram and stratigraphic section together help reconstruct an event sequence.",
+            "rubric": [
+              "Uses the block diagram for geometry and cross-cutting relationships.",
+              "Uses the stratigraphic section for vertical unit order/thickness.",
+              "Connects both evidence types to an ordered history."
+            ],
+            "hint": "One preserves geometry; the other simplifies the vertical record.",
+            "explanation": "Combining views reduces ambiguity: the section orders units while the block diagram shows how deformation and erosion relate spatially.",
+            "source": "Lecture 2 s20–21"
+          }
+        ]
+      },
+      {
+        "id": "ch2-data-time-investigation",
+        "number": 12,
+        "title": "Data, Geologic Time, and Model Tests",
+        "kicker": "Chapter 2 · Ask what would discriminate",
+        "description": "Combine qualitative patterns with quantitative measurements, order geologic time, and use predictions to eliminate weak explanations.",
+        "source": "Lecture 2 s22–29",
+        "emphasis": "Current Fall 2026 lecture",
+        "concepts": [
+          {
+            "id": "ch2-data-types",
+            "label": "Qualitative and quantitative data"
+          },
+          {
+            "id": "ch2-geologic-time",
+            "label": "Geologic time divisions"
+          },
+          {
+            "id": "ch2-model-testing",
+            "label": "Prediction-driven investigation"
+          }
+        ],
+        "activities": [
+          {
+            "id": "ch2-m12-lesson",
+            "type": "lesson",
+            "title": "Descriptions find patterns; numbers constrain them",
+            "source": "Lecture 2 s22–29",
+            "body": [
+              "Qualitative data use words or sketches; quantitative data use numbers and units. Strong investigations combine both.",
+              "Models earn support by making distinct predictions. The best next observation is often the one that produces different expected results under competing explanations."
+            ],
+            "keyPoints": [
+              "Oldest broad division: Precambrian.",
+              "Paleozoic → Mesozoic → Cenozoic.",
+              "Observe → explain → predict → test → conclude or revise.",
+              "A failed prediction weakens the model even when the model initially seemed plausible."
+            ]
+          },
+          {
+            "id": "ch2-m12-data-sort",
+            "type": "sort",
+            "concept": "ch2-data-types",
+            "prompt": "Classify each crater observation.",
+            "groups": [
+              "Qualitative",
+              "Quantitative"
+            ],
+            "items": [
+              {
+                "text": "Angular blocks surround the rim.",
+                "group": "Qualitative"
+              },
+              {
+                "text": "The crater is 1.2 km wide.",
+                "group": "Quantitative"
+              },
+              {
+                "text": "Layers bend upward near the center.",
+                "group": "Qualitative"
+              },
+              {
+                "text": "The central uplift is 180 m high.",
+                "group": "Quantitative"
+              }
+            ],
+            "hint": "Numbers plus units mark quantitative data.",
+            "explanation": "Qualitative observations describe kind, pattern, or geometry; quantitative observations measure magnitude.",
+            "source": "Lecture 2 s22"
+          },
+          {
+            "id": "ch2-m12-data-teach",
+            "type": "teachback",
+            "concept": "ch2-data-types",
+            "prompt": "Give one qualitative and one quantitative observation that could test a crater-origin model.",
+            "rubric": [
+              "Includes a descriptive pattern or material.",
+              "Includes a number with a unit.",
+              "Explains how at least one observation bears on a model prediction."
+            ],
+            "hint": "A good pair might combine rock texture with a measured geometry.",
+            "explanation": "Integration matters: the pattern identifies what may matter, and the measurement compares its magnitude with predictions.",
+            "source": "Lecture 2 s22 and s26–29 · syllabus integrative QFR target"
+          },
+          {
+            "id": "ch2-m12-time-order",
+            "type": "match",
+            "concept": "ch2-geologic-time",
+            "prompt": "Assign each broad division its order from oldest to youngest.",
+            "rows": [
+              {
+                "label": "Precambrian",
+                "answer": "1"
+              },
+              {
+                "label": "Paleozoic",
+                "answer": "2"
+              },
+              {
+                "label": "Mesozoic",
+                "answer": "3"
+              },
+              {
+                "label": "Cenozoic",
+                "answer": "4"
+              }
+            ],
+            "options": [
+              "1",
+              "2",
+              "3",
+              "4"
+            ],
+            "hint": "Begin below the Cambrian boundary.",
+            "explanation": "The lecture figure orders Precambrian → Paleozoic → Mesozoic → Cenozoic.",
+            "source": "Lecture 2 s23–24"
+          },
+          {
+            "id": "ch2-m12-time-fill",
+            "type": "fillblank",
+            "concept": "ch2-geologic-time",
+            "prompt": "Triassic, Jurassic, and Cretaceous are periods of the ____ Era.",
+            "answers": [
+              "mesozoic",
+              "mesozoic era"
+            ],
+            "hint": "The era associated with dinosaurs lies between Paleozoic and Cenozoic.",
+            "explanation": "Triassic → Jurassic → Cretaceous are the three periods shown within the Mesozoic.",
+            "source": "Lecture 2 s24 embedded timescale"
+          },
+          {
+            "id": "ch2-m12-model-sequence",
+            "type": "match",
+            "concept": "ch2-model-testing",
+            "prompt": "Place each investigation move in order.",
+            "rows": [
+              {
+                "label": "Observe",
+                "answer": "1"
+              },
+              {
+                "label": "Propose competing explanations",
+                "answer": "2"
+              },
+              {
+                "label": "Generate distinct predictions",
+                "answer": "3"
+              },
+              {
+                "label": "Collect discriminating data",
+                "answer": "4"
+              },
+              {
+                "label": "Conclude or revise",
+                "answer": "5"
+              }
+            ],
+            "options": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5"
+            ],
+            "hint": "The evidence test comes after the predictions.",
+            "explanation": "Predictions make competing models vulnerable to evidence; a conclusion follows the discriminating test.",
+            "source": "Lecture 2 s25–29"
+          },
+          {
+            "id": "ch2-m12-gasoline-single",
+            "type": "single",
+            "concept": "ch2-model-testing",
+            "prompt": "Why was a buried gasoline tank rejected as the contamination source?",
+            "choices": [
+              "The tank was too old to inspect.",
+              "No leak was found and the gasoline did not match.",
+              "Groundwater cannot carry gasoline.",
+              "The first explanation must always be rejected."
+            ],
+            "answer": 1,
+            "hint": "Compare the model's predicted evidence with what was observed.",
+            "explanation": "The source model weakened because both the physical inspection and chemical comparison contradicted its predictions.",
+            "source": "Lecture 2 s25"
+          }
+        ]
+      },
+      {
+        "id": "ch2-crater-dome",
+        "number": 13,
+        "title": "Crater Models and Upheaval Dome",
+        "kicker": "Chapter 2 · Integrative capstone",
+        "description": "Use layer order, geometry, materials, and model-specific predictions to test volcanic, salt, and impact explanations.",
+        "source": "Lecture 2 s26–32",
+        "emphasis": "Current Fall 2026 lecture",
+        "concepts": [
+          {
+            "id": "ch2-competing-models",
+            "label": "Competing crater models"
+          },
+          {
+            "id": "ch2-upheaval-sequence",
+            "label": "Upheaval Dome sequence"
+          }
+        ],
+        "activities": [
+          {
+            "id": "ch2-m13-lesson",
+            "type": "lesson",
+            "title": "Do not memorize the picture—attack the predictions",
+            "source": "Lecture 2 s26–32",
+            "body": [
+              "A volcanic explosion, rising salt, and meteoroid impact can all begin as plausible crater models, but each predicts different materials and structures.",
+              "Upheaval Dome integrates map pattern, upward-bent layers, stratigraphic order, deformation, erosion, and model testing."
+            ],
+            "keyPoints": [
+              "Volcanic model: vent or volcanic deposits.",
+              "Salt model: salt body or salt-driven deformation at depth.",
+              "Impact model: shock features, impact melt, or meteoritic material.",
+              "Upward-bent layers are observations; the proposed cause is an inference."
+            ]
+          },
+          {
+            "id": "ch2-m13-model-match",
+            "type": "match",
+            "concept": "ch2-competing-models",
+            "prompt": "Match each model to its most discriminating predicted evidence.",
+            "rows": [
+              {
+                "label": "Volcanic explosion",
+                "answer": "Vent and volcanic deposits"
+              },
+              {
+                "label": "Rising salt",
+                "answer": "Salt body or salt deformation at depth"
+              },
+              {
+                "label": "Meteoroid impact",
+                "answer": "Shock features or impact melt"
+              }
+            ],
+            "options": [
+              "Vent and volcanic deposits",
+              "Salt body or salt deformation at depth",
+              "Shock features or impact melt"
+            ],
+            "hint": "Pick evidence that would not be expected equally under all three models.",
+            "explanation": "A discriminating prediction separates models; crater shape alone may fit more than one explanation.",
+            "source": "Lecture 2 s26–29"
+          },
+          {
+            "id": "ch2-m13-model-teach",
+            "type": "teachback",
+            "concept": "ch2-competing-models",
+            "prompt": "Sketch the three crater models on paper, then explain one field test that separates them.",
+            "rubric": [
+              "Shows volcanic, salt, and impact alternatives.",
+              "Names one distinct prediction under each.",
+              "Chooses a measurement, sample, map, or cross section that can discriminate."
+            ],
+            "hint": "A test must produce different expected outcomes among the models.",
+            "explanation": "The reasoning target is prediction and falsification, not recall of the lecture artwork.",
+            "source": "Lecture 2 s26–29 · syllabus exploration/concept-sketch format"
+          },
+          {
+            "id": "ch2-m13-sequence-match",
+            "type": "match",
+            "concept": "ch2-upheaval-sequence",
+            "prompt": "Order the Upheaval Dome events at the broadest defensible level.",
+            "rows": [
+              {
+                "label": "Deposition of Units G through A",
+                "answer": "1"
+              },
+              {
+                "label": "Dome-forming deformation",
+                "answer": "2"
+              },
+              {
+                "label": "Erosion exposes the structure",
+                "answer": "3"
+              },
+              {
+                "label": "Modern investigation tests causes",
+                "answer": "4"
+              }
+            ],
+            "options": [
+              "1",
+              "2",
+              "3",
+              "4"
+            ],
+            "hint": "The layers must exist before they bend and erode.",
+            "explanation": "Superposition orders G → A; deformation affects existing layers; erosion exposes them; investigation evaluates competing causes.",
+            "source": "Lecture 2 s30–32"
+          },
+          {
+            "id": "ch2-m13-observation-fill",
+            "type": "fillblank",
+            "concept": "ch2-upheaval-sequence",
+            "prompt": "Upward-bent layers are an observation; rising salt is an ____.",
+            "answers": [
+              "inference",
+              "interpretation",
+              "hypothesis"
+            ],
+            "hint": "It proposes a cause not directly visible at the surface.",
+            "explanation": "Geometry can be observed; the process that caused it must be inferred and tested.",
+            "source": "Lecture 2 s30–32"
+          },
+          {
+            "id": "ch2-m13-capstone-teach",
+            "type": "teachback",
+            "concept": "ch2-upheaval-sequence",
+            "prompt": "Build a complete evidence chain for Upheaval Dome: observation → sequence → competing causes → discriminating test.",
+            "rubric": [
+              "States at least two direct observations.",
+              "Orders deposition, deformation, and erosion with a principle.",
+              "Keeps volcanic, salt, and impact causes distinct.",
+              "Names evidence that could favor or eliminate a model."
+            ],
+            "hint": "This is the Chapter 2 exploration-question rehearsal.",
+            "explanation": "A complete answer moves from observable geometry through relative history to predictions that can be tested with new data.",
+            "source": "Lecture 2 s30–32 · syllabus integrative exploration target"
+          }
+        ]
+      }
+    ],
+    "GEOL_VISUALS": {
+      "method-ilea": {
+        "label": "Reasoning made visible",
+        "intro": "Use the two process maps below as working tools. Click each ILEA move to see what your professor expects that move to contribute.",
+        "interactive": "ilea-cycle",
+        "visuals": [
+          {
+            "title": "The complete ILEA cycle",
+            "src": "assets/visuals/slides/l1a/slide-18.png",
+            "alt": "Lecture slide showing the ILEA sequence Predict, Draw, Justify, Research, and Revise Understanding.",
+            "caption": "This is the actual cycle from Lecture 1a—not a summary of it. The arrow returns revision to the next prediction because the process is iterative.",
+            "notice": "Memorize both the order and the job of each move: prediction begins the model; drawing externalizes it; justification exposes the reasoning; research supplies evidence; revision changes understanding.",
+            "source": "Lecture 1a slide 18 · also selected into the completed Lecture 1 study guide"
+          },
+          {
+            "title": "Geologic research method",
+            "src": "assets/visuals/slides/l1b/slide-2.png",
+            "alt": "Lecture slide listing the geologic research method from observation through interpretation.",
+            "caption": "Evidence comes before explanation. Testing may force adjustment before a model or interpretation is built.",
+            "notice": "Do not collapse observation and description into interpretation. The adjust step sits after testing because evidence is allowed to change the hypothesis.",
+            "source": "Lecture 1b slide 2"
+          }
+        ]
+      },
+      "observation-inference": {
+        "label": "Look first. Explain second.",
+        "intro": "Geologic images are evidence containers. Practice separating what the image directly shows from the history you infer.",
+        "interactive": "observe-infer",
+        "visuals": [
+          {
+            "title": "North America and the ocean floor",
+            "src": "assets/visuals/slides/l1b/slide-3.png",
+            "alt": "Global relief view centered on North America and the adjacent ocean floor.",
+            "caption": "Begin with visible relief, boundaries, and patterns before proposing a tectonic explanation.",
+            "notice": "Observation: continents and seafloor show large differences in elevation and texture. Inference: a particular tectonic process produced those patterns.",
+            "source": "Lecture 1b slide 3"
+          },
+          {
+            "title": "What geology asks us to explain",
+            "src": "assets/visuals/slides/l1b/slide-4.png",
+            "alt": "Four geologic scenes including ice, folded strata, a volcano, and a wetland.",
+            "caption": "Four scenes can display four different processes, time scales, and evidence types.",
+            "notice": "Name visible materials, shapes, and relationships first. Glacier movement, folding, eruption history, and wetland development are interpretations supported by further evidence.",
+            "source": "Lecture 1b slide 4"
+          },
+          {
+            "title": "Layered cliff: evidence before story",
+            "src": "assets/visuals/atlas/layered-cliff.png",
+            "alt": "Photograph of a layered cliff with differently colored strata and blocks near the slope.",
+            "caption": "Use the raw photograph below for the Look → Describe → Infer exercise.",
+            "notice": "Look for layer color, thickness, continuity, slope, fractures, and detached blocks. Only then infer differential erosion or rockfall.",
+            "source": "Lecture 1b slide 9 · figure selected into the completed Lecture 1 study guide"
+          },
+          {
+            "title": "Climate evidence across time",
+            "src": "assets/visuals/slides/l1b/slide-10.png",
+            "alt": "Comparison of glacial conditions about 28,000 years ago with the present.",
+            "caption": "A reconstruction compares two times; it is not itself the original ancient landscape.",
+            "notice": "Separate mapped or reconstructed ice extent from the observations used to infer it. Ask what deposits, landforms, or dates would support the reconstruction.",
+            "source": "Lecture 1b slide 10"
+          },
+          {
+            "title": "Jurassic life reconstruction",
+            "src": "assets/visuals/slides/l1b/slide-11.png",
+            "alt": "Artistic reconstruction of dinosaurs in a Jurassic environment.",
+            "caption": "The scene is an interpretation. Fossils, tracks, burrows, bones, teeth, and sedimentary context are evidence.",
+            "notice": "An illustration can combine evidence into a testable scene, but it cannot prove that every depicted organism occupied the exact same place and moment.",
+            "source": "Lecture 1b slide 11"
+          }
+        ]
+      },
+      "hazards-resources": {
+        "label": "Read the whole landscape",
+        "intro": "Settlement and resource decisions require spatial reasoning: identify the feature, trace what it can do, and locate people relative to it.",
+        "interactive": "hazard-scan",
+        "visuals": [
+          {
+            "title": "Hazards, resources, and settlement",
+            "src": "assets/visuals/slides/l1b/slide-5.png",
+            "alt": "Annotated landscape showing volcano, landslide, steep slopes, fault earthquakes, stream, and soil around a settlement.",
+            "caption": "The same landscape contains benefits and hazards. Streams supply water and nutrients but also flood; high relief can provide views and resources but adds slope risk.",
+            "notice": "Trace each hazard to an exposure: volcanic flank, unstable slope, fault zone, or floodplain. A hazard becomes a settlement risk when people or infrastructure occupy its reach.",
+            "source": "Lecture 1b slide 5 · figure selected into the completed Lecture 1 study guide"
+          },
+          {
+            "title": "Landscape as a resource system",
+            "src": "assets/visuals/atlas/grazing-landscape.png",
+            "alt": "Broad grassy landscape used for grazing with hills in the distance.",
+            "caption": "Geology influences relief, soil, water availability, land use, and the routes available for settlement.",
+            "notice": "Do not treat soil, topography, drainage, and bedrock as separate trivia. They are linked controls on how land can be used.",
+            "source": "Lecture 1b slide 6"
+          },
+          {
+            "title": "Resource-distribution evidence boundary",
+            "missing": true,
+            "alt": "Notice that the central resource-distribution map is not present in the supplied slide file.",
+            "caption": "The supplied slide preserves the iron-versus-copper claims, but its central map graphic is absent. No exact reconstruction is claimed here.",
+            "notice": "Verified claim: old iron deposits were connected to early atmospheric change; younger western copper deposits were connected to mountain building. Location plus rock age and setting make the pattern historical evidence.",
+            "source": "Lecture 1b slide 7 · map visual unavailable; text claims verified"
+          }
+        ]
+      },
+      "geologic-evidence": {
+        "label": "Reconstruct a past you cannot visit",
+        "intro": "Maps, strata, glacial traces, and fossils record different pieces of ancient environments. Move from pattern to process without treating reconstructions as direct observations.",
+        "interactive": "evidence-lens",
+        "visuals": [
+          {
+            "title": "Australia and its continental shelf",
+            "src": "assets/visuals/slides/l1b/slide-8.png",
+            "alt": "Map of Australia and surrounding continental shelf.",
+            "caption": "Modern coastlines do not mark the full edge of continental crust. Shelf geometry changes how ancient shorelines are interpreted.",
+            "notice": "Look for the broad shallow shelf beyond the present land edge. Sea-level change can expose or flood that shelf without moving the continent itself.",
+            "source": "Lecture 1b slide 8"
+          },
+          {
+            "title": "Strata record changing conditions",
+            "src": "assets/visuals/slides/l1b/slide-9.png",
+            "alt": "Lecture slide using a layered cliff to distinguish observations and interpretations.",
+            "caption": "Layer geometry, thickness, color, contacts, and resistance are observations; depositional setting and erosion history are interpretations.",
+            "notice": "Read bottom-to-top relationships, then ask what sequence of deposition, lithification, uplift, and erosion could produce the exposure.",
+            "source": "Lecture 1b slide 9"
+          },
+          {
+            "title": "Ice extent then and now",
+            "src": "assets/visuals/slides/l1b/slide-10.png",
+            "alt": "Lecture comparison of North American ice extent about 28,000 years ago and today.",
+            "caption": "Past climate is reconstructed from physical traces and dated deposits, then compared with the present.",
+            "notice": "The time label and mapped extent are claims synthesized from evidence. Seek moraines, striations, till, lake deposits, and ages that would anchor the reconstruction.",
+            "source": "Lecture 1b slide 10"
+          },
+          {
+            "title": "Life reconstructed from traces",
+            "src": "assets/visuals/slides/l1b/slide-11.png",
+            "alt": "Jurassic ecosystem reconstruction with dinosaurs, water, and vegetation.",
+            "caption": "Ancient life is inferred through preserved body fossils, trace fossils, and the surrounding sedimentary context.",
+            "notice": "Tracks and burrows show behavior; bones and teeth show anatomy; sedimentary rocks constrain the environment. The final scene remains a model.",
+            "source": "Lecture 1b slide 11"
+          }
+        ]
+      },
+      "earth-layers": {
+        "label": "Two valid Earths—two classification rules",
+        "intro": "Toggle between composition and mechanical behavior. The boundaries change because the question changes.",
+        "interactive": "layer-toggle",
+        "visuals": [
+          {
+            "title": "Compositional layers",
+            "src": "assets/visuals/slides/l1b/slide-12.png",
+            "alt": "Earth cross-section labeled crust, mantle, and core, with continental and oceanic crust examples.",
+            "caption": "Composition divides Earth into crust, mantle, and core. Continental and oceanic crust differ in thickness and composition.",
+            "notice": "Use chemistry and material identity here. Crust is the thin outer layer, mantle dominates volume, and the core is chiefly iron-nickel.",
+            "source": "Lecture 1b slide 12 · figure selected into the completed Lecture 1 study guide"
+          },
+          {
+            "title": "Meteorite clue to the core",
+            "src": "assets/visuals/atlas/iron-nickel-meteorite.jpg",
+            "alt": "Cut iron-nickel meteorite showing a metallic crystalline texture.",
+            "caption": "Iron-nickel meteorites are compositional analog evidence used alongside density, seismic, and planetary-formation evidence.",
+            "notice": "The meteorite is not a recovered piece of Earth’s core. It is an analog from differentiated planetary material that helps constrain plausible core composition.",
+            "source": "Lecture 1b slide 13"
+          },
+          {
+            "title": "Mechanical layers",
+            "src": "assets/visuals/slides/l1b/slide-14.png",
+            "alt": "Earth diagram contrasting rigid lithosphere with ductile asthenosphere.",
+            "caption": "Mechanical behavior divides the shallow Earth into rigid lithosphere over weaker, ductile asthenosphere.",
+            "notice": "Lithosphere includes crust plus the rigid uppermost mantle. Therefore crust and lithosphere are not synonyms.",
+            "source": "Lecture 1b slide 14 · figure selected into the completed Lecture 1 study guide"
+          }
+        ]
+      },
+      "isostasy": {
+        "label": "Thickness raises; density sinks",
+        "intro": "Use the paired diagrams to isolate one variable at a time, then test the relationship with the Lab simulator.",
+        "interactive": "isostasy-compare",
+        "visuals": [
+          {
+            "title": "Crustal thickness and elevation",
+            "src": "assets/visuals/slides/l1b/slide-15.png",
+            "alt": "Diagram relating variations in crustal thickness to elevation and deep crustal roots.",
+            "caption": "Thicker crust can stand higher while also extending deeper into the supporting mantle.",
+            "notice": "The visible mountain is only the top of the mass-balance story. Look for the deeper root beneath high topography.",
+            "source": "Lecture 1b slide 15"
+          },
+          {
+            "title": "The isostasy block analogy",
+            "src": "assets/visuals/slides/l1b/slide-16.png",
+            "alt": "Blocks floating at different heights showing the effects of thickness and density.",
+            "caption": "At equal density, the thicker block projects higher and deeper. At equal thickness, the denser block rides lower.",
+            "notice": "Never say simply 'bigger floats higher.' State which variable is controlled: thickness or density.",
+            "source": "Lecture 1b slide 16 · figure selected into the completed Lecture 1 study guide"
+          }
+        ]
+      },
+      "drivers-atmosphere": {
+        "label": "Trace energy from source to geologic result",
+        "intro": "Classify the source first, then follow the pathway through atmosphere, water, rock, and surface change.",
+        "interactive": "energy-pathways",
+        "visuals": [
+          {
+            "title": "Internal and external drivers",
+            "src": "assets/visuals/slides/l1b/slide-17.png",
+            "alt": "Lecture slide distinguishing internal and external drivers and forces.",
+            "caption": "Earth’s interior powers tectonism and magmatism; incoming solar energy and gravity power major surface processes.",
+            "notice": "Classify by the ultimate energy source, not by where you happen to observe the effect. A river is at the surface, but its water cycle is solar-driven and its downhill motion is gravity-driven.",
+            "source": "Lecture 1b slide 17"
+          },
+          {
+            "title": "Atmosphere, water, and surface energy",
+            "src": "assets/visuals/slides/l1b/slide-18.png",
+            "alt": "Lecture slide connecting atmosphere, water, and energy to surface processes.",
+            "caption": "The atmosphere redistributes heat and water, enabling weathering, erosion, transport, and deposition.",
+            "notice": "Follow the chain: solar heating → atmospheric and water circulation → weather and runoff → landscape change. Gravity supplies the downslope direction.",
+            "source": "Lecture 1b slide 18"
+          }
+        ]
+      },
+      "rocks-spheres-scale": {
+        "label": "Visual environment and process atlas",
+        "intro": "Recognize the visible clue first, then connect it to material, process, and setting. Items after slide 23 are clearly marked as deck continuation—class emphasis unconfirmed.",
+        "interactive": "rock-atlas",
+        "visuals": [
+          {
+            "title": "Sedimentary environments",
+            "src": "assets/visuals/slides/l1b/slide-19.png",
+            "alt": "Lecture slide showing multiple sedimentary environments.",
+            "caption": "Sedimentary rocks form from deposited material; environment controls grain size, sorting, structures, fossils, and geometry.",
+            "notice": "Do not identify a sedimentary setting by color alone. Use texture, structures, fossils, and the larger depositional geometry.",
+            "source": "Lecture 1b slide 19"
+          },
+          {
+            "title": "Igneous rock from magma",
+            "src": "assets/visuals/slides/l1b/slide-23.png",
+            "alt": "Lecture slide showing magma cooling to form igneous rock.",
+            "caption": "Igneous rocks crystallize from molten material. Cooling setting controls crystal growth and texture.",
+            "notice": "Connect texture to cooling history: rapid surface cooling favors fine crystals or glass; slower subsurface cooling permits larger crystals.",
+            "source": "Lecture 1b slide 23 · recorded classroom stop"
+          },
+          {
+            "title": "Metamorphic and hydrothermal processes",
+            "src": "assets/visuals/slides/l1b/slide-26.png",
+            "alt": "Diagram showing metamorphism and hydrothermal alteration without melting.",
+            "caption": "Heat, pressure, deformation, and chemically active fluids can change rock without melting it.",
+            "notice": "The diagnostic boundary is solid-state change. If the rock fully melts and later crystallizes, the product is igneous rather than metamorphic.",
+            "source": "Lecture 1b slide 26 · deck continuation",
+            "status": "continuation"
+          },
+          {
+            "title": "Rock cycle",
+            "src": "assets/visuals/slides/l1b/slide-29.png",
+            "alt": "Rock cycle diagram linking sedimentary, igneous, and metamorphic rocks through geologic processes.",
+            "caption": "Rock names describe current material and history, not a permanent identity. Any rock can enter multiple pathways as conditions change.",
+            "notice": "Study the arrows as processes: weathering/erosion, deposition/lithification, heat/pressure, melting, cooling/crystallization, uplift and exposure.",
+            "source": "Lecture 1b slide 29 · deck continuation · figure selected into the completed Lecture 1 study guide",
+            "status": "continuation"
+          },
+          {
+            "title": "Earth’s four spheres",
+            "src": "assets/visuals/slides/l1b/slide-30.png",
+            "alt": "Lecture slide illustrating atmosphere, hydrosphere, biosphere, and geosphere.",
+            "caption": "Geologic systems cross sphere boundaries; water, air, life, and solid Earth continually exchange matter and energy.",
+            "notice": "For any event, trace at least two interactions—for example eruption material moving from geosphere to atmosphere, then into hydrosphere and biosphere.",
+            "source": "Lecture 1b slide 30 · deck continuation",
+            "status": "continuation"
+          },
+          {
+            "title": "Scale changes the process you can see",
+            "src": "assets/visuals/slides/l1b/slide-31.png",
+            "alt": "Lecture slide comparing geologic features across spatial and temporal scales.",
+            "caption": "A correct interpretation at hand-sample scale may not answer a continental or planetary question.",
+            "notice": "Always name both spatial and temporal scale. Microscopic texture, an outcrop relationship, and a global plate pattern require different evidence.",
+            "source": "Lecture 1b slide 31 · deck continuation",
+            "status": "continuation"
+          }
+        ],
+        "atlas": [
+          {
+            "category": "sedimentary",
+            "title": "Steep mountain front",
+            "src": "assets/visuals/atlas/steep-mountain-front.png",
+            "alt": "Steep rocky mountain front with loose material near its base.",
+            "cues": "Angular relief, exposed bedrock, gravity-driven debris, and a sharp break in slope.",
+            "process": "Erosion removes material from high relief; gravity and water move sediment downslope toward depositional basins.",
+            "source": "Lecture 1b slide 20"
+          },
+          {
+            "category": "sedimentary",
+            "title": "Sand dunes",
+            "src": "assets/visuals/atlas/sand-dunes.png",
+            "alt": "Wind-shaped sand dunes with repeated ridges and slip faces.",
+            "cues": "Well-sorted sand, repeated ridges, asymmetric slopes, and wind-shaped surfaces.",
+            "process": "Wind transports and deposits sand; migrating dunes can preserve cross-bedding in sedimentary rock.",
+            "source": "Lecture 1b slide 21"
+          },
+          {
+            "category": "sedimentary",
+            "title": "Beach",
+            "src": "assets/visuals/atlas/beach.png",
+            "alt": "Sandy shoreline shaped by waves.",
+            "cues": "Rounded or sorted sediment, shoreline geometry, ripple or wave structures, and repeated water movement.",
+            "process": "Waves abrade, sort, transport, and redeposit sediment along a high-energy shoreline.",
+            "source": "Lecture 1b slide 22"
+          },
+          {
+            "category": "igneous",
+            "title": "Explosive ash eruption",
+            "src": "assets/visuals/atlas/explosive-ash-eruption.png",
+            "alt": "Large explosive volcanic plume rich in ash.",
+            "cues": "Tall ash column, fragmented material, dark plume, and broad dispersal potential.",
+            "process": "Gas-rich magma fragments explosively, producing pyroclastic material rather than a simple lava flow.",
+            "source": "Lecture 1b slide 24 · deck continuation",
+            "status": "continuation"
+          },
+          {
+            "category": "igneous",
+            "title": "Lava eruption",
+            "src": "assets/visuals/atlas/lava-eruption.png",
+            "alt": "Glowing lava erupting and flowing at Earth’s surface.",
+            "cues": "Molten flow, glowing surface, cooling crust, and material moving away from a vent.",
+            "process": "Lava cools at or near the surface, producing extrusive igneous rock with rapid-cooling textures.",
+            "source": "Lecture 1b slide 25 · deck continuation",
+            "status": "continuation"
+          },
+          {
+            "category": "metamorphic",
+            "title": "Banded metamorphic rock",
+            "src": "assets/visuals/atlas/metamorphic-rock.png",
+            "alt": "Close view of folded, alternating light and dark bands in metamorphic rock.",
+            "cues": "Alternating mineral bands, foliation, folding, and solid-state deformation.",
+            "process": "Heat, pressure, and deformation reorganize minerals without fully melting the rock.",
+            "source": "Lecture 1b slide 27 · deck continuation",
+            "status": "continuation"
+          },
+          {
+            "category": "hydrothermal",
+            "title": "Hydrothermal springs",
+            "src": "assets/visuals/atlas/hydrothermal-springs.png",
+            "alt": "Mineral-rich hot-spring landscape with colored deposits and steam.",
+            "cues": "Steam, hot water, mineral precipitates, vivid chemical or microbial colors, and vented flow.",
+            "process": "Heated water circulates through rock, transports dissolved material, alters minerals, and precipitates deposits as conditions change.",
+            "source": "Lecture 1b slide 28 · deck continuation",
+            "status": "continuation"
+          }
+        ],
+        "boundary": "Recognition boundary: the supplied Lecture 1 evidence does not contain a complete hand-sample identification bank. This atlas teaches the actual visible evidence in the decks—landforms, depositional settings, eruption style, metamorphic banding, and hydrothermal settings. Specific hand specimens should be added only when the course supplies them."
+      },
+      "ch2-observe-represent": {
+        "label": "Evidence before explanation",
+        "intro": "Scan the image systematically, then state the smallest defensible inference.",
+        "visuals": [
+          {
+            "title": "Outcrop observation targets",
+            "src": "assets/visuals/slides/l2/slide-3.png",
+            "alt": "Annotated outcrop photograph marking layers, fractures, ledges, loose pieces, colors, and rounded or angular corners.",
+            "caption": "The lecture's scan list makes the observation stage explicit.",
+            "notice": "Name visible color, geometry, position, contacts, fractures, and clast shape before naming erosion, transport, or age.",
+            "source": "Lecture 2 slide 3"
+          },
+          {
+            "title": "Compare rock with modern deposits",
+            "src": "assets/visuals/slides/l2/slide-7.png",
+            "alt": "Lecture comparison of a rock texture with modern deposits.",
+            "caption": "A modern analogue supports a process only where the observable textures match.",
+            "notice": "Use rounding, angularity, size range, sorting, and cementation as evidence. Do not jump directly to one exact environment.",
+            "source": "Lecture 2 slides 5–8"
+          }
+        ]
+      },
+      "ch2-relative-time": {
+        "label": "Order the history and cite the rule",
+        "intro": "A relative-age answer is incomplete until the observable relationship and governing principle are both named.",
+        "visuals": [
+          {
+            "title": "Mesa to butte to knobs",
+            "src": "assets/visuals/slides/l2/slide-9.png",
+            "alt": "Three block models showing a mesa eroding to a butte and then knobs.",
+            "caption": "Progressive erosion narrows the resistant layered remnant.",
+            "notice": "Sketch arrows between stages and label cap rock, retreating slopes, and decreasing width.",
+            "source": "Lecture 2 slide 9"
+          },
+          {
+            "title": "Superposition",
+            "src": "assets/visuals/slides/l2/slide-10.png",
+            "alt": "Layered block diagram showing lower layers deposited before upper layers.",
+            "caption": "In an undeformed sequence, lower layers formed before upper layers.",
+            "notice": "State the assumption: the sequence has not been overturned by later deformation.",
+            "source": "Lecture 2 slide 10"
+          },
+          {
+            "title": "Cross-cutting relationships",
+            "src": "assets/visuals/slides/l2/slide-11.png",
+            "alt": "Fault cutting layered rocks in a block diagram.",
+            "caption": "The fault is younger than every layer it offsets.",
+            "notice": "The cutting feature is younger—not the unit it crosses.",
+            "source": "Lecture 2 slide 11"
+          },
+          {
+            "title": "Contact effects",
+            "src": "assets/visuals/slides/l2/slide-13.png",
+            "alt": "Lecture diagram showing contact effects adjacent to magma.",
+            "caption": "Baked or metamorphosed country rock identifies a younger heat source at the contact.",
+            "notice": "Place the adjacent rock first, then the magma that heated it.",
+            "source": "Lecture 2 slide 13"
+          }
+        ]
+      },
+      "ch2-maps-subsurface": {
+        "label": "Translate between viewpoints",
+        "intro": "Choose the representation that encodes the variable you need, then connect surface pattern to subsurface geometry.",
+        "visuals": [
+          {
+            "title": "Types of maps",
+            "src": "assets/visuals/slides/l2/slide-17.png",
+            "alt": "Side-by-side shaded-relief and topographic contour maps.",
+            "caption": "Relief shading emphasizes appearance; contours encode elevation.",
+            "notice": "Closer contours generally indicate steeper slopes. Relief requires a highest and lowest elevation.",
+            "source": "Lecture 2 slide 17"
+          },
+          {
+            "title": "Geologic and satellite views",
+            "src": "assets/visuals/slides/l2/slide-18.png",
+            "alt": "Lecture comparison of geologic map and satellite image.",
+            "caption": "Rock units and contacts are mapped abstractions; satellite imagery records sensed surface patterns.",
+            "notice": "Ask whether the problem needs lithology/age relationships or unclassified surface appearance.",
+            "source": "Lecture 2 slide 18"
+          },
+          {
+            "title": "Three subsurface representations",
+            "src": "assets/visuals/slides/l2/slide-20.png",
+            "alt": "Cross section, block diagram, and stratigraphic section derived from the same layered geology.",
+            "caption": "A slice, 3-D block, and vertical unit column preserve different information.",
+            "notice": "Use the cross section for a vertical transect, the block for 3-D geometry, and the stratigraphic section for unit order and thickness.",
+            "source": "Lecture 2 slide 20"
+          }
+        ]
+      },
+      "ch2-data-time-investigation": {
+        "label": "Measure what separates the models",
+        "intro": "Combine descriptive patterns, quantities with units, ordered time, and prediction-driven tests.",
+        "visuals": [
+          {
+            "title": "Qualitative and quantitative data",
+            "src": "assets/visuals/slides/l2/slide-22.png",
+            "alt": "Lecture slide contrasting qualitative and quantitative data.",
+            "caption": "Words and sketches describe kind and pattern; numbers and units measure magnitude.",
+            "notice": "Integrative problems often ask you to identify a pattern, calculate a value, and use both to judge an explanation.",
+            "source": "Lecture 2 slide 22"
+          },
+          {
+            "title": "Geologic time divisions",
+            "src": "assets/visuals/atlas/geologic-timescale-ch2.png",
+            "alt": "Embedded Lecture 2 geologic timescale showing Precambrian and the Paleozoic, Mesozoic, and Cenozoic eras with periods.",
+            "caption": "The embedded TIFF was extracted because the ordinary slide render displayed a blank frame.",
+            "notice": "Know Precambrian → Paleozoic → Mesozoic → Cenozoic and recognize the period order within the three Phanerozoic eras.",
+            "source": "Lecture 2 slide 24 embedded image"
+          },
+          {
+            "title": "Competing crater models",
+            "src": "assets/visuals/slides/l2/slide-29.png",
+            "alt": "Three crater-origin models: volcanic explosion, rising salt, and meteoroid impact.",
+            "caption": "A useful model makes predictions that differ from its competitors.",
+            "notice": "Do not choose by appearance alone. Ask which sample, structure, map, or measurement would be expected under one model but not the others.",
+            "source": "Lecture 2 slide 29"
+          }
+        ]
+      },
+      "ch2-crater-dome": {
+        "label": "Chapter 2 integrative capstone",
+        "intro": "Use stratigraphic order, deformation, erosion, and distinct model predictions in one evidence chain.",
+        "visuals": [
+          {
+            "title": "Upheaval Dome overview",
+            "src": "assets/visuals/slides/l2/slide-30.png",
+            "alt": "Lecture image introducing the circular Upheaval Dome structure.",
+            "caption": "Circular form and bent layers are observations; salt, magma, and impact are proposed causes.",
+            "notice": "Keep the geometry separate from the causal claim so each model remains testable.",
+            "source": "Lecture 2 slide 30"
+          },
+          {
+            "title": "Units A through G",
+            "src": "assets/visuals/slides/l2/slide-31.png",
+            "alt": "Stratigraphic column of Upheaval Dome units A through G.",
+            "caption": "Superposition orders the deposited units from G at the bottom to A at the top.",
+            "notice": "After ordering deposition, place deformation and erosion only after the affected layers existed.",
+            "source": "Lecture 2 slide 31"
+          },
+          {
+            "title": "Test the dome models",
+            "src": "assets/visuals/slides/l2/slide-32.png",
+            "alt": "Lecture conclusion slide for testing Upheaval Dome models.",
+            "caption": "The endpoint is not a memorized picture; it is a defensible model test.",
+            "notice": "State one model-specific prediction, identify the evidence needed, and explain how the result would weaken or support each alternative.",
+            "source": "Lecture 2 slide 32"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -5,7 +5,11 @@ Object.assign(window.GEOL_VISUALS, {
     visuals: [
       {
         title: "Outcrop observation targets",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/slides/l2/slide-3.png",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Annotated outcrop photograph marking layers, fractures, ledges, loose pieces, colors, and rounded or angular corners.",
         caption: "The lecture's scan list makes the observation stage explicit.",
         notice: "Name visible color, geometry, position, contacts, fractures, and clast shape before naming erosion, transport, or age.",
@@ -13,7 +17,11 @@ Object.assign(window.GEOL_VISUALS, {
       },
       {
         title: "Compare rock with modern deposits",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/slides/l2/slide-7.png",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Lecture comparison of a rock texture with modern deposits.",
         caption: "A modern analogue supports a process only where the observable textures match.",
         notice: "Use rounding, angularity, size range, sorting, and cementation as evidence. Do not jump directly to one exact environment.",
@@ -27,7 +35,11 @@ Object.assign(window.GEOL_VISUALS, {
     visuals: [
       {
         title: "Mesa to butte to knobs",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/slides/l2/slide-9.png",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Three block models showing a mesa eroding to a butte and then knobs.",
         caption: "Progressive erosion narrows the resistant layered remnant.",
         notice: "Sketch arrows between stages and label cap rock, retreating slopes, and decreasing width.",
@@ -35,7 +47,11 @@ Object.assign(window.GEOL_VISUALS, {
       },
       {
         title: "Superposition",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/slides/l2/slide-10.png",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Layered block diagram showing lower layers deposited before upper layers.",
         caption: "In an undeformed sequence, lower layers formed before upper layers.",
         notice: "State the assumption: the sequence has not been overturned by later deformation.",
@@ -43,7 +59,11 @@ Object.assign(window.GEOL_VISUALS, {
       },
       {
         title: "Cross-cutting relationships",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/slides/l2/slide-11.png",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Fault cutting layered rocks in a block diagram.",
         caption: "The fault is younger than every layer it offsets.",
         notice: "The cutting feature is younger—not the unit it crosses.",
@@ -51,7 +71,11 @@ Object.assign(window.GEOL_VISUALS, {
       },
       {
         title: "Contact effects",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/slides/l2/slide-13.png",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Lecture diagram showing contact effects adjacent to magma.",
         caption: "Baked or metamorphosed country rock identifies a younger heat source at the contact.",
         notice: "Place the adjacent rock first, then the magma that heated it.",
@@ -65,7 +89,11 @@ Object.assign(window.GEOL_VISUALS, {
     visuals: [
       {
         title: "Types of maps",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/slides/l2/slide-17.png",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Side-by-side shaded-relief and topographic contour maps.",
         caption: "Relief shading emphasizes appearance; contours encode elevation.",
         notice: "Closer contours generally indicate steeper slopes. Relief requires a highest and lowest elevation.",
@@ -73,7 +101,11 @@ Object.assign(window.GEOL_VISUALS, {
       },
       {
         title: "Geologic and satellite views",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/slides/l2/slide-18.png",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Lecture comparison of geologic map and satellite image.",
         caption: "Rock units and contacts are mapped abstractions; satellite imagery records sensed surface patterns.",
         notice: "Ask whether the problem needs lithology/age relationships or unclassified surface appearance.",
@@ -81,7 +113,11 @@ Object.assign(window.GEOL_VISUALS, {
       },
       {
         title: "Three subsurface representations",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/slides/l2/slide-20.png",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Cross section, block diagram, and stratigraphic section derived from the same layered geology.",
         caption: "A slice, 3-D block, and vertical unit column preserve different information.",
         notice: "Use the cross section for a vertical transect, the block for 3-D geometry, and the stratigraphic section for unit order and thickness.",
@@ -95,7 +131,11 @@ Object.assign(window.GEOL_VISUALS, {
     visuals: [
       {
         title: "Qualitative and quantitative data",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/slides/l2/slide-22.png",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Lecture slide contrasting qualitative and quantitative data.",
         caption: "Words and sketches describe kind and pattern; numbers and units measure magnitude.",
         notice: "Integrative problems often ask you to identify a pattern, calculate a value, and use both to judge an explanation.",
@@ -103,7 +143,11 @@ Object.assign(window.GEOL_VISUALS, {
       },
       {
         title: "Geologic time divisions",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/atlas/geologic-timescale-ch2.png",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Embedded Lecture 2 geologic timescale showing Precambrian and the Paleozoic, Mesozoic, and Cenozoic eras with periods.",
         caption: "The embedded TIFF was extracted because the ordinary slide render displayed a blank frame.",
         notice: "Know Precambrian → Paleozoic → Mesozoic → Cenozoic and recognize the period order within the three Phanerozoic eras.",
@@ -111,7 +155,11 @@ Object.assign(window.GEOL_VISUALS, {
       },
       {
         title: "Competing crater models",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/slides/l2/slide-29.png",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Three crater-origin models: volcanic explosion, rising salt, and meteoroid impact.",
         caption: "A useful model makes predictions that differ from its competitors.",
         notice: "Do not choose by appearance alone. Ask which sample, structure, map, or measurement would be expected under one model but not the others.",
@@ -125,7 +173,11 @@ Object.assign(window.GEOL_VISUALS, {
     visuals: [
       {
         title: "Upheaval Dome overview",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/slides/l2/slide-30.png",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Lecture image introducing the circular Upheaval Dome structure.",
         caption: "Circular form and bent layers are observations; salt, magma, and impact are proposed causes.",
         notice: "Keep the geometry separate from the causal claim so each model remains testable.",
@@ -133,7 +185,11 @@ Object.assign(window.GEOL_VISUALS, {
       },
       {
         title: "Units A through G",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/slides/l2/slide-31.png",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Stratigraphic column of Upheaval Dome units A through G.",
         caption: "Superposition orders the deposited units from G at the bottom to A at the top.",
         notice: "After ordering deposition, place deformation and erosion only after the affected layers existed.",
@@ -141,7 +197,11 @@ Object.assign(window.GEOL_VISUALS, {
       },
       {
         title: "Test the dome models",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/slides/l2/slide-32.png",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Lecture conclusion slide for testing Upheaval Dome models.",
         caption: "The endpoint is not a memorized picture; it is a defensible model test.",
         notice: "State one model-specific prediction, identify the evidence needed, and explain how the result would weaken or support each alternative.",

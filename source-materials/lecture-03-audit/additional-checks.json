@@ -1,0 +1,14 @@
+{
+  "wrongHighMisconception": true,
+  "lowConfidencePath": true,
+  "adaptiveRepeatObserved": true,
+  "teachbackRubric": true,
+  "chapter3DrillLaunch": true,
+  "repeatSequence": [
+    "Which example illustrates an early continental rift in the lecture?",
+    "Where does new oceanic crust form in seafloor spreading?",
+    "Continued continental separation establishes seafloor spreading. What can develop next?",
+    "Without the slides, sketch or explain the relationships in “Ridges and Continental Rifting”. Then use the rubric to check your account.",
+    "Which sequence matches the ridge model?"
+  ]
+}

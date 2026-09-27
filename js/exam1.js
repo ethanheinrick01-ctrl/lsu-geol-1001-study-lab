@@ -1,0 +1,137 @@
+/* Exam 1 review: immediate feedback, immutable first responses, separate correction history. */
+(function(L){
+'use strict';
+var X=L.EXAM1,U=L.util,E=L.engine,S=L.store,I=L.itemUI,esc=U.esc;
+function topic(id){return X.topics.find(function(t){return t.id===id;});}
+function uid(){return Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,9);}
+function byId(id){return S.load().examRuns.find(function(r){return r.id===id;});}
+function active(){return byId(S.load().examActive);}
+function save(r){if(r)r.updated=Date.now();return S.save();}
+function resolve(id){return E.resolve({id:id});}
+function groups(form,section){var f=X.forms[form],out=[];
+ if(!section||section==='mc')f.mc.forEach(function(id,i){out.push({n:i+1,section:'mc',ids:[id]});});
+ if(!section||section==='sa')f.sa.forEach(function(id,i){out.push({n:i+26,section:'sa',ids:[id]});});
+ if(!section||section==='inv')f.cases.forEach(function(id,i){var cs=E.caseById(id);out.push({n:i+34,section:'inv',caseId:id,ids:cs.items.map(function(it){return it.id;})});});
+ return out;
+}
+function allIds(r){return r.groups.reduce(function(a,g){return a.concat(g.ids);},[]);}
+function start(gs,title,opt){var r={id:'exam1-'+uid(),version:1,title:title,form:opt&&opt.form||null,mode:opt&&opt.mode||'review',groups:gs,answers:{},orders:{},cur:0,started:Date.now(),updated:Date.now(),finished:null};
+ gs.forEach(function(g){g.ids.forEach(function(id){var it=resolve(id);if(it.o)r.orders[id]=I.makeOrder(it);});});
+ S.load().examRuns.push(r);S.load().examActive=r.id;save(r);return r;
+}
+function startForm(f,sec){return start(groups(f,sec),'Set '+f+(sec?' · '+({mc:'Multiple choice',sa:'Short answer',inv:'Investigations'}[sec]):' · Complete review'),{form:f});}
+function sourceItem(it){return (!it.media || (Array.isArray(it.media)?it.media.every(function(m){return m.kind==='img';}):it.media.kind==='img')) && !/in the diagram|shown|point [A-Z]|marker|blocks? [A-Z]|figure below|map below/i.test(it.q);}
+function drill(tid,diagrams){var ids=[],exclude={};
+ if(diagrams){E.itemsFor(function(it){return it.pool==='exam1' && it.caseId && it.t!=='teach' && (!tid || (it.topics||[]).indexOf(tid)>=0);}).forEach(function(it){ids.push(it.id);});
+ // Topics with no case still get familiar source figures alongside original conceptual items.
+ ids=ids.concat(E.itemsFor(function(it){return it.pool==='exam1' && !it.caseId && it.t==='mc' && (!tid || L.examTopics(it).indexOf(tid)>=0);}).map(function(it){return it.id;}));
+ }else{ids=E.itemsFor(function(it){return it.pool==='exam1' && it.t!=='teach' && sourceItem(it) && L.examTopics(it).indexOf(tid)>=0;}).map(function(it){return it.id;});}
+ // Prefer items not seen in this browser's Exam 1 history; keep finite source pool honest.
+ var seen={};S.load().examRuns.forEach(function(r){Object.keys(r.answers).forEach(function(id){if(r.answers[id].first)seen[id]=(seen[id]||0)+1;});});
+ ids=U.shuffle(ids).sort(function(a,b){return (seen[a]||0)-(seen[b]||0);});
+ var limit=tid?(diagrams?5:8):20, selected=[];
+ if(!tid && diagrams){X.topics.forEach(function(t){var id=ids.find(function(i){return !exclude[i]&&L.examTopics(resolve(i)).indexOf(t.id)>=0;});if(id){selected.push(id);exclude[id]=true;}});}
+ ids.forEach(function(id){if(selected.length<limit&&!exclude[id]){selected.push(id);exclude[id]=true;}});
+ var gs=selected.map(function(id,i){var it=resolve(id),cs=it.caseId&&E.caseById(it.caseId),t=topic(tid||L.examTopics(it)[0]);return {n:i+1,section:'drill',ids:[id],media:cs?cs.media:(diagrams?t.media[0]:null),sourceCase:cs?cs.title:null};});
+ return start(gs,(tid?tid+' · '+topic(tid).title:'Source-figure practice')+' · '+(diagrams?'Diagram practice':'Topic practice'),{mode:'drill'});
+}
+function answer(r,id){return r.answers[id]||(r.answers[id]={draft:undefined,first:null,tries:[],editing:false,updated:Date.now()});}
+function latest(a){if(!a)return null;return a.tries.length?a.tries[a.tries.length-1]:a.first;}
+function checked(r,id){var a=r.answers[id];return !!(a&&a.first&&a.first.grade);}
+function completeResponse(it,v){if(it.t==='teach')return typeof v==='string'&&v.trim().length>0;if((it.t==='match'||it.t==='parts')&&(!Array.isArray(v)||v.length!==(it.pairs||it.parts).length))return false;return E.hasResponse(it,v);}
+function check(r,id,cf){var it=resolve(id),a=answer(r,id);if(!completeResponse(it,a.draft))return false;
+ if(a.first&&!a.editing)return false;
+ var attempt={id:uid(),response:U.clone(a.draft),cf:cf||'m',at:Date.now(),self:it.t==='teach',grade:it.t==='teach'?null:E.grade(it,a.draft)};
+ if(!a.first)a.first=attempt;else a.tries.push(attempt);
+ a.editing=false;a.updated=Date.now();save(r);return attempt;
+}
+function selfMark(r,id,hits){var a=answer(r,id),last=latest(a),it=resolve(id);if(!last||!last.self||last.grade)return false;
+ var want=(it.rubric||[]).length,n=hits.filter(function(x){return x;}).length;last.grade={ok:n===want,sc:want?n/want:0,rubric:hits.slice(),self:true};a.updated=Date.now();save(r);return true;}
+function retry(r,id){var a=answer(r,id),last=latest(a);if(!last||!last.grade)return; a.editing=true;a.draft=undefined;a.updated=Date.now();save(r);}
+function metrics(r,ids){ids=ids||allIds(r);var m={total:ids.length,checked:0,auto:0,autoCorrect:0,self:0,selfCorrect:0,corrected:0,needs:0,unanswered:0,mcCorrect:0,mcTotal:0};
+ ids.forEach(function(id){var it=resolve(id),a=r.answers[id],first=a&&a.first,last=latest(a);if(it.t==='mc')m.mcTotal++;
+ if(!first||!first.grade){m.unanswered++;return;}m.checked++;if(first.self){m.self++;if(first.grade.ok)m.selfCorrect++;}else{m.auto++;if(first.grade.ok)m.autoCorrect++;}
+ if(it.t==='mc'&&first.grade.ok)m.mcCorrect++;
+ if(!first.grade.ok){if(last&&last.grade&&last.grade.ok)m.corrected++;else m.needs++;}
+ });return m;
+}
+function topicMetrics(t){var stats=E.conceptStats(),cs=U.uniq(t.concepts).filter(E.hasPracticeContent),mastered=cs.filter(function(c){return stats[c].status==='mastered';}).length;
+ var latestByItem={};S.load().examRuns.forEach(function(r){Object.keys(r.answers).forEach(function(id){var it=resolve(id),a=r.answers[id];if(it&&a.first&&L.examTopics(it).indexOf(t.id)>=0){var prev=latestByItem[id];if(!prev||a.first.at>prev.a.first.at)latestByItem[id]={r:r,a:a};}});});
+ var auto=0,correct=0,needs=[],corrected=0,self=0,selfGood=0;
+ Object.keys(latestByItem).forEach(function(id){var a=latestByItem[id].a,first=a.first,last=latest(a);if(!first.grade)return;if(first.self){self++;if(first.grade.ok)selfGood++;}else{auto++;if(first.grade.ok)correct++;}if(!first.grade.ok){if(last&&last.grade&&last.grade.ok)corrected++;else needs.push(id);}});
+ return {mastered:mastered,concepts:cs.length,auto:auto,correct:correct,needs:needs,corrected:corrected,self:self,selfGood:selfGood};
+}
+function statusHTML(){return '<p id="examSave" class="small '+(S.ok()?'muted':'noc')+'" role="status">'+(S.ok()?'Saved in this browser · drafts and feedback resume after reopening.':'Saving is blocked. Export a backup from Data before closing this tab.')+'</p>';}
+function refreshSave(){var el=document.querySelector('#examSave');if(el){el.className='small '+(S.ok()?'muted':'noc');el.textContent=S.ok()?'Saved in this browser · '+new Date().toLocaleTimeString():'Saving failed. Keep this tab open and export a backup from Data.';}}
+function touch(r){save(r);refreshSave();}
+function top(){return '<p class="eyebrow">Tuesday, September 29 · Chapters 1–6</p><h1>Exam 1</h1><p class="lede">Study the professor’s review, then practice with your actual course figures. Check each answer immediately and work through corrections at your own pace.</p>';}
+function buttons(){return '<div class="row"><a class="btn" href="#exam1">Topic map</a><a class="btn" href="#exam1/sets">Review sets</a><button class="btn" data-diagram="all">Diagram practice (20)</button><a class="btn" href="#exam1/history">History</a></div>';}
+function stat(v,label,desc){return '<div class="stat"><b>'+esc(v)+'</b><span>'+esc(label)+'</span><small>'+esc(desc||'')+'</small></div>';}
+function runStats(r){var m=metrics(r);return '<div class="grid4">'+stat(m.autoCorrect+'/'+m.auto,'First-try accuracy','Automatically checked parts; '+m.unanswered+' still unchecked.')+stat(m.corrected,'Corrected after feedback','First results remain unchanged.')+stat(m.needs,'Still needs work','Checked parts not yet corrected.')+stat(m.selfCorrect+'/'+m.self,'Rubric fully met','Self-assessed explanations, shown separately.')+'</div>';}
+function mapHTML(){var r=active(),h=top()+buttons()+statusHTML();
+ if(r&&!r.finished&&!r.archived)h+='<div class="infobox"><b>Continue '+esc(r.title)+'</b><div class="row"><a class="btn pri" href="#exam1/take">Resume saved review</a></div></div>';
+ h+='<section class="card"><h2>Your exam format</h2>'+L.EXAM_FACTS+I.srcChips(['R0924:lines 322–434; 4966–5000','SYL','CTX'])+'</section>';
+  h+='<p class="small muted">These 16 groups organize his review; they are not 16 official exam categories. Every checked Exam 1 answer feeds the same mastery dashboard as practice, Boss drills, and mocks. Mastery is earned permanently; misses stay visible only as review signals.</p><div class="exam-topics">';
+ X.topics.forEach(function(t){var m=topicMetrics(t);h+='<article class="card exam-topic"><p class="eyebrow">'+t.id+' · Reviewed Sep 24</p><h2><a href="#exam1/topic/'+t.id+'">'+esc(t.title)+'</a></h2><div class="progress" role="progressbar" aria-label="'+esc(t.title)+' mastery" aria-valuemin="0" aria-valuemax="'+m.concepts+'" aria-valuenow="'+m.mastered+'"><i style="width:'+U.pct(m.mastered,m.concepts)+'%"></i></div><p class="small">'+m.mastered+'/'+m.concepts+' concepts mastered · '+(m.auto?m.correct+'/'+m.auto+' first-try checks':'No review checks yet')+(m.corrected?' · '+m.corrected+' corrected':'')+(m.needs.length?' · <b class="warn">'+m.needs.length+' need work</b>':'')+'</p><div class="row"><a class="btn small pri" href="#exam1/topic/'+t.id+'">Learn</a><button class="btn small" data-topic="'+t.id+'">Practice topic</button><button class="btn small" data-diagram="'+t.id+'">Practice figure</button></div></article>';});
+ return h+'</div>';
+}
+function topicHTML(id){var t=topic(id);if(!t)return '<h1>Topic unavailable</h1><a href="#exam1">Topic map</a>';var secs=U.uniq(t.concepts.map(function(c){return L.CONCEPTS[c].sec;}));
+ return '<p class="crumbs"><a href="#exam1">Exam 1</a> › '+id+'</p><h1>'+esc(t.title)+'</h1><p class="small">Review emphasis '+I.srcChips(['R0924:lines '+t.lines])+'</p><article class="card gcard">'+t.html+'<div class="traps">'+esc(t.trap)+'</div><p>Answer sources '+I.srcChips(t.sources)+'</p></article><section class="card"><h2>The course figures</h2><p class="small muted">Original McGraw-Hill images from your slides and captures. Tap to enlarge. These are matches to the reviewed concepts; the exact exam images are unknown.</p>'+I.mediaHTML(t.media)+'</section><div class="row"><button class="btn pri" data-topic="'+id+'">Practice this topic</button><button class="btn" data-diagram="'+id+'">Practice its figure</button></div><section class="card"><h2>Related Guide sections</h2>'+secs.map(function(sec){var s=L.SECTIONS.find(function(x){return x.id===sec;});return '<p><a href="#guide/'+sec+'">'+esc(s.n+' '+s.title)+'</a></p>';}).join('')+'</section>';
+}
+function setsHTML(){return top()+buttons()+'<div class="infobox">Every complete set: <b>25 multiple choice → 8 short answers → 7 investigations.</b> Immediate feedback; no timer. Investigations stay grouped as Q34–40, with subparts. The 8/7 counts and topic placement are practice choices within the professor’s ranges.</div><div class="exam-sets">'+['A','B','C'].map(function(f){var ids=groups(f).reduce(function(a,g){return a.concat(g.ids);},[]),seen={};S.load().examRuns.forEach(function(r){ids.forEach(function(id){if(r.answers[id]&&r.answers[id].first)seen[id]=true;});});return '<section class="card"><h2>Set '+f+'</h2><p>40 questions · 54 answer parts.<br>Short answer: 4 terms + 4 explanations.</p><p class="small muted">'+Object.keys(seen).length+' of these parts previously opened for feedback. Familiar textbook figures are reused across sets; question prompts differ.</p><div class="row"><button class="btn pri" data-form="'+f+'">Complete review</button></div><div class="row"><button class="btn small" data-form="'+f+'" data-section="mc">Multiple choice only</button><button class="btn small" data-form="'+f+'" data-section="sa">Short answer only</button><button class="btn small" data-form="'+f+'" data-section="inv">Investigations only</button></div></section>';}).join('')+'</div>';}
+function historyHTML(){var s=S.load(),h='<h1>Exam 1 history</h1>'+buttons()+statusHTML();
+ h+='<p class="small muted">Progress stays in this browser and origin. Use <a href="#data">Data → Export</a> to back up or move it. A new browser, a different local address, or clearing browser data needs an exported backup.</p>';
+ if(!s.examRuns.length)h+='<p>No Exam 1 review runs yet.</p>';
+ s.examRuns.slice().reverse().forEach(function(r){var m=metrics(r);h+='<article class="card"><h2>'+esc(r.title)+'</h2><p class="small">'+new Date(r.started).toLocaleString()+' · '+m.checked+'/'+m.total+' parts checked'+(r.finished?' · saved summary':' · resumable')+'</p><p>'+m.autoCorrect+'/'+m.auto+' first-try automatic checks · '+m.corrected+' corrected · '+m.needs+' still need work</p><div class="row"><button class="btn" data-resume="'+r.id+'">'+(r.finished?'Reopen review':'Resume')+'</button><a class="btn" href="#exam1/result/'+r.id+'">Summary</a></div></article>';});
+ h+='<section class="card"><h2>Old-format mock history</h2><p class="small muted">Saved scores use the earlier question format and are kept separately.</p>';
+ if(s.mockActive)h+='<div class="row"><a class="btn" href="#mock/take">Resume unfinished old-format mock</a><button class="btn" id="archiveOld">Archive unfinished old-format mock</button></div>';
+ s.mocks.forEach(function(m){h+='<p><a href="#mock/result/'+m.id+'">'+esc(m.title)+' — '+m.score+'/'+m.total+'</a> <span class="small muted">old format</span></p>';});
+ s.mockArchived.forEach(function(m){h+='<p>Archived unfinished old-format mock: '+esc(m.title)+' <button class="btn small" data-old-resume="'+m.id+'">Resume</button></p>';});
+ return h+'</section>';
+}
+function sectionName(s){return {mc:'Section 1 · Multiple choice',sa:'Section 2 · Short answer',inv:'Section 3 · Investigations',drill:'Focused practice'}[s];}
+function take(main){var r=active();if(!r){main.innerHTML='<h1>No active review</h1><a href="#exam1/sets">Choose a review set</a>';return;}var group=r.groups[r.cur]||r.groups[0],h='<div class="spread"><div><p class="eyebrow">'+esc(r.title)+'</p><h1>'+esc(sectionName(group.section))+'</h1></div><a class="btn" href="#exam1">Save &amp; leave</a></div>'+statusHTML();
+ h+='<p class="small">'+metrics(r).checked+'/'+allIds(r).length+' answer parts checked. Choose any question; every draft is saved.</p><nav class="mocknav exam-nav" aria-label="Questions">';
+ var section='';r.groups.forEach(function(g,i){if(g.section!==section){if(section)h+='</div></div>';section=g.section;h+='<div class="navsec"><span class="tiny">'+esc(sectionName(section))+'</span><div class="cells">';}var all=g.ids.every(function(id){return checked(r,id);}),any=g.ids.some(function(id){return r.answers[id]&&r.answers[id].draft!==undefined;}),bad=g.ids.some(function(id){var last=latest(r.answers[id]);return last&&last.grade&&!last.grade.ok;});h+='<button class="'+(i===r.cur?'cur ':'')+(all?(bad?'r-no':'r-ok'):any?'ans':'')+'" data-q="'+i+'" aria-label="Question '+g.n+(all?', checked':any?', draft saved':', not checked')+'" '+(i===r.cur?'aria-current="step"':'')+'>'+g.n+'</button>';});h+='</div></div></nav>';
+ if(group.caseId){var cs=E.caseById(group.caseId);h+='<section class="card exam-figure"><h2>Q'+group.n+' · '+esc(cs.title)+'</h2><p>'+cs.stem+'</p>'+I.mediaHTML(cs.media)+'</section>';}
+ else if(group.media)h+='<section class="card exam-figure"><h2>Q'+group.n+' · '+esc(group.sourceCase||'Course figure')+'</h2>'+I.mediaHTML(group.media)+'</section>';
+ group.ids.forEach(function(id,i){h+='<div id="exam-item-'+i+'"></div>';});
+ h+='<div class="row spread"><button class="btn" id="examPrev" '+(r.cur===0?'disabled':'')+'>← Previous</button><div class="row"><a class="btn" href="#exam1/result/'+r.id+'">Progress summary</a><button class="btn pri" id="examNext">'+(r.cur===r.groups.length-1?'Finish review':'Next →')+'</button></div></div>';
+ main.innerHTML=h;
+ group.ids.forEach(function(id,i){renderAnswer(main.querySelector('#exam-item-'+i),r,id,'Q'+group.n+(group.ids.length>1?String.fromCharCode(97+i):''));});
+ main.querySelectorAll('[data-q]').forEach(function(b){b.onclick=function(){r.cur=+b.dataset.q;touch(r);L.app.route();};});
+ main.querySelector('#examPrev').onclick=function(){r.cur--;touch(r);L.app.route();};
+ main.querySelector('#examNext').onclick=function(){if(r.cur<r.groups.length-1){r.cur++;touch(r);L.app.route();}else{r.finished=Date.now();touch(r);L.app.go('exam1/result/'+r.id);}};
+}
+function renderAnswer(host,r,id,label){var source=resolve(id),it=U.clone(source);delete it.caseId;var a=answer(r,id),last=latest(a),locked=!!last&&!a.editing,resp=locked?last.response:a.draft;
+ // Source images only; never remap a figure-dependent old question to a different image.
+ I.render(host,it,{mode:'mock',externalActions:true,header:label+' · '+L.examTopics(it).join(', '),order:r.orders[id],response:resp,locked:locked,onChange:function(v){a.draft=U.clone(v);a.updated=Date.now();touch(r);var b=host.querySelector('[data-check]');if(b)b.disabled=!completeResponse(it,v);}});
+ if(!locked){var actions=host.querySelector('.actions');actions.innerHTML='<div class="row"><label class="small">Confidence <select class="exam-confidence" aria-label="Confidence"><option value="m">Medium</option><option value="l">Low / guessing</option><option value="h">High / certain</option></select></label><button class="btn pri" data-check '+(!completeResponse(it,a.draft)?'disabled':'')+'>'+(it.t==='teach'?'Check against model answer':'Check answer')+'</button></div>'+(a.first?'<p class="small muted">Correction attempt. Your first response and result stay unchanged.</p>':'');
+ actions.querySelector('[data-check]').onclick=function(){if(check(r,id,actions.querySelector('select').value)){L.app.route();document.getElementById(host.id).scrollIntoView({block:'nearest'});}};return;}
+ if(it.t==='teach'){var fb=host.querySelector('.feedback');fb.innerHTML='<div class="fb"><div class="verdict">Model answer · self-assessment</div><p>'+it.model+'</p><p class="small muted">Compare with your saved response above. Mark each point your answer actually includes.</p><div class="exam-rubric">'+it.rubric.map(function(p,i){return '<label><input type="checkbox" data-rubric="'+i+'" '+(last.grade&&last.grade.rubric[i]?'checked':'')+' '+(last.grade?'disabled':'')+'> '+esc(p)+'</label>';}).join('')+'</div>'+(last.grade?'<p><b>'+last.grade.rubric.filter(Boolean).length+'/'+it.rubric.length+' rubric points met.</b> Self-assessed.</p>':'<button class="btn pri" data-self>Save rubric check</button>')+'<div>'+I.srcChips(it.s)+'</div></div>';
+ if(!last.grade)fb.querySelector('[data-self]').onclick=function(){selfMark(r,id,Array.prototype.map.call(fb.querySelectorAll('[data-rubric]'),function(el){return el.checked;}));L.app.route();};
+ }else I.showFeedback(host,it,last.response,last.grade,{compactReasons:true});
+ if(a.first&&a.first.grade){var first=a.first;host.insertAdjacentHTML('beforeend','<div class="exam-first small"><b>First try: '+(first.self?'self-assessed · ':'')+(first.grade.ok?'correct / rubric met':first.grade.sc>0?'partly correct':'needs work')+'</b>'+(a.tries.length?' · '+a.tries.length+' correction attempt'+(a.tries.length===1?'':'s'):'')+'<details><summary>Saved first response</summary><p>'+esc(responseText(it,first.response))+'</p></details></div>');}
+ if(last.grade&&!last.grade.ok){host.insertAdjacentHTML('beforeend','<div class="row"><button class="btn" data-retry>Try a correction</button><a class="btn ghost" href="#exam1/topic/'+L.examTopics(it)[0]+'">Review this topic</a></div>');host.querySelector('[data-retry]').onclick=function(){retry(r,id);L.app.route();};}
+ else if(last.grade&&a.tries.length)host.insertAdjacentHTML('beforeend','<p class="okc small">Corrected after feedback. Recheck this concept later with a different question.</p>');
+}
+function responseText(it,v){if(v===undefined||v===null)return '(blank)';if(it.o&&!Array.isArray(v))return it.o[v]?it.o[v].t:String(v);if(Array.isArray(v))return v.join(' · ');return String(v);}
+function resultHTML(id){var r=byId(id);if(!r)return '<h1>Review not found</h1><a href="#exam1/history">History</a>';var m=metrics(r),h='<h1>'+esc(r.title)+'</h1><p class="lede">'+(m.unanswered?m.unanswered+' parts still unchecked.':'All parts checked.')+' First attempts, corrections, and self-assessments remain separate.</p>'+statusHTML()+runStats(r);
+ var mc=r.groups.filter(function(g){return g.section==='mc';}).reduce(function(a,g){return a.concat(g.ids);},[]);if(mc.length){var mm=metrics(r,mc);h+='<div class="card"><h2>Section 1 · '+mm.autoCorrect*2+'/'+mc.length*2+' first-try points</h2><p>'+mm.checked+'/'+mc.length+' questions checked. Two points each, following the professor’s format.</p></div>';}
+ ['sa','inv'].forEach(function(s){var ids=r.groups.filter(function(g){return g.section===s;}).reduce(function(a,g){return a.concat(g.ids);},[]);if(ids.length){var mm=metrics(r,ids);h+='<section class="card"><h2>'+sectionName(s)+'</h2><p>'+mm.autoCorrect+'/'+mm.auto+' automatic parts correct on first try · '+mm.selfCorrect+'/'+mm.self+' explanations fully met their rubric · '+mm.corrected+' corrected · '+mm.unanswered+' unchecked.</p><p class="small muted">Raw practice results; the professor has not established a point split for these sections.</p></section>';}});
+ h+='<div class="row"><button class="btn pri" data-resume="'+r.id+'">Continue / review answers</button><a class="btn" href="#exam1">Topic map</a><a class="btn" href="#data">Export progress backup</a></div><section class="card"><h2>Next review</h2><p>Use a different question after a break. Corrections here do not count as independent mastery.</p>';
+ var cons=U.uniq(allIds(r).filter(function(id){var a=r.answers[id];return a&&a.first&&a.first.grade&&!a.first.grade.ok;}).map(function(id){return resolve(id).c;}));
+ if(cons.length)h+='<button class="btn" id="examFollowup" data-concepts="'+esc(JSON.stringify(cons))+'">Different-question practice ('+Math.min(12,cons.length)+')</button>';else h+='<p>No checked misses to target yet.</p>';
+ h+='</section><section class="card"><h2>By review topic</h2><div class="exam-topic-results">';X.topics.forEach(function(t){var ids=allIds(r).filter(function(id){return L.examTopics(resolve(id)).indexOf(t.id)>=0;});if(ids.length){var mm=metrics(r,ids);h+='<p><a href="#exam1/topic/'+t.id+'">'+t.id+' · '+esc(t.title)+'</a><br><span class="small">'+mm.autoCorrect+'/'+mm.auto+' automatic first tries · '+mm.corrected+' corrected · '+mm.needs+' need work</span></p>';}});h+='</div></section><section class="card"><h2>Question review</h2>';
+ r.groups.forEach(function(g,i){h+='<details><summary>Q'+g.n+(g.caseId?' · '+esc(E.caseById(g.caseId).title):'')+'</summary>';g.ids.forEach(function(id){var it=resolve(id),a=r.answers[id],last=latest(a);h+='<div class="exam-summary-part"><p>'+it.q+'</p><p class="small"><b>First response:</b> '+esc(a&&a.first?responseText(it,a.first.response):'Not checked')+'</p>'+(a&&a.first&&a.first.grade?'<p class="small">First result: '+(a.first.grade.ok?'Correct / rubric met':'Needs work')+(a.first.self?' (self-assessed)':'')+'. '+(last!==a.first?'Latest correction: '+esc(responseText(it,last.response)): '')+'</p>':'')+'<button class="btn small" data-review-question="'+i+'" data-run="'+r.id+'">Open question and feedback</button></div>';});h+='</details>';});return h+'</section>';
+}
+function followup(cons){var r=active(),seen={};if(r)allIds(r).forEach(function(id){seen[id]=true;});var refs=[];cons.slice(0,12).forEach(function(c){var candidates=E.itemsFor(function(it){return it.c===c&&it.pool!=='exam1'&&it.pool!=='boss'&&!it.caseId&&it.t!=='teach'&&!it.media&&sourceItem(it)&&!seen[it.id];});if(candidates.length)refs.push({id:U.shuffle(candidates)[0].id});});if(!refs.length){L.app.go('exam1');return;}E.newSession('practice','Recheck after Exam 1 review',refs,{back:'exam1'});L.app.go('session');}
+function wire(main){main.querySelectorAll('[data-form]').forEach(function(b){b.onclick=function(){startForm(b.dataset.form,b.dataset.section||null);L.app.go('exam1/take');};});main.querySelectorAll('[data-topic]').forEach(function(b){b.onclick=function(){drill(b.dataset.topic,false);L.app.go('exam1/take');};});main.querySelectorAll('[data-diagram]').forEach(function(b){b.onclick=function(){drill(b.dataset.diagram==='all'?null:b.dataset.diagram,true);L.app.go('exam1/take');};});main.querySelectorAll('[data-resume]').forEach(function(b){b.onclick=function(){var r=byId(b.dataset.resume);S.load().examActive=r.id;r.finished=null;r.archived=false;touch(r);L.app.go('exam1/take');};});
+ main.querySelectorAll('[data-review-question]').forEach(function(b){b.onclick=function(){var r=byId(b.dataset.run);r.cur=+b.dataset.reviewQuestion;S.load().examActive=r.id;touch(r);L.app.go('exam1/take');};});
+ var old=main.querySelector('#archiveOld');if(old)old.onclick=function(){var s=S.load();if(s.mockActive){s.mockArchived.push(s.mockActive);s.mockActive=null;save();L.app.route();}};
+ main.querySelectorAll('[data-old-resume]').forEach(function(b){b.onclick=function(){var s=S.load();if(s.mockActive)s.mockArchived.push(s.mockActive);s.mockActive=s.mockArchived.find(function(m){return m.id===b.dataset.oldResume;});s.mockArchived=s.mockArchived.filter(function(m){return m.id!==b.dataset.oldResume;});save();L.app.go('mock/take');};});
+ var f=main.querySelector('#examFollowup');if(f)f.onclick=function(){followup(JSON.parse(f.dataset.concepts));};
+}
+function view(main,args){var page=args[0]||'map';if(page==='take')take(main);else main.innerHTML=page==='topic'?topicHTML(args[1]):page==='sets'?setsHTML():page==='history'?historyHTML():page==='result'?resultHTML(args[1]):mapHTML();wire(main);}
+L.exam1={view:view,topic:topic,groups:groups,start:start,startForm:startForm,drill:drill,active:active,byId:byId,answer:answer,check:check,selfMark:selfMark,retry:retry,metrics:metrics,topicMetrics:topicMetrics,allIds:allIds,latest:latest};
+})(window.L);

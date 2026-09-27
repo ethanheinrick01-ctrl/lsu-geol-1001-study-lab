@@ -1,0 +1,55 @@
+boss boss1 items 26 boss-only 12 46%
+boss boss2 items 26 boss-only 12 46%
+boss boss3 items 26 boss-only 12 46%
+boss boss4 items 25 boss-only 12 48%
+boss boss5 items 26 boss-only 12 46%
+boss boss6 items 26 boss-only 14 54%
+mock full parts 61 MC share 49% mc:30 fill:16 inv:15
+mock short parts 32 MC share 47% mc:15 fill:8 inv:9
+{
+ "items": 451,
+ "concepts": 102,
+ "sections": 41,
+ "cards": 99,
+ "cases": 13,
+ "bosses": 6,
+ "generators": 10,
+ "byType": {
+  "order": 16,
+  "mc": 264,
+  "fill": 75,
+  "ms": 19,
+  "tf": 15,
+  "parts": 26,
+  "match": 29,
+  "num": 5,
+  "teach": 2
+ },
+ "byChapter": {
+  "ch1": 43,
+  "ch2": 37,
+  "ch3": 53,
+  "ch4": 56,
+  "ch5": 81,
+  "ch6": 55,
+  "ch1-boss": 7,
+  "ch2-boss": 9,
+  "ch3-boss": 15,
+  "ch4-boss": 14,
+  "ch5-boss": 15,
+  "ch6-boss": 14,
+  "ch1-case": 9,
+  "ch2-case": 8,
+  "ch3-case": 11,
+  "ch4-case": 7,
+  "ch5-case": 8,
+  "ch6-case": 9
+ },
+ "mcLongestKeyed": "60/264 (23%)",
+ "images": 185,
+ "imagesReferenced": 138,
+ "unusedImages": 47
+}
+WARNINGS 1
+  w item c4-silstruct-p1: inv item without markers
+ERRORS 0

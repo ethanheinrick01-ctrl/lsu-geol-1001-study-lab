@@ -1,0 +1,187 @@
+[
+ {
+  "check": "all 56 views and guide sections render",
+  "pass": true,
+  "detail": "[]"
+ },
+ {
+  "check": "no broken images in guide (incl. source-slide strips)",
+  "pass": true,
+  "detail": "[]"
+ },
+ {
+  "check": "classification widget: mafic + fine = Basalt",
+  "pass": true,
+  "detail": "Basalt\n\nmafic \u00b7 silica ~44\u201350% \u00b7 dark\nMi"
+ },
+ {
+  "check": "confidence buttons disabled until an answer is chosen; no feedback before submit",
+  "pass": true,
+  "detail": "[True, True, True]"
+ },
+ {
+  "check": "feedback appears only after confidence submit, with explanation",
+  "pass": true,
+  "detail": "Correct\n\nThe slide asks you to note observations and then qu"
+ },
+ {
+  "check": "high-confidence miss marks a misconception",
+  "pass": true,
+  "detail": "misconception"
+ },
+ {
+  "check": "misconception is first in the review queue",
+  "pass": true,
+  "detail": "misconception"
+ },
+ {
+  "check": "two correct answers on different items (medium) -> mastered",
+  "pass": true,
+  "detail": "mastered"
+ },
+ {
+  "check": "repeating the same item twice does NOT master a concept",
+  "pass": true,
+  "detail": "learning"
+ },
+ {
+  "check": "all 10 generators render and grade a correct answer as correct",
+  "pass": true,
+  "detail": "[]"
+ },
+ {
+  "check": "mock (31 parts): no feedback or confidence prompt shown during the exam",
+  "pass": true,
+  "detail": "[]"
+ },
+ {
+  "check": "mock tracks answered count",
+  "pass": true,
+  "detail": "Submit mock (31/31 answered)"
+ },
+ {
+  "check": "mock submit shows results with sections and remediation",
+  "pass": true,
+  "detail": "Short mock results\n\n20 / 31 (65%)\n\nTime used: 0 min. This practice score is not "
+ },
+ {
+  "check": "mock answers do not change mastery/status",
+  "pass": true,
+  "detail": "0"
+ },
+ {
+  "check": "mock misses feed the review queue",
+  "pass": true,
+  "detail": "11"
+ },
+ {
+  "check": "mock history persists across reload",
+  "pass": true,
+  "detail": "1"
+ },
+ {
+  "check": "full mock builds",
+  "pass": true,
+  "detail": "62"
+ },
+ {
+  "check": "boss complete run (25 q) records a best score",
+  "pass": true,
+  "detail": "{'best': 0.72, 'runs': [{'ts': 1790170494961, 'score': 18, 'answered': 25, 'total': 25, 'complete': True}]}"
+ },
+ {
+  "check": "boss drills show no hints",
+  "pass": true,
+  "detail": "0"
+ },
+ {
+  "check": "retrying missed boss concepts as practice leaves the best unchanged",
+  "pass": true,
+  "detail": "(0.72, 0.72)"
+ },
+ {
+  "check": "ending a boss early records an incomplete run with no best",
+  "pass": true,
+  "detail": "{'best': None, 'runs': [{'ts': 1790170496813, 'score': 3, 'answered': 3, 'total': 26, 'complete': False}]}"
+ },
+ {
+  "check": "export has format + schema",
+  "pass": true,
+  "detail": "('geol1001-lab-v3-export', 3)"
+ },
+ {
+  "check": "import restores attempts after clearing",
+  "pass": true,
+  "detail": "('Merged 62 new attempts plus mock and Boss history. Existing records were kept.', 62, 62)"
+ },
+ {
+  "check": "re-importing the same export does not duplicate",
+  "pass": true,
+  "detail": "62"
+ },
+ {
+  "check": "bad file is rejected without changes",
+  "pass": true,
+  "detail": "That file is not valid JSON. Nothing was changed."
+ },
+ {
+  "check": "real old-lab backup file imports via Data page",
+  "pass": true,
+  "detail": "{'mapped': 5, 'oldConcepts': 4, 'unmapped': []}"
+ },
+ {
+  "check": "old-lab miss becomes a review signal but not v3 mastery",
+  "pass": true,
+  "detail": "{'oldIds': ['continuation-context'], 'att': 1, 'ok': 0, 'mastered': False, 'flagged': True}"
+ },
+ {
+  "check": "home offers import when old-lab keys are in this browser",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "check": "legacy import leaves old keys untouched",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "check": "a miss schedules a spaced retry: same concept, different question, at least 2 questions later",
+  "pass": true,
+  "detail": "[{'id': 'c5-visc-m1', 'retry': False, 'c': None}, {'id': 'c1-method-m1', 'retry': False, 'c': None}, {'id': 'c2-relief-m1', 'retry': False, 'c': None}, {'id': 'c5-visc-m2', 'retry': True, 'c': 'c5-visc'}, {'id': 'c3-belts-m1', 'retry': False, 'c': None}]"
+ },
+ {
+  "check": "keyboard: letter keys choose options and Enter advances",
+  "pass": true,
+  "detail": "(1, 1, 2)"
+ },
+ {
+  "check": "reset clears v3 progress and leaves old-lab keys",
+  "pass": true,
+  "detail": "(0, '{\"concepts\":{}}')"
+ },
+ {
+  "check": "answer options are shuffled on screen (keyed position varies across renders)",
+  "pass": true,
+  "detail": "[3, 2, 3, 1, 2, 2, 2, 3]"
+ },
+ {
+  "check": "image zoom dialog opens",
+  "pass": true,
+  "detail": ""
+ },
+ {
+  "check": "no horizontal scrolling at 390 px width",
+  "pass": true,
+  "detail": "[]"
+ },
+ {
+  "check": "no console errors or page exceptions",
+  "pass": true,
+  "detail": "[]"
+ },
+ {
+  "check": "no external network requests",
+  "pass": true,
+  "detail": "[]"
+ }
+]

@@ -1,0 +1,314 @@
+Skip to study content
+
+LSU · GEOL 1001-002 · FALL 2026
+
+GEOL 1001 Study System
+
+Study it in the Guide. Prove it in the Lab.
+
+OFF
+offline · private · $0
+Exam 1
+Ch. 1–3 live · Ch. 4–6 queued
+Exam 2
+Chapters 7–12
+Final Exam
+Combines Exam 1 + Exam 2
+01
+Study Guide
+Read, reference, understand
+02
+Lab
+Retrieve, interact, test
+0/42
+Mastery
+
+EXAM 1 · STUDY GUIDE HALF
+
+Chapters 1–3 reference guide
+
+This teaching half turns the audited Lecture 1, Lecture 2, and Lecture 3 evidence into browsable notes. Every section has source receipts, core rules, explanations, and self-check prompts.
+
+1/2
+Study here first
+Half 1
+Study Guide
+Build the mental model
+Half 2
+Lab
+Close the notes and retrieve
+Verified lecture evidence
+Lectures 1–2 + all 45 Lecture 3 slides
+Exam 1 scope
+Chapters 1–3 live · Chapters 4–6 queued
+Practice formats
+MC · fill blank · exploration · concept sketch
+01
+METHOD + ILEA
+Think Like a Geologist
+
+Move from observation to a testable interpretation, then revise it when evidence changes.
+
+Visual field guide
+2 sourced views + interaction
+Observe -> describe -> question -> hypothesis -> test -> adjust -> model.
+Revision is a strength of the method, not a failure.
+2 concepts · Lecture 1a s18; Lecture 1b s2
+Open notes
+02
+THE CENTRAL HABIT
+Observation vs. Inference
+
+Separate what a figure shows from the history or process proposed to explain it.
+
+Visual field guide
+5 sourced views + interaction
+Observation: layered tan and brown rock is exposed.
+Inference: differential erosion produced the cliff.
+1 concept · Lecture 1b s3-4, s9-11
+Open notes
+03
+GEOLOGY CONTROLS CHOICES
+Hazards, Resources, and Settlement
+
+Read a landscape as a set of interacting risks, resources, and constraints.
+
+Visual field guide
+3 sourced views + interaction
+Risk depends on where people and structures sit relative to the hazard.
+Resource patterns can preserve atmospheric and tectonic history.
+2 concepts · Lecture 1b s5-7
+Open notes
+04
+COASTS, CLIFFS, ICE, LIFE
+Read Evidence Across Time
+
+Use present patterns to constrain past environments without turning a figure into proof of one cause.
+
+Visual field guide
+4 sourced views + interaction
+Describe the pattern first.
+State what the evidence constrains and what remains uncertain.
+1 concept · Lecture 1b s8-11
+Open notes
+05
+COMPOSITION VS. BEHAVIOR
+Two Ways to Divide Earth
+
+Label Earth's compositional layers without confusing them with the mechanical layers.
+
+Visual field guide
+3 sourced views + interaction
+Lithosphere is not a synonym for crust.
+Asthenosphere is weak, not a global ocean of liquid magma.
+2 concepts · Lecture 1b s12-14
+Open notes
+06
+THICKNESS UP, DENSITY DOWN
+Make Isostasy Move
+
+Manipulate a floating-block model and predict how crustal thickness and density affect elevation.
+
+Visual field guide
+2 sourced views + interaction
+Increasing thickness raises the exposed height.
+Increasing density lowers the exposed height.
+1 concept · Lecture 1b s15-16
+Open notes
+07
+INSIDE, OUTSIDE, ATMOSPHERE
+Trace Forces, Energy, and Water
+
+Classify Earth-system drivers and follow causal chains through the atmosphere and surface.
+
+Visual field guide
+2 sourced views + interaction
+Driver -> transfer -> material response.
+The atmosphere mediates both the water cycle and energy balance.
+2 concepts · Lecture 1b s17-18
+Open notes
+08
+CORE + CONTINUATION
+CONTINUATION
+Rocks, Spheres, and Scale
+
+Distinguish surface and magma-formed rocks, then preview the continuation material without overstating classroom emphasis.
+
+Visual field guide
+13 sourced views + interaction
+Sedimentary: surface environments.
+Igneous: solidification of magma.
+Continuation material stays visibly marked.
+3 concepts · Lecture 1b s19-31
+Open notes
+09
+CHAPTER 2 · EVIDENCE DISCIPLINE
+Observe, Represent, Then Infer
+
+Extract visible features from outcrops and representations before proposing processes or histories.
+
+Visual field guide
+2 sourced views + interaction
+Observation is directly visible or measurable.
+Inference is a proposed process, history, or relationship.
+A useful sketch preserves the relationships needed to test an explanation.
+2 concepts · Lecture 2 s2–8
+Open notes
+10
+CHAPTER 2 · RECONSTRUCT HISTORY
+Relative Time and Event Order
+
+Sequence landscapes, layers, faults, clasts, and intrusions using explicit relative-dating principles.
+
+Visual field guide
+4 sourced views + interaction
+Lower undeformed layers formed first.
+A cutting feature is younger than what it cuts.
+Clasts are older than their container.
+2 concepts · Lecture 2 s9–14
+Open notes
+11
+CHAPTER 2 · CHANGE VIEWPOINTS
+Maps, Relief, and the Subsurface
+
+Choose the representation that answers the question, calculate relief, and translate surface patterns into subsurface geometry.
+
+Visual field guide
+3 sourced views + interaction
+Elevation is height above sea level.
+Relief is highest minus lowest elevation.
+Closer contours generally indicate steeper slope.
+3 concepts · Lecture 2 s15–21
+Open notes
+12
+CHAPTER 2 · ASK WHAT WOULD DISCRIMINATE
+Data, Geologic Time, and Model Tests
+
+Combine qualitative patterns with quantitative measurements, order geologic time, and use predictions to eliminate weak explanations.
+
+Visual field guide
+3 sourced views + interaction
+Oldest broad division: Precambrian.
+Paleozoic → Mesozoic → Cenozoic.
+Observe → explain → predict → test → conclude or revise.
+3 concepts · Lecture 2 s22–29
+Open notes
+13
+CHAPTER 2 · INTEGRATIVE CAPSTONE
+Crater Models and Upheaval Dome
+
+Use layer order, geometry, materials, and model-specific predictions to test volcanic, salt, and impact explanations.
+
+Visual field guide
+3 sourced views + interaction
+Volcanic model: vent or volcanic deposits.
+Salt model: salt body or salt-driven deformation at depth.
+Impact model: shock features, impact melt, or meteoritic material.
+2 concepts · Lecture 2 s26–32
+Open notes
+14
+CHAPTER 3 · PLATE TECTONICS
+Landscape and Continental Drift
+
+Study the lecture models, interpret the source figures, and retrieve the causal relationships.
+
+Visual field guide
+14 sourced views + interaction
+The Andes and offshore trench occur together on the western side.
+The deck labels shelves on both sides, no trenches, and a central ridge with fracture zones.
+A former land connection explains the distribution without requiring those organisms to cross the present ocean.
+2 concepts · Lecture 3 slides 2–15
+Open notes
+15
+CHAPTER 3 · PLATE TECTONICS
+Tectonic Belts and Plate Motions
+
+Study the lecture models, interpret the source figures, and retrieve the causal relationships.
+
+Visual field guide
+6 sourced views + interaction
+Belts of tectonic activity divide the lithosphere into plates.
+The lecture uses coherent belts of tectonic activity to identify plate boundaries.
+Divergence is relative motion apart.
+2 concepts · Lecture 3 slides 16–21
+Open notes
+16
+CHAPTER 3 · PLATE TECTONICS
+Ridges and Continental Rifting
+
+Study the lecture models, interpret the source figures, and retrieve the causal relationships.
+
+Visual field guide
+3 sourced views + interaction
+Magma erupts or solidifies at oceanic divergent boundaries, forming new crust.
+The lecture links rising and melting asthenosphere to magma movement and crust formation.
+East Africa illustrates the rift stage.
+2 concepts · Lecture 3 slides 22–24
+Open notes
+17
+CHAPTER 3 · PLATE TECTONICS
+Subduction and the Ring of Fire
+
+Study the lecture models, interpret the source figures, and retrieve the causal relationships.
+
+Visual field guide
+4 sourced views + interaction
+The descending slab releases water that causes melting in the overlying mantle.
+Oceanic subduction produces a trench and a volcanic island arc.
+The lecture contrasts subduction beneath oceanic and continental plates.
+2 concepts · Lecture 3 slides 25–28
+Open notes
+18
+CHAPTER 3 · PLATE TECTONICS
+Collision and Transform Boundaries
+
+Study the lecture models, interpret the source figures, and retrieve the causal relationships.
+
+Visual field guide
+5 sourced views + interaction
+Collision thickens crust, producing high elevation.
+The collision diagram emphasizes broad deformation, thick crust, and few volcanoes.
+Transforms link spreading segments and accommodate horizontal relative motion.
+2 concepts · Lecture 3 slides 29–33
+Open notes
+19
+CHAPTER 3 · PLATE TECTONICS
+Plate Forces, Rates, and Geometry
+
+Study the lecture models, interpret the source figures, and retrieve the causal relationships.
+
+Visual field guide
+5 sourced views + interaction
+The lecture names ridge push, slab pull, and other forces such as mantle convection.
+Relative plate rates differ and are expressed in cm/year.
+Arrow length represents movement rate; direction gives motion direction.
+2 concepts · Lecture 3 slides 34–38
+Open notes
+20
+CHAPTER 3 · PLATE TECTONICS
+Magnetic Stripes and Seafloor Tests
+
+Study the lecture models, interpret the source figures, and retrieve the causal relationships.
+
+Visual field guide
+4 sourced views + interaction
+Spreading transports previously formed crust while younger crust forms at the ridge.
+New crust records successive polarities, and spreading preserves the sequence in stripes.
+Crust forms at the ridge, so volcanic rocks nearest it are youngest.
+2 concepts · Lecture 3 slides 39–42
+Open notes
+21
+CHAPTER 3 · PLATE TECTONICS
+Hot Spots and South America
+
+Study the lecture models, interpret the source figures, and retrieve the causal relationships.
+
+Visual field guide
+3 sourced views + interaction
+A volcano loses its position over the hot spot as the plate moves.
+Cooling and subsidence can carry an inactive volcanic island below sea level.
+The cross section labels the eastern edge as a passive margin, not a plate boundary.
+2 concepts · Lecture 3 slides 43–45
+Open notes
+Private offline study system · Original practice only
+Exam-separated architecture · Final inherits prior exam labs

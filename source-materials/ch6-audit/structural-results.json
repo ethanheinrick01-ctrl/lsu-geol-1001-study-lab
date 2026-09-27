@@ -1,0 +1,26 @@
+{
+  "pass": true,
+  "oldModules": 30,
+  "oldConcepts": 60,
+  "newModules": 8,
+  "newConcepts": 16,
+  "newVisuals": 22,
+  "newGradedActivities": 35,
+  "drills": [
+    {
+      "id": "chapter-six-volcanoes-drill",
+      "questions": 16
+    },
+    {
+      "id": "chapter-six-hazards-drill",
+      "questions": 16
+    },
+    {
+      "id": "chapter-six-boss-drill",
+      "questions": 32
+    }
+  ],
+  "oldRecordsAndVisualsUnchanged": true,
+  "gradingAndStorageCodeByteIdentical": true,
+  "allNewConceptsHaveTwoQuestionRootsAndVisuals": true
+}

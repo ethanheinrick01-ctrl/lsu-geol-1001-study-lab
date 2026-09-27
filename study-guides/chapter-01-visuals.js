@@ -6,7 +6,11 @@ window.GEOL_VISUALS = {
     visuals: [
       {
         title: "The complete ILEA cycle",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/slides/l1a/slide-18.png",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Lecture slide showing the ILEA sequence Predict, Draw, Justify, Research, and Revise Understanding.",
         caption: "This is the actual cycle from Lecture 1a—not a summary of it. The arrow returns revision to the next prediction because the process is iterative.",
         notice: "Memorize both the order and the job of each move: prediction begins the model; drawing externalizes it; justification exposes the reasoning; research supplies evidence; revision changes understanding.",
@@ -14,7 +18,11 @@ window.GEOL_VISUALS = {
       },
       {
         title: "Geologic research method",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/slides/l1b/slide-2.png",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Lecture slide listing the geologic research method from observation through interpretation.",
         caption: "Evidence comes before explanation. Testing may force adjustment before a model or interpretation is built.",
         notice: "Do not collapse observation and description into interpretation. The adjust step sits after testing because evidence is allowed to change the hypothesis.",
@@ -29,7 +37,11 @@ window.GEOL_VISUALS = {
     visuals: [
       {
         title: "North America and the ocean floor",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/slides/l1b/slide-3.png",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Global relief view centered on North America and the adjacent ocean floor.",
         caption: "Begin with visible relief, boundaries, and patterns before proposing a tectonic explanation.",
         notice: "Observation: continents and seafloor show large differences in elevation and texture. Inference: a particular tectonic process produced those patterns.",
@@ -37,7 +49,11 @@ window.GEOL_VISUALS = {
       },
       {
         title: "What geology asks us to explain",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/slides/l1b/slide-4.png",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Four geologic scenes including ice, folded strata, a volcano, and a wetland.",
         caption: "Four scenes can display four different processes, time scales, and evidence types.",
         notice: "Name visible materials, shapes, and relationships first. Glacier movement, folding, eruption history, and wetland development are interpretations supported by further evidence.",
@@ -45,7 +61,11 @@ window.GEOL_VISUALS = {
       },
       {
         title: "Layered cliff: evidence before story",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/atlas/layered-cliff.png",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Photograph of a layered cliff with differently colored strata and blocks near the slope.",
         caption: "Use the raw photograph below for the Look → Describe → Infer exercise.",
         notice: "Look for layer color, thickness, continuity, slope, fractures, and detached blocks. Only then infer differential erosion or rockfall.",
@@ -53,7 +73,11 @@ window.GEOL_VISUALS = {
       },
       {
         title: "Climate evidence across time",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/slides/l1b/slide-10.png",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Comparison of glacial conditions about 28,000 years ago with the present.",
         caption: "A reconstruction compares two times; it is not itself the original ancient landscape.",
         notice: "Separate mapped or reconstructed ice extent from the observations used to infer it. Ask what deposits, landforms, or dates would support the reconstruction.",
@@ -61,7 +85,11 @@ window.GEOL_VISUALS = {
       },
       {
         title: "Jurassic life reconstruction",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/slides/l1b/slide-11.png",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Artistic reconstruction of dinosaurs in a Jurassic environment.",
         caption: "The scene is an interpretation. Fossils, tracks, burrows, bones, teeth, and sedimentary context are evidence.",
         notice: "An illustration can combine evidence into a testable scene, but it cannot prove that every depicted organism occupied the exact same place and moment.",
@@ -76,7 +104,11 @@ window.GEOL_VISUALS = {
     visuals: [
       {
         title: "Hazards, resources, and settlement",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/slides/l1b/slide-5.png",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Annotated landscape showing volcano, landslide, steep slopes, fault earthquakes, stream, and soil around a settlement.",
         caption: "The same landscape contains benefits and hazards. Streams supply water and nutrients but also flood; high relief can provide views and resources but adds slope risk.",
         notice: "Trace each hazard to an exposure: volcanic flank, unstable slope, fault zone, or floodplain. A hazard becomes a settlement risk when people or infrastructure occupy its reach.",
@@ -84,7 +116,11 @@ window.GEOL_VISUALS = {
       },
       {
         title: "Landscape as a resource system",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/atlas/grazing-landscape.png",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Broad grassy landscape used for grazing with hills in the distance.",
         caption: "Geology influences relief, soil, water availability, land use, and the routes available for settlement.",
         notice: "Do not treat soil, topography, drainage, and bedrock as separate trivia. They are linked controls on how land can be used.",
@@ -107,7 +143,11 @@ window.GEOL_VISUALS = {
     visuals: [
       {
         title: "Australia and its continental shelf",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/slides/l1b/slide-8.png",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Map of Australia and surrounding continental shelf.",
         caption: "Modern coastlines do not mark the full edge of continental crust. Shelf geometry changes how ancient shorelines are interpreted.",
         notice: "Look for the broad shallow shelf beyond the present land edge. Sea-level change can expose or flood that shelf without moving the continent itself.",
@@ -115,7 +155,11 @@ window.GEOL_VISUALS = {
       },
       {
         title: "Strata record changing conditions",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/slides/l1b/slide-9.png",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Lecture slide using a layered cliff to distinguish observations and interpretations.",
         caption: "Layer geometry, thickness, color, contacts, and resistance are observations; depositional setting and erosion history are interpretations.",
         notice: "Read bottom-to-top relationships, then ask what sequence of deposition, lithification, uplift, and erosion could produce the exposure.",
@@ -123,7 +167,11 @@ window.GEOL_VISUALS = {
       },
       {
         title: "Ice extent then and now",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/slides/l1b/slide-10.png",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Lecture comparison of North American ice extent about 28,000 years ago and today.",
         caption: "Past climate is reconstructed from physical traces and dated deposits, then compared with the present.",
         notice: "The time label and mapped extent are claims synthesized from evidence. Seek moraines, striations, till, lake deposits, and ages that would anchor the reconstruction.",
@@ -131,7 +179,11 @@ window.GEOL_VISUALS = {
       },
       {
         title: "Life reconstructed from traces",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/slides/l1b/slide-11.png",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Jurassic ecosystem reconstruction with dinosaurs, water, and vegetation.",
         caption: "Ancient life is inferred through preserved body fossils, trace fossils, and the surrounding sedimentary context.",
         notice: "Tracks and burrows show behavior; bones and teeth show anatomy; sedimentary rocks constrain the environment. The final scene remains a model.",
@@ -146,7 +198,11 @@ window.GEOL_VISUALS = {
     visuals: [
       {
         title: "Compositional layers",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/slides/l1b/slide-12.png",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Earth cross-section labeled crust, mantle, and core, with continental and oceanic crust examples.",
         caption: "Composition divides Earth into crust, mantle, and core. Continental and oceanic crust differ in thickness and composition.",
         notice: "Use chemistry and material identity here. Crust is the thin outer layer, mantle dominates volume, and the core is chiefly iron-nickel.",
@@ -154,7 +210,11 @@ window.GEOL_VISUALS = {
       },
       {
         title: "Meteorite clue to the core",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/atlas/iron-nickel-meteorite.jpg",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Cut iron-nickel meteorite showing a metallic crystalline texture.",
         caption: "Iron-nickel meteorites are compositional analog evidence used alongside density, seismic, and planetary-formation evidence.",
         notice: "The meteorite is not a recovered piece of Earth’s core. It is an analog from differentiated planetary material that helps constrain plausible core composition.",
@@ -162,7 +222,11 @@ window.GEOL_VISUALS = {
       },
       {
         title: "Mechanical layers",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/slides/l1b/slide-14.png",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Earth diagram contrasting rigid lithosphere with ductile asthenosphere.",
         caption: "Mechanical behavior divides the shallow Earth into rigid lithosphere over weaker, ductile asthenosphere.",
         notice: "Lithosphere includes crust plus the rigid uppermost mantle. Therefore crust and lithosphere are not synonyms.",
@@ -177,7 +241,11 @@ window.GEOL_VISUALS = {
     visuals: [
       {
         title: "Crustal thickness and elevation",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/slides/l1b/slide-15.png",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Diagram relating variations in crustal thickness to elevation and deep crustal roots.",
         caption: "Thicker crust can stand higher while also extending deeper into the supporting mantle.",
         notice: "The visible mountain is only the top of the mass-balance story. Look for the deeper root beneath high topography.",
@@ -185,7 +253,11 @@ window.GEOL_VISUALS = {
       },
       {
         title: "The isostasy block analogy",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/slides/l1b/slide-16.png",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Blocks floating at different heights showing the effects of thickness and density.",
         caption: "At equal density, the thicker block projects higher and deeper. At equal thickness, the denser block rides lower.",
         notice: "Never say simply 'bigger floats higher.' State which variable is controlled: thickness or density.",
@@ -200,7 +272,11 @@ window.GEOL_VISUALS = {
     visuals: [
       {
         title: "Internal and external drivers",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/slides/l1b/slide-17.png",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Lecture slide distinguishing internal and external drivers and forces.",
         caption: "Earth’s interior powers tectonism and magmatism; incoming solar energy and gravity power major surface processes.",
         notice: "Classify by the ultimate energy source, not by where you happen to observe the effect. A river is at the surface, but its water cycle is solar-driven and its downhill motion is gravity-driven.",
@@ -208,7 +284,11 @@ window.GEOL_VISUALS = {
       },
       {
         title: "Atmosphere, water, and surface energy",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/slides/l1b/slide-18.png",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Lecture slide connecting atmosphere, water, and energy to surface processes.",
         caption: "The atmosphere redistributes heat and water, enabling weathering, erosion, transport, and deposition.",
         notice: "Follow the chain: solar heating → atmospheric and water circulation → weather and runoff → landscape change. Gravity supplies the downslope direction.",
@@ -223,7 +303,11 @@ window.GEOL_VISUALS = {
     visuals: [
       {
         title: "Sedimentary environments",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/slides/l1b/slide-19.png",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Lecture slide showing multiple sedimentary environments.",
         caption: "Sedimentary rocks form from deposited material; environment controls grain size, sorting, structures, fossils, and geometry.",
         notice: "Do not identify a sedimentary setting by color alone. Use texture, structures, fossils, and the larger depositional geometry.",
@@ -231,7 +315,11 @@ window.GEOL_VISUALS = {
       },
       {
         title: "Igneous rock from magma",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/slides/l1b/slide-23.png",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Lecture slide showing magma cooling to form igneous rock.",
         caption: "Igneous rocks crystallize from molten material. Cooling setting controls crystal growth and texture.",
         notice: "Connect texture to cooling history: rapid surface cooling favors fine crystals or glass; slower subsurface cooling permits larger crystals.",
@@ -239,7 +327,11 @@ window.GEOL_VISUALS = {
       },
       {
         title: "Metamorphic and hydrothermal processes",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/slides/l1b/slide-26.png",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Diagram showing metamorphism and hydrothermal alteration without melting.",
         caption: "Heat, pressure, deformation, and chemically active fluids can change rock without melting it.",
         notice: "The diagnostic boundary is solid-state change. If the rock fully melts and later crystallizes, the product is igneous rather than metamorphic.",
@@ -248,7 +340,11 @@ window.GEOL_VISUALS = {
       },
       {
         title: "Rock cycle",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/slides/l1b/slide-29.png",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Rock cycle diagram linking sedimentary, igneous, and metamorphic rocks through geologic processes.",
         caption: "Rock names describe current material and history, not a permanent identity. Any rock can enter multiple pathways as conditions change.",
         notice: "Study the arrows as processes: weathering/erosion, deposition/lithification, heat/pressure, melting, cooling/crystallization, uplift and exposure.",
@@ -257,7 +353,11 @@ window.GEOL_VISUALS = {
       },
       {
         title: "Earth’s four spheres",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/slides/l1b/slide-30.png",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Lecture slide illustrating atmosphere, hydrosphere, biosphere, and geosphere.",
         caption: "Geologic systems cross sphere boundaries; water, air, life, and solid Earth continually exchange matter and energy.",
         notice: "For any event, trace at least two interactions—for example eruption material moving from geosphere to atmosphere, then into hydrosphere and biosphere.",
@@ -266,7 +366,11 @@ window.GEOL_VISUALS = {
       },
       {
         title: "Scale changes the process you can see",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/slides/l1b/slide-31.png",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Lecture slide comparing geologic features across spatial and temporal scales.",
         caption: "A correct interpretation at hand-sample scale may not answer a continental or planetary question.",
         notice: "Always name both spatial and temporal scale. Microscopic texture, an outcrop relationship, and a global plate pattern require different evidence.",
@@ -278,7 +382,11 @@ window.GEOL_VISUALS = {
       {
         category: "sedimentary",
         title: "Steep mountain front",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/atlas/steep-mountain-front.png",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Steep rocky mountain front with loose material near its base.",
         cues: "Angular relief, exposed bedrock, gravity-driven debris, and a sharp break in slope.",
         process: "Erosion removes material from high relief; gravity and water move sediment downslope toward depositional basins.",
@@ -287,7 +395,11 @@ window.GEOL_VISUALS = {
       {
         category: "sedimentary",
         title: "Sand dunes",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/atlas/sand-dunes.png",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Wind-shaped sand dunes with repeated ridges and slip faces.",
         cues: "Well-sorted sand, repeated ridges, asymmetric slopes, and wind-shaped surfaces.",
         process: "Wind transports and deposits sand; migrating dunes can preserve cross-bedding in sedimentary rock.",
@@ -296,7 +408,11 @@ window.GEOL_VISUALS = {
       {
         category: "sedimentary",
         title: "Beach",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/atlas/beach.png",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Sandy shoreline shaped by waves.",
         cues: "Rounded or sorted sediment, shoreline geometry, ripple or wave structures, and repeated water movement.",
         process: "Waves abrade, sort, transport, and redeposit sediment along a high-energy shoreline.",
@@ -305,7 +421,11 @@ window.GEOL_VISUALS = {
       {
         category: "igneous",
         title: "Explosive ash eruption",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/atlas/explosive-ash-eruption.png",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Large explosive volcanic plume rich in ash.",
         cues: "Tall ash column, fragmented material, dark plume, and broad dispersal potential.",
         process: "Gas-rich magma fragments explosively, producing pyroclastic material rather than a simple lava flow.",
@@ -315,7 +435,11 @@ window.GEOL_VISUALS = {
       {
         category: "igneous",
         title: "Lava eruption",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/atlas/lava-eruption.png",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Glowing lava erupting and flowing at Earth’s surface.",
         cues: "Molten flow, glowing surface, cooling crust, and material moving away from a vent.",
         process: "Lava cools at or near the surface, producing extrusive igneous rock with rapid-cooling textures.",
@@ -325,7 +449,11 @@ window.GEOL_VISUALS = {
       {
         category: "metamorphic",
         title: "Banded metamorphic rock",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/atlas/metamorphic-rock.png",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Close view of folded, alternating light and dark bands in metamorphic rock.",
         cues: "Alternating mineral bands, foliation, folding, and solid-state deformation.",
         process: "Heat, pressure, and deformation reorganize minerals without fully melting the rock.",
@@ -335,7 +463,11 @@ window.GEOL_VISUALS = {
       {
         category: "hydrothermal",
         title: "Hydrothermal springs",
+<<<<<<< HEAD
         src: "assets/course-figure.svg",
+=======
+        src: "assets/visuals/atlas/hydrothermal-springs.png",
+>>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         alt: "Mineral-rich hot-spring landscape with colored deposits and steam.",
         cues: "Steam, hot water, mineral precipitates, vivid chemical or microbial colors, and vented flow.",
         process: "Heated water circulates through rock, transports dissolved material, alters minerals, and precipitates deposits as conditions change.",

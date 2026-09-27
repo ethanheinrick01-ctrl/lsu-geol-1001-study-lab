@@ -1,0 +1,1 @@
+The original index.html and README.md are backed up here. All legacy application files remain in the Study Lab root. To restore the old lab, copy this backup index.html and README.md into the Study Lab root. The v3 installer does not write or clear browser progress.
