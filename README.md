@@ -2,11 +2,13 @@
 
 General Geology: Physical · Professor Guangsheng Zhuang · Fall 2026 · Exam 1 (Chapters 1–6), Tuesday Sep 29, 10:30 AM, Howe-Russell W130.
 
-A private, offline study system: a source-cited study guide, practice where you commit your confidence before any feedback, spaced review driven by your misses, integrative Boss drills, and mock exams that hide feedback until you submit.
+A source-cited study guide with one shared mastery record across practice, cases, Boss drills, written self-checks, and Exam 1 learning mocks. Runs in your browser with no account, backend, or paid API.
 
 ## Open it
 
-**Easiest:** double-click `index.html`. It opens in your browser from the file itself. No internet, install, account, or paid API is needed.
+**Live lab:** https://ethanheinrick01-ctrl.github.io/lsu-geol-1001-study-lab/
+
+**Offline copy:** double-click `index.html`. It opens in your browser from the file itself. No internet, install, account, or paid API is needed.
 
 **If your browser blocks something from a file** (rare), run a tiny local server instead. In Terminal:
 
@@ -26,12 +28,12 @@ Use one browser consistently. Progress is saved in that browser only.
 3. **Practice:** choose an answer, then submit with **Low / Medium / High** confidence. Feedback appears only after that. Keys: A–D pick an option, Enter goes to the next question.
 4. **Review** runs your misses first: high-confidence misses, then mock misses, then shaky and due concepts.
 5. **Boss** drills are fixed 25–26-question integrative runs. Only a completed run sets a best score.
-6. **Mock** exams follow the three sections the professor described on Sep 22. There is no feedback until you submit.
+6. **Mock** opens three learning mocks: 25 multiple choice, 8 short answers, and 7 grouped investigations, following the September 24 review. Confidence comes before immediate feedback. First responses stay fixed; corrections are saved separately.
 7. **Data:** export a backup (.json) often. You can also import your old lab's backup file here (for example `GEOL-progress-2026-09-17T19-18-14.029Z.json`).
 
 ## What "mastered" means here
 
-The last two answers on a concept are correct, on different questions, the latest at Medium or High confidence, with no hint. A High-confidence miss is flagged as a misconception until you clear it. Mock answers and old-lab history never count toward mastery.
+Two correct, unhinted answers on different questions earn mastery when the second has Medium or High confidence. Mastery stays earned. Later misses enter review and clear after two independent correct answers following the miss. All checked exercise modes feed the same record, including rubric self-assessments (labeled separately). Corrections after feedback do not count as independent answers. Imported old-lab summary marks remain review signals rather than new mastery.
 
 ## Folder contents
 
@@ -54,13 +56,17 @@ The last two answers on a concept are correct, on different questions, the lates
 - **Tier 3**: Your notes.
 - **Tier 4**: Lab design or inference.
 
-The lab makes no claims about his exam style beyond what he said on Sep 22 and what the syllabus states. Chapter 6 has no deck or recording in the package, so it is taught from the textbook, and each card says so.
+The September 24 exam review supplies the exam format and focus. Repeated lecture explanations guide the introductory practice style; they do not establish exact exam questions. Chapter 6 has no deck or recording in the package, so it is taught from the textbook, and each card says so.
 
 Course slides and textbook figures are included for your personal study only. Do not share the folder.
 
-Storage key: `geol1001-lab-v3`. Old-lab keys (`geol1001-guided-progress-v1`, `geol1001-study-lab-progress-v1`) are read, never written. Version 3.0.0, built 2026-09-23.
+Storage key: `geol1001-lab-v3`. Old-lab keys (`geol1001-guided-progress-v1`, `geol1001-study-lab-progress-v1`) are read, never written. Version 3.1.0, updated 2026-09-27.
 
 
 ## September 24 Exam 1 update
 
 Exam 1 now provides the professor-review topic map, actual course figures, three untimed 25/8/7 review sets, immediate feedback, separate first-try/correction history, and resumable drafts. Existing progress uses the same storage key. See [Exam 1 update and verification](docs/EXAM1_UPDATE.md) for the evidence, compatibility receipt and test results.
+
+## September 27 cohesive update
+
+COMD-style navigation and dashboard, shared mastery and review, persistent ordinary-session drafts/history, and targeted transcript refinements. See [update receipt](docs/COHESIVE_UPDATE_20260927.md). Use the same URL and browser for automatic persistence; use Data → Export/Import for backup or another device.

@@ -76,54 +76,81 @@
   // ---------------- Recording + mastery ----------------
   function record(it, ref, r, conf, mode, assisted) {
     var s = L.store.load(), g = grade(it, r);
-    if (it.t === 'teach') { s.teach[it.id] = { ts: Date.now(), self: r && r.self }; L.store.save(); return g; }
+    if (it.t === 'teach') {
+      if (!r || ['got','part','miss'].indexOf(r.self) < 0) return g;
+      var hits = Array.isArray(r.rubric) ? r.rubric.filter(Boolean).length : 0;
+      g = { ok: r.self === 'got', sc: Array.isArray(r.rubric) && r.rubric.length ? hits / r.rubric.length : r.self === 'got' ? 1 : r.self === 'part' ? 0.5 : 0, self: true };
+      s.teach[it.id] = { ts: Date.now(), self: r.self, response: r.response || '', rubric: r.rubric || null };
+    }
     var key = ref ? refKey(ref) : it.id;
     var a = { i: key, c: it.c, ok: !!g.ok, sc: Math.round((g.sc || 0) * 100) / 100, cf: conf || 'm', m: mode || 'practice', t: Date.now() };
+    if (it.t === 'teach') { a.self = true; a.response = r.response || ''; a.rubric = r.rubric || null; s.teach[it.id].ts = a.t; }
     if (assisted) a.h = 1;
     s.attempts.push(a); L.store.save();
     return g;
   }
-  function conceptStats(state) {
+  // One read model for every dashboard, regardless of the exercise's storage location.
+  function allAttempts(state) {
     state = state || L.store.load();
-    var out = {}, today = U.todayKey();
-    Object.keys(L.CONCEPTS).forEach(function (c) { out[c] = { id: c, att: 0, ok: 0, hist: [], box: 0, last: 0, status: 'new', mockMiss: false, mockSeen: false, prior: null, due: today }; });
-    function addAttempt(a) {
-      var st = out[a.c]; if (!st) return;
-      st.att++; if (a.ok) st.ok++; st.hist.push(a); st.last = Math.max(st.last, a.t || 0);
-      // A wrong answer can schedule review, but it never reduces earned mastery or spacing progress.
-      if (a.ok && !a.h) st.box = a.cf === 'l' ? Math.max(st.box, 1) : Math.min(st.box + 1, 4);
-      if (!a.ok) { st.mockSeen = true; st.mockMiss = true; }
-    }
-    // Practice, Boss drills, and submitted mocks are all one mastery record.
-    state.attempts.forEach(addAttempt);
-    // Exam 1 preserves first answers and corrections under examRuns. Reflect each checked answer in the
-    // shared calculation without changing that source record or duplicating it in saved attempts.
-    (state.examRuns || []).forEach(function (r) { Object.keys(r.answers || {}).forEach(function (id) {
-      var entry = r.answers[id], it = resolve({ id: id }); if (!it || !entry) return;
-      [entry.first].concat(entry.tries || []).forEach(function (x) {
-        if (!x || !x.grade) return;
-        addAttempt({ i: id, c: it.c, ok: !!x.grade.ok, sc: x.grade.sc || 0, cf: x.cf || 'm', m: 'exam1', t: x.at || r.started || 0, self: !!x.self });
+    var out = (state.attempts || []).map(function(a){ return Object.assign({}, a); });
+    (state.examRuns || []).forEach(function(r){ Object.keys(r.answers || {}).forEach(function(id){
+      var entry=r.answers[id], it=resolve({id:id}); if(!entry || !it)return;
+      [entry.first].concat(entry.tries || []).forEach(function(x, n){
+        if(!x || !x.grade)return;
+        out.push({i:id,c:it.c,ok:!!x.grade.ok,sc:x.grade.sc||0,cf:x.cf||'m',m:'exam1',t:x.at||r.started||0,
+          self:!!x.self,h:x.assisted?1:0,correction:n>0,run:r.id,attemptId:x.id});
       });
     }); });
-    Object.keys(out).forEach(function (c) {
-      var st = out[c], h = st.hist.sort(function (a, b) { return (a.t || 0) - (b.t || 0); });
-      if (state.legacy && state.legacy.signal && state.legacy.signal[c]) st.prior = state.legacy.signal[c];
-      if (!h.length) { st.status = 'new'; return; }
-      var last = h[h.length - 1], roots = {};
-      h.forEach(function (a) { if (a.ok && !a.h && (a.cf === 'm' || a.cf === 'h')) roots[a.i] = true; });
-      // Mastery is an earned record: two correct answers from different question roots. Once earned,
-      // later misses remain visible as review signals but cannot take the mastered state away.
-      var mastered = Object.keys(roots).length >= 2;
-      var misc = false, run = 0;
-      for (var i = h.length - 1; i >= 0; i--) { if (h[i].ok && !h[i].h) run++; else if (!h[i].ok) { if (h[i].cf === 'h' && run < 2) misc = true; break; } }
-      if (mastered) st.status = 'mastered';
-      else if (misc) st.status = 'misconception';
-      else if (!last.ok) st.status = 'shaky';
-      else st.status = 'learning';
-      st.due = U.addDays(U.todayKey(new Date(st.last)), BOX_DAYS[st.box]);
-      st.isDue = st.due <= today;
+    // Older rubric self-checks were saved separately. Include the recorded rating, never infer a grade from prose.
+    Object.keys(state.teach || {}).forEach(function(id){
+      var x=state.teach[id], it=resolve({id:id});
+      if(!it || !x || ['got','part','miss'].indexOf(x.self)<0 || out.some(function(a){return a.i===id && a.self && a.t===x.ts;}))return;
+      out.push({i:id,c:it.c,ok:x.self==='got',sc:x.self==='got'?1:x.self==='part'?0.5:0,cf:'m',m:'teach',t:x.ts||0,self:true});
     });
-    return out;
+    return out.sort(function(a,b){return (a.t||0)-(b.t||0);});
+  }
+  function conceptStats(state, ignoreCredits) {
+    state=state||L.store.load();var out={},today=U.todayKey();
+    Object.keys(L.CONCEPTS).forEach(function(c){out[c]={id:c,att:0,ok:0,autoAtt:0,selfAtt:0,hist:[],box:0,last:0,status:'new',rawStatus:'new',mockMiss:false,mockSeen:false,reviewOpen:false,highConfidenceMiss:false,prior:null,due:today};});
+    allAttempts(state).forEach(function(a){var st=out[a.c];if(!st)return;st.att++;if(a.ok)st.ok++;if(a.self)st.selfAtt++;else st.autoAtt++;st.hist.push(a);st.last=Math.max(st.last,a.t||0);});
+    Object.keys(out).forEach(function(c){
+      var st=out[c],h=st.hist,roots={},autoRoots={},earned=false,autoEarned=false,lastMiss=-1;
+      if(state.legacy && state.legacy.signal && state.legacy.signal[c])st.prior=state.legacy.signal[c];
+      h.forEach(function(a,i){
+        if(!a.ok)lastMiss=i;
+        if(a.ok && !a.h){
+          roots[a.i]=true;if(!a.self)autoRoots[a.i]=true;
+          if(Object.keys(roots).length>=2 && a.cf!=='l')earned=true;
+          if(Object.keys(autoRoots).length>=2 && a.cf!=='l' && !a.self)autoEarned=true;
+          st.box=a.cf==='l'?Math.max(st.box,1):Math.min(st.box+1,4);
+        }
+      });
+      var after=lastMiss>=0?h.slice(lastMiss+1).filter(function(a){return a.ok&&!a.h;}):[],clearRoots={};
+      after.forEach(function(a){clearRoots[a.i]=true;});
+      var cleared=Object.keys(clearRoots).length>=2 && after.length && after[after.length-1].cf!=='l';
+      st.reviewOpen=lastMiss>=0&&!cleared;
+      st.highConfidenceMiss=st.reviewOpen&&h.some(function(a){return !a.ok&&a.cf==='h' && !isClearedAfter(h,a);});
+      st.mockSeen=h.some(function(a){return a.m==='mock'||a.m==='exam1';});
+      st.mockMiss=st.reviewOpen&&h.some(function(a){return !a.ok&&(a.m==='mock'||a.m==='exam1')&&!isClearedAfter(h,a);});
+      st.lastMiss=lastMiss>=0?h[lastMiss]:null;
+      st.rawStatus=!h.length?'new':st.highConfidenceMiss?'misconception':st.reviewOpen?'shaky':earned?'mastered':'learning';
+      st.status=earned || (!ignoreCredits && state.masteryCredits && state.masteryCredits[c])?'mastered':st.rawStatus;
+      st.masterySource=autoEarned?'earned':earned?'self':state.masteryCredits&&state.masteryCredits[c]||null;
+      st.earned=earned;st.due=st.last?U.addDays(U.todayKey(new Date(st.last)),BOX_DAYS[st.box]):today;st.isDue=!!st.last&&st.due<=today;
+    });return out;
+  }
+  function isClearedAfter(history,miss){
+    var roots={},after=history.slice(history.indexOf(miss)+1);
+    // A later wrong answer starts a fresh review requirement.
+    var latestWrong=-1;after.forEach(function(a,i){if(!a.ok)latestWrong=i;});
+    after=after.slice(latestWrong+1).filter(function(a){return a.ok&&!a.h;});
+    after.forEach(function(a){roots[a.i]=true;});
+    return Object.keys(roots).length>=2 && after.length>0 && after[after.length-1].cf!=='l';
+  }
+  function captureMastery(state){
+    state.masteryCredits=state.masteryCredits||{};
+    var stats=conceptStats(state,true);
+    Object.keys(stats).forEach(function(c){if(stats[c].earned && (!state.masteryCredits[c] || stats[c].masterySource==='earned'))state.masteryCredits[c]=stats[c].masterySource;});
   }
   var RANK = { misconception: 0, mock: 1, shaky: 2, due: 3, prior: 4, learning: 5, new: 6 };
   var WHY = { misconception: 'High-confidence miss', mock: 'Missed in exam review', shaky: 'Last attempt wrong', due: 'Due for spaced review', prior: 'Old-lab history', learning: 'Needs a second correct answer', new: 'Not yet attempted' };
@@ -131,9 +158,9 @@
     var st = conceptStats(), rows = [];
     Object.keys(st).forEach(function (c) {
       var s = st[c], why = null; if (!hasPracticeContent(c)) return;
-      if (s.status === 'misconception') why = 'misconception';
+      if (s.highConfidenceMiss) why = 'misconception';
       else if (s.mockMiss) why = 'mock';
-      else if (s.status === 'shaky') why = 'shaky';
+      else if (s.reviewOpen) why = 'shaky';
       else if (s.att && s.isDue) why = 'due';
       else if (s.prior && s.prior.flagged && s.status !== 'mastered') why = 'prior';
       else if (s.status === 'learning') why = 'learning';
@@ -148,7 +175,7 @@
   function pickFor(c, exclude, allowBoss) {
     exclude = exclude || {};
     var s = L.store.load(), lastSeen = {}, lastOk = {};
-    s.attempts.forEach(function (a) { lastSeen[a.i] = a.t; lastOk[a.i] = a.ok; });
+    allAttempts(s).forEach(function (a) { lastSeen[a.i] = a.t; lastOk[a.i] = a.ok; });
     var ids = (BY_CONCEPT[c] || []).filter(function (id) { var it = REG[id]; return it && it.t !== 'teach' && !CASE_OF[id] && (allowBoss || it.pool !== 'boss') && it.pool !== 'exam1' && !exclude[id]; });
     var cands = ids.map(function (id) { return { ref: { id: id }, score: (lastSeen[id] ? (lastOk[id] ? 3 : 1.2) : 0) * 1e13 + (lastSeen[id] || 0) + Math.random() * 1e9 }; });
     (L.GEN_FOR[c] || []).forEach(function (g) { cands.push({ ref: { gen: g, seed: U.newSeed(), opt: { c: c } }, score: 1.1e13 + Math.random() * 1e12 }); });
@@ -160,12 +187,13 @@
   // ---------------- Sessions ----------------
   function newSession(mode, title, refs, opt) {
     opt = opt || {};
-    var sess = { id: 'S' + Date.now(), mode: mode, title: title, queue: refs.map(function (r) { return { ref: r, retry: false }; }), idx: 0, results: [],
-      retries: 0, started: Date.now(), bossId: opt.bossId || null, noRetry: !!opt.noRetry, orders: {}, back: opt.back || 'practice' };
-    var s = L.store.load(); s.session = sess; L.store.save(); return sess;
+    var sess = { id: 'S' + Date.now() + '-' + Math.random().toString(36).slice(2,7), mode: mode, title: title, queue: refs.map(function (r) { return { ref: r, retry: false }; }), idx: 0, results: [],
+      retries: 0, started: Date.now(), updated: Date.now(), drafts: {}, confidence: {}, assisted: {}, revealed: {}, bossId: opt.bossId || null, noRetry: !!opt.noRetry, orders: {}, back: opt.back || 'practice' };
+    var s = L.store.load(); archiveSession(s,s.session); s.session = sess; L.store.save(); return sess;
   }
+  function archiveSession(s,sess){if(!sess)return;var copy=U.clone(sess),at=s.sessionHistory.findIndex(function(x){return x.id===sess.id;});if(at<0)s.sessionHistory.push(copy);else s.sessionHistory[at]=copy;}
   function currentSession() { return L.store.load().session; }
-  function endSession() { var s = L.store.load(), sess = s.session; s.session = null; L.store.save(); return sess; }
+  function endSession() { var s = L.store.load(), sess = s.session; archiveSession(s,sess); s.session = null; L.store.save(); return sess; }
   function answerInSession(response, conf, assisted) {
     var s = L.store.load(), sess = s.session; if (!sess) return null;
     var q = sess.queue[sess.idx], it = resolve(q.ref);
@@ -201,7 +229,7 @@
     for (var i = 0; i < plan.length && refs.length < (n || 15); i++) {
       var ex = U.clone(used);
       // after a miss, prefer a different item root than the one missed
-      var lastMiss = null; for (var j = s.attempts.length - 1; j >= 0; j--) { var a = s.attempts[j]; if (a.c === plan[i].c) { if (!a.ok) lastMiss = a.i; break; } }
+      var lastMiss = plan[i].s.lastMiss && plan[i].s.lastMiss.i;
       if (lastMiss && REG[lastMiss]) ex[lastMiss] = 1;
       var r = pickFor(plan[i].c, ex); if (r) { used[refKey(r)] = 1; if (r.id) used[r.id] = 1; refs.push(r); }
     }
@@ -224,7 +252,9 @@
     var score = first.filter(function (r) { return r.ok; }).length;
     var complete = assigned > 0 && first.length === assigned;
     var b = s.boss[sess.bossId] || { best: null, runs: [] };
-    b.runs.push({ ts: Date.now(), score: score, answered: first.length, total: assigned, complete: complete });
+    var run={sessionId:sess.id,ts:Date.now(),score:score,answered:first.length,total:assigned,complete:complete};
+    var previous=b.runs.findIndex(function(r){return r.sessionId===sess.id;});
+    if(previous<0)b.runs.push(run);else b.runs[previous]=run;
     if (complete) b.best = b.best === null ? score / assigned : Math.max(b.best, score / assigned);
     s.boss[sess.bossId] = b; L.store.save();
     return { score: score, answered: first.length, total: assigned, complete: complete };
@@ -303,5 +333,5 @@
     reviewPlan: reviewPlan, pickFor: pickFor, newSession: newSession, currentSession: currentSession, endSession: endSession,
     answerInSession: answerInSession, advance: advance, practiceRefs: practiceRefs, reviewRefs: reviewRefs, caseRefs: caseRefs, caseById: caseById,
     bossRefs: bossRefs, finishBoss: finishBoss, buildMock: buildMock, submitMock: submitMock, mockPools: mockPools, itemsFor: itemsFor,
-    hasPracticeContent: hasPracticeContent, REG: function () { return REG; }, BY_CONCEPT: function () { return BY_CONCEPT; }, CASE_OF: function () { return CASE_OF; }, WHY: WHY };
+    allAttempts: allAttempts, captureMastery: captureMastery, hasPracticeContent: hasPracticeContent, REG: function () { return REG; }, BY_CONCEPT: function () { return BY_CONCEPT; }, CASE_OF: function () { return CASE_OF; }, WHY: WHY };
 })(typeof window !== 'undefined' ? window : globalThis);

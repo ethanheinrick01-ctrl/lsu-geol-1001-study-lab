@@ -6,7 +6,7 @@
   var mem = null, storageOK = true, lastError = '';
   function blank() {
     return { app: L.CONFIG.id, schema: SCHEMA, created: Date.now(), updated: Date.now(), attempts: [], mocks: [], mockActive: null,
-      examRuns: [], examActive: null, mockArchived: [], session: null, boss: {}, guideRead: {}, teach: {}, legacy: null, settings: { mockMinutes: 80 } };
+      examRuns: [], examActive: null, masteryCredits: {}, sessionHistory: [], mockArchived: [], session: null, boss: {}, guideRead: {}, teach: {}, legacy: null, settings: { mockMinutes: 80 } };
   }
   function get(k) { try { return root.localStorage ? root.localStorage.getItem(k) : null; } catch (e) { storageOK = false; lastError = String(e); return null; } }
   function set(k, v) { try { if (!root.localStorage) throw Error('localStorage unavailable'); root.localStorage.setItem(k, v); storageOK = true; return true; } catch (e) { storageOK = false; lastError = String(e); return false; } }
@@ -16,8 +16,9 @@
     if (!Array.isArray(x.attempts)) x.attempts = [];
     if (!Array.isArray(x.mocks)) x.mocks = [];
     if (!Array.isArray(x.examRuns)) x.examRuns = [];
+    if (!Array.isArray(x.sessionHistory)) x.sessionHistory = [];
     if (!Array.isArray(x.mockArchived)) x.mockArchived = [];
-    ['boss', 'guideRead', 'teach', 'settings'].forEach(function (k) { if (!x[k] || typeof x[k] !== 'object') x[k] = b[k]; });
+    ['boss', 'guideRead', 'teach', 'settings', 'masteryCredits'].forEach(function (k) { if (!x[k] || typeof x[k] !== 'object') x[k] = b[k]; });
     x.schema = SCHEMA; x.app = L.CONFIG.id; return x;
   }
   function load() {
@@ -28,6 +29,7 @@
   }
   function save() {
     if (!mem) return false;
+    if (L.engine && L.engine.captureMastery) L.engine.captureMastery(mem);
     mem.updated = Date.now();
     // Keep the complete history; storage failures are surfaced instead of silently truncating progress.
     return set(KEY, JSON.stringify(mem));
@@ -45,8 +47,8 @@
     into.mocks.sort(function (a, b) { return a.ts - b.ts; });
     Object.keys(from.boss || {}).forEach(function (id) {
       var cur = into.boss[id] || { best: null, runs: [] }, ext = from.boss[id] || {}, ts = {};
-      cur.runs.forEach(function (r) { ts[r.ts] = 1; });
-      (ext.runs || []).forEach(function (r) { if (!ts[r.ts]) cur.runs.push(r); });
+      cur.runs.forEach(function (r,i) { ts[r.sessionId || r.ts] = i; });
+      (ext.runs || []).forEach(function (r) { var k=r.sessionId||r.ts,at=ts[k];if(at===undefined){ts[k]=cur.runs.length;cur.runs.push(r);}else if((r.answered||0)>(cur.runs[at].answered||0) || (r.complete&&!cur.runs[at].complete))cur.runs[at]=r; });
       cur.best = null; cur.runs.forEach(function (r) { if (r.complete && r.total > 0) cur.best = cur.best === null ? r.score / r.total : Math.max(cur.best, r.score / r.total); });
       into.boss[id] = cur;
     });
@@ -65,14 +67,21 @@
         // Divergent imported first responses are retained as history, never overwrite the local first.
         if (cur.first && ext.first && cur.first.at !== ext.first.at && JSON.stringify(cur.first.response) !== JSON.stringify(ext.first.response)) attempts['imported-' + ext.first.at] = Object.assign({}, ext.first, { id: 'imported-' + ext.first.at, imported: true });
         cur.tries = Object.keys(attempts).map(function (k) { return attempts[k]; }).sort(function (a,b) { return a.at - b.at; });
-        if ((ext.updated || 0) > (cur.updated || 0)) { cur.draft = ext.draft; cur.editing = ext.editing; cur.updated = ext.updated; }
+        if ((ext.updated || 0) > (cur.updated || 0)) { cur.draft = ext.draft; cur.editing = ext.editing; cur.confidence = ext.confidence || cur.confidence; cur.updated = ext.updated; }
       });
-      if ((incoming.updated || 0) > (current.updated || 0)) { current.cur = incoming.cur; current.updated = incoming.updated; current.finished = incoming.finished; current.archived = incoming.archived; }
+      if ((incoming.updated || 0) > (current.updated || 0)) { current.cur = incoming.cur; current.flags = incoming.flags || current.flags; current.updated = incoming.updated; current.finished = incoming.finished; current.archived = incoming.archived; }
     });
     into.examRuns.sort(function (a,b) { return a.started - b.started; });
     if (!into.examActive && from.examActive && into.examRuns.some(function(r){return r.id===from.examActive && !r.finished && !r.archived;})) into.examActive = from.examActive;
     (from.mockArchived || []).forEach(function(r){ if (!into.mockArchived.some(function(x){return x.id===r.id;})) into.mockArchived.push(r); });
     if (!into.mockActive && from.mockActive && !into.mocks.some(function(m){return m.id===from.mockActive.id;}) && !into.mockArchived.some(function(m){return m.id===from.mockActive.id;})) into.mockActive=from.mockActive;
+    Object.keys(from.masteryCredits || {}).forEach(function(c){if(!into.masteryCredits[c] || from.masteryCredits[c]==='earned')into.masteryCredits[c]=from.masteryCredits[c];});
+    (from.sessionHistory || []).concat(from.session?[from.session]:[]).forEach(function(r){
+      if(into.session && into.session.id===r.id){if((r.updated||r.started)>(into.session.updated||into.session.started) && (r.results||[]).length>=(into.session.results||[]).length)into.session=r;return;}
+      var at=into.sessionHistory.findIndex(function(x){return x.id===r.id;});
+      if(at<0)into.sessionHistory.push(r);else if((r.updated||r.started)>(into.sessionHistory[at].updated||into.sessionHistory[at].started))into.sessionHistory[at]=r;
+    });
+    if(!into.session && from.session)into.session=from.session;
     if (from.legacy && !into.legacy) into.legacy = from.legacy;
     return added;
   }

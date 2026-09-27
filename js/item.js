@@ -33,7 +33,7 @@
   function render(host, it, cfg) {
     cfg = cfg || {};
     var order = cfg.order || makeOrder(it);
-    var state = { resp: cfg.response !== undefined ? U.clone(cfg.response) : undefined, assisted: false };
+    var state = { resp: cfg.response !== undefined ? U.clone(cfg.response) : undefined, assisted: !!cfg.assisted };
     var locked = !!cfg.locked, isMock = cfg.mode === 'mock';
     if ((it.t === 'match') && !cfg.rights) cfg.rights = U.shuffleNotIdentity(U.uniq(it.pairs.map(function (p) { return p[1]; }).concat(it.extra || [])));
     if (it.t === 'order' && state.resp === undefined) state.resp = cfg.orderStart || U.shuffleNotIdentity(it.seq);
@@ -126,7 +126,8 @@
       if (isMock && cfg.onChange) cfg.onChange(state.resp);
     } else if (it.t === 'teach') {
       var ta = U.el('textarea', { 'aria-label': 'Your answer', rows: '6', placeholder: 'Write (or sketch on paper) your answer first. Then reveal the model answer and rubric.' });
-      if (state.resp !== undefined) ta.value = typeof state.resp === 'string' ? state.resp : '';
+      if (state.resp !== undefined) ta.value = typeof state.resp === 'string' ? state.resp : state.resp.response || '';
+      if(cfg.revealed)ta.disabled=true;
       ta.disabled = locked;
       ta.addEventListener('input', function () { state.resp = ta.value; changed(); });
       ans.appendChild(ta);
@@ -137,16 +138,19 @@
       act.innerHTML = '';
       if (locked || isMock) return;
       if (it.t === 'teach') {
-        var rv = U.el('button', { class: 'btn pri', type: 'button' }, 'Reveal model answer and rubric');
-        rv.onclick = function () {
-          fbEl.innerHTML = '<div class="fb"><div class="verdict">Model answer</div><p>' + it.model + '</p>' + (it.rubric ? '<b>Check yourself against this rubric</b><ul>' + it.rubric.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul>' : '') + '<div>' + srcChips(it.s) + tierBadge(it.tier) + '</div><p class="small muted">Self-check only. Teach-back never counts toward mastery because this offline lab cannot grade prose.</p></div>';
-          var r2 = U.el('div', { class: 'row' });
-          [['Hit every rubric point', 'got'], ['Partly', 'part'], ['Missed it', 'miss']].forEach(function (x) {
-            var b = U.el('button', { class: 'btn', type: 'button' }, x[0]); b.onclick = function () { if (cfg.onSubmit) cfg.onSubmit({ self: x[1] }, null, false); r2.querySelectorAll('button').forEach(function (y) { y.disabled = true; }); b.classList.add('sel'); }; r2.appendChild(b);
-          });
-          fbEl.appendChild(r2); rv.remove();
-        };
-        act.appendChild(rv); return;
+        var rv=U.el('button',{class:'btn pri',type:'button'},'Reveal model answer and rubric');
+        rv.disabled=!hasResp();
+        function reveal(){
+          ans.querySelector('textarea').disabled=true;
+          if(cfg.onReveal)cfg.onReveal(state.resp);
+          fbEl.innerHTML='<div class="fb"><div class="verdict">Model answer · self-assessment</div><p>'+it.model+'</p><p class="small muted">Mark only points present in your original answer. This self-assessment feeds the same concept record and is labeled separately from automatic grading.</p><div class="exam-rubric">'+(it.rubric||[]).map(function(x,i){return '<label><input type="checkbox" data-teach-rubric="'+i+'"> '+esc(x)+'</label>';}).join('')+'</div>'+srcChips(it.s)+'</div>';
+          var save=U.el('button',{class:'btn pri'},'Save rubric check');
+          save.onclick=function(){var hits=Array.prototype.map.call(fbEl.querySelectorAll('[data-teach-rubric]'),function(x){return x.checked;}),n=hits.filter(Boolean).length;locked=true;
+            if(cfg.onSubmit)cfg.onSubmit({self:n===hits.length?'got':n?'part':'miss',response:state.resp,rubric:hits},'m',state.assisted);
+            save.disabled=true;fbEl.querySelectorAll('input').forEach(function(x){x.disabled=true;});};
+          fbEl.appendChild(save);rv.remove();
+        }
+        rv.onclick=reveal;act.appendChild(rv);if(cfg.revealed)reveal();return;
       }
       var box = U.el('div', { class: 'confrow' });
       box.appendChild(U.el('div', { class: 'lbl' }, 'Lock in your answer. Pick your confidence <b>before</b> you see feedback:'));
@@ -159,7 +163,7 @@
       if (cfg.allowHint !== false && it.hint) {
         var hb = U.el('button', { class: 'btn ghost small', type: 'button' }, state.assisted ? 'Hint shown' : 'Show hint (this attempt will not count toward mastery)');
         hb.disabled = state.assisted;
-        hb.onclick = function () { state.assisted = true; box.appendChild(U.el('div', { class: 'hint' }, '<b>Hint:</b> ' + it.hint)); hb.textContent = 'Hint shown'; hb.disabled = true; };
+        hb.onclick = function () { state.assisted = true; if(cfg.onAssist)cfg.onAssist(); box.appendChild(U.el('div', { class: 'hint' }, '<b>Hint:</b> ' + it.hint)); hb.textContent = 'Hint shown'; hb.disabled = true; };
         box.appendChild(hb);
       }
       act.appendChild(box);
