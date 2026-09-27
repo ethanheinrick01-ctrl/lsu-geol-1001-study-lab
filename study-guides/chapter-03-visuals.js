@@ -6,11 +6,7 @@ Object.assign(window.GEOL_VISUALS, {
       {
         "id": "ch3-slide-2",
         "title": "Lecture 3 \u00b7 Slide 2",
-<<<<<<< HEAD
-        "src": "assets/course-figure.svg",
-=======
         "src": "assets/visuals/slides/l3/slide-2.png",
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         "alt": "Original lecture slide 2 for Reading the tectonic landscape, with source labels and diagrams.",
         "caption": "Reading the tectonic landscape: original lecture figure and annotations.",
         "notice": "The Andes and offshore trench occur together on the western side. The deck labels shelves on both sides, no trenches, and a central ridge with fracture zones.",
@@ -20,11 +16,7 @@ Object.assign(window.GEOL_VISUALS, {
       {
         "id": "ch3-slide-3",
         "title": "Lecture 3 \u00b7 Slide 3",
-<<<<<<< HEAD
-        "src": "assets/course-figure.svg",
-=======
         "src": "assets/visuals/slides/l3/slide-3.png",
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         "alt": "Original lecture slide 3 for Reading the tectonic landscape, with source labels and diagrams.",
         "caption": "Reading the tectonic landscape: original lecture figure and annotations.",
         "notice": "The Andes and offshore trench occur together on the western side. The deck labels shelves on both sides, no trenches, and a central ridge with fracture zones.",
@@ -34,11 +26,7 @@ Object.assign(window.GEOL_VISUALS, {
       {
         "id": "ch3-slide-4",
         "title": "Lecture 3 \u00b7 Slide 4",
-<<<<<<< HEAD
-        "src": "assets/course-figure.svg",
-=======
         "src": "assets/visuals/slides/l3/slide-4.png",
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         "alt": "Original lecture slide 4 for Reading the tectonic landscape, with source labels and diagrams.",
         "caption": "Reading the tectonic landscape: original lecture figure and annotations.",
         "notice": "The Andes and offshore trench occur together on the western side. The deck labels shelves on both sides, no trenches, and a central ridge with fracture zones.",
@@ -48,11 +36,7 @@ Object.assign(window.GEOL_VISUALS, {
       {
         "id": "ch3-slide-5",
         "title": "Lecture 3 \u00b7 Slide 5",
-<<<<<<< HEAD
-        "src": "assets/course-figure.svg",
-=======
         "src": "assets/visuals/slides/l3/slide-5.png",
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         "alt": "Original lecture slide 5 for Reading the tectonic landscape, with source labels and diagrams.",
         "caption": "Reading the tectonic landscape: original lecture figure and annotations.",
         "notice": "The Andes and offshore trench occur together on the western side. The deck labels shelves on both sides, no trenches, and a central ridge with fracture zones.",
@@ -62,11 +46,7 @@ Object.assign(window.GEOL_VISUALS, {
       {
         "id": "ch3-slide-6",
         "title": "Lecture 3 \u00b7 Slide 6",
-<<<<<<< HEAD
-        "src": "assets/course-figure.svg",
-=======
         "src": "assets/visuals/slides/l3/slide-6.png",
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         "alt": "Original lecture slide 6 for Reading the tectonic landscape, with source labels and diagrams.",
         "caption": "Reading the tectonic landscape: original lecture figure and annotations.",
         "notice": "The Andes and offshore trench occur together on the western side. The deck labels shelves on both sides, no trenches, and a central ridge with fracture zones.",
@@ -76,11 +56,7 @@ Object.assign(window.GEOL_VISUALS, {
       {
         "id": "ch3-slide-7",
         "title": "Lecture 3 \u00b7 Slide 7",
-<<<<<<< HEAD
-        "src": "assets/course-figure.svg",
-=======
         "src": "assets/visuals/slides/l3/slide-7.png",
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         "alt": "Original lecture slide 7 for Reading the tectonic landscape, with source labels and diagrams.",
         "caption": "Reading the tectonic landscape: original lecture figure and annotations.",
         "notice": "The Andes and offshore trench occur together on the western side. The deck labels shelves on both sides, no trenches, and a central ridge with fracture zones.",
@@ -90,11 +66,7 @@ Object.assign(window.GEOL_VISUALS, {
       {
         "id": "ch3-slide-8",
         "title": "Lecture 3 \u00b7 Slide 8",
-<<<<<<< HEAD
-        "src": "assets/course-figure.svg",
-=======
         "src": "assets/visuals/slides/l3/slide-8.png",
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         "alt": "Original lecture slide 8 for Reading the tectonic landscape, with source labels and diagrams.",
         "caption": "Reading the tectonic landscape: original lecture figure and annotations.",
         "notice": "The Andes and offshore trench occur together on the western side. The deck labels shelves on both sides, no trenches, and a central ridge with fracture zones.",
@@ -104,11 +76,7 @@ Object.assign(window.GEOL_VISUALS, {
       {
         "id": "ch3-slide-9",
         "title": "Lecture 3 \u00b7 Slide 9",
-<<<<<<< HEAD
-        "src": "assets/course-figure.svg",
-=======
         "src": "assets/visuals/slides/l3/slide-9.png",
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         "alt": "Original lecture slide 9 for Reading the tectonic landscape, with source labels and diagrams.",
         "caption": "Reading the tectonic landscape: original lecture figure and annotations.",
         "notice": "The Andes and offshore trench occur together on the western side. The deck labels shelves on both sides, no trenches, and a central ridge with fracture zones.",
@@ -118,11 +86,7 @@ Object.assign(window.GEOL_VISUALS, {
       {
         "id": "ch3-slide-10",
         "title": "Lecture 3 \u00b7 Slide 10",
-<<<<<<< HEAD
-        "src": "assets/course-figure.svg",
-=======
         "src": "assets/visuals/slides/l3/slide-10.png",
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         "alt": "Original lecture slide 10 for Reading the tectonic landscape, with source labels and diagrams.",
         "caption": "Reading the tectonic landscape: original lecture figure and annotations.",
         "notice": "The Andes and offshore trench occur together on the western side. The deck labels shelves on both sides, no trenches, and a central ridge with fracture zones.",
@@ -132,11 +96,7 @@ Object.assign(window.GEOL_VISUALS, {
       {
         "id": "ch3-slide-11",
         "title": "Lecture 3 \u00b7 Slide 11",
-<<<<<<< HEAD
-        "src": "assets/course-figure.svg",
-=======
         "src": "assets/visuals/slides/l3/slide-11.png",
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         "alt": "Original lecture slide 11 for Continental drift evidence, with source labels and diagrams.",
         "caption": "Continental drift evidence: original lecture figure and annotations.",
         "notice": "A former land connection explains the distribution without requiring those organisms to cross the present ocean. The lecture identifies mechanism as a major problem despite geographic, fossil, and glacial evidence.",
@@ -146,11 +106,7 @@ Object.assign(window.GEOL_VISUALS, {
       {
         "id": "ch3-slide-12",
         "title": "Lecture 3 \u00b7 Slide 12",
-<<<<<<< HEAD
-        "src": "assets/course-figure.svg",
-=======
         "src": "assets/visuals/slides/l3/slide-12.png",
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         "alt": "Original lecture slide 12 for Continental drift evidence, with source labels and diagrams.",
         "caption": "Continental drift evidence: original lecture figure and annotations.",
         "notice": "A former land connection explains the distribution without requiring those organisms to cross the present ocean. The lecture identifies mechanism as a major problem despite geographic, fossil, and glacial evidence.",
@@ -160,11 +116,7 @@ Object.assign(window.GEOL_VISUALS, {
       {
         "id": "ch3-slide-13",
         "title": "Lecture 3 \u00b7 Slide 13",
-<<<<<<< HEAD
-        "src": "assets/course-figure.svg",
-=======
         "src": "assets/visuals/slides/l3/slide-13.png",
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         "alt": "Original lecture slide 13 for Continental drift evidence, with source labels and diagrams.",
         "caption": "Continental drift evidence: original lecture figure and annotations.",
         "notice": "A former land connection explains the distribution without requiring those organisms to cross the present ocean. The lecture identifies mechanism as a major problem despite geographic, fossil, and glacial evidence.",
@@ -174,11 +126,7 @@ Object.assign(window.GEOL_VISUALS, {
       {
         "id": "ch3-slide-14",
         "title": "Lecture 3 \u00b7 Slide 14",
-<<<<<<< HEAD
-        "src": "assets/course-figure.svg",
-=======
         "src": "assets/visuals/slides/l3/slide-14.png",
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         "alt": "Original lecture slide 14 for Continental drift evidence, with source labels and diagrams.",
         "caption": "Continental drift evidence: original lecture figure and annotations.",
         "notice": "A former land connection explains the distribution without requiring those organisms to cross the present ocean. The lecture identifies mechanism as a major problem despite geographic, fossil, and glacial evidence.",
@@ -188,11 +136,7 @@ Object.assign(window.GEOL_VISUALS, {
       {
         "id": "ch3-slide-15",
         "title": "Lecture 3 \u00b7 Slide 15",
-<<<<<<< HEAD
-        "src": "assets/course-figure.svg",
-=======
         "src": "assets/visuals/slides/l3/slide-15.png",
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         "alt": "Original lecture slide 15 for Continental drift evidence, with source labels and diagrams.",
         "caption": "Continental drift evidence: original lecture figure and annotations.",
         "notice": "A former land connection explains the distribution without requiring those organisms to cross the present ocean. The lecture identifies mechanism as a major problem despite geographic, fossil, and glacial evidence.",
@@ -208,11 +152,7 @@ Object.assign(window.GEOL_VISUALS, {
       {
         "id": "ch3-slide-16",
         "title": "Lecture 3 \u00b7 Slide 16",
-<<<<<<< HEAD
-        "src": "assets/course-figure.svg",
-=======
         "src": "assets/visuals/slides/l3/slide-16.png",
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         "alt": "Original lecture slide 16 for Mapping tectonic activity, with source labels and diagrams.",
         "caption": "Mapping tectonic activity: original lecture figure and annotations.",
         "notice": "Belts of tectonic activity divide the lithosphere into plates. The lecture uses coherent belts of tectonic activity to identify plate boundaries.",
@@ -222,11 +162,7 @@ Object.assign(window.GEOL_VISUALS, {
       {
         "id": "ch3-slide-17",
         "title": "Lecture 3 \u00b7 Slide 17",
-<<<<<<< HEAD
-        "src": "assets/course-figure.svg",
-=======
         "src": "assets/visuals/slides/l3/slide-17.png",
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         "alt": "Original lecture slide 17 for Mapping tectonic activity, with source labels and diagrams.",
         "caption": "Mapping tectonic activity: original lecture figure and annotations.",
         "notice": "Belts of tectonic activity divide the lithosphere into plates. The lecture uses coherent belts of tectonic activity to identify plate boundaries.",
@@ -236,11 +172,7 @@ Object.assign(window.GEOL_VISUALS, {
       {
         "id": "ch3-slide-18",
         "title": "Lecture 3 \u00b7 Slide 18",
-<<<<<<< HEAD
-        "src": "assets/course-figure.svg",
-=======
         "src": "assets/visuals/slides/l3/slide-18.png",
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         "alt": "Original lecture slide 18 for Mapping tectonic activity, with source labels and diagrams.",
         "caption": "Mapping tectonic activity: original lecture figure and annotations.",
         "notice": "Belts of tectonic activity divide the lithosphere into plates. The lecture uses coherent belts of tectonic activity to identify plate boundaries.",
@@ -250,11 +182,7 @@ Object.assign(window.GEOL_VISUALS, {
       {
         "id": "ch3-slide-19",
         "title": "Lecture 3 \u00b7 Slide 19",
-<<<<<<< HEAD
-        "src": "assets/course-figure.svg",
-=======
         "src": "assets/visuals/slides/l3/slide-19.png",
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         "alt": "Original lecture slide 19 for Mapping tectonic activity, with source labels and diagrams.",
         "caption": "Mapping tectonic activity: original lecture figure and annotations.",
         "notice": "Belts of tectonic activity divide the lithosphere into plates. The lecture uses coherent belts of tectonic activity to identify plate boundaries.",
@@ -264,11 +192,7 @@ Object.assign(window.GEOL_VISUALS, {
       {
         "id": "ch3-slide-20",
         "title": "Lecture 3 \u00b7 Slide 20",
-<<<<<<< HEAD
-        "src": "assets/course-figure.svg",
-=======
         "src": "assets/visuals/slides/l3/slide-20.png",
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         "alt": "Original lecture slide 20 for Three relative plate motions, with source labels and diagrams.",
         "caption": "Three relative plate motions: original lecture figure and annotations.",
         "notice": "Divergence is relative motion apart. Transform motion is horizontal relative sliding.",
@@ -278,11 +202,7 @@ Object.assign(window.GEOL_VISUALS, {
       {
         "id": "ch3-slide-21",
         "title": "Lecture 3 \u00b7 Slide 21",
-<<<<<<< HEAD
-        "src": "assets/course-figure.svg",
-=======
         "src": "assets/visuals/slides/l3/slide-21.png",
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         "alt": "Original lecture slide 21 for Three relative plate motions, with source labels and diagrams.",
         "caption": "Three relative plate motions: original lecture figure and annotations.",
         "notice": "Divergence is relative motion apart. Transform motion is horizontal relative sliding.",
@@ -298,11 +218,7 @@ Object.assign(window.GEOL_VISUALS, {
       {
         "id": "ch3-slide-22",
         "title": "Lecture 3 \u00b7 Slide 22",
-<<<<<<< HEAD
-        "src": "assets/course-figure.svg",
-=======
         "src": "assets/visuals/slides/l3/slide-22.png",
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         "alt": "Original lecture slide 22 for Mid-ocean ridges and new crust, with source labels and diagrams.",
         "caption": "Mid-ocean ridges and new crust: original lecture figure and annotations.",
         "notice": "Magma erupts or solidifies at oceanic divergent boundaries, forming new crust. The lecture links rising and melting asthenosphere to magma movement and crust formation.",
@@ -312,11 +228,7 @@ Object.assign(window.GEOL_VISUALS, {
       {
         "id": "ch3-slide-23",
         "title": "Lecture 3 \u00b7 Slide 23",
-<<<<<<< HEAD
-        "src": "assets/course-figure.svg",
-=======
         "src": "assets/visuals/slides/l3/slide-23.png",
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         "alt": "Original lecture slide 23 for Mid-ocean ridges and new crust, with source labels and diagrams.",
         "caption": "Mid-ocean ridges and new crust: original lecture figure and annotations.",
         "notice": "Magma erupts or solidifies at oceanic divergent boundaries, forming new crust. The lecture links rising and melting asthenosphere to magma movement and crust formation.",
@@ -326,11 +238,7 @@ Object.assign(window.GEOL_VISUALS, {
       {
         "id": "ch3-slide-24",
         "title": "Lecture 3 \u00b7 Slide 24",
-<<<<<<< HEAD
-        "src": "assets/course-figure.svg",
-=======
         "src": "assets/visuals/slides/l3/slide-24.png",
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         "alt": "Original lecture slide 24 for Continental rifting to an ocean, with source labels and diagrams.",
         "caption": "Continental rifting to an ocean: original lecture figure and annotations.",
         "notice": "East Africa illustrates the rift stage. Sustained spreading can widen the new ocean basin.",
@@ -346,11 +254,7 @@ Object.assign(window.GEOL_VISUALS, {
       {
         "id": "ch3-slide-25",
         "title": "Lecture 3 \u00b7 Slide 25",
-<<<<<<< HEAD
-        "src": "assets/course-figure.svg",
-=======
         "src": "assets/visuals/slides/l3/slide-25.png",
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         "alt": "Original lecture slide 25 for Oceanic subduction and island arcs, with source labels and diagrams.",
         "caption": "Oceanic subduction and island arcs: original lecture figure and annotations.",
         "notice": "The descending slab releases water that causes melting in the overlying mantle. Oceanic subduction produces a trench and a volcanic island arc.",
@@ -360,11 +264,7 @@ Object.assign(window.GEOL_VISUALS, {
       {
         "id": "ch3-slide-26",
         "title": "Lecture 3 \u00b7 Slide 26",
-<<<<<<< HEAD
-        "src": "assets/course-figure.svg",
-=======
         "src": "assets/visuals/slides/l3/slide-26.png",
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         "alt": "Original lecture slide 26 for Oceanic subduction and island arcs, with source labels and diagrams.",
         "caption": "Oceanic subduction and island arcs: original lecture figure and annotations.",
         "notice": "The descending slab releases water that causes melting in the overlying mantle. Oceanic subduction produces a trench and a volcanic island arc.",
@@ -374,11 +274,7 @@ Object.assign(window.GEOL_VISUALS, {
       {
         "id": "ch3-slide-27",
         "title": "Lecture 3 \u00b7 Slide 27",
-<<<<<<< HEAD
-        "src": "assets/course-figure.svg",
-=======
         "src": "assets/visuals/slides/l3/slide-27.png",
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         "alt": "Original lecture slide 27 for The Pacific Ring of Fire, with source labels and diagrams.",
         "caption": "The Pacific Ring of Fire: original lecture figure and annotations.",
         "notice": "The lecture contrasts subduction beneath oceanic and continental plates. The lecture explicitly identifies spreading at the East Pacific Rise.",
@@ -388,11 +284,7 @@ Object.assign(window.GEOL_VISUALS, {
       {
         "id": "ch3-slide-28",
         "title": "Lecture 3 \u00b7 Slide 28",
-<<<<<<< HEAD
-        "src": "assets/course-figure.svg",
-=======
         "src": "assets/visuals/slides/l3/slide-28.png",
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         "alt": "Original lecture slide 28 for The Pacific Ring of Fire, with source labels and diagrams.",
         "caption": "The Pacific Ring of Fire: original lecture figure and annotations.",
         "notice": "The lecture contrasts subduction beneath oceanic and continental plates. The lecture explicitly identifies spreading at the East Pacific Rise.",
@@ -408,11 +300,7 @@ Object.assign(window.GEOL_VISUALS, {
       {
         "id": "ch3-slide-29",
         "title": "Lecture 3 \u00b7 Slide 29",
-<<<<<<< HEAD
-        "src": "assets/course-figure.svg",
-=======
         "src": "assets/visuals/slides/l3/slide-29.png",
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         "alt": "Original lecture slide 29 for Continental collision and high mountains, with source labels and diagrams.",
         "caption": "Continental collision and high mountains: original lecture figure and annotations.",
         "notice": "Collision thickens crust, producing high elevation. The collision diagram emphasizes broad deformation, thick crust, and few volcanoes.",
@@ -422,11 +310,7 @@ Object.assign(window.GEOL_VISUALS, {
       {
         "id": "ch3-slide-30",
         "title": "Lecture 3 \u00b7 Slide 30",
-<<<<<<< HEAD
-        "src": "assets/course-figure.svg",
-=======
         "src": "assets/visuals/slides/l3/slide-30.png",
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         "alt": "Original lecture slide 30 for Continental collision and high mountains, with source labels and diagrams.",
         "caption": "Continental collision and high mountains: original lecture figure and annotations.",
         "notice": "Collision thickens crust, producing high elevation. The collision diagram emphasizes broad deformation, thick crust, and few volcanoes.",
@@ -436,11 +320,7 @@ Object.assign(window.GEOL_VISUALS, {
       {
         "id": "ch3-slide-31",
         "title": "Lecture 3 \u00b7 Slide 31",
-<<<<<<< HEAD
-        "src": "assets/course-figure.svg",
-=======
         "src": "assets/visuals/slides/l3/slide-31.png",
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         "alt": "Original lecture slide 31 for Transforms and changing boundary orientation, with source labels and diagrams.",
         "caption": "Transforms and changing boundary orientation: original lecture figure and annotations.",
         "notice": "Transforms link spreading segments and accommodate horizontal relative motion. The pattern combines divergent ridge segments with transform connections.",
@@ -450,11 +330,7 @@ Object.assign(window.GEOL_VISUALS, {
       {
         "id": "ch3-slide-32",
         "title": "Lecture 3 \u00b7 Slide 32",
-<<<<<<< HEAD
-        "src": "assets/course-figure.svg",
-=======
         "src": "assets/visuals/slides/l3/slide-32.png",
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         "alt": "Original lecture slide 32 for Transforms and changing boundary orientation, with source labels and diagrams.",
         "caption": "Transforms and changing boundary orientation: original lecture figure and annotations.",
         "notice": "Transforms link spreading segments and accommodate horizontal relative motion. The pattern combines divergent ridge segments with transform connections.",
@@ -464,11 +340,7 @@ Object.assign(window.GEOL_VISUALS, {
       {
         "id": "ch3-slide-33",
         "title": "Lecture 3 \u00b7 Slide 33",
-<<<<<<< HEAD
-        "src": "assets/course-figure.svg",
-=======
         "src": "assets/visuals/slides/l3/slide-33.png",
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         "alt": "Original lecture slide 33 for Transforms and changing boundary orientation, with source labels and diagrams.",
         "caption": "Transforms and changing boundary orientation: original lecture figure and annotations.",
         "notice": "Transforms link spreading segments and accommodate horizontal relative motion. The pattern combines divergent ridge segments with transform connections.",
@@ -484,11 +356,7 @@ Object.assign(window.GEOL_VISUALS, {
       {
         "id": "ch3-slide-34",
         "title": "Lecture 3 \u00b7 Slide 34",
-<<<<<<< HEAD
-        "src": "assets/course-figure.svg",
-=======
         "src": "assets/visuals/slides/l3/slide-34.png",
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         "alt": "Original lecture slide 34 for Plate-driving forces and rates, with source labels and diagrams.",
         "caption": "Plate-driving forces and rates: original lecture figure and annotations.",
         "notice": "The lecture names ridge push, slab pull, and other forces such as mantle convection. Relative plate rates differ and are expressed in cm/year.",
@@ -498,11 +366,7 @@ Object.assign(window.GEOL_VISUALS, {
       {
         "id": "ch3-slide-35",
         "title": "Lecture 3 \u00b7 Slide 35",
-<<<<<<< HEAD
-        "src": "assets/course-figure.svg",
-=======
         "src": "assets/visuals/slides/l3/slide-35.png",
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         "alt": "Original lecture slide 35 for Plate-driving forces and rates, with source labels and diagrams.",
         "caption": "Plate-driving forces and rates: original lecture figure and annotations.",
         "notice": "The lecture names ridge push, slab pull, and other forces such as mantle convection. Relative plate rates differ and are expressed in cm/year.",
@@ -512,11 +376,7 @@ Object.assign(window.GEOL_VISUALS, {
       {
         "id": "ch3-slide-36",
         "title": "Lecture 3 \u00b7 Slide 36",
-<<<<<<< HEAD
-        "src": "assets/course-figure.svg",
-=======
         "src": "assets/visuals/slides/l3/slide-36.png",
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         "alt": "Original lecture slide 36 for Motion arrows and boundary geometry, with source labels and diagrams.",
         "caption": "Motion arrows and boundary geometry: original lecture figure and annotations.",
         "notice": "Arrow length represents movement rate; direction gives motion direction. Changing boundary orientation changes the component of relative motion across the boundary.",
@@ -526,11 +386,7 @@ Object.assign(window.GEOL_VISUALS, {
       {
         "id": "ch3-slide-37",
         "title": "Lecture 3 \u00b7 Slide 37",
-<<<<<<< HEAD
-        "src": "assets/course-figure.svg",
-=======
         "src": "assets/visuals/slides/l3/slide-37.png",
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         "alt": "Original lecture slide 37 for Motion arrows and boundary geometry, with source labels and diagrams.",
         "caption": "Motion arrows and boundary geometry: original lecture figure and annotations.",
         "notice": "Arrow length represents movement rate; direction gives motion direction. Changing boundary orientation changes the component of relative motion across the boundary.",
@@ -540,11 +396,7 @@ Object.assign(window.GEOL_VISUALS, {
       {
         "id": "ch3-slide-38",
         "title": "Lecture 3 \u00b7 Slide 38",
-<<<<<<< HEAD
-        "src": "assets/course-figure.svg",
-=======
         "src": "assets/visuals/slides/l3/slide-38.png",
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         "alt": "Original lecture slide 38 for Motion arrows and boundary geometry, with source labels and diagrams.",
         "caption": "Motion arrows and boundary geometry: original lecture figure and annotations.",
         "notice": "Arrow length represents movement rate; direction gives motion direction. Changing boundary orientation changes the component of relative motion across the boundary.",
@@ -560,11 +412,7 @@ Object.assign(window.GEOL_VISUALS, {
       {
         "id": "ch3-slide-39",
         "title": "Lecture 3 \u00b7 Slide 39",
-<<<<<<< HEAD
-        "src": "assets/course-figure.svg",
-=======
         "src": "assets/visuals/slides/l3/slide-39.png",
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         "alt": "Original lecture slide 39 for Magnetic reversals and seafloor stripes, with source labels and diagrams.",
         "caption": "Magnetic reversals and seafloor stripes: original lecture figure and annotations.",
         "notice": "Spreading transports previously formed crust while younger crust forms at the ridge. New crust records successive polarities, and spreading preserves the sequence in stripes.",
@@ -574,11 +422,7 @@ Object.assign(window.GEOL_VISUALS, {
       {
         "id": "ch3-slide-40",
         "title": "Lecture 3 \u00b7 Slide 40",
-<<<<<<< HEAD
-        "src": "assets/course-figure.svg",
-=======
         "src": "assets/visuals/slides/l3/slide-40.png",
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         "alt": "Original lecture slide 40 for Magnetic reversals and seafloor stripes, with source labels and diagrams.",
         "caption": "Magnetic reversals and seafloor stripes: original lecture figure and annotations.",
         "notice": "Spreading transports previously formed crust while younger crust forms at the ridge. New crust records successive polarities, and spreading preserves the sequence in stripes.",
@@ -588,11 +432,7 @@ Object.assign(window.GEOL_VISUALS, {
       {
         "id": "ch3-slide-41",
         "title": "Lecture 3 \u00b7 Slide 41",
-<<<<<<< HEAD
-        "src": "assets/course-figure.svg",
-=======
         "src": "assets/visuals/slides/l3/slide-41.png",
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         "alt": "Original lecture slide 41 for Magnetic reversals and seafloor stripes, with source labels and diagrams.",
         "caption": "Magnetic reversals and seafloor stripes: original lecture figure and annotations.",
         "notice": "Spreading transports previously formed crust while younger crust forms at the ridge. New crust records successive polarities, and spreading preserves the sequence in stripes.",
@@ -602,11 +442,7 @@ Object.assign(window.GEOL_VISUALS, {
       {
         "id": "ch3-slide-42",
         "title": "Lecture 3 \u00b7 Slide 42",
-<<<<<<< HEAD
-        "src": "assets/course-figure.svg",
-=======
         "src": "assets/visuals/slides/l3/slide-42.png",
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         "alt": "Original lecture slide 42 for Seafloor age and sediment tests, with source labels and diagrams.",
         "caption": "Seafloor age and sediment tests: original lecture figure and annotations.",
         "notice": "Crust forms at the ridge, so volcanic rocks nearest it are youngest. Older crust farther from the ridge has had longer to accumulate sediment.",
@@ -622,11 +458,7 @@ Object.assign(window.GEOL_VISUALS, {
       {
         "id": "ch3-slide-43",
         "title": "Lecture 3 \u00b7 Slide 43",
-<<<<<<< HEAD
-        "src": "assets/course-figure.svg",
-=======
         "src": "assets/visuals/slides/l3/slide-43.png",
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         "alt": "Original lecture slide 43 for Island and seamount chains, with source labels and diagrams.",
         "caption": "Island and seamount chains: original lecture figure and annotations.",
         "notice": "A volcano loses its position over the hot spot as the plate moves. Cooling and subsidence can carry an inactive volcanic island below sea level.",
@@ -636,11 +468,7 @@ Object.assign(window.GEOL_VISUALS, {
       {
         "id": "ch3-slide-44",
         "title": "Lecture 3 \u00b7 Slide 44",
-<<<<<<< HEAD
-        "src": "assets/course-figure.svg",
-=======
         "src": "assets/visuals/slides/l3/slide-44.png",
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         "alt": "Original lecture slide 44 for South America across an entire plate system, with source labels and diagrams.",
         "caption": "South America across an entire plate system: original lecture figure and annotations.",
         "notice": "The cross section labels the eastern edge as a passive margin, not a plate boundary. Western subduction supports the Andes; the eastern continental margin is passive and the spreading ridge lies offshore.",
@@ -650,11 +478,7 @@ Object.assign(window.GEOL_VISUALS, {
       {
         "id": "ch3-slide-45",
         "title": "Lecture 3 \u00b7 Slide 45",
-<<<<<<< HEAD
-        "src": "assets/course-figure.svg",
-=======
         "src": "assets/visuals/slides/l3/slide-45.png",
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         "alt": "Original lecture slide 45 for South America across an entire plate system, with source labels and diagrams.",
         "caption": "South America across an entire plate system: original lecture figure and annotations.",
         "notice": "The cross section labels the eastern edge as a passive margin, not a plate boundary. Western subduction supports the Andes; the eastern continental margin is passive and the spreading ridge lies offshore.",

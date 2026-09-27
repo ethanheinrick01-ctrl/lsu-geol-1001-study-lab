@@ -1,29 +1,3 @@
-<<<<<<< HEAD
-# Geology Study Lab
-
-A browser-based learning tool that combines guided explanations, original practice questions, interactive activities, and confidence-aware mastery tracking.
-
-**[Open the demo](https://ethanheinrick01-ctrl.github.io/lsu-geol-1001-study-lab/)**
-
-## Try it
-
-Open `index.html` in a browser, or run `python3 -m http.server 8000` in this folder and visit `http://localhost:8000`.
-
-## What it demonstrates
-
-- Retrieval practice with answer explanations and hints.
-- Progress saved in the browser, without an account.
-- Responsive study, lab, and mastery views.
-- Coverage: Chapters 1–5; later chapters remain marked as pending.
-
-## Public edition
-
-This is an independent student-built portfolio project. It is not affiliated with or endorsed by LSU. It is not a complete course or a source of official assessment answers.
-
-Instructor slide screenshots, source documents, private audit files, and personal progress exports are excluded. Figure positions are marked explicitly; the full private study edition remains separate. Textual source references remain to explain the basis for original practice material.
-
-The app runs locally without APIs, analytics, or per-use charges. Browser data stays on the device.
-=======
 # GEOL 1001-002 Exam 1 Study Lab (v3)
 
 General Geology: Physical · Professor Guangsheng Zhuang · Fall 2026 · Exam 1 (Chapters 1–6), Tuesday Sep 29, 10:30 AM, Howe-Russell W130.
@@ -90,4 +64,3 @@ Storage key: `geol1001-lab-v3`. Old-lab keys (`geol1001-guided-progress-v1`, `ge
 ## September 24 Exam 1 update
 
 Exam 1 now provides the professor-review topic map, actual course figures, three untimed 25/8/7 review sets, immediate feedback, separate first-try/correction history, and resumable drafts. Existing progress uses the same storage key. See [Exam 1 update and verification](docs/EXAM1_UPDATE.md) for the evidence, compatibility receipt and test results.
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)

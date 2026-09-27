@@ -254,11 +254,7 @@
         <button type="button" data-evidence-mode="infer">3 · Infer</button>
       </div>
       <div class="evidence-lens">
-<<<<<<< HEAD
-        <img src="assets/course-figure.svg" alt="Layered cliff for observation and inference practice">
-=======
         <img src="assets/visuals/atlas/layered-cliff.png" alt="Layered cliff for observation and inference practice">
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
         <div id="evidence-lens-copy"><strong>Look without naming a cause.</strong><p>Scan color, layer thickness, contacts, fractures, ledges, slope, and detached blocks.</p></div>
       </div>
     </section>`;
@@ -668,8 +664,6 @@
       <p class="source-strip"><strong>Source:</strong> ${escapeHTML(activity.source)}</p>
     </div>`;
 
-<<<<<<< HEAD
-=======
   const renderActivityChart = () => {
     if (learning.module?.id !== "ch5-chart") return "";
     const chart = visualCatalog["ch5-chart"]?.visuals?.find((item) => item.id === "ch45-classroom-chart");
@@ -682,16 +676,12 @@
     </figure>`;
   };
 
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
   const renderChoiceActivity = (activity, extra = "") => {
     const type = activity.type === "multi" ? "checkbox" : "radio";
     const indices = shuffleAwayFromOriginal(activity.choices.map((_, index) => index));
     return `
       ${extra}
-<<<<<<< HEAD
-=======
       ${renderActivityChart()}
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
       <fieldset class="activity-options">
         <legend class="sr-only">${escapeHTML(activity.prompt)}</legend>
         ${indices.map((index) => `

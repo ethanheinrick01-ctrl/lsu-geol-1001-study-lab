@@ -1,13 +1,9 @@
 .DS_Store
-.env*
+.codex-question-review/
+.playwright-cli/
+output/playwright/
 node_modules/
-<<<<<<< HEAD
-*progress*.json
-source-materials/*
-!source-materials/README.md
-=======
 *.tmp
 *.swp
 ~$*
 STUDY LAB BACKUPS/
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)

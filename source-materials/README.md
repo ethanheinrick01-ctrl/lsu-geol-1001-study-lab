@@ -1,8 +1,5 @@
 # Source materials
 
-<<<<<<< HEAD
-Instructor documents, slide images, private audits, and student progress are not distributed in this public edition. Source references in the authored study content identify its learning context.
-=======
 Use this folder only in the private repository. Suggested organization:
 
 ```text
@@ -19,4 +16,3 @@ Record provenance and date for every file. Do not make this repository public wh
 
 - `chapter-01-source-audit.md` — Lecture 1 provenance and classroom-scope boundary.
 - `chapter-02-exam-evidence.md` — Lecture 2 inventory, exam-format implications, forecast, limits, and final audit receipt (evidence cutoff 2026-08-31).
->>>>>>> 053d37b (Publish Exam 1 lab with unified permanent mastery)
