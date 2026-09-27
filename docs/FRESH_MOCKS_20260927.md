@@ -56,7 +56,7 @@ Delivery follows the reviewed identify/classify → distinguish → explain sequ
 
 ## Progress compatibility
 
-Same `geol1001-lab-v3` storage key and schema. All 623 existing questions and 102 concepts remain. Old saved exams still resolve their original questions and scores through My history. Generated snapshots are resolved by the same grading and mastery engine. Linked investigation subparts contribute all their attempts but share one independent-question identity for mastery/review clearing; reading feedback within one scenario cannot by itself manufacture two independent successes. Corrections remain assisted. Writing remains explicitly self-assessed.
+Changed JavaScript assets carry a release version in their URLs so a fresh page does not mix cached older code with the new generator. Same `geol1001-lab-v3` storage key and schema. All 623 existing questions and 102 concepts remain. Old saved exams still resolve their original questions and scores through My history. Generated snapshots are resolved by the same grading and mastery engine. Linked investigation subparts contribute all their attempts but share one independent-question identity for mastery/review clearing; reading feedback within one scenario cannot by itself manufacture two independent successes. Corrections remain assisted. Writing remains explicitly self-assessed.
 
 ## Verification receipt
 

@@ -2,7 +2,7 @@
 const fs=require('fs'),path=require('path'),vm=require('vm'),assert=require('assert/strict');
 const root=path.resolve(__dirname,'..');let clock=1800000000000,checks=0;
 class Clock extends Date{constructor(...a){super(...(a.length?a:[clock]));}static now(){return ++clock;}}
-function load(storage={}){const c={console,Math,Date:Clock,JSON,setTimeout(){},document:{readyState:'loading',addEventListener(){}},localStorage:{getItem(k){return storage[k]||null;},setItem(k,v){storage[k]=v;}}};c.window=c;vm.createContext(c);for(const [,f]of fs.readFileSync(path.join(root,'index.html'),'utf8').matchAll(/<script src="([^"]+)"/g))if(f!=='js/app.js')vm.runInContext(fs.readFileSync(path.join(root,f),'utf8'),c,{filename:f});c.L.engine.build();return c.L;}
+function load(storage={}){const c={console,Math,Date:Clock,JSON,setTimeout(){},document:{readyState:'loading',addEventListener(){}},localStorage:{getItem(k){return storage[k]||null;},setItem(k,v){storage[k]=v;}}};c.window=c;vm.createContext(c);for(const [,url]of fs.readFileSync(path.join(root,'index.html'),'utf8').matchAll(/<script src="([^"]+)"/g)){const f=url.split('?')[0];if(f!=='js/app.js')vm.runInContext(fs.readFileSync(path.join(root,f),'utf8'),c,{filename:f});}c.L.engine.build();return c.L;}
 function test(name,fn){fn();checks++;console.log('PASS '+name);}
 const disk={},L=load(disk),E=L.engine,S=L.store,X=L.exam1,F=L.freshMocks;
 function blank(){S._setMem(S._blank());E.build();S.save();}

@@ -6,7 +6,7 @@ class Clock extends Date { constructor(...a){super(...(a.length?a:[clock]));}sta
 function load(storage={},backup){
  const c={console,Math,Date:Clock,JSON,setTimeout(){},document:{readyState:'loading',addEventListener(){}},localStorage:{getItem(k){return storage[k]||null;},setItem(k,v){storage[k]=v;}}};c.window=c;c.globalThis=c;vm.createContext(c);
  const read=f=>backup?cp.execFileSync('tar',['-xOf',backup,f],{encoding:'utf8'}):fs.readFileSync(path.join(root,f),'utf8');
- for(const [,f] of read('index.html').matchAll(/<script src="([^"]+)"/g)){if(f!=='js/app.js')vm.runInContext(read(f),c,{filename:f});}
+ for(const [,url] of read('index.html').matchAll(/<script src="([^"]+)"/g)){const f=url.split('?')[0];if(f!=='js/app.js')vm.runInContext(read(f),c,{filename:f});}
  c.L.engine.build();return c.L;
 }
 function test(name,fn){fn();checks++;console.log('PASS '+name);}
