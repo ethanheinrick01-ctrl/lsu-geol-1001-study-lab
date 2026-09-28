@@ -10,3 +10,11 @@ The animated object must be the changing geological material. A timer, title cha
 Material atlas provenance is in `artwork/PROVENANCE.md`. The original course figures are reference material, not rendered video frames. The new geometric cutaways and sequences are teaching reconstructions; motion, distance, grain size, and time are schematic.
 
 For browser checks, use a server with HTTP byte-range support to test seeking. The basic Python HTTP server may play a film while rejecting time jumps; the deployed GitHub Pages server supports byte ranges. No autoplay is used. Native controls, stage buttons and speed changes work without writing study progress.
+
+## Review-focused narration
+
+`narration.json` contains original spoken scripts, review-transcript line references, voice choice and source-stage boundaries. The scripts emphasize the instructor's identify → classify → explain pattern, using the existing course explanations to correct speech-recognition errors. These are paraphrases in a system voice, not recordings or impersonations of the professor.
+
+Run `python3 videos/add_narration.py` on macOS to synthesize and embed all narration. `--topic T4 T14` rebuilds selected films. The builder reads the pinned silent Git revision, generates speech with the installed Samantha voice at 160 words/minute, slows a visual stage when its explanation needs more time, updates chapter timestamps and caption tracks, and embeds normalized mono AAC audio. A stage includes a short lead-in and finishing pause; speech is never sped up to squeeze it into the old duration. Temporary uncompressed speech is not deployed.
+
+The original silent renderer remains the visual source. To regenerate a finished narrated release, run the narration builder after any visual-source update and update the pinned silent revision deliberately. Do not run the old silent renderer over a narrated release by accident.

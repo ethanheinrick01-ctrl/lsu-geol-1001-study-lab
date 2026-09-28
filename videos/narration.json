@@ -1,0 +1,89 @@
+{
+  "source": "Professor Zhuang, September 24 Exam 1 review; emphasis cross-checked against existing course-source explanations",
+  "editorialNote": "Original paraphrases, not quotations or a reproduction of the professor's voice. ASR errors in the transcript are corrected using the course figures and existing source-grounded lessons. Topic-to-exam-section allocation remains unknown.",
+  "voice": "Samantha (English (US))",
+  "wordsPerMinute": 160,
+  "silentRevision": "202c94409a2ededc4f953d284a06745e911f254c",
+  "topics": {
+    "T1": {"reviewLines":"529–800", "segments":[
+      {"start":0,"end":8,"label":"Weather and transport","text":"Know the processes connecting igneous, sedimentary, and metamorphic rock. Weathering breaks rock down. Erosion and transport move the pieces; deposition drops them."},
+      {"start":8,"end":16,"label":"Burial and lithification","text":"Burial packs sediment together. Compaction and cementation turn loose grains into sedimentary rock."},
+      {"start":16,"end":24,"label":"Metamorphism","text":"Heat and pressure change solid rock into metamorphic rock. Metamorphism does not require melting."},
+      {"start":24,"end":32,"label":"Melt and crystallize","text":"Melting makes magma; cooling makes igneous rock. His key point: the rock cycle has many possible routes, not one fixed loop."}
+    ]},
+    "T2": {"reviewLines":"821–905", "segments":[
+      {"start":0,"end":7.5,"label":"Precambrian","text":"For the review, know the major divisions and their order. Precambrian comes first and includes most of Earth's history."},
+      {"start":7.5,"end":15,"label":"Paleozoic","text":"Next is the Paleozoic, with diverse life in the seas and expanding onto land."},
+      {"start":15,"end":22.5,"label":"Mesozoic","text":"Then comes the Mesozoic, the era that includes the dinosaurs."},
+      {"start":22.5,"end":30,"label":"Cenozoic","text":"Cenozoic is youngest. Remember the four broad blocks; he did not ask you to memorize every period name."}
+    ]},
+    "T3": {"reviewLines":"905–1300", "segments":[
+      {"start":0,"end":20,"label":"Build magnetic stripes","text":"Wegener had evidence for continental drift but lacked a convincing driving mechanism. At a mid-ocean ridge, new basalt records magnetic polarity as it cools. Older bands move outward and keep their original polarity. Matching stripes on both sides are evidence for seafloor spreading."},
+      {"start":20,"end":32,"label":"Watch the plate age","text":"Away from the ridge, oceanic lithosphere becomes older, cooler, denser, and thicker. Keep the layers separate: mantle lithosphere thickens as it cools, sediment accumulates above, and crust stays roughly similar in thickness."}
+    ]},
+    "T4": {"reviewLines":"1300–1705", "segments":[
+      {"start":0,"end":10,"label":"Divergent","text":"Divergent plates move apart. New oceanic crust forms at the ridge, so this is a constructive boundary. Identify it from relative motion."},
+      {"start":10,"end":20,"label":"Convergent","text":"Convergent plates move together. At a subduction zone, old oceanic lithosphere sinks and is recycled. That is the destructive boundary in the review."},
+      {"start":20,"end":30,"label":"Transform","text":"Transform plates slide past: a conservative boundary. Crust is neither created nor consumed. On a map, count connected plate regions, then identify each boundary's motion."}
+    ]},
+    "T5": {"reviewLines":"1716–2090", "segments":[
+      {"start":0,"end":10,"label":"Earth layers","text":"Crust, mantle, and core describe composition. Lithosphere means rigid crust plus uppermost mantle. The asthenosphere below is weaker but mostly solid. The L A B separates those mechanical layers."},
+      {"start":10,"end":20,"label":"Change thickness","text":"His wood-block analogy explains isostasy. At equal density, a thicker block rides higher and extends deeper. Thick continental crust helps explain high elevations."},
+      {"start":20,"end":30,"label":"Change density","text":"At equal thickness, denser material sits lower. Compare thickness and density before predicting elevation. The floating blocks are an analogy, not a liquid mantle."}
+    ]},
+    "T6": {"reviewLines":"2090–2280", "segments":[
+      {"start":0,"end":12,"label":"First volcano","text":"Some volcanoes occur inside plates, away from plate boundaries. Rising hot mantle can partially melt at shallow depth and feed a hot spot."},
+      {"start":12,"end":24,"label":"A chain grows","text":"The plate carries each volcano away from the active center. A new volcano grows over the same hot spot. The chain gets older away from activity."},
+      {"start":24,"end":30,"label":"Trace plate motion","text":"Remember his examples: Hawaii in the ocean, and Yellowstone on a continent."}
+    ]},
+    "T7": {"reviewLines":"2280–2335; 3730–3900", "segments":[
+      {"start":0,"end":10,"label":"Add heat","text":"Read the axes first. Temperature increases rightward; pressure increases downward. Heating moves the rock right. Crossing the solidus starts partial melting."},
+      {"start":10,"end":20,"label":"Reduce pressure","text":"Now move upward: pressure decreases while temperature stays similar. That is decompression melting. Watch melt appear between grains that remain solid."},
+      {"start":20,"end":30,"label":"Add water","text":"Water lowers the solidus. The same rock can start melting without becoming hotter. Know how all three changes appear on this graph."}
+    ]},
+    "T8": {"reviewLines":"2320–2540", "segments":[
+      {"start":0,"end":10,"label":"Crystal nuclei","text":"Texture records cooling history. Slow cooling gives crystals time to grow large. Faster cooling makes small crystals; very rapid cooling can make glass."},
+      {"start":10,"end":20,"label":"Growth","text":"Watch the two-stage sample. Large crystals grow first during slow cooling. Faster cooling then produces the fine groundmass. That mixed texture is porphyritic."},
+      {"start":20,"end":30,"label":"Final textures","text":"Explain the history, not just the texture name. He also emphasized pegmatites: water-rich melt helps atoms move efficiently and grow exceptionally large crystals."}
+    ]},
+    "T9": {"reviewLines":"2540–2700", "segments":[
+      {"start":0,"end":12,"label":"Bubble formation","text":"Vesicles are cavities made by gas bubbles in lava. As pressure falls, dissolved gas comes out of solution and bubbles begin to grow."},
+      {"start":12,"end":24,"label":"Expansion","text":"The review compares pumice and scoria. Pumice commonly has many thin-walled cavities and can float. Scoria commonly has darker, thicker walls. Their compositions differ."},
+      {"start":24,"end":28,"label":"Frozen vesicles","text":"Cooling preserves the bubbles as holes. These are vesicles, not crystals."}
+    ]},
+    "T10": {"reviewLines":"2700–3000", "segments":[
+      {"start":0,"end":10,"label":"Start cooling","text":"Read his chart in two steps: composition first, texture second. The composition groups are felsic, intermediate, mafic, and ultramafic."},
+      {"start":10,"end":20,"label":"Compare crystal growth","text":"Granite and rhyolite can have similar composition. Slow cooling makes coarse granite; rapid cooling makes fine rhyolite. Likewise, compare diorite with andesite, and gabbro with basalt."},
+      {"start":20,"end":26,"label":"Read the rock names","text":"Use the mineral bands too: quartz and potassium feldspar suggest felsic composition; olivine and pyroxene are characteristic of mafic and ultramafic rocks."}
+    ]},
+    "T11": {"reviewLines":"3000–3400", "segments":[
+      {"start":0,"end":10,"label":"Build a tetrahedron","text":"Oxygen and silicon dominate Earth's crust. One silicon surrounded by four oxygens makes a tetrahedron, the basic silicate unit. Learn both the structure and its name."},
+      {"start":10,"end":26,"label":"Share corner oxygen","text":"Sharing corner oxygens links tetrahedra into chains, sheets, and frameworks. He also asked about non-silicates: name their group from the anion. Sulfide and sulfate differ because sulfate contains oxygen. Review ionic, covalent, metallic, and molecular bonds alongside these structures."}
+    ]},
+    "T12": {"reviewLines":"3400–3720", "segments":[
+      {"start":0,"end":12,"label":"High-temperature minerals","text":"Bowen's series describes crystallization order as magma cools. In the discontinuous branch, follow olivine, pyroxene, amphibole, then biotite. High-temperature minerals appear first."},
+      {"start":12,"end":21,"label":"Continue cooling","text":"Plagioclase changes from calcium-rich toward sodium-rich. Potassium feldspar, muscovite, and quartz belong toward the low-temperature end."},
+      {"start":21,"end":30,"label":"Partial melting","text":"Now reverse the reasoning. On heating, lower-melting components enter the liquid first. Partial melt is generally more silica-rich than its source, while solid minerals remain."}
+    ]},
+    "T13": {"reviewLines":"3730–4150", "segments":[
+      {"start":0,"end":10,"label":"Heat transfer","text":"Connect each melting mechanism to its setting. First, add heat: hot magma transfers energy into cooler surrounding rock, which may begin to melt."},
+      {"start":10,"end":20,"label":"Decompression","text":"Second, reduce pressure. Mantle rising below ridges or hot spots can partially melt with little temperature change. This is decompression melting."},
+      {"start":20,"end":30,"label":"Slab water","text":"Third, add water. Minerals in the descending slab release water into the mantle wedge. Water lowers the melting temperature. The whole slab does not simply melt."}
+    ]},
+    "T14": {"reviewLines":"4150–4350", "segments":[
+      {"start":0,"end":10,"label":"Magma rises","text":"His main connection is viscosity to volcano shape. Viscosity means resistance to flow. Watch how each eruption adds material to the slopes."},
+      {"start":10,"end":20,"label":"Add deposits","text":"Low-viscosity basalt spreads far, building a broad shield such as Hawaii. More viscous magma and successive eruption deposits build a steeper composite volcano."},
+      {"start":20,"end":30,"label":"Compare the shapes","text":"Mount Fuji and Mount Saint Helens were his composite examples. More silica generally increases viscosity. Explain why the material spreads out or builds up."}
+    ]},
+    "T15": {"reviewLines":"4350–4590", "segments":[
+      {"start":0,"end":10,"label":"Conduction","text":"Use the boiling-pot analogy. Conduction transfers heat through contact, such as through the pot and its handle. The solid material does not circulate."},
+      {"start":10,"end":20,"label":"Convection","text":"Convection carries heat with moving material. Warm water rises, spreads, cools, and sinks. Follow a parcel around the cell, just as in his review."},
+      {"start":20,"end":30,"label":"Radiation","text":"Radiation carries energy as electromagnetic waves. Then connect the mechanisms to geology: rising mantle carries heat, and hot magma can conduct heat into neighboring crust."}
+    ]},
+    "T16": {"reviewLines":"4600–4740", "segments":[
+      {"start":0,"end":10,"label":"Ocean–ocean","text":"At ocean-ocean convergence, one plate descends, commonly the older, colder, denser one. Use density and temperature to explain which plate sinks."},
+      {"start":10,"end":20,"label":"Ocean–continent","text":"At ocean-continent convergence, dense oceanic lithosphere subducts beneath more buoyant continental crust. Identify the plate types before naming the process."},
+      {"start":20,"end":30,"label":"Continent–continent","text":"Two continents resist deep subduction. Collision shortens and thickens their crust, building mountains. Remember India, Asia, and the Himalaya as the review example."}
+    ]}
+  }
+}

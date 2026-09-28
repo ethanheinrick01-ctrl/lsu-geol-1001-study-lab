@@ -31,3 +31,6 @@
 .ad-film-tile h2 { font-size:1.08rem; }
 .ad-film-tile p { color:var(--muted,#a7b4c4); }
 @media (max-width:560px) { .ad-chapters .btn { min-height:44px; } }
+
+.ad-narration { margin:1rem 0; padding:.8rem; border:1px solid #3b4b5d; border-radius:.6rem; }
+.ad-narration summary { cursor:pointer; font-weight:600; }
