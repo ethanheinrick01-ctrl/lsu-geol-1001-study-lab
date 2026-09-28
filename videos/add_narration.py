@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Synthesize local narration, retime matching video stages and embed AAC audio.
+"""Embed approved AI Voice Generator narration and retime matching video stages.
 Source narration.json is paraphrased from the Sep 24 review and course lessons.
-Requires macOS say and FFmpeg. No external service, API or study-state access.
+Requires FFmpeg and the bundled Clear voice assets. No API or study-state access during build or playback.
 """
 import argparse, json, math, subprocess, tempfile
 from pathlib import Path
@@ -20,9 +20,9 @@ def build(topic,config,work):
     silent.write_bytes(subprocess.check_output(['git','show',f"{config['silentRevision']}:videos/exam1/{topic}.mp4"],cwd=ROOT))
     inputs=['-i',str(silent)];filters=[];timings=[];cursor=0;vtt=[]
     for i,segment in enumerate(segments):
-        textpath=work/f'{topic}-{i}.txt';textpath.write_text(segment['text'])
-        speech=work/f'{topic}-{i}.aiff'
-        subprocess.run(['say','-v',config['voice'],'-r',str(config['wordsPerMinute']),'-f',str(textpath),'-o',str(speech)],check=True)
+        speech=work/f'{topic}-{i}.wav'
+        source=HERE/config['audioDirectory']/f'{topic}.mp3'
+        subprocess.run(['ffmpeg','-y','-v','error','-i',str(source),'-ss',str(segment['audioStart']),'-t',str(segment['audioEnd']-segment['audioStart']),'-ar','48000','-ac','1',str(speech)],check=True)
         audio_duration=float(probe(speech)['format']['duration']);original=segment['end']-segment['start']
         duration=math.ceil(max(original,audio_duration+.8)*FPS)/FPS
         inputs+=['-i',str(speech)]

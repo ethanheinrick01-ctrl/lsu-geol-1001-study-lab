@@ -1,21 +1,21 @@
 {
   "T1": {
-    "seconds": 36.083,
+    "seconds": 36.333,
     "chapters": [
       [
         0,
         "Weather and transport"
       ],
       [
-        11.125,
+        11.0,
         "Burial and lithification"
       ],
       [
-        19.125,
+        19.0,
         "Metamorphism"
       ],
       [
-        27.125,
+        27.0,
         "Melt and crystallize"
       ]
     ],
@@ -24,52 +24,52 @@
     "narration": [
       {
         "start": 0,
-        "end": 11.125,
+        "end": 11.0,
         "label": "Weather and transport",
-        "speechSeconds": 10.291,
+        "speechSeconds": 10.16,
         "text": "Know the processes connecting igneous, sedimentary, and metamorphic rock. Weathering breaks rock down. Erosion and transport move the pieces; deposition drops them."
       },
       {
-        "start": 11.125,
-        "end": 19.125,
+        "start": 11.0,
+        "end": 19.0,
         "label": "Burial and lithification",
-        "speechSeconds": 5.925,
+        "speechSeconds": 5.72,
         "text": "Burial packs sediment together. Compaction and cementation turn loose grains into sedimentary rock."
       },
       {
-        "start": 19.125,
-        "end": 27.125,
+        "start": 19.0,
+        "end": 27.0,
         "label": "Metamorphism",
-        "speechSeconds": 5.836,
+        "speechSeconds": 5.72,
         "text": "Heat and pressure change solid rock into metamorphic rock. Metamorphism does not require melting."
       },
       {
-        "start": 27.125,
-        "end": 36.083,
+        "start": 27.0,
+        "end": 36.333,
         "label": "Melt and crystallize",
-        "speechSeconds": 8.12,
+        "speechSeconds": 8.52,
         "text": "Melting makes magma; cooling makes igneous rock. His key point: the rock cycle has many possible routes, not one fixed loop."
       }
     ],
     "reviewLines": "529–800"
   },
   "T2": {
-    "seconds": 30.0,
+    "seconds": 30.625,
     "chapters": [
       [
         0,
         "Precambrian"
       ],
       [
-        7.5,
+        8.083,
         "Paleozoic"
       ],
       [
-        15.0,
+        15.583,
         "Mesozoic"
       ],
       [
-        22.5,
+        23.083,
         "Cenozoic"
       ]
     ],
@@ -78,37 +78,37 @@
     "narration": [
       {
         "start": 0,
-        "end": 7.5,
+        "end": 8.083,
         "label": "Precambrian",
-        "speechSeconds": 6.538,
+        "speechSeconds": 7.27,
         "text": "For the review, know the major divisions and their order. Precambrian comes first and includes most of Earth's history."
       },
       {
-        "start": 7.5,
-        "end": 15.0,
+        "start": 8.083,
+        "end": 15.583,
         "label": "Paleozoic",
-        "speechSeconds": 4.662,
+        "speechSeconds": 5.2,
         "text": "Next is the Paleozoic, with diverse life in the seas and expanding onto land."
       },
       {
-        "start": 15.0,
-        "end": 22.5,
+        "start": 15.583,
+        "end": 23.083,
         "label": "Mesozoic",
-        "speechSeconds": 3.76,
+        "speechSeconds": 3.42,
         "text": "Then comes the Mesozoic, the era that includes the dinosaurs."
       },
       {
-        "start": 22.5,
-        "end": 30.0,
+        "start": 23.083,
+        "end": 30.625,
         "label": "Cenozoic",
-        "speechSeconds": 6.47,
+        "speechSeconds": 6.718,
         "text": "Cenozoic is youngest. Remember the four broad blocks; he did not ask you to memorize every period name."
       }
     ],
     "reviewLines": "821–905"
   },
   "T3": {
-    "seconds": 34.958,
+    "seconds": 35.042,
     "chapters": [
       [
         0,
@@ -126,21 +126,21 @@
         "start": 0,
         "end": 20.0,
         "label": "Build magnetic stripes",
-        "speechSeconds": 16.214,
+        "speechSeconds": 17.02,
         "text": "Wegener had evidence for continental drift but lacked a convincing driving mechanism. At a mid-ocean ridge, new basalt records magnetic polarity as it cools. Older bands move outward and keep their original polarity. Matching stripes on both sides are evidence for seafloor spreading."
       },
       {
         "start": 20.0,
-        "end": 34.958,
+        "end": 35.042,
         "label": "Watch the plate age",
-        "speechSeconds": 14.126,
+        "speechSeconds": 14.204,
         "text": "Away from the ridge, oceanic lithosphere becomes older, cooler, denser, and thicker. Keep the layers separate: mantle lithosphere thickens as it cools, sediment accumulates above, and crust stays roughly similar in thickness."
       }
     ],
     "reviewLines": "905–1300"
   },
   "T4": {
-    "seconds": 31.708,
+    "seconds": 32.292,
     "chapters": [
       [
         0,
@@ -151,7 +151,7 @@
         "Convergent"
       ],
       [
-        20.0,
+        20.167,
         "Transform"
       ]
     ],
@@ -162,39 +162,39 @@
         "start": 0,
         "end": 10.0,
         "label": "Divergent",
-        "speechSeconds": 8.632,
+        "speechSeconds": 7.73,
         "text": "Divergent plates move apart. New oceanic crust forms at the ridge, so this is a constructive boundary. Identify it from relative motion."
       },
       {
         "start": 10.0,
-        "end": 20.0,
+        "end": 20.167,
         "label": "Convergent",
-        "speechSeconds": 8.905,
+        "speechSeconds": 9.35,
         "text": "Convergent plates move together. At a subduction zone, old oceanic lithosphere sinks and is recycled. That is the destructive boundary in the review."
       },
       {
-        "start": 20.0,
-        "end": 31.708,
+        "start": 20.167,
+        "end": 32.292,
         "label": "Transform",
-        "speechSeconds": 10.902,
+        "speechSeconds": 11.312,
         "text": "Transform plates slide past: a conservative boundary. Crust is neither created nor consumed. On a map, count connected plate regions, then identify each boundary's motion."
       }
     ],
     "reviewLines": "1300–1705"
   },
   "T5": {
-    "seconds": 35.25,
+    "seconds": 34.583,
     "chapters": [
       [
         0,
         "Earth layers"
       ],
       [
-        13.375,
+        13.292,
         "Change thickness"
       ],
       [
-        24.5,
+        24.0,
         "Change density"
       ]
     ],
@@ -203,30 +203,30 @@
     "narration": [
       {
         "start": 0,
-        "end": 13.375,
+        "end": 13.292,
         "label": "Earth layers",
-        "speechSeconds": 12.564,
+        "speechSeconds": 12.46,
         "text": "Crust, mantle, and core describe composition. Lithosphere means rigid crust plus uppermost mantle. The asthenosphere below is weaker but mostly solid. The L A B separates those mechanical layers."
       },
       {
-        "start": 13.375,
-        "end": 24.5,
+        "start": 13.292,
+        "end": 24.0,
         "label": "Change thickness",
-        "speechSeconds": 10.317,
+        "speechSeconds": 9.9,
         "text": "His wood-block analogy explains isostasy. At equal density, a thicker block rides higher and extends deeper. Thick continental crust helps explain high elevations."
       },
       {
-        "start": 24.5,
-        "end": 35.25,
+        "start": 24.0,
+        "end": 34.583,
         "label": "Change density",
-        "speechSeconds": 9.946,
+        "speechSeconds": 9.776,
         "text": "At equal thickness, denser material sits lower. Compare thickness and density before predicting elevation. The floating blocks are an analogy, not a liquid mantle."
       }
     ],
     "reviewLines": "1716–2090"
   },
   "T6": {
-    "seconds": 30.0,
+    "seconds": 30.292,
     "chapters": [
       [
         0,
@@ -248,39 +248,39 @@
         "start": 0,
         "end": 12.0,
         "label": "First volcano",
-        "speechSeconds": 8.49,
+        "speechSeconds": 7.96,
         "text": "Some volcanoes occur inside plates, away from plate boundaries. Rising hot mantle can partially melt at shallow depth and feed a hot spot."
       },
       {
         "start": 12.0,
         "end": 24.0,
         "label": "A chain grows",
-        "speechSeconds": 8.65,
+        "speechSeconds": 8.91,
         "text": "The plate carries each volcano away from the active center. A new volcano grows over the same hot spot. The chain gets older away from activity."
       },
       {
         "start": 24.0,
-        "end": 30.0,
+        "end": 30.292,
         "label": "Trace plate motion",
-        "speechSeconds": 4.814,
+        "speechSeconds": 5.474,
         "text": "Remember his examples: Hawaii in the ocean, and Yellowstone on a continent."
       }
     ],
     "reviewLines": "2090–2280"
   },
   "T7": {
-    "seconds": 30.292,
+    "seconds": 31.083,
     "chapters": [
       [
         0,
         "Add heat"
       ],
       [
-        10.292,
+        10.458,
         "Reduce pressure"
       ],
       [
-        20.292,
+        21.083,
         "Add water"
       ]
     ],
@@ -289,37 +289,37 @@
     "narration": [
       {
         "start": 0,
-        "end": 10.292,
+        "end": 10.458,
         "label": "Add heat",
-        "speechSeconds": 9.458,
+        "speechSeconds": 9.63,
         "text": "Read the axes first. Temperature increases rightward; pressure increases downward. Heating moves the rock right. Crossing the solidus starts partial melting."
       },
       {
-        "start": 10.292,
-        "end": 20.292,
+        "start": 10.458,
+        "end": 21.083,
         "label": "Reduce pressure",
-        "speechSeconds": 8.758,
+        "speechSeconds": 9.8,
         "text": "Now move upward: pressure decreases while temperature stays similar. That is decompression melting. Watch melt appear between grains that remain solid."
       },
       {
-        "start": 20.292,
-        "end": 30.292,
+        "start": 21.083,
+        "end": 31.083,
         "label": "Add water",
-        "speechSeconds": 7.595,
+        "speechSeconds": 7.954,
         "text": "Water lowers the solidus. The same rock can start melting without becoming hotter. Know how all three changes appear on this graph."
       }
     ],
     "reviewLines": "2280–2335; 3730–3900"
   },
   "T8": {
-    "seconds": 31.833,
+    "seconds": 32.083,
     "chapters": [
       [
         0,
         "Crystal nuclei"
       ],
       [
-        10.375,
+        10.292,
         "Growth"
       ],
       [
@@ -332,30 +332,30 @@
     "narration": [
       {
         "start": 0,
-        "end": 10.375,
+        "end": 10.292,
         "label": "Crystal nuclei",
-        "speechSeconds": 9.555,
+        "speechSeconds": 9.47,
         "text": "Texture records cooling history. Slow cooling gives crystals time to grow large. Faster cooling makes small crystals; very rapid cooling can make glass."
       },
       {
-        "start": 10.375,
+        "start": 10.292,
         "end": 21.083,
         "label": "Growth",
-        "speechSeconds": 9.882,
+        "speechSeconds": 9.96,
         "text": "Watch the two-stage sample. Large crystals grow first during slow cooling. Faster cooling then produces the fine groundmass. That mixed texture is porphyritic."
       },
       {
         "start": 21.083,
-        "end": 31.833,
+        "end": 32.083,
         "label": "Final textures",
-        "speechSeconds": 9.935,
+        "speechSeconds": 10.162,
         "text": "Explain the history, not just the texture name. He also emphasized pegmatites: water-rich melt helps atoms move efficiently and grow exceptionally large crystals."
       }
     ],
     "reviewLines": "2320–2540"
   },
   "T9": {
-    "seconds": 29.375,
+    "seconds": 29.792,
     "chapters": [
       [
         0,
@@ -377,39 +377,39 @@
         "start": 0,
         "end": 12.0,
         "label": "Bubble formation",
-        "speechSeconds": 7.957,
+        "speechSeconds": 7.56,
         "text": "Vesicles are cavities made by gas bubbles in lava. As pressure falls, dissolved gas comes out of solution and bubbles begin to grow."
       },
       {
         "start": 12.0,
         "end": 24.0,
         "label": "Expansion",
-        "speechSeconds": 10.194,
+        "speechSeconds": 10.86,
         "text": "The review compares pumice and scoria. Pumice commonly has many thin-walled cavities and can float. Scoria commonly has darker, thicker walls. Their compositions differ."
       },
       {
         "start": 24.0,
-        "end": 29.375,
+        "end": 29.792,
         "label": "Frozen vesicles",
-        "speechSeconds": 4.549,
+        "speechSeconds": 4.956,
         "text": "Cooling preserves the bubbles as holes. These are vesicles, not crystals."
       }
     ],
     "reviewLines": "2540–2700"
   },
   "T10": {
-    "seconds": 33.333,
+    "seconds": 32.292,
     "chapters": [
       [
         0,
         "Start cooling"
       ],
       [
-        10.375,
+        10.0,
         "Compare crystal growth"
       ],
       [
-        22.792,
+        21.625,
         "Read the rock names"
       ]
     ],
@@ -418,37 +418,37 @@
     "narration": [
       {
         "start": 0,
-        "end": 10.375,
+        "end": 10.0,
         "label": "Start cooling",
-        "speechSeconds": 9.574,
+        "speechSeconds": 8.58,
         "text": "Read his chart in two steps: composition first, texture second. The composition groups are felsic, intermediate, mafic, and ultramafic."
       },
       {
-        "start": 10.375,
-        "end": 22.792,
+        "start": 10.0,
+        "end": 21.625,
         "label": "Compare crystal growth",
-        "speechSeconds": 11.59,
+        "speechSeconds": 10.8,
         "text": "Granite and rhyolite can have similar composition. Slow cooling makes coarse granite; rapid cooling makes fine rhyolite. Likewise, compare diorite with andesite, and gabbro with basalt."
       },
       {
-        "start": 22.792,
-        "end": 33.333,
+        "start": 21.625,
+        "end": 32.292,
         "label": "Read the rock names",
-        "speechSeconds": 9.733,
+        "speechSeconds": 9.828,
         "text": "Use the mineral bands too: quartz and potassium feldspar suggest felsic composition; olivine and pyroxene are characteristic of mafic and ultramafic rocks."
       }
     ],
     "reviewLines": "2700–3000"
   },
   "T11": {
-    "seconds": 30.75,
+    "seconds": 29.625,
     "chapters": [
       [
         0,
         "Build a tetrahedron"
       ],
       [
-        11.292,
+        11.0,
         "Share corner oxygen"
       ]
     ],
@@ -457,34 +457,34 @@
     "narration": [
       {
         "start": 0,
-        "end": 11.292,
+        "end": 11.0,
         "label": "Build a tetrahedron",
-        "speechSeconds": 10.455,
+        "speechSeconds": 10.17,
         "text": "Oxygen and silicon dominate Earth's crust. One silicon surrounded by four oxygens makes a tetrahedron, the basic silicate unit. Learn both the structure and its name."
       },
       {
-        "start": 11.292,
-        "end": 30.75,
+        "start": 11.0,
+        "end": 29.625,
         "label": "Share corner oxygen",
-        "speechSeconds": 18.628,
+        "speechSeconds": 17.79,
         "text": "Sharing corner oxygens links tetrahedra into chains, sheets, and frameworks. He also asked about non-silicates: name their group from the anion. Sulfide and sulfate differ because sulfate contains oxygen. Review ionic, covalent, metallic, and molecular bonds alongside these structures."
       }
     ],
     "reviewLines": "3000–3400"
   },
   "T12": {
-    "seconds": 33.75,
+    "seconds": 33.042,
     "chapters": [
       [
         0,
         "High-temperature minerals"
       ],
       [
-        13.167,
+        12.667,
         "Continue cooling"
       ],
       [
-        22.792,
+        21.917,
         "Partial melting"
       ]
     ],
@@ -493,30 +493,30 @@
     "narration": [
       {
         "start": 0,
-        "end": 13.167,
+        "end": 12.667,
         "label": "High-temperature minerals",
-        "speechSeconds": 12.334,
+        "speechSeconds": 11.86,
         "text": "Bowen's series describes crystallization order as magma cools. In the discontinuous branch, follow olivine, pyroxene, amphibole, then biotite. High-temperature minerals appear first."
       },
       {
-        "start": 13.167,
-        "end": 22.792,
+        "start": 12.667,
+        "end": 21.917,
         "label": "Continue cooling",
-        "speechSeconds": 8.798,
+        "speechSeconds": 8.45,
         "text": "Plagioclase changes from calcium-rich toward sodium-rich. Potassium feldspar, muscovite, and quartz belong toward the low-temperature end."
       },
       {
-        "start": 22.792,
-        "end": 33.75,
+        "start": 21.917,
+        "end": 33.042,
         "label": "Partial melting",
-        "speechSeconds": 10.131,
+        "speechSeconds": 10.314,
         "text": "Now reverse the reasoning. On heating, lower-melting components enter the liquid first. Partial melt is generally more silica-rich than its source, while solid minerals remain."
       }
     ],
     "reviewLines": "3400–3720"
   },
   "T13": {
-    "seconds": 30.042,
+    "seconds": 31.625,
     "chapters": [
       [
         0,
@@ -538,28 +538,28 @@
         "start": 0,
         "end": 10.0,
         "label": "Heat transfer",
-        "speechSeconds": 9.009,
+        "speechSeconds": 8.45,
         "text": "Connect each melting mechanism to its setting. First, add heat: hot magma transfers energy into cooler surrounding rock, which may begin to melt."
       },
       {
         "start": 10.0,
         "end": 20.0,
         "label": "Decompression",
-        "speechSeconds": 8.699,
+        "speechSeconds": 8.87,
         "text": "Second, reduce pressure. Mantle rising below ridges or hot spots can partially melt with little temperature change. This is decompression melting."
       },
       {
         "start": 20.0,
-        "end": 30.042,
+        "end": 31.625,
         "label": "Slab water",
-        "speechSeconds": 9.209,
+        "speechSeconds": 10.808,
         "text": "Third, add water. Minerals in the descending slab release water into the mantle wedge. Water lowers the melting temperature. The whole slab does not simply melt."
       }
     ],
     "reviewLines": "3730–4150"
   },
   "T14": {
-    "seconds": 30.625,
+    "seconds": 31.292,
     "chapters": [
       [
         0,
@@ -570,7 +570,7 @@
         "Add deposits"
       ],
       [
-        20.5,
+        21.042,
         "Compare the shapes"
       ]
     ],
@@ -581,28 +581,28 @@
         "start": 0,
         "end": 10.0,
         "label": "Magma rises",
-        "speechSeconds": 8.68,
+        "speechSeconds": 8.91,
         "text": "His main connection is viscosity to volcano shape. Viscosity means resistance to flow. Watch how each eruption adds material to the slopes."
       },
       {
         "start": 10.0,
-        "end": 20.5,
+        "end": 21.042,
         "label": "Add deposits",
-        "speechSeconds": 9.699,
+        "speechSeconds": 10.23,
         "text": "Low-viscosity basalt spreads far, building a broad shield such as Hawaii. More viscous magma and successive eruption deposits build a steeper composite volcano."
       },
       {
-        "start": 20.5,
-        "end": 30.625,
+        "start": 21.042,
+        "end": 31.292,
         "label": "Compare the shapes",
-        "speechSeconds": 9.292,
+        "speechSeconds": 9.444,
         "text": "Mount Fuji and Mount Saint Helens were his composite examples. More silica generally increases viscosity. Explain why the material spreads out or builds up."
       }
     ],
     "reviewLines": "4150–4350"
   },
   "T15": {
-    "seconds": 32.0,
+    "seconds": 32.292,
     "chapters": [
       [
         0,
@@ -613,7 +613,7 @@
         "Convection"
       ],
       [
-        20.625,
+        20.125,
         "Radiation"
       ]
     ],
@@ -624,39 +624,39 @@
         "start": 0,
         "end": 10.0,
         "label": "Conduction",
-        "speechSeconds": 8.967,
+        "speechSeconds": 8.46,
         "text": "Use the boiling-pot analogy. Conduction transfers heat through contact, such as through the pot and its handle. The solid material does not circulate."
       },
       {
         "start": 10.0,
-        "end": 20.625,
+        "end": 20.125,
         "label": "Convection",
-        "speechSeconds": 9.81,
+        "speechSeconds": 9.29,
         "text": "Convection carries heat with moving material. Warm water rises, spreads, cools, and sinks. Follow a parcel around the cell, just as in his review."
       },
       {
-        "start": 20.625,
-        "end": 32.0,
+        "start": 20.125,
+        "end": 32.292,
         "label": "Radiation",
-        "speechSeconds": 10.561,
+        "speechSeconds": 11.338,
         "text": "Radiation carries energy as electromagnetic waves. Then connect the mechanisms to geology: rising mantle carries heat, and hot magma can conduct heat into neighboring crust."
       }
     ],
     "reviewLines": "4350–4590"
   },
   "T16": {
-    "seconds": 31.625,
+    "seconds": 31.583,
     "chapters": [
       [
         0,
         "Ocean–ocean"
       ],
       [
-        10.417,
+        10.0,
         "Ocean–continent"
       ],
       [
-        20.958,
+        20.375,
         "Continent–continent"
       ]
     ],
@@ -665,23 +665,23 @@
     "narration": [
       {
         "start": 0,
-        "end": 10.417,
+        "end": 10.0,
         "label": "Ocean–ocean",
-        "speechSeconds": 9.598,
+        "speechSeconds": 8.84,
         "text": "At ocean-ocean convergence, one plate descends, commonly the older, colder, denser one. Use density and temperature to explain which plate sinks."
       },
       {
-        "start": 10.417,
-        "end": 20.958,
+        "start": 10.0,
+        "end": 20.375,
         "label": "Ocean–continent",
-        "speechSeconds": 9.725,
+        "speechSeconds": 9.54,
         "text": "At ocean-continent convergence, dense oceanic lithosphere subducts beneath more buoyant continental crust. Identify the plate types before naming the process."
       },
       {
-        "start": 20.958,
-        "end": 31.625,
+        "start": 20.375,
+        "end": 31.583,
         "label": "Continent–continent",
-        "speechSeconds": 9.845,
+        "speechSeconds": 10.396,
         "text": "Two continents resist deep subduction. Collision shortens and thickens their crust, building mountains. Remember India, Asia, and the Himalaya as the review example."
       }
     ],
