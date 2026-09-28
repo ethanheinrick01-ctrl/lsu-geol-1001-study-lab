@@ -101,6 +101,9 @@
   function wire(root) {
     root.querySelectorAll('[data-process-film]').forEach(function (el) {
       var video = el.querySelector('video');
+      video.addEventListener('play', function () {
+        root.querySelectorAll('video').forEach(function (other) { if (other !== video) other.pause(); });
+      });
       el.querySelectorAll('[data-film-seek]').forEach(function (button) {
         button.onclick = function () {
           var seek = function () { video.currentTime = +button.dataset.filmSeek; video.play().catch(function () {}); };
