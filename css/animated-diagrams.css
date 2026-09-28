@@ -1,0 +1,24 @@
+.ad-demo{overflow:hidden}
+.ad-motion-index{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:18px 0 28px}
+.ad-motion-index .card{display:block;margin:0;text-decoration:none;color:var(--ink)}
+.ad-motion-index .card:hover{border-color:var(--acc)}
+.ad-motion-index h2{font-size:18px;margin:10px 0}
+.ad-video video{display:block;width:100%;height:auto;aspect-ratio:16/9;margin:16px 0;border:1px solid rgba(115,194,205,.35);border-radius:14px;background:#071425}
+.ad-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.ad-heading h2{margin:.2em 0 .5em}
+.ad-figure-frame{position:relative;max-width:800px;margin:8px auto 14px;background:#070d2f;border:1px solid var(--line);border-radius:10px;overflow:hidden;aspect-ratio:4/3}
+.ad-figure-frame img{display:block;width:100%;height:100%;object-fit:contain}
+.ad-figure-frame svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.ad-focus{opacity:0;transition:opacity .35s ease}
+.ad-focus.is-active{opacity:1}
+.ad-focus rect{fill:rgba(245,196,81,.09);stroke:#f5c451;stroke-width:9;stroke-dasharray:22 13;filter:drop-shadow(0 0 10px rgba(245,196,81,.8))}
+.ad-focus.is-active rect{animation:ad-trace 1.2s linear infinite}
+.ad-controls{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:12px 0}
+.ad-count{font-size:14px;color:var(--mute);margin-left:4px}
+.ad-stage-name{font-weight:700;color:var(--acc);font-size:1.02rem;margin:12px 0 0}
+.ad-step{font-size:1.04rem;font-weight:600;min-height:2.8em;padding:11px 13px;margin:6px 0;background:var(--panel2);border-left:3px solid var(--acc);border-radius:8px}
+.ad-source{border-top:1px solid var(--line);padding-top:8px}
+@keyframes ad-trace{to{stroke-dashoffset:-35}}
+@media(max-width:540px){.ad-motion-index{grid-template-columns:1fr}.ad-step{min-height:0}.ad-controls .btn{font-size:13px}.ad-count{width:100%;order:5}}
+@media(prefers-reduced-motion:reduce){.ad-focus{transition:none}.ad-focus.is-active rect{animation:none}}
+@media print{.ad-focus rect{stroke:#111;filter:none;animation:none}.ad-stage-name{color:#111}.ad-step{background:#fff;color:#111}.ad-controls{display:none}.ad-source{color:#333}}

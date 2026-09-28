@@ -38,6 +38,7 @@ details.card>summary{cursor:pointer;display:flex;gap:10px;align-items:center;jus
 .warn{color:var(--warn)}.okc{color:var(--ok)}.noc{color:var(--bad)}
 .seclist{display:grid;gap:6px}.secrow{display:grid;grid-template-columns:54px 1fr auto;gap:10px;align-items:center;padding:10px;border-radius:10px;background:var(--panel2);text-decoration:none;color:var(--ink);border:1px solid transparent}.secrow:hover{border-color:var(--line)}
 .secrow .n{font-weight:800;color:var(--acc)}
+.guide-totals{display:flex;align-items:center;justify-content:flex-end;gap:8px;flex-wrap:wrap;text-align:right}
 .crumbs{font-size:14px;color:var(--mute)}.sechead h1{margin-bottom:.2em}
 .gcard h2{color:#f3d9a4}.gcard p,.gcard li{max-width:78ch}
 .gcard table,.t{border-collapse:collapse;width:100%;font-size:14px;margin:8px 0}.t th,.t td,.gcard th,.gcard td{border-bottom:1px solid var(--line);padding:7px 8px;text-align:left;vertical-align:top}.t th,.gcard th{color:var(--mute);font-weight:600}

@@ -82,17 +82,18 @@
 
   // ---------------- Guide ----------------
   function pGuide(args) {
-    var s = S.load(), h = [banner()];
+    var s = S.load(), st = E.conceptStats(), h = [banner()];
     var id = args[0];
     if (!id || /^ch\d$/.test(id)) {
       var only = id ? +id.slice(2) : null;
-      h.push('<h1>Study Guide</h1><p class="lede">Teaching first. Each section cites the lecture slides, recordings, or textbook pages it comes from, flags evidence limits, and ends with practice.</p>');
+      h.push('<h1>Study Guide</h1><p class="lede">Teaching first. Guide and Practice show the same checked-answer mastery. Reading a card is tracked separately so you can see what you have studied.</p>');
       for (var ch = 1; ch <= 6; ch++) {
         if (only && ch !== only) continue;
         h.push('<section class="card"><h2>' + esc(L.CHAPTERS[ch].name) + '</h2><p class="small muted">Evidence: ' + esc(L.CHAPTERS[ch].evidence) + '</p><div class="seclist">');
         secsOfCh(ch).forEach(function (sec) {
           var cards = L.GUIDE[sec.id] || [], read = cards.filter(function (c) { return s.guideRead[c.id]; }).length;
-          h.push('<a class="secrow" href="#guide/' + sec.id + '"><span class="n">' + esc(sec.n) + '</span><span><b>' + esc(sec.title) + '</b><br><span class="small muted">' + esc(sec.srcText) + '</span></span><span class="small">' + (sec.flag ? '<span class="badge flag">' + esc(sec.flag) + '</span> ' : '') + (read === cards.length && cards.length ? '<span class="badge st-mastered">read</span>' : read + '/' + cards.length) + '</span></a>');
+          var cs = conceptsOfSec(sec.id).filter(E.hasPracticeContent), mastered = cs.filter(function (c) { return st[c].status === 'mastered'; }).length;
+          h.push('<a class="secrow" href="#guide/' + sec.id + '"><span class="n">' + esc(sec.n) + '</span><span><b>' + esc(sec.title) + '</b><br><span class="small muted">' + esc(sec.srcText) + '</span></span><span class="small guide-totals">' + (sec.flag ? '<span class="badge flag">' + esc(sec.flag) + '</span> ' : '') + '<span class="badge '+(cs.length && mastered===cs.length?'st-mastered':'')+'">'+mastered+'/'+cs.length+' mastered</span><span class="muted">'+read+'/'+cards.length+' cards read</span></span></a>');
         });
         h.push('</div></section>');
       }
@@ -105,15 +106,15 @@
     h.push('<header class="sechead"><h1>' + esc(sec.n + ' ' + sec.title) + '</h1><p class="small">' + IU.srcChips(sec.src) + ' ' + IU.tierBadge(sec.tier || 2) + '</p>' + (sec.note ? '<div class="infobox small">' + sec.note + '</div>' : '') + '</header>');
     (L.GUIDE[id] || []).forEach(function (c) {
       var ts = U.uniq((c.c || []).reduce(function(a,id){return a.concat(L.EXAM_CONCEPT_TOPICS[id] || []);},[]));
-      h.push('<p class="small muted">' + (ts.length ? 'Related to Sep 24 review: ' + ts.map(function(t){return '<a href="#exam1/topic/'+t+'">'+t+'</a>';}).join(' · ') : 'Broader course material; not singled out in the Sep 24 review.') + '</p>');
+      h.push('<p class="small muted">' + (ts.length ? 'Sep 24 review motion studies: ' + ts.map(function(t){return '<a href="#exam1/topic/'+t+'">Watch '+t+'</a>';}).join(' · ') : 'Broader course material; not singled out in the Sep 24 review.') + '</p>');
       h.push('<article class="card gcard" id="' + c.id + '"><h2>' + esc(c.h) + '</h2>' + c.html + (c.media ? IU.mediaHTML(c.media) : ''));
       if (c.traps && c.traps.length) h.push('<div class="traps"><b>Tempting mistakes</b><ul>' + c.traps.map(function (t) { return '<li>' + t + '</li>'; }).join('') + '</ul></div>');
       h.push('<p class="srcline">' + IU.srcChips(c.src) + ' ' + IU.tierBadge(c.tier || sec.tier || 2) + '</p></article>');
     });
     var slides = sectionSlides(sec);
     if (slides.length) h.push('<details class="card"><summary><b>Source slides for this section</b> <span class="small muted">(' + slides.length + ' slides from the lecture deck; tap to enlarge)</span></summary>' + IU.mediaHTML(slides.map(function (x) { return { kind: 'img', src: x.src, cap: x.cap, alt: x.cap }; })) + '</details>');
-    var cons = conceptsOfSec(id).filter(E.hasPracticeContent), st = E.conceptStats();
-    h.push('<section class="card"><h2>Check yourself</h2><p class="small muted">Close the notes first. Questions use new wording and new situations, not the sentences above.</p><div class="chips">' + cons.map(function (c) { return '<span class="chip">' + esc(L.CONCEPTS[c].name) + ' ' + statusBadge(st[c].status) + '</span>'; }).join('') + '</div><div class="row"><button class="btn pri" id="pracSec">Practice this section (8)</button>' + (prev ? '<a class="btn ghost" href="#guide/' + prev.id + '">← ' + esc(prev.n) + '</a>' : '') + (next ? '<a class="btn ghost" href="#guide/' + next.id + '">' + esc(next.n) + ' →</a>' : '') + '</div></section>');
+    var cons = conceptsOfSec(id).filter(E.hasPracticeContent), masteredHere = cons.filter(function (c) { return st[c].status === 'mastered'; }).length;
+    h.push('<section class="card"><h2>Check yourself · '+masteredHere+'/'+cons.length+' mastered</h2><p class="small muted">Close the notes first. Checked answers here, in Practice, and in Exam 1 use the same mastery record. Reading or watching is study progress, not a graded answer.</p><div class="chips">' + cons.map(function (c) { return '<span class="chip">' + esc(L.CONCEPTS[c].name) + ' ' + statusBadge(st[c].status) + '</span>'; }).join('') + '</div><div class="row"><button class="btn pri" id="pracSec">Practice this section (8)</button><a class="btn" href="#practice">All chapter practice</a>' + (prev ? '<a class="btn ghost" href="#guide/' + prev.id + '">← ' + esc(prev.n) + '</a>' : '') + (next ? '<a class="btn ghost" href="#guide/' + next.id + '">' + esc(next.n) + ' →</a>' : '') + '</div></section>');
     main.innerHTML = h.join('');
     (L.GUIDE[id] || []).forEach(function (c) { s.guideRead[c.id] = s.guideRead[c.id] || Date.now(); }); S.save();
     $('#pracSec').onclick = function () { startPractice({ sec: id, n: 8 }, 'Practice: ' + sec.n + ' ' + sec.title); };
@@ -137,14 +138,15 @@
   }
   // ---------------- Practice ----------------
   function pPractice() {
-    var st = E.conceptStats(), h = [banner(), '<h1>Practice</h1><p class="lede">Confidence is chosen before feedback. Misses and low-confidence answers come back after a gap, usually as a different question on the same concept.</p>'];
+    var st = E.conceptStats(), h = [banner(), '<h1>Practice</h1><p class="lede">Guide and Practice use the same mastery record. Confidence is chosen before feedback; misses and low-confidence answers come back after a gap, usually as a different question on the same concept.</p>'];
     h.push('<div class="infobox">For the professor’s focused review and course-figure practice, open <a href="#exam1">Exam 1</a>. The practice below covers the broader chapters.</div>');
     h.push('<div class="row"><button class="btn pri" id="mix15">Mixed Ch 1–6 (15)</button><button class="btn" id="rev">Review queue (15)</button></div>');
     for (var ch = 1; ch <= 6; ch++) {
       h.push('<details class="card" ' + (ch === 1 ? 'open' : '') + '><summary><b>' + esc(L.CHAPTERS[ch].name) + '</b></summary><div class="row"><button class="btn small" data-ch="' + ch + '">Practice all of ' + esc(L.CHAPTERS[ch].short) + ' (15)</button></div>');
       secsOfCh(ch).forEach(function (sec) {
         var cs = conceptsOfSec(sec.id).filter(E.hasPracticeContent);
-        h.push('<div class="pracsec"><div class="spread"><b>' + esc(sec.n + ' ' + sec.title) + '</b><button class="btn small" data-sec="' + sec.id + '">Practice (8)</button></div><div class="chips">');
+        var mastered = cs.filter(function (c) { return st[c].status === 'mastered'; }).length;
+        h.push('<div class="pracsec"><div class="spread"><b>' + esc(sec.n + ' ' + sec.title) + ' <span class="badge '+(cs.length&&mastered===cs.length?'st-mastered':'')+'">'+mastered+'/'+cs.length+' mastered</span></b><span class="row"><a class="btn small" href="#guide/'+sec.id+'">Study</a><button class="btn small" data-sec="' + sec.id + '">Practice (8)</button></span></div><div class="chips">');
         cs.forEach(function (c) { h.push('<label class="chip"><input type="checkbox" class="cc" value="' + c + '"> ' + esc(L.CONCEPTS[c].name) + ' ' + statusBadge(st[c].status) + '</label>'); });
         h.push('</div></div>');
       });
