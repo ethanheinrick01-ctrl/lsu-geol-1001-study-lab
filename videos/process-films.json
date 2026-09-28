@@ -1,0 +1,306 @@
+{
+  "T1": {
+    "seconds": 32,
+    "chapters": [
+      [
+        0,
+        "Weather and transport"
+      ],
+      [
+        8,
+        "Burial and lithification"
+      ],
+      [
+        16,
+        "Metamorphism"
+      ],
+      [
+        24,
+        "Melt and crystallize"
+      ]
+    ],
+    "description": "Grains erode, settle, compact, deform, melt and crystallize.",
+    "source": "L1b slide 29"
+  },
+  "T2": {
+    "seconds": 30,
+    "chapters": [
+      [
+        0,
+        "Precambrian"
+      ],
+      [
+        7.5,
+        "Paleozoic"
+      ],
+      [
+        15,
+        "Mesozoic"
+      ],
+      [
+        22.5,
+        "Cenozoic"
+      ]
+    ],
+    "description": "Build the course time blocks from older to younger.",
+    "source": "L2 slide 24"
+  },
+  "T3": {
+    "seconds": 32,
+    "chapters": [
+      [
+        0,
+        "Build magnetic stripes"
+      ],
+      [
+        20,
+        "Watch the plate age"
+      ]
+    ],
+    "description": "Create paired magnetic bands, then cool and thicken the plate.",
+    "source": "L3 slides 23, 40, 42"
+  },
+  "T4": {
+    "seconds": 30,
+    "chapters": [
+      [
+        0,
+        "Divergent"
+      ],
+      [
+        10,
+        "Convergent"
+      ],
+      [
+        20,
+        "Transform"
+      ]
+    ],
+    "description": "Open a ridge, bend a slab, and offset a river.",
+    "source": "L3 slides 20, 24, 37"
+  },
+  "T5": {
+    "seconds": 30,
+    "chapters": [
+      [
+        0,
+        "Earth layers"
+      ],
+      [
+        10,
+        "Change thickness"
+      ],
+      [
+        20,
+        "Change density"
+      ]
+    ],
+    "description": "Expose Earth’s layers and change a floating block’s balance.",
+    "source": "L1b slides 12, 14, 16"
+  },
+  "T6": {
+    "seconds": 30,
+    "chapters": [
+      [
+        0,
+        "First volcano"
+      ],
+      [
+        12,
+        "A chain grows"
+      ],
+      [
+        24,
+        "Trace plate motion"
+      ]
+    ],
+    "description": "Grow volcanoes over a plume and carry them away on a plate.",
+    "source": "L3 slide 43; textbook 5.11"
+  },
+  "T7": {
+    "seconds": 30,
+    "chapters": [
+      [
+        0,
+        "Add heat"
+      ],
+      [
+        10,
+        "Reduce pressure"
+      ],
+      [
+        20,
+        "Add water"
+      ]
+    ],
+    "description": "Connect each graph path to melt appearing between solid grains.",
+    "source": "Textbook 5.5, figures 28–30"
+  },
+  "T8": {
+    "seconds": 30,
+    "chapters": [
+      [
+        0,
+        "Crystal nuclei"
+      ],
+      [
+        10,
+        "Growth"
+      ],
+      [
+        20,
+        "Final textures"
+      ]
+    ],
+    "description": "Grow coarse, fine and porphyritic textures from magma.",
+    "source": "Textbook 5.1 and 5.8"
+  },
+  "T9": {
+    "seconds": 28,
+    "chapters": [
+      [
+        0,
+        "Bubble formation"
+      ],
+      [
+        12,
+        "Expansion"
+      ],
+      [
+        24,
+        "Frozen vesicles"
+      ]
+    ],
+    "description": "Expand gas bubbles and preserve their cavities in solid rock.",
+    "source": "Textbook 5.1 and 5.3"
+  },
+  "T10": {
+    "seconds": 26,
+    "chapters": [
+      [
+        0,
+        "Start cooling"
+      ],
+      [
+        10,
+        "Compare crystal growth"
+      ],
+      [
+        20,
+        "Read the rock names"
+      ]
+    ],
+    "description": "Hold composition steady while changing crystal size.",
+    "source": "Class chart; textbook 5.2–5.3"
+  },
+  "T11": {
+    "seconds": 26,
+    "chapters": [
+      [
+        0,
+        "Build a tetrahedron"
+      ],
+      [
+        10,
+        "Share corner oxygen"
+      ]
+    ],
+    "description": "Assemble Si and O, then link tetrahedra through shared corners.",
+    "source": "Textbook 4.7, figures 09–10"
+  },
+  "T12": {
+    "seconds": 30,
+    "chapters": [
+      [
+        0,
+        "High-temperature minerals"
+      ],
+      [
+        12,
+        "Continue cooling"
+      ],
+      [
+        21,
+        "Partial melting"
+      ]
+    ],
+    "description": "Crystallize minerals in sequence, then partly melt the rock.",
+    "source": "Textbook 5.5 and 5.8"
+  },
+  "T13": {
+    "seconds": 30,
+    "chapters": [
+      [
+        0,
+        "Heat transfer"
+      ],
+      [
+        10,
+        "Decompression"
+      ],
+      [
+        20,
+        "Slab water"
+      ]
+    ],
+    "description": "Heat rock, raise a mantle parcel, and release slab water.",
+    "source": "Textbook 5.5; L3 slide 26"
+  },
+  "T14": {
+    "seconds": 30,
+    "chapters": [
+      [
+        0,
+        "Magma rises"
+      ],
+      [
+        10,
+        "Add deposits"
+      ],
+      [
+        20,
+        "Compare the shapes"
+      ]
+    ],
+    "description": "Build shield and composite volcanoes through successive deposits.",
+    "source": "Textbook 6.1, 6.3, 6.7"
+  },
+  "T15": {
+    "seconds": 30,
+    "chapters": [
+      [
+        0,
+        "Conduction"
+      ],
+      [
+        10,
+        "Convection"
+      ],
+      [
+        20,
+        "Radiation"
+      ]
+    ],
+    "description": "Track energy transfer and the movement of material.",
+    "source": "Textbook 5.4, figure 05.04.b4"
+  },
+  "T16": {
+    "seconds": 30,
+    "chapters": [
+      [
+        0,
+        "Ocean–ocean"
+      ],
+      [
+        10,
+        "Ocean–continent"
+      ],
+      [
+        20,
+        "Continent–continent"
+      ]
+    ],
+    "description": "Subduct oceanic plates and thicken colliding continental crust.",
+    "source": "L3 slides 25–30"
+  }
+}

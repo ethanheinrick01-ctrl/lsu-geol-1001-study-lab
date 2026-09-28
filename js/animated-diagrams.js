@@ -2,6 +2,8 @@
 (function (L) {
   'use strict';
 
+  var films = {"T1": {"seconds": 32, "chapters": [[0, "Weather and transport"], [8, "Burial and lithification"], [16, "Metamorphism"], [24, "Melt and crystallize"]], "description": "Grains erode, settle, compact, deform, melt and crystallize.", "source": "L1b slide 29"}, "T2": {"seconds": 30, "chapters": [[0, "Precambrian"], [7.5, "Paleozoic"], [15, "Mesozoic"], [22.5, "Cenozoic"]], "description": "Build the course time blocks from older to younger.", "source": "L2 slide 24"}, "T3": {"seconds": 32, "chapters": [[0, "Build magnetic stripes"], [20, "Watch the plate age"]], "description": "Create paired magnetic bands, then cool and thicken the plate.", "source": "L3 slides 23, 40, 42"}, "T4": {"seconds": 30, "chapters": [[0, "Divergent"], [10, "Convergent"], [20, "Transform"]], "description": "Open a ridge, bend a slab, and offset a river.", "source": "L3 slides 20, 24, 37"}, "T5": {"seconds": 30, "chapters": [[0, "Earth layers"], [10, "Change thickness"], [20, "Change density"]], "description": "Expose Earth’s layers and change a floating block’s balance.", "source": "L1b slides 12, 14, 16"}, "T6": {"seconds": 30, "chapters": [[0, "First volcano"], [12, "A chain grows"], [24, "Trace plate motion"]], "description": "Grow volcanoes over a plume and carry them away on a plate.", "source": "L3 slide 43; textbook 5.11"}, "T7": {"seconds": 30, "chapters": [[0, "Add heat"], [10, "Reduce pressure"], [20, "Add water"]], "description": "Connect each graph path to melt appearing between solid grains.", "source": "Textbook 5.5, figures 28–30"}, "T8": {"seconds": 30, "chapters": [[0, "Crystal nuclei"], [10, "Growth"], [20, "Final textures"]], "description": "Grow coarse, fine and porphyritic textures from magma.", "source": "Textbook 5.1 and 5.8"}, "T9": {"seconds": 28, "chapters": [[0, "Bubble formation"], [12, "Expansion"], [24, "Frozen vesicles"]], "description": "Expand gas bubbles and preserve their cavities in solid rock.", "source": "Textbook 5.1 and 5.3"}, "T10": {"seconds": 26, "chapters": [[0, "Start cooling"], [10, "Compare crystal growth"], [20, "Read the rock names"]], "description": "Hold composition steady while changing crystal size.", "source": "Class chart; textbook 5.2–5.3"}, "T11": {"seconds": 26, "chapters": [[0, "Build a tetrahedron"], [10, "Share corner oxygen"]], "description": "Assemble Si and O, then link tetrahedra through shared corners.", "source": "Textbook 4.7, figures 09–10"}, "T12": {"seconds": 30, "chapters": [[0, "High-temperature minerals"], [12, "Continue cooling"], [21, "Partial melting"]], "description": "Crystallize minerals in sequence, then partly melt the rock.", "source": "Textbook 5.5 and 5.8"}, "T13": {"seconds": 30, "chapters": [[0, "Heat transfer"], [10, "Decompression"], [20, "Slab water"]], "description": "Heat rock, raise a mantle parcel, and release slab water.", "source": "Textbook 5.5; L3 slide 26"}, "T14": {"seconds": 30, "chapters": [[0, "Magma rises"], [10, "Add deposits"], [20, "Compare the shapes"]], "description": "Build shield and composite volcanoes through successive deposits.", "source": "Textbook 6.1, 6.3, 6.7"}, "T15": {"seconds": 30, "chapters": [[0, "Conduction"], [10, "Convection"], [20, "Radiation"]], "description": "Track energy transfer and the movement of material.", "source": "Textbook 5.4, figure 05.04.b4"}, "T16": {"seconds": 30, "chapters": [[0, "Ocean–ocean"], [10, "Ocean–continent"], [20, "Continent–continent"]], "description": "Subduct oceanic plates and thicken colliding continental crust.", "source": "L3 slides 25–30"}};
+
   var figures = {
     cycle: {
       title: 'What can happen to a rock?',
@@ -68,23 +70,25 @@
   function videoCard(id) {
     var t = L.EXAM1.topics.find(function (item) { return item.id === id; });
     if (!t) return '';
-    var isT3 = id === 'T3';
-    var src = isT3 ? 'videos/seafloor-spreading-sample.mp4' : 'videos/exam1/' + id + '.mp4';
-    var poster = isT3 ? 'videos/seafloor-spreading-poster.png' : 'videos/exam1/' + id + '.png';
+    var film = films[id];
+    var src = 'videos/exam1/' + id + '.mp4?v=3.3.0';
+    var poster = 'videos/exam1/' + id + '.png?v=3.3.0';
     var count = L.exam1.topicMetrics(t);
     var sources = t.media.map(function (m) { return m.cap; }).join(' · ');
-    return '<section class="card ad-video" aria-label="' + id + ' animated study diagram">' +
-      '<div class="ad-heading"><div><p class="eyebrow">' + id + ' · Original motion study</p><h2>' + t.title + '</h2></div><span class="badge">' + (isT3 ? '24' : '12') + ' seconds</span></div>' +
-      '<p>Watch the process, then answer questions to build mastery. The video is study material; only checked answers count.</p>' +
-      '<video controls playsinline preload="metadata" poster="' + poster + '" aria-label="' + id + ' motion diagram: ' + t.title + '"><source src="' + src + '" type="video/mp4">Your browser cannot play this video.</video>' +
+    return '<section class="card ad-video" data-process-film="' + id + '" aria-label="' + id + ' animated study diagram">' +
+      '<div class="ad-heading"><div><p class="eyebrow">' + id + ' · Textbook-inspired process film</p><h2>' + t.title + '</h2></div><span class="badge">' + film.seconds + ' seconds</span></div>' +
+      '<p>' + film.description + '</p>' +
+      '<video controls playsinline preload="metadata" poster="' + poster + '" aria-label="' + id + ' motion diagram: ' + t.title + '"><source src="' + src + '" type="video/mp4"><track kind="captions" src="videos/exam1/' + id + '.vtt?v=3.3.0" srclang="en" label="English">Your browser cannot play this video. <a href="' + src + '">Download the MP4</a>.</video>' +
+      '<div class="ad-film-controls"><div class="ad-chapters" aria-label="Jump to a stage">' + film.chapters.map(function (c) { return '<button class="btn small" type="button" data-film-seek="' + c[0] + '">' + c[1] + '</button>'; }).join('') + '</div><label class="small">Speed <select data-film-speed aria-label="Playback speed for ' + id + '"><option value="0.5">0.5×</option><option value="0.75">0.75×</option><option value="1" selected>1×</option><option value="1.25">1.25×</option><option value="1.5">1.5×</option></select></label></div>' +
       '<div class="row"><button class="btn pri" data-topic="' + id + '">Practice ' + id + '</button><span class="badge">' + count.mastered + '/' + count.concepts + ' concepts mastered</span><a class="btn small" href="' + src + '" download>Save MP4</a></div>' +
-      '<p class="small muted ad-source">Original schematic based on the course figures shown below: ' + sources + '. Motion is explanatory and not to scale.</p></section>';
+      '<p class="small muted">Watching is study time. Checked practice answers build the same mastery record used by Guide and Practice.</p>' +
+      '<p class="small muted ad-source">Teaching animation rebuilt from the visual relationships in: ' + sources + '. Textures follow the course art; motion and time are schematic. Compare with the original figures on this Learn page.</p></section>';
   }
-  function forTopic(id) { return videoCard(id) + (id === 'T1' ? card('cycle') : id === 'T3' ? card('stripes') + card('age') : ''); }
+  function forTopic(id) { return videoCard(id); }
   function gallery(nav) {
-    return '<h1>Course figures in motion</h1><p class="lede">Sixteen short motion studies follow the Sep 24 Exam 1 review. Each Learn page keeps the original course figure beside its animation and links straight to practice. All checked answers use the same mastery record as Guide and Practice.</p>' + nav +
-      '<div class="ad-motion-index">' + L.EXAM1.topics.map(function (t) { var m = L.exam1.topicMetrics(t); return '<a class="card" href="#exam1/topic/' + t.id + '"><span class="badge">' + t.id + '</span><h2>' + t.title + '</h2><span class="small muted">Watch motion study · ' + m.mastered + '/' + m.concepts + ' mastered</span></a>'; }).join('') + '</div>' +
-      '<h2>Sample: seafloor spreading</h2>' + videoCard('T3') + card('cycle') + card('stripes') + card('age');
+    return '<h1>Course figures in motion</h1><p class="lede">Follow the process from beginning to end. These sixteen films cover the Sep 24 Exam 1 review, with textbook-inspired cutaways, moving material, stage controls and links to practice.</p>' + nav +
+      '<div class="ad-motion-index">' + L.EXAM1.topics.map(function (t) { var m = L.exam1.topicMetrics(t), f = films[t.id]; return '<a class="card ad-film-tile" href="#exam1/topic/' + t.id + '"><img src="videos/exam1/' + t.id + '.png?v=3.3.0" loading="lazy" width="1280" height="720" alt="Preview of ' + t.title + '"><div class="row"><span class="badge">' + t.id + '</span><span class="small muted">' + f.seconds + ' seconds</span></div><h2>' + t.title + '</h2><p class="small">' + f.description + '</p><span class="small muted">Watch & practice · ' + m.mastered + '/' + m.concepts + ' mastered</span></a>'; }).join('') + '</div>' +
+      '<h2>Watch: boundaries in motion</h2>' + videoCard('T4') + '<h2>Watch: build a volcano</h2>' + videoCard('T14');
   }
   function render(el) {
     var f = figures[el.dataset.geolAnimation], stage = +el.dataset.stage, step = f.steps[stage];
@@ -94,6 +98,17 @@
     el.querySelectorAll('[data-ad-frame]').forEach(function (g) { g.classList.toggle('is-active', +g.dataset.adFrame === stage); });
   }
   function wire(root) {
+    root.querySelectorAll('[data-process-film]').forEach(function (el) {
+      var video = el.querySelector('video');
+      el.querySelectorAll('[data-film-seek]').forEach(function (button) {
+        button.onclick = function () {
+          var seek = function () { video.currentTime = +button.dataset.filmSeek; video.play().catch(function () {}); };
+          if (video.readyState >= 1) seek();
+          else { video.addEventListener('loadedmetadata', seek, { once: true }); video.load(); }
+        };
+      });
+      el.querySelector('[data-film-speed]').onchange = function (event) { video.playbackRate = +event.target.value; };
+    });
     root.querySelectorAll('[data-geol-animation]').forEach(function (el) {
       var f = figures[el.dataset.geolAnimation], timer = null, play = el.querySelector('[data-ad-action="play"]');
       render(el);
