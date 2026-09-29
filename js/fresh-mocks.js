@@ -2,7 +2,7 @@
    Sections 2/3 retain the source-grounded observation model and course figures. */
 (function(L){
 'use strict';
-var U=L.util, VERSION=2, cached;
+var U=L.util, VERSION=3, cached;
 var MC_COUNTS={T1:2,T2:1,T3:2,T4:2,T5:2,T6:1,T7:1,T8:2,T9:1,T10:2,T11:2,T12:2,T13:2,T14:1,T15:1,T16:1};
 // 25 total: retain the review's broad coverage; quotas are practice design, not official weighting.
 var PROFILES={A:['cycle','boundaries','ocean','floating','classification','pt','volcanoes'],B:['cycle','boundaries','ocean','structures','classification','melting','volcanoes'],C:['cycle','boundaries','floating','structures','classification','bowen','heat']};
@@ -20,11 +20,28 @@ var QUIZ_SCOPE={
  'chapter-two-boss-drill':{20:['T2','c2-time']},
  'chapter-three-boss-drill':{2:['T3','c3-drift-evidence'],3:['T3','c3-drift-problem'],24:['T3','c3-magnetic'],25:['T3','c3-magnetic'],26:['T3','c3-seafloorage'],27:['T3','c3-seafloorage'],6:['T4','c3-boundtypes'],7:['T4','c3-transform'],9:['T4','c3-mor'],18:['T4','c3-transform'],19:['T4','c3-transform'],22:['T4','c3-geometry'],23:['T4','c3-geometry'],28:['T6','c3-hotspot'],29:['T6','c3-hotspot'],12:['T16','c3-subduction'],13:['T16','c3-subduction'],14:['T16','c3-subduction'],16:['T16','c3-collision']}
 };
+// Keep the quiz's tested distinction, but replace distractors that give the
+// answer away through obviously unrelated or impossible claims.
+var QUIZ_DISTRACTORS={
+ 'chapter-one-boss-drill:16':{3:'The wider block, regardless of thickness'},
+ 'chapter-one-boss-drill:17':{3:'The wider block, regardless of density'},
+ 'chapter-one-boss-drill:28':{1:'Oceanic crust is generally more silica-rich than continental crust',2:'Continental crust is the denser type and is always thinner',3:'Both types have the same average composition and density'},
+ 'chapter-three-boss-drill:2':{3:'The matching fossils evolved independently after the ocean opened'},
+ 'chapter-three-boss-drill:9':{1:'Old oceanic lithosphere sinks and water helps melt mantle above it',2:'Continental crust thickens during collision before erosion exposes it',3:'Plates slide laterally past one another without making new crust'},
+ 'chapter-three-boss-drill:12':{1:'Friction melts the entire descending slab directly',2:'The mantle above the slab melts because its pressure increases',3:'Sediment burial alone heats the mantle above its solidus'},
+ 'chapter-three-boss-drill:14':{1:'The descending plate is continental beneath Japan',2:'The Andes formed where two oceanic plates collide',3:'Both settings have the same overriding crust'},
+ 'chapter-three-boss-drill:24':{1:'Magnetic reversals physically push each stripe away',2:'The basalt stripe expands laterally after it cools',3:'The stripe migrates through stationary crust'},
+ 'chapter-three-boss-drill:26':{2:'Near a trench where old seafloor descends',3:'At a passive margin under thick sediment'},
+ 'chapter-three-boss-drill:27':{2:'Cooling crust itself becomes a new layer of sediment',3:'Denser old seafloor forces sediment upward from the mantle'},
+ 'chapter-three-boss-drill:28':{1:'The plate carries it across a transform fault',2:'The hot spot cools permanently after one eruption',3:'Sediment immediately seals the vent while it is still over the hot spot'},
+ 'chapter-three-boss-drill:29':{1:'Erosion lowers an island while its seafloor remains at one height',2:'The hot spot descends and pulls the island down immediately',3:'A magnetic reversal causes the island to sink'}
+};
 function authoredMC(){var out=[],prints=new Set();
  function add(it,key){var copy=U.clone(it),fp=fingerprint(copy);if(prints.has(fp))return;prints.add(fp);copy.id='fresh1-'+hash(key);copy.freshKey=key;copy.family=key.split(':')[0];copy.pool='exam1';copy.mock=false;copy.evidence=copy.evidence||'docs/EXAM1_UPDATE.md#evidence-and-figure-matching';out.push(copy);}
  Object.keys(L.EXAM1.forms).forEach(function(form){L.EXAM1.forms[form].mc.forEach(function(id){var it=L.engine.resolve({id:id});add(it,'curated:'+id);});});
  (window.GEOL_QUIZZES||[]).forEach(function(bank){var chosen=QUIZ_SCOPE[bank.id];if(!chosen)return;Object.keys(chosen).forEach(function(index){var q=bank.questions[+index],binding=chosen[index],tid=binding[0];if(!q||q.type!=='single'||q.choices.length!==4)throw Error('Missing quiz-bank MC '+bank.id+':'+index);
-  add({t:'mc',q:q.prompt,o:q.choices.map(function(choice,i){return {t:choice,ok:i===q.answer,w:i===q.answer?q.explanation:'Compare the other choices with the evidence. '+q.explanation};}),x:q.explanation,c:binding[1],topics:[tid],s:topic(tid).sources.slice(),quizSource:q.source,tier:2,difficulty:'introductory'},'quiz:'+bank.id+':'+index);
+  var edits=QUIZ_DISTRACTORS[bank.id+':'+index]||{},choices=q.choices.map(function(choice,i){return edits[i]||choice;});
+  add({t:'mc',q:q.prompt,o:choices.map(function(choice,i){return {t:choice,ok:i===q.answer,w:i===q.answer?q.explanation:'Compare the other choices with the evidence. '+q.explanation};}),x:q.explanation,c:binding[1],topics:[tid],s:topic(tid).sources.slice(),quizSource:q.source,tier:2,difficulty:'introductory'},'quiz:'+bank.id+':'+index);
  });});return out;}
 function catalog(){if(cached)return cached;var out={mc:[],fill:[],teach:[],cases:[]};
  out.mc=authoredMC();
@@ -92,10 +109,13 @@ function create(form,state,seed){if(!PROFILES[form])throw Error('Unknown fresh m
 // items in saved v1 runs; keep every Section 2/3 snapshot and all old snapshots.
 function upgradeRuns(state){var changed=0,used=seen(state),pool=catalog().mc,runs=(state.examRuns||[]).slice();runs.sort(function(a,b){return Number(b.id===state.examActive)-Number(a.id===state.examActive);});
  runs.forEach(function(r){if(!r.freshVersion||r.mcVersion===VERSION||r.finished||r.archived)return;var count=0,rng=U.rng(r.seed||1);r.groups.filter(function(g){return g.section==='mc';}).forEach(function(g){var old=g.ids[0],a=r.answers&&r.answers[old];if(a&&(a.first||a.draft!==undefined))return;var prior=r.freshItems&&r.freshItems[old],tid=prior&&prior.topics&&prior.topics[0];if(!tid)return;
+  // A v2 authored item keeps its identity and saved choice order. Only its
+  // unattempted snapshot receives the improved distractor wording.
+  var revision=pool.find(function(it){return it.freshKey===prior.freshKey;});if(revision){if(JSON.stringify(prior.o)!==JSON.stringify(revision.o)){r.freshItems[old]=U.clone(revision);count++;}return;}
   var choices=U.shuffle(pool.filter(function(it){return it.topics[0]===tid&&!used.keys.has(novelty(it.freshKey));}),rng);if(!choices.length)return;var it=U.clone(choices[0]);r.freshItems[it.id]=it;r.freshKeys.push(it.freshKey);r.orders[it.id]=L.itemUI.makeOrder(it);g.ids[0]=it.id;used.keys.add(novelty(it.freshKey));count++;});
   r.mcVersion=r.groups.some(function(g){if(g.section!=='mc')return false;var a=r.answers&&r.answers[g.ids[0]],it=r.freshItems&&r.freshItems[g.ids[0]];return (!a||(!a.first&&a.draft===undefined))&&it&&/:(identify|compare):/.test(it.freshKey||'');})?1:VERSION;
   r.mcUpgradeCount=(r.mcUpgradeCount||0)+count;if(count){r.updated=Date.now();changed+=count;}
  });return changed;}
 L.freshMocks={create:create,catalog:catalog,fingerprint:fingerprint,seen:seen,MC_COUNTS:MC_COUNTS,PROFILES:PROFILES,novelty:novelty,upgradeRuns:upgradeRuns,version:VERSION};
-L.CONFIG.version='3.4.0 · authored MC mocks (2026-09-28)';
+L.CONFIG.version='3.4.1 · authored MC mocks (2026-09-28)';
 })(window.L);
