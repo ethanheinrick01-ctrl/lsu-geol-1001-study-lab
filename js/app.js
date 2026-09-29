@@ -383,7 +383,9 @@
       document.getElementById('reloadLab').onclick=function(){root.location.reload();};return;
     }
     E.build();
-    S.load(); S.save();
+    var saved=S.load();
+    if(L.freshMocks)L.freshMocks.upgradeRuns(saved);
+    S.save();
     document.getElementById('zoomclose').onclick = function () { var d = $('#zoomdlg'); if (d.close) d.close(); else d.removeAttribute('open'); };
     $('#zoomdlg').addEventListener('click', function (e) { if (e.target.id === 'zoomdlg') { if (this.close) this.close(); } });
     window.addEventListener('hashchange', route);

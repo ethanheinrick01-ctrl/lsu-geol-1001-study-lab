@@ -1,8 +1,8 @@
-/* Browser-only fresh mocks. A seed selects unused, validated observation combinations.
-   Complete question snapshots travel with the saved run; original source figures are reused. */
+/* Browser-only fresh mocks. Section 1 draws authored quiz-style MC items;
+   Sections 2/3 retain the source-grounded observation model and course figures. */
 (function(L){
 'use strict';
-var U=L.util, VERSION=1, cached;
+var U=L.util, VERSION=2, cached;
 var MC_COUNTS={T1:2,T2:1,T3:2,T4:2,T5:2,T6:1,T7:1,T8:2,T9:1,T10:2,T11:2,T12:2,T13:2,T14:1,T15:1,T16:1};
 // 25 total: retain the review's broad coverage; quotas are practice design, not official weighting.
 var PROFILES={A:['cycle','boundaries','ocean','floating','classification','pt','volcanoes'],B:['cycle','boundaries','ocean','structures','classification','melting','volcanoes'],C:['cycle','boundaries','floating','structures','classification','bowen','heat']};
@@ -11,23 +11,32 @@ function hash(s){var a=2166136261,b=5381;for(var i=0;i<s.length;i++){a=Math.imul
 function text(s){return String(s||'').replace(/<[^>]*>/g,' ').replace(/&[^;]+;/g,' ').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();}
 function fingerprint(it,stem){return hash(text((stem||'')+' '+it.q)+'|'+(it.o?it.o.map(function(o){return text(o.t);}).sort().join('|'):'')+'|'+(it.pairs?it.pairs.map(function(p){return text(p[0]);}).sort().join('|'):''));}
 function make(f,key,t,q,body){var item=Object.assign({id:'fresh1-'+hash(key),freshKey:key,family:f.id,variant:key.split(':')[1],c:f.c,t:t,q:q,pool:'exam1',mock:false,topics:[f.topic],s:U.uniq(topic(f.topic).sources.concat(f.sources||[])),tier:2,difficulty:'introductory',evidence:'docs/EXAM1_UPDATE.md#evidence-and-figure-matching'},body||{});if(f.inlineFigure)item.media=topic(f.figure[0]).media[f.figure[1]];return item;}
-function mc(f,key,q,correct,wrong,why){var choices=[correct].concat(wrong);if(choices.length!==4||new Set(choices).size!==4)throw Error('Invalid choices: '+key);return make(f,key,'mc',q,{o:choices.map(function(s,i){return {t:s,ok:i===0,w:i===0?why:'Compare every observation with the interpretation; '+why};}),x:why});}
 function pairStem(a,b){return '<p><b>Observation 1:</b> '+U.esc(a.observation)+'</p><p><b>Observation 2:</b> '+U.esc(b.observation)+'</p>';}
+// The quiz-bank items set the Section 1 standard: one concrete decision, four
+// plausible alternatives, and an explanation. These are the review-scope quiz
+// items; the curated Exam 1 bank supplies the remaining topics and variants.
+var QUIZ_SCOPE={
+ 'chapter-one-boss-drill':{21:['T1','c1-igintro'],22:['T1','c1-cycle'],24:['T1','c1-cycle'],12:['T5','c1-layers'],13:['T5','c1-layers'],14:['T5','c1-lithos'],16:['T5','c1-isostasy'],17:['T5','c1-isostasy'],27:['T5','c1-isostasy'],28:['T5','c1-layers']},
+ 'chapter-two-boss-drill':{20:['T2','c2-time']},
+ 'chapter-three-boss-drill':{2:['T3','c3-drift-evidence'],3:['T3','c3-drift-problem'],24:['T3','c3-magnetic'],25:['T3','c3-magnetic'],26:['T3','c3-seafloorage'],27:['T3','c3-seafloorage'],6:['T4','c3-boundtypes'],7:['T4','c3-transform'],9:['T4','c3-mor'],18:['T4','c3-transform'],19:['T4','c3-transform'],22:['T4','c3-geometry'],23:['T4','c3-geometry'],28:['T6','c3-hotspot'],29:['T6','c3-hotspot'],12:['T16','c3-subduction'],13:['T16','c3-subduction'],14:['T16','c3-subduction'],16:['T16','c3-collision']}
+};
+function authoredMC(){var out=[],prints=new Set();
+ function add(it,key){var copy=U.clone(it),fp=fingerprint(copy);if(prints.has(fp))return;prints.add(fp);copy.id='fresh1-'+hash(key);copy.freshKey=key;copy.family=key.split(':')[0];copy.pool='exam1';copy.mock=false;copy.evidence=copy.evidence||'docs/EXAM1_UPDATE.md#evidence-and-figure-matching';out.push(copy);}
+ Object.keys(L.EXAM1.forms).forEach(function(form){L.EXAM1.forms[form].mc.forEach(function(id){var it=L.engine.resolve({id:id});add(it,'curated:'+id);});});
+ (window.GEOL_QUIZZES||[]).forEach(function(bank){var chosen=QUIZ_SCOPE[bank.id];if(!chosen)return;Object.keys(chosen).forEach(function(index){var q=bank.questions[+index],binding=chosen[index],tid=binding[0];if(!q||q.type!=='single'||q.choices.length!==4)throw Error('Missing quiz-bank MC '+bank.id+':'+index);
+  add({t:'mc',q:q.prompt,o:q.choices.map(function(choice,i){return {t:choice,ok:i===q.answer,w:i===q.answer?q.explanation:'Compare the other choices with the evidence. '+q.explanation};}),x:q.explanation,c:binding[1],topics:[tid],s:topic(tid).sources.slice(),quizSource:q.source,tier:2,difficulty:'introductory'},'quiz:'+bank.id+':'+index);
+ });});return out;}
 function catalog(){if(cached)return cached;var out={mc:[],fill:[],teach:[],cases:[]};
+ out.mc=authoredMC();
  L.FRESH_FACTS.forEach(function(f){
   var labels=U.uniq(f.rows.map(function(r){return r.label;}).concat(f.distractors||[]));
   f.rows.forEach(function(a,i){
-   var stem='<p>'+U.esc(a.observation)+'</p>Which '+U.esc(f.target)+' best fits this observation?';
-   var distractors=labels.filter(function(x){return x!==a.label;}).slice(0,3);
-   if(f.direct!==false)out.mc.push(mc(f,f.id+':identify:'+i,stem,a.label,distractors,a.why));
    if(f.term!==false)out.fill.push(make(f,f.id+':recall:'+i,'fill','<p>'+U.esc(a.observation)+'</p>Name the '+U.esc(f.target)+'.',{acc:accepted(a.label),x:a.why}));
    for(var j=i+1;j<f.rows.length;j++){
     var originalB=f.rows[j];if(a.label===originalB.label)continue;
     var reverse=(i+j+f.id.length)%2===1,first=reverse?originalB:a,second=reverse?a:originalB;
-    var rowOrder=reverse?[j,i]:[i,j],mcAt=out.mc.length,teachAt=out.teach.length;
+    var rowOrder=reverse?[j,i]:[i,j],teachAt=out.teach.length;
     var context='<p>For each observation, determine the '+U.esc(f.target)+'.</p>'+pairStem(first,second),key=f.id+':compare:'+i+'-'+j;
-    var answer='1: '+first.label+'; 2: '+second.label;
-    out.mc.push(mc(f,key,context+'Which pairing correctly interprets <b>both</b> observations?',answer,['1: '+second.label+'; 2: '+first.label,'1: '+first.label+'; 2: '+first.label,'1: '+second.label+'; 2: '+second.label],first.why+' '+second.why));
     var rubric=['Observation 1: identifies '+first.label+' and connects it to the stated evidence.','Observation 2: identifies '+second.label+' and connects it to the stated evidence.'];
     out.teach.push(make(f,f.id+':explain:'+i+'-'+j,'teach',context+'Give the interpretation of each observation and one reason for each. Two or three sentences are enough.',{model:'1: '+first.label+'. '+first.why+' 2: '+second.label+'. '+second.why,rubric:rubric}));
     // Each investigation asks for identification, discrimination, and an explanation.
@@ -44,7 +53,7 @@ function catalog(){if(cached)return cached;var out={mc:[],fill:[],teach:[],cases
      if(!figure&&f.id==='volcanoes')figure=topic('T14').media;
      out.cases.push({key:ck,family:f.id,topic:f.topic,sourceCase:caseTitle(f.id),stem:'<p>Use the original course figure as a reference. Apply the concepts to these new observations; their labels refer to the text below.</p>'+context,media:figure,items:parts});
     }
-    out.mc[mcAt].observationRows=rowOrder.slice();out.teach[teachAt].observationRows=rowOrder.slice();
+    out.teach[teachAt].observationRows=rowOrder.slice();
    }
   });
  });
@@ -62,7 +71,7 @@ function seen(state){var keys=new Set(),prints=new Set();
  });return {keys:keys,prints:prints};
 }
 function create(form,state,seed){if(!PROFILES[form])throw Error('Unknown fresh mock form.');state=state||L.store.load();seed=seed===undefined?U.newSeed():seed;var rng=U.rng(seed),pool=catalog(),used=seen(state),items={},groups=[],selectedKeys=[],families={};
- function eligible(it,context){return !used.keys.has(novelty(it.freshKey))&&!used.prints.has(fingerprint(it,context));}
+ function eligible(it,context){return !used.keys.has(novelty(it.freshKey))&&(it.t==='mc'||!used.prints.has(fingerprint(it,context)));}
  function reserve(it,context){var copy=U.clone(it);if(context)copy.context=context;var fp=fingerprint(copy,context);used.keys.add(novelty(copy.freshKey));used.prints.add(fp);selectedKeys.push(copy.freshKey);items[copy.id]=copy;return copy.id;}
  function pick(list,label){var options=U.shuffle(list.filter(function(it){return eligible(it);}),rng);if(!options.length)throw Error('No unused variants remain for '+label+'. Your saved mocks are available in My history.');
   // Prefer a different source model within a topic, then genuinely new combinations.
@@ -79,6 +88,14 @@ function create(form,state,seed){if(!PROFILES[form])throw Error('Unknown fresh m
  if(groups.length!==40||Object.keys(items).length!==54)throw Error('Incomplete fresh mock; no exam was saved.');
  return {groups:groups,items:items,keys:selectedKeys,seed:seed,version:VERSION};
 }
-L.freshMocks={create:create,catalog:catalog,fingerprint:fingerprint,seen:seen,MC_COUNTS:MC_COUNTS,PROFILES:PROFILES,novelty:novelty,version:VERSION};
-L.CONFIG.version='3.2.0 · fresh mocks (2026-09-27)';
+// Existing first responses stay immutable. Replace only unattempted Section 1
+// items in saved v1 runs; keep every Section 2/3 snapshot and all old snapshots.
+function upgradeRuns(state){var changed=0,used=seen(state),pool=catalog().mc,runs=(state.examRuns||[]).slice();runs.sort(function(a,b){return Number(b.id===state.examActive)-Number(a.id===state.examActive);});
+ runs.forEach(function(r){if(!r.freshVersion||r.mcVersion===VERSION||r.finished||r.archived)return;var count=0,rng=U.rng(r.seed||1);r.groups.filter(function(g){return g.section==='mc';}).forEach(function(g){var old=g.ids[0],a=r.answers&&r.answers[old];if(a&&(a.first||a.draft!==undefined))return;var prior=r.freshItems&&r.freshItems[old],tid=prior&&prior.topics&&prior.topics[0];if(!tid)return;
+  var choices=U.shuffle(pool.filter(function(it){return it.topics[0]===tid&&!used.keys.has(novelty(it.freshKey));}),rng);if(!choices.length)return;var it=U.clone(choices[0]);r.freshItems[it.id]=it;r.freshKeys.push(it.freshKey);r.orders[it.id]=L.itemUI.makeOrder(it);g.ids[0]=it.id;used.keys.add(novelty(it.freshKey));count++;});
+  r.mcVersion=r.groups.some(function(g){if(g.section!=='mc')return false;var a=r.answers&&r.answers[g.ids[0]],it=r.freshItems&&r.freshItems[g.ids[0]];return (!a||(!a.first&&a.draft===undefined))&&it&&/:(identify|compare):/.test(it.freshKey||'');})?1:VERSION;
+  r.mcUpgradeCount=(r.mcUpgradeCount||0)+count;if(count){r.updated=Date.now();changed+=count;}
+ });return changed;}
+L.freshMocks={create:create,catalog:catalog,fingerprint:fingerprint,seen:seen,MC_COUNTS:MC_COUNTS,PROFILES:PROFILES,novelty:novelty,upgradeRuns:upgradeRuns,version:VERSION};
+L.CONFIG.version='3.4.0 · authored MC mocks (2026-09-28)';
 })(window.L);
