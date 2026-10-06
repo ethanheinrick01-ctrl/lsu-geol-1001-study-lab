@@ -1,0 +1,517 @@
+[
+  {
+    "word": "Begin",
+    "start": 0.0,
+    "end": 0.22
+  },
+  {
+    "word": "with",
+    "start": 0.22,
+    "end": 0.42
+  },
+  {
+    "word": "grain",
+    "start": 0.42,
+    "end": 0.6
+  },
+  {
+    "word": "size.",
+    "start": 0.6,
+    "end": 1.0
+  },
+  {
+    "word": "Gravel-sized",
+    "start": 1.6,
+    "end": 2.18
+  },
+  {
+    "word": "fragments",
+    "start": 2.18,
+    "end": 2.62
+  },
+  {
+    "word": "can",
+    "start": 2.62,
+    "end": 3.0
+  },
+  {
+    "word": "form",
+    "start": 3.0,
+    "end": 3.26
+  },
+  {
+    "word": "breccia",
+    "start": 3.26,
+    "end": 3.8
+  },
+  {
+    "word": "or",
+    "start": 3.8,
+    "end": 4.0
+  },
+  {
+    "word": "conglomerate.",
+    "start": 4.0,
+    "end": 4.28
+  },
+  {
+    "word": "Angular",
+    "start": 5.06,
+    "end": 5.26
+  },
+  {
+    "word": "pieces",
+    "start": 5.26,
+    "end": 5.58
+  },
+  {
+    "word": "identify",
+    "start": 5.58,
+    "end": 6.04
+  },
+  {
+    "word": "breccia.",
+    "start": 6.04,
+    "end": 6.78
+  },
+  {
+    "word": "As",
+    "start": 7.88,
+    "end": 7.94
+  },
+  {
+    "word": "transport",
+    "start": 7.94,
+    "end": 8.24
+  },
+  {
+    "word": "abrades",
+    "start": 8.24,
+    "end": 8.94
+  },
+  {
+    "word": "corners,",
+    "start": 8.94,
+    "end": 9.2
+  },
+  {
+    "word": "rounded",
+    "start": 9.86,
+    "end": 9.86
+  },
+  {
+    "word": "pieces",
+    "start": 9.86,
+    "end": 10.14
+  },
+  {
+    "word": "can",
+    "start": 10.14,
+    "end": 10.48
+  },
+  {
+    "word": "form",
+    "start": 10.48,
+    "end": 10.74
+  },
+  {
+    "word": "conglomerate.",
+    "start": 10.74,
+    "end": 11.1
+  },
+  {
+    "word": "Rounding",
+    "start": 12.06,
+    "end": 12.4
+  },
+  {
+    "word": "does",
+    "start": 12.4,
+    "end": 12.68
+  },
+  {
+    "word": "not",
+    "start": 12.68,
+    "end": 12.86
+  },
+  {
+    "word": "establish",
+    "start": 12.86,
+    "end": 13.38
+  },
+  {
+    "word": "one",
+    "start": 13.38,
+    "end": 13.62
+  },
+  {
+    "word": "unique",
+    "start": 13.62,
+    "end": 13.88
+  },
+  {
+    "word": "environment.",
+    "start": 13.88,
+    "end": 14.3
+  },
+  {
+    "word": "Sand",
+    "start": 15.0,
+    "end": 15.0
+  },
+  {
+    "word": "accumulates",
+    "start": 15.0,
+    "end": 15.6
+  },
+  {
+    "word": "and",
+    "start": 15.6,
+    "end": 15.84
+  },
+  {
+    "word": "becomes",
+    "start": 15.84,
+    "end": 16.04
+  },
+  {
+    "word": "sandstone",
+    "start": 16.04,
+    "end": 16.76
+  },
+  {
+    "word": "as",
+    "start": 16.76,
+    "end": 17.04
+  },
+  {
+    "word": "grains",
+    "start": 17.04,
+    "end": 17.26
+  },
+  {
+    "word": "are",
+    "start": 17.26,
+    "end": 17.54
+  },
+  {
+    "word": "compacted",
+    "start": 17.54,
+    "end": 18.1
+  },
+  {
+    "word": "and",
+    "start": 18.1,
+    "end": 18.2
+  },
+  {
+    "word": "cemented.",
+    "start": 18.2,
+    "end": 18.68
+  },
+  {
+    "word": "Mineral",
+    "start": 19.26,
+    "end": 19.28
+  },
+  {
+    "word": "composition",
+    "start": 19.28,
+    "end": 19.68
+  },
+  {
+    "word": "refines",
+    "start": 19.68,
+    "end": 20.38
+  },
+  {
+    "word": "the",
+    "start": 20.38,
+    "end": 20.6
+  },
+  {
+    "word": "name:",
+    "start": 20.6,
+    "end": 20.84
+  },
+  {
+    "word": "feldspar-rich",
+    "start": 21.64,
+    "end": 22.1
+  },
+  {
+    "word": "sandstone",
+    "start": 22.1,
+    "end": 22.72
+  },
+  {
+    "word": "is",
+    "start": 22.72,
+    "end": 23.12
+  },
+  {
+    "word": "arkose.",
+    "start": 23.12,
+    "end": 23.86
+  },
+  {
+    "word": "Well-sorted",
+    "start": 23.86,
+    "end": 24.6
+  },
+  {
+    "word": "quartz",
+    "start": 24.6,
+    "end": 24.84
+  },
+  {
+    "word": "sand",
+    "start": 24.84,
+    "end": 25.22
+  },
+  {
+    "word": "differs",
+    "start": 25.22,
+    "end": 25.52
+  },
+  {
+    "word": "from",
+    "start": 25.52,
+    "end": 25.84
+  },
+  {
+    "word": "sand",
+    "start": 25.84,
+    "end": 26.04
+  },
+  {
+    "word": "with",
+    "start": 26.04,
+    "end": 26.22
+  },
+  {
+    "word": "abundant",
+    "start": 26.22,
+    "end": 26.48
+  },
+  {
+    "word": "matrix",
+    "start": 26.48,
+    "end": 26.86
+  },
+  {
+    "word": "or",
+    "start": 26.86,
+    "end": 27.28
+  },
+  {
+    "word": "less",
+    "start": 27.28,
+    "end": 27.52
+  },
+  {
+    "word": "resistant",
+    "start": 27.52,
+    "end": 27.92
+  },
+  {
+    "word": "minerals.",
+    "start": 27.92,
+    "end": 28.36
+  },
+  {
+    "word": "Mud",
+    "start": 29.18,
+    "end": 29.74
+  },
+  {
+    "word": "settles",
+    "start": 29.74,
+    "end": 29.98
+  },
+  {
+    "word": "in",
+    "start": 29.98,
+    "end": 30.3
+  },
+  {
+    "word": "quieter",
+    "start": 30.3,
+    "end": 30.68
+  },
+  {
+    "word": "conditions",
+    "start": 30.68,
+    "end": 31.28
+  },
+  {
+    "word": "and",
+    "start": 31.28,
+    "end": 31.56
+  },
+  {
+    "word": "can",
+    "start": 31.56,
+    "end": 31.7
+  },
+  {
+    "word": "become",
+    "start": 31.7,
+    "end": 31.94
+  },
+  {
+    "word": "mudstone.",
+    "start": 31.94,
+    "end": 32.58
+  },
+  {
+    "word": "Shale",
+    "start": 33.06,
+    "end": 33.38
+  },
+  {
+    "word": "is",
+    "start": 33.38,
+    "end": 33.56
+  },
+  {
+    "word": "a",
+    "start": 33.56,
+    "end": 33.62
+  },
+  {
+    "word": "mudrock",
+    "start": 33.62,
+    "end": 34.04
+  },
+  {
+    "word": "that",
+    "start": 34.04,
+    "end": 34.26
+  },
+  {
+    "word": "splits",
+    "start": 34.26,
+    "end": 34.5
+  },
+  {
+    "word": "along",
+    "start": 34.5,
+    "end": 34.94
+  },
+  {
+    "word": "thin",
+    "start": 34.94,
+    "end": 35.2
+  },
+  {
+    "word": "layers.",
+    "start": 35.2,
+    "end": 35.56
+  },
+  {
+    "word": "To",
+    "start": 36.12,
+    "end": 36.16
+  },
+  {
+    "word": "infer",
+    "start": 36.16,
+    "end": 36.36
+  },
+  {
+    "word": "the",
+    "start": 36.36,
+    "end": 36.58
+  },
+  {
+    "word": "setting,",
+    "start": 36.58,
+    "end": 36.9
+  },
+  {
+    "word": "add",
+    "start": 37.3,
+    "end": 37.46
+  },
+  {
+    "word": "fossils,",
+    "start": 37.46,
+    "end": 37.82
+  },
+  {
+    "word": "bedding,",
+    "start": 38.2,
+    "end": 38.54
+  },
+  {
+    "word": "and",
+    "start": 38.76,
+    "end": 38.82
+  },
+  {
+    "word": "regional",
+    "start": 38.82,
+    "end": 39.1
+  },
+  {
+    "word": "relations.",
+    "start": 39.1,
+    "end": 39.64
+  },
+  {
+    "word": "Grain",
+    "start": 40.64,
+    "end": 40.66
+  },
+  {
+    "word": "size",
+    "start": 40.66,
+    "end": 40.98
+  },
+  {
+    "word": "is",
+    "start": 40.98,
+    "end": 41.22
+  },
+  {
+    "word": "a",
+    "start": 41.22,
+    "end": 41.3
+  },
+  {
+    "word": "starting",
+    "start": 41.3,
+    "end": 41.54
+  },
+  {
+    "word": "observation,",
+    "start": 41.54,
+    "end": 42.1
+  },
+  {
+    "word": "not",
+    "start": 42.6,
+    "end": 42.76
+  },
+  {
+    "word": "a",
+    "start": 42.76,
+    "end": 42.94
+  },
+  {
+    "word": "complete",
+    "start": 42.94,
+    "end": 43.22
+  },
+  {
+    "word": "environmental",
+    "start": 43.22,
+    "end": 43.62
+  },
+  {
+    "word": "history.",
+    "start": 43.62,
+    "end": 44.32
+  }
+]

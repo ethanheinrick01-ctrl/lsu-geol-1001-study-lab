@@ -6,7 +6,7 @@
   var mem = null, storageOK = true, lastError = '';
   function blank() {
     return { app: L.CONFIG.id, schema: SCHEMA, created: Date.now(), updated: Date.now(), attempts: [], mocks: [], mockActive: null,
-      examRuns: [], examActive: null, masteryCredits: {}, sessionHistory: [], mockArchived: [], session: null, boss: {}, guideRead: {}, teach: {}, legacy: null, settings: { mockMinutes: 80 } };
+      examRuns: [], examActive: null, masteryCredits: {}, sessionHistory: [], mockArchived: [], session: null, sessionsByExam: {}, boss: {}, guideRead: {}, teach: {}, legacy: null, settings: { mockMinutes: 80, activeExam: 'exam1' } };
   }
   function get(k) { try { return root.localStorage ? root.localStorage.getItem(k) : null; } catch (e) { storageOK = false; lastError = String(e); return null; } }
   function set(k, v) { try { if (!root.localStorage) throw Error('localStorage unavailable'); root.localStorage.setItem(k, v); storageOK = true; return true; } catch (e) { storageOK = false; lastError = String(e); return false; } }
@@ -18,7 +18,8 @@
     if (!Array.isArray(x.examRuns)) x.examRuns = [];
     if (!Array.isArray(x.sessionHistory)) x.sessionHistory = [];
     if (!Array.isArray(x.mockArchived)) x.mockArchived = [];
-    ['boss', 'guideRead', 'teach', 'settings', 'masteryCredits'].forEach(function (k) { if (!x[k] || typeof x[k] !== 'object') x[k] = b[k]; });
+    ['boss', 'guideRead', 'teach', 'settings', 'masteryCredits', 'sessionsByExam'].forEach(function (k) { if (!x[k] || typeof x[k] !== 'object') x[k] = b[k]; });
+    if(x.session)x.sessionsByExam[x.session.examId||'exam1']=x.session;
     x.schema = SCHEMA; x.app = L.CONFIG.id; return x;
   }
   function load() {
@@ -30,6 +31,7 @@
   function save() {
     if (!mem) return false;
     if (L.engine && L.engine.captureMastery) L.engine.captureMastery(mem);
+    if(mem.session)mem.sessionsByExam[mem.session.examId||'exam1']=mem.session;
     mem.updated = Date.now();
     // Keep the complete history; storage failures are surfaced instead of silently truncating progress.
     return set(KEY, JSON.stringify(mem));
@@ -37,6 +39,13 @@
   function reset() { mem = blank(); return save(); }
   function exportObj() { return { app: L.CONFIG.id, format: 'geol1001-lab-v3-export', schema: SCHEMA, exported: new Date().toISOString(), state: load() }; }
   function exportJSON() { return JSON.stringify(exportObj(), null, 2); }
+  function mergeSession(cur,incoming,state){
+    if(!cur)return incoming;
+    var a=cur.results||[],b=incoming.results||[],conflict=a.some(function(x,i){return b[i]&&JSON.stringify(x)!==JSON.stringify(b[i]);});
+    if(conflict){var copy=L.util.clone(incoming);copy.id=incoming.id+'-imported-'+(incoming.updated||incoming.started);copy.importConflict=true;if(!state.sessionHistory.some(function(x){return x.id===copy.id;}))state.sessionHistory.push(copy);return cur;}
+    if((incoming.updated||incoming.started)>(cur.updated||cur.started)&&b.length>=a.length)return incoming;
+    return cur;
+  }
   function mergeInto(into, from) {
     var seen = {}, added = 0;
     into.attempts.forEach(function (a) { seen[a.i + '|' + a.t + '|' + a.c] = 1; });
@@ -77,11 +86,19 @@
     if (!into.mockActive && from.mockActive && !into.mocks.some(function(m){return m.id===from.mockActive.id;}) && !into.mockArchived.some(function(m){return m.id===from.mockActive.id;})) into.mockActive=from.mockActive;
     Object.keys(from.masteryCredits || {}).forEach(function(c){if(!into.masteryCredits[c] || from.masteryCredits[c]==='earned')into.masteryCredits[c]=from.masteryCredits[c];});
     (from.sessionHistory || []).concat(from.session?[from.session]:[]).forEach(function(r){
-      if(into.session && into.session.id===r.id){if((r.updated||r.started)>(into.session.updated||into.session.started) && (r.results||[]).length>=(into.session.results||[]).length)into.session=r;return;}
+      if(into.session && into.session.id===r.id){into.session=mergeSession(into.session,r,into);return;}
       var at=into.sessionHistory.findIndex(function(x){return x.id===r.id;});
-      if(at<0)into.sessionHistory.push(r);else if((r.updated||r.started)>(into.sessionHistory[at].updated||into.sessionHistory[at].started))into.sessionHistory[at]=r;
+      if(at<0)into.sessionHistory.push(r);else into.sessionHistory[at]=mergeSession(into.sessionHistory[at],r,into);
     });
-    if(!into.session && from.session)into.session=from.session;
+    if(!into.session && from.session){into.session=from.session;into.settings.activeExam=from.session.examId||'exam1';}
+    Object.keys(from.sessionsByExam||{}).forEach(function(id){
+      var incoming=from.sessionsByExam[id],cur=into.sessionsByExam[id];if(!incoming)return;
+      if(!cur){into.sessionsByExam[id]=incoming;return;}
+      if(cur.id!==incoming.id){if(!into.sessionHistory.some(function(r){return r.id===incoming.id;}))into.sessionHistory.push(incoming);return;}
+      into.sessionsByExam[id]=mergeSession(cur,incoming,into);
+    });
+    var active=into.settings.activeExam==='exam2'?'exam2':'exam1';
+    if(into.session&&into.sessionsByExam[active]&&into.session.id===into.sessionsByExam[active].id)into.session=into.sessionsByExam[active];
     if (from.legacy && !into.legacy) into.legacy = from.legacy;
     return added;
   }

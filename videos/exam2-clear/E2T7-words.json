@@ -1,0 +1,452 @@
+[
+  {
+    "word": "Stress",
+    "start": 0.0,
+    "end": 0.28
+  },
+  {
+    "word": "is",
+    "start": 0.28,
+    "end": 0.56
+  },
+  {
+    "word": "force",
+    "start": 0.56,
+    "end": 0.78
+  },
+  {
+    "word": "per",
+    "start": 0.78,
+    "end": 1.04
+  },
+  {
+    "word": "area.",
+    "start": 1.04,
+    "end": 1.4
+  },
+  {
+    "word": "Strain",
+    "start": 1.96,
+    "end": 2.28
+  },
+  {
+    "word": "is",
+    "start": 2.28,
+    "end": 2.48
+  },
+  {
+    "word": "a",
+    "start": 2.48,
+    "end": 2.58
+  },
+  {
+    "word": "change",
+    "start": 2.58,
+    "end": 2.78
+  },
+  {
+    "word": "in",
+    "start": 2.78,
+    "end": 3.02
+  },
+  {
+    "word": "shape",
+    "start": 3.02,
+    "end": 3.32
+  },
+  {
+    "word": "or",
+    "start": 3.32,
+    "end": 3.62
+  },
+  {
+    "word": "volume.",
+    "start": 3.62,
+    "end": 4.02
+  },
+  {
+    "word": "With",
+    "start": 4.62,
+    "end": 4.64
+  },
+  {
+    "word": "elastic",
+    "start": 4.64,
+    "end": 4.8
+  },
+  {
+    "word": "strain,",
+    "start": 4.8,
+    "end": 5.46
+  },
+  {
+    "word": "removing",
+    "start": 5.8,
+    "end": 6.04
+  },
+  {
+    "word": "the",
+    "start": 6.04,
+    "end": 6.32
+  },
+  {
+    "word": "load",
+    "start": 6.32,
+    "end": 6.52
+  },
+  {
+    "word": "restores",
+    "start": 6.52,
+    "end": 6.82
+  },
+  {
+    "word": "the",
+    "start": 6.82,
+    "end": 7.1
+  },
+  {
+    "word": "sample.",
+    "start": 7.1,
+    "end": 7.46
+  },
+  {
+    "word": "Permanent",
+    "start": 8.16,
+    "end": 8.42
+  },
+  {
+    "word": "deformation",
+    "start": 8.42,
+    "end": 8.84
+  },
+  {
+    "word": "occurs",
+    "start": 8.84,
+    "end": 9.34
+  },
+  {
+    "word": "by",
+    "start": 9.34,
+    "end": 9.66
+  },
+  {
+    "word": "fracture",
+    "start": 9.66,
+    "end": 10.0
+  },
+  {
+    "word": "or",
+    "start": 10.0,
+    "end": 10.42
+  },
+  {
+    "word": "ductile",
+    "start": 10.42,
+    "end": 10.86
+  },
+  {
+    "word": "change.",
+    "start": 10.86,
+    "end": 11.1
+  },
+  {
+    "word": "On",
+    "start": 11.78,
+    "end": 11.9
+  },
+  {
+    "word": "the",
+    "start": 11.9,
+    "end": 12.02
+  },
+  {
+    "word": "course",
+    "start": 12.02,
+    "end": 12.18
+  },
+  {
+    "word": "graph,",
+    "start": 12.18,
+    "end": 12.6
+  },
+  {
+    "word": "depth",
+    "start": 12.92,
+    "end": 13.16
+  },
+  {
+    "word": "increases",
+    "start": 13.16,
+    "end": 13.76
+  },
+  {
+    "word": "downward",
+    "start": 13.76,
+    "end": 14.14
+  },
+  {
+    "word": "and",
+    "start": 14.14,
+    "end": 14.7
+  },
+  {
+    "word": "strength",
+    "start": 14.7,
+    "end": 14.96
+  },
+  {
+    "word": "increases",
+    "start": 14.96,
+    "end": 15.58
+  },
+  {
+    "word": "rightward.",
+    "start": 15.58,
+    "end": 16.02
+  },
+  {
+    "word": "In",
+    "start": 16.76,
+    "end": 16.98
+  },
+  {
+    "word": "the",
+    "start": 16.98,
+    "end": 17.06
+  },
+  {
+    "word": "brittle",
+    "start": 17.06,
+    "end": 17.28
+  },
+  {
+    "word": "upper",
+    "start": 17.28,
+    "end": 17.52
+  },
+  {
+    "word": "crust,",
+    "start": 17.52,
+    "end": 17.84
+  },
+  {
+    "word": "increasing",
+    "start": 18.24,
+    "end": 18.68
+  },
+  {
+    "word": "confinement",
+    "start": 18.68,
+    "end": 19.12
+  },
+  {
+    "word": "makes",
+    "start": 19.12,
+    "end": 19.62
+  },
+  {
+    "word": "fractures",
+    "start": 19.62,
+    "end": 19.92
+  },
+  {
+    "word": "harder",
+    "start": 19.92,
+    "end": 20.42
+  },
+  {
+    "word": "to",
+    "start": 20.42,
+    "end": 20.74
+  },
+  {
+    "word": "develop.",
+    "start": 20.74,
+    "end": 20.96
+  },
+  {
+    "word": "The",
+    "start": 21.66,
+    "end": 21.66
+  },
+  {
+    "word": "curve",
+    "start": 21.66,
+    "end": 21.88
+  },
+  {
+    "word": "approaches",
+    "start": 21.88,
+    "end": 22.4
+  },
+  {
+    "word": "a",
+    "start": 22.4,
+    "end": 22.56
+  },
+  {
+    "word": "maximum.",
+    "start": 22.56,
+    "end": 22.8
+  },
+  {
+    "word": "Deeper,",
+    "start": 23.7,
+    "end": 23.9
+  },
+  {
+    "word": "higher",
+    "start": 23.9,
+    "end": 24.14
+  },
+  {
+    "word": "temperature",
+    "start": 24.14,
+    "end": 24.6
+  },
+  {
+    "word": "promotes",
+    "start": 24.6,
+    "end": 24.98
+  },
+  {
+    "word": "solid-state",
+    "start": 24.98,
+    "end": 25.7
+  },
+  {
+    "word": "ductile",
+    "start": 25.7,
+    "end": 26.18
+  },
+  {
+    "word": "flow.",
+    "start": 26.18,
+    "end": 26.38
+  },
+  {
+    "word": "Watch",
+    "start": 27.18,
+    "end": 27.38
+  },
+  {
+    "word": "the",
+    "start": 27.38,
+    "end": 27.6
+  },
+  {
+    "word": "solid",
+    "start": 27.6,
+    "end": 27.86
+  },
+  {
+    "word": "rock",
+    "start": 27.86,
+    "end": 28.04
+  },
+  {
+    "word": "bend.",
+    "start": 28.04,
+    "end": 28.34
+  },
+  {
+    "word": "The",
+    "start": 29.04,
+    "end": 29.32
+  },
+  {
+    "word": "curve",
+    "start": 29.32,
+    "end": 29.56
+  },
+  {
+    "word": "turns",
+    "start": 29.56,
+    "end": 29.86
+  },
+  {
+    "word": "toward",
+    "start": 29.86,
+    "end": 30.14
+  },
+  {
+    "word": "lower",
+    "start": 30.14,
+    "end": 30.38
+  },
+  {
+    "word": "strength.",
+    "start": 30.38,
+    "end": 30.8
+  },
+  {
+    "word": "The",
+    "start": 31.72,
+    "end": 31.74
+  },
+  {
+    "word": "brittle\u2013ductile",
+    "start": 31.74,
+    "end": 32.44
+  },
+  {
+    "word": "transition",
+    "start": 32.44,
+    "end": 32.88
+  },
+  {
+    "word": "is",
+    "start": 32.88,
+    "end": 33.16
+  },
+  {
+    "word": "gradual;",
+    "start": 33.16,
+    "end": 33.38
+  },
+  {
+    "word": "its",
+    "start": 34.14,
+    "end": 34.16
+  },
+  {
+    "word": "depth",
+    "start": 34.16,
+    "end": 34.44
+  },
+  {
+    "word": "depends",
+    "start": 34.44,
+    "end": 34.8
+  },
+  {
+    "word": "on",
+    "start": 34.8,
+    "end": 35.06
+  },
+  {
+    "word": "conditions,",
+    "start": 35.06,
+    "end": 35.28
+  },
+  {
+    "word": "not",
+    "start": 35.96,
+    "end": 36.24
+  },
+  {
+    "word": "one",
+    "start": 36.24,
+    "end": 36.6
+  },
+  {
+    "word": "universal",
+    "start": 36.6,
+    "end": 37.14
+  },
+  {
+    "word": "number.",
+    "start": 37.14,
+    "end": 37.7
+  }
+]

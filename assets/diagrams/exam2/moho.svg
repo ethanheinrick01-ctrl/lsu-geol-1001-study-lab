@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 480" role="img" aria-label="Schematic Moho depth: around 20 km near the coast, locally 40 km beneath Cascade–Sierra, much of Basin and Range 15–25 km, Rocky divisions about 35–40 km.">
+<rect width="1000" height="480" fill="#0c1a2b"/>
+<g font-family="Arial,sans-serif" fill="#e7eef4" text-anchor="middle">
+<text x="500" y="42" font-size="25">Moho depth across the western United States</text>
+<text x="260" y="78" font-size="20">Cascade–Sierra</text><text x="520" y="78" font-size="20">Basin and Range</text><text x="820" y="78" font-size="20">Rocky divisions</text>
+</g>
+<path d="M100 110H930V350L830 350 725 333 650 245 560 212 460 238 380 300 300 350 225 292 150 265 100 237Z" fill="#aa956c"/>
+<path d="M100 237L150 265 225 292 300 350 380 300 460 238 560 212 650 245 725 333 830 350 930 350V410H100Z" fill="#614c52"/>
+<g stroke="#43596f" stroke-width="1"><path d="M100 170H930M100 230H930M100 290H930M100 350H930M100 410H930"/></g>
+<path d="M100 110H930M100 110V410" fill="none" stroke="#e7eef4" stroke-width="2"/>
+<path d="M100 237L150 265 225 292 300 350 380 300 460 238 560 212 650 245 725 333 830 350 930 350" fill="none" stroke="#f2bc67" stroke-width="5"/>
+<g font-family="Arial,sans-serif" fill="#e7eef4" font-size="18" text-anchor="end"><text x="86" y="116">0</text><text x="86" y="177">10</text><text x="86" y="237">20</text><text x="86" y="297">30</text><text x="86" y="357">40</text><text x="86" y="417">50</text></g>
+<g font-family="Arial,sans-serif" fill="#e7eef4" text-anchor="middle"><text transform="translate(28 260) rotate(-90)" font-size="19">Depth below surface (km)</text><text x="155" y="99" font-size="17">Coast</text><text x="500" y="147" font-size="19">Crust</text><text x="500" y="387" font-size="19">Mantle</text><text x="500" y="449" font-size="17">Approximate course observations · horizontal distance schematic</text><text x="500" y="473" font-size="16">A local root does not determine regional average elevation.</text></g>
+</svg>

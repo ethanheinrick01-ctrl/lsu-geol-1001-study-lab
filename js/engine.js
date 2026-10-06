@@ -29,6 +29,7 @@
   }
   function resolve(ref) {
     if (!ref) return null;
+    if(ref.snapshot)return norm(ref.snapshot);
     if (ref.gen) { var g = L.GEN[ref.gen]; if (!g) return null; var it = g.build(ref.seed, ref.opt || {}); it.id = 'g:' + ref.gen + ':' + ref.seed; it.generated = ref.gen; return norm(it); }
     if(REG[ref.id])return REG[ref.id];
     if(FRESH[ref.id])return FRESH[ref.id];
@@ -169,7 +170,7 @@
   function reviewPlan(limit) {
     var st = conceptStats(), rows = [];
     Object.keys(st).forEach(function (c) {
-      var s = st[c], why = null; if (!hasPracticeContent(c)) return;
+      var s = st[c], why = null; if (!hasPracticeContent(c) || (L.examScope && L.examScope.conceptOwner(c)!==L.examScope.current())) return;
       if (s.highConfidenceMiss) why = 'misconception';
       else if (s.mockMiss) why = 'mock';
       else if (s.reviewOpen) why = 'shaky';
@@ -199,13 +200,13 @@
   // ---------------- Sessions ----------------
   function newSession(mode, title, refs, opt) {
     opt = opt || {};
-    var sess = { id: 'S' + Date.now() + '-' + Math.random().toString(36).slice(2,7), mode: mode, title: title, queue: refs.map(function (r) { return { ref: r, retry: false }; }), idx: 0, results: [],
+    var sess = { id: 'S' + Date.now() + '-' + Math.random().toString(36).slice(2,7), mode: mode, title: title, queue: refs.map(function (r) {var ref=U.clone(r),it=resolve(r);if(it&&it.examId==='exam2')ref.snapshot=U.clone(it);return { ref: ref, retry: false }; }), idx: 0, results: [],
       retries: 0, started: Date.now(), updated: Date.now(), drafts: {}, confidence: {}, assisted: {}, revealed: {}, bossId: opt.bossId || null, noRetry: !!opt.noRetry, orders: {}, back: opt.back || 'practice' };
-    var s = L.store.load(); archiveSession(s,s.session); s.session = sess; L.store.save(); return sess;
+    var s = L.store.load(); sess.examId=opt.examId||(L.examScope?L.examScope.current():'exam1'); archiveSession(s,s.session); s.session = sess; L.store.save(); return sess;
   }
   function archiveSession(s,sess){if(!sess)return;var copy=U.clone(sess),at=s.sessionHistory.findIndex(function(x){return x.id===sess.id;});if(at<0)s.sessionHistory.push(copy);else s.sessionHistory[at]=copy;}
   function currentSession() { return L.store.load().session; }
-  function endSession() { var s = L.store.load(), sess = s.session; archiveSession(s,sess); s.session = null; L.store.save(); return sess; }
+  function endSession() { var s = L.store.load(), sess = s.session; archiveSession(s,sess); if(sess)delete s.sessionsByExam[sess.examId||'exam1'];s.session = null; L.store.save(); return sess; }
   function answerInSession(response, conf, assisted) {
     var s = L.store.load(), sess = s.session; if (!sess) return null;
     var q = sess.queue[sess.idx], it = resolve(q.ref);
@@ -226,7 +227,7 @@
   function advance() { var s = L.store.load(); if (!s.session) return null; s.session.idx++; L.store.save(); return s.session; }
   function practiceRefs(opt) {
     var n = opt.n || 12, concepts = opt.concepts;
-    if (!concepts) concepts = Object.keys(L.CONCEPTS).filter(function (c) { var con = L.CONCEPTS[c]; return (!opt.sec || con.sec === opt.sec) && (!opt.ch || chapterOfSec(con.sec) === opt.ch) && hasPracticeContent(c); });
+    if (!concepts) concepts = Object.keys(L.CONCEPTS).filter(function (c) { var con = L.CONCEPTS[c]; return (!opt.sec || con.sec === opt.sec) && (!opt.ch || chapterOfSec(con.sec) === opt.ch) && (!L.examScope || L.examScope.conceptOwner(c)===(opt.examId||L.examScope.current())) && hasPracticeContent(c); });
     var stats=conceptStats();
     var refs = [], used = {}, pool = U.shuffle(concepts).sort(function(a,b){return practicePriority(stats[a])-practicePriority(stats[b]) || stats[a].att-stats[b].att;}), i = 0, guard = 0;
     while (refs.length < n && guard < n * 8 && pool.length) {
@@ -276,9 +277,9 @@
   // ---------------- Mock exams (feedback withheld until submission) ----------------
   function mockPools() {
     return {
-      mc: itemsFor(function (it) { return (it.t === 'mc' || it.t === 'ms' || it.t === 'tf') && !it.caseId && it.mock !== false && it.pool !== 'design'; }),
-      fill: itemsFor(function (it) { return it.t === 'fill' && !it.caseId && it.mock !== false; }),
-      cases: (L.CASES || []).filter(function (c) { return c.inv; })
+      mc: itemsFor(function (it) { return it.ch<=6 && (it.t === 'mc' || it.t === 'ms' || it.t === 'tf') && !it.caseId && it.mock !== false && it.pool !== 'design'; }),
+      fill: itemsFor(function (it) { return it.ch<=6 && it.t === 'fill' && !it.caseId && it.mock !== false; }),
+      cases: (L.CASES || []).filter(function (c) { return c.ch<=6 && c.inv; })
     };
   }
   function chooseSpread(pool, n, used, inMock) {

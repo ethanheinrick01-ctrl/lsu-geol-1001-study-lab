@@ -13,6 +13,11 @@
   function mediaHTML(m, opts) {
     if (!m) return '';
     opts = opts || {};
+    // Render older imported Exam 2 snapshots without exposing their local packet paths.
+    if (m.kind==='img' && L.EXAM2_SOURCE_MODE!=='private' && /^assets\/img\/exam2\//.test(m.src||'')) {
+      var original=m.src, file=original.split('/').pop(), crop=/\/figures\//.test(original), section=file.match(/^([78])-(\d+)-/), t=section&&L.EXAM2&&L.EXAM2.topics.find(function(t){return t.sections.indexOf(section[1]+'.'+Number(section[2]))>=0;});
+      m=Object.assign({},m,{src:crop?'assets/figures/exam2/'+file:original.indexOf('ilea')>=0?'assets/diagrams/exam2/moho.svg':'assets/diagrams/exam2/'+(t?t.id:'E2T1')+'.svg',cap:crop?m.cap:'Original lab schematic · full supplied pages remain in the local edition',alt:crop?m.alt:'Course-based study diagram'});
+    }
     if (Array.isArray(m)) return '<div class="media-row">' + m.map(function (x) { return mediaHTML(x, opts); }).join('') + '</div>';
     if (m.kind === 'img') return '<figure class="media"><button type="button" class="zoom" data-zoom="' + esc(m.src) + '" data-cap="' + esc(m.cap || m.alt || '') + '" aria-label="Enlarge image"><img src="' + esc(m.src) + '" alt="' + esc(m.alt || '') + '" loading="lazy"></button>' + (m.cap ? '<figcaption>' + esc(m.cap) + '</figcaption>' : '') + '</figure>';
     if (m.kind === 'svg' && L.MEDIA[m.name]) return '<figure class="media svgm">' + L.MEDIA[m.name](m.spec || {}, opts) + (m.cap ? '<figcaption>' + esc(m.cap) + '</figcaption>' : '') + '</figure>';
@@ -33,7 +38,7 @@
   function render(host, it, cfg) {
     cfg = cfg || {};
     var order = cfg.order || makeOrder(it);
-    var state = { resp: cfg.response !== undefined ? U.clone(cfg.response) : undefined, assisted: !!cfg.assisted };
+    var state = { resp: cfg.response !== undefined ? U.clone(cfg.response) : undefined, assisted: !!cfg.assisted, confidence: cfg.confidence||'' };
     var locked = !!cfg.locked, isMock = cfg.mode === 'mock';
     if ((it.t === 'match') && !cfg.rights) cfg.rights = U.shuffleNotIdentity(U.uniq(it.pairs.map(function (p) { return p[1]; }).concat(it.extra || [])));
     if (it.t === 'order' && state.resp === undefined) state.resp = cfg.orderStart || U.shuffleNotIdentity(it.seq);
@@ -128,7 +133,7 @@
       var ta = U.el('textarea', { 'aria-label': 'Your answer', rows: '6', placeholder: 'Write (or sketch on paper) your answer first. Then reveal the model answer and rubric.' });
       if (state.resp !== undefined) ta.value = typeof state.resp === 'string' ? state.resp : state.resp.response || '';
       if(cfg.revealed)ta.disabled=true;
-      ta.disabled = locked;
+      ta.disabled = locked || !!cfg.revealed;
       ta.addEventListener('input', function () { state.resp = ta.value; changed(); });
       ans.appendChild(ta);
     }
@@ -138,15 +143,17 @@
       act.innerHTML = '';
       if (locked || isMock) return;
       if (it.t === 'teach') {
+        if(it.examId==='exam2'&&!cfg.revealed){var cb=U.el('label',{class:'e2-teach-confidence'},'Confidence before feedback: '),cs=U.el('select',{'aria-label':'Confidence before model answer'});['','l','m','h'].forEach(function(cf,i){var op=U.el('option',{value:cf},['Choose confidence…','Low','Medium','High'][i]);op.selected=state.confidence===cf;cs.appendChild(op);});cs.onchange=function(){state.confidence=cs.value;if(cfg.onConfidence)cfg.onConfidence(cs.value);updateActions();};cb.appendChild(cs);act.appendChild(cb);}
         var rv=U.el('button',{class:'btn pri',type:'button'},'Reveal model answer and rubric');
-        rv.disabled=!hasResp();
+        rv.disabled=!hasResp()||(it.examId==='exam2'&&!state.confidence);
         function reveal(){
+          if(it.examId==='exam2'&&!state.confidence)return;
           ans.querySelector('textarea').disabled=true;
           if(cfg.onReveal)cfg.onReveal(state.resp);
-          fbEl.innerHTML='<div class="fb"><div class="verdict">Model answer · self-assessment</div><p>'+it.model+'</p><p class="small muted">Mark only points present in your original answer. This self-assessment feeds the same concept record and is labeled separately from automatic grading.</p><div class="exam-rubric">'+(it.rubric||[]).map(function(x,i){return '<label><input type="checkbox" data-teach-rubric="'+i+'"> '+esc(x)+'</label>';}).join('')+'</div>'+srcChips(it.s)+'</div>';
+          fbEl.innerHTML='<div class="fb"><div class="verdict">Model answer · self-assessment</div><p>'+it.model+'</p><p class="small muted">Mark only points present in your original answer. This self-assessment feeds the same concept record and is labeled separately from automatic grading.</p><div class="exam-rubric">'+(it.rubric||[]).map(function(x,i){return '<label><input type="checkbox" data-teach-rubric="'+i+'"> '+esc(x)+'</label>';}).join('')+'</div>'+srcChips(it.s)+(L.exam2?L.exam2.sourceHTML(it):'')+'</div>';
           var save=U.el('button',{class:'btn pri'},'Save rubric check');
           save.onclick=function(){var hits=Array.prototype.map.call(fbEl.querySelectorAll('[data-teach-rubric]'),function(x){return x.checked;}),n=hits.filter(Boolean).length;locked=true;
-            if(cfg.onSubmit)cfg.onSubmit({self:n===hits.length?'got':n?'part':'miss',response:state.resp,rubric:hits},'m',state.assisted);
+            if(cfg.onSubmit)cfg.onSubmit({self:n===hits.length?'got':n?'part':'miss',response:state.resp,rubric:hits},it.examId==='exam2'?state.confidence:'m',state.assisted);
             save.disabled=true;fbEl.querySelectorAll('input').forEach(function(x){x.disabled=true;});};
           fbEl.appendChild(save);rv.remove();
         }
@@ -194,16 +201,18 @@
     });
     var verdict = g.blank ? 'Not answered' : g.ok ? 'Correct' : (g.sc > 0 ? 'Partly correct (' + Math.round(g.sc * 100) + '%), scored as incorrect' : 'Incorrect');
     h.push('<div class="fb ' + (g.ok ? 'ok' : 'no') + '"><div class="verdict">' + verdict + '</div>');
+    if(it.examId==='exam2'&&it.o)h.push('<p class="e2-correct"><strong>Correct answer: '+it.o.filter(function(o){return o.ok;}).map(function(o){return esc(o.t);}).join('; ')+'</strong></p>');
     if (it.t === 'fill') {
-      h.push('<p>Accepted: <b>' + esc(it.acc[0]) + '</b>' + (it.acc.length > 1 ? ' <span class="muted small">(also: ' + esc(it.acc.slice(1).join(', ')) + ')</span>' : '') + '. You wrote: <b>' + esc(resp == null ? 'n/a' : resp) + '</b>.</p>');
+      h.push('<p>Correct answer: <b class="okc">' + esc(it.acc[0]) + '</b>' + (it.acc.length > 1 ? ' <span class="muted small">(also: ' + esc(it.acc.slice(1).join(', ')) + ')</span>' : '') + '. You wrote: <b class="'+(g.ok?'okc':'noc')+'">' + esc(resp == null ? 'n/a' : resp) + '</b>.</p>');
       if (g.spelling) h.push('<p class="small warn">Counted here, but check spelling: <b>' + esc(g.spelling) + '</b>. Paper-exam spelling tolerance is unknown.</p>');
       if (!g.ok && g.near) h.push('<p class="small warn">Close to <b>' + esc(g.near) + '</b>: spelling may be the issue, or you may be mixing up a related term.</p>');
     }
     if (it.t === 'num') h.push('<p>Key: <b>' + esc(it.a) + (it.unit ? ' ' + esc(it.unit) : '') + '</b>' + (it.tol ? ' (±' + it.tol + ' accepted)' : '') + '. You entered: ' + esc(resp == null ? 'n/a' : resp) + '.</p>');
-    if (it.t === 'match') h.push('<table class="t small"><tr><th>Item</th><th>Your match</th><th>Correct</th></tr>' + it.pairs.map(function (p, i) { var r = resp && resp[i]; return '<tr><td>' + esc(p[0]) + '</td><td class="' + (r === p[1] ? 'okc' : 'noc') + '">' + (r === p[1] ? '✓ ' : '✗ ') + esc(r || 'n/a') + '</td><td>' + esc(p[1]) + '</td></tr>'; }).join('') + '</table>');
+    if (it.t === 'match') h.push('<table class="t small"><tr><th>Item</th><th>Your match</th><th>Correct answer</th></tr>' + it.pairs.map(function (p, i) { var r = resp && resp[i]; return '<tr><td>' + esc(p[0]) + '</td><td class="' + (r === p[1] ? 'okc' : 'noc') + '">' + (r === p[1] ? '✓ ' : '✗ ') + esc(r || 'n/a') + '</td><td class="okc">' + esc(p[1]) + '</td></tr>'; }).join('') + '</table>');
     if (it.t === 'order') h.push('<p>Correct sequence:</p><ol class="small">' + it.seq.map(function (s, i) { var ok = resp && resp[i] === s; return '<li class="' + (ok ? 'okc' : 'noc') + '">' + (ok ? '✓ ' : '✗ ') + esc(s) + (ok ? '' : ' <span class="muted">(you had: ' + esc(resp ? resp[i] : 'n/a') + ')</span>') + '</li>'; }).join('') + '</ol>');
     if (it.t === 'parts') h.push('<table class="t small"><tr><th>Part</th><th>You</th><th>Key</th><th>Why</th></tr>' + it.parts.map(function (p, i) { var r = resp && resp[i]; return '<tr><td>' + esc(p.label) + '</td><td class="' + (r === p.a ? 'okc' : 'noc') + '">' + (r === p.a ? '✓ ' : '✗ ') + esc(r || 'n/a') + '</td><td>' + esc(p.a) + '</td><td>' + esc(p.why || '') + '</td></tr>'; }).join('') + '</table>');
     if (it.x) h.push('<p class="expl">' + it.x + '</p>');
+    if(L.exam2)h.push(L.exam2.sourceHTML(it));
     if (it.media && it.media.kind === 'svg' && it.revealMedia) { var md = host.querySelector('.media.svgm'); if (md) md.outerHTML = mediaHTML(it.media, { reveal: true }); }
     h.push('<div class="srcline">' + srcChips(it.s) + ' ' + tierBadge(it.tier) + (it.sec ? ' <a class="small" href="#guide/' + it.sec + '">Open guide section</a>' : '') + '</div></div>');
     fbEl.innerHTML = h.join('');

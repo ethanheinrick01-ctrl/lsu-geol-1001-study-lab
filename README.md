@@ -1,12 +1,24 @@
-# GEOL 1001-002 Exam 1 Study Lab (v3)
+# GEOL 1001-002 Study Lab · Exams 1 and 2
 
-General Geology: Physical · Professor Guangsheng Zhuang · Fall 2026 · Exam 1 (Chapters 1–6), Tuesday Sep 29, 10:30 AM, Howe-Russell W130.
+General Geology: Physical · Professor Guangsheng Zhuang · Fall 2026. Exam 1 covers Chapters 1–6. The Exam 2 addition covers supplied Chapters 7–8; Chapters 9–12 are pending.
 
 A source-cited study guide with one shared mastery record across practice, cases, Boss drills, written self-checks, and Exam 1 learning mocks. Runs in your browser with no account, backend, or paid API.
 
+## Exam 2 · October 6 local addition
+
+Open `index.html` and select **Exam 2**. The twelve focused lessons carry forward the accepted Exam 1 format: Clear narrated process films, original zoomable course figures, detailed lessons, comparisons, common confusions, and linked practice. Every supplied section, 7.1–7.16 and 8.1–8.15, is included. Lecture-confirmed topics and textbook continuation are labeled separately.
+
+The new bank has 152 original exercises: 112 multiple-choice items, 15 shuffled word-bank labeling exercises, 12 term checks, and 13 writing/rubric checks. Thirteen investigations include observation diagrams. Each chapter has a 25-question Boss drill. **Exam 2 mocks remain locked** until the complete Chapters 7–12 scope is supplied and audited.
+
+All twelve films are bundled offline with audio, exact-script captions, transcripts, stage jumps, posters, and editable production sources. Clear generation used the existing free allocation, with no new charge. Studying requires no voice service or network request. Film geometry and the 265 supplied textbook pages were visually reviewed; media decode and isolated engine/storage checks pass. The public edition is being checked on the deployed URL in isolated browser storage. See the release receipt for current verification.
+
+Progress retains `geol1001-lab-v3`, schema 3, stable Exam 1 IDs and keys, earned mastery, first answers, corrections, snapshots, drafts, exports, and separate exam resume pointers. Older records without exam ownership are interpreted as Exam 1. Local-file and hosted origins can have separate progress; use Data → Export/Import when moving between them.
+
+[Exam 2 coverage and release receipt](docs/EXAM2_RELEASE.md). The full source packet, personal professor evidence, extracted page text/renders, and private audits stay local. The public edition supplies original study passages, section citations, authored diagrams, four selected figure crops, and all twelve films. Opening the private local copy from a file also loads the full original pages.
+
 ## Open it
 
-**Live lab:** https://ethanheinrick01-ctrl.github.io/lsu-geol-1001-study-lab/
+**Main study URL:** https://ethanheinrick01-ctrl.github.io/lsu-geol-1001-study-lab/ . Select Exam 1 or Exam 2.
 
 **Offline copy:** double-click `index.html`. It opens in your browser from the file itself. No internet, install, account, or paid API is needed.
 
@@ -60,7 +72,7 @@ The September 24 exam review supplies the exam format and focus. Repeated lectur
 
 Course slides and textbook figures are included for your personal study only. Do not share the folder.
 
-Storage key: `geol1001-lab-v3`. Old-lab keys (`geol1001-guided-progress-v1`, `geol1001-study-lab-progress-v1`) are read, never written. Version 3.1.0, updated 2026-09-27.
+Storage key: `geol1001-lab-v3`. Old-lab keys (`geol1001-guided-progress-v1`, `geol1001-study-lab-progress-v1`) are read, never written. Version 4.0.1, updated 2026-10-06; storage schema remains 3.
 
 
 ## September 24 Exam 1 update

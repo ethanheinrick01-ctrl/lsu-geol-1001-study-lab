@@ -1,0 +1,522 @@
+[
+  {
+    "word": "A",
+    "start": 0.0,
+    "end": 0.1
+  },
+  {
+    "word": "change",
+    "start": 0.1,
+    "end": 0.36
+  },
+  {
+    "word": "in",
+    "start": 0.36,
+    "end": 0.56
+  },
+  {
+    "word": "sediment",
+    "start": 0.56,
+    "end": 0.84
+  },
+  {
+    "word": "supply",
+    "start": 0.84,
+    "end": 1.2
+  },
+  {
+    "word": "or",
+    "start": 1.2,
+    "end": 1.8
+  },
+  {
+    "word": "depositional",
+    "start": 1.8,
+    "end": 2.44
+  },
+  {
+    "word": "conditions",
+    "start": 2.44,
+    "end": 3.22
+  },
+  {
+    "word": "creates",
+    "start": 3.22,
+    "end": 3.62
+  },
+  {
+    "word": "a",
+    "start": 3.62,
+    "end": 3.88
+  },
+  {
+    "word": "different",
+    "start": 3.88,
+    "end": 4.1
+  },
+  {
+    "word": "layer.",
+    "start": 4.1,
+    "end": 4.46
+  },
+  {
+    "word": "Bedding",
+    "start": 5.12,
+    "end": 5.36
+  },
+  {
+    "word": "records",
+    "start": 5.36,
+    "end": 5.6
+  },
+  {
+    "word": "these",
+    "start": 5.6,
+    "end": 5.96
+  },
+  {
+    "word": "changes.",
+    "start": 5.96,
+    "end": 6.38
+  },
+  {
+    "word": "Read",
+    "start": 7.4,
+    "end": 7.62
+  },
+  {
+    "word": "the",
+    "start": 7.62,
+    "end": 7.78
+  },
+  {
+    "word": "boundaries",
+    "start": 7.78,
+    "end": 8.1
+  },
+  {
+    "word": "and",
+    "start": 8.1,
+    "end": 8.5
+  },
+  {
+    "word": "the",
+    "start": 8.5,
+    "end": 8.58
+  },
+  {
+    "word": "material",
+    "start": 8.58,
+    "end": 8.94
+  },
+  {
+    "word": "inside",
+    "start": 8.94,
+    "end": 9.38
+  },
+  {
+    "word": "each",
+    "start": 9.38,
+    "end": 10.0
+  },
+  {
+    "word": "bed",
+    "start": 10.0,
+    "end": 10.24
+  },
+  {
+    "word": "before",
+    "start": 10.24,
+    "end": 10.54
+  },
+  {
+    "word": "interpreting",
+    "start": 10.54,
+    "end": 11.22
+  },
+  {
+    "word": "the",
+    "start": 11.22,
+    "end": 11.36
+  },
+  {
+    "word": "sequence.",
+    "start": 11.36,
+    "end": 11.72
+  },
+  {
+    "word": "A",
+    "start": 12.7,
+    "end": 12.7
+  },
+  {
+    "word": "sediment-bearing",
+    "start": 12.7,
+    "end": 13.38
+  },
+  {
+    "word": "flow",
+    "start": 13.38,
+    "end": 13.7
+  },
+  {
+    "word": "weakens.",
+    "start": 13.7,
+    "end": 14.26
+  },
+  {
+    "word": "Coarser",
+    "start": 15.12,
+    "end": 15.4
+  },
+  {
+    "word": "grains",
+    "start": 15.4,
+    "end": 15.66
+  },
+  {
+    "word": "settle",
+    "start": 15.66,
+    "end": 16.04
+  },
+  {
+    "word": "first,",
+    "start": 16.04,
+    "end": 16.42
+  },
+  {
+    "word": "then",
+    "start": 16.78,
+    "end": 16.84
+  },
+  {
+    "word": "finer",
+    "start": 16.84,
+    "end": 17.04
+  },
+  {
+    "word": "particles",
+    "start": 17.04,
+    "end": 17.44
+  },
+  {
+    "word": "accumulate",
+    "start": 17.44,
+    "end": 17.96
+  },
+  {
+    "word": "above",
+    "start": 17.96,
+    "end": 18.48
+  },
+  {
+    "word": "them.",
+    "start": 18.48,
+    "end": 18.74
+  },
+  {
+    "word": "The",
+    "start": 19.3,
+    "end": 19.32
+  },
+  {
+    "word": "resulting",
+    "start": 19.32,
+    "end": 19.56
+  },
+  {
+    "word": "bed",
+    "start": 19.56,
+    "end": 19.94
+  },
+  {
+    "word": "fines",
+    "start": 19.94,
+    "end": 20.3
+  },
+  {
+    "word": "upward.",
+    "start": 20.3,
+    "end": 20.68
+  },
+  {
+    "word": "This",
+    "start": 21.34,
+    "end": 21.44
+  },
+  {
+    "word": "is",
+    "start": 21.44,
+    "end": 21.56
+  },
+  {
+    "word": "a",
+    "start": 21.56,
+    "end": 21.68
+  },
+  {
+    "word": "graded",
+    "start": 21.68,
+    "end": 21.88
+  },
+  {
+    "word": "bed;",
+    "start": 21.88,
+    "end": 22.26
+  },
+  {
+    "word": "it",
+    "start": 22.76,
+    "end": 22.8
+  },
+  {
+    "word": "records",
+    "start": 22.8,
+    "end": 23.04
+  },
+  {
+    "word": "a",
+    "start": 23.04,
+    "end": 23.3
+  },
+  {
+    "word": "change",
+    "start": 23.3,
+    "end": 23.54
+  },
+  {
+    "word": "during",
+    "start": 23.54,
+    "end": 23.92
+  },
+  {
+    "word": "deposition",
+    "start": 23.92,
+    "end": 24.24
+  },
+  {
+    "word": "within",
+    "start": 24.24,
+    "end": 24.74
+  },
+  {
+    "word": "one",
+    "start": 24.74,
+    "end": 25.0
+  },
+  {
+    "word": "bed.",
+    "start": 25.0,
+    "end": 25.26
+  },
+  {
+    "word": "Wind",
+    "start": 25.7,
+    "end": 25.76
+  },
+  {
+    "word": "or",
+    "start": 25.76,
+    "end": 25.94
+  },
+  {
+    "word": "water",
+    "start": 25.94,
+    "end": 26.16
+  },
+  {
+    "word": "carries",
+    "start": 26.16,
+    "end": 26.6
+  },
+  {
+    "word": "grains",
+    "start": 26.6,
+    "end": 26.98
+  },
+  {
+    "word": "up",
+    "start": 26.98,
+    "end": 27.38
+  },
+  {
+    "word": "a",
+    "start": 27.38,
+    "end": 27.48
+  },
+  {
+    "word": "bedform",
+    "start": 27.48,
+    "end": 27.94
+  },
+  {
+    "word": "and",
+    "start": 27.94,
+    "end": 28.34
+  },
+  {
+    "word": "deposits",
+    "start": 28.34,
+    "end": 28.6
+  },
+  {
+    "word": "them",
+    "start": 28.6,
+    "end": 29.04
+  },
+  {
+    "word": "on",
+    "start": 29.04,
+    "end": 29.2
+  },
+  {
+    "word": "the",
+    "start": 29.2,
+    "end": 29.3
+  },
+  {
+    "word": "down-current",
+    "start": 29.3,
+    "end": 29.74
+  },
+  {
+    "word": "slope.",
+    "start": 29.74,
+    "end": 30.18
+  },
+  {
+    "word": "The",
+    "start": 31.0,
+    "end": 31.1
+  },
+  {
+    "word": "bedform",
+    "start": 31.1,
+    "end": 31.5
+  },
+  {
+    "word": "moves",
+    "start": 31.5,
+    "end": 31.9
+  },
+  {
+    "word": "while",
+    "start": 31.9,
+    "end": 32.28
+  },
+  {
+    "word": "inclined",
+    "start": 32.28,
+    "end": 32.5
+  },
+  {
+    "word": "laminae",
+    "start": 32.5,
+    "end": 33.18
+  },
+  {
+    "word": "accumulate",
+    "start": 33.18,
+    "end": 33.6
+  },
+  {
+    "word": "and",
+    "start": 33.6,
+    "end": 34.12
+  },
+  {
+    "word": "are",
+    "start": 34.12,
+    "end": 34.22
+  },
+  {
+    "word": "partly",
+    "start": 34.22,
+    "end": 34.5
+  },
+  {
+    "word": "truncated.",
+    "start": 34.5,
+    "end": 35.12
+  },
+  {
+    "word": "These",
+    "start": 35.66,
+    "end": 35.8
+  },
+  {
+    "word": "are",
+    "start": 35.8,
+    "end": 35.94
+  },
+  {
+    "word": "cross",
+    "start": 35.94,
+    "end": 36.14
+  },
+  {
+    "word": "beds.",
+    "start": 36.14,
+    "end": 36.44
+  },
+  {
+    "word": "They",
+    "start": 37.12,
+    "end": 37.14
+  },
+  {
+    "word": "record",
+    "start": 37.14,
+    "end": 37.38
+  },
+  {
+    "word": "deposition",
+    "start": 37.38,
+    "end": 37.72
+  },
+  {
+    "word": "and",
+    "start": 37.72,
+    "end": 38.24
+  },
+  {
+    "word": "migration,",
+    "start": 38.24,
+    "end": 38.58
+  },
+  {
+    "word": "not",
+    "start": 39.28,
+    "end": 39.46
+  },
+  {
+    "word": "a",
+    "start": 39.46,
+    "end": 39.56
+  },
+  {
+    "word": "later",
+    "start": 39.56,
+    "end": 39.82
+  },
+  {
+    "word": "fold",
+    "start": 39.82,
+    "end": 40.08
+  },
+  {
+    "word": "of",
+    "start": 40.08,
+    "end": 40.34
+  },
+  {
+    "word": "every",
+    "start": 40.34,
+    "end": 40.56
+  },
+  {
+    "word": "layer.",
+    "start": 40.56,
+    "end": 40.84
+  }
+]

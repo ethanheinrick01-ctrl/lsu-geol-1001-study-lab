@@ -1,0 +1,532 @@
+[
+  {
+    "word": "Steep",
+    "start": 0.0,
+    "end": 0.36
+  },
+  {
+    "word": "slopes",
+    "start": 0.36,
+    "end": 0.48
+  },
+  {
+    "word": "produce",
+    "start": 0.48,
+    "end": 0.94
+  },
+  {
+    "word": "angular",
+    "start": 0.94,
+    "end": 1.44
+  },
+  {
+    "word": "rock",
+    "start": 1.44,
+    "end": 1.78
+  },
+  {
+    "word": "fragments.",
+    "start": 1.78,
+    "end": 2.18
+  },
+  {
+    "word": "Flowing",
+    "start": 2.86,
+    "end": 3.14
+  },
+  {
+    "word": "water",
+    "start": 3.14,
+    "end": 3.4
+  },
+  {
+    "word": "carries",
+    "start": 3.4,
+    "end": 3.82
+  },
+  {
+    "word": "sediment",
+    "start": 3.82,
+    "end": 4.12
+  },
+  {
+    "word": "into",
+    "start": 4.12,
+    "end": 4.5
+  },
+  {
+    "word": "channels,",
+    "start": 4.5,
+    "end": 4.86
+  },
+  {
+    "word": "while",
+    "start": 5.28,
+    "end": 5.48
+  },
+  {
+    "word": "floods",
+    "start": 5.48,
+    "end": 5.7
+  },
+  {
+    "word": "spread",
+    "start": 5.7,
+    "end": 6.18
+  },
+  {
+    "word": "finer",
+    "start": 6.18,
+    "end": 6.56
+  },
+  {
+    "word": "material",
+    "start": 6.56,
+    "end": 6.98
+  },
+  {
+    "word": "across",
+    "start": 6.98,
+    "end": 7.54
+  },
+  {
+    "word": "a",
+    "start": 7.54,
+    "end": 7.78
+  },
+  {
+    "word": "floodplain.",
+    "start": 7.78,
+    "end": 8.2
+  },
+  {
+    "word": "Watch",
+    "start": 8.78,
+    "end": 9.04
+  },
+  {
+    "word": "the",
+    "start": 9.04,
+    "end": 9.26
+  },
+  {
+    "word": "grains",
+    "start": 9.26,
+    "end": 9.44
+  },
+  {
+    "word": "move;",
+    "start": 9.44,
+    "end": 9.92
+  },
+  {
+    "word": "the",
+    "start": 10.4,
+    "end": 10.44
+  },
+  {
+    "word": "setting",
+    "start": 10.44,
+    "end": 10.68
+  },
+  {
+    "word": "is",
+    "start": 10.68,
+    "end": 10.84
+  },
+  {
+    "word": "defined",
+    "start": 10.84,
+    "end": 11.08
+  },
+  {
+    "word": "by",
+    "start": 11.08,
+    "end": 11.5
+  },
+  {
+    "word": "its",
+    "start": 11.5,
+    "end": 11.62
+  },
+  {
+    "word": "transport",
+    "start": 11.62,
+    "end": 12.12
+  },
+  {
+    "word": "and",
+    "start": 12.12,
+    "end": 12.48
+  },
+  {
+    "word": "deposition,",
+    "start": 12.48,
+    "end": 12.74
+  },
+  {
+    "word": "not",
+    "start": 13.54,
+    "end": 13.84
+  },
+  {
+    "word": "just",
+    "start": 13.84,
+    "end": 14.06
+  },
+  {
+    "word": "its",
+    "start": 14.06,
+    "end": 14.26
+  },
+  {
+    "word": "location.",
+    "start": 14.26,
+    "end": 14.6
+  },
+  {
+    "word": "When",
+    "start": 15.62,
+    "end": 15.76
+  },
+  {
+    "word": "the",
+    "start": 15.76,
+    "end": 15.88
+  },
+  {
+    "word": "river",
+    "start": 15.88,
+    "end": 16.02
+  },
+  {
+    "word": "enters",
+    "start": 16.02,
+    "end": 16.4
+  },
+  {
+    "word": "standing",
+    "start": 16.4,
+    "end": 16.8
+  },
+  {
+    "word": "water,",
+    "start": 16.8,
+    "end": 17.1
+  },
+  {
+    "word": "it",
+    "start": 17.36,
+    "end": 17.48
+  },
+  {
+    "word": "slows.",
+    "start": 17.48,
+    "end": 17.68
+  },
+  {
+    "word": "Coarser",
+    "start": 18.68,
+    "end": 18.88
+  },
+  {
+    "word": "sediment",
+    "start": 18.88,
+    "end": 19.22
+  },
+  {
+    "word": "accumulates",
+    "start": 19.22,
+    "end": 19.9
+  },
+  {
+    "word": "near",
+    "start": 19.9,
+    "end": 20.14
+  },
+  {
+    "word": "the",
+    "start": 20.14,
+    "end": 20.28
+  },
+  {
+    "word": "mouth,",
+    "start": 20.28,
+    "end": 20.52
+  },
+  {
+    "word": "building",
+    "start": 20.84,
+    "end": 21.14
+  },
+  {
+    "word": "a",
+    "start": 21.14,
+    "end": 21.28
+  },
+  {
+    "word": "delta.",
+    "start": 21.28,
+    "end": 21.48
+  },
+  {
+    "word": "Finer",
+    "start": 22.32,
+    "end": 22.66
+  },
+  {
+    "word": "particles",
+    "start": 22.66,
+    "end": 22.92
+  },
+  {
+    "word": "can",
+    "start": 22.92,
+    "end": 23.28
+  },
+  {
+    "word": "remain",
+    "start": 23.28,
+    "end": 23.52
+  },
+  {
+    "word": "suspended",
+    "start": 23.52,
+    "end": 23.86
+  },
+  {
+    "word": "and",
+    "start": 23.86,
+    "end": 24.46
+  },
+  {
+    "word": "travel",
+    "start": 24.46,
+    "end": 24.74
+  },
+  {
+    "word": "farther.",
+    "start": 24.74,
+    "end": 25.1
+  },
+  {
+    "word": "A",
+    "start": 25.84,
+    "end": 25.88
+  },
+  {
+    "word": "delta",
+    "start": 25.88,
+    "end": 26.12
+  },
+  {
+    "word": "and",
+    "start": 26.12,
+    "end": 26.42
+  },
+  {
+    "word": "a",
+    "start": 26.42,
+    "end": 26.5
+  },
+  {
+    "word": "floodplain",
+    "start": 26.5,
+    "end": 26.96
+  },
+  {
+    "word": "are",
+    "start": 26.96,
+    "end": 27.26
+  },
+  {
+    "word": "different",
+    "start": 27.26,
+    "end": 27.56
+  },
+  {
+    "word": "parts",
+    "start": 27.56,
+    "end": 27.84
+  },
+  {
+    "word": "of",
+    "start": 27.84,
+    "end": 28.04
+  },
+  {
+    "word": "the",
+    "start": 28.04,
+    "end": 28.14
+  },
+  {
+    "word": "river",
+    "start": 28.14,
+    "end": 28.3
+  },
+  {
+    "word": "system.",
+    "start": 28.3,
+    "end": 28.64
+  },
+  {
+    "word": "Waves",
+    "start": 29.5,
+    "end": 29.86
+  },
+  {
+    "word": "work",
+    "start": 29.86,
+    "end": 30.06
+  },
+  {
+    "word": "the",
+    "start": 30.06,
+    "end": 30.24
+  },
+  {
+    "word": "beach.",
+    "start": 30.24,
+    "end": 30.44
+  },
+  {
+    "word": "A",
+    "start": 31.06,
+    "end": 31.08
+  },
+  {
+    "word": "barrier",
+    "start": 31.08,
+    "end": 31.4
+  },
+  {
+    "word": "shelters",
+    "start": 31.4,
+    "end": 31.82
+  },
+  {
+    "word": "a",
+    "start": 31.82,
+    "end": 32.14
+  },
+  {
+    "word": "lagoon.",
+    "start": 32.14,
+    "end": 32.5
+  },
+  {
+    "word": "Offshore,",
+    "start": 33.06,
+    "end": 33.54
+  },
+  {
+    "word": "fine",
+    "start": 33.82,
+    "end": 34.02
+  },
+  {
+    "word": "material",
+    "start": 34.02,
+    "end": 34.42
+  },
+  {
+    "word": "settles,",
+    "start": 34.42,
+    "end": 34.84
+  },
+  {
+    "word": "and",
+    "start": 35.34,
+    "end": 35.36
+  },
+  {
+    "word": "sediment-laden",
+    "start": 35.36,
+    "end": 36.06
+  },
+  {
+    "word": "turbidity",
+    "start": 36.06,
+    "end": 36.5
+  },
+  {
+    "word": "currents",
+    "start": 36.5,
+    "end": 36.78
+  },
+  {
+    "word": "can",
+    "start": 36.78,
+    "end": 37.1
+  },
+  {
+    "word": "move",
+    "start": 37.1,
+    "end": 37.28
+  },
+  {
+    "word": "downslope.",
+    "start": 37.28,
+    "end": 37.88
+  },
+  {
+    "word": "Compare",
+    "start": 38.5,
+    "end": 38.74
+  },
+  {
+    "word": "grain",
+    "start": 38.74,
+    "end": 39.02
+  },
+  {
+    "word": "size,",
+    "start": 39.02,
+    "end": 39.42
+  },
+  {
+    "word": "structures,",
+    "start": 39.52,
+    "end": 40.06
+  },
+  {
+    "word": "and",
+    "start": 40.48,
+    "end": 40.52
+  },
+  {
+    "word": "biological",
+    "start": 40.52,
+    "end": 40.86
+  },
+  {
+    "word": "remains",
+    "start": 40.86,
+    "end": 41.4
+  },
+  {
+    "word": "before",
+    "start": 41.4,
+    "end": 41.88
+  },
+  {
+    "word": "choosing",
+    "start": 41.88,
+    "end": 42.4
+  },
+  {
+    "word": "an",
+    "start": 42.4,
+    "end": 42.56
+  },
+  {
+    "word": "ancient",
+    "start": 42.56,
+    "end": 42.82
+  },
+  {
+    "word": "environment.",
+    "start": 42.82,
+    "end": 43.36
+  }
+]

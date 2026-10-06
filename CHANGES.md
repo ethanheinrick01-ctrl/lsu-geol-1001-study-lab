@@ -94,3 +94,14 @@ Exam 1 now provides the professor-review topic map, actual course figures, three
 ## 2026-09-28 · Clear voice narration (3.3.2)
 
 Replaced the system voice in all 16 films with the user-approved AI Voice Generator Clear voice. Preserved review-focused scripts, source artwork, assessments and all progress storage. Bundled original audio for offline rebuilds, aligned animation stages to spoken sentence boundaries, and refreshed captions and chapter timing. Playback remains free and requires no voice-service connection.
+
+
+## October 6, 2026 · private Exam 2 Chapters 7–8
+
+Extended the existing lab with a separate Exam 2 workspace, twelve complete teaching groups and Clear narrated films, all supplied textbook sections, original figures, 152 original exercises, thirteen illustrated investigations, and two 25-question Boss drills. Mocks remain locked until Chapters 9–12 are supplied and audited. The accepted Exam 1 standard is the continuation template.
+
+Kept the existing storage key/schema, earlier IDs and keys, earned mastery, first answers, corrections, drafts, snapshots and backups. Added exam ownership and separate resume pointers; older unowned records are Exam 1. Existing Exam 1 mocks exclude new content. Read the private source/coverage/missing-source ledgers and [verification receipt](docs/EXAM2_VERIFICATION.md). Structural, isolated engine/storage and media checks pass; actual browser QA is pending localhost permission after the file preview was blocked. No publication or paid generation charge.
+
+## October 6, 2026 · main URL release
+
+Exam 2 Chapters 7–8 is prepared for the existing GitHub Pages URL. Public source support uses original study explanations and diagrams with section citations; the full private packet and professor evidence remain local. Cache versions are refreshed without changing progress keys or first-response records.

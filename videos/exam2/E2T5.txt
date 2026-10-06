@@ -1,0 +1,8 @@
+Build distinct beds
+A change in sediment supply or depositional conditions creates a different layer. Bedding records these changes. Read the boundaries and the material inside each bed before interpreting the sequence.
+
+Settle a graded bed
+A sediment-bearing flow weakens. Coarser grains settle first, then finer particles accumulate above them. The resulting bed fines upward. This is a graded bed; it records a change during deposition within one bed.
+
+Migrate a dune
+Wind or water carries grains up a bedform and deposits them on the down-current slope. The bedform moves while inclined laminae accumulate and are partly truncated. These are cross beds. They record deposition and migration, not a later fold of every layer.

@@ -1,0 +1,210 @@
+{
+  "voice": "AI Voice Generator · Clear",
+  "originalScripts": true,
+  "topics": {
+    "E2T1": {
+      "description": "Follow sediment from mountains through a river mouth to sheltered and deep marine water.",
+      "stages": [
+        [
+          "From slope to channel",
+          "Steep slopes produce angular rock fragments. Flowing water carries sediment into channels, while floods spread finer material across a floodplain. Watch the grains move; the setting is defined by its transport and deposition, not just its location."
+        ],
+        [
+          "Build the river mouth",
+          "When the river enters standing water, it slows. Coarser sediment accumulates near the mouth, building a delta. Finer particles can remain suspended and travel farther. A delta and a floodplain are different parts of the river system."
+        ],
+        [
+          "Read the coast and ocean",
+          "Waves work the beach. A barrier shelters a lagoon. Offshore, fine material settles, and sediment-laden turbidity currents can move downslope. Compare grain size, structures, and biological remains before choosing an ancient environment."
+        ]
+      ]
+    },
+    "E2T2": {
+      "description": "Break rock, move grains, settle sediment, then compact and cement it.",
+      "stages": [
+        [
+          "Produce sediment",
+          "Physical weathering breaks rock into pieces. Chemical weathering changes minerals: feldspar can react to form clay and dissolved products. These processes work together, but weathering is different from carrying the products away."
+        ],
+        [
+          "Move and deposit",
+          "Transport abrades clasts and sorts them. Watch rounded grains move with the current, then settle as flow weakens. Larger grains commonly settle before smaller ones. Grain size, shape, and sorting record different parts of this history."
+        ],
+        [
+          "Make rock",
+          "Burial pushes grains closer together and reduces pore space. Minerals then precipitate between grains and bind them. Compaction packs; cementation binds. Together they contribute to lithification. Sedimentary rock forms here without requiring the grains to melt."
+        ]
+      ]
+    },
+    "E2T3": {
+      "description": "Transform gravel, sand, and mud deposits into the textures used to classify clastic rocks.",
+      "stages": [
+        [
+          "Coarse clasts",
+          "Begin with grain size. Gravel-sized fragments can form breccia or conglomerate. Angular pieces identify breccia. As transport abrades corners, rounded pieces can form conglomerate. Rounding does not establish one unique environment."
+        ],
+        [
+          "Sand-sized grains",
+          "Sand accumulates and becomes sandstone as grains are compacted and cemented. Mineral composition refines the name: feldspar-rich sandstone is arkose. Well-sorted quartz sand differs from sand with abundant matrix or less resistant minerals."
+        ],
+        [
+          "Fine sediment",
+          "Mud settles in quieter conditions and can become mudstone. Shale is a mudrock that splits along thin layers. To infer the setting, add fossils, bedding, and regional relations. Grain size is a starting observation, not a complete environmental history."
+        ]
+      ]
+    },
+    "E2T4": {
+      "description": "Grow carbonate deposits, precipitate salts, and preserve plant material.",
+      "stages": [
+        [
+          "Build carbonate",
+          "Organisms make shells and skeletons that accumulate as carbonate sediment. Warm, clear, shallow water can support reefs. Tiny carbonate skeletons can form chalk; recognizable shell fragments can form coquina. Both differ from clastic quartz sand."
+        ],
+        [
+          "Roll and coat grains",
+          "Agitated shallow water rolls grains while carbonate precipitates around them. Repeated coatings form ooids. Watch the coatings grow around a moving nucleus. Magnesium-bearing fluids can later change carbonate mineralogy to dolomite."
+        ],
+        [
+          "Evaporate or preserve",
+          "As saline water evaporates, dissolved minerals can precipitate as evaporites. In a saturated wetland, plant material can survive decay and become coal through burial. Identify composition and formation pathway together; nonclastic rocks do not share one single origin."
+        ]
+      ]
+    },
+    "E2T5": {
+      "description": "Settle a graded bed, migrate a dune, and preserve its cross beds.",
+      "stages": [
+        [
+          "Build distinct beds",
+          "A change in sediment supply or depositional conditions creates a different layer. Bedding records these changes. Read the boundaries and the material inside each bed before interpreting the sequence."
+        ],
+        [
+          "Settle a graded bed",
+          "A sediment-bearing flow weakens. Coarser grains settle first, then finer particles accumulate above them. The resulting bed fines upward. This is a graded bed; it records a change during deposition within one bed."
+        ],
+        [
+          "Migrate a dune",
+          "Wind or water carries grains up a bedform and deposits them on the down-current slope. The bedform moves while inclined laminae accumulate and are partly truncated. These are cross beds. They record deposition and migration, not a later fold of every layer."
+        ]
+      ]
+    },
+    "E2T6": {
+      "description": "Move a shoreline, stack environmental facies, expose an erosion surface, and trap migrating fluid.",
+      "stages": [
+        [
+          "Move landward",
+          "As relative sea level rises, marine environments shift over former coastal and land settings. Watch the shoreline move landward: transgression. Subsidence can contribute without a global rise in sea level."
+        ],
+        [
+          "Move seaward",
+          "Now the shoreline moves seaward. Coastal sediment can overlie former offshore deposits. Regression and progradation reflect the balance between water level, available space, and sediment supply."
+        ],
+        [
+          "Read the record",
+          "Erosion removes part of the record before deposition resumes. Textures, fossils, and structures help reconstruct the history. A porous reservoir beneath an impermeable seal can trap migrated petroleum. Reservoir rock alone does not prove a usable resource."
+        ]
+      ]
+    },
+    "E2T7": {
+      "description": "Load a rock, show recoverable strain, fracture the shallow crust, and deform hot rock along the supplied strength curve.",
+      "stages": [
+        [
+          "Stress and strain",
+          "Stress is force per area. Strain is a change in shape or volume. With elastic strain, removing the load restores the sample. Permanent deformation occurs by fracture or ductile change."
+        ],
+        [
+          "Read the upper crust",
+          "On the course graph, depth increases downward and strength increases rightward. In the brittle upper crust, increasing confinement makes fractures harder to develop. The curve approaches a maximum."
+        ],
+        [
+          "Cross the transition",
+          "Deeper, higher temperature promotes solid-state ductile flow. Watch the solid rock bend. The curve turns toward lower strength. The brittle–ductile transition is gradual; its depth depends on conditions, not one universal number."
+        ]
+      ]
+    },
+    "E2T8": {
+      "description": "Open joints, move the hanging wall down and up, then show horizontal fault offset.",
+      "stages": [
+        [
+          "A break without slip",
+          "A joint is a fracture without appreciable displacement along its surface. Cooling, unloading, or stress can create joints. A fault requires relative displacement. Trace a marker layer across the break."
+        ],
+        [
+          "Normal and reverse",
+          "The hanging wall lies above this inclined plane. Move it down relative to the footwall: a normal fault, commonly associated with extension. Move it up: a reverse fault, commonly associated with shortening. A thrust is a low-angle reverse fault."
+        ],
+        [
+          "Sideways movement",
+          "In map view, the blocks slide horizontally. Matching markers become offset across a strike-slip fault. Read relative motion; cliff height alone does not identify the fault type."
+        ]
+      ]
+    },
+    "E2T9": {
+      "description": "Compress layered rock into folds and trace hinges, limbs, and axial orientation.",
+      "stages": [
+        [
+          "Shorten the layers",
+          "Compression shortens layered rock. When conditions favor ductile deformation, layers bend. Watch the beds and their boundaries change shape together."
+        ],
+        [
+          "Identify the folds",
+          "An upright arch with older layers in its core is an anticline. A trough with younger central layers is a syncline. A step-like bend is a monocline. Ages matter when later deformation overturns layers."
+        ],
+        [
+          "Read orientation",
+          "Limbs meet near a hinge. An axial surface connects hinges through successive layers. Tilt that surface to make an inclined fold. A plunging axis slopes into the ground, changing the map pattern. Describe geometry before inferring history."
+        ]
+      ]
+    },
+    "E2T10": {
+      "description": "Reorient minerals, grow visible mica, develop compositional bands, and recrystallize nonfoliated rocks.",
+      "stages": [
+        [
+          "Develop a fabric",
+          "Differential stress can rotate minerals and favor growth in preferred orientations. Fine cleavage in slate differs from larger aligned mica in schist. Foliation is a planar fabric, not one rock name."
+        ],
+        [
+          "Grow and separate minerals",
+          "Changing conditions drive mineral reactions and grain growth. Coarse light and dark bands characterize gneiss. Parent composition matters; every rock does not automatically follow this sequence."
+        ],
+        [
+          "Identify nonfoliated rocks",
+          "Quartz-rich sandstone can recrystallize into quartzite. Carbonate rock can become marble. Both can have interlocking crystals without foliation. Use composition as well as texture. Lack of foliation does not exclude metamorphism."
+        ]
+      ]
+    },
+    "E2T11": {
+      "description": "Recrystallize solid grains, move through pressure–temperature space, and exchange components with fluids.",
+      "stages": [
+        [
+          "Change a solid rock",
+          "Metamorphism changes solid rock. Grains recrystallize, grow, or react to form new minerals. If rock melts, that part of its history follows an igneous pathway."
+        ],
+        [
+          "Compare pressure and temperature",
+          "Near an intrusion, heating can occur without much additional burial. Regional burial can increase pressure and temperature. A cool subducting slab reaches high pressure at lower temperature than surrounding deep crust. Read both axes."
+        ],
+        [
+          "Add fluid interaction",
+          "Active fluids move through pores and fractures, adding or removing components. Parent composition controls which minerals can form. Minerals and fabrics constrain the history, but grade and tectonic setting require several pieces of evidence."
+        ]
+      ]
+    },
+    "E2T12": {
+      "description": "Stretch, shorten, and shear the crust, then erode and seal structures to establish a history.",
+      "stages": [
+        [
+          "Compare tectonic motion",
+          "Extension can produce normal faults, down-dropped grabens, and raised horsts. Shortening produces folds and thrusts. Sideways shear produces strike-slip displacement. Watch marker layers to define relative movement."
+        ],
+        [
+          "Expose the structures",
+          "Erosion exposes resistant inclined layers and weaker fractured zones. A dip slope follows bedding. A ridge is not automatically an anticline: resistance and erosion shape landscapes. Bedding and later cleavage can differ."
+        ],
+        [
+          "Reconstruct the sequence",
+          "A fault is younger than the layers it cuts. A continuous unit sealing the break is younger than the observed slip. New England records collision and metamorphism, then later rifting. Combine maps, fabrics, and cross-cutting relations; one rock name cannot establish every event."
+        ]
+      ]
+    }
+  }
+}

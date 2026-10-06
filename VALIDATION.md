@@ -1,5 +1,9 @@
 # Validation results and limitations
 
+## October 6, 2026 · Exam 2 addition
+
+The Chapters 7–8 addition passes structural, isolated engine/storage, media decode and source/figure checks. The public edition excludes the full supplied packet and private professor evidence. Browser verification is being performed on the deployed URL; see [Exam 2 release receipt](docs/EXAM2_RELEASE.md). The earlier browser results below are historical.
+
 Everything below was run on the packaged build (this folder), on 2026-09-23. Commands are run from this folder unless noted.
 
 ## 1. Content validator (`node tools/validate.js`)

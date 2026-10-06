@@ -1,0 +1,11 @@
+/* Additive styling follows the accepted Exam 1 palette and component spacing. */
+.e2-lesson{scroll-margin-top:120px;margin:32px 0}.e2-focused>h2{color:var(--acc)}
+.e2-evidence{font-size:.87rem;color:var(--mute);border-left:3px solid var(--acc);padding:7px 12px}
+.e2-table{overflow-x:auto}.e2-table table{width:100%;min-width:540px}.e2-table th{text-align:left}
+.e2-source{padding:12px 0;border-top:1px solid var(--line);margin-top:12px}.e2-source summary{cursor:pointer;color:var(--acc);font-weight:600}.e2-source details{padding:10px 0}
+.e2-passage{white-space:pre-wrap;font-size:.9rem;max-height:28rem;overflow:auto;line-height:1.65;padding:12px;background:var(--bg);border-radius:8px}
+.e2-source-pages{display:flex;flex-wrap:wrap;gap:12px;padding:12px 0}.e2-pending{border-color:#705c32}
+.e2-correct{color:var(--ok)}.e2-wrong{color:var(--bad)}.e2-teach-confidence{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
+.e2-lesson .media img{max-height:720px;object-fit:contain;background:#fff}.item .media.svgm{max-width:100%;overflow:hidden}
+.e2-lesson b{color:#f5c451}.e2-lesson .traps b{color:inherit}.ad-chapters{display:flex;flex-wrap:wrap;gap:6px}
+@media(max-width:560px){.e2-lesson{margin-top:24px}.e2-lesson .media-row{display:block}.ad-film-controls{align-items:flex-start}.e2-source .media img{max-height:none}.e2-evidence{line-height:1.55}}

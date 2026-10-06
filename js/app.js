@@ -21,10 +21,17 @@
   function go(h) { if (location.hash === '#' + h) route(); else location.hash = h; }
   function route() {
     var h = (location.hash || '#home').slice(1), parts = h.split('/'), r = parts[0] || 'home';
+    if(L.examScope){
+      if(r==='exam1'||r==='exam2')L.examScope.select(r);
+      if(r==='guide'&&parts[1]){var target=secById(parts[1]),ch=target?target.ch:+parts[1].replace('ch','');if(ch)L.examScope.select(ch>=7?'exam2':'exam1');}
+      var label=document.getElementById('exam-label');if(label)label.textContent='Physical Geology · '+(L.examScope.current()==='exam2'?'Exam 2 · Chapters 7–8':'Exam 1');
+    }
     document.onkeydown = null;
     setNav(r === 'evidence' ? 'sources' : r === 'session' ? (S.load().session && ['boss','case'].includes(S.load().session.mode) ? (S.load().session.mode==='case'?'cases':'boss') : 'practice') : r);
     var views = { home: pHome, guide: pGuide, practice: pPractice, session: pSession, review: pReview, cases: pCases, zhuang: pZhuang, sources: pEvidence, boss: pBoss, mock: pMock, exam1: function(args){ L.exam1.view(main,args); }, progress: pProgress, evidence: pEvidence, data: pData };
-    (views[r] || pHome)(parts.slice(1));
+    if(r==='exam2')L.exam2.view(main,parts.slice(1));
+    else if(L.examScope&&L.examScope.current()==='exam2'&&['home','guide','practice','review','cases','boss','progress','mock','sources','evidence','zhuang'].indexOf(r)>=0)L.exam2.view(main,[r].concat(parts.slice(1)));
+    else (views[r] || pHome)(parts.slice(1));
     main.focus({ preventScroll: true });
     if (r !== 'session' && r !== 'mock' && !(r === 'exam1' && parts[1] === 'take')) window.scrollTo(0, 0);
     wireZoom();
@@ -38,7 +45,7 @@
 
   // ---------------- Home ----------------
   function pHome() {
-    var st=E.conceptStats(),ids=Object.keys(L.CONCEPTS).filter(E.hasPracticeContent),s=S.load(),plan=E.reviewPlan(),d=daysToExam();
+    var st=E.conceptStats(),ids=L.examScope.concepts('exam1').filter(E.hasPracticeContent),s=S.load(),plan=E.reviewPlan(),d=daysToExam();
     var mastered=ids.filter(function(c){return st[c].status==='mastered';}).length;
     var urgent=plan.filter(function(p){return ['new','learning','prior'].indexOf(p.why)<0;}).length;
     var high=ids.filter(function(c){return st[c].highConfidenceMiss;}).length;
@@ -61,13 +68,13 @@
   }
   function stat(v, l, d) { return '<div class="stat"><b>' + esc(v) + '</b><span>' + esc(l) + '</span><small>' + esc(d) + '</small></div>'; }
   function nextSteps(st, plan, s) {
-    var out = [], unread = L.SECTIONS.filter(function (x) { return !(L.GUIDE[x.id] || []).every(function (c) { return s.guideRead[c.id]; }); });
+    var out = [], unread = L.SECTIONS.filter(function (x) { return x.ch<=6 && !(L.GUIDE[x.id] || []).every(function (c) { return s.guideRead[c.id]; }); });
     var mis = plan.filter(function (p) { return p.why === 'misconception' || p.why === 'mock' || p.why === 'shaky'; });
     if (mis.length) out.push('<li><b>Clear ' + mis.length + ' weak concept' + (mis.length > 1 ? 's' : '') + '.</b> ' + esc(mis.slice(0, 3).map(function (p) { return L.CONCEPTS[p.c].name; }).join('; ')) + (mis.length > 3 ? '…' : '') + ' <button class="btn small pri" data-go="review">Start review</button></li>');
     if (unread.length) out.push('<li><b>Study before testing.</b> Next unread guide section: <a href="#guide/' + unread[0].id + '">' + esc(unread[0].n + ' ' + unread[0].title) + '</a>.</li>');
     var newc = plan.filter(function (p) { return p.why === 'new'; });
     if (newc.length) out.push('<li><b>' + newc.length + ' concepts never attempted.</b> <button class="btn small" data-go="mixed">Mixed practice (15)</button></li>');
-    var boss = L.BOSSES.filter(function (b) { return !(s.boss[b.id] && s.boss[b.id].best !== null); });
+    var boss = L.BOSSES.filter(function (b) { return L.examScope.accepts(b,'exam1') && !(s.boss[b.id] && s.boss[b.id].best !== null); });
     if (boss.length) out.push('<li><b>Boss drill not yet completed:</b> <a href="#boss">' + esc(boss[0].title) + '</a>.</li>');
     out.unshift('<li><b>Follow the Sep 24 review.</b> <a href="#exam1">Learn and practice the reviewed topics</a>; weak topics show their first-try results and corrections.</li>');
     return out.join('');
@@ -182,19 +189,21 @@
     h.push('<div class="progress"><i style="width:' + U.pct(sess.idx, sess.queue.length) + '%"></i></div><div id="host"></div><div class="row nextrow" id="nr"></div>');
     main.innerHTML = h.join('');
     var host = $('#host'), key = String(sess.idx);
-    sess.drafts=sess.drafts||{};sess.assisted=sess.assisted||{};sess.revealed=sess.revealed||{};
+    sess.drafts=sess.drafts||{};sess.confidence=sess.confidence||{};sess.assisted=sess.assisted||{};sess.revealed=sess.revealed||{};
     var hdr = (q.retry ? '<span class="badge">Spaced retry</span> ' : '') + (isBoss ? 'Boss · ' : '') + esc((L.CONCEPTS[it.c] || {}).name || '');
     var ui = IU.render(host, it, {
       mode: sess.mode, header: hdr, order: sess.orders[key], rights: sess.orders[key + 'r'], allowHint: !isBoss,
       response: done ? sess.results[sess.idx].resp : sess.drafts[key],
       assisted:!!sess.assisted[key], revealed:!!sess.revealed[key]&&!done,
+      confidence:sess.confidence&&sess.confidence[key],onConfidence:function(cf){sess.confidence[key]=cf;sess.updated=Date.now();S.save();},
       onChange:function(v){sess.drafts[key]=U.clone(v);sess.updated=Date.now();S.save();},
-      onReveal:function(v){sess.drafts[key]=U.clone(v);sess.revealed[key]=true;sess.updated=Date.now();S.save();},
+      onReveal:function(v){sess.drafts[key]=U.clone(v);sess.revealed[key]=true;sess.updated=Date.now();S.save();setTimeout(wireZoom,0);},
       onAssist:function(){sess.assisted[key]=true;sess.updated=Date.now();S.save();},
       graded: done && it.t !== 'teach' ? E.grade(it, sess.results[sess.idx].resp) : null, locked: done,
       onSubmit: function (resp, conf, assisted) {
         var res = E.answerInSession(resp, conf, assisted);
         if (it.t !== 'teach') IU.showFeedback(host, it, resp, res.grade, {});
+        wireZoom();
         showNext();
         showMastery();
       }
@@ -205,7 +214,7 @@
       var nb = U.el('button', { class: 'btn pri', id: 'nextBtn' }, 'Next →'); nb.onclick = function () { E.advance(); pSession(); window.scrollTo(0, 0); };
       nr.appendChild(nb); nb.focus({ preventScroll: true });
     }
-    if(done&&it.t==='teach')host.querySelector('.feedback').innerHTML='<div class="fb"><b>Saved rubric self-assessment: '+esc(sess.results[sess.idx].resp.self)+'</b><p>'+it.model+'</p><p class="small muted">This rating is included in your shared concept record.</p></div>';
+    if(done&&it.t==='teach')host.querySelector('.feedback').innerHTML='<div class="fb"><b>Saved rubric self-assessment: '+esc(sess.results[sess.idx].resp.self)+'</b><p>'+it.model+'</p><p class="small muted">This rating is included in your shared concept record.</p>'+IU.srcChips(it.s)+(L.exam2?L.exam2.sourceHTML(it):'')+'</div>';
     function showMastery(){var old=host.querySelector('.mastery-feedback');if(old)old.remove();var st=E.conceptStats()[it.c];host.insertAdjacentHTML('beforeend','<p class="mastery-feedback small">'+esc(E.masteryNote(st))+' <a href="#progress">See progress</a></p>');}
     if (done) { showNext(); showMastery(); }
     document.onkeydown = function (e) {
@@ -253,7 +262,7 @@
   // ---------------- Boss ----------------
   function pBoss() {
     var s = S.load(), h = [banner(), '<h1>Boss drills</h1><p class="lede">Fixed, integrative drills of 25+ questions with feedback after each answer. Most questions combine ideas or apply them to a new diagram or scenario. Only a completed run can set a best score; retrying misses runs as ordinary practice and never changes the best.</p><div class="bossgrid">'];
-    L.BOSSES.forEach(function (b) {
+    L.BOSSES.filter(function(b){return L.examScope.accepts(b,'exam1');}).forEach(function (b) {
       var rec = s.boss[b.id], n = (b.refs || []).length + (b.gens || []).reduce(function (a, g) { return a + g[1]; }, 0) + (b.cases || []).reduce(function (a, c) { var cs = E.caseById(c); return a + (cs ? cs.items.length : 0); }, 0);
       h.push('<article class="card boss"><h2>' + esc(b.title) + '</h2><p>' + esc(b.blurb) + '</p><p class="small muted">' + n + ' questions · pass target ' + Math.round(b.pass * 100) + '% (design choice)</p>' +
         '<p class="small">Best: <b>' + (rec && rec.best !== null ? Math.round(rec.best * 100) + '%' : 'n/a') + '</b>' + (rec ? ' · runs: ' + rec.runs.map(function (r) { return r.score + '/' + r.total + (r.complete ? '' : '*'); }).join(', ') : '') + '</p><button class="btn pri" data-boss="' + b.id + '">Start</button></article>');
@@ -323,10 +332,10 @@
   // ---------------- Progress ----------------
   function pProgress() {
     var s = S.load(), st = E.conceptStats(), h = [banner(), '<h1>Progress</h1>'];
-    var ids=Object.keys(st).filter(E.hasPracticeContent),mastered=ids.filter(function(c){return st[c].status==='mastered';}).length;
-    h.push('<div class="grid4">'+stat(mastered+'/'+ids.length,'concepts mastered','Across all exercise modes')+stat(E.allAttempts(s).filter(function(a){return !a.self;}).length,'automatic checks','Practice, cases, Boss, and mocks')+stat(E.allAttempts(s).filter(function(a){return a.self;}).length,'rubric self-checks','Written work, explicitly self-assessed')+stat(ids.filter(function(c){return st[c].reviewOpen;}).length,'concepts with open misses','Later correct work clears the queue, not the original score')+'</div>');
+    var ids=L.examScope.concepts('exam1').filter(E.hasPracticeContent),mastered=ids.filter(function(c){return st[c].status==='mastered';}).length;
+    h.push('<div class="grid4">'+stat(mastered+'/'+ids.length,'concepts mastered','Across all exercise modes')+stat(E.allAttempts(s).filter(function(a){return L.examScope.conceptOwner(a.c)==='exam1'&&!a.self;}).length,'automatic checks','Practice, cases, Boss, and mocks')+stat(E.allAttempts(s).filter(function(a){return L.examScope.conceptOwner(a.c)==='exam1'&&a.self;}).length,'rubric self-checks','Written work, explicitly self-assessed')+stat(ids.filter(function(c){return st[c].reviewOpen;}).length,'concepts with open misses','Later correct work clears the queue, not the original score')+'</div>');
     var cal = { l: [0, 0], m: [0, 0], h: [0, 0] };
-    E.allAttempts(s).forEach(function (a) { if (!a.self && !a.h && !a.correction && cal[a.cf]) { cal[a.cf][1]++; if (a.ok) cal[a.cf][0]++; } });
+    E.allAttempts(s).filter(function(a){return L.examScope.conceptOwner(a.c)==='exam1';}).forEach(function (a) { if (!a.self && !a.h && !a.correction && cal[a.cf]) { cal[a.cf][1]++; if (a.ok) cal[a.cf][0]++; } });
     h.push('<div class="card"><h2>Confidence calibration</h2><div class="bars">' + [['l', 'Low'], ['m', 'Medium'], ['h', 'High']].map(function (x) { var c = cal[x[0]]; return '<div class="barrow"><span>' + x[1] + '</span><div class="b"><i style="width:' + U.pct(c[0], c[1]) + '%"></i></div><span>' + (c[1] ? U.pct(c[0], c[1]) + '% of ' + c[1] : 'n/a') + '</span></div>'; }).join('') + '</div><p class="small muted">Automatic first responses from every exercise mode. Corrections, hints, and rubric self-ratings are kept out of confidence calibration.</p></div>');
     if (s.legacy) h.push('<div class="infobox small">Old-lab history imported ' + U.fmtDate(s.legacy.imported) + ' (' + esc((s.legacy.sources || []).join(', ')) + '): ' + s.legacy.mapped + ' mappings. Shown as "old lab" badges; it does not grant v3 mastery.</div>');
     for (var ch = 1; ch <= 6; ch++) {
@@ -334,7 +343,7 @@
       secsOfCh(ch).forEach(function (sec) { conceptsOfSec(sec.id).filter(E.hasPracticeContent).forEach(function (c) { var x = st[c]; h.push('<tr><td>' + esc(L.CONCEPTS[c].name) + ' <span class="small muted">' + esc(sec.n) + '</span>' + (x.prior ? ' <span class="badge" title="' + esc('Old lab: ' + x.prior.ok + '/' + x.prior.att + (x.prior.mastered ? ', marked mastered' : '')) + '">old lab</span>' : '') + (x.reviewOpen ? ' <span class="badge st-shaky">'+(x.highConfidenceMiss?'high-confidence miss':'review needed')+'</span>' : '') + '</td><td>' + statusBadge(x.status) + '<p class="small muted">'+esc(E.masteryNote(x))+'</p>' + '</td><td>' + (x.att ? x.ok + '/' + x.att : 'n/a') + '</td><td class="small">' + (x.att ? (x.isDue ? 'due now' : x.due) : 'n/a') + '</td></tr>'); }); });
       h.push('</table></details>');
     }
-    var bk = Object.keys(s.boss);
+    var bk = Object.keys(s.boss).filter(function(id){var b=L.BOSSES.find(function(b){return b.id===id;});return !b||L.examScope.accepts(b,'exam1');});
     if (bk.length) { h.push('<div class="card"><h2>Boss history</h2><table class="t"><tr><th>Boss</th><th>Best (complete runs only)</th><th>Runs</th></tr>'); bk.forEach(function (k) { var b = L.BOSSES.filter(function (x) { return x.id === k; })[0]; h.push('<tr><td>' + esc(b ? b.title : k) + '</td><td>' + (s.boss[k].best === null ? 'n/a' : Math.round(s.boss[k].best * 100) + '%') + '</td><td class="small">' + s.boss[k].runs.map(function (r) { return r.score + '/' + r.total + (r.complete ? '' : ' (incomplete)'); }).join(', ') + '</td></tr>'); }); h.push('</table></div>'); }
     main.innerHTML = h.join('');
   }
@@ -355,7 +364,7 @@
     h.push('<div class="card"><h2>Coverage by chapter</h2><table class="t"><tr><th>Chapter</th><th>Current-course evidence used</th><th>Limits</th></tr>' + (L.COVERAGE || []).map(function (r) { return '<tr><td>' + esc(r[0]) + '</td><td class="small">' + r[1] + '</td><td class="small">' + r[2] + '</td></tr>'; }).join('') + '</table></div>');
     h.push('<div class="card"><h2>Conflicts and caveats</h2><ul>' + (L.CONFLICTS || []).map(function (x) { return '<li>' + x + '</li>'; }).join('') + '</ul></div>');
     var counts = {}; E.itemsFor(function () { return true; }).forEach(function (it) { (it.s || []).forEach(function (c) { var b = L.srcParse(c).base; counts[b] = (counts[b] || 0) + 1; }); });
-    h.push('<div class="card"><h2>Source ledger (runtime)</h2><table class="t"><tr><th>Code</th><th>Source</th><th>Tier</th><th>Items citing</th></tr>' + Object.keys(L.SOURCES).map(function (k) { var s = L.SOURCES[k]; return '<tr><td><code>' + k + '</code></td><td>' + esc(s.t) + '<br><span class="tiny muted">' + esc(s.f) + (s.note ? ': ' + esc(s.note) : '') + '</span></td><td>' + IU.tierBadge(s.tier) + '</td><td>' + (counts[k] || 0) + '</td></tr>'; }).join('') + '</table><p class="small muted">The full review ledger (what was read, how deeply, and how it shaped the lab) is in <code>docs/SOURCE_LEDGER.md</code>.</p></div>');
+    h.push('<div class="card"><h2>Source ledger (runtime)</h2><table class="t"><tr><th>Code</th><th>Source</th><th>Tier</th><th>Items citing</th></tr>' + Object.keys(L.SOURCES).filter(function(k){return !/^E2|^TB[78]$/.test(k);}).map(function (k) { var s = L.SOURCES[k]; return '<tr><td><code>' + k + '</code></td><td>' + esc(s.t) + '<br><span class="tiny muted">' + esc(s.f) + (s.note ? ': ' + esc(s.note) : '') + '</span></td><td>' + IU.tierBadge(s.tier) + '</td><td>' + (counts[k] || 0) + '</td></tr>'; }).join('') + '</table><p class="small muted">The full review ledger (what was read, how deeply, and how it shaped the lab) is in <code>docs/SOURCE_LEDGER.md</code>.</p></div>');
     main.innerHTML = h.join('');
   }
 

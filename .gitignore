@@ -9,3 +9,17 @@ node_modules/
 STUDY LAB BACKUPS/
 
 videos/qa-process/
+
+# Private Exam 2 course packet, extracted publisher text, personal evidence and QA.
+source-materials/exam2-audit/
+assets/img/exam2/
+js/content/exam2-sources.private.js
+docs/EXAM2_*.md
+docs/validation-logs/exam2/
+videos/qa-exam2/
+videos/exam2-clear/align/
+
+# Local-only build receipts; release notes are separately sanitized.
+source-materials/exam2-publish/
+
+!docs/EXAM2_RELEASE.md
