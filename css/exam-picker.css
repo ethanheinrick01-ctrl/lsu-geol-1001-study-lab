@@ -1,0 +1,41 @@
+/* Course entrance follows Ethan's supplied exam-chooser reference. */
+body.exam-picker-page {background:#030607;color:#d4e2ed;}
+.exam-picker-page .top,.exam-picker-page .foot {display:none;}
+.exam-picker-page main {max-width:1340px;padding:0 28px 64px;min-height:100vh;}
+.exam-picker {--picker-link:#62ceff;--picker-purple:#b092ff;--picker-muted:#b8b1a6;--picker-line:#625d50;}
+.exam-picker-crumb {padding:28px 26px;border-bottom:1px solid var(--picker-line);}
+.exam-picker a {color:var(--picker-link);text-decoration:none;}
+.exam-picker a:hover {color:#a6e5ff;}
+.exam-picker-crumb a {font-size:18px;}
+.exam-picker-intro {padding:40px 26px 28px;}
+.exam-picker-course {margin:0;color:var(--picker-purple);font-size:14px;font-weight:550;letter-spacing:2px;}
+.exam-picker-heading {display:flex;align-items:center;justify-content:space-between;gap:24px;max-width:880px;margin:44px 0 46px;}
+.exam-picker h1 {margin:0;font-size:clamp(42px,5vw,70px);line-height:1.08;font-weight:790;letter-spacing:-2.7px;color:#d4e2ed;}
+.exam-picker-mark {width:58px;height:58px;flex:0 0 58px;}
+.exam-picker-lede {margin:0;color:var(--picker-muted);font-size:20px;line-height:1.55;}
+.exam-picker-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;padding:6px 26px 0;}
+.exam-picker-card {display:flex;flex-direction:column;align-items:flex-start;min-height:332px;background:#0b1018;border:1px solid var(--picker-line);border-radius:24px;padding:32px;}
+.exam-picker-status {display:inline-block;border:1px solid var(--picker-line);border-radius:999px;padding:5px 12px;color:var(--picker-purple);font-size:15px;line-height:1.55;}
+.exam-picker-card h2 {margin:20px 0 34px;font-size:35px;line-height:1.15;font-weight:740;letter-spacing:-.7px;color:#d4e2ed;}
+.exam-picker-card p {margin:0 0 24px;color:var(--picker-muted);font-size:19px;line-height:1.6;}
+.exam-picker-card .exam-picker-scope {font-size:14px;line-height:1.5;margin:-8px 0 22px;color:var(--picker-muted);}
+.exam-picker-card>a {margin-top:auto;font-size:19px;line-height:1.5;font-weight:550;}
+.exam-picker-note {margin:34px 26px 40px;color:var(--picker-muted);font-size:16px;}
+.exam-picker-rule {border-bottom:1px solid var(--picker-line);}
+.exam-picker a:focus-visible {outline:3px solid var(--picker-link);outline-offset:6px;border-radius:3px;}
+@media(max-width:1060px){.exam-picker-grid{grid-template-columns:repeat(2,minmax(0,1fr));}.exam-picker-card{min-height:326px;}.exam-picker-heading{max-width:100%;}}
+@media(max-width:620px){
+ .exam-picker-page main {padding:0 20px 36px;}
+ .exam-picker-crumb {padding:23px 0;}
+ .exam-picker-intro {padding:34px 0 26px;}
+ .exam-picker-course {font-size:12px;letter-spacing:1.5px;line-height:1.6;}
+ .exam-picker-heading {margin:30px 0;gap:15px;}
+ .exam-picker h1 {font-size:43px;letter-spacing:-1.6px;}
+ .exam-picker-mark {width:43px;height:43px;flex-basis:43px;}
+ .exam-picker-lede {font-size:18px;}
+ .exam-picker-grid {grid-template-columns:1fr;padding:4px 0 0;gap:18px;}
+ .exam-picker-card {min-height:310px;padding:27px;}
+ .exam-picker-card h2 {font-size:32px;margin-bottom:28px;}
+ .exam-picker-card p {font-size:18px;}
+ .exam-picker-note {margin:30px 0;line-height:1.6;}
+}

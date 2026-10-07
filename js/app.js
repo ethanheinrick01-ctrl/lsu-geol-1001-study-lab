@@ -20,7 +20,8 @@
   function statusBadge(st) { return '<span class="badge st-' + st + '">' + STATUS[st] + '</span>'; }
   function go(h) { if (location.hash === '#' + h) route(); else location.hash = h; }
   function route() {
-    var h = (location.hash || '#home').slice(1), parts = h.split('/'), r = parts[0] || 'home';
+    var h = (location.hash || '#exams').slice(1), parts = h.split('/'), r = parts[0] || 'exams';
+    document.body.classList.toggle('exam-picker-page', r === 'exams');
     if(L.examScope){
       if(r==='exam1'||r==='exam2')L.examScope.select(r);
       if(r==='guide'&&parts[1]){var target=secById(parts[1]),ch=target?target.ch:+parts[1].replace('ch','');if(ch)L.examScope.select(ch>=7?'exam2':'exam1');}
@@ -29,7 +30,8 @@
     document.onkeydown = null;
     setNav(r === 'evidence' ? 'sources' : r === 'session' ? (S.load().session && ['boss','case'].includes(S.load().session.mode) ? (S.load().session.mode==='case'?'cases':'boss') : 'practice') : r);
     var views = { home: pHome, guide: pGuide, practice: pPractice, session: pSession, review: pReview, cases: pCases, zhuang: pZhuang, sources: pEvidence, boss: pBoss, mock: pMock, exam1: function(args){ L.exam1.view(main,args); }, progress: pProgress, evidence: pEvidence, data: pData };
-    if(r==='exam2')L.exam2.view(main,parts.slice(1));
+    if(r==='exams')pExams();
+    else if(r==='exam2')L.exam2.view(main,parts.slice(1));
     else if(L.examScope&&L.examScope.current()==='exam2'&&['home','guide','practice','review','cases','boss','progress','mock','sources','evidence','zhuang'].indexOf(r)>=0)L.exam2.view(main,[r].concat(parts.slice(1)));
     else (views[r] || pHome)(parts.slice(1));
     main.focus({ preventScroll: true });
@@ -41,6 +43,18 @@
       if (b._z) return; b._z = 1;
       b.addEventListener('click', function () { var d = $('#zoomdlg'); $('#zoomimg').src = b.getAttribute('data-zoom'); $('#zoomimg').alt = b.getAttribute('data-cap') || ''; $('#zoomcap').textContent = b.getAttribute('data-cap') || ''; if (d.showModal) d.showModal(); else d.setAttribute('open', ''); });
     });
+  }
+
+  function pExams() {
+    main.innerHTML = '<div class="exam-picker">'+
+      '<div class="exam-picker-crumb"><a href="https://ethanheinrick01-ctrl.github.io/PUGZPLZ/">← All classes</a></div>'+
+      '<section class="exam-picker-intro"><p class="exam-picker-course">GEOL 1001 · GENERAL GEOLOGY: PHYSICAL</p>'+
+      '<div class="exam-picker-heading"><h1>Choose your exam.</h1><svg class="exam-picker-mark" viewBox="0 0 64 64" aria-hidden="true"><rect x="1" y="1" width="62" height="62" rx="19" fill="#0d191c" stroke="#52605c"/><path d="m15 29 17-10 17 10-17 10z" fill="#b69cff"/><path d="m15 36 17 10 17-10M15 43l17 10 17-10" fill="none" stroke="#6ac9ce" stroke-width="4" stroke-linejoin="round"/></svg></div>'+
+      '<p class="exam-picker-lede">Each exam has its own study guide, practice, and saved progress.</p></section>'+
+      '<div class="exam-picker-grid">'+
+      '<article class="exam-picker-card"><span class="exam-picker-status">Study lab available</span><h2>Exam 1</h2><p>Chapters 1–6. Guide, practice, mocks, and narrated films.</p><a href="#exam1" aria-label="Open Exam 1 study lab">Open study lab →</a></article>'+
+      '<article class="exam-picker-card"><span class="exam-picker-status">Chapters 7–8 available</span><h2>Exam 2</h2><p>Guide, practice, Boss drills, and narrated films for Chapters 7–8.</p><p class="exam-picker-scope">Chapters 9–12 pending · mocks locked</p><a href="#exam2" aria-label="Open Exam 2 study lab">Open study lab →</a></article>'+
+      '</div><p class="exam-picker-note">Exam 1 and Chapters 7–8 of Exam 2 are live.</p><div class="exam-picker-rule"></div></div>';
   }
 
   // ---------------- Home ----------------

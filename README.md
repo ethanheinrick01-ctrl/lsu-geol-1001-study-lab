@@ -18,6 +18,8 @@ Progress retains `geol1001-lab-v3`, schema 3, stable Exam 1 IDs and keys, earned
 
 ## Open it
 
+The main entrance provides the exam chooser. Open an exam card to enter its existing lab; use **← Exams** to return. Direct Exam 1 and Exam 2 links still work.
+
 **Main study URL:** https://ethanheinrick01-ctrl.github.io/lsu-geol-1001-study-lab/ . Select Exam 1 or Exam 2.
 
 **Offline copy:** double-click `index.html`. It opens in your browser from the file itself. No internet, install, account, or paid API is needed.
@@ -72,7 +74,7 @@ The September 24 exam review supplies the exam format and focus. Repeated lectur
 
 Course slides and textbook figures are included for your personal study only. Do not share the folder.
 
-Storage key: `geol1001-lab-v3`. Old-lab keys (`geol1001-guided-progress-v1`, `geol1001-study-lab-progress-v1`) are read, never written. Version 4.0.2, updated 2026-10-06; storage schema remains 3.
+Storage key: `geol1001-lab-v3`. Old-lab keys (`geol1001-guided-progress-v1`, `geol1001-study-lab-progress-v1`) are read, never written. Version 4.0.3, updated 2026-10-06; storage schema remains 3.
 
 
 ## September 24 Exam 1 update

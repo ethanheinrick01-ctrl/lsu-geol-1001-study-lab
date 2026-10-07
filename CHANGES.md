@@ -105,3 +105,7 @@ Kept the existing storage key/schema, earlier IDs and keys, earned mastery, firs
 ## October 6, 2026 · main URL release
 
 Exam 2 Chapters 7–8 is prepared for the existing GitHub Pages URL. Public source support uses original study explanations and diagrams with section citations; the full private packet and professor evidence remain local. Cache versions are refreshed without changing progress keys or first-response records.
+
+## October 6, 2026 · exam chooser
+
+The main entrance now matches the supplied dark exam-card reference, with an Exam 1 card and a Chapters 7–8 Exam 2 card. Existing study views, direct routes, assessment IDs and browser storage remain intact. The study navigation includes a return to the chooser.
