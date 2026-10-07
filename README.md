@@ -72,7 +72,7 @@ The September 24 exam review supplies the exam format and focus. Repeated lectur
 
 Course slides and textbook figures are included for your personal study only. Do not share the folder.
 
-Storage key: `geol1001-lab-v3`. Old-lab keys (`geol1001-guided-progress-v1`, `geol1001-study-lab-progress-v1`) are read, never written. Version 4.0.1, updated 2026-10-06; storage schema remains 3.
+Storage key: `geol1001-lab-v3`. Old-lab keys (`geol1001-guided-progress-v1`, `geol1001-study-lab-progress-v1`) are read, never written. Version 4.0.2, updated 2026-10-06; storage schema remains 3.
 
 
 ## September 24 Exam 1 update

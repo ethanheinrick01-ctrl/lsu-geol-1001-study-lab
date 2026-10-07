@@ -19,7 +19,7 @@
       m=Object.assign({},m,{src:crop?'assets/figures/exam2/'+file:original.indexOf('ilea')>=0?'assets/diagrams/exam2/moho.svg':'assets/diagrams/exam2/'+(t?t.id:'E2T1')+'.svg',cap:crop?m.cap:'Original lab schematic · full supplied pages remain in the local edition',alt:crop?m.alt:'Course-based study diagram'});
     }
     if (Array.isArray(m)) return '<div class="media-row">' + m.map(function (x) { return mediaHTML(x, opts); }).join('') + '</div>';
-    if (m.kind === 'img') return '<figure class="media"><button type="button" class="zoom" data-zoom="' + esc(m.src) + '" data-cap="' + esc(m.cap || m.alt || '') + '" aria-label="Enlarge image"><img src="' + esc(m.src) + '" alt="' + esc(m.alt || '') + '" loading="lazy"></button>' + (m.cap ? '<figcaption>' + esc(m.cap) + '</figcaption>' : '') + '</figure>';
+    if (m.kind === 'img') return '<figure class="media"><button type="button" class="zoom" data-zoom="' + esc(m.src) + '" data-cap="' + esc(m.cap || m.alt || '') + '" aria-label="Enlarge image"><img src="' + esc(m.src) + '" alt="' + esc(m.alt || '') + '" loading="lazy"'+(/\.svg$/.test(m.src)?' width="960" height="460"':'')+'></button>' + (m.cap ? '<figcaption>' + esc(m.cap) + '</figcaption>' : '') + '</figure>';
     if (m.kind === 'svg' && L.MEDIA[m.name]) return '<figure class="media svgm">' + L.MEDIA[m.name](m.spec || {}, opts) + (m.cap ? '<figcaption>' + esc(m.cap) + '</figcaption>' : '') + '</figure>';
     if (m.kind === 'missing') return '<div class="missing"><b>Source figure unavailable.</b> ' + esc(m.note || '') + '</div>';
     return '';

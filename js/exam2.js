@@ -1,6 +1,6 @@
 /* Exam 2 workspace. Teaching shares the existing renderer, grading, and progress engine. */
 (function(L){
-'use strict';var U=L.util,E=L.engine,S=L.store,I=L.itemUI,esc=U.esc;
+'use strict';L.CONFIG.version='4.0.2 · Exam 2 Chapters 7–8 (2026-10-06)';var U=L.util,E=L.engine,S=L.store,I=L.itemUI,esc=U.esc;
 function topic(id){return L.EXAM2.topics.find(function(t){return t.id===id;});}
 function chapterLabel(chs){var n=chs.length;if(!n)return 'No chapters';var contiguous=chs.every(function(ch,i){return !i||ch===chs[i-1]+1;});return (n===1?'Chapter ':'Chapters ')+(n>1&&contiguous?chs[0]+'–'+chs[n-1]:chs.join(', '));}
 function metrics(t){var st=E.conceptStats(),ids=t?t.concepts:L.examScope.concepts('exam2');return {total:ids.length,mastered:ids.filter(function(c){return st[c].status==='mastered';}).length,review:ids.filter(function(c){return st[c].reviewOpen;}).length};}

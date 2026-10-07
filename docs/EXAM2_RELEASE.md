@@ -1,6 +1,6 @@
 # Exam 2 · Chapters 7–8
 
-October 6, 2026 · version 4.0.1 · GEOL 1001, Fall 2026.
+October 6, 2026 · version 4.0.2 · GEOL 1001, Fall 2026.
 
 The available scope is 7.1–7.16 and 8.1–8.15, arranged into six focused teaching groups per chapter. Each group includes a Clear narrated process film, explanatory lessons, comparisons, common confusions, diagrams, and linked practice. Lecture-confirmed coverage and textbook continuation are distinguished in the lessons.
 
