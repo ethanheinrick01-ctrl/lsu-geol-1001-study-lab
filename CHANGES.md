@@ -1,5 +1,9 @@
 # What changed from the supplied study lab
 
+## October 7, 2026 · Organized Exam 2 Review
+
+Exam 2 Review now groups all 31 available concepts under Chapters 7 and 8 and their twelve existing lesson groups. Topics expand to show aligned concept names, review statuses, guide links, and selection checkboxes. Quick starts support smart review or one chapter; a question limit, status filter, group selection, and custom selection make focused sessions easier to start. Not-started material is distinguished from actual review needs, and earned mastery remains visible after a later miss. Assessment content, grading, storage keys, and saved progress are unchanged.
+
 The original lab (`STUDY LAB/` in the handoff ZIP) was left untouched. v3 is a separate build with its own storage key. This file lists what the audit found in the old lab and what v3 does instead.
 
 ## Audit of the old lab (what was found)
