@@ -1,6 +1,6 @@
 # Exam 2 · Chapters 7–8
 
-October 6, 2026 · version 4.0.3 · GEOL 1001, Fall 2026.
+October 7, 2026 · version 4.0.4 · GEOL 1001, Fall 2026.
 
 The available scope is 7.1–7.16 and 8.1–8.15, arranged into six focused teaching groups per chapter. Each group includes a Clear narrated process film, explanatory lessons, comparisons, common confusions, diagrams, and linked practice. Lecture-confirmed coverage and textbook continuation are distinguished in the lessons.
 
@@ -19,3 +19,7 @@ Published to the existing main Geology URL. The root URL now opens “Choose you
 Live verification used fresh isolated Chrome contexts, never the student's existing profile. Thirty-six interaction/storage checks and twenty-five media/layout checks passed for the Chapters 7–8 release. All twelve films loaded captions, played and sought to their final stage. Both exam drafts survived switching, reload, actual JSON download and file import while retaining immutable first scores. Confidence gating, red/green feedback, Direct source zoom, spaced retries, rubric checks, term/match feedback and partial/full Boss scoring passed. No script errors, failed published assets or outside-service requests occurred; the full private source index is not deployed.
 
 Fourteen further checks passed for the new chooser: bare URL entry, correct coverage, both exam cards, returned drafts/first scores, deep routes, phone stacking/overflow, keyboard links and no script errors. Desktop and phone screenshots were visually reviewed against the supplied reference. A fully loaded film also played and sought with captions after networking was disabled. This latter check does not certify an offline page reload or the private file origin. Earlier Exam 1 browser receipts remain historical.
+
+October 7 Review update: all 31 available concepts are organized under two chapter headings and twelve collapsible lesson groups. Aligned rows include review statuses, earned-mastery badges, guide links and concept selection. Quick starts offer smart review or one chapter, with a question limit. Filters separate concepts needing review from untouched material; group selection and custom sessions stay within Exam 2. The direct Exam 2 Review route highlights the Review navigation tab. The assessment bank, grading and storage schema are unchanged.
+
+Live Review checks used isolated Chrome storage: concept coverage, keyboard accordions, empty filters, group/custom selection, chapter limits, review priority, retained mastery, both exam drafts, immutable first scores, reload and export/import passed. Desktop, phone, tablet and enlarged-text layouts fit without horizontal overflow. Status text passed contrast checks. Desktop and phone screenshots were visually reviewed in fresh and recent-miss states. The accepted exam chooser and all sixteen Exam 1 topic groups still open correctly; no script errors or unexpected failed requests occurred.

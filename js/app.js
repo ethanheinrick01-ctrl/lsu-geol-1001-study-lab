@@ -28,7 +28,7 @@
       var label=document.getElementById('exam-label');if(label)label.textContent='Physical Geology · '+(L.examScope.current()==='exam2'?'Exam 2 · Chapters 7–8':'Exam 1');
     }
     document.onkeydown = null;
-    setNav(r === 'evidence' ? 'sources' : r === 'session' ? (S.load().session && ['boss','case'].includes(S.load().session.mode) ? (S.load().session.mode==='case'?'cases':'boss') : 'practice') : r);
+    setNav(r === 'exam2' && parts[1] === 'review' ? 'review' : r === 'evidence' ? 'sources' : r === 'session' ? (S.load().session && ['boss','case'].includes(S.load().session.mode) ? (S.load().session.mode==='case'?'cases':'boss') : 'practice') : r);
     var views = { home: pHome, guide: pGuide, practice: pPractice, session: pSession, review: pReview, cases: pCases, zhuang: pZhuang, sources: pEvidence, boss: pBoss, mock: pMock, exam1: function(args){ L.exam1.view(main,args); }, progress: pProgress, evidence: pEvidence, data: pData };
     if(r==='exams')pExams();
     else if(r==='exam2')L.exam2.view(main,parts.slice(1));
