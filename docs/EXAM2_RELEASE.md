@@ -1,5 +1,13 @@
 # Exam 2 · Chapters 7–8
 
+## October 8 reading-color release · 4.1.1
+
+Guide and Learn now use selective cyan text for key terms and complete distinctions, with gold reserved for documented lecture emphasis. The stress/strength and brittle–ductile selections reflect repeated October 1 and 6 lecture treatment. All 31 Guide sections, both introductory cards, twelve topic lessons and selected comparison-table cells have explicit editorial plans. A reading key explains the colors. Question stems, answer choices, tempting mistakes and assessment feedback do not receive this treatment.
+
+This is a presentation update. All 796 registered tasks, including 169 Exam 2 tasks, and the underlying Guide text are unchanged. The shared storage key, question snapshots and existing progress contracts remain intact. Forty-two relevant existing checks passed; actual browser checks covered all Guide sections and topic lessons, neutral unanswered choices, checked feedback, and 390px layouts. Both prose colors exceed 9:1 contrast on the current reading-card background. Versioned URLs load the new styles and renderer.
+
+The remaining Chapter 8 lesson-layout remediation described below is still pending; this color update does not replace it.
+
 ## October 8 interface release · 4.1.0
 
 Exam 2 now uses the existing Exam 1 topic-card and lesson helpers and the shared Home, Guide, Practice, Review, Cases, Boss, Progress, Sources and Data views. Cards expose Learn, Practice topic, Practice figure, saved checks, mastery bars and expandable details. Chapter 7's six lesson groups include selected course-figure crops and connected figure/writing practice. The source-based brittle–ductile lesson includes the reviewed animation, captions, graph exercises and repeat-practice record. Chapter 8's remaining lesson treatment is still pending.
