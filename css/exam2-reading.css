@@ -1,5 +1,5 @@
-/* Reading roles stay visibly separate: blue navigation, lavender terms, gold emphasis. */
-[data-e2-reading],.e2-reading-key{--e2-study-gold:#f4c86b;--e2-study-term:#d8b4fe}
+/* Reading roles stay visibly separate: blue navigation, vivid magenta terms, gold emphasis. */
+[data-e2-reading],.e2-reading-key{--e2-study-gold:#f4c86b;--e2-study-term:#ff4fd8}
 [data-e2-reading] mark.e2-study-term,[data-e2-reading] mark.e2-study-emphasis{background:none;color:var(--e2-study-term);font-weight:700;border-radius:2px}
 [data-e2-reading] mark.e2-study-emphasis{color:var(--e2-study-gold);box-shadow:0 2px 0 #f4c86b33}
 .e2-reading-key{display:flex;flex-wrap:wrap;gap:8px 24px;margin:12px 0 16px;color:var(--mute);font-size:13px;line-height:1.5}

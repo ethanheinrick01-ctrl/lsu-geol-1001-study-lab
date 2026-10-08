@@ -1,5 +1,11 @@
 # Exam 2 · Chapters 7–8
 
+## October 8 vivid magenta correction · 4.1.3
+
+Curated key terms and distinctions now use vivid magenta (`#ff4fd8`). This supersedes the rejected cyan and pastel lavender treatments. Blue headings and links, gold documented lecture emphasis, and neutral connecting prose retain their existing roles. The visible legend and asset versions match the new palette.
+
+This presentation change preserves teaching wording, phrase selections, question banks, feedback, layout, stable IDs, and the shared progress record.
+
 ## October 8 palette correction · 4.1.2
 
 Curated terms and distinctions are now lavender, visibly separate from the existing blue headings and links. Gold still denotes documented lecture emphasis. This supersedes the initial cyan palette below: the full reading card made blue and cyan too easy to confuse even though both passed text-contrast checks. The legend matches the new palette. Text, emphasis selections, layout, questions, progress and assessment-feedback colors are unchanged.
