@@ -1,5 +1,9 @@
 # Exam 2 · Chapters 7–8
 
+## October 8 palette correction · 4.1.2
+
+Curated terms and distinctions are now lavender, visibly separate from the existing blue headings and links. Gold still denotes documented lecture emphasis. This supersedes the initial cyan palette below: the full reading card made blue and cyan too easy to confuse even though both passed text-contrast checks. The legend matches the new palette. Text, emphasis selections, layout, questions, progress and assessment-feedback colors are unchanged.
+
 ## October 8 reading-color release · 4.1.1
 
 Guide and Learn now use selective cyan text for key terms and complete distinctions, with gold reserved for documented lecture emphasis. The stress/strength and brittle–ductile selections reflect repeated October 1 and 6 lecture treatment. All 31 Guide sections, both introductory cards, twelve topic lessons and selected comparison-table cells have explicit editorial plans. A reading key explains the colors. Question stems, answer choices, tempting mistakes and assessment feedback do not receive this treatment.

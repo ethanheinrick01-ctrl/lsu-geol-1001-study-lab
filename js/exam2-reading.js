@@ -2,7 +2,7 @@
 (function(L){
   'use strict';
   var lecture='Repeated lecture emphasis · October 1 and 6 · textbook §8.1–8.2';
-  function field(selector,cyan,gold){return {selector:selector,cyan:cyan||[],gold:gold||[]};}
+  function field(selector,terms,gold){return {selector:selector,terms:terms||[],gold:gold||[]};}
   function paragraphs(rows){return rows.map(function(terms,i){return field('p:nth-of-type('+(i+1)+')',terms);});}
   var plans={
     'g7-intro':paragraphs([
@@ -211,7 +211,7 @@
     var tokens=html.split(/(<[^>]+>)/g),text='',runs=[];
     tokens.forEach(function(t,i){if(i%2===0){runs.push({i:i,start:text.length,end:text.length+t.length});text+=t;}});
     var ranges=[],low=text.toLowerCase();
-    (spec.gold.concat(spec.cyan)).slice().sort(function(a,b){return b.length-a.length;}).forEach(function(phrase){
+    (spec.gold.concat(spec.terms)).slice().sort(function(a,b){return b.length-a.length;}).forEach(function(phrase){
       var key=phrase.toLowerCase();if(used.has(key))return;
       var at=low.indexOf(key);
       while(at>=0){
@@ -233,7 +233,7 @@
     var roots=Array.from(main.querySelectorAll('[data-e2-reading]')).filter(function(root){return !root.closest('.item,.feedback,.opts,.casebox');});
     roots.forEach(function(root){var plan=plans[root.dataset.e2Reading];if(!plan||root.dataset.e2Colored)return;var used=new Set();plan.forEach(function(spec){root.querySelectorAll(spec.selector).forEach(function(el){el.innerHTML=richHTML(el.innerHTML,spec,used);});});root.dataset.e2Colored='true';});
     if(!roots.length||main.querySelector('.e2-reading-key'))return;
-    var key=document.createElement('aside');key.className='e2-reading-key';key.setAttribute('aria-label','Reading color key');key.innerHTML='<span><i class="e2-key-dot gold" aria-hidden="true"></i>Gold: documented lecture emphasis</span><span><i class="e2-key-dot cyan" aria-hidden="true"></i>Cyan: key terms and distinctions</span><small>Colors guide study; they do not predict exam questions.</small>'+(main.querySelector('mark.e2-study-emphasis')?'<small>Gold here: repeated in the October 1 and 6 lectures · textbook §8.1–8.2.</small>':'');
+    var key=document.createElement('aside');key.className='e2-reading-key';key.setAttribute('aria-label','Reading color key');key.innerHTML='<span><i class="e2-key-dot gold" aria-hidden="true"></i>Gold: documented lecture emphasis</span><span><i class="e2-key-dot term" aria-hidden="true"></i>Lavender: key terms and distinctions</span><small>Colors guide study; they do not predict exam questions.</small>'+(main.querySelector('mark.e2-study-emphasis')?'<small>Gold here: repeated in the October 1 and 6 lectures · textbook §8.1–8.2.</small>':'');
     var anchor=main.querySelector('.sechead')||roots[0].closest('.card')||roots[0];if(anchor.classList.contains('sechead'))anchor.after(key);else anchor.before(key);
   }
   L.exam2Reading={plans:plans,cardHTML:cardHTML,wrap:wrap,richHTML:richHTML,apply:apply};

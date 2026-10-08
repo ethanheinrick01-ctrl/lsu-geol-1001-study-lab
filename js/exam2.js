@@ -1,6 +1,6 @@
 /* Exam 2 workspace. Teaching shares the existing renderer, grading, and progress engine. */
 (function(L){
-'use strict';L.CONFIG.version='4.1.1 · Exam 2 reading emphasis (2026-10-08)';var U=L.util,E=L.engine,S=L.store,I=L.itemUI,esc=U.esc;
+'use strict';L.CONFIG.version='4.1.2 · Exam 2 reading emphasis (2026-10-08)';var U=L.util,E=L.engine,S=L.store,I=L.itemUI,esc=U.esc;
 function topic(id){return L.EXAM2.topics.find(function(t){return t.id===id;});}
 function chapterLabel(chs){var n=chs.length;if(!n)return 'No chapters';var contiguous=chs.every(function(ch,i){return !i||ch===chs[i-1]+1;});return (n===1?'Chapter ':'Chapters ')+(n>1&&contiguous?chs[0]+'–'+chs[n-1]:chs.join(', '));}
 function conceptChapter(c){var sec=L.SECTIONS.find(function(s){return s.id===L.CONCEPTS[c].sec;});return sec?sec.ch:0;}
