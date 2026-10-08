@@ -1,5 +1,13 @@
 # Exam 2 · Chapters 7–8
 
+## October 8 interface release · 4.1.0
+
+Exam 2 now uses the existing Exam 1 topic-card and lesson helpers and the shared Home, Guide, Practice, Review, Cases, Boss, Progress, Sources and Data views. Cards expose Learn, Practice topic, Practice figure, saved checks, mastery bars and expandable details. Chapter 7's six lesson groups include selected course-figure crops and connected figure/writing practice. The source-based brittle–ductile lesson includes the reviewed animation, captions, graph exercises and repeat-practice record. Chapter 8's remaining lesson treatment is still pending.
+
+The hosted and local editions render identical topic-map HTML for the same saved state. Both register 169 Exam 2 tasks with matching stems and answer contracts. The release publishes only the selected lesson crops and media; complete source pages, classroom photographs, private calibration and audit records remain local. Local and hosted browser origins retain their own progress. Full mocks remain locked pending Chapters 9–12.
+
+Compatibility checks preserve Exam 1 assessment records, the shared storage key, immutable first responses, confidence, drafts and import/export. Seven behavior suites passed 97 checks; six additional release checks cover local/hosted map equality, answer parity, selected crop integrity, lesson assets and publication boundaries. Structural validation reports zero errors and the existing `c4-silstruct-p1` marker warning. Script and stylesheet URLs changed to version 4.1.0 for updated files so returning browsers load this release.
+
 October 7, 2026 · version 4.0.4 · GEOL 1001, Fall 2026.
 
 The available scope is 7.1–7.16 and 8.1–8.15, arranged into six focused teaching groups per chapter. Each group includes a Clear narrated process film, explanatory lessons, comparisons, common confusions, diagrams, and linked practice. Lecture-confirmed coverage and textbook continuation are distinguished in the lessons.

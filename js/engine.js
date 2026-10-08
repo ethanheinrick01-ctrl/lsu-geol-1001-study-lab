@@ -214,9 +214,13 @@
     var g = record(it, q.ref, response, conf, sess.mode, assisted);
     sess = L.store.load().session;
     sess.results.push({ key: refKey(q.ref), c: it.c, ok: g.ok, sc: g.sc, cf: conf, retry: q.retry, t: it.t, h: assisted ? 1 : 0, resp: U.clone(response) });
+    // New figure tracks need the actual answer date, including resumed sessions.
+    // Earlier records and their first scores are not rewritten.
+    if(it.practiceTrack)sess.results[sess.results.length-1].at=Date.now();
     if (!sess.noRetry && it.t !== 'teach' && (!g.ok || conf === 'l' || assisted)) {
       var gap = g.ok ? 4 : 2, again = null, ex = {}; ex[it.id] = 1;
       if (q.ref.gen) again = { gen: q.ref.gen, seed: U.newSeed(), opt: q.ref.opt };
+      else if (it.retryIds && it.retryIds.length) { var next=it.retryIds.find(function(id){return !!REG[id];});again=next?{id:next,snapshot:U.clone(REG[next])}:null; }
       else { var alt = pickFor(it.c, ex); again = alt || { id: it.id }; }
       var already = sess.queue.filter(function (x) { return x.retry && x.c === it.c; }).length;
       if (already < 2) { sess.queue.splice(Math.min(sess.idx + 1 + gap, sess.queue.length), 0, { ref: again, retry: true, c: it.c }); sess.retries++; }

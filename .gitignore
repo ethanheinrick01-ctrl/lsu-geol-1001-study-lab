@@ -18,8 +18,13 @@ docs/EXAM2_*.md
 docs/validation-logs/exam2/
 videos/qa-exam2/
 videos/exam2-clear/align/
+videos/exam2-brittle-sample/
 
 # Local-only build receipts; release notes are separately sanitized.
 source-materials/exam2-publish/
 
 !docs/EXAM2_RELEASE.md
+
+# Private Chapter 7 acceptance sample and the before-edit progress contract.
+source-materials/chapter7-interface/
+js/content/exam2-chapter7.private.js

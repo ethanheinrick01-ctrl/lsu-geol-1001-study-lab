@@ -10,6 +10,22 @@
   function secsOfCh(ch) { return L.SECTIONS.filter(function (s) { return s.ch === ch; }); }
   function conceptsOfSec(id) { return Object.keys(L.CONCEPTS).filter(function (c) { return L.CONCEPTS[c].sec === id; }); }
   function daysToExam() { return U.daysBetween(U.todayKey(), CFG.examDate); }
+  function examId() { return L.examScope.current(); }
+  function examLabel() { return L.EXAMS[examId()].label; }
+  function chapters() { return L.examScope.available(); }
+  function chapterRange() { var cs=chapters();return cs[0]+'–'+cs[cs.length-1]; }
+  function topicIds(c) { return examId()==='exam2'?L.EXAM2.topics.filter(function(t){return t.concepts.indexOf(c)>=0;}).map(function(t){return t.id;}):(L.EXAM_CONCEPT_TOPICS[c]||[]); }
+  function confirmSession(label,message,accept) {
+    if(examId()==='exam1'){if(confirm(message))accept();return;}
+    var d=U.el('dialog',{class:'zoomdlg',id:'session-confirm', 'aria-label':label},'<h2>'+esc(label)+'</h2><p>'+esc(message)+'</p><p class="small muted">Your checked answers and drafts remain saved in My history.</p><div class="row"><button class="btn" data-cancel>Keep studying</button><button class="btn pri" data-accept>'+esc(label)+'</button></div>');
+    d.style.maxWidth='520px';document.body.appendChild(d);
+    function close(){if(d.open)d.close();d.remove();}
+    d.querySelector('[data-cancel]').onclick=close;
+    d.querySelector('[data-accept]').onclick=function(){close();accept();};
+    d.addEventListener('cancel',function(e){e.preventDefault();close();});
+    d.addEventListener('keydown',function(e){e.stopPropagation();});
+    d.showModal();d.querySelector('[data-cancel]').focus();
+  }
   function setNav(r) { document.querySelectorAll('nav.main a').forEach(function (a) { a.classList.toggle('on', a.getAttribute('data-r') === r); a.setAttribute('aria-current', a.getAttribute('data-r') === r ? 'page' : 'false'); }); }
   function banner() {
     var h = '';
@@ -28,11 +44,11 @@
       var label=document.getElementById('exam-label');if(label)label.textContent='Physical Geology · '+(L.examScope.current()==='exam2'?'Exam 2 · Chapters 7–8':'Exam 1');
     }
     document.onkeydown = null;
-    setNav(r === 'exam2' && parts[1] === 'review' ? 'review' : r === 'evidence' ? 'sources' : r === 'session' ? (S.load().session && ['boss','case'].includes(S.load().session.mode) ? (S.load().session.mode==='case'?'cases':'boss') : 'practice') : r);
+    setNav(r === 'exam2' && ['home','guide','practice','review','cases','boss','progress','mock','sources','zhuang'].indexOf(parts[1])>=0 ? parts[1] : r === 'evidence' ? 'sources' : r === 'session' ? (S.load().session && ['boss','case'].includes(S.load().session.mode) ? (S.load().session.mode==='case'?'cases':'boss') : 'practice') : r);
     var views = { home: pHome, guide: pGuide, practice: pPractice, session: pSession, review: pReview, cases: pCases, zhuang: pZhuang, sources: pEvidence, boss: pBoss, mock: pMock, exam1: function(args){ L.exam1.view(main,args); }, progress: pProgress, evidence: pEvidence, data: pData };
     if(r==='exams')pExams();
     else if(r==='exam2')L.exam2.view(main,parts.slice(1));
-    else if(L.examScope&&L.examScope.current()==='exam2'&&['home','guide','practice','review','cases','boss','progress','mock','sources','evidence','zhuang'].indexOf(r)>=0)L.exam2.view(main,[r].concat(parts.slice(1)));
+    else if(L.examScope&&L.examScope.current()==='exam2'&&['mock'].indexOf(r)>=0)L.exam2.view(main,[r].concat(parts.slice(1)));
     else (views[r] || pHome)(parts.slice(1));
     main.focus({ preventScroll: true });
     if (r !== 'session' && r !== 'mock' && !(r === 'exam1' && parts[1] === 'take')) window.scrollTo(0, 0);
@@ -59,18 +75,18 @@
 
   // ---------------- Home ----------------
   function pHome() {
-    var st=E.conceptStats(),ids=L.examScope.concepts('exam1').filter(E.hasPracticeContent),s=S.load(),plan=E.reviewPlan(),d=daysToExam();
+    var lane=examId(),st=E.conceptStats(),ids=L.examScope.concepts(lane).filter(E.hasPracticeContent),s=S.load(),plan=E.reviewPlan(),d=daysToExam();
     var mastered=ids.filter(function(c){return st[c].status==='mastered';}).length;
     var urgent=plan.filter(function(p){return ['new','learning','prior'].indexOf(p.why)<0;}).length;
     var high=ids.filter(function(c){return st[c].highConfidenceMiss;}).length;
     var full=s.examRuns.filter(function(r){return r.form&&r.groups.length===40&&L.exam1.metrics(r).unanswered===0;}).slice(-1)[0];
-    var last=full?L.exam1.metrics(full):null,active=L.exam1.active();
-    var h=[banner(),'<h1>GEOL 1001 Exam 1 lab</h1><p class="muted">Professor Zhuang · Physical Geology · Tuesday, September 29 · '+(d>=0?d+' days out.':'Exam 1 review.')+'</p><p>Read the figure. Name what you see. Explain the process that made it.</p>'];
-    h.push('<section class="card exam-home"><h2>Exam 1 · Professor review</h2><p>Sixteen focused topics, original McGraw-Hill figures, and fresh generated mocks: 25 multiple choice, 8 short answers, and 7 investigations. Immediate feedback, autosave, and one shared mastery record.</p><a class="btn pri" href="#exam1">Enter Exam 1</a></section>');
+    var last=lane==='exam1'&&full?L.exam1.metrics(full):null,active=lane==='exam1'?L.exam1.active():null;
+    var h=[banner(),'<h1>GEOL 1001 '+examLabel()+' lab</h1><p class="muted">Professor Zhuang · Physical Geology · '+(lane==='exam1'?'Tuesday, September 29 · '+(d>=0?d+' days out.':'Exam 1 review.'):'Chapters '+chapterRange()+' supplied · Chapters 9–12 pending.')+'</p><p>Read the figure. Name what you see. Explain the process that made it.</p>'];
+    h.push(lane==='exam1'?'<section class="card exam-home"><h2>Exam 1 · Professor review</h2><p>Sixteen focused topics, original McGraw-Hill figures, and fresh generated mocks: 25 multiple choice, 8 short answers, and 7 investigations. Immediate feedback, autosave, and one shared mastery record.</p><a class="btn pri" href="#exam1">Enter Exam 1</a></section>':'<section class="card exam-home"><h2>Exam 2 · Available course material</h2><p>Focused topics, supplied course figures, word-bank labeling, and concise geological explanations. Immediate feedback, autosave, and one shared mastery record. Full mocks await Chapters 9–12.</p><a class="btn pri" href="#exam2">Enter Exam 2</a></section>');
     h.push('<div class="grid4">'+stat(mastered+'/'+ids.length,'concepts mastered','Earned mastery stays; recent misses still need review.')+stat(urgent,'concepts queued for review','Misses and due reviews from every exercise mode.')+stat(high,'high-confidence misses open','Mastered concepts can still have a recent miss.')+stat(last?(last.autoCorrect+last.selfCorrect)+'/'+last.total:'—',last?'last mock · first-try parts':'no completed mock yet',last?'Includes explicitly self-assessed writing; not an official exam grade.':'')+'</div>');
-    h.push('<div class="row home-actions">'+(active&&L.exam1.metrics(active).unanswered?'<a class="btn good" href="#exam1/take">Resume: '+esc(active.title)+'</a>':'')+(s.session?'<a class="btn good" href="#session">Resume: '+esc(s.session.title)+' ('+(s.session.idx+1)+'/'+s.session.queue.length+')</a>':'')+'<button class="btn pri" id="goReview">Smart review</button><a class="btn" href="#mock">Mock exam</a><a class="btn" href="#boss">Boss drills</a><a class="btn" href="#exam1/figures">Course figures</a></div>');
+    h.push('<div class="row home-actions">'+(active&&L.exam1.metrics(active).unanswered?'<a class="btn good" href="#exam1/take">Resume: '+esc(active.title)+'</a>':'')+(s.session?'<a class="btn good" href="#session">Resume: '+esc(s.session.title)+' ('+(s.session.idx+1)+'/'+s.session.queue.length+')</a>':'')+'<button class="btn pri" id="goReview">Smart review</button><a class="btn" href="#mock">Mock exam</a><a class="btn" href="#boss">Boss drills</a><a class="btn" href="#'+lane+'/figures">Course figures</a></div>');
     h.push('<h2>Chapters</h2><p class="small muted">Fractions count concepts mastered. Two correct, unhinted answers on different questions, with medium/high confidence on the second, earn mastery. Practice, cases, Boss drills, mocks, and rubric self-checks feed this same dashboard. Later misses stay in review.</p><div class="chapter-grid">');
-    for(var ch=1;ch<=6;ch++){
+    for(var ci=0,chs=chapters();ci<chs.length;ci++){var ch=chs[ci];
       var cs=ids.filter(function(c){return secById(L.CONCEPTS[c].sec).ch===ch;}),m=cs.filter(function(c){return st[c].status==='mastered';}).length;
       h.push('<article class="card chapter-card"><h3>'+esc(L.CHAPTERS[ch].name)+'</h3><span class="badge">'+m+'/'+cs.length+'</span><p class="small muted">'+esc(L.CHAPTERS[ch].evidence)+'</p><div class="progress"><i style="width:'+U.pct(m,cs.length)+'%"></i></div><div class="row"><a class="btn" href="#guide/ch'+ch+'">Study</a><button class="btn" data-home-ch="'+ch+'">Practice</button></div></article>');
     }
@@ -108,7 +124,7 @@
     if (!id || /^ch\d$/.test(id)) {
       var only = id ? +id.slice(2) : null;
       h.push('<h1>Study Guide</h1><p class="lede">Teaching first. Guide and Practice show the same checked-answer mastery. Reading a card is tracked separately so you can see what you have studied.</p>');
-      for (var ch = 1; ch <= 6; ch++) {
+      for (var ci=0,chs=chapters();ci<chs.length;ci++) { var ch=chs[ci];
         if (only && ch !== only) continue;
         h.push('<section class="card"><h2>' + esc(L.CHAPTERS[ch].name) + '</h2><p class="small muted">Evidence: ' + esc(L.CHAPTERS[ch].evidence) + '</p><div class="seclist">');
         secsOfCh(ch).forEach(function (sec) {
@@ -126,16 +142,16 @@
     h.push('<nav class="crumbs"><a href="#guide">Guide</a> › <a href="#guide/ch' + sec.ch + '">' + esc(L.CHAPTERS[sec.ch].short) + '</a> › ' + esc(sec.n) + '</nav>');
     h.push('<header class="sechead"><h1>' + esc(sec.n + ' ' + sec.title) + '</h1><p class="small">' + IU.srcChips(sec.src) + ' ' + IU.tierBadge(sec.tier || 2) + '</p>' + (sec.note ? '<div class="infobox small">' + sec.note + '</div>' : '') + '</header>');
     (L.GUIDE[id] || []).forEach(function (c) {
-      var ts = U.uniq((c.c || []).reduce(function(a,id){return a.concat(L.EXAM_CONCEPT_TOPICS[id] || []);},[]));
-      h.push('<p class="small muted">' + (ts.length ? 'Sep 24 review motion studies: ' + ts.map(function(t){return '<a href="#exam1/topic/'+t+'">Watch '+t+'</a>';}).join(' · ') : 'Broader course material; not singled out in the Sep 24 review.') + '</p>');
+      var ts = U.uniq((c.c || []).reduce(function(a,id){return a.concat(topicIds(id));},[]));
+      h.push('<p class="small muted">' + (ts.length ? (examId()==='exam1'?'Sep 24 review motion studies: ':'Related motion studies: ') + ts.map(function(t){return '<a href="#'+examId()+'/topic/'+t+'">Watch '+t+'</a>';}).join(' · ') : 'Broader course material; not singled out in the Sep 24 review.') + '</p>');
       h.push('<article class="card gcard" id="' + c.id + '"><h2>' + esc(c.h) + '</h2>' + c.html + (c.media ? IU.mediaHTML(c.media) : ''));
       if (c.traps && c.traps.length) h.push('<div class="traps"><b>Tempting mistakes</b><ul>' + c.traps.map(function (t) { return '<li>' + t + '</li>'; }).join('') + '</ul></div>');
-      h.push('<p class="srcline">' + IU.srcChips(c.src) + ' ' + IU.tierBadge(c.tier || sec.tier || 2) + '</p></article>');
+      h.push('<p class="srcline">' + IU.srcChips(c.src) + ' ' + IU.tierBadge(c.tier || sec.tier || 2) + '</p>'+(examId()==='exam2'?L.exam2.sourceHTML({examId:'exam2',src:c.src,q:c.h}):'')+'</article>');
     });
     var slides = sectionSlides(sec);
     if (slides.length) h.push('<details class="card"><summary><b>Source slides for this section</b> <span class="small muted">(' + slides.length + ' slides from the lecture deck; tap to enlarge)</span></summary>' + IU.mediaHTML(slides.map(function (x) { return { kind: 'img', src: x.src, cap: x.cap, alt: x.cap }; })) + '</details>');
     var cons = conceptsOfSec(id).filter(E.hasPracticeContent), masteredHere = cons.filter(function (c) { return st[c].status === 'mastered'; }).length;
-    h.push('<section class="card"><h2>Check yourself · '+masteredHere+'/'+cons.length+' mastered</h2><p class="small muted">Close the notes first. Checked answers here, in Practice, and in Exam 1 use the same mastery record. Reading or watching is study progress, not a graded answer.</p><div class="chips">' + cons.map(function (c) { return '<span class="chip">' + esc(L.CONCEPTS[c].name) + ' ' + statusBadge(st[c].status) + '</span>'; }).join('') + '</div><div class="row"><button class="btn pri" id="pracSec">Practice this section (8)</button><a class="btn" href="#practice">All chapter practice</a>' + (prev ? '<a class="btn ghost" href="#guide/' + prev.id + '">← ' + esc(prev.n) + '</a>' : '') + (next ? '<a class="btn ghost" href="#guide/' + next.id + '">' + esc(next.n) + ' →</a>' : '') + '</div></section>');
+    h.push('<section class="card"><h2>Check yourself · '+masteredHere+'/'+cons.length+' mastered</h2><p class="small muted">Close the notes first. Checked answers here, in Practice, and in '+examLabel()+' use the same mastery record. Reading or watching is study progress, not a graded answer.</p><div class="chips">' + cons.map(function (c) { return '<span class="chip">' + esc(L.CONCEPTS[c].name) + ' ' + statusBadge(st[c].status) + '</span>'; }).join('') + '</div><div class="row"><button class="btn pri" id="pracSec">Practice this section (8)</button><a class="btn" href="#practice">All chapter practice</a>' + (prev ? '<a class="btn ghost" href="#guide/' + prev.id + '">← ' + esc(prev.n) + '</a>' : '') + (next ? '<a class="btn ghost" href="#guide/' + next.id + '">' + esc(next.n) + ' →</a>' : '') + '</div></section>');
     main.innerHTML = h.join('');
     (L.GUIDE[id] || []).forEach(function (c) { s.guideRead[c.id] = s.guideRead[c.id] || Date.now(); }); S.save();
     $('#pracSec').onclick = function () { startPractice({ sec: id, n: 8 }, 'Practice: ' + sec.n + ' ' + sec.title); };
@@ -160,10 +176,10 @@
   // ---------------- Practice ----------------
   function pPractice() {
     var st = E.conceptStats(), h = [banner(), '<h1>Practice</h1><p class="lede">Guide and Practice use the same mastery record. Confidence is chosen before feedback; misses and low-confidence answers come back after a gap, usually as a different question on the same concept.</p>'];
-    h.push('<div class="infobox">For the professor’s focused review and course-figure practice, open <a href="#exam1">Exam 1</a>. The practice below covers the broader chapters.</div>');
-    h.push('<div class="row"><button class="btn pri" id="mix15">Mixed Ch 1–6 (15)</button><button class="btn" id="rev">Review queue (15)</button></div>');
-    for (var ch = 1; ch <= 6; ch++) {
-      h.push('<details class="card" ' + (ch === 1 ? 'open' : '') + '><summary><b>' + esc(L.CHAPTERS[ch].name) + '</b></summary><div class="row"><button class="btn small" data-ch="' + ch + '">Practice all of ' + esc(L.CHAPTERS[ch].short) + ' (15)</button></div>');
+    h.push('<div class="infobox">For focused lessons and course-figure practice, open <a href="#'+examId()+'">'+examLabel()+'</a>. The practice below covers the broader chapters.</div>');
+    h.push('<div class="row"><button class="btn pri" id="mix15">Mixed Ch '+chapterRange()+' (15)</button><button class="btn" id="rev">Review queue (15)</button></div>');
+    for (var ci=0,chs=chapters();ci<chs.length;ci++) { var ch=chs[ci];
+      h.push('<details class="card" ' + (ci === 0 ? 'open' : '') + '><summary><b>' + esc(L.CHAPTERS[ch].name) + '</b></summary><div class="row"><button class="btn small" data-ch="' + ch + '">Practice all of ' + esc(L.CHAPTERS[ch].short) + ' (15)</button></div>');
       secsOfCh(ch).forEach(function (sec) {
         var cs = conceptsOfSec(sec.id).filter(E.hasPracticeContent);
         var mastered = cs.filter(function (c) { return st[c].status === 'mastered'; }).length;
@@ -238,8 +254,7 @@
     };
     $('#endS').onclick = function () {
       var s1 = E.currentSession(), msg = s1.mode === 'boss' ? 'End this Boss drill early? It will be recorded as incomplete and cannot set a best score.' : 'End this session? Answers so far are saved.';
-      if (!confirm(msg)) return;
-      var ended = E.endSession(); var br = ended.mode === 'boss' ? E.finishBoss(ended) : null; summary(ended, br, true);
+      confirmSession('End session',msg,function(){var ended=E.endSession();var br=ended.mode==='boss'?E.finishBoss(ended):null;summary(ended,br,true);});
     };
   }
   function summary(sess, bossRes, early) {
@@ -266,7 +281,7 @@
   function pReview() {
     var plan = E.reviewPlan(), h = [banner(), '<h1>Review queue</h1><p class="lede">Built from your record: high-confidence misses first, then mock misses, recent misses, spaced reviews, old-lab signals, and unfinished concepts.</p>'];
     var urgent = plan.filter(function (p) { return p.why !== 'new'; });
-    h.push('<div class="row"><a class="btn" href="#exam1/review">Exam 1 miss details</a><button class="btn pri" id="go15"' + (plan.length ? '' : ' disabled') + '>Start review (15)</button></div>');
+    h.push('<div class="row"><a class="btn" href="#'+examId()+'/review">'+examLabel()+' miss details</a><button class="btn pri" id="go15"' + (plan.length ? '' : ' disabled') + '>Start review (15)</button></div>');
     if (!urgent.length) h.push('<p class="muted">No misses or due reviews yet. New concepts are listed below.</p>');
     h.push('<table class="t"><thead><tr><th>Concept</th><th>Section</th><th>Why</th><th>Record</th></tr></thead><tbody>' + plan.slice(0, 80).map(function (p) { var sec = secById(L.CONCEPTS[p.c].sec); return '<tr><td>' + esc(L.CONCEPTS[p.c].name) + '</td><td class="small"><a href="#guide/' + sec.id + '">' + esc(sec.n) + '</a></td><td><span class="badge why-' + p.why + '">' + esc(p.label) + '</span>' + (p.s.prior && p.s.prior.mastered ? ' <span class="badge">old lab: marked mastered</span>' : '') + '</td><td class="small">' + (p.s.att ? p.s.ok + '/' + p.s.att : 'n/a') + '</td></tr>'; }).join('') + '</tbody></table>');
     main.innerHTML = h.join('');
@@ -276,14 +291,14 @@
   // ---------------- Boss ----------------
   function pBoss() {
     var s = S.load(), h = [banner(), '<h1>Boss drills</h1><p class="lede">Fixed, integrative drills of 25+ questions with feedback after each answer. Most questions combine ideas or apply them to a new diagram or scenario. Only a completed run can set a best score; retrying misses runs as ordinary practice and never changes the best.</p><div class="bossgrid">'];
-    L.BOSSES.filter(function(b){return L.examScope.accepts(b,'exam1');}).forEach(function (b) {
+    L.BOSSES.filter(function(b){return L.examScope.accepts(b,examId());}).forEach(function (b) {
       var rec = s.boss[b.id], n = (b.refs || []).length + (b.gens || []).reduce(function (a, g) { return a + g[1]; }, 0) + (b.cases || []).reduce(function (a, c) { var cs = E.caseById(c); return a + (cs ? cs.items.length : 0); }, 0);
-      h.push('<article class="card boss"><h2>' + esc(b.title) + '</h2><p>' + esc(b.blurb) + '</p><p class="small muted">' + n + ' questions · pass target ' + Math.round(b.pass * 100) + '% (design choice)</p>' +
+      h.push('<article class="card boss"><h2>' + esc(b.title) + '</h2><p>' + esc(b.blurb||b.desc) + '</p><p class="small muted">' + n + ' questions · pass target ' + Math.round(b.pass * 100) + '% (design choice)</p>' +
         '<p class="small">Best: <b>' + (rec && rec.best !== null ? Math.round(rec.best * 100) + '%' : 'n/a') + '</b>' + (rec ? ' · runs: ' + rec.runs.map(function (r) { return r.score + '/' + r.total + (r.complete ? '' : '*'); }).join(', ') : '') + '</p><button class="btn pri" data-boss="' + b.id + '">Start</button></article>');
     });
     h.push('</div><p class="small muted">* incomplete run.</p>');
     main.innerHTML = h.join('');
-    main.querySelectorAll('[data-boss]').forEach(function (btn) { btn.onclick = function () { var b = L.BOSSES.filter(function (x) { return x.id === btn.getAttribute('data-boss'); })[0]; if (S.load().session && !confirm('Replace the session in progress?')) return; E.newSession('boss', 'Boss: ' + b.title, E.bossRefs(b.id), { noRetry: true, bossId: b.id, back: 'boss' }); go('session'); }; });
+    main.querySelectorAll('[data-boss]').forEach(function (btn) { btn.onclick = function () { var b = L.BOSSES.filter(function (x) { return x.id === btn.getAttribute('data-boss'); })[0]; function begin(){E.newSession('boss','Boss: '+b.title,E.bossRefs(b.id),{noRetry:true,bossId:b.id,back:'boss'});go('session');}if(S.load().session)confirmSession('Start new session','Replace the session in progress?',begin);else begin(); }; });
   }
 
   // ---------------- Mock exams ----------------
@@ -346,39 +361,43 @@
   // ---------------- Progress ----------------
   function pProgress() {
     var s = S.load(), st = E.conceptStats(), h = [banner(), '<h1>Progress</h1>'];
-    var ids=L.examScope.concepts('exam1').filter(E.hasPracticeContent),mastered=ids.filter(function(c){return st[c].status==='mastered';}).length;
-    h.push('<div class="grid4">'+stat(mastered+'/'+ids.length,'concepts mastered','Across all exercise modes')+stat(E.allAttempts(s).filter(function(a){return L.examScope.conceptOwner(a.c)==='exam1'&&!a.self;}).length,'automatic checks','Practice, cases, Boss, and mocks')+stat(E.allAttempts(s).filter(function(a){return L.examScope.conceptOwner(a.c)==='exam1'&&a.self;}).length,'rubric self-checks','Written work, explicitly self-assessed')+stat(ids.filter(function(c){return st[c].reviewOpen;}).length,'concepts with open misses','Later correct work clears the queue, not the original score')+'</div>');
+    var ids=L.examScope.concepts(examId()).filter(E.hasPracticeContent),mastered=ids.filter(function(c){return st[c].status==='mastered';}).length;
+    h.push('<div class="grid4">'+stat(mastered+'/'+ids.length,'concepts mastered','Across all exercise modes')+stat(E.allAttempts(s).filter(function(a){return L.examScope.conceptOwner(a.c)===examId()&&!a.self;}).length,'automatic checks','Practice, cases, Boss, and mocks')+stat(E.allAttempts(s).filter(function(a){return L.examScope.conceptOwner(a.c)===examId()&&a.self;}).length,'rubric self-checks','Written work, explicitly self-assessed')+stat(ids.filter(function(c){return st[c].reviewOpen;}).length,'concepts with open misses','Later correct work clears the queue, not the original score')+'</div>');
     var cal = { l: [0, 0], m: [0, 0], h: [0, 0] };
-    E.allAttempts(s).filter(function(a){return L.examScope.conceptOwner(a.c)==='exam1';}).forEach(function (a) { if (!a.self && !a.h && !a.correction && cal[a.cf]) { cal[a.cf][1]++; if (a.ok) cal[a.cf][0]++; } });
+    E.allAttempts(s).filter(function(a){return L.examScope.conceptOwner(a.c)===examId();}).forEach(function (a) { if (!a.self && !a.h && !a.correction && cal[a.cf]) { cal[a.cf][1]++; if (a.ok) cal[a.cf][0]++; } });
     h.push('<div class="card"><h2>Confidence calibration</h2><div class="bars">' + [['l', 'Low'], ['m', 'Medium'], ['h', 'High']].map(function (x) { var c = cal[x[0]]; return '<div class="barrow"><span>' + x[1] + '</span><div class="b"><i style="width:' + U.pct(c[0], c[1]) + '%"></i></div><span>' + (c[1] ? U.pct(c[0], c[1]) + '% of ' + c[1] : 'n/a') + '</span></div>'; }).join('') + '</div><p class="small muted">Automatic first responses from every exercise mode. Corrections, hints, and rubric self-ratings are kept out of confidence calibration.</p></div>');
     if (s.legacy) h.push('<div class="infobox small">Old-lab history imported ' + U.fmtDate(s.legacy.imported) + ' (' + esc((s.legacy.sources || []).join(', ')) + '): ' + s.legacy.mapped + ' mappings. Shown as "old lab" badges; it does not grant v3 mastery.</div>');
-    for (var ch = 1; ch <= 6; ch++) {
+    for (var ci=0,chs=chapters();ci<chs.length;ci++) { var ch=chs[ci];
       h.push('<details class="card" open><summary><b>' + esc(L.CHAPTERS[ch].name) + '</b></summary><table class="t"><tr><th>Concept</th><th>Status</th><th>Saved correct/checks</th><th>Next review</th></tr>');
       secsOfCh(ch).forEach(function (sec) { conceptsOfSec(sec.id).filter(E.hasPracticeContent).forEach(function (c) { var x = st[c]; h.push('<tr><td>' + esc(L.CONCEPTS[c].name) + ' <span class="small muted">' + esc(sec.n) + '</span>' + (x.prior ? ' <span class="badge" title="' + esc('Old lab: ' + x.prior.ok + '/' + x.prior.att + (x.prior.mastered ? ', marked mastered' : '')) + '">old lab</span>' : '') + (x.reviewOpen ? ' <span class="badge st-shaky">'+(x.highConfidenceMiss?'high-confidence miss':'review needed')+'</span>' : '') + '</td><td>' + statusBadge(x.status) + '<p class="small muted">'+esc(E.masteryNote(x))+'</p>' + '</td><td>' + (x.att ? x.ok + '/' + x.att : 'n/a') + '</td><td class="small">' + (x.att ? (x.isDue ? 'due now' : x.due) : 'n/a') + '</td></tr>'); }); });
       h.push('</table></details>');
     }
-    var bk = Object.keys(s.boss).filter(function(id){var b=L.BOSSES.find(function(b){return b.id===id;});return !b||L.examScope.accepts(b,'exam1');});
+    var bk = Object.keys(s.boss).filter(function(id){var b=L.BOSSES.find(function(b){return b.id===id;});return !b||L.examScope.accepts(b,examId());});
     if (bk.length) { h.push('<div class="card"><h2>Boss history</h2><table class="t"><tr><th>Boss</th><th>Best (complete runs only)</th><th>Runs</th></tr>'); bk.forEach(function (k) { var b = L.BOSSES.filter(function (x) { return x.id === k; })[0]; h.push('<tr><td>' + esc(b ? b.title : k) + '</td><td>' + (s.boss[k].best === null ? 'n/a' : Math.round(s.boss[k].best * 100) + '%') + '</td><td class="small">' + s.boss[k].runs.map(function (r) { return r.score + '/' + r.total + (r.complete ? '' : ' (incomplete)'); }).join(', ') + '</td></tr>'); }); h.push('</table></div>'); }
     main.innerHTML = h.join('');
   }
 
   // ---------------- Evidence ----------------
   function pZhuang(){
+    if(examId()==='exam2'){
+      main.innerHTML='<h1>How Zhuang teaches</h1><p class="lede">Observe → identify or classify → explain the process. Practice the connections at introductory geology depth.</p><div class="card"><h2>What to do with a picture</h2><ol><li>Describe the visible clue: grain size, clast shape, bedding, or position on the figure.</li><li>Use the word bank to match a term to its correct location or classify the rock.</li><li>Explain the mechanism and supply each requested geological example.</li></ol>'+IU.srcChips(['TB7','E2T0924'])+'</div><div class="card"><h2>Figures to study</h2><div class="row"><a class="btn" href="#exam2/topic/E2T2">Clast size and lithification</a><a class="btn" href="#exam2/topic/E2T3">Clastic rock classification</a><a class="btn" href="#exam2/topic/E2T5">Graded beds and cross beds</a><a class="btn" href="#exam2/topic/E2T6">Changing environments</a></div></div><div class="card"><h2>Current practice format</h2><p>Figure labeling with a complete word bank, classification, complete named lists, and concise comparisons with geological examples. Current sources determine the correct answers and rubrics. These are practice choices; exact Exam 2 counts, point weights, and timing have not been verified.</p></div><p class="small muted">Chapter 7 detail is supported by the supplied textbook and Connect evidence. The supplied September 24 continuation confirms the introduction; it does not establish lecture emphasis for every section. <a href="#sources">See coverage and limits</a>.</p>';return;
+    }
+
     main.innerHTML='<h1>How Zhuang teaches</h1><p class="lede">Observe → identify or classify → explain the process. Practice the connections at introductory geology depth.</p><div class="card"><h2>What to do with a picture</h2><ol><li>Describe the visible clue: grain size, mineral band, boundary arrows, or position on a graph.</li><li>Name the rock, structure, boundary, or process.</li><li>Explain why the observation fits. Compare one changing variable at a time.</li></ol>'+IU.srcChips(['T0901','T0910','T0915','R0924'])+'</div><div class="card"><h2>Figures he emphasized</h2><div class="row"><a class="btn" href="#exam1/topic/T10">Classification + mineral bands</a><a class="btn" href="#exam1/topic/T8">Setting → texture</a><a class="btn" href="#exam1/topic/T7">Pressure–temperature comparisons</a><a class="btn" href="#exam1/topic/T11">Structure → properties</a></div></div><div class="card"><h2>Exam format he stated</h2>'+examFacts()+'</div><p class="small muted">Lecture transcripts were compared where both Apple and Whisper versions existed and checked against the textbook. Repeated review supports emphasis, not a numerical prediction of exam questions. Chapter 7 and unrelated audio are excluded.</p>';
   }
   function pCases(){
-    var cases=L.CASES.filter(function(c){return c.exam1&&c.media&&c.media.kind==='img';});
-    main.innerHTML='<h1>Cases and investigations</h1><p class="lede">Use an actual course figure, identify what it shows, and explain the process. Every checked part feeds your shared mastery record.</p><div class="chapter-grid">'+cases.map(function(c){return '<article class="card chapter-card"><span class="badge">'+esc((c.topics||[]).join(', '))+'</span><h3>'+esc(c.title)+'</h3><p class="small muted">'+c.items.length+' parts · original course figure · immediate feedback</p><button class="btn pri" data-case="'+c.id+'">Practice investigation</button></article>';}).join('')+'</div>';
+    var cases=L.CASES.filter(function(c){return examId()==='exam1'?c.exam1&&c.media&&c.media.kind==='img':L.examScope.accepts(c,examId());});
+    main.innerHTML='<h1>Cases and investigations</h1><p class="lede">Use '+(examId()==='exam1'?'an actual course figure':'the supplied figures and original evidence models')+', identify what it shows, and explain the process. Every checked part feeds your shared mastery record.</p><div class="chapter-grid">'+cases.map(function(c){return '<article class="card chapter-card"><span class="badge">'+esc((c.topics||((c.items||[])[0]||{}).topics||[]).join(', '))+'</span><h3>'+esc(c.title)+'</h3><p class="small muted">'+c.items.length+' parts · '+(examId()==='exam1'?'original course figure':'source-supported investigation')+' · immediate feedback</p><button class="btn pri" data-case="'+c.id+'">Practice investigation</button></article>';}).join('')+'</div>';
     main.querySelectorAll('[data-case]').forEach(function(b){b.onclick=function(){var c=E.caseById(b.dataset.case);E.newSession('case','Case: '+c.title,E.caseRefs(c.id),{back:'cases',noRetry:true});go('session');};});
   }
   function pEvidence() {
-    var h = [banner(), '<h1>Evidence and limits</h1><p class="lede">What this lab knows, where it came from, and what it does not know. No prior-semester exams, professor profile, or exam predictions were used.</p>'];
+    var lane=examId(),h = [banner(), '<h1>Evidence and limits</h1><p class="lede">What this lab knows, where it came from, and what it does not know. '+(lane==='exam1'?'No prior-semester exams, professor profile, or exam predictions were used.':'Source support, practice design, and missing exam coverage remain separate.')+'</p>'];
     h.push('<div class="card"><h2>Evidence tiers</h2><dl class="tiers">' + [1, 2, 3, 4].map(function (k) { return '<dt>' + IU.tierBadge(k) + ' ' + esc(L.TIERS[k].name) + '</dt><dd>' + esc(L.TIERS[k].desc) + '</dd>'; }).join('') + '</dl></div>');
-    h.push('<div class="card"><h2>Exam 1: what is established</h2>' + examFacts() + '</div>');
-    h.push('<div class="card"><h2>Coverage by chapter</h2><table class="t"><tr><th>Chapter</th><th>Current-course evidence used</th><th>Limits</th></tr>' + (L.COVERAGE || []).map(function (r) { return '<tr><td>' + esc(r[0]) + '</td><td class="small">' + r[1] + '</td><td class="small">' + r[2] + '</td></tr>'; }).join('') + '</table></div>');
-    h.push('<div class="card"><h2>Conflicts and caveats</h2><ul>' + (L.CONFLICTS || []).map(function (x) { return '<li>' + x + '</li>'; }).join('') + '</ul></div>');
-    var counts = {}; E.itemsFor(function () { return true; }).forEach(function (it) { (it.s || []).forEach(function (c) { var b = L.srcParse(c).base; counts[b] = (counts[b] || 0) + 1; }); });
-    h.push('<div class="card"><h2>Source ledger (runtime)</h2><table class="t"><tr><th>Code</th><th>Source</th><th>Tier</th><th>Items citing</th></tr>' + Object.keys(L.SOURCES).filter(function(k){return !/^E2|^TB[78]$/.test(k);}).map(function (k) { var s = L.SOURCES[k]; return '<tr><td><code>' + k + '</code></td><td>' + esc(s.t) + '<br><span class="tiny muted">' + esc(s.f) + (s.note ? ': ' + esc(s.note) : '') + '</span></td><td>' + IU.tierBadge(s.tier) + '</td><td>' + (counts[k] || 0) + '</td></tr>'; }).join('') + '</table><p class="small muted">The full review ledger (what was read, how deeply, and how it shaped the lab) is in <code>docs/SOURCE_LEDGER.md</code>.</p></div>');
+    h.push(lane==='exam1'?'<div class="card"><h2>Exam 1: what is established</h2>'+examFacts()+'</div>':'<div class="card"><h2>Exam 2: what is established</h2><p>The course scope is Chapters 7–12. Chapters 7–8 have supplied textbook pages and original practice. Chapters 9–12 are pending, and full mocks remain locked.</p><p>Practice includes authentic figures with word banks, classification, complete lists, and comparisons with geological examples. Target-exam timing, exact question counts, point weights, and a graded answer key are unverified.</p></div>');
+    h.push('<div class="card"><h2>Coverage by chapter</h2><table class="t"><tr><th>Chapter</th><th>Current-course evidence used</th><th>Limits</th></tr>' + (lane==='exam1'?(L.COVERAGE||[]):[[L.CHAPTERS[7].name,'Textbook 7.1–7.16; completed Chapter 7 Connect captures; September 24 introduction.','Section-level lecture confirmation is incomplete.'],[L.CHAPTERS[8].name,'Textbook 8.1–8.15; October 1/6 lectures; classroom photograph; October 6 ILEA.','Later textbook continuation is marked. Original Chapter 8 Connect screenshots remain missing.'],['Chapters 9–12','Not supplied.','Excluded from practice and mastery totals; mocks locked.']]).map(function (r) { return '<tr><td>' + esc(r[0]) + '</td><td class="small">' + r[1] + '</td><td class="small">' + r[2] + '</td></tr>'; }).join('') + '</table></div>');
+    h.push('<div class="card"><h2>Conflicts and caveats</h2><ul>' + (lane==='exam1'?(L.CONFLICTS||[]):['Lecture confirmation beyond the Chapter 7 introduction is incomplete. Textbook-backed does not mean individually reviewed in class.','Chapter 8 Connect summaries are secondary evidence; unseen original diagram locations are not graded.','The October 6 supplied answer screenshot is a draft, not an official answer key.','Prior-exam format informs practice delivery, not a prediction of exact Exam 2 content, counts, timing, or scores.']).map(function (x) { return '<li>' + x + '</li>'; }).join('') + '</ul></div>');
+    var counts = {}; E.itemsFor(function (it) { return L.examScope.accepts(it,lane); }).forEach(function (it) { (it.s || []).forEach(function (c) { var b = L.srcParse(c).base; counts[b] = (counts[b] || 0) + 1; }); });
+    h.push('<div class="card"><h2>Source ledger (runtime)</h2><table class="t"><tr><th>Code</th><th>Source</th><th>Tier</th><th>Items citing</th></tr>' + Object.keys(L.SOURCES).filter(function(k){return lane==='exam1'?!/^E2|^TB[78]$/.test(k):/^E2|^TB[78]$/.test(k);}).map(function (k) { var s = L.SOURCES[k]; return '<tr><td><code>' + k + '</code></td><td>' + esc(s.t) + '<br><span class="tiny muted">' + esc(s.f) + (s.note ? ': ' + esc(s.note) : '') + '</span></td><td>' + IU.tierBadge(s.tier) + '</td><td>' + (counts[k] || 0) + '</td></tr>'; }).join('') + '</table><p class="small muted">The full review ledger (what was read, how deeply, and how it shaped the lab) is in <code>'+ (lane==='exam1'?'docs/SOURCE_LEDGER.md':'docs/EXAM2_SOURCE_LEDGER.md')+'</code>.</p></div>');
     main.innerHTML = h.join('');
   }
 
@@ -414,6 +433,10 @@
     window.addEventListener('hashchange', route);
     route();
   }
-  L.app = { boot: boot, route: route, go: go, startPractice: startPractice };
+  function sharedView(target,page,args) {
+    main=target;var views={home:pHome,guide:pGuide,practice:pPractice,review:pReview,cases:pCases,boss:pBoss,progress:pProgress,data:pData,zhuang:pZhuang,sources:pEvidence,evidence:pEvidence};
+    if(!views[page])return false;views[page](args||[]);return true;
+  }
+  L.app = { boot: boot, route: route, go: go, startPractice: startPractice, sharedView: sharedView };
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot); else boot();
 })(window);
