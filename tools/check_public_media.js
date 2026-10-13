@@ -7,3 +7,5 @@ const refs=new Set();function walk(o){if(!o||typeof o!=='object')return;for(cons
 walk(pub.GUIDE);walk(pub.engine.REG());walk(pub.EXAM2.topics);walk(pub.EXAM2_SOURCES);walk(pub.MEDIA);walk(pub.CASES);walk(pub.BOSS);if(pub.ch9Motion)Object.values(pub.ch9Motion.films).forEach(f=>{if(f.base)['.mp4','.png','.vtt','.txt'].forEach(ext=>refs.add(f.base+ext));});
 const cp=require('child_process');const tracked=new Set(cp.execFileSync('git',['ls-files'],{cwd:root,encoding:'utf8'}).trim().split('\n'));
 const missing=[...refs].filter(f=>!tracked.has(f));assert.deepEqual(missing,[],'Runtime media missing from published Git files');console.log('PASS '+refs.size+' resolved runtime media paths tracked');
+
+for(const t of pub.EXAM2.topics.filter(t=>t.ch===9)){const id=t.id==='E2T17'?'e2-c9a-terrain-investigation':'e2-case-'+t.id;const refs=pub.engine.caseRefs(id);assert.ok(refs.length>=2,id);for(const ref of refs)assert.ok(pub.engine.REG()[ref.id],ref.id);}console.log('PASS every Chapter9 investigation launches registered shared tasks');
