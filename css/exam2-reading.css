@@ -7,4 +7,13 @@
 .e2-reading-key small{flex-basis:100%;font-size:12px}
 .e2-key-dot{display:inline-block;width:7px;height:7px;border-radius:50%;flex-shrink:0}
 .e2-key-dot.gold{background:var(--e2-study-gold)}.e2-key-dot.term{background:var(--e2-study-term)}
+.e2-note-group{margin:0 0 1.3rem}
+.e2-note-heading{margin:1.15rem 0 .5rem;color:var(--acc);font-size:1rem;line-height:1.4}
+.e2-note-points{max-width:82ch;margin:.35rem 0 0;padding-left:1.35rem;line-height:1.6}
+.e2-note-points>li{padding-left:.2rem;margin:0 0 .55rem}
+.e2-note-points>li::marker{color:var(--mute)}
+.e2-note-topic+.e2-note-topic{margin-top:1.8rem;padding-top:1.4rem;border-top:1px solid var(--line)}
+.e2-note-topic>h3{margin-top:0;margin-bottom:.9rem;font-size:1.15rem}
+.e2-note-group:first-child>.e2-note-heading{margin-top:.8rem}
+@media print{.e2-note-group{break-inside:avoid}.e2-note-points{max-width:none}.e2-note-heading{color:inherit}}
 @media print{[data-e2-reading] mark.e2-study-term,[data-e2-reading] mark.e2-study-emphasis{color:inherit;box-shadow:none;text-decoration:underline}}

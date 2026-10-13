@@ -227,11 +227,12 @@
     return tokens.join('');
   }
   function wrap(id,html){return '<div class="e2-reading-prose" data-e2-reading="'+attr(id)+'">'+html+'</div>';}
-  function cardHTML(card,first){var html=first?((card.html.match(/<p>[\s\S]*?<\/p>/)||[])[0]||card.html):card.html;return wrap(card.id,html);}
+  function cardHTML(card,first){var html=first?((card.html.match(/<p>[\s\S]*?<\/p>/)||[])[0]||card.html):card.html;return wrap(card.id,html).replace('data-e2-reading=',(first?'data-e2-excerpt="true" ':'')+'data-e2-reading=');}
   function apply(main){
     if(!L.examScope||L.examScope.current()!=='exam2')return;
     var roots=Array.from(main.querySelectorAll('[data-e2-reading]')).filter(function(root){return !root.closest('.item,.feedback,.opts,.casebox');});
     roots.forEach(function(root){var plan=plans[root.dataset.e2Reading];if(!plan||root.dataset.e2Colored)return;var used=new Set();plan.forEach(function(spec){root.querySelectorAll(spec.selector).forEach(function(el){el.innerHTML=richHTML(el.innerHTML,spec,used);});});root.dataset.e2Colored='true';});
+    if(L.exam2Notes)L.exam2Notes.apply(main);
     if(!roots.length||main.querySelector('.e2-reading-key'))return;
     var key=document.createElement('aside');key.className='e2-reading-key';key.setAttribute('aria-label','Reading color key');key.innerHTML='<span><i class="e2-key-dot gold" aria-hidden="true"></i>Gold: documented lecture emphasis</span><span><i class="e2-key-dot term" aria-hidden="true"></i>Magenta: key terms and distinctions</span><small>Colors guide study; they do not predict exam questions.</small>'+(main.querySelector('mark.e2-study-emphasis')?'<small>Gold here: repeated in the October 1 and 6 lectures · textbook §8.1–8.2.</small>':'');
     var anchor=main.querySelector('.sechead')||roots[0].closest('.card')||roots[0];if(anchor.classList.contains('sechead'))anchor.after(key);else anchor.before(key);

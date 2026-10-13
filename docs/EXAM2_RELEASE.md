@@ -1,5 +1,11 @@
 # Exam 2 · Chapters 7–8
 
+## October 13 note outline · 20261013-notes1
+
+Chapter 7–8 Learn and Guide notes now use descriptive headings and distinct bullet points instead of dense paragraphs. All 33 Guide cards, including both chapter introductions, retain their exact teaching text and curated magenta/gold emphasis. The six Chapter 7 Learn groups now show the complete notes rather than only the first paragraph. Chapter 8 notes and the source-based brittle–ductile comparison use the same point treatment. Authored source summaries are outlined; original textbook pages remain unchanged.
+
+This presentation update preserves films, source figures, question banks, stable IDs, grading and the saved-progress contract. Local laptop-browser checks cover all 31 Guide sections and 12 Learn groups, exact-text preservation, heading structure, wrapping and isolated progress reload. Twenty-five relevant interface/brittle checks passed; protected source, assessment and persistence files match their before-edit hashes.
+
 ## October 12 textbook animation refresh · 20261012-polish2
 
 All twelve Chapter 7–8 process films now use the finished textbook-based treatment, including the approved fault animation. Each film includes Clear narration, 1280×720 video at 60 fps, a poster, synchronized captions and a transcript. Existing stage jumps, speed controls and download links use the new assets. Thirty-one section-specific teaching frames refresh the public lesson fallbacks while retaining selected original course figures.
