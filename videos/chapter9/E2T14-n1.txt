@@ -1,0 +1,9 @@
+Begin with parent atoms in an ideal closed system.
+
+During the first half-life, parents decay until fifty percent remain.
+
+During the second half-life, the parent fraction falls to twenty-five percent, leaving seventy-five percent daughters.
+
+During the third half-life, the parent fraction falls to twelve and a half percent. Equal intervals remove half of what remains.
+
+Dating requires checking the initial composition and whether the system stayed closed.
