@@ -253,7 +253,7 @@
     }
     return refs;
   }
-  function caseRefs(caseId) { var cs = caseById(caseId); return cs ? cs.items.map(function (it) { return { id: it.id }; }) : []; }
+  function caseRefs(caseId) { var cs = caseById(caseId); return cs ? (cs.itemRefs || cs.items).map(function (it) { return { id: it.id }; }) : []; }
   function bossRefs(bossId) {
     var b = L.BOSSES.filter(function (x) { return x.id === bossId; })[0]; if (!b) return [];
     var loose = (b.refs || []).map(function (id) { return { id: id }; });

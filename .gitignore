@@ -28,3 +28,22 @@ source-materials/exam2-publish/
 # Private Chapter 7 acceptance sample and the before-edit progress contract.
 source-materials/chapter7-interface/
 js/content/exam2-chapter7.private.js
+
+# Connect integration source crops and content: private review pending publication.
+js/content/connect-ch7.js
+js/content/connect-gaps.js
+js/content/connect-exam1.js
+assets/figures/connect-ch7/
+assets/figures/connect-gaps/
+assets/figures/connect-exam1/
+
+# Private Chapter 9 intake, teaching and source-grounded films pending release.
+source-materials/chapter9/
+assets/figures/chapter9/
+assets/figures/ch9-lessons/
+assets/figures/connect-ch9-assignment/
+assets/figures/connect-ch9-assessment/
+js/content/ch9-*.js
+js/content/connect-ch9-*.js
+js/ch9-motion.js
+videos/chapter9/

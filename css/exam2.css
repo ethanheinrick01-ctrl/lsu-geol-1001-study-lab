@@ -68,3 +68,10 @@
  .e2-review-chapter-heading>span{display:block;margin-top:4px}
  .e2-review-topic-title{font-size:.9375rem}
 }
+
+/* Tall source columns retain their proportions inside the shared figure height cap. */
+figure.media img[src*="assets/figures/connect-"]{object-fit:contain}
+
+figure.media img[src*="assets/figures/ch9-lessons/"],figure.media img[src*="assets/figures/chapter9/"]{object-fit:contain}
+
+.ch9-film video::cue{font-size:18px;color:#eef3f6;background:#0f1316e6}

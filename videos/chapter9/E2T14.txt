@@ -1,0 +1,9 @@
+Parent isotopes. Begin with parent atoms in an ideal closed system.
+
+First half-life. The parent fraction falls from 100% to 50% during this interval.
+
+Second half-life. Half of the remaining parents decay; the endpoint is 25% parent and 75% daughter.
+
+Third half-life. The parent fraction falls from 25% to 12.5%; equal time removes a smaller amount.
+
+Read the clock. Ratios constrain age only when the dating assumptions are evaluated.

@@ -1,0 +1,2 @@
+/* Selected published study content; full supplied source packet remains file/loopback only. */
+(function(){var local=typeof location!=='undefined'&&(location.protocol==='file:'||['localhost','127.0.0.1','[::1]'].indexOf(location.hostname)>=0);if(typeof document.write==='function')(local?["content/connect-ch7", "content/connect-gaps", "content/connect-exam1"]:["content/exam-connect-release"]).forEach(function(name){document.write('<script src="js/'+name+'.js?v=2026-10-13-release1"><\/script>');});})();
