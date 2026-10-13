@@ -1,5 +1,13 @@
 # Exam 2 · Chapters 7–8
 
+## October 12 textbook animation refresh · 20261012-polish2
+
+All twelve Chapter 7–8 process films now use the finished textbook-based treatment, including the approved fault animation. Each film includes Clear narration, 1280×720 video at 60 fps, a poster, synchronized captions and a transcript. Existing stage jumps, speed controls and download links use the new assets. Thirty-one section-specific teaching frames refresh the public lesson fallbacks while retaining selected original course figures.
+
+The final review inspected 69 beats against their source diagrams; the lowest score was 8.1/10. Nine lessons received another repair pass, followed by full pacing reviews and final narrated exports. Local laptop-browser checks verified all twelve films play, seek and decode audio, and that captions, speed controls, stage buttons and transcripts work. Relevant automated checks passed 42 cases. Protected source hashes, 62 graded diagram renderings, Exam 1 and saved-progress contracts remain unchanged.
+
+This release contains finished lesson media and public presentation code. Full textbook pages, classroom photographs, personal professor calibration, learner backups and production audit records remain local. Chapters 9–12 remain pending and full Exam 2 mocks remain locked.
+
 ## October 8 vivid magenta correction · 4.1.3
 
 Curated key terms and distinctions now use vivid magenta (`#ff4fd8`). This supersedes the rejected cyan and pastel lavender treatments. Blue headings and links, gold documented lecture emphasis, and neutral connecting prose retain their existing roles. The visible legend and asset versions match the new palette.

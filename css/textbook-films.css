@@ -1,0 +1,8 @@
+/* Keep narrated films inside their lesson at phone and desktop widths. */
+.ad-video video, [data-process-film] video { display:block; width:100%; max-width:100%; height:auto; aspect-ratio:16/9; background:#0f1316; }
+.ad-video, [data-process-film] { min-width:0; }
+.ad-film-tile img { display:block; width:100%; max-width:100%; height:auto; aspect-ratio:16/9; object-fit:contain; }
+
+/* Narration sits above the illustrated lesson rather than over its teaching captions. */
+[data-process-film] video { scroll-margin-top:80px; }
+[data-process-film] video::cue { font-size:clamp(14px,1.3vw,20px); background:rgba(15,19,22,.9); color:#f0f3f2; }

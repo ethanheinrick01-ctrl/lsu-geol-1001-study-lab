@@ -16,7 +16,12 @@
     // Render older imported Exam 2 snapshots without exposing their local packet paths.
     if (m.kind==='img' && L.EXAM2_SOURCE_MODE!=='private' && !(m.localSource && L.brittleDuctile) && /^assets\/img\/exam2\//.test(m.src||'')) {
       var original=m.src, file=original.split('/').pop(), crop=/\/figures\//.test(original), section=file.match(/^([78])-(\d+)-/), t=section&&L.EXAM2&&L.EXAM2.topics.find(function(t){return t.sections.indexOf(section[1]+'.'+Number(section[2]))>=0;});
-      m=Object.assign({},m,{src:crop?'assets/figures/exam2/'+file:original.indexOf('ilea')>=0?'assets/diagrams/exam2/moho.svg':'assets/diagrams/exam2/'+(t?t.id:'E2T1')+'.svg',cap:crop?m.cap:'Original lab schematic · full supplied pages remain in the local edition',alt:crop?m.alt:'Course-based study diagram'});
+      m=Object.assign({},m,{studySection:section?section[1]+'.'+Number(section[2]):null,src:crop?'assets/figures/exam2/'+file:original.indexOf('ilea')>=0?'assets/diagrams/exam2/moho.svg':'assets/diagrams/exam2/'+(t?t.id:'E2T1')+'.svg',cap:crop?m.cap:'Original lab schematic · full supplied pages remain in the local edition',alt:crop?m.alt:'Course-based study diagram'});
+    }
+    // Refreshed Exam 2 teaching images. Graded diagram media retains its original labels.
+    if (m.kind==='img' && !Object.prototype.hasOwnProperty.call(opts,'reveal') && /^assets\/diagrams\/exam2\/E2T\d+\.svg$/.test(m.src||'')) {
+      var sectionMatch=((m.cap||'')+' '+(m.alt||'')).match(/\b([78]\.\d+)\b/), topicMatch=m.src.match(/(E2T\d+)\.svg$/), frame=L.TEXTBOOK_STILLS&&L.TEXTBOOK_STILLS[m.studySection||(sectionMatch&&sectionMatch[1])], film=topicMatch&&L.TEXTBOOK_FILMS&&L.TEXTBOOK_FILMS[topicMatch[1]];
+      if(frame||film)m=Object.assign({},m,{width:1280,height:720,src:frame?frame.src:film.base+'.png',cap:frame?frame.cap:'Source-based teaching frame from the narrated lesson',alt:'Textbook-based study illustration'});
     }
     if (Array.isArray(m)) return '<div class="media-row">' + m.map(function (x) { return mediaHTML(x, opts); }).join('') + '</div>';
     if (m.kind === 'img') return '<figure class="media"><button type="button" class="zoom" data-zoom="' + esc(m.src) + '" data-cap="' + esc(m.cap || m.alt || '') + '" aria-label="Enlarge image"><img src="' + esc(m.src) + '" alt="' + esc(m.alt || '') + '" loading="lazy"'+(m.width&&m.height?' width="'+m.width+'" height="'+m.height+'"':/\.svg$/.test(m.src)?' width="960" height="460"':'')+'></button>' + (m.cap ? '<figcaption>' + esc(m.cap) + '</figcaption>' : '') + '</figure>';

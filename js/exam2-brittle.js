@@ -4,6 +4,7 @@
   var local = typeof location !== 'undefined' && (location.protocol === 'file:' || ['localhost', '127.0.0.1', '[::1]'].indexOf(location.hostname) >= 0);
   var U=L.util, E=L.engine, S=L.store, I=L.itemUI, esc=U.esc;
   var ROOT=local?'assets/img/exam2/brittle-ductile/':'assets/figures/exam2/brittle-ductile/', FILM=local?'videos/exam2-brittle-sample/brittle-ductile':'videos/exam2/brittle-ductile/brittle-ductile';
+  if(L.TEXTBOOK_FILMS&&L.TEXTBOOK_FILMS.E2T7)FILM=L.TEXTBOOK_FILMS.E2T7.base;
   var SOURCES=local?['TB8:8.1','TB8:8.2','E2PHOTO','E2T1001']:['TB8:8.1','TB8:8.2'];
   var PREFIX='e2-bd-', LABELS=[PREFIX+'labels',PREFIX+'outcomes'];
   var READS=[PREFIX+'shallow',PREFIX+'deep',PREFIX+'peak'];
@@ -161,7 +162,7 @@
       // Inline cues also work for the supported file:// edition.
       if(typeof window.VTTCue==='function'&&v.addTextTrack){
         var external=v.querySelector('track');if(external)external.remove();
-        track=v.addTextTrack('captions','English narration','en');f.cues.forEach(function(c){track.addCue(new window.VTTCue(c.start,c.end,c.text));});track.mode='showing';
+        track=v.addTextTrack('captions','English narration','en');f.cues.forEach(function(c){var cue=new window.VTTCue(c.start,c.end,c.text);cue.line=0;track.addCue(cue);});track.mode='showing';
       }else track=v.textTracks[0];
       b.onclick=function(){if(!track)return;track.mode=track.mode==='showing'?'hidden':'showing';b.setAttribute('aria-pressed',String(track.mode==='showing'));b.textContent='Captions: '+(track.mode==='showing'?'on':'off');};
     });

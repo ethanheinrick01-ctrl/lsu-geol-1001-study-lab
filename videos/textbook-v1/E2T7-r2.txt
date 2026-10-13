@@ -1,0 +1,5 @@
+Stress is force per area. Strain is a change in shape or volume. With elastic strain, removing the load restores the sample. Permanent deformation occurs by fracture or ductile change.
+
+On the course graph, depth increases downward and strength increases rightward. In the brittle upper crust, increasing confinement makes fractures harder to develop. The curve approaches a maximum.
+
+Deeper, higher temperature promotes solid-state ductile flow. Watch the solid rock bend. The curve turns toward lower strength. The brittle–ductile transition is gradual; its depth depends on conditions, not one universal number.

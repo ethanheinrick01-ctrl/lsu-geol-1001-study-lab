@@ -4,6 +4,12 @@ General Geology: Physical · Professor Guangsheng Zhuang · Fall 2026. Exam 1 co
 
 A source-cited study guide with one shared mastery record across practice, cases, Boss drills, written self-checks, and Exam 1 learning mocks. Runs in your browser with no account, backend, or paid API.
 
+## Exam 2 · October 12 animation refresh
+
+All twelve Chapter 7–8 lessons now use the reviewed textbook-based animations, with Clear narration, 1280×720 video at 60 fps, captions, transcripts, posters and stage controls. Thirty-one section-specific teaching frames replace the older schematic fallbacks. The final visual review covered 69 beats; every beat scored at least 8.1/10 across source fidelity, composition, legibility, physical credibility and motion clarity.
+
+This update preserves Exam 1, graded diagram media, question banks and saved progress. Complete source packets, production audits and personal evidence remain local. See [the release notes](docs/EXAM2_RELEASE.md) for scope and verification.
+
 ## Exam 2 · October 6 local addition
 
 Open `index.html` and select **Exam 2**. The twelve focused lessons carry forward the accepted Exam 1 format: Clear narrated process films, original zoomable course figures, detailed lessons, comparisons, common confusions, and linked practice. Every supplied section, 7.1–7.16 and 8.1–8.15, is included. Lecture-confirmed topics and textbook continuation are labeled separately.
