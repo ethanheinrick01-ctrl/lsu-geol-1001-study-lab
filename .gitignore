@@ -47,3 +47,11 @@ js/content/ch9-*.js
 js/content/connect-ch9-*.js
 js/ch9-motion.js
 videos/chapter9/
+
+# Private Chapter 10 intake, course figures, local narration and review build.
+source-materials/chapter10/
+assets/figures/ch10/
+js/content/ch10-*.js
+js/ch10-motion.js
+animations/chapter10/
+videos/chapter10/

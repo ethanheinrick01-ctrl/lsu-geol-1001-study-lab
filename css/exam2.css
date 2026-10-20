@@ -75,3 +75,6 @@ figure.media img[src*="assets/figures/connect-"]{object-fit:contain}
 figure.media img[src*="assets/figures/ch9-lessons/"],figure.media img[src*="assets/figures/chapter9/"]{object-fit:contain}
 
 .ch9-film video::cue{font-size:18px;color:#eef3f6;background:#0f1316e6}
+
+/* Chapter10 follows the accepted caption placement and readable native cue size. */
+.ch10-film video::cue{font-size:18px;color:#eef3f6;background:#0f1316e6}

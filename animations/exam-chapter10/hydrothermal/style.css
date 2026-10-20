@@ -1,0 +1,17 @@
+:root { color-scheme:dark; --bg:#0f1316; --text:#e4e8e8; --blue:#2db9e4; }
+* { box-sizing:border-box; } body { margin:0; background:var(--bg); color:var(--text); font-family:Arial,"Helvetica Neue",sans-serif; }
+main { max-width:1600px; margin:auto; }
+#film { width:100%; aspect-ratio:16/9; position:relative; overflow:hidden; }
+#scene,#captions { display:block; position:absolute; inset:0; width:100%; height:100%; }
+#captions { pointer-events:none; }
+svg text { fill:var(--text); paint-order:stroke fill; stroke:#0f1316; stroke-width:2px; }
+.beat-title { font-size:32px; font-weight:700; letter-spacing:-.65px; }
+.beat-subtitle { font-size:18px; fill:#aebabe; stroke-width:1px; }
+#controls { display:flex; align-items:center; gap:18px; padding:10px 5%; }
+button { color:var(--text); background:none; border:none; font:600 14px Arial,sans-serif; padding:10px 0; cursor:pointer; }
+button:hover,button:focus-visible { color:var(--blue); } input { accent-color:var(--blue); flex:1; min-width:30px; }
+output { font-size:12px; color:#aebabe; font-variant-numeric:tabular-nums; white-space:nowrap; }
+#transcript,details { margin:12px 5%; font-size:16px; line-height:1.6; } summary { cursor:pointer; color:var(--blue); }
+#sources { display:flex; gap:25px; flex-wrap:wrap; } figure { flex:1 1 260px; margin:10px 0; } img { max-width:100%; height:auto; } figcaption { font-size:12px; }
+body.capture main { max-width:none; } body.capture #controls,body.capture #transcript,body.capture details { display:none; }
+@media(max-width:600px) { .beat-title { font-size:42px; } .beat-subtitle { display:none; } #controls { gap:10px; } #transcript { font-size:15px; } }
