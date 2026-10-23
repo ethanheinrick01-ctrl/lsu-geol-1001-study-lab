@@ -78,3 +78,6 @@ figure.media img[src*="assets/figures/ch9-lessons/"],figure.media img[src*="asse
 
 /* Chapter10 follows the accepted caption placement and readable native cue size. */
 .ch10-film video::cue{font-size:18px;color:#eef3f6;background:#0f1316e6}
+
+/* Full process descriptions in source word banks must wrap on phones. */
+.wordbank .badge{white-space:normal;max-width:100%;overflow-wrap:anywhere;box-sizing:border-box}
