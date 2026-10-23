@@ -1,0 +1,9 @@
+A mountain's height is only the visible part of the story. Beneath a major mountain belt, thick, relatively buoyant crust extends downward as a root. Isostasy describes how regional elevation adjusts to the types and thicknesses of rock below. Continental crust is commonly thirty to fifty kilometers thick, compared with roughly seven kilometers for oceanic crust. Those are typical values, not measurements of every location.
+
+Thickness is not the only control. With similar crustal thickness, less dense material supports higher elevation. Heating expands rock and lowers its density, so regional heating can cause uplift. Cooling has the opposite effect. The mantle here remains predominantly solid: warmth and slow deformation do not mean a worldwide ocean of magma.
+
+Compression folds and thrusts the crust, making it thicker. Extension stretches it and moves blocks along normal faults, making it thinner. Erosion removes material; deposition and volcanic eruptions add material at the surface. Intruding magma adds material at depth and also transfers heat. A surface load can build up the ground while pushing the underlying crust downward. Several mechanisms can operate together.
+
+Keep crustal thickness separate from lithospheric thickness. The lithosphere includes crust and rigid upper mantle. As an oceanic plate moves away from a ridge, it cools, its mantle lithosphere thickens, and the plate subsides. Replacing dense continental mantle lithosphere with warmer asthenosphere can instead raise a region, even without thickening its crust.
+
+The historical clue was a surveying discrepancy near the Himalaya. A hanging weight leaned toward the mountains, but less than expected. A deep root of lower-density crust displaces denser mantle, reducing the predicted attraction. The iceberg analogy helps explain buoyancy, but the supporting mantle is solid rock. To explain elevation, ask what changed in thickness, density, temperature, and load.

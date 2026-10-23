@@ -1,0 +1,9 @@
+Pull a continent apart and the brittle upper crust breaks into normal-fault blocks. Where neighboring faults dip in opposite directions, relatively high blocks form horsts and downdropped blocks form grabens. The basins receive sediment from adjacent ranges. With time, erosion lowers the mountains and basin fill can overlap their edges. Relative block height and fault geometry define the terms.
+
+If neighboring faults dip in the same direction, the blocks can rotate like books tipping on a shelf. A lowered corner becomes a basin; a raised corner becomes a ridge. Continued rotation tilts older beds more steeply than younger deposits and can rotate faults to gentler dips. This arrangement accommodates much more extension than blocks that simply drop without rotating.
+
+Extension is possible near a convergent boundary. It can thin the forearc, or stretch hot weak crust behind the volcanic arc. Enough extension behind the arc creates a back-arc ocean basin, with land-derived sediment near its edges and deep-ocean sediment farther out. The location relative to the arc distinguishes forearc from back-arc; extension alone does not tell you which one you are seeing.
+
+The basin's history is written in its fill. Older units may have nearly uniform original thickness and then become faulted and tilted. Deposits laid down during basin growth become thick in the subsiding part and may contain coarse debris from steep slopes. A younger flat unit that overlaps the basin and its faults shows that this phase of basin formation had ended before that unit was deposited.
+
+For a dated interval, average accumulation rate is deposited thickness divided by elapsed time. In the textbook example, rapid accumulation after about fifteen million years ago helps identify basin initiation. That date belongs to this example, not all rift basins. Combine dates, thickness changes, tilting, and overlap relationships; a thick layer alone cannot establish when extension began.
