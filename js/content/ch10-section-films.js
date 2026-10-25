@@ -1,0 +1,4273 @@
+/* Chapter10 section media metadata; no learner records or private production receipts. */
+window.L.CH10_SECTION_FILMS=[
+  {
+    "n": 1,
+    "title": "Explore the seafloor: match the tool to the evidence",
+    "logline": "Depth, samples and buried structure require different observations.",
+    "beats": [
+      [
+        "Sound becomes a depth measurement",
+        "sonar",
+        [
+          2
+        ],
+        "A ship cannot simply look through the deep ocean. Instead, sonar sends sound toward the bottom and measures its return time. A longer round trip means deeper water, provided the sound speed is known. Angled beams can map a swath. Watch the outgoing pulse reach the bottom, then travel back to the ship. The observation is travel time; the calculated result is depth.",
+        [
+          "10.1-p2-Im2.png"
+        ],
+        {
+          "start": 0,
+          "end": 20.23
+        },
+        {
+          "takeaway": "Sound travel time measures depth; samples answer a different question.",
+          "cueAnchors": [],
+          "figures": [
+            {}
+          ],
+          "cueTimes": [
+            0
+          ]
+        }
+      ],
+      [
+        "Direct observation and actual samples",
+        "sampling",
+        [
+          2,
+          4
+        ],
+        "Submersibles carry observers to small parts of the bottom. Remotely operated vehicles provide close views and collect samples without carrying people. A drilling ship reaches farther below the surface, recovering a cylinder of sediment and volcanic rock called a core. These methods complement a map: a photograph shows local detail, while a core preserves actual material in its layered context.",
+        [
+          "10.1-p2-Im3.png",
+          "10.1-p2-Im4.png"
+        ],
+        {
+          "start": 20.23,
+          "end": 43.07
+        },
+        {
+          "takeaway": "An observation has a location. A recovered core retains layer order.",
+          "cueAnchors": [
+            "Submersibles",
+            "A drilling ship"
+          ],
+          "figures": [
+            {},
+            {}
+          ],
+          "cueTimes": [
+            20.23,
+            28.85
+          ],
+          "modes": [
+            "sampling",
+            "core"
+          ]
+        }
+      ],
+      [
+        "A core preserves several kinds of history",
+        "core",
+        [
+          4,
+          5
+        ],
+        "Opening a core reveals sediment type, layering and fossils. Fossils help correlate layers and constrain environments. Appropriate volcanic minerals can provide isotopic ages; layer thickness combined with elapsed time constrains accumulation rate. Oxygen and carbon isotopes can record past ocean chemistry and climate. These are different measurements of the same sample, and each interpretation needs geological context.",
+        [
+          "10.1-p4-Im7.png",
+          "10.1-p4-Im8.png"
+        ],
+        {
+          "start": 43.07,
+          "end": 66.77
+        },
+        {
+          "takeaway": "Fossils, minerals and isotopes add age and environmental evidence.",
+          "cueAnchors": [
+            "Opening a core",
+            "Fossils help"
+          ],
+          "figures": [
+            {},
+            {}
+          ],
+          "cueTimes": [
+            43.07,
+            46.81
+          ]
+        }
+      ],
+      [
+        "Map from above; image below",
+        "reflection",
+        [
+          3,
+          6
+        ],
+        "Satellites mainly measure the sea surface, rather than photograph the deep bottom. The gravitational attraction of submarine mountains slightly changes sea-surface height, helping scientists infer broad relief. Seismic reflection answers another question: sound reflected from buried boundaries arrives at different times. Processing those echoes produces a cross section of tilted, folded or faulted layers beneath the seafloor.",
+        [
+          "10.1-p3-Im5.png",
+          "10.1-p6-Im9.png"
+        ],
+        {
+          "start": 66.77,
+          "end": 90.71
+        },
+        {
+          "takeaway": "Surface height and reflected signals reveal different hidden relationships.",
+          "cueAnchors": [
+            "Satellites",
+            "Seismic reflection"
+          ],
+          "figures": [
+            {},
+            {}
+          ],
+          "modes": [
+            "satellite",
+            "reflection"
+          ],
+          "cueTimes": [
+            66.77,
+            79.03
+          ]
+        }
+      ],
+      [
+        "Choose the method before drawing a conclusion",
+        "nodules",
+        [
+          6
+        ],
+        "Manganese nodules illustrate why samples still matter. Manganese precipitating from seawater can accumulate into rounded nodules on the bottom, concentrating metals. Mapping their location and analyzing their composition are separate tasks, and resource exploration also raises environmental questions. For any seafloor problem, name the evidence first: sound time, surface height, a direct view, a recovered sample, or a subsurface reflection.",
+        [
+          "10.1-p6-Im10.png"
+        ],
+        {
+          "start": 90.71,
+          "end": 116.58
+        },
+        {
+          "takeaway": "Precipitation forms nodules; recovery and environmental assessment are separate tasks.",
+          "cueAnchors": [],
+          "figures": [
+            {}
+          ],
+          "cueTimes": [
+            90.71
+          ]
+        }
+      ]
+    ],
+    "duration": 116.58,
+    "audio": "../../videos/chapter10/10-01.mp4",
+    "captions": [
+      {
+        "start": 0.65,
+        "end": 2.85,
+        "text": "A ship cannot simply look through the deep ocean."
+      },
+      {
+        "start": 3.11,
+        "end": 6.59,
+        "text": "Instead, sonar sends sound toward the bottom and measures its return"
+      },
+      {
+        "start": 6.59,
+        "end": 10.17,
+        "text": "time. A longer round trip means deeper water, provided the sound"
+      },
+      {
+        "start": 10.17,
+        "end": 12.49,
+        "text": "speed is known. Angled beams can map a swath."
+      },
+      {
+        "start": 12.79,
+        "end": 15.63,
+        "text": "Watch the outgoing pulse reach the bottom, then travel back to"
+      },
+      {
+        "start": 15.63,
+        "end": 17.83,
+        "text": "the ship. The observation is travel time;"
+      },
+      {
+        "start": 18.01,
+        "end": 19.61,
+        "text": "the calculated result is depth."
+      },
+      {
+        "start": 20.23,
+        "end": 23.53,
+        "text": "Submersibles carry observers to small parts of the bottom."
+      },
+      {
+        "start": 23.77,
+        "end": 28.03,
+        "text": "Remotely operated vehicles provide close views and collect samples without carrying"
+      },
+      {
+        "start": 28.03,
+        "end": 32.07,
+        "text": "people. A drilling ship reaches farther below the surface, recovering a"
+      },
+      {
+        "start": 32.07,
+        "end": 34.95,
+        "text": "cylinder of sediment and volcanic rock called a core."
+      },
+      {
+        "start": 35.23,
+        "end": 36.85,
+        "text": "These methods complement a map:"
+      },
+      {
+        "start": 37.05,
+        "end": 40.93,
+        "text": "a photograph shows local detail, while a core preserves actual material"
+      },
+      {
+        "start": 40.93,
+        "end": 42.17,
+        "text": "in its layered context."
+      },
+      {
+        "start": 43.07,
+        "end": 46.27,
+        "text": "Opening a core reveals sediment type, layering and fossils."
+      },
+      {
+        "start": 46.81,
+        "end": 49.45,
+        "text": "Fossils help correlate layers and constrain environments."
+      },
+      {
+        "start": 50.07,
+        "end": 52.97,
+        "text": "Appropriate volcanic minerals can provide isotopic ages;"
+      },
+      {
+        "start": 53.23,
+        "end": 56.75,
+        "text": "layer thickness combined with elapsed time constrains accumulation rate."
+      },
+      {
+        "start": 56.89,
+        "end": 60.99,
+        "text": "Oxygen and carbon isotopes can record past ocean chemistry and climate."
+      },
+      {
+        "start": 61.25,
+        "end": 64.33,
+        "text": "These are different measurements of the same sample, and each interpretation"
+      },
+      {
+        "start": 64.33,
+        "end": 65.93,
+        "text": "needs geological context."
+      },
+      {
+        "start": 66.77,
+        "end": 70.83,
+        "text": "Satellites mainly measure the sea surface, rather than photograph the deep"
+      },
+      {
+        "start": 70.83,
+        "end": 76.01,
+        "text": "bottom. The gravitational attraction of submarine mountains slightly changes sea-surface height,"
+      },
+      {
+        "start": 76.19,
+        "end": 78.47,
+        "text": "helping scientists infer broad relief."
+      },
+      {
+        "start": 79.03,
+        "end": 81.01,
+        "text": "Seismic reflection answers another question:"
+      },
+      {
+        "start": 81.37,
+        "end": 84.27,
+        "text": "sound reflected from buried boundaries arrives at different times."
+      },
+      {
+        "start": 84.67,
+        "end": 88.31,
+        "text": "Processing those echoes produces a cross section of tilted, folded or"
+      },
+      {
+        "start": 88.31,
+        "end": 90.11,
+        "text": "faulted layers beneath the seafloor."
+      },
+      {
+        "start": 90.71,
+        "end": 93.71,
+        "text": "Manganese nodules illustrate why samples still matter."
+      },
+      {
+        "start": 93.91,
+        "end": 97.93,
+        "text": "Manganese precipitating from seawater can accumulate into rounded nodules on the"
+      },
+      {
+        "start": 97.93,
+        "end": 102.41,
+        "text": "bottom, concentrating metals. Mapping their location and analyzing their composition are"
+      },
+      {
+        "start": 102.41,
+        "end": 106.33,
+        "text": "separate tasks, and resource exploration also raises environmental questions."
+      },
+      {
+        "start": 106.67,
+        "end": 109.29,
+        "text": "For any seafloor problem, name the evidence first:"
+      },
+      {
+        "start": 109.49,
+        "end": 113.59,
+        "text": "sound time, surface height, a direct view, a recovered sample, or"
+      },
+      {
+        "start": 113.59,
+        "end": 114.81,
+        "text": "a subsurface reflection."
+      }
+    ]
+  },
+  {
+    "n": 2,
+    "title": "Mid-ocean ridges: new crust, hot water and life",
+    "logline": "Spreading creates crust; circulating seawater builds a different mineral system.",
+    "beats": [
+      [
+        "Build new oceanic crust",
+        "ridge",
+        [
+          2
+        ],
+        "At a mid-ocean ridge, two plates move apart. Mantle rises beneath the opening, and magma supplies new oceanic crust. Lava erupting into seawater forms pillow basalts. Magma that freezes inside narrow fractures forms dikes, while other magma crystallizes deeper down. Normal faults let blocks move down toward the rift. New crust is then carried away as spreading continues.",
+        [
+          "10.2-p2-Im2.png"
+        ],
+        {
+          "start": 0,
+          "end": 24.97
+        },
+        {
+          "takeaway": "Magma freezes into new crust while the plates separate.",
+          "cueAnchors": [],
+          "figures": [
+            {}
+          ],
+          "cueTimes": [
+            0
+          ]
+        }
+      ],
+      [
+        "Fast and slow ridges have different profiles",
+        "ridgeCompare",
+        [
+          3
+        ],
+        "The source compares broad, relatively smooth fast-spreading ridges with slower ridges that have deep axial rifts. Faster magma supply and spreading can build a broad crest before cooling causes subsidence. Slower crust can cool and strengthen enough for larger normal faults. These are end members, not a rule that every ridge has the same shape or one universal spreading rate.",
+        [
+          "10.2-p3-Im3.png"
+        ],
+        {
+          "start": 24.97,
+          "end": 47.230000000000004
+        },
+        {
+          "takeaway": "Magmatic supply, cooling and normal faults shape the ridge profile.",
+          "cueAnchors": [],
+          "figures": [
+            {}
+          ],
+          "cueTimes": [
+            24.97
+          ]
+        }
+      ],
+      [
+        "Cooling changes elevation and sediment cover",
+        "cooling",
+        [
+          2
+        ],
+        "Away from the ridge, the plate cools, becomes denser and subsides. Sediment accumulates and can bury rough volcanic relief. Preservation also depends on chemistry: below the local carbonate compensation depth, carbonate dissolves as fast as it accumulates. The textbook gives roughly forty-five hundred to five thousand meters, while explicitly noting that the actual depth varies. Clay and silica-rich material can remain.",
+        [
+          "10.2-p2-Im2.png"
+        ],
+        {
+          "start": 47.230000000000004,
+          "end": 71.81
+        },
+        {
+          "takeaway": "Cooling lowers the plate; sediment supply and carbonate preservation also matter.",
+          "cueAnchors": [],
+          "figures": [
+            {}
+          ],
+          "cueTimes": [
+            47.230000000000004
+          ]
+        }
+      ],
+      [
+        "Circulating seawater becomes a black smoker",
+        "vent",
+        [
+          4,
+          5
+        ],
+        "Cold seawater enters fractures, heats near hot rock and magma, and leaches dissolved chemicals from the rock. Hot fluid rises and escapes into cold seawater. Mixing and cooling precipitate tiny sulfide minerals, making the dark plume and building a chimney. This is mineral precipitation, not smoke from burning. Deep-water pressure can keep the very hot vent fluid from boiling.",
+        [
+          "10.2-p5-Im6.png",
+          "10.2-p4-Im4.png"
+        ],
+        {
+          "start": 71.81,
+          "end": 95.05
+        },
+        {
+          "takeaway": "Seawater circulates through fractures, gains heat, then precipitates minerals.",
+          "cueAnchors": [
+            "Cold seawater",
+            "Hot fluid rises"
+          ],
+          "figures": [
+            {},
+            {}
+          ],
+          "cueTimes": [
+            71.81,
+            79.23
+          ]
+        }
+      ],
+      [
+        "Chemical energy supports a food web",
+        "ventLife",
+        [
+          5
+        ],
+        "Lecture Fifteen connects black smokers with ore deposits and unusual ecology. No sunlight reaches these deep vents. Bacteria use chemical energy associated with substances such as hydrogen sulfide, supporting tube worms and an associated community of clams, crabs and other animals. Keep the systems distinct: magma supplies heat, seawater circulates, minerals precipitate, and chemical energy supports life.",
+        [
+          "10.2-p4-Im5.png",
+          "10.2-p5-Im7.png",
+          "L15-slide09.png"
+        ],
+        {
+          "start": 95.05,
+          "end": 120.6
+        },
+        {
+          "takeaway": "Chemical energy supports the food web; the dark plume is mineral material.",
+          "cueAnchors": [
+            "Lecture Fifteen",
+            "No sunlight",
+            "Keep the systems distinct"
+          ],
+          "figures": [
+            {},
+            {},
+            {}
+          ],
+          "cueTimes": [
+            95.05,
+            99.91,
+            111.61
+          ]
+        }
+      ]
+    ],
+    "duration": 120.6,
+    "audio": "../../videos/chapter10/10-02.mp4",
+    "captions": [
+      {
+        "start": 0.65,
+        "end": 2.87,
+        "text": "At a mid-ocean ridge, two plates move apart."
+      },
+      {
+        "start": 3.25,
+        "end": 7.57,
+        "text": "Mantle rises beneath the opening, and magma supplies new oceanic crust."
+      },
+      {
+        "start": 7.79,
+        "end": 10.99,
+        "text": "Lava erupting into seawater forms pillow basalts."
+      },
+      {
+        "start": 11.27,
+        "end": 15.77,
+        "text": "Magma that freezes inside narrow fractures forms dikes, while other magma"
+      },
+      {
+        "start": 15.77,
+        "end": 20.61,
+        "text": "crystallizes deeper down. Normal faults let blocks move down toward the"
+      },
+      {
+        "start": 20.61,
+        "end": 24.03,
+        "text": "rift. New crust is then carried away as spreading continues."
+      },
+      {
+        "start": 24.97,
+        "end": 29.79,
+        "text": "The source compares broad, relatively smooth fast-spreading ridges with slower ridges"
+      },
+      {
+        "start": 29.79,
+        "end": 31.39,
+        "text": "that have deep axial rifts."
+      },
+      {
+        "start": 31.61,
+        "end": 35.61,
+        "text": "Faster magma supply and spreading can build a broad crest before"
+      },
+      {
+        "start": 35.61,
+        "end": 39.85,
+        "text": "cooling causes subsidence. Slower crust can cool and strengthen enough for"
+      },
+      {
+        "start": 39.85,
+        "end": 43.19,
+        "text": "larger normal faults. These are end members, not a rule that"
+      },
+      {
+        "start": 43.19,
+        "end": 46.61,
+        "text": "every ridge has the same shape or one universal spreading rate."
+      },
+      {
+        "start": 47.23,
+        "end": 51.57,
+        "text": "Away from the ridge, the plate cools, becomes denser and subsides."
+      },
+      {
+        "start": 51.91,
+        "end": 54.79,
+        "text": "Sediment accumulates and can bury rough volcanic relief."
+      },
+      {
+        "start": 55.07,
+        "end": 57.15,
+        "text": "Preservation also depends on chemistry:"
+      },
+      {
+        "start": 57.55,
+        "end": 61.41,
+        "text": "below the local carbonate compensation depth, carbonate dissolves as fast as"
+      },
+      {
+        "start": 61.41,
+        "end": 65.35,
+        "text": "it accumulates. The textbook gives roughly forty-five hundred to five thousand"
+      },
+      {
+        "start": 65.35,
+        "end": 68.47,
+        "text": "meters, while explicitly noting that the actual depth varies."
+      },
+      {
+        "start": 68.75,
+        "end": 71.01,
+        "text": "Clay and silica-rich material can remain."
+      },
+      {
+        "start": 71.81,
+        "end": 76.99,
+        "text": "Cold seawater enters fractures, heats near hot rock and magma, and"
+      },
+      {
+        "start": 76.99,
+        "end": 79.03,
+        "text": "leaches dissolved chemicals from the rock."
+      },
+      {
+        "start": 79.23,
+        "end": 82.05,
+        "text": "Hot fluid rises and escapes into cold seawater."
+      },
+      {
+        "start": 82.39,
+        "end": 86.61,
+        "text": "Mixing and cooling precipitate tiny sulfide minerals, making the dark plume"
+      },
+      {
+        "start": 86.61,
+        "end": 90.41,
+        "text": "and building a chimney. This is mineral precipitation, not smoke from"
+      },
+      {
+        "start": 90.41,
+        "end": 93.97,
+        "text": "burning. Deep-water pressure can keep the very hot vent fluid from"
+      },
+      {
+        "start": 93.97,
+        "end": 94.29,
+        "text": "boiling."
+      },
+      {
+        "start": 95.05,
+        "end": 99.39,
+        "text": "Lecture Fifteen connects black smokers with ore deposits and unusual ecology."
+      },
+      {
+        "start": 99.91,
+        "end": 101.65,
+        "text": "No sunlight reaches these deep vents."
+      },
+      {
+        "start": 101.85,
+        "end": 106.23,
+        "text": "Bacteria use chemical energy associated with substances such as hydrogen sulfide,"
+      },
+      {
+        "start": 106.35,
+        "end": 110.49,
+        "text": "supporting tube worms and an associated community of clams, crabs and"
+      },
+      {
+        "start": 110.49,
+        "end": 112.99,
+        "text": "other animals. Keep the systems distinct:"
+      },
+      {
+        "start": 113.19,
+        "end": 118.45,
+        "text": "magma supplies heat, seawater circulates, minerals precipitate, and chemical energy supports"
+      },
+      {
+        "start": 118.45,
+        "end": 118.81,
+        "text": "life."
+      }
+    ]
+  },
+  {
+    "n": 3,
+    "title": "Read deep-ocean relief, sediment and age together",
+    "logline": "Compare three different maps instead of treating every color as the same measurement.",
+    "beats": [
+      [
+        "A landscape beneath the water",
+        "oceanRelief",
+        [
+          2
+        ],
+        "The deep seafloor contains ridges, abyssal plains, seamounts and trenches. An abyssal plain is relatively smooth because sediment buries much of the original roughness. Seamounts rise above that plain, often as submarine volcanoes. Trenches are narrow, very deep bends where an oceanic plate descends beneath another plate. They occupy a small area despite their exceptional depths.",
+        [
+          "10.3-p2-Im2.png"
+        ],
+        {
+          "start": 0,
+          "end": 24.13
+        },
+        {
+          "takeaway": "Relief, sediment cover and crustal age are three different measurements.",
+          "cueAnchors": [],
+          "figures": [
+            {}
+          ],
+          "cueTimes": [
+            0
+          ]
+        }
+      ],
+      [
+        "Why the plate gets lower",
+        "cooling",
+        [
+          2,
+          4
+        ],
+        "New lithosphere is hot and relatively buoyant near a spreading center. As it moves away, cooling increases its density and the seafloor subsides. That explains the broad ridge-to-basin elevation trend. Continental shelves are shallower still, whereas subduction trenches can be far deeper. Local features also matter, so depth alone is not an exact clock for every point on a map.",
+        [
+          "10.3-p4-Im5.png",
+          "10.3-p2-Im2.png"
+        ],
+        {
+          "start": 24.13,
+          "end": 47.38999999999999
+        },
+        {
+          "takeaway": "Oceanic lithosphere cools and subsides as it moves away from a ridge.",
+          "cueAnchors": [
+            "New lithosphere",
+            "Continental shelves"
+          ],
+          "figures": [
+            {},
+            {}
+          ],
+          "cueTimes": [
+            24.13,
+            35.85
+          ]
+        }
+      ],
+      [
+        "Sediment has both a clock and a source",
+        "sediment",
+        [
+          3
+        ],
+        "Compare the sediment-thickness globes. Older crust has had more time to collect sediment, but nearby land and major rivers strongly affect supply. Thick deposits line many continental margins and river mouths. The youngest ridge crust has little cover, and remote ocean areas can remain thinly covered. A thick deposit therefore records both available time and sediment delivery, not age alone.",
+        [
+          "10.3-p3-Im3.png"
+        ],
+        {
+          "start": 47.38999999999999,
+          "end": 71.88999999999999
+        },
+        {
+          "takeaway": "Accumulation depends on both elapsed time and sediment delivery.",
+          "cueAnchors": [],
+          "figures": [
+            {}
+          ],
+          "cueTimes": [
+            47.38999999999999
+          ]
+        }
+      ],
+      [
+        "Read the age legend separately",
+        "ageBands",
+        [
+          5
+        ],
+        "The age maps use their own color key. Young crust traces spreading centers; progressively older crust generally lies farther away. The supplied Atlantic map has paired age bands on opposite sides of the ridge. Its oldest surviving colors are a property of this particular map and source, not an unqualified universal maximum age for every oceanic rock.",
+        [
+          "10.3-p5-Im6.png"
+        ],
+        {
+          "start": 71.88999999999999,
+          "end": 92.43999999999998
+        },
+        {
+          "takeaway": "Read each map legend anew; a data gap is not a zero value.",
+          "cueAnchors": [],
+          "figures": [
+            {}
+          ],
+          "cueTimes": [
+            71.88999999999999
+          ]
+        }
+      ],
+      [
+        "Subduction changes what survives",
+        "subduction",
+        [
+          4,
+          5
+        ],
+        "The Pacific pattern is less symmetrical because subduction removes oceanic lithosphere. Some young crust approaches the American margins while older, deeper seafloor survives elsewhere, especially toward the western Pacific. Compare depth, age and sediment maps side by side. State what each map measures, identify the spatial pattern, then explain how creation, cooling, burial and destruction produce it.",
+        [
+          "10.3-p4-Im5.png",
+          "10.3-p5-Im6.png"
+        ],
+        {
+          "start": 92.43999999999998,
+          "end": 117.18999999999998
+        },
+        {
+          "takeaway": "Subduction removes part of the oceanic age record.",
+          "cueAnchors": [
+            "The Pacific",
+            "Compare depth"
+          ],
+          "figures": [
+            {},
+            {}
+          ],
+          "cueTimes": [
+            92.43999999999998,
+            104.85999999999999
+          ]
+        }
+      ]
+    ],
+    "duration": 117.18999999999998,
+    "audio": "../../videos/chapter10/10-03.mp4",
+    "captions": [
+      {
+        "start": 0.65,
+        "end": 5.47,
+        "text": "The deep seafloor contains ridges, abyssal plains, seamounts and trenches."
+      },
+      {
+        "start": 5.87,
+        "end": 9.85,
+        "text": "An abyssal plain is relatively smooth because sediment buries much of"
+      },
+      {
+        "start": 9.85,
+        "end": 13.81,
+        "text": "the original roughness. Seamounts rise above that plain, often as submarine"
+      },
+      {
+        "start": 13.81,
+        "end": 18.09,
+        "text": "volcanoes. Trenches are narrow, very deep bends where an oceanic plate"
+      },
+      {
+        "start": 18.09,
+        "end": 22.27,
+        "text": "descends beneath another plate. They occupy a small area despite their"
+      },
+      {
+        "start": 22.27,
+        "end": 23.17,
+        "text": "exceptional depths."
+      },
+      {
+        "start": 24.13,
+        "end": 28.07,
+        "text": "New lithosphere is hot and relatively buoyant near a spreading center."
+      },
+      {
+        "start": 28.43,
+        "end": 31.87,
+        "text": "As it moves away, cooling increases its density and the seafloor"
+      },
+      {
+        "start": 31.87,
+        "end": 35.61,
+        "text": "subsides. That explains the broad ridge-to-basin elevation trend."
+      },
+      {
+        "start": 35.85,
+        "end": 40.57,
+        "text": "Continental shelves are shallower still, whereas subduction trenches can be far"
+      },
+      {
+        "start": 40.57,
+        "end": 44.39,
+        "text": "deeper. Local features also matter, so depth alone is not an"
+      },
+      {
+        "start": 44.39,
+        "end": 46.49,
+        "text": "exact clock for every point on a map."
+      },
+      {
+        "start": 47.39,
+        "end": 51.63,
+        "text": "Compare the sediment-thickness globes. Older crust has had more time to"
+      },
+      {
+        "start": 51.63,
+        "end": 56.05,
+        "text": "collect sediment, but nearby land and major rivers strongly affect supply."
+      },
+      {
+        "start": 56.37,
+        "end": 59.63,
+        "text": "Thick deposits line many continental margins and river mouths."
+      },
+      {
+        "start": 60.25,
+        "end": 63.85,
+        "text": "The youngest ridge crust has little cover, and remote ocean areas"
+      },
+      {
+        "start": 63.85,
+        "end": 68.29,
+        "text": "can remain thinly covered. A thick deposit therefore records both available"
+      },
+      {
+        "start": 68.29,
+        "end": 71.25,
+        "text": "time and sediment delivery, not age alone."
+      },
+      {
+        "start": 71.89,
+        "end": 74.07,
+        "text": "The age maps use their own color key."
+      },
+      {
+        "start": 74.21,
+        "end": 76.05,
+        "text": "Young crust traces spreading centers;"
+      },
+      {
+        "start": 76.41,
+        "end": 79.31,
+        "text": "progressively older crust generally lies farther away."
+      },
+      {
+        "start": 79.75,
+        "end": 83.01,
+        "text": "The supplied Atlantic map has paired age bands on opposite sides"
+      },
+      {
+        "start": 83.01,
+        "end": 85.95,
+        "text": "of the ridge. Its oldest surviving colors are a property of"
+      },
+      {
+        "start": 85.95,
+        "end": 90.43,
+        "text": "this particular map and source, not an unqualified universal maximum age"
+      },
+      {
+        "start": 90.43,
+        "end": 91.75,
+        "text": "for every oceanic rock."
+      },
+      {
+        "start": 92.44,
+        "end": 97.34,
+        "text": "The Pacific pattern is less symmetrical because subduction removes oceanic lithosphere."
+      },
+      {
+        "start": 97.66,
+        "end": 101.54,
+        "text": "Some young crust approaches the American margins while older, deeper seafloor"
+      },
+      {
+        "start": 101.54,
+        "end": 104.64,
+        "text": "survives elsewhere, especially toward the western Pacific."
+      },
+      {
+        "start": 104.86,
+        "end": 107.96,
+        "text": "Compare depth, age and sediment maps side by side."
+      },
+      {
+        "start": 108.3,
+        "end": 112.2,
+        "text": "State what each map measures, identify the spatial pattern, then explain"
+      },
+      {
+        "start": 112.2,
+        "end": 115.22,
+        "text": "how creation, cooling, burial and destruction produce it."
+      }
+    ]
+  },
+  {
+    "n": 4,
+    "title": "Build islands, seamount chains and oceanic plateaus",
+    "logline": "A narrow volcanic track and a broad flood-basalt plateau record different scales of magmatism.",
+    "beats": [
+      [
+        "A submarine volcano becomes an island",
+        "hotspot",
+        [
+          2
+        ],
+        "Repeated eruptions can build a basaltic submarine volcano high enough to become an island. If the plate moves relative to the magma source, an older volcano leaves that source while a new one develops above it. This creates an age-progressive island and seamount chain. Locate the active end before inferring plate motion; a line of islands alone is not enough.",
+        [
+          "10.4-p2-Im2.png"
+        ],
+        {
+          "start": 0,
+          "end": 20.190041666666666
+        },
+        {
+          "takeaway": "Repeated submarine eruptions can build a peak above sea level.",
+          "cueAnchors": [],
+          "figures": [
+            {
+              "focus": [
+                0.16,
+                0.5,
+                0.32,
+                1
+              ]
+            }
+          ],
+          "cueTimes": [
+            0
+          ]
+        }
+      ],
+      [
+        "An island can disappear without vanishing",
+        "guyot",
+        [
+          2
+        ],
+        "After volcanic activity ends, cooling and subsidence lower the island. Waves can bevel its top while it remains near sea level. Continued subsidence leaves a flat-topped seamount below the surface, eventually covered by marine sediment. Eruption builds the volcano, erosion reshapes it, and cooling lowers its supporting plate. Those processes act at different stages.",
+        [
+          "10.4-p2-Im2.png"
+        ],
+        {
+          "start": 20.190041666666666,
+          "end": 41.78004166666666
+        },
+        {
+          "takeaway": "Waves flatten the summit; cooling later lowers the foundation.",
+          "cueAnchors": [],
+          "figures": [
+            {
+              "focus": [
+                0.82,
+                0.5,
+                0.34,
+                1
+              ]
+            }
+          ],
+          "cueTimes": [
+            20.190041666666666
+          ]
+        }
+      ],
+      [
+        "The plume is hot solid mantle",
+        "plume",
+        [
+          3
+        ],
+        "The plateau model begins with a rising mass of hot, mostly solid mantle, not a pipe of liquid magma through the whole mantle. Near the base of the lithosphere, melting supplies magma over a broad region. Fissures and vents then erupt submarine flood basalts. Watch successive flows remain in place: the plateau is built by accumulating rock, not by raising the water.",
+        [
+          "10.4-p3-Im4.png"
+        ],
+        {
+          "start": 41.78004166666666,
+          "end": 63.340041666666664
+        },
+        {
+          "takeaway": "The plume is hot solid mantle; local melting supplies magma.",
+          "cueAnchors": [],
+          "figures": [
+            {}
+          ],
+          "cueTimes": [
+            41.78004166666666
+          ]
+        }
+      ],
+      [
+        "Flood basalts build a broad elevated platform",
+        "plateau",
+        [
+          3
+        ],
+        "Oceanic plateaus cover enormous areas and rise above surrounding seafloor, although most remain submerged. The textbook examples include Kerguelen in the southern Indian Ocean and Ontong Java in the Pacific. Lecture Fifteen emphasizes that immense basalt volumes accumulated over millions of years. A plateau is therefore different from one steep volcanic island, even when both relate to hot-spot magmatism.",
+        [
+          "10.4-p3-Im3.png",
+          "L15-slide12.png",
+          "10.4-p3-Im4.png"
+        ],
+        {
+          "start": 63.340041666666664,
+          "end": 88.64004166666666
+        },
+        {
+          "takeaway": "Repeated flood basalts leave a broad, persistent oceanic plateau.",
+          "cueAnchors": [
+            "Oceanic plateaus",
+            "Lecture Fifteen",
+            "A plateau"
+          ],
+          "figures": [
+            {},
+            {},
+            {}
+          ],
+          "cueTimes": [
+            63.340041666666664,
+            76.18004166666667,
+            81.60004166666667
+          ]
+        }
+      ],
+      [
+        "Use the distribution and the ages",
+        "hotspotChain",
+        [
+          4
+        ],
+        "Hawaii and the Tahiti chains illustrate older volcanoes to the northwest and younger active volcanoes toward the southeast. That pattern supports northwestward plate movement relative to the source. Iceland, Tristan da Cunha and the Galápagos provide other examples. The source also notes debate about which locations are true hot spots. Use the mapped evidence rather than assigning every island to one mechanism.",
+        [
+          "10.4-p4-Im5.png",
+          "10.4-p4-Im6.png"
+        ],
+        {
+          "start": 88.64004166666666,
+          "end": 114.91004166666666
+        },
+        {
+          "takeaway": "Locate the active volcano and compare ages before inferring plate motion.",
+          "cueAnchors": [
+            "Hawaii",
+            "the Galápagos"
+          ],
+          "figures": [
+            {},
+            {}
+          ],
+          "cueTimes": [
+            88.64004166666666,
+            102.20004166666666
+          ]
+        }
+      ]
+    ],
+    "duration": 114.91004166666666,
+    "audio": "../../videos/chapter10/10-04.mp4",
+    "captions": [
+      {
+        "start": 0.65,
+        "end": 4.15,
+        "text": "Repeated eruptions can build a basaltic submarine volcano high enough to"
+      },
+      {
+        "start": 4.15,
+        "end": 7.25,
+        "text": "become an island. If the plate moves relative to the magma"
+      },
+      {
+        "start": 7.25,
+        "end": 10.67,
+        "text": "source, an older volcano leaves that source while a new one"
+      },
+      {
+        "start": 10.67,
+        "end": 14.71,
+        "text": "develops above it. This creates an age-progressive island and seamount chain."
+      },
+      {
+        "start": 14.91,
+        "end": 17.61,
+        "text": "Locate the active end before inferring plate motion;"
+      },
+      {
+        "start": 17.77,
+        "end": 19.51,
+        "text": "a line of islands alone is not enough."
+      },
+      {
+        "start": 20.19,
+        "end": 24.09,
+        "text": "After volcanic activity ends, cooling and subsidence lower the island."
+      },
+      {
+        "start": 24.31,
+        "end": 27.25,
+        "text": "Waves can bevel its top while it remains near sea level."
+      },
+      {
+        "start": 27.47,
+        "end": 32.41,
+        "text": "Continued subsidence leaves a flat-topped seamount below the surface, eventually covered"
+      },
+      {
+        "start": 32.41,
+        "end": 36.69,
+        "text": "by marine sediment. Eruption builds the volcano, erosion reshapes it, and"
+      },
+      {
+        "start": 36.69,
+        "end": 38.49,
+        "text": "cooling lowers its supporting plate."
+      },
+      {
+        "start": 38.71,
+        "end": 40.93,
+        "text": "Those processes act at different stages."
+      },
+      {
+        "start": 41.78,
+        "end": 44.98,
+        "text": "The plateau model begins with a rising mass of hot, mostly"
+      },
+      {
+        "start": 44.98,
+        "end": 48.16,
+        "text": "solid mantle, not a pipe of liquid magma through the whole"
+      },
+      {
+        "start": 48.16,
+        "end": 51.96,
+        "text": "mantle. Near the base of the lithosphere, melting supplies magma over"
+      },
+      {
+        "start": 51.96,
+        "end": 56.48,
+        "text": "a broad region. Fissures and vents then erupt submarine flood basalts."
+      },
+      {
+        "start": 57.06,
+        "end": 59.04,
+        "text": "Watch successive flows remain in place:"
+      },
+      {
+        "start": 59.36,
+        "end": 62.36,
+        "text": "the plateau is built by accumulating rock, not by raising the"
+      },
+      {
+        "start": 62.36,
+        "end": 62.6,
+        "text": "water."
+      },
+      {
+        "start": 63.34,
+        "end": 68.26,
+        "text": "Oceanic plateaus cover enormous areas and rise above surrounding seafloor, although"
+      },
+      {
+        "start": 68.26,
+        "end": 72.98,
+        "text": "most remain submerged. The textbook examples include Kerguelen in the southern"
+      },
+      {
+        "start": 72.98,
+        "end": 75.56,
+        "text": "Indian Ocean and Ontong Java in the Pacific."
+      },
+      {
+        "start": 76.18,
+        "end": 80.96,
+        "text": "Lecture Fifteen emphasizes that immense basalt volumes accumulated over millions of"
+      },
+      {
+        "start": 80.96,
+        "end": 84.94,
+        "text": "years. A plateau is therefore different from one steep volcanic island,"
+      },
+      {
+        "start": 85.14,
+        "end": 87.6,
+        "text": "even when both relate to hot-spot magmatism."
+      },
+      {
+        "start": 88.64,
+        "end": 92.6,
+        "text": "Hawaii and the Tahiti chains illustrate older volcanoes to the northwest"
+      },
+      {
+        "start": 92.6,
+        "end": 95.14,
+        "text": "and younger active volcanoes toward the southeast."
+      },
+      {
+        "start": 95.5,
+        "end": 99.44,
+        "text": "That pattern supports northwestward plate movement relative to the source."
+      },
+      {
+        "start": 100.08,
+        "end": 104.12,
+        "text": "Iceland, Tristan da Cunha and the Galápagos provide other examples."
+      },
+      {
+        "start": 104.56,
+        "end": 107.73,
+        "text": "The source also notes debate about which locations are true hot"
+      },
+      {
+        "start": 107.73,
+        "end": 111.42,
+        "text": "spots. Use the mapped evidence rather than assigning every island to"
+      },
+      {
+        "start": 111.42,
+        "end": 112.08,
+        "text": "one mechanism."
+      }
+    ]
+  },
+  {
+    "n": 5,
+    "title": "Island arcs: subduction, rollback and a new back-arc sea",
+    "logline": "A converging boundary can coexist with extension behind its volcanic arc.",
+    "beats": [
+      [
+        "Bend one oceanic plate beneath another",
+        "subduction",
+        [
+          2
+        ],
+        "An island arc forms where one oceanic plate subducts beneath another. The descending plate bends into a trench. As it heats, metamorphic reactions release water from minerals. That water promotes melting in the mantle above the slab. Magma rises through the overriding plate, so the volcanic belt lies above the mantle wedge rather than directly in the trench.",
+        [
+          "10.5-p2-Im2.png"
+        ],
+        {
+          "start": 0,
+          "end": 21.49
+        },
+        {
+          "takeaway": "The descending slab supplies water that promotes melting above it.",
+          "cueAnchors": [],
+          "figures": [
+            {}
+          ],
+          "cueTimes": [
+            0
+          ]
+        }
+      ],
+      [
+        "Grow and change the arc crust",
+        "arcGrowth",
+        [
+          2
+        ],
+        "Submarine eruptions first build volcanic mountains under water. Continued magmatism can raise islands, thicken their crust and connect them into longer landmasses. Interaction between mantle-derived magma and the growing crust can produce intermediate compositions and dangerous composite volcanoes. Java and the Alaska Peninsula illustrate substantial land built along a volcanic arc. The trench and volcanic belt are related but distinct features.",
+        [
+          "10.5-p2-Im2.png"
+        ],
+        {
+          "start": 21.49,
+          "end": 48.23
+        },
+        {
+          "takeaway": "Repeated magma additions thicken and modify the growing arc crust.",
+          "cueAnchors": [],
+          "figures": [
+            {}
+          ],
+          "cueTimes": [
+            21.49
+          ]
+        }
+      ],
+      [
+        "Rollback moves the trench and the arc",
+        "rollback",
+        [
+          3
+        ],
+        "A dense slab can sink and roll back, shifting the trench away from the arc's former position. The volcanic belt follows the changing slab geometry. Extension within or behind that migrating arc can split its crust and create a back-arc spreading center. Convergence at the trench and divergence behind the arc can operate at the same time.",
+        [
+          "10.5-p3-Im3.png"
+        ],
+        {
+          "start": 48.23,
+          "end": 67.57000000000001
+        },
+        {
+          "takeaway": "Convergence at the trench can coexist with extension behind the arc.",
+          "cueAnchors": [],
+          "figures": [
+            {}
+          ],
+          "cueTimes": [
+            48.23
+          ]
+        }
+      ],
+      [
+        "Curvature belongs to a spherical system",
+        "curvedArc",
+        [
+          4
+        ],
+        "The textbook's globe comparison explains why the trench and arc can curve. A plate bends into a spherical Earth and must fit a smaller available width at depth; the descending slab can buckle. A flat cross section is useful for understanding subduction, but it cannot display the complete map-view geometry. Compare that section with the curved trench and island belt in the original figure.",
+        [
+          "10.5-p4-Im5.png",
+          "10.5-p4-Im6.png",
+          "10.5-p4-Im7.png"
+        ],
+        {
+          "start": 67.57000000000001,
+          "end": 90.55000000000001
+        },
+        {
+          "takeaway": "A spherical surface and a descending slab make this a three-dimensional system.",
+          "cueAnchors": [
+            "The textbook's globe comparison",
+            "A plate bends",
+            "the descending slab can buckle"
+          ],
+          "figures": [
+            {},
+            {},
+            {}
+          ],
+          "cueTimes": [
+            67.57000000000001,
+            72.95,
+            77.59
+          ]
+        }
+      ],
+      [
+        "Locate examples without confusing their setting",
+        "arcGrowth",
+        [
+          5
+        ],
+        "Major examples include the Aleutians, Japan and the Marianas, Tonga, Sumatra and Java, the Lesser Antilles, the Aegean and Scotia arcs. Some systems interact with continental crust, so the details vary. For any example, identify the incoming plate, trench, overriding plate, volcanoes and any back-arc basin. An island chain over a hot spot does not automatically have this trench-and-slab relationship.",
+        [
+          "10.5-p5-Im8.png"
+        ],
+        {
+          "start": 90.55000000000001,
+          "end": 118.02000000000001
+        },
+        {
+          "takeaway": "A trench and an incoming plate distinguish an arc from a hot-spot track.",
+          "cueAnchors": [],
+          "figures": [
+            {}
+          ],
+          "cueTimes": [
+            90.55000000000001
+          ]
+        }
+      ]
+    ],
+    "duration": 118.02000000000001,
+    "audio": "../../videos/chapter10/10-05.mp4",
+    "captions": [
+      {
+        "start": 0.65,
+        "end": 4.45,
+        "text": "An island arc forms where one oceanic plate subducts beneath another."
+      },
+      {
+        "start": 5.01,
+        "end": 6.93,
+        "text": "The descending plate bends into a trench."
+      },
+      {
+        "start": 6.93,
+        "end": 10.35,
+        "text": "As it heats, metamorphic reactions release water from minerals."
+      },
+      {
+        "start": 10.81,
+        "end": 13.45,
+        "text": "That water promotes melting in the mantle above the slab."
+      },
+      {
+        "start": 13.83,
+        "end": 17.63,
+        "text": "Magma rises through the overriding plate, so the volcanic belt lies"
+      },
+      {
+        "start": 17.63,
+        "end": 20.77,
+        "text": "above the mantle wedge rather than directly in the trench."
+      },
+      {
+        "start": 21.49,
+        "end": 24.67,
+        "text": "Submarine eruptions first build volcanic mountains under water."
+      },
+      {
+        "start": 25.05,
+        "end": 28.81,
+        "text": "Continued magmatism can raise islands, thicken their crust and connect them"
+      },
+      {
+        "start": 28.81,
+        "end": 33.69,
+        "text": "into longer landmasses. Interaction between mantle-derived magma and the growing crust"
+      },
+      {
+        "start": 33.69,
+        "end": 37.57,
+        "text": "can produce intermediate compositions and dangerous composite volcanoes."
+      },
+      {
+        "start": 38.39,
+        "end": 42.67,
+        "text": "Java and the Alaska Peninsula illustrate substantial land built along a"
+      },
+      {
+        "start": 42.67,
+        "end": 46.83,
+        "text": "volcanic arc. The trench and volcanic belt are related but distinct"
+      },
+      {
+        "start": 46.83,
+        "end": 47.31,
+        "text": "features."
+      },
+      {
+        "start": 48.23,
+        "end": 51.27,
+        "text": "A dense slab can sink and roll back, shifting the trench"
+      },
+      {
+        "start": 51.27,
+        "end": 53.03,
+        "text": "away from the arc's former position."
+      },
+      {
+        "start": 53.27,
+        "end": 56.57,
+        "text": "The volcanic belt follows the changing slab geometry."
+      },
+      {
+        "start": 57.03,
+        "end": 60.51,
+        "text": "Extension within or behind that migrating arc can split its crust"
+      },
+      {
+        "start": 60.51,
+        "end": 62.57,
+        "text": "and create a back-arc spreading center."
+      },
+      {
+        "start": 63.03,
+        "end": 66.25,
+        "text": "Convergence at the trench and divergence behind the arc can operate"
+      },
+      {
+        "start": 66.25,
+        "end": 66.95,
+        "text": "at the same time."
+      },
+      {
+        "start": 67.57,
+        "end": 72.05,
+        "text": "The textbook's globe comparison explains why the trench and arc can"
+      },
+      {
+        "start": 72.05,
+        "end": 75.43,
+        "text": "curve. A plate bends into a spherical Earth and must fit"
+      },
+      {
+        "start": 75.43,
+        "end": 77.47,
+        "text": "a smaller available width at depth;"
+      },
+      {
+        "start": 77.59,
+        "end": 79.09,
+        "text": "the descending slab can buckle."
+      },
+      {
+        "start": 79.47,
+        "end": 83.03,
+        "text": "A flat cross section is useful for understanding subduction, but it"
+      },
+      {
+        "start": 83.03,
+        "end": 85.27,
+        "text": "cannot display the complete map-view geometry."
+      },
+      {
+        "start": 85.67,
+        "end": 88.49,
+        "text": "Compare that section with the curved trench and island belt in"
+      },
+      {
+        "start": 88.49,
+        "end": 89.29,
+        "text": "the original figure."
+      },
+      {
+        "start": 90.55,
+        "end": 96.01,
+        "text": "Major examples include the Aleutians, Japan and the Marianas, Tonga, Sumatra"
+      },
+      {
+        "start": 96.01,
+        "end": 99.99,
+        "text": "and Java, the Lesser Antilles, the Aegean and Scotia arcs."
+      },
+      {
+        "start": 100.07,
+        "end": 103.77,
+        "text": "Some systems interact with continental crust, so the details vary."
+      },
+      {
+        "start": 104.15,
+        "end": 109.51,
+        "text": "For any example, identify the incoming plate, trench, overriding plate, volcanoes"
+      },
+      {
+        "start": 109.83,
+        "end": 113.19,
+        "text": "and any back-arc basin. An island chain over a hot spot"
+      },
+      {
+        "start": 113.19,
+        "end": 116.07,
+        "text": "does not automatically have this trench-and-slab relationship."
+      }
+    ]
+  },
+  {
+    "n": 6,
+    "title": "Why the Pacific has so many different small seas",
+    "logline": "Back-arc spreading, trapped ocean and flooded continental shelves leave different evidence.",
+    "beats": [
+      [
+        "Japan separated from the Asian margin",
+        "rollback",
+        [
+          1
+        ],
+        "The Sea of Japan illustrates historical back-arc opening. Japan's rocks once belonged to an arc at the Asian margin. Rifting and seafloor spreading separated that arc from the mainland. That history does not, by itself, establish that spreading is active there today. The neighboring shallow China Sea instead largely overlies continental crust. Similar-looking water bodies need not have the same crust or origin.",
+        [
+          "10.6-p1-Im2.png",
+          "10.6-p1-Im3.png"
+        ],
+        {
+          "start": 0,
+          "end": 25.57
+        },
+        {
+          "takeaway": "Historical opening does not establish that the Sea of Japan is spreading today.",
+          "cueAnchors": [
+            "The Sea of Japan",
+            "Japan's rocks"
+          ],
+          "figures": [
+            {},
+            {}
+          ],
+          "dir": -1,
+          "caseLabel": "Sea of Japan • historical opening",
+          "cueTimes": [
+            0,
+            4.71
+          ]
+        }
+      ],
+      [
+        "Repeated back-arc opening leaves old arc ridges",
+        "backarc",
+        [
+          3
+        ],
+        "The Philippine Sea contains several basins separated by submarine ridges. Near the Marianas, the source describes an active back-arc basin, while older ridges farther west are pieces of arc separated during earlier episodes. The Mariana trench lies on the incoming-plate side of the arc. Each abandoned ridge and intervening basin records a different part of that migrating system.",
+        [
+          "10.6-p1-Im2.png"
+        ],
+        {
+          "start": 25.57,
+          "end": 46.29
+        },
+        {
+          "takeaway": "Remnant ridges and active back-arc opening record different stages.",
+          "cueAnchors": [],
+          "figures": [
+            {
+              "focus": [
+                0.62,
+                0.38,
+                0.48,
+                0.66
+              ]
+            }
+          ],
+          "dir": -1,
+          "caseLabel": "Mariana back-arc system",
+          "cueTimes": [
+            25.57
+          ]
+        }
+      ],
+      [
+        "Continental crust can lie beneath a shallow sea",
+        "shelfFlood",
+        [
+          3
+        ],
+        "The Java Sea and shallow seas between Australia and Papua New Guinea occupy continental platforms. They are not all newly created oceanic basins. Farther east, small plates, trenches, arcs and basins make the region unusually complex. Tonga provides another clear subduction-and-back-arc example. Read the crustal setting and boundaries before choosing a mechanism from the sea's name.",
+        [
+          "10.6-p1-Im2.png"
+        ],
+        {
+          "start": 46.29,
+          "end": 70.47
+        },
+        {
+          "takeaway": "A shallow sea can cover continental crust without a new oceanic basin.",
+          "cueAnchors": [],
+          "figures": [
+            {
+              "focus": [
+                0.5,
+                0.72,
+                0.66,
+                0.52
+              ]
+            }
+          ],
+          "cueTimes": [
+            46.29
+          ]
+        }
+      ],
+      [
+        "Trap oceanic crust behind a shifted trench",
+        "trappedSea",
+        [
+          3
+        ],
+        "The Bering Sea demonstrates a different history. Its eastern part is shallow above continental crust; its western basin is deeper above oceanic crust. The source reconstructs an older subduction zone near the mainland followed by a shift offshore to the Aleutian system. Oceanic crust became trapped behind the new arc. The mainland edge can be passive even though the arc offshore is active.",
+        [
+          "10.6-p3-Im4.png"
+        ],
+        {
+          "start": 70.47,
+          "end": 94.19
+        },
+        {
+          "takeaway": "A boundary shift can leave older oceanic crust behind the active arc.",
+          "cueAnchors": [],
+          "figures": [
+            {}
+          ],
+          "cueTimes": [
+            70.47
+          ]
+        }
+      ],
+      [
+        "Baja moves away along an oblique plate boundary",
+        "transformBasin",
+        [
+          4
+        ],
+        "The Gulf of California formed as the plate boundary changed and Baja separated from mainland Mexico. Baja now moves northward relative to North America as part of the Pacific plate. Strike-slip faults link short spreading segments in the gulf. This combines sideways displacement and local spreading. Japan's back-arc opening and the Bering Sea's trapped crust have different histories.",
+        [
+          "10.6-p4-Im5.png"
+        ],
+        {
+          "start": 94.19,
+          "end": 117.89999999999999
+        },
+        {
+          "takeaway": "Along-strike transform slip links the Gulf’s short spreading segments.",
+          "cueAnchors": [],
+          "figures": [
+            {}
+          ],
+          "cueTimes": [
+            94.19
+          ]
+        }
+      ]
+    ],
+    "duration": 117.89999999999999,
+    "audio": "../../videos/chapter10/10-06.mp4",
+    "captions": [
+      {
+        "start": 0.65,
+        "end": 4.49,
+        "text": "The Sea of Japan illustrates historical back-arc opening."
+      },
+      {
+        "start": 4.71,
+        "end": 7.97,
+        "text": "Japan's rocks once belonged to an arc at the Asian margin."
+      },
+      {
+        "start": 8.31,
+        "end": 11.69,
+        "text": "Rifting and seafloor spreading separated that arc from the mainland."
+      },
+      {
+        "start": 12.19,
+        "end": 15.21,
+        "text": "That history does not, by itself, establish that spreading is active"
+      },
+      {
+        "start": 15.21,
+        "end": 19.85,
+        "text": "there today. The neighboring shallow China Sea instead largely overlies continental"
+      },
+      {
+        "start": 19.85,
+        "end": 24.07,
+        "text": "crust. Similar-looking water bodies need not have the same crust or"
+      },
+      {
+        "start": 24.07,
+        "end": 24.53,
+        "text": "origin."
+      },
+      {
+        "start": 25.57,
+        "end": 29.49,
+        "text": "The Philippine Sea contains several basins separated by submarine ridges."
+      },
+      {
+        "start": 29.65,
+        "end": 33.49,
+        "text": "Near the Marianas, the source describes an active back-arc basin, while"
+      },
+      {
+        "start": 33.49,
+        "end": 37.01,
+        "text": "older ridges farther west are pieces of arc separated during earlier"
+      },
+      {
+        "start": 37.01,
+        "end": 40.69,
+        "text": "episodes. The Mariana trench lies on the incoming-plate side of the"
+      },
+      {
+        "start": 40.69,
+        "end": 44.57,
+        "text": "arc. Each abandoned ridge and intervening basin records a different part"
+      },
+      {
+        "start": 44.57,
+        "end": 45.65,
+        "text": "of that migrating system."
+      },
+      {
+        "start": 46.29,
+        "end": 50.11,
+        "text": "The Java Sea and shallow seas between Australia and Papua New"
+      },
+      {
+        "start": 50.11,
+        "end": 54.87,
+        "text": "Guinea occupy continental platforms. They are not all newly created oceanic"
+      },
+      {
+        "start": 54.87,
+        "end": 59.57,
+        "text": "basins. Farther east, small plates, trenches, arcs and basins make the"
+      },
+      {
+        "start": 59.57,
+        "end": 65.27,
+        "text": "region unusually complex. Tonga provides another clear subduction-and-back-arc example."
+      },
+      {
+        "start": 65.61,
+        "end": 69.05,
+        "text": "Read the crustal setting and boundaries before choosing a mechanism from"
+      },
+      {
+        "start": 69.05,
+        "end": 69.75,
+        "text": "the sea's name."
+      },
+      {
+        "start": 70.47,
+        "end": 72.87,
+        "text": "The Bering Sea demonstrates a different history."
+      },
+      {
+        "start": 73.27,
+        "end": 76.05,
+        "text": "Its eastern part is shallow above continental crust;"
+      },
+      {
+        "start": 76.45,
+        "end": 79.83,
+        "text": "its western basin is deeper above oceanic crust."
+      },
+      {
+        "start": 80.19,
+        "end": 84.15,
+        "text": "The source reconstructs an older subduction zone near the mainland followed"
+      },
+      {
+        "start": 84.15,
+        "end": 86.79,
+        "text": "by a shift offshore to the Aleutian system."
+      },
+      {
+        "start": 87.27,
+        "end": 89.59,
+        "text": "Oceanic crust became trapped behind the new arc."
+      },
+      {
+        "start": 89.83,
+        "end": 92.81,
+        "text": "The mainland edge can be passive even though the arc offshore"
+      },
+      {
+        "start": 92.81,
+        "end": 93.51,
+        "text": "is active."
+      },
+      {
+        "start": 94.19,
+        "end": 97.95,
+        "text": "The Gulf of California formed as the plate boundary changed and"
+      },
+      {
+        "start": 97.95,
+        "end": 99.95,
+        "text": "Baja separated from mainland Mexico."
+      },
+      {
+        "start": 100.25,
+        "end": 103.97,
+        "text": "Baja now moves northward relative to North America as part of"
+      },
+      {
+        "start": 103.97,
+        "end": 107.83,
+        "text": "the Pacific plate. Strike-slip faults link short spreading segments in the"
+      },
+      {
+        "start": 107.83,
+        "end": 111.33,
+        "text": "gulf. This combines sideways displacement and local spreading."
+      },
+      {
+        "start": 111.61,
+        "end": 115.57,
+        "text": "Japan's back-arc opening and the Bering Sea's trapped crust have different"
+      },
+      {
+        "start": 115.57,
+        "end": 115.95,
+        "text": "histories."
+      }
+    ]
+  },
+  {
+    "n": 7,
+    "title": "Read the origins of the seas around Eurasia",
+    "logline": "Flooding, extension, remnant ocean and flexure can all produce a sea.",
+    "beats": [
+      [
+        "Flood a low valley or stretch a continent",
+        "valleyFlood",
+        [
+          1
+        ],
+        "The Baltic Sea occupies a shallow continental region shaped by a river valley and later glaciers. Rising postglacial sea level flooded that low area. The North Sea records another mechanism: extension and normal faults thinned continental crust during the breakup of Europe and North America. Water covering a low region does not prove that new oceanic crust formed beneath it.",
+        [
+          "10.7-p1-Im2.png",
+          "10.7-p1-Im3.png"
+        ],
+        {
+          "start": 0,
+          "end": 23.83
+        },
+        {
+          "takeaway": "Flooding a valley and stretching continental crust produce different evidence.",
+          "cueAnchors": [
+            "The Baltic Sea",
+            "The North Sea"
+          ],
+          "figures": [
+            {},
+            {}
+          ],
+          "modes": [
+            "valleyFlood",
+            "rift"
+          ],
+          "cueTimes": [
+            0,
+            10.870000000000001
+          ]
+        }
+      ],
+      [
+        "One Mediterranean, several tectonic histories",
+        "rift",
+        [
+          1
+        ],
+        "Much of the Mediterranean is deep above oceanic or thinned continental crust. The western Mediterranean formed largely through Cenozoic rifting. To the east, oceanic crust remains between converging Africa and Europe, with subduction associated with the Aegean volcanic arc. A single sea can combine inherited oceanic crust, later extension and an active convergent boundary.",
+        [
+          "10.7-p1-Im2.png"
+        ],
+        {
+          "start": 23.83,
+          "end": 45.849999999999994
+        },
+        {
+          "takeaway": "Western and eastern Mediterranean basins do not share one simple origin.",
+          "cueAnchors": [],
+          "figures": [
+            {
+              "focus": [
+                0.35,
+                0.55,
+                0.45,
+                0.6
+              ]
+            }
+          ],
+          "cueTimes": [
+            23.83
+          ]
+        }
+      ],
+      [
+        "A remnant ocean can become isolated",
+        "remnantSea",
+        [
+          2
+        ],
+        "The source traces the Black Sea to oceanic crust associated with the former Tethys Ocean, later enclosed by collisions. Changes in connections and sea level then changed the water body. It discusses a proposed rapid postglacial flooding near Istanbul, but that catastrophic interpretation is not presented as an uncontested fact. Keep the well-supported remnant-basin history separate from the debated flooding scenario.",
+        [
+          "10.7-p1-Im2.png"
+        ],
+        {
+          "start": 45.849999999999994,
+          "end": 70.05
+        },
+        {
+          "takeaway": "Remnant-basin history is distinct from the debated rapid-flooding scenario.",
+          "cueAnchors": [],
+          "figures": [
+            {
+              "focus": [
+                0.5,
+                0.42,
+                0.38,
+                0.48
+              ]
+            }
+          ],
+          "cueTimes": [
+            45.849999999999994
+          ]
+        }
+      ],
+      [
+        "A mountain load bends the adjacent plate",
+        "foreland",
+        [
+          2
+        ],
+        "The Persian Gulf lies beside the Zagros collision between Arabia and Eurasia. Thrust sheets load the Arabian plate and bend it downward, producing a foreland trough. Watch the basin deepen beside the growing mountain load. This is flexure associated with convergence, unlike the normal-fault extension beneath the North Sea. Both can create accommodation for sediment, through different forces.",
+        [
+          "10.7-p2-Im4.png"
+        ],
+        {
+          "start": 70.05,
+          "end": 92.75999999999999
+        },
+        {
+          "takeaway": "Thrust loading flexes the adjacent plate downward into a foreland basin.",
+          "cueAnchors": [],
+          "figures": [
+            {}
+          ],
+          "cueTimes": [
+            70.05
+          ]
+        }
+      ],
+      [
+        "Arabia and Africa pull apart",
+        "riftOcean",
+        [
+          2
+        ],
+        "The Red Sea formed as Arabia separated from Africa. Continental rifting thinned the crust, and spreading creates oceanic crust in the southern Red Sea in the source's description. Match every mapped location to its evidence: Baltic flooding, North Sea extension, Black Sea remnant basin, Persian Gulf loading and Red Sea divergence. Geography identifies the place; structure and history explain the origin.",
+        [
+          "10.7-p2-Im5.png",
+          "10.7-p1-Im2.png"
+        ],
+        {
+          "start": 92.75999999999999,
+          "end": 119.10999999999999
+        },
+        {
+          "takeaway": "Arabia–Africa divergence differs from collision beside the Persian Gulf.",
+          "cueAnchors": [
+            "The Red Sea",
+            "Match every mapped location"
+          ],
+          "figures": [
+            {},
+            {}
+          ],
+          "cueTimes": [
+            92.75999999999999,
+            104.03999999999999
+          ]
+        }
+      ]
+    ],
+    "duration": 119.10999999999999,
+    "audio": "../../videos/chapter10/10-07.mp4",
+    "captions": [
+      {
+        "start": 0.65,
+        "end": 5.11,
+        "text": "The Baltic Sea occupies a shallow continental region shaped by a"
+      },
+      {
+        "start": 5.11,
+        "end": 6.91,
+        "text": "river valley and later glaciers."
+      },
+      {
+        "start": 7.13,
+        "end": 10.39,
+        "text": "Rising postglacial sea level flooded that low area."
+      },
+      {
+        "start": 10.87,
+        "end": 12.93,
+        "text": "The North Sea records another mechanism:"
+      },
+      {
+        "start": 13.27,
+        "end": 16.87,
+        "text": "extension and normal faults thinned continental crust during the breakup of"
+      },
+      {
+        "start": 16.87,
+        "end": 20.47,
+        "text": "Europe and North America. Water covering a low region does not"
+      },
+      {
+        "start": 20.47,
+        "end": 23.23,
+        "text": "prove that new oceanic crust formed beneath it."
+      },
+      {
+        "start": 23.83,
+        "end": 27.69,
+        "text": "Much of the Mediterranean is deep above oceanic or thinned continental"
+      },
+      {
+        "start": 27.69,
+        "end": 31.61,
+        "text": "crust. The western Mediterranean formed largely through Cenozoic rifting."
+      },
+      {
+        "start": 31.61,
+        "end": 35.95,
+        "text": "To the east, oceanic crust remains between converging Africa and Europe,"
+      },
+      {
+        "start": 35.95,
+        "end": 39.17,
+        "text": "with subduction associated with the Aegean volcanic arc."
+      },
+      {
+        "start": 39.37,
+        "end": 43.75,
+        "text": "A single sea can combine inherited oceanic crust, later extension and"
+      },
+      {
+        "start": 43.75,
+        "end": 45.09,
+        "text": "an active convergent boundary."
+      },
+      {
+        "start": 45.85,
+        "end": 49.57,
+        "text": "The source traces the Black Sea to oceanic crust associated with"
+      },
+      {
+        "start": 49.57,
+        "end": 52.81,
+        "text": "the former Tethys Ocean, later enclosed by collisions."
+      },
+      {
+        "start": 52.97,
+        "end": 56.35,
+        "text": "Changes in connections and sea level then changed the water body."
+      },
+      {
+        "start": 56.69,
+        "end": 60.47,
+        "text": "It discusses a proposed rapid postglacial flooding near Istanbul, but that"
+      },
+      {
+        "start": 60.47,
+        "end": 64.25,
+        "text": "catastrophic interpretation is not presented as an uncontested fact."
+      },
+      {
+        "start": 64.47,
+        "end": 69.17,
+        "text": "Keep the well-supported remnant-basin history separate from the debated flooding scenario."
+      },
+      {
+        "start": 70.05,
+        "end": 73.91,
+        "text": "The Persian Gulf lies beside the Zagros collision between Arabia and"
+      },
+      {
+        "start": 73.91,
+        "end": 77.65,
+        "text": "Eurasia. Thrust sheets load the Arabian plate and bend it downward,"
+      },
+      {
+        "start": 77.93,
+        "end": 82.05,
+        "text": "producing a foreland trough. Watch the basin deepen beside the growing"
+      },
+      {
+        "start": 82.05,
+        "end": 86.73,
+        "text": "mountain load. This is flexure associated with convergence, unlike the normal-fault"
+      },
+      {
+        "start": 86.73,
+        "end": 88.35,
+        "text": "extension beneath the North Sea."
+      },
+      {
+        "start": 88.57,
+        "end": 91.75,
+        "text": "Both can create accommodation for sediment, through different forces."
+      },
+      {
+        "start": 92.76,
+        "end": 96.36,
+        "text": "The Red Sea formed as Arabia separated from Africa."
+      },
+      {
+        "start": 96.92,
+        "end": 100.96,
+        "text": "Continental rifting thinned the crust, and spreading creates oceanic crust in"
+      },
+      {
+        "start": 100.96,
+        "end": 103.3,
+        "text": "the southern Red Sea in the source's description."
+      },
+      {
+        "start": 104.04,
+        "end": 106.48,
+        "text": "Match every mapped location to its evidence:"
+      },
+      {
+        "start": 106.64,
+        "end": 111.44,
+        "text": "Baltic flooding, North Sea extension, Black Sea remnant basin, Persian Gulf"
+      },
+      {
+        "start": 111.44,
+        "end": 113.02,
+        "text": "loading and Red Sea divergence."
+      },
+      {
+        "start": 113.64,
+        "end": 117.34,
+        "text": "Geography identifies the place; structure and history explain the origin."
+      }
+    ]
+  },
+  {
+    "n": 8,
+    "title": "Reefs and atolls: keep growth and subsidence together",
+    "logline": "An atoll can preserve shallow-water growth above a sinking volcanic foundation.",
+    "beats": [
+      [
+        "Build a reef in the right environment",
+        "reef",
+        [
+          2
+        ],
+        "Reefs are buildups constructed by corals and other organisms and by accumulated carbonate material. The warm-water reef communities emphasized here thrive in clear, shallow water. Too much suspended sediment can block light, bury organisms or clog their openings. Waves break and rework carbonate skeletons, supplying the white sand around many reef islands. Reef growth is a biological and sedimentary process.",
+        [
+          "10.8-p2-Im2.png",
+          "10.8-p2-Im3.png"
+        ],
+        {
+          "start": 0,
+          "end": 25.31
+        },
+        {
+          "takeaway": "Warm, clear, shallow water supports the reef communities emphasized here.",
+          "cueAnchors": [
+            "Reefs are",
+            "Too much suspended sediment"
+          ],
+          "figures": [
+            {},
+            {}
+          ],
+          "cueTimes": [
+            0,
+            11.39
+          ]
+        }
+      ],
+      [
+        "Fringing, barrier and platform are different forms",
+        "reefBarrier",
+        [
+          2,
+          3
+        ],
+        "A fringing reef grows along or very close to a shoreline. A barrier reef lies farther offshore, with a lagoon on its landward side. Broad carbonate platforms, such as the Bahamas, accumulate shallow-water carbonate over a wider area. The Great Barrier Reef source example also shows upward growth as rising sea level flooded a platform. Do not confuse the lagoon with the open ocean.",
+        [
+          "10.8-p3-Im4.png",
+          "10.8-p3-Im5.png",
+          "10.8-p2-Im2.png"
+        ],
+        {
+          "start": 25.31,
+          "end": 48.66
+        },
+        {
+          "takeaway": "Fringing reefs, barrier reefs and carbonate platforms have different geometry.",
+          "cueAnchors": [
+            "A fringing reef",
+            "A barrier reef",
+            "Broad carbonate platforms"
+          ],
+          "figures": [
+            {},
+            {},
+            {}
+          ],
+          "cueTimes": [
+            25.31,
+            29.39,
+            33.75
+          ],
+          "modes": [
+            "reef",
+            "reefBarrier",
+            "carbonatePlatform"
+          ]
+        }
+      ],
+      [
+        "Start Darwin’s model with a volcanic island",
+        "atoll",
+        [
+          4
+        ],
+        "In the subsiding-volcano model, a tropical volcanic island first develops a fringing reef. After magmatism wanes, cooling allows the supporting plate and island to sink. Coral construction continues upward while the volcanic foundation moves downward. Both motions matter: simply sinking the entire reef would drown it instead of producing a living shallow-water rim.",
+        [
+          "10.8-p4-Im7.png"
+        ],
+        {
+          "start": 48.66,
+          "end": 69.8
+        },
+        {
+          "takeaway": "The volcanic foundation starts to sink while the reef builds upward.",
+          "cueAnchors": [],
+          "figures": [
+            {
+              "focus": [
+                0.17,
+                0.5,
+                0.33,
+                1
+              ]
+            }
+          ],
+          "phase": [
+            0,
+            0.4
+          ],
+          "cueTimes": [
+            48.66
+          ]
+        }
+      ],
+      [
+        "A ring survives above the submerged volcano",
+        "atoll",
+        [
+          4,
+          3
+        ],
+        "As the island subsides, a lagoon separates the reef from the shrinking shoreline. Eventually the volcano falls below sea level, leaving an atoll around a central lagoon if reef growth keeps pace. The process takes geological time; this animation compresses it. The textbook also mentions a carbonate-platform erosion model for some atolls, so Darwin's sequence is a model, not every possible carbonate history.",
+        [
+          "10.8-p4-Im7.png",
+          "10.8-p3-Im6.png"
+        ],
+        {
+          "start": 69.8,
+          "end": 94.7
+        },
+        {
+          "takeaway": "The island can submerge while a shallow carbonate rim survives.",
+          "cueAnchors": [
+            "As the island subsides",
+            "leaving an atoll"
+          ],
+          "figures": [
+            {},
+            {}
+          ],
+          "phase": [
+            0.4,
+            1
+          ],
+          "cueTimes": [
+            69.8,
+            77.62
+          ]
+        }
+      ],
+      [
+        "Predict where the conditions are suitable",
+        "reef",
+        [
+          5
+        ],
+        "Use the distribution map to connect setting with process. Examples include the Caribbean, Florida and the Bahamas, the Great Barrier Reef, Pacific islands, East Africa, the Maldives and the Red Sea. Warm, clear, shallow water helps explain the tropical pattern and why the cold Aleutian setting is different. Identify reef geometry, environmental conditions and growth history as separate pieces of evidence.",
+        [
+          "10.8-p5-Im8.png"
+        ],
+        {
+          "start": 94.7,
+          "end": 120.01
+        },
+        {
+          "takeaway": "Predict reef growth from water conditions, sediment supply and relative sea level.",
+          "cueAnchors": [],
+          "figures": [
+            {}
+          ],
+          "cueTimes": [
+            94.7
+          ]
+        }
+      ]
+    ],
+    "duration": 120.01,
+    "audio": "../../videos/chapter10/10-08.mp4",
+    "captions": [
+      {
+        "start": 0.65,
+        "end": 4.41,
+        "text": "Reefs are buildups constructed by corals and other organisms and by"
+      },
+      {
+        "start": 4.41,
+        "end": 9.77,
+        "text": "accumulated carbonate material. The warm-water reef communities emphasized here thrive in"
+      },
+      {
+        "start": 9.77,
+        "end": 14.09,
+        "text": "clear, shallow water. Too much suspended sediment can block light, bury"
+      },
+      {
+        "start": 14.09,
+        "end": 16.07,
+        "text": "organisms or clog their openings."
+      },
+      {
+        "start": 16.31,
+        "end": 20.57,
+        "text": "Waves break and rework carbonate skeletons, supplying the white sand around"
+      },
+      {
+        "start": 20.57,
+        "end": 24.67,
+        "text": "many reef islands. Reef growth is a biological and sedimentary process."
+      },
+      {
+        "start": 25.31,
+        "end": 29.25,
+        "text": "A fringing reef grows along or very close to a shoreline."
+      },
+      {
+        "start": 29.39,
+        "end": 32.93,
+        "text": "A barrier reef lies farther offshore, with a lagoon on its"
+      },
+      {
+        "start": 32.93,
+        "end": 37.87,
+        "text": "landward side. Broad carbonate platforms, such as the Bahamas, accumulate shallow-water"
+      },
+      {
+        "start": 37.87,
+        "end": 39.57,
+        "text": "carbonate over a wider area."
+      },
+      {
+        "start": 39.93,
+        "end": 43.17,
+        "text": "The Great Barrier Reef source example also shows upward growth as"
+      },
+      {
+        "start": 43.17,
+        "end": 45.13,
+        "text": "rising sea level flooded a platform."
+      },
+      {
+        "start": 45.49,
+        "end": 47.87,
+        "text": "Do not confuse the lagoon with the open ocean."
+      },
+      {
+        "start": 48.66,
+        "end": 52.98,
+        "text": "In the subsiding-volcano model, a tropical volcanic island first develops a"
+      },
+      {
+        "start": 52.98,
+        "end": 57.34,
+        "text": "fringing reef. After magmatism wanes, cooling allows the supporting plate and"
+      },
+      {
+        "start": 57.34,
+        "end": 61.78,
+        "text": "island to sink. Coral construction continues upward while the volcanic foundation"
+      },
+      {
+        "start": 61.78,
+        "end": 64.12,
+        "text": "moves downward. Both motions matter:"
+      },
+      {
+        "start": 64.32,
+        "end": 67.46,
+        "text": "simply sinking the entire reef would drown it instead of producing"
+      },
+      {
+        "start": 67.46,
+        "end": 69.06,
+        "text": "a living shallow-water rim."
+      },
+      {
+        "start": 69.8,
+        "end": 73.44,
+        "text": "As the island subsides, a lagoon separates the reef from the"
+      },
+      {
+        "start": 73.44,
+        "end": 78.06,
+        "text": "shrinking shoreline. Eventually the volcano falls below sea level, leaving an"
+      },
+      {
+        "start": 78.06,
+        "end": 81.2,
+        "text": "atoll around a central lagoon if reef growth keeps pace."
+      },
+      {
+        "start": 81.56,
+        "end": 83.64,
+        "text": "The process takes geological time;"
+      },
+      {
+        "start": 83.88,
+        "end": 88.38,
+        "text": "this animation compresses it. The textbook also mentions a carbonate-platform erosion"
+      },
+      {
+        "start": 88.38,
+        "end": 92.46,
+        "text": "model for some atolls, so Darwin's sequence is a model, not"
+      },
+      {
+        "start": 92.46,
+        "end": 93.92,
+        "text": "every possible carbonate history."
+      },
+      {
+        "start": 94.7,
+        "end": 97.7,
+        "text": "Use the distribution map to connect setting with process."
+      },
+      {
+        "start": 98.04,
+        "end": 102.16,
+        "text": "Examples include the Caribbean, Florida and the Bahamas, the Great Barrier"
+      },
+      {
+        "start": 102.16,
+        "end": 106.18,
+        "text": "Reef, Pacific islands, East Africa, the Maldives and the Red Sea."
+      },
+      {
+        "start": 106.56,
+        "end": 110.16,
+        "text": "Warm, clear, shallow water helps explain the tropical pattern and why"
+      },
+      {
+        "start": 110.16,
+        "end": 112.12,
+        "text": "the cold Aleutian setting is different."
+      },
+      {
+        "start": 112.48,
+        "end": 117.22,
+        "text": "Identify reef geometry, environmental conditions and growth history as separate pieces"
+      },
+      {
+        "start": 117.22,
+        "end": 117.72,
+        "text": "of evidence."
+      }
+    ]
+  },
+  {
+    "n": 9,
+    "title": "Continental margins: from shelf to submarine fan",
+    "logline": "Connect crustal structure, canyon erosion and sediment deposition without treating them as the same feature.",
+    "beats": [
+      [
+        "Trace shelf, slope and rise",
+        "margin",
+        [
+          2
+        ],
+        "The shoreline is not necessarily the edge of continental crust. A continental shelf extends underwater with a gentle slope. The continental slope descends toward the deep ocean, and a continental rise can form a sediment apron farther out. Submarine canyons cut parts of the shelf and slope. Passive margins often have broad shelves, while active margins commonly have narrower ones; shelf width alone is not a boundary diagnosis.",
+        [
+          "10.9-p2-Im2.png",
+          "L15-slide01.png"
+        ],
+        {
+          "start": 0,
+          "end": 28.81
+        },
+        {
+          "takeaway": "Follow the shallow shelf, steep slope and lower sediment apron.",
+          "cueAnchors": [
+            "The shoreline",
+            "Passive margins"
+          ],
+          "figures": [
+            {},
+            {}
+          ],
+          "cueTimes": [
+            0,
+            19.77
+          ]
+        }
+      ],
+      [
+        "A passive margin preserves its rifting history",
+        "riftMargin",
+        [
+          3
+        ],
+        "In the source cross section, normal faults thin continental crust toward the ocean. Sediment buries the downdropped blocks, and the crust changes from continental material toward thinner basaltic and gabbroic oceanic crust. A passive margin preserves this older extension even when no active plate boundary lies along the coast. The sedimentary cover and buried structures can also create petroleum-bearing settings.",
+        [
+          "10.9-p3-Im3.png"
+        ],
+        {
+          "start": 28.81,
+          "end": 53.11
+        },
+        {
+          "takeaway": "Continental crust thins toward the ocean; old normal faults record rifting.",
+          "cueAnchors": [],
+          "figures": [
+            {}
+          ],
+          "cueTimes": [
+            28.81
+          ]
+        }
+      ],
+      [
+        "Failure creates a dense underwater current",
+        "turbidity",
+        [
+          5,
+          6
+        ],
+        "Weak, unconsolidated slope sediment can fail after shaking, storms or overloading. Mixing with seawater can create a dense turbidity current that moves downhill and erodes a canyon. Some canyon heads also inherited river erosion from lower sea levels. A submarine landslide can instead move comparatively coherent blocks. The current, the landslide and the canyon are related but different things.",
+        [
+          "10.9-p5-Im4.png",
+          "10.9-p6-Im6.png",
+          "10.9-p6-Im7.png"
+        ],
+        {
+          "start": 53.11,
+          "end": 76.00999999999999
+        },
+        {
+          "takeaway": "A sediment-rich current can erode a canyon and carry material downslope.",
+          "cueAnchors": [
+            "Weak, unconsolidated",
+            "erodes a canyon",
+            "Some canyon heads"
+          ],
+          "figures": [
+            {},
+            {},
+            {}
+          ],
+          "cueTimes": [
+            53.11,
+            62.73,
+            64.03
+          ]
+        }
+      ],
+      [
+        "A slowing current sorts its sediment",
+        "gradedFan",
+        [
+          7
+        ],
+        "When a current leaves a steep canyon, it spreads and slows. Larger grains settle first, followed by finer silt and clay, producing a graded bed with a coarse base and a finer top. Repeated events stack many graded beds. The spreading deposit builds a submarine fan at the slope foot and across the rise. Lecture Fifteen emphasizes the link between sediment source, transport pathway and depositional body.",
+        [
+          "10.9-p7-Im8.png",
+          "10.9-p5-Im5.png",
+          "L15-slide04.png",
+          "L15-slide06.png"
+        ],
+        {
+          "start": 76.00999999999999,
+          "end": 101.55
+        },
+        {
+          "takeaway": "A slowing current leaves a coarse base, finer top and an expanding fan.",
+          "cueAnchors": [
+            "When a current",
+            "Repeated events",
+            "The spreading deposit",
+            "Lecture Fifteen"
+          ],
+          "figures": [
+            {},
+            {},
+            {},
+            {}
+          ],
+          "cueTimes": [
+            76.00999999999999,
+            87.24999999999999,
+            90.28999999999999,
+            95.19
+          ]
+        }
+      ],
+      [
+        "Read the connected landscape",
+        "margin",
+        [
+          2,
+          6,
+          7
+        ],
+        "Use the original numbered figures to distinguish shelf, slope, canyon, current, fan, graded bed and landslide. A fan is a deposit, while a canyon is an erosional pathway; graded bedding is a pattern inside a bed. The Bengal Fan illustrates the scale these systems can reach. The essential explanation connects where sediment starts, how it moves, and what remains after the flow loses energy.",
+        [
+          "10.9-p2-Im2.png",
+          "10.9-p6-Im6.png",
+          "10.9-p7-Im8.png"
+        ],
+        {
+          "start": 101.55,
+          "end": 127.82
+        },
+        {
+          "takeaway": "Keep shelf, slope, canyon, current, graded bed and fan distinct.",
+          "cueAnchors": [
+            "Use the original",
+            "A fan is",
+            "The Bengal Fan"
+          ],
+          "figures": [
+            {},
+            {},
+            {}
+          ],
+          "cueTimes": [
+            101.55,
+            109.33,
+            116.03
+          ]
+        }
+      ]
+    ],
+    "duration": 127.82,
+    "audio": "../../videos/chapter10/10-09.mp4",
+    "captions": [
+      {
+        "start": 0.65,
+        "end": 4.69,
+        "text": "The shoreline is not necessarily the edge of continental crust."
+      },
+      {
+        "start": 5.05,
+        "end": 8.65,
+        "text": "A continental shelf extends underwater with a gentle slope."
+      },
+      {
+        "start": 8.93,
+        "end": 12.75,
+        "text": "The continental slope descends toward the deep ocean, and a continental"
+      },
+      {
+        "start": 12.75,
+        "end": 15.73,
+        "text": "rise can form a sediment apron farther out."
+      },
+      {
+        "start": 16.11,
+        "end": 19.47,
+        "text": "Submarine canyons cut parts of the shelf and slope."
+      },
+      {
+        "start": 19.77,
+        "end": 23.95,
+        "text": "Passive margins often have broad shelves, while active margins commonly have"
+      },
+      {
+        "start": 23.95,
+        "end": 27.89,
+        "text": "narrower ones; shelf width alone is not a boundary diagnosis."
+      },
+      {
+        "start": 28.81,
+        "end": 32.71,
+        "text": "In the source cross section, normal faults thin continental crust toward"
+      },
+      {
+        "start": 32.71,
+        "end": 36.91,
+        "text": "the ocean. Sediment buries the downdropped blocks, and the crust changes"
+      },
+      {
+        "start": 36.91,
+        "end": 41.43,
+        "text": "from continental material toward thinner basaltic and gabbroic oceanic crust."
+      },
+      {
+        "start": 41.69,
+        "end": 45.49,
+        "text": "A passive margin preserves this older extension even when no active"
+      },
+      {
+        "start": 45.49,
+        "end": 47.43,
+        "text": "plate boundary lies along the coast."
+      },
+      {
+        "start": 47.81,
+        "end": 52.27,
+        "text": "The sedimentary cover and buried structures can also create petroleum-bearing settings."
+      },
+      {
+        "start": 53.11,
+        "end": 58.37,
+        "text": "Weak, unconsolidated slope sediment can fail after shaking, storms or overloading."
+      },
+      {
+        "start": 58.49,
+        "end": 61.99,
+        "text": "Mixing with seawater can create a dense turbidity current that moves"
+      },
+      {
+        "start": 61.99,
+        "end": 63.59,
+        "text": "downhill and erodes a canyon."
+      },
+      {
+        "start": 64.03,
+        "end": 67.53,
+        "text": "Some canyon heads also inherited river erosion from lower sea levels."
+      },
+      {
+        "start": 67.91,
+        "end": 71.21,
+        "text": "A submarine landslide can instead move comparatively coherent blocks."
+      },
+      {
+        "start": 71.55,
+        "end": 74.79,
+        "text": "The current, the landslide and the canyon are related but different"
+      },
+      {
+        "start": 74.79,
+        "end": 75.19,
+        "text": "things."
+      },
+      {
+        "start": 76.01,
+        "end": 79.27,
+        "text": "When a current leaves a steep canyon, it spreads and slows."
+      },
+      {
+        "start": 79.51,
+        "end": 84.07,
+        "text": "Larger grains settle first, followed by finer silt and clay, producing"
+      },
+      {
+        "start": 84.07,
+        "end": 87.05,
+        "text": "a graded bed with a coarse base and a finer top."
+      },
+      {
+        "start": 87.25,
+        "end": 89.85,
+        "text": "Repeated events stack many graded beds."
+      },
+      {
+        "start": 90.29,
+        "end": 93.61,
+        "text": "The spreading deposit builds a submarine fan at the slope foot"
+      },
+      {
+        "start": 93.61,
+        "end": 97.91,
+        "text": "and across the rise. Lecture Fifteen emphasizes the link between sediment"
+      },
+      {
+        "start": 97.91,
+        "end": 100.77,
+        "text": "source, transport pathway and depositional body."
+      },
+      {
+        "start": 101.55,
+        "end": 106.33,
+        "text": "Use the original numbered figures to distinguish shelf, slope, canyon, current,"
+      },
+      {
+        "start": 106.81,
+        "end": 108.97,
+        "text": "fan, graded bed and landslide."
+      },
+      {
+        "start": 109.33,
+        "end": 112.23,
+        "text": "A fan is a deposit, while a canyon is an erosional"
+      },
+      {
+        "start": 112.23,
+        "end": 115.67,
+        "text": "pathway; graded bedding is a pattern inside a bed."
+      },
+      {
+        "start": 116.03,
+        "end": 119.07,
+        "text": "The Bengal Fan illustrates the scale these systems can reach."
+      },
+      {
+        "start": 119.37,
+        "end": 123.53,
+        "text": "The essential explanation connects where sediment starts, how it moves, and"
+      },
+      {
+        "start": 123.53,
+        "end": 125.97,
+        "text": "what remains after the flow loses energy."
+      }
+    ]
+  },
+  {
+    "n": 10,
+    "title": "Marine evaporites: concentrate brine, then move solid salt",
+    "logline": "Precipitating a salt layer and deforming it later are two different geological events.",
+    "beats": [
+      [
+        "Evaporation concentrates dissolved material",
+        "evaporate",
+        [
+          2,
+          3
+        ],
+        "Marine salt deposits form when evaporation concentrates dissolved substances enough for minerals to precipitate. Halite is sodium chloride; gypsum and other soluble minerals can occur with it. Warm, dry conditions help, but the basin also needs restricted exchange. Open-ocean circulation can mix the concentrated brine away, preventing a thick mineral sequence from accumulating.",
+        [
+          "10.10-p2-Im1.png"
+        ],
+        {
+          "start": 0,
+          "end": 25.31
+        },
+        {
+          "takeaway": "Evaporation concentrates dissolved ions until minerals precipitate.",
+          "cueAnchors": [],
+          "figures": [
+            {}
+          ],
+          "cueTimes": [
+            0
+          ]
+        }
+      ],
+      [
+        "Restriction and replenishment work together",
+        "restrictedBasin",
+        [
+          3
+        ],
+        "Narrow young seas, coastal lagoons and tidal flats can provide suitable settings. A low barrier limits exchange. Seawater or runoff can replace water lost to evaporation, allowing repeated mineral accumulation. If the basin becomes more isolated, trapped water can evaporate further. Repeated replenishment helps explain why a substantial salt sequence need not represent the evaporation of one small original puddle.",
+        [
+          "10.10-p3-Im4.png"
+        ],
+        {
+          "start": 25.31,
+          "end": 50.58
+        },
+        {
+          "takeaway": "Restricted exchange and repeated inflow can build thick evaporite deposits.",
+          "cueAnchors": [],
+          "figures": [
+            {}
+          ],
+          "cueTimes": [
+            25.31
+          ]
+        }
+      ],
+      [
+        "Buried salt flows without melting",
+        "saltDome",
+        [
+          2,
+          4
+        ],
+        "After burial, salt is weak and less dense than much of the overlying rock. Stress can make it flow as a solid. Salt moving upward can bend or pierce sedimentary layers and form a salt dome. The moving yellow material is not magma: deposition happened first, then burial and solid-state deformation changed the original layered geometry.",
+        [
+          "10.10-p4-Im5.png"
+        ],
+        {
+          "start": 50.58,
+          "end": 71.22
+        },
+        {
+          "takeaway": "Buried salt deforms as a solid and pushes into its sedimentary cover.",
+          "cueAnchors": [],
+          "figures": [
+            {}
+          ],
+          "cueTimes": [
+            50.58
+          ]
+        }
+      ],
+      [
+        "Weak salt changes deformation above it",
+        "saltStructures",
+        [
+          4
+        ],
+        "A weak salt layer can let overlying rocks slide, fold and fault, as in the Jura example. Where salt reaches the surface, gravity can spread it downslope as a salt glacier. A dome, a weak detachment layer and a salt glacier therefore share material behavior but have different geometries and settings. Look at the whole structure before choosing its name.",
+        [
+          "10.10-p4-Im6.png",
+          "10.10-p2-Im2.png",
+          "10.10-p4-Im7.png"
+        ],
+        {
+          "start": 71.22,
+          "end": 91.96
+        },
+        {
+          "takeaway": "Weak salt permits deformation; exposed salt can also flow downslope.",
+          "cueAnchors": [
+            "A weak salt layer",
+            "fold and fault",
+            "Where salt reaches"
+          ],
+          "figures": [
+            {},
+            {},
+            {}
+          ],
+          "cueTimes": [
+            71.22,
+            74.46,
+            77.26
+          ],
+          "modes": [
+            "saltDetachment",
+            "saltDetachment",
+            "saltGlacier"
+          ]
+        }
+      ],
+      [
+        "Connect the history to the Gulf Coast",
+        "saltMargin",
+        [
+          5
+        ],
+        "The Gulf Coast figure links Mesozoic restricted basins, thick salt deposition, later sediment burial and salt movement. Rising and spreading salt creates domes, folds, faults and irregular seafloor relief. The Sigsbee Escarpment marks the front of a large subsurface salt mass in this model. Some associated structures trap oil and gas; the salt does not manufacture petroleum simply by rising.",
+        [
+          "10.10-p5-Im8.png"
+        ],
+        {
+          "start": 91.96,
+          "end": 117.11
+        },
+        {
+          "takeaway": "Buried Gulf salt connects older basin history to modern seafloor relief.",
+          "cueAnchors": [],
+          "figures": [
+            {}
+          ],
+          "cueTimes": [
+            91.96
+          ]
+        }
+      ]
+    ],
+    "duration": 117.11,
+    "audio": "../../videos/chapter10/10-10.mp4",
+    "captions": [
+      {
+        "start": 0.65,
+        "end": 6.11,
+        "text": "Marine salt deposits form when evaporation concentrates dissolved substances enough for"
+      },
+      {
+        "start": 6.11,
+        "end": 9.51,
+        "text": "minerals to precipitate. Halite is sodium chloride;"
+      },
+      {
+        "start": 9.77,
+        "end": 12.73,
+        "text": "gypsum and other soluble minerals can occur with it."
+      },
+      {
+        "start": 13.17,
+        "end": 17.59,
+        "text": "Warm, dry conditions help, but the basin also needs restricted exchange."
+      },
+      {
+        "start": 18.13,
+        "end": 22.27,
+        "text": "Open-ocean circulation can mix the concentrated brine away, preventing a thick"
+      },
+      {
+        "start": 22.27,
+        "end": 24.03,
+        "text": "mineral sequence from accumulating."
+      },
+      {
+        "start": 25.31,
+        "end": 29.13,
+        "text": "Narrow young seas, coastal lagoons and tidal flats can provide suitable"
+      },
+      {
+        "start": 29.13,
+        "end": 31.85,
+        "text": "settings. A low barrier limits exchange."
+      },
+      {
+        "start": 32.23,
+        "end": 36.95,
+        "text": "Seawater or runoff can replace water lost to evaporation, allowing repeated"
+      },
+      {
+        "start": 36.95,
+        "end": 41.01,
+        "text": "mineral accumulation. If the basin becomes more isolated, trapped water can"
+      },
+      {
+        "start": 41.01,
+        "end": 45.91,
+        "text": "evaporate further. Repeated replenishment helps explain why a substantial salt sequence"
+      },
+      {
+        "start": 45.91,
+        "end": 49.73,
+        "text": "need not represent the evaporation of one small original puddle."
+      },
+      {
+        "start": 50.58,
+        "end": 53.8,
+        "text": "After burial, salt is weak and less dense than much of"
+      },
+      {
+        "start": 53.8,
+        "end": 57.24,
+        "text": "the overlying rock. Stress can make it flow as a solid."
+      },
+      {
+        "start": 57.4,
+        "end": 61.52,
+        "text": "Salt moving upward can bend or pierce sedimentary layers and form"
+      },
+      {
+        "start": 61.52,
+        "end": 64.98,
+        "text": "a salt dome. The moving yellow material is not magma:"
+      },
+      {
+        "start": 65.24,
+        "end": 69.76,
+        "text": "deposition happened first, then burial and solid-state deformation changed the original"
+      },
+      {
+        "start": 69.76,
+        "end": 70.48,
+        "text": "layered geometry."
+      },
+      {
+        "start": 71.22,
+        "end": 75.14,
+        "text": "A weak salt layer can let overlying rocks slide, fold and"
+      },
+      {
+        "start": 75.14,
+        "end": 76.88,
+        "text": "fault, as in the Jura example."
+      },
+      {
+        "start": 77.26,
+        "end": 80.62,
+        "text": "Where salt reaches the surface, gravity can spread it downslope as"
+      },
+      {
+        "start": 80.62,
+        "end": 83.84,
+        "text": "a salt glacier. A dome, a weak detachment layer and a"
+      },
+      {
+        "start": 83.84,
+        "end": 88.14,
+        "text": "salt glacier therefore share material behavior but have different geometries and"
+      },
+      {
+        "start": 88.14,
+        "end": 91.0,
+        "text": "settings. Look at the whole structure before choosing its name."
+      },
+      {
+        "start": 91.96,
+        "end": 96.76,
+        "text": "The Gulf Coast figure links Mesozoic restricted basins, thick salt deposition,"
+      },
+      {
+        "start": 97.1,
+        "end": 99.06,
+        "text": "later sediment burial and salt movement."
+      },
+      {
+        "start": 99.22,
+        "end": 103.98,
+        "text": "Rising and spreading salt creates domes, folds, faults and irregular seafloor"
+      },
+      {
+        "start": 103.98,
+        "end": 107.7,
+        "text": "relief. The Sigsbee Escarpment marks the front of a large subsurface"
+      },
+      {
+        "start": 107.7,
+        "end": 109.04,
+        "text": "salt mass in this model."
+      },
+      {
+        "start": 109.5,
+        "end": 112.12,
+        "text": "Some associated structures trap oil and gas;"
+      },
+      {
+        "start": 112.24,
+        "end": 115.3,
+        "text": "the salt does not manufacture petroleum simply by rising."
+      }
+    ]
+  },
+  {
+    "n": 11,
+    "title": "Ocean history: a changing map, not one simultaneous split",
+    "logline": "Follow the reconstruction through time and account for both crust creation and consumption.",
+    "beats": [
+      [
+        "Pangaea breaks in stages",
+        "opening",
+        [
+          2,
+          3
+        ],
+        "The source begins near two hundred million years ago with Pangaea and a surrounding global ocean. Rifting separates North America from Africa and adjoining southern landmasses. By roughly one hundred fifty million years ago, a Central Atlantic basin exists, while much of Gondwana remains connected. Rifting begins within continental crust; later spreading creates oceanic crust between the separating landmasses.",
+        [
+          "10.11-p2-Im2.png",
+          "10.11-p3-Im3.png"
+        ],
+        {
+          "start": 0,
+          "end": 25.07
+        },
+        {
+          "takeaway": "The Atlantic opens in stages, beginning in its central sector.",
+          "cueAnchors": [
+            "The source begins",
+            "By roughly"
+          ],
+          "figures": [
+            {},
+            {}
+          ],
+          "phase": [
+            0,
+            0.48
+          ],
+          "cueTimes": [
+            0,
+            10.47
+          ]
+        }
+      ],
+      [
+        "The southern and Indian oceans develop",
+        "opening",
+        [
+          4,
+          5
+        ],
+        "Around one hundred twenty million years ago, the reconstruction shows South America separating from Africa and parts of Gondwana separating toward the early Indian Ocean. By ninety million years ago, the South Atlantic has widened and India is isolated and moving north. Do not read an oval world reconstruction as only one hemisphere or assume every Atlantic sector opened simultaneously.",
+        [
+          "10.11-p4-Im4.png",
+          "10.11-p5-Im5.png"
+        ],
+        {
+          "start": 25.07,
+          "end": 47.38999999999999
+        },
+        {
+          "takeaway": "South Atlantic and Indian Ocean opening follow distinct continental paths.",
+          "cueAnchors": [
+            "Around one hundred twenty",
+            "By ninety"
+          ],
+          "figures": [
+            {},
+            {}
+          ],
+          "phase": [
+            0.48,
+            1
+          ],
+          "cueTimes": [
+            25.07,
+            34.63
+          ]
+        }
+      ],
+      [
+        "Northern opening and Tethys closure",
+        "closingOcean",
+        [
+          5,
+          6
+        ],
+        "The northern Atlantic sector opens later in the source sequence as Greenland and North America separate from Europe. India then approaches and collides with Asia, consuming much of the intervening Tethys Ocean. Africa and other fragments also converge toward southern Europe. The modern arrangement combines opening oceans with closing oceans; it is not simply Pangaea being pulled equally in every direction.",
+        [
+          "10.11-p5-Im6.png",
+          "10.11-p6-Im7.png"
+        ],
+        {
+          "start": 47.38999999999999,
+          "end": 70.50999999999999
+        },
+        {
+          "takeaway": "Northern opening and Tethys consumption occur in the same changing world.",
+          "cueAnchors": [
+            "The northern Atlantic",
+            "India then"
+          ],
+          "figures": [
+            {},
+            {}
+          ],
+          "cueTimes": [
+            47.38999999999999,
+            54.129999999999995
+          ]
+        }
+      ],
+      [
+        "Balance spreading with subduction",
+        "oceanBudget",
+        [
+          6
+        ],
+        "Spreading adds oceanic lithosphere, while subduction removes it. The source contrasts the generally expanding Atlantic with consumption around much of the Pacific. Earth does not need to expand to accommodate this exchange. Local exceptions and boundary details still matter: a broad basin-level pattern does not mean that no subduction occurs anywhere near the Atlantic.",
+        [
+          "10.11-p6-Im7.png"
+        ],
+        {
+          "start": 70.50999999999999,
+          "end": 91.57
+        },
+        {
+          "takeaway": "Spreading creates oceanic lithosphere; subduction consumes it elsewhere.",
+          "cueAnchors": [],
+          "figures": [
+            {}
+          ],
+          "cueTimes": [
+            70.50999999999999
+          ]
+        }
+      ],
+      [
+        "A future map is a conditional prediction",
+        "opening",
+        [
+          6
+        ],
+        "Future reconstructions extend measured plate motions and assumptions about collisions. Continuing convergence could narrow or close some seas while spreading enlarges others, but boundaries and velocities can change. Learn the relative opening order in this source: Central Atlantic, then South Atlantic, then the northern sector. Use approximate source ages as reconstruction landmarks, and keep a conditional projection separate from an observed past rock record.",
+        [
+          "10.11-p6-Im8.png",
+          "10.11-p6-Im7.png"
+        ],
+        {
+          "start": 91.57,
+          "end": 118.71999999999998
+        },
+        {
+          "takeaway": "Future maps depend on continuing motions and changing boundary assumptions.",
+          "cueAnchors": [
+            "Future reconstructions",
+            "Learn the relative opening order"
+          ],
+          "figures": [
+            {},
+            {}
+          ],
+          "cueTimes": [
+            91.57,
+            103.49
+          ]
+        }
+      ]
+    ],
+    "duration": 118.71999999999998,
+    "audio": "../../videos/chapter10/10-11.mp4",
+    "captions": [
+      {
+        "start": 0.65,
+        "end": 3.73,
+        "text": "The source begins near two hundred million years ago with Pangaea"
+      },
+      {
+        "start": 3.73,
+        "end": 5.43,
+        "text": "and a surrounding global ocean."
+      },
+      {
+        "start": 5.61,
+        "end": 9.89,
+        "text": "Rifting separates North America from Africa and adjoining southern landmasses."
+      },
+      {
+        "start": 10.47,
+        "end": 13.69,
+        "text": "By roughly one hundred fifty million years ago, a Central Atlantic"
+      },
+      {
+        "start": 13.69,
+        "end": 17.13,
+        "text": "basin exists, while much of Gondwana remains connected."
+      },
+      {
+        "start": 17.69,
+        "end": 19.65,
+        "text": "Rifting begins within continental crust;"
+      },
+      {
+        "start": 19.95,
+        "end": 23.91,
+        "text": "later spreading creates oceanic crust between the separating landmasses."
+      },
+      {
+        "start": 25.07,
+        "end": 28.59,
+        "text": "Around one hundred twenty million years ago, the reconstruction shows South"
+      },
+      {
+        "start": 28.59,
+        "end": 33.31,
+        "text": "America separating from Africa and parts of Gondwana separating toward the"
+      },
+      {
+        "start": 33.31,
+        "end": 37.15,
+        "text": "early Indian Ocean. By ninety million years ago, the South Atlantic"
+      },
+      {
+        "start": 37.15,
+        "end": 40.35,
+        "text": "has widened and India is isolated and moving north."
+      },
+      {
+        "start": 40.79,
+        "end": 43.81,
+        "text": "Do not read an oval world reconstruction as only one hemisphere"
+      },
+      {
+        "start": 43.81,
+        "end": 46.41,
+        "text": "or assume every Atlantic sector opened simultaneously."
+      },
+      {
+        "start": 47.39,
+        "end": 51.57,
+        "text": "The northern Atlantic sector opens later in the source sequence as"
+      },
+      {
+        "start": 51.57,
+        "end": 53.85,
+        "text": "Greenland and North America separate from Europe."
+      },
+      {
+        "start": 54.13,
+        "end": 57.67,
+        "text": "India then approaches and collides with Asia, consuming much of the"
+      },
+      {
+        "start": 57.67,
+        "end": 62.17,
+        "text": "intervening Tethys Ocean. Africa and other fragments also converge toward southern"
+      },
+      {
+        "start": 62.17,
+        "end": 66.01,
+        "text": "Europe. The modern arrangement combines opening oceans with closing oceans;"
+      },
+      {
+        "start": 66.33,
+        "end": 69.83,
+        "text": "it is not simply Pangaea being pulled equally in every direction."
+      },
+      {
+        "start": 70.51,
+        "end": 74.31,
+        "text": "Spreading adds oceanic lithosphere, while subduction removes it."
+      },
+      {
+        "start": 74.65,
+        "end": 78.53,
+        "text": "The source contrasts the generally expanding Atlantic with consumption around much"
+      },
+      {
+        "start": 78.53,
+        "end": 81.85,
+        "text": "of the Pacific. Earth does not need to expand to accommodate"
+      },
+      {
+        "start": 81.85,
+        "end": 85.63,
+        "text": "this exchange. Local exceptions and boundary details still matter:"
+      },
+      {
+        "start": 85.97,
+        "end": 89.23,
+        "text": "a broad basin-level pattern does not mean that no subduction occurs"
+      },
+      {
+        "start": 89.23,
+        "end": 90.53,
+        "text": "anywhere near the Atlantic."
+      },
+      {
+        "start": 91.57,
+        "end": 95.73,
+        "text": "Future reconstructions extend measured plate motions and assumptions about collisions."
+      },
+      {
+        "start": 96.11,
+        "end": 100.07,
+        "text": "Continuing convergence could narrow or close some seas while spreading enlarges"
+      },
+      {
+        "start": 100.07,
+        "end": 103.07,
+        "text": "others, but boundaries and velocities can change."
+      },
+      {
+        "start": 103.49,
+        "end": 105.49,
+        "text": "Learn the relative opening order in this source:"
+      },
+      {
+        "start": 105.71,
+        "end": 109.49,
+        "text": "Central Atlantic, then South Atlantic, then the northern sector."
+      },
+      {
+        "start": 109.71,
+        "end": 113.97,
+        "text": "Use approximate source ages as reconstruction landmarks, and keep a conditional"
+      },
+      {
+        "start": 113.97,
+        "end": 116.95,
+        "text": "projection separate from an observed past rock record."
+      }
+    ]
+  },
+  {
+    "n": 12,
+    "title": "The Gulf and Caribbean: inherited basins and moving plates",
+    "logline": "Separate passive-margin history, thick basaltic crust, transforms and subduction.",
+    "beats": [
+      [
+        "Read the present map before its history",
+        "caribbean",
+        [
+          2
+        ],
+        "The Gulf of Mexico has a deep central basin and broad shelves along parts of its margins. Florida and the Bahamas include shallow continental and carbonate-platform areas. In the Caribbean, the Lesser Antilles arc, trenches and the Cayman transform system identify active boundaries. Different coastlines in this one region therefore record different crustal settings and processes.",
+        [
+          "10.12-p2-Im2.png"
+        ],
+        {
+          "start": 0,
+          "end": 23.189999999999998
+        },
+        {
+          "takeaway": "Inherited Gulf structure and active Caribbean boundaries are different systems.",
+          "cueAnchors": [],
+          "figures": [
+            {}
+          ],
+          "cueTimes": [
+            0
+          ]
+        }
+      ],
+      [
+        "Jurassic rifting creates accommodation",
+        "riftOcean",
+        [
+          3
+        ],
+        "During Jurassic breakup, extension thinned the continental margins and created restricted basins in which sediment and salt accumulated. Later seafloor spreading opened the Gulf as Yucatan moved away from the northern Gulf Coast. The inherited normal faults, continental shelves and buried salt preserve that opening history even though the present Gulf is not an active spreading basin.",
+        [
+          "10.12-p3-Im3.png"
+        ],
+        {
+          "start": 23.189999999999998,
+          "end": 44.51
+        },
+        {
+          "takeaway": "Jurassic extension creates basin space; salt and later sediment preserve history.",
+          "cueAnchors": [],
+          "figures": [
+            {
+              "focus": [
+                0.5,
+                0.16,
+                1,
+                0.33
+              ]
+            }
+          ],
+          "cueTimes": [
+            23.189999999999998
+          ]
+        }
+      ],
+      [
+        "A plateau and arc enter the reconstruction",
+        "plateauTravel",
+        [
+          3
+        ],
+        "In the textbook's Cretaceous reconstruction, Gulf spreading stops while sedimentation continues. A thick basaltic oceanic plateau approaches from the Pacific, carried on a plate bounded partly by transforms and led by a subduction system and arc. The history is an interpretation assembled from evidence; the source explicitly notes debate over whether all that plateau material formed in the Pacific or locally.",
+        [
+          "10.12-p3-Im3.png"
+        ],
+        {
+          "start": 44.51,
+          "end": 69.49
+        },
+        {
+          "takeaway": "Plateau transport is an interpretation; Pacific versus local origin remains debated.",
+          "cueAnchors": [],
+          "figures": [
+            {
+              "focus": [
+                0.5,
+                0.49,
+                1,
+                0.34
+              ]
+            }
+          ],
+          "cueTimes": [
+            44.51
+          ]
+        }
+      ],
+      [
+        "Use the actual slab direction",
+        "subductionWest",
+        [
+          2,
+          3
+        ],
+        "Atlantic oceanic lithosphere descends westward beneath the Caribbean at the Lesser Antilles in the present-setting description. Another line later in the supplied section calls that slab east-dipping, creating an internal conflict. Keep the discrepancy visible rather than memorizing both directions. The present map, trench position and overriding Caribbean plate support the westward relationship used in this lesson.",
+        [
+          "10.12-p2-Im2.png"
+        ],
+        {
+          "start": 69.49,
+          "end": 94.27
+        },
+        {
+          "takeaway": "Use the mapped westward Atlantic slab relationship and flag the conflicting prose.",
+          "cueAnchors": [],
+          "figures": [
+            {}
+          ],
+          "cueTimes": [
+            69.49
+          ]
+        }
+      ],
+      [
+        "Test the reconstruction with independent records",
+        "reflection",
+        [
+          4
+        ],
+        "Geologists combine on-land mapping, dated rock sequences, volcanic and fault locations, seafloor surveys, seismic profiles and drilled samples. Paleomagnetic and spreading reconstructions supply wider plate context. The Cenozoic history also involves arc collision and continuing transform motion. A good explanation connects each proposed event to evidence and labels unresolved alternatives, rather than treating a tidy sequence of colored maps as direct observation.",
+        [
+          "10.12-p3-Im3.png",
+          "10.12-p2-Im2.png"
+        ],
+        {
+          "start": 94.27,
+          "end": 122.61999999999999
+        },
+        {
+          "takeaway": "Maps, ages, drilling, seismic sections and magnetic records test the reconstruction.",
+          "cueAnchors": [
+            "Geologists combine",
+            "Paleomagnetic"
+          ],
+          "figures": [
+            {
+              "focus": [
+                0.5,
+                0.83,
+                1,
+                0.34
+              ]
+            },
+            {}
+          ],
+          "cueTimes": [
+            94.27,
+            103.55
+          ]
+        }
+      ]
+    ],
+    "duration": 122.61999999999999,
+    "audio": "../../videos/chapter10/10-12.mp4",
+    "captions": [
+      {
+        "start": 0.65,
+        "end": 3.61,
+        "text": "The Gulf of Mexico has a deep central basin and broad"
+      },
+      {
+        "start": 3.61,
+        "end": 5.35,
+        "text": "shelves along parts of its margins."
+      },
+      {
+        "start": 5.95,
+        "end": 10.25,
+        "text": "Florida and the Bahamas include shallow continental and carbonate-platform areas."
+      },
+      {
+        "start": 10.73,
+        "end": 14.01,
+        "text": "In the Caribbean, the Lesser Antilles arc, trenches and the Cayman"
+      },
+      {
+        "start": 14.01,
+        "end": 17.07,
+        "text": "transform system identify active boundaries."
+      },
+      {
+        "start": 17.51,
+        "end": 21.53,
+        "text": "Different coastlines in this one region therefore record different crustal settings"
+      },
+      {
+        "start": 21.53,
+        "end": 22.27,
+        "text": "and processes."
+      },
+      {
+        "start": 23.19,
+        "end": 27.73,
+        "text": "During Jurassic breakup, extension thinned the continental margins and created restricted"
+      },
+      {
+        "start": 27.73,
+        "end": 30.07,
+        "text": "basins in which sediment and salt accumulated."
+      },
+      {
+        "start": 30.39,
+        "end": 34.19,
+        "text": "Later seafloor spreading opened the Gulf as Yucatan moved away from"
+      },
+      {
+        "start": 34.19,
+        "end": 38.35,
+        "text": "the northern Gulf Coast. The inherited normal faults, continental shelves and"
+      },
+      {
+        "start": 38.35,
+        "end": 42.13,
+        "text": "buried salt preserve that opening history even though the present Gulf"
+      },
+      {
+        "start": 42.13,
+        "end": 43.75,
+        "text": "is not an active spreading basin."
+      },
+      {
+        "start": 44.51,
+        "end": 50.27,
+        "text": "In the textbook's Cretaceous reconstruction, Gulf spreading stops while sedimentation continues."
+      },
+      {
+        "start": 50.49,
+        "end": 54.81,
+        "text": "A thick basaltic oceanic plateau approaches from the Pacific, carried on"
+      },
+      {
+        "start": 54.81,
+        "end": 58.31,
+        "text": "a plate bounded partly by transforms and led by a subduction"
+      },
+      {
+        "start": 58.31,
+        "end": 62.49,
+        "text": "system and arc. The history is an interpretation assembled from evidence;"
+      },
+      {
+        "start": 62.83,
+        "end": 66.61,
+        "text": "the source explicitly notes debate over whether all that plateau material"
+      },
+      {
+        "start": 66.61,
+        "end": 68.67,
+        "text": "formed in the Pacific or locally."
+      },
+      {
+        "start": 69.49,
+        "end": 74.45,
+        "text": "Atlantic oceanic lithosphere descends westward beneath the Caribbean at the Lesser"
+      },
+      {
+        "start": 74.45,
+        "end": 76.53,
+        "text": "Antilles in the present-setting description."
+      },
+      {
+        "start": 76.95,
+        "end": 80.99,
+        "text": "Another line later in the supplied section calls that slab east-dipping,"
+      },
+      {
+        "start": 81.27,
+        "end": 85.93,
+        "text": "creating an internal conflict. Keep the discrepancy visible rather than memorizing"
+      },
+      {
+        "start": 85.93,
+        "end": 90.81,
+        "text": "both directions. The present map, trench position and overriding Caribbean plate"
+      },
+      {
+        "start": 90.81,
+        "end": 93.55,
+        "text": "support the westward relationship used in this lesson."
+      },
+      {
+        "start": 94.27,
+        "end": 99.81,
+        "text": "Geologists combine on-land mapping, dated rock sequences, volcanic and fault locations,"
+      },
+      {
+        "start": 100.15,
+        "end": 103.23,
+        "text": "seafloor surveys, seismic profiles and drilled samples."
+      },
+      {
+        "start": 103.55,
+        "end": 107.39,
+        "text": "Paleomagnetic and spreading reconstructions supply wider plate context."
+      },
+      {
+        "start": 107.85,
+        "end": 112.07,
+        "text": "The Cenozoic history also involves arc collision and continuing transform motion."
+      },
+      {
+        "start": 112.37,
+        "end": 115.77,
+        "text": "A good explanation connects each proposed event to evidence and labels"
+      },
+      {
+        "start": 115.77,
+        "end": 119.59,
+        "text": "unresolved alternatives, rather than treating a tidy sequence of colored maps"
+      },
+      {
+        "start": 119.59,
+        "end": 120.63,
+        "text": "as direct observation."
+      }
+    ]
+  },
+  {
+    "n": 13,
+    "title": "Investigate the ocean map: evidence, history and prediction",
+    "logline": "Use numbered locations, age patterns and boundary geometry to reconstruct a changing region.",
+    "beats": [
+      [
+        "Two volcanic belts tell different stories",
+        "investigation",
+        [
+          1
+        ],
+        "Begin with observations on the numbered terrain. The broad plateau and southeast-trending volcanic chain are mostly basaltic, with ages decreasing toward an active southeast end. That supports northwestward plate motion relative to a hot spot. The separate curved belt contains long-lived, explosive andesitic volcanoes beside a trench, supporting an island arc. Similar volcanic landforms do not establish the same tectonic cause.",
+        [
+          "10.13-p1-Im2.png",
+          "10.13-p1-Im2.png"
+        ],
+        {
+          "start": 0,
+          "end": 27.869999999999997
+        },
+        {
+          "takeaway": "Age progression and a trench distinguish the two volcanic systems.",
+          "cueAnchors": [
+            "Begin with observations",
+            "The separate curved belt"
+          ],
+          "figures": [
+            {
+              "focus": [
+                0.37,
+                0.28,
+                0.6,
+                0.5
+              ]
+            },
+            {
+              "focus": [
+                0.19,
+                0.49,
+                0.35,
+                0.8
+              ]
+            }
+          ],
+          "cueTimes": [
+            0,
+            15.77
+          ]
+        }
+      ],
+      [
+        "Read the western basin in its own context",
+        "backarc",
+        [
+          1,
+          2
+        ],
+        "Behind the arc, a low ridge with active basaltic eruptions and offset segments marks back-arc spreading. The western continent has a narrow shelf but no local trench, active volcanism or earthquake evidence in the stated scenario. Its margin can therefore be passive despite its narrow width. Use all the observations; one visual clue should not override the complete description.",
+        [
+          "10.13-p1-Im2.png"
+        ],
+        {
+          "start": 27.869999999999997,
+          "end": 51.03
+        },
+        {
+          "takeaway": "Read the western back-arc basin beside its arc and incoming plate.",
+          "cueAnchors": [],
+          "figures": [
+            {
+              "focus": [
+                0.2,
+                0.59,
+                0.4,
+                0.7
+              ]
+            }
+          ],
+          "dir": -1,
+          "cueTimes": [
+            27.869999999999997
+          ]
+        }
+      ],
+      [
+        "Central and eastern margins preserve rifting",
+        "riftMargin",
+        [
+          1,
+          2
+        ],
+        "The central continent has a broad quiet shelf, canyons and sediment piles. Its A to A-prime section shows normal-faulted continental crust buried by Cenozoic sediment and grading toward oceanic crust. Farther east, a volcanic ridge separates young crustal age bands from older crust near both continental edges. That pattern records an opening ocean bounded by passive margins.",
+        [
+          "10.13-p1-Im2.png",
+          "10.13-p2-Im3.png"
+        ],
+        {
+          "start": 51.03,
+          "end": 74.11
+        },
+        {
+          "takeaway": "A quiet narrow shelf can be passive; the A–A′ section records earlier rifting.",
+          "cueAnchors": [
+            "The central continent",
+            "Its A to A-prime section"
+          ],
+          "figures": [
+            {
+              "focus": [
+                0.79,
+                0.43,
+                0.42,
+                0.7
+              ]
+            },
+            {}
+          ],
+          "cueTimes": [
+            51.03,
+            55.71
+          ]
+        }
+      ],
+      [
+        "Reconstruct twenty million years ago",
+        "rewindOcean",
+        [
+          1,
+          2
+        ],
+        "Use the actual ages to constrain the past. An island now dated nineteen million years had not formed twenty million years ago, whereas the forty-million-year plateau already existed. The oldest eastern-basin crust, about twenty to twenty-five million years, brackets the basin's early opening. These ages constrain a reconstruction; they do not provide exact plate speeds without distances and stated assumptions.",
+        [
+          "10.13-p1-Im2.png"
+        ],
+        {
+          "start": 74.11,
+          "end": 97.21000000000001
+        },
+        {
+          "takeaway": "A 40 Ma plateau existed 20 Ma ago; a 19 Ma volcano had not formed.",
+          "cueAnchors": [],
+          "figures": [
+            {}
+          ],
+          "cueTimes": [
+            74.11
+          ]
+        }
+      ],
+      [
+        "Predict conditionally and check the whole model",
+        "investigation",
+        [
+          1,
+          2
+        ],
+        "For the future, assume continuing motion explicitly. Spreading could widen the eastern ocean, the back-arc system could evolve, and the plateau could approach the convergent boundary. Buoyant plateau material may accrete rather than disappear wholesale with dense oceanic lithosphere. Use the complete numbered figure and the source descriptions, keep the missing tiny four-choice Connect geometry marked unavailable, and distinguish observation, interpretation and prediction.",
+        [
+          "10.13-p1-Im2.png"
+        ],
+        {
+          "start": 97.21000000000001,
+          "end": 123.88000000000001
+        },
+        {
+          "takeaway": "State continuing-motion assumptions before predicting widening, convergence or accretion.",
+          "cueAnchors": [],
+          "figures": [
+            {}
+          ],
+          "cueTimes": [
+            97.21000000000001
+          ]
+        }
+      ]
+    ],
+    "duration": 123.88000000000001,
+    "audio": "../../videos/chapter10/10-13.mp4",
+    "captions": [
+      {
+        "start": 0.65,
+        "end": 3.19,
+        "text": "Begin with observations on the numbered terrain."
+      },
+      {
+        "start": 3.71,
+        "end": 8.71,
+        "text": "The broad plateau and southeast-trending volcanic chain are mostly basaltic, with"
+      },
+      {
+        "start": 8.71,
+        "end": 11.63,
+        "text": "ages decreasing toward an active southeast end."
+      },
+      {
+        "start": 11.63,
+        "end": 15.31,
+        "text": "That supports northwestward plate motion relative to a hot spot."
+      },
+      {
+        "start": 15.77,
+        "end": 20.49,
+        "text": "The separate curved belt contains long-lived, explosive andesitic volcanoes beside a"
+      },
+      {
+        "start": 20.49,
+        "end": 22.45,
+        "text": "trench, supporting an island arc."
+      },
+      {
+        "start": 22.81,
+        "end": 26.89,
+        "text": "Similar volcanic landforms do not establish the same tectonic cause."
+      },
+      {
+        "start": 27.87,
+        "end": 31.89,
+        "text": "Behind the arc, a low ridge with active basaltic eruptions and"
+      },
+      {
+        "start": 31.89,
+        "end": 34.45,
+        "text": "offset segments marks back-arc spreading."
+      },
+      {
+        "start": 35.11,
+        "end": 38.43,
+        "text": "The western continent has a narrow shelf but no local trench,"
+      },
+      {
+        "start": 38.83,
+        "end": 42.23,
+        "text": "active volcanism or earthquake evidence in the stated scenario."
+      },
+      {
+        "start": 42.73,
+        "end": 45.77,
+        "text": "Its margin can therefore be passive despite its narrow width."
+      },
+      {
+        "start": 46.11,
+        "end": 49.57,
+        "text": "Use all the observations; one visual clue should not override the"
+      },
+      {
+        "start": 49.57,
+        "end": 50.27,
+        "text": "complete description."
+      },
+      {
+        "start": 51.03,
+        "end": 54.75,
+        "text": "The central continent has a broad quiet shelf, canyons and sediment"
+      },
+      {
+        "start": 54.75,
+        "end": 59.49,
+        "text": "piles. Its A to A-prime section shows normal-faulted continental crust buried"
+      },
+      {
+        "start": 59.49,
+        "end": 63.11,
+        "text": "by Cenozoic sediment and grading toward oceanic crust."
+      },
+      {
+        "start": 63.57,
+        "end": 67.85,
+        "text": "Farther east, a volcanic ridge separates young crustal age bands from"
+      },
+      {
+        "start": 67.85,
+        "end": 69.89,
+        "text": "older crust near both continental edges."
+      },
+      {
+        "start": 70.07,
+        "end": 73.29,
+        "text": "That pattern records an opening ocean bounded by passive margins."
+      },
+      {
+        "start": 74.11,
+        "end": 76.43,
+        "text": "Use the actual ages to constrain the past."
+      },
+      {
+        "start": 76.69,
+        "end": 79.95,
+        "text": "An island now dated nineteen million years had not formed twenty"
+      },
+      {
+        "start": 79.95,
+        "end": 83.73,
+        "text": "million years ago, whereas the forty-million-year plateau already existed."
+      },
+      {
+        "start": 83.99,
+        "end": 88.51,
+        "text": "The oldest eastern-basin crust, about twenty to twenty-five million years, brackets"
+      },
+      {
+        "start": 88.51,
+        "end": 92.03,
+        "text": "the basin's early opening. These ages constrain a reconstruction;"
+      },
+      {
+        "start": 92.05,
+        "end": 95.83,
+        "text": "they do not provide exact plate speeds without distances and stated"
+      },
+      {
+        "start": 95.83,
+        "end": 96.19,
+        "text": "assumptions."
+      },
+      {
+        "start": 97.21,
+        "end": 100.25,
+        "text": "For the future, assume continuing motion explicitly."
+      },
+      {
+        "start": 100.61,
+        "end": 104.21,
+        "text": "Spreading could widen the eastern ocean, the back-arc system could evolve,"
+      },
+      {
+        "start": 104.45,
+        "end": 106.69,
+        "text": "and the plateau could approach the convergent boundary."
+      },
+      {
+        "start": 107.25,
+        "end": 111.55,
+        "text": "Buoyant plateau material may accrete rather than disappear wholesale with dense"
+      },
+      {
+        "start": 111.55,
+        "end": 115.47,
+        "text": "oceanic lithosphere. Use the complete numbered figure and the source descriptions,"
+      },
+      {
+        "start": 115.47,
+        "end": 120.13,
+        "text": "keep the missing tiny four-choice Connect geometry marked unavailable, and distinguish"
+      },
+      {
+        "start": 120.13,
+        "end": 122.19,
+        "text": "observation, interpretation and prediction."
+      }
+    ]
+  }
+]
+;
