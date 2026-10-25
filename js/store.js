@@ -8,8 +8,8 @@
     return { app: L.CONFIG.id, schema: SCHEMA, created: Date.now(), updated: Date.now(), attempts: [], mocks: [], mockActive: null,
       examRuns: [], examActive: null, masteryCredits: {}, sessionHistory: [], mockArchived: [], session: null, sessionsByExam: {}, boss: {}, guideRead: {}, teach: {}, legacy: null, settings: { mockMinutes: 80, activeExam: 'exam1' } };
   }
-  function get(k) { try { return root.localStorage ? root.localStorage.getItem(k) : null; } catch (e) { storageOK = false; lastError = String(e); return null; } }
-  function set(k, v) { try { if (!root.localStorage) throw Error('localStorage unavailable'); root.localStorage.setItem(k, v); storageOK = true; return true; } catch (e) { storageOK = false; lastError = String(e); return false; } }
+  function get(k) { try { return root.localStorage ? (root.StudyStorage || root.localStorage).getItem(k) : null; } catch (e) { storageOK = false; lastError = String(e); return null; } }
+  function set(k, v) { try { if (!root.localStorage) throw Error('localStorage unavailable'); (root.StudyStorage || root.localStorage).setItem(k, v); storageOK = true; return true; } catch (e) { storageOK = false; lastError = String(e); return false; } }
   function normalize(x) {
     var b = blank(); if (!x || typeof x !== 'object') return b;
     Object.keys(b).forEach(function (k) { if (x[k] === undefined) x[k] = b[k]; });
