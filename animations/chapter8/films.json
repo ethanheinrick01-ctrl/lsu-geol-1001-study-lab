@@ -1,0 +1,3289 @@
+[
+  {
+    "n": 1,
+    "title": "Stress, strain, and rock strength",
+    "logline": "A force is a push or pull.",
+    "beats": [
+      [
+        "Force, stress and pressure",
+        "stress",
+        [
+          2,
+          3,
+          4
+        ],
+        "A force is a push or pull. Stress is force divided by the area over which it acts, so the same force on a smaller area produces greater stress. Confining pressure acts equally from every direction; differential stress differs with direction.",
+        [
+          "8.1-p2-Im1.png"
+        ],
+        {
+          "start": 0,
+          "end": 16.23
+        },
+        {
+          "takeaway": "Force, stress and pressure",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 1,
+          "cueTimes": [
+            0
+          ]
+        }
+      ],
+      [
+        "Deform without confusing the response",
+        "strain",
+        [
+          8,
+          9,
+          10,
+          11
+        ],
+        "Rock may translate to a new position, rotate to a new orientation, or change its shape and size. That internal change is strain. A tilted bed records rotation; flattened pebbles record internal strain. More than one response can occur together.",
+        [
+          "8.1-p10-Im2.png"
+        ],
+        {
+          "start": 16.23,
+          "end": 32.33
+        },
+        {
+          "takeaway": "Deform without confusing the response",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 1,
+          "cueTimes": [
+            16.23
+          ]
+        }
+      ],
+      [
+        "Follow strength into the crust",
+        "strength",
+        [
+          5,
+          6,
+          7
+        ],
+        "On the supplied strength graph, depth increases downward and strength increases to the right. In shallow brittle rock, confinement generally increases resistance to breaking. Deeper, hotter rock can deform by solid-state flow and strength decreases. The curve peaks near the transition.",
+        [
+          "8.1-p7-Im1.png"
+        ],
+        {
+          "start": 32.33,
+          "end": 50.32999999999999
+        },
+        {
+          "takeaway": "Follow strength into the crust",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 1,
+          "cueTimes": [
+            32.33
+          ]
+        }
+      ],
+      [
+        "Keep the limits visible",
+        "strength",
+        [
+          7,
+          11
+        ],
+        "The brittle–ductile transition is a change in dominant behavior, not a universal fixed depth or a melting line. Temperature, composition, fluids, pressure, and strain rate affect how a rock responds. The graph is a model, not a single depth that applies everywhere.",
+        [
+          "8.1-p11-Im1.png"
+        ],
+        {
+          "start": 50.32999999999999,
+          "end": 68.52
+        },
+        {
+          "takeaway": "Keep the limits visible",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 1,
+          "cueTimes": [
+            50.32999999999999
+          ]
+        }
+      ]
+    ],
+    "duration": 68.52,
+    "audio": "../../videos/chapter8/8-01.mp4",
+    "captions": [
+      {
+        "start": 0.65,
+        "end": 2.77,
+        "text": "A force is a push or pull."
+      },
+      {
+        "start": 2.95,
+        "end": 6.07,
+        "text": "Stress is force divided by the area over which it acts,"
+      },
+      {
+        "start": 6.19,
+        "end": 9.65,
+        "text": "so the same force on a smaller area produces greater stress."
+      },
+      {
+        "start": 9.97,
+        "end": 12.85,
+        "text": "Confining pressure acts equally from every direction;"
+      },
+      {
+        "start": 13.25,
+        "end": 15.55,
+        "text": "differential stress differs with direction."
+      },
+      {
+        "start": 16.23,
+        "end": 20.13,
+        "text": "Rock may translate to a new position, rotate to a new"
+      },
+      {
+        "start": 20.13,
+        "end": 22.79,
+        "text": "orientation, or change its shape and size."
+      },
+      {
+        "start": 22.97,
+        "end": 24.69,
+        "text": "That internal change is strain."
+      },
+      {
+        "start": 24.91,
+        "end": 26.87,
+        "text": "A tilted bed records rotation;"
+      },
+      {
+        "start": 27.25,
+        "end": 29.47,
+        "text": "flattened pebbles record internal strain."
+      },
+      {
+        "start": 29.77,
+        "end": 31.75,
+        "text": "More than one response can occur together."
+      },
+      {
+        "start": 32.33,
+        "end": 36.79,
+        "text": "On the supplied strength graph, depth increases downward and strength increases"
+      },
+      {
+        "start": 36.79,
+        "end": 41.21,
+        "text": "to the right. In shallow brittle rock, confinement generally increases resistance"
+      },
+      {
+        "start": 41.21,
+        "end": 46.09,
+        "text": "to breaking. Deeper, hotter rock can deform by solid-state flow and"
+      },
+      {
+        "start": 46.09,
+        "end": 49.45,
+        "text": "strength decreases. The curve peaks near the transition."
+      },
+      {
+        "start": 50.33,
+        "end": 54.59,
+        "text": "The brittle–ductile transition is a change in dominant behavior, not a"
+      },
+      {
+        "start": 54.59,
+        "end": 56.81,
+        "text": "universal fixed depth or a melting line."
+      },
+      {
+        "start": 57.21,
+        "end": 61.65,
+        "text": "Temperature, composition, fluids, pressure, and strain rate affect how a rock"
+      },
+      {
+        "start": 61.65,
+        "end": 65.55,
+        "text": "responds. The graph is a model, not a single depth that"
+      },
+      {
+        "start": 65.55,
+        "end": 66.39,
+        "text": "applies everywhere."
+      }
+    ]
+  },
+  {
+    "n": 2,
+    "title": "How conditions change rock behavior",
+    "logline": "Compression squeezes and shortens rock, tension stretches it, and shear makes adjacent material move past itself.",
+    "beats": [
+      [
+        "Compression, tension, and shear",
+        "compression",
+        [
+          2,
+          3,
+          4
+        ],
+        "Compression squeezes and shortens rock, tension stretches it, and shear makes adjacent material move past itself. The same stress category can produce different structures under different conditions. In the shallow crust, compression can form faults; deeper, hot rocks can fold or flow.",
+        [
+          "8.2-p2-Im1.png",
+          "8.2-p4-Im3.png",
+          "8.2-p5-Im3.png",
+          "8.2-p3-Im2.png",
+          "8.2-p3-Im1.png"
+        ],
+        {
+          "start": 0,
+          "end": 18.43
+        },
+        {
+          "takeaway": "Compression, tension, and shear",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            "",
+            "tension stretches",
+            "shear makes",
+            "In the shallow crust",
+            "deeper hot rocks"
+          ],
+          "section": 2,
+          "cueTimes": [
+            0,
+            2.9899999999999998,
+            4.43,
+            12.110000000000001,
+            15.23
+          ],
+          "modes": [
+            "compression",
+            "tension",
+            "shear",
+            "fault",
+            "fold"
+          ],
+          "modeAnchors": [
+            {
+              "anchor": "",
+              "mode": "compression"
+            },
+            {
+              "anchor": "tension stretches",
+              "mode": "tension"
+            },
+            {
+              "anchor": "shear makes",
+              "mode": "shear"
+            },
+            {
+              "anchor": "In the shallow crust",
+              "mode": "fault"
+            },
+            {
+              "anchor": "deeper hot rocks",
+              "mode": "fold"
+            }
+          ],
+          "modeCues": [
+            {
+              "time": 0,
+              "mode": "compression"
+            },
+            {
+              "time": 2.9899999999999998,
+              "mode": "tension"
+            },
+            {
+              "time": 4.43,
+              "mode": "shear"
+            },
+            {
+              "time": 12.110000000000001,
+              "mode": "fault"
+            },
+            {
+              "time": 15.23,
+              "mode": "fold"
+            }
+          ]
+        }
+      ],
+      [
+        "From brittle fracture to solid flow",
+        "fault",
+        [
+          3,
+          4,
+          5
+        ],
+        "A brittle rock breaks or slips when stressed. At depth, higher confinement and temperature commonly favor ductile behavior: minerals and rock masses change shape without a throughgoing fracture. Ductile does not mean liquid, and the transition depends on the material and conditions.",
+        [
+          "8.2-p3-Im2.png"
+        ],
+        {
+          "start": 18.43,
+          "end": 34.35
+        },
+        {
+          "takeaway": "From brittle fracture to solid flow",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 2,
+          "cueTimes": [
+            18.43
+          ]
+        }
+      ],
+      [
+        "Follow minerals and fluids",
+        "fabric",
+        [
+          6,
+          7,
+          8
+        ],
+        "At increasing depth, minerals may deform, grow, or react to form new minerals stable under changed conditions. Water in pore spaces opposes part of the confining pressure and can assist fracture or reactions. Fluid effects depend on location and conditions rather than one universal outcome.",
+        [
+          "8.2-p7-Im1.png"
+        ],
+        {
+          "start": 34.35,
+          "end": 52.19
+        },
+        {
+          "takeaway": "Follow minerals and fluids",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 2,
+          "cueTimes": [
+            34.35
+          ]
+        }
+      ],
+      [
+        "Use experiments and observations",
+        "strength",
+        [
+          8,
+          9,
+          10
+        ],
+        "Geologists investigate mineral stability and rock behavior using controlled temperature and pressure experiments, field observations, and measurements of natural rocks. Each line of evidence has a defined range of conditions. A single specimen cannot establish the strength of every rock at a given depth.",
+        [
+          "8.2-p10-Im2.png"
+        ],
+        {
+          "start": 52.19,
+          "end": 69.25999999999999
+        },
+        {
+          "takeaway": "Use experiments and observations",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 2,
+          "cueTimes": [
+            52.19
+          ]
+        }
+      ]
+    ],
+    "duration": 69.25999999999999,
+    "audio": "../../videos/chapter8/8-02.mp4",
+    "captions": [
+      {
+        "start": 0.65,
+        "end": 5.09,
+        "text": "Compression squeezes and shortens rock, tension stretches it, and shear makes"
+      },
+      {
+        "start": 5.09,
+        "end": 7.55,
+        "text": "adjacent material move past itself."
+      },
+      {
+        "start": 7.83,
+        "end": 11.87,
+        "text": "The same stress category can produce different structures under different conditions."
+      },
+      {
+        "start": 12.11,
+        "end": 14.99,
+        "text": "In the shallow crust, compression can form faults;"
+      },
+      {
+        "start": 15.23,
+        "end": 17.85,
+        "text": "deeper, hot rocks can fold or flow."
+      },
+      {
+        "start": 18.43,
+        "end": 20.83,
+        "text": "A brittle rock breaks or slips when stressed."
+      },
+      {
+        "start": 21.25,
+        "end": 25.19,
+        "text": "At depth, higher confinement and temperature commonly favor ductile behavior:"
+      },
+      {
+        "start": 25.47,
+        "end": 29.19,
+        "text": "minerals and rock masses change shape without a throughgoing fracture."
+      },
+      {
+        "start": 29.63,
+        "end": 32.87,
+        "text": "Ductile does not mean liquid, and the transition depends on the"
+      },
+      {
+        "start": 32.87,
+        "end": 33.79,
+        "text": "material and conditions."
+      },
+      {
+        "start": 34.35,
+        "end": 38.97,
+        "text": "At increasing depth, minerals may deform, grow, or react to form"
+      },
+      {
+        "start": 38.97,
+        "end": 41.15,
+        "text": "new minerals stable under changed conditions."
+      },
+      {
+        "start": 41.39,
+        "end": 45.11,
+        "text": "Water in pore spaces opposes part of the confining pressure and"
+      },
+      {
+        "start": 45.11,
+        "end": 46.93,
+        "text": "can assist fracture or reactions."
+      },
+      {
+        "start": 47.17,
+        "end": 51.05,
+        "text": "Fluid effects depend on location and conditions rather than one universal"
+      },
+      {
+        "start": 51.05,
+        "end": 51.49,
+        "text": "outcome."
+      },
+      {
+        "start": 52.19,
+        "end": 57.07,
+        "text": "Geologists investigate mineral stability and rock behavior using controlled temperature and"
+      },
+      {
+        "start": 57.07,
+        "end": 60.73,
+        "text": "pressure experiments, field observations, and measurements of natural rocks."
+      },
+      {
+        "start": 60.87,
+        "end": 63.35,
+        "text": "Each line of evidence has a defined range of conditions."
+      },
+      {
+        "start": 63.35,
+        "end": 66.95,
+        "text": "A single specimen cannot establish the strength of every rock at"
+      },
+      {
+        "start": 66.95,
+        "end": 67.55,
+        "text": "a given depth."
+      }
+    ]
+  },
+  {
+    "n": 3,
+    "title": "Joints, fractures, and faults",
+    "logline": "A joint is a crack with little or no shear displacement along its surface.",
+    "beats": [
+      [
+        "Distinguish two fractures",
+        "joints",
+        [
+          2,
+          3,
+          4
+        ],
+        "A joint is a crack with little or no shear displacement along its surface. A fault is a fracture across which rocks have slipped. Follow a matching bed or other marker across the break before deciding whether movement occurred.",
+        [
+          "8.3-p3-Im2.png",
+          "8.3-p4-Im2.png"
+        ],
+        {
+          "start": 0,
+          "end": 13.390041666666667
+        },
+        {
+          "takeaway": "Distinguish two fractures",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            "",
+            "A fault is a fracture"
+          ],
+          "section": 3,
+          "cueTimes": [
+            0,
+            4.930000000000001
+          ],
+          "modes": [
+            "joints",
+            "fault"
+          ],
+          "modeAnchors": [
+            {
+              "anchor": "",
+              "mode": "joints"
+            },
+            {
+              "anchor": "A fault is a fracture",
+              "mode": "fault"
+            }
+          ],
+          "modeCues": [
+            {
+              "time": 0,
+              "mode": "joints"
+            },
+            {
+              "time": 4.930000000000001,
+              "mode": "fault"
+            }
+          ]
+        }
+      ],
+      [
+        "Open joints under different causes",
+        "joints",
+        [
+          4,
+          5,
+          6,
+          7
+        ],
+        "Joints can open as rocks cool and contract, as overlying rock is removed and pressure decreases, or under tectonic stresses. Columnar joints form during cooling. Sheet-like unloading joints follow reduced confinement as deeply formed rock approaches the surface.",
+        [
+          "8.3-p9-Im3.png",
+          "8.3-p9-Im2.png"
+        ],
+        {
+          "start": 13.390041666666667,
+          "end": 29.990041666666663
+        },
+        {
+          "takeaway": "Open joints under different causes",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            "",
+            "as overlying rock is removed"
+          ],
+          "section": 3,
+          "cueTimes": [
+            13.390041666666667,
+            15.590041666666668
+          ]
+        }
+      ],
+      [
+        "Relate joint orientation to stress",
+        "joints",
+        [
+          4,
+          8,
+          9
+        ],
+        "An opening-mode joint is oriented approximately perpendicular to the direction in which the rock is pulled apart. Joint sets can divide an outcrop into regular blocks. Identify the opening direction and the visible planes before deciding which stresses acted.",
+        [
+          "8.3-p6-Im2.png"
+        ],
+        {
+          "start": 29.990041666666663,
+          "end": 44.61004166666667
+        },
+        {
+          "takeaway": "Relate joint orientation to stress",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 3,
+          "cueTimes": [
+            29.990041666666663
+          ]
+        }
+      ],
+      [
+        "Faults cut and offset",
+        "fault",
+        [
+          10,
+          11,
+          12,
+          13
+        ],
+        "Differential stress can produce a fracture along which blocks slip. The fault orientation depends on the full stress field, including stresses in the other directions. An observed fracture alone does not establish the amount or sense of motion without a displaced marker or other evidence.",
+        [
+          "8.3-p11-Im1.png"
+        ],
+        {
+          "start": 44.61004166666667,
+          "end": 62.16008333333333
+        },
+        {
+          "takeaway": "Faults cut and offset",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 3,
+          "cueTimes": [
+            44.61004166666667
+          ]
+        }
+      ]
+    ],
+    "duration": 62.16008333333333,
+    "audio": "../../videos/chapter8/8-03.mp4",
+    "captions": [
+      {
+        "start": 0.65,
+        "end": 3.65,
+        "text": "A joint is a crack with little or no shear displacement"
+      },
+      {
+        "start": 3.65,
+        "end": 7.43,
+        "text": "along its surface. A fault is a fracture across which rocks"
+      },
+      {
+        "start": 7.43,
+        "end": 10.65,
+        "text": "have slipped. Follow a matching bed or other marker across the"
+      },
+      {
+        "start": 10.65,
+        "end": 12.67,
+        "text": "break before deciding whether movement occurred."
+      },
+      {
+        "start": 13.39,
+        "end": 16.93,
+        "text": "Joints can open as rocks cool and contract, as overlying rock"
+      },
+      {
+        "start": 16.93,
+        "end": 20.65,
+        "text": "is removed and pressure decreases, or under tectonic stresses."
+      },
+      {
+        "start": 21.05,
+        "end": 23.07,
+        "text": "Columnar joints form during cooling."
+      },
+      {
+        "start": 23.35,
+        "end": 28.33,
+        "text": "Sheet-like unloading joints follow reduced confinement as deeply formed rock approaches"
+      },
+      {
+        "start": 28.33,
+        "end": 28.91,
+        "text": "the surface."
+      },
+      {
+        "start": 29.99,
+        "end": 33.95,
+        "text": "An opening-mode joint is oriented approximately perpendicular to the direction in"
+      },
+      {
+        "start": 33.95,
+        "end": 35.63,
+        "text": "which the rock is pulled apart."
+      },
+      {
+        "start": 35.97,
+        "end": 39.17,
+        "text": "Joint sets can divide an outcrop into regular blocks."
+      },
+      {
+        "start": 39.35,
+        "end": 43.15,
+        "text": "Identify the opening direction and the visible planes before deciding which"
+      },
+      {
+        "start": 43.15,
+        "end": 43.95,
+        "text": "stresses acted."
+      },
+      {
+        "start": 44.61,
+        "end": 48.69,
+        "text": "Differential stress can produce a fracture along which blocks slip."
+      },
+      {
+        "start": 48.81,
+        "end": 52.37,
+        "text": "The fault orientation depends on the full stress field, including stresses"
+      },
+      {
+        "start": 52.37,
+        "end": 56.19,
+        "text": "in the other directions. An observed fracture alone does not establish"
+      },
+      {
+        "start": 56.19,
+        "end": 59.43,
+        "text": "the amount or sense of motion without a displaced marker or"
+      },
+      {
+        "start": 59.43,
+        "end": 60.23,
+        "text": "other evidence."
+      }
+    ]
+  },
+  {
+    "n": 4,
+    "title": "Read fault planes and relative motion",
+    "logline": "Strike is the direction of a horizontal line on an inclined plane.",
+    "beats": [
+      [
+        "Orient a planar surface",
+        "fault",
+        [
+          2,
+          3,
+          4,
+          5
+        ],
+        "Strike is the direction of a horizontal line on an inclined plane. Dip is the direction and angle of steepest descent of that plane. Slip may be along dip, along strike, or oblique. Plane orientation and movement direction answer different questions.",
+        [
+          "8.4-p3-Im1.png"
+        ],
+        {
+          "start": 0,
+          "end": 16.61
+        },
+        {
+          "takeaway": "Orient a planar surface",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 4,
+          "cueTimes": [
+            0
+          ]
+        }
+      ],
+      [
+        "Identify the two walls",
+        "fault",
+        [
+          6
+        ],
+        "For an inclined fault, the hanging wall is the block above the plane and the footwall lies below it. The labels follow the fault plane; they are not assigned by which block appears higher on the modern landscape.",
+        [
+          "8.4-p6-Im2.png"
+        ],
+        {
+          "start": 16.61,
+          "end": 28.29
+        },
+        {
+          "takeaway": "Identify the two walls",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 4,
+          "cueTimes": [
+            16.61
+          ]
+        }
+      ],
+      [
+        "Compare fault movements",
+        "faultnormal",
+        [
+          7,
+          8,
+          9
+        ],
+        "On a normal fault the hanging wall moves down relative to the footwall, commonly during extension. On a reverse fault it moves up, commonly during shortening; a thrust is a low-angle reverse fault. Strike-slip faults have predominantly horizontal movement.",
+        [
+          "8.4-p7-Im2.png",
+          "8.4-p8-Im2.png",
+          "8.4-p9-Im1.png"
+        ],
+        {
+          "start": 28.29,
+          "end": 43.949999999999996
+        },
+        {
+          "takeaway": "Compare fault movements",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            "",
+            "On a reverse fault",
+            "Strike-slip faults"
+          ],
+          "section": 4,
+          "cueTimes": [
+            28.29,
+            33.87,
+            40.45
+          ],
+          "modes": [
+            "faultnormal",
+            "faultreverse",
+            "transform"
+          ],
+          "modeAnchors": [
+            {
+              "anchor": "",
+              "mode": "faultnormal"
+            },
+            {
+              "anchor": "On a reverse fault",
+              "mode": "faultreverse"
+            },
+            {
+              "anchor": "Strike-slip faults",
+              "mode": "transform"
+            }
+          ],
+          "modeCues": [
+            {
+              "time": 28.29,
+              "mode": "faultnormal"
+            },
+            {
+              "time": 33.87,
+              "mode": "faultreverse"
+            },
+            {
+              "time": 40.45,
+              "mode": "transform"
+            }
+          ]
+        }
+      ],
+      [
+        "Build horsts and grabens",
+        "horst",
+        [
+          10
+        ],
+        "A graben is a block that has dropped relative to blocks on either side along normal faults. A horst is relatively raised. These are relative displacements within a fault system, so present elevation alone does not define every block’s complete history.",
+        [
+          "8.4-p10-Im2.png"
+        ],
+        {
+          "start": 43.949999999999996,
+          "end": 60.13999999999999
+        },
+        {
+          "takeaway": "Build horsts and grabens",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 4,
+          "cueTimes": [
+            43.949999999999996
+          ]
+        }
+      ]
+    ],
+    "duration": 60.13999999999999,
+    "audio": "../../videos/chapter8/8-04.mp4",
+    "captions": [
+      {
+        "start": 0.65,
+        "end": 3.97,
+        "text": "Strike is the direction of a horizontal line on an inclined"
+      },
+      {
+        "start": 3.97,
+        "end": 7.73,
+        "text": "plane. Dip is the direction and angle of steepest descent of"
+      },
+      {
+        "start": 7.73,
+        "end": 11.95,
+        "text": "that plane. Slip may be along dip, along strike, or oblique."
+      },
+      {
+        "start": 12.09,
+        "end": 15.63,
+        "text": "Plane orientation and movement direction answer different questions."
+      },
+      {
+        "start": 16.61,
+        "end": 19.97,
+        "text": "For an inclined fault, the hanging wall is the block above"
+      },
+      {
+        "start": 19.97,
+        "end": 22.01,
+        "text": "the plane and the footwall lies below it."
+      },
+      {
+        "start": 22.17,
+        "end": 24.07,
+        "text": "The labels follow the fault plane;"
+      },
+      {
+        "start": 24.21,
+        "end": 26.91,
+        "text": "they are not assigned by which block appears higher on the"
+      },
+      {
+        "start": 26.91,
+        "end": 27.63,
+        "text": "modern landscape."
+      },
+      {
+        "start": 28.29,
+        "end": 31.67,
+        "text": "On a normal fault the hanging wall moves down relative to"
+      },
+      {
+        "start": 31.67,
+        "end": 33.55,
+        "text": "the footwall, commonly during extension."
+      },
+      {
+        "start": 33.87,
+        "end": 37.33,
+        "text": "On a reverse fault it moves up, commonly during shortening;"
+      },
+      {
+        "start": 37.49,
+        "end": 40.19,
+        "text": "a thrust is a low-angle reverse fault."
+      },
+      {
+        "start": 40.45,
+        "end": 43.39,
+        "text": "Strike-slip faults have predominantly horizontal movement."
+      },
+      {
+        "start": 43.95,
+        "end": 46.87,
+        "text": "A graben is a block that has dropped relative to blocks"
+      },
+      {
+        "start": 46.87,
+        "end": 49.03,
+        "text": "on either side along normal faults."
+      },
+      {
+        "start": 49.03,
+        "end": 51.01,
+        "text": "A horst is relatively raised."
+      },
+      {
+        "start": 51.15,
+        "end": 55.33,
+        "text": "These are relative displacements within a fault system, so present elevation"
+      },
+      {
+        "start": 55.33,
+        "end": 58.41,
+        "text": "alone does not define every block’s complete history."
+      }
+    ]
+  },
+  {
+    "n": 5,
+    "title": "Folds and their geometry",
+    "logline": "Compression can shorten and bend layered rocks into folds while the layers remain traceable.",
+    "beats": [
+      [
+        "Shorten layered rock",
+        "fold",
+        [
+          2,
+          3
+        ],
+        "Compression can shorten and bend layered rocks into folds while the layers remain traceable. The curved region of maximum bending is the hinge, and the sides are limbs. Trace the same layer through the whole structure before naming a fold.",
+        [
+          "8.5-p2-Im1.png"
+        ],
+        {
+          "start": 0,
+          "end": 14.29
+        },
+        {
+          "takeaway": "Shorten layered rock",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 5,
+          "cueTimes": [
+            0
+          ]
+        }
+      ],
+      [
+        "Compare anticlines and synclines",
+        "foldPair",
+        [
+          3,
+          4,
+          5
+        ],
+        "An anticline has older rocks in its core and a syncline has younger rocks in its core. In an upright fold, anticlines commonly arch upward and synclines trough downward. Overturning complicates simple shape rules, so use age relations where they are known.",
+        [
+          "8.5-p3-Im1.png"
+        ],
+        {
+          "start": 14.29,
+          "end": 30.169999999999998
+        },
+        {
+          "takeaway": "Compare anticlines and synclines",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 5,
+          "cueTimes": [
+            14.29
+          ]
+        }
+      ],
+      [
+        "Domes, basins, and monoclines",
+        "fold",
+        [
+          4,
+          5
+        ],
+        "A dome is a roughly circular structure with older rocks in its center; a basin has younger rocks in its center. A monocline is a step-like bend connecting more gently dipping segments. Modern topography can differ because rocks erode at different rates.",
+        [
+          "8.5-p4-Im1.png"
+        ],
+        {
+          "start": 30.169999999999998,
+          "end": 45.73
+        },
+        {
+          "takeaway": "Domes, basins, and monoclines",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 5,
+          "cueTimes": [
+            30.169999999999998
+          ]
+        }
+      ],
+      [
+        "Describe axial orientation",
+        "fold",
+        [
+          7,
+          8,
+          9
+        ],
+        "An axial surface joins hinges through successive layers. It can be upright or inclined. A fold is overturned where a limb has rotated beyond vertical. A plunging hinge is inclined rather than horizontal. These descriptions address different aspects of geometry.",
+        [
+          "8.5-p8-Im1.png"
+        ],
+        {
+          "start": 45.73,
+          "end": 62.31999999999999
+        },
+        {
+          "takeaway": "Describe axial orientation",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 5,
+          "cueTimes": [
+            45.73
+          ]
+        }
+      ]
+    ],
+    "duration": 62.31999999999999,
+    "audio": "../../videos/chapter8/8-05.mp4",
+    "captions": [
+      {
+        "start": 0.65,
+        "end": 4.29,
+        "text": "Compression can shorten and bend layered rocks into folds while the"
+      },
+      {
+        "start": 4.29,
+        "end": 8.19,
+        "text": "layers remain traceable. The curved region of maximum bending is the"
+      },
+      {
+        "start": 8.19,
+        "end": 9.67,
+        "text": "hinge, and the sides are limbs."
+      },
+      {
+        "start": 9.87,
+        "end": 12.97,
+        "text": "Trace the same layer through the whole structure before naming a"
+      },
+      {
+        "start": 12.97,
+        "end": 13.23,
+        "text": "fold."
+      },
+      {
+        "start": 14.29,
+        "end": 17.55,
+        "text": "An anticline has older rocks in its core and a syncline"
+      },
+      {
+        "start": 17.55,
+        "end": 19.05,
+        "text": "has younger rocks in its core."
+      },
+      {
+        "start": 19.29,
+        "end": 23.73,
+        "text": "In an upright fold, anticlines commonly arch upward and synclines trough"
+      },
+      {
+        "start": 23.73,
+        "end": 28.65,
+        "text": "downward. Overturning complicates simple shape rules, so use age relations where"
+      },
+      {
+        "start": 28.65,
+        "end": 29.19,
+        "text": "they are known."
+      },
+      {
+        "start": 30.17,
+        "end": 33.47,
+        "text": "A dome is a roughly circular structure with older rocks in"
+      },
+      {
+        "start": 33.47,
+        "end": 36.25,
+        "text": "its center; a basin has younger rocks in its center."
+      },
+      {
+        "start": 36.67,
+        "end": 40.73,
+        "text": "A monocline is a step-like bend connecting more gently dipping segments."
+      },
+      {
+        "start": 40.99,
+        "end": 44.71,
+        "text": "Modern topography can differ because rocks erode at different rates."
+      },
+      {
+        "start": 45.73,
+        "end": 48.77,
+        "text": "An axial surface joins hinges through successive layers."
+      },
+      {
+        "start": 48.77,
+        "end": 50.87,
+        "text": "It can be upright or inclined."
+      },
+      {
+        "start": 51.07,
+        "end": 54.45,
+        "text": "A fold is overturned where a limb has rotated beyond vertical."
+      },
+      {
+        "start": 54.73,
+        "end": 57.51,
+        "text": "A plunging hinge is inclined rather than horizontal."
+      },
+      {
+        "start": 57.75,
+        "end": 60.39,
+        "text": "These descriptions address different aspects of geometry."
+      }
+    ]
+  },
+  {
+    "n": 6,
+    "title": "Metamorphic fabrics and relict features",
+    "logline": "Rock cleavage is a tendency to split along closely spaced surfaces produced by deformation and mineral alignment.",
+    "beats": [
+      [
+        "Recognize cleavage",
+        "fabric",
+        [
+          2,
+          3
+        ],
+        "Rock cleavage is a tendency to split along closely spaced surfaces produced by deformation and mineral alignment. It may cut across the original bedding. Slate is a fine-grained rock that commonly has well-developed cleavage.",
+        [
+          "8.6-p2-Im1.png"
+        ],
+        {
+          "start": 0,
+          "end": 14.89
+        },
+        {
+          "takeaway": "Recognize cleavage",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 6,
+          "cueTimes": [
+            0
+          ]
+        }
+      ],
+      [
+        "Recognize foliation",
+        "fabric",
+        [
+          4,
+          5
+        ],
+        "Foliation is a planar fabric expressed by aligned minerals or compositional layers. Some rocks split into thin sheets, while others show coarse light and dark bands. Distinguish this metamorphic fabric from depositional bedding that may still be visible.",
+        [
+          "8.6-p4-Im1.png"
+        ],
+        {
+          "start": 14.89,
+          "end": 29.75
+        },
+        {
+          "takeaway": "Recognize foliation",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 6,
+          "cueTimes": [
+            14.89
+          ]
+        }
+      ],
+      [
+        "Recognize lineation",
+        "fabric",
+        [
+          6,
+          7
+        ],
+        "Lineation is a linear fabric: elongated minerals, stretched objects, or intersections of planar features align along a direction. It is not the same geometric feature as a planar foliation. Different lineations reflect different processes and should be described before interpretation.",
+        [
+          "8.6-p6-Im1.png"
+        ],
+        {
+          "start": 29.75,
+          "end": 46.17
+        },
+        {
+          "takeaway": "Recognize lineation",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 6,
+          "cueTimes": [
+            29.75
+          ]
+        }
+      ],
+      [
+        "Read inherited structures",
+        "fabric",
+        [
+          7,
+          8,
+          9
+        ],
+        "Relict bedding, clasts, and other features can survive metamorphism and record the parent rock. Minerals can rotate, grow, and become elongated during deformation. Compare these younger fabrics with preserved older structures rather than assuming all lines are bedding.",
+        [
+          "8.6-p8-Im1.png"
+        ],
+        {
+          "start": 46.17,
+          "end": 61.8
+        },
+        {
+          "takeaway": "Read inherited structures",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 6,
+          "cueTimes": [
+            46.17
+          ]
+        }
+      ]
+    ],
+    "duration": 61.8,
+    "audio": "../../videos/chapter8/8-06.mp4",
+    "captions": [
+      {
+        "start": 0.65,
+        "end": 5.07,
+        "text": "Rock cleavage is a tendency to split along closely spaced surfaces"
+      },
+      {
+        "start": 5.07,
+        "end": 7.59,
+        "text": "produced by deformation and mineral alignment."
+      },
+      {
+        "start": 7.85,
+        "end": 9.73,
+        "text": "It may cut across the original bedding."
+      },
+      {
+        "start": 9.89,
+        "end": 14.31,
+        "text": "Slate is a fine-grained rock that commonly has well-developed cleavage."
+      },
+      {
+        "start": 14.89,
+        "end": 19.17,
+        "text": "Foliation is a planar fabric expressed by aligned minerals or compositional"
+      },
+      {
+        "start": 19.17,
+        "end": 23.13,
+        "text": "layers. Some rocks split into thin sheets, while others show coarse"
+      },
+      {
+        "start": 23.13,
+        "end": 27.67,
+        "text": "light and dark bands. Distinguish this metamorphic fabric from depositional bedding"
+      },
+      {
+        "start": 27.67,
+        "end": 29.15,
+        "text": "that may still be visible."
+      },
+      {
+        "start": 29.75,
+        "end": 31.61,
+        "text": "Lineation is a linear fabric:"
+      },
+      {
+        "start": 31.77,
+        "end": 36.61,
+        "text": "elongated minerals, stretched objects, or intersections of planar features align along"
+      },
+      {
+        "start": 36.61,
+        "end": 39.63,
+        "text": "a direction. It is not the same geometric feature as a"
+      },
+      {
+        "start": 39.63,
+        "end": 44.61,
+        "text": "planar foliation. Different lineations reflect different processes and should be described"
+      },
+      {
+        "start": 44.61,
+        "end": 45.41,
+        "text": "before interpretation."
+      },
+      {
+        "start": 46.17,
+        "end": 50.61,
+        "text": "Relict bedding, clasts, and other features can survive metamorphism and record"
+      },
+      {
+        "start": 50.61,
+        "end": 54.35,
+        "text": "the parent rock. Minerals can rotate, grow, and become elongated during"
+      },
+      {
+        "start": 54.35,
+        "end": 58.81,
+        "text": "deformation. Compare these younger fabrics with preserved older structures rather than"
+      },
+      {
+        "start": 58.81,
+        "end": 60.15,
+        "text": "assuming all lines are bedding."
+      }
+    ]
+  },
+  {
+    "n": 7,
+    "title": "Identify metamorphic rocks and their parents",
+    "logline": "For suitable shale-rich parent material, increasing metamorphic grade can produce slate, then phyllite, schist, and gneiss.",
+    "beats": [
+      [
+        "Follow a shale-derived sequence",
+        "grade",
+        [
+          3,
+          4
+        ],
+        "For suitable shale-rich parent material, increasing metamorphic grade can produce slate, then phyllite, schist, and gneiss. Slate is dull and fine grained, phyllite has a sheen, schist has visible aligned minerals, and gneiss commonly displays compositional bands.",
+        [
+          "8.7-p3-Im2.png",
+          "8.7-p3-Im1.png",
+          "8.7-p4-Im2.png",
+          "8.7-p4-Im1.png"
+        ],
+        {
+          "start": 0,
+          "end": 17.65
+        },
+        {
+          "takeaway": "Follow a shale-derived sequence",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            "",
+            "phyllite has",
+            "schist has",
+            "gneiss commonly"
+          ],
+          "section": 7,
+          "cueTimes": [
+            0,
+            10.25,
+            11.81,
+            14.19
+          ]
+        }
+      ],
+      [
+        "Transform sandstone and limestone",
+        "fabric",
+        [
+          5,
+          6
+        ],
+        "Quartz-rich sandstone can become quartzite as quartz grains recrystallize and interlock; fractures may cut across grains. Limestone can become marble, a rock of recrystallized carbonate minerals. Both can have weak foliation, so use composition and texture together.",
+        [
+          "8.7-p5-Im2.png"
+        ],
+        {
+          "start": 17.65,
+          "end": 33.59
+        },
+        {
+          "takeaway": "Transform sandstone and limestone",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 7,
+          "cueTimes": [
+            17.65
+          ]
+        }
+      ],
+      [
+        "Transform igneous parent rocks",
+        "fabric",
+        [
+          7,
+          8,
+          9
+        ],
+        "Mafic volcanic rocks can produce greenstone or other metamorphic rocks as mineral assemblages change. Felsic volcanic and plutonic rocks have different compositions and can form different products. A metamorphic name depends on the rock and its observable features, not grade alone.",
+        [
+          "8.7-p7-Im2.png"
+        ],
+        {
+          "start": 33.59,
+          "end": 49.45
+        },
+        {
+          "takeaway": "Transform igneous parent rocks",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 7,
+          "cueTimes": [
+            33.59
+          ]
+        }
+      ],
+      [
+        "Use multiple clues",
+        "fabric",
+        [
+          9,
+          10
+        ],
+        "Hornfels commonly forms when rock is heated near an intrusion. Gneissic banding can form in several parent compositions, and the parent of a particular gneiss may remain uncertain. Mineralogy, grain size, fabric, and field context jointly support identification.",
+        [
+          "8.7-p10-Im2.png"
+        ],
+        {
+          "start": 49.45,
+          "end": 66.6
+        },
+        {
+          "takeaway": "Use multiple clues",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 7,
+          "cueTimes": [
+            49.45
+          ]
+        }
+      ]
+    ],
+    "duration": 66.6,
+    "audio": "../../videos/chapter8/8-07.mp4",
+    "captions": [
+      {
+        "start": 0.65,
+        "end": 5.59,
+        "text": "For suitable shale-rich parent material, increasing metamorphic grade can produce slate,"
+      },
+      {
+        "start": 5.81,
+        "end": 7.85,
+        "text": "then phyllite, schist, and gneiss."
+      },
+      {
+        "start": 8.07,
+        "end": 12.31,
+        "text": "Slate is dull and fine grained, phyllite has a sheen, schist"
+      },
+      {
+        "start": 12.31,
+        "end": 16.99,
+        "text": "has visible aligned minerals, and gneiss commonly displays compositional bands."
+      },
+      {
+        "start": 17.65,
+        "end": 22.93,
+        "text": "Quartz-rich sandstone can become quartzite as quartz grains recrystallize and interlock;"
+      },
+      {
+        "start": 23.19,
+        "end": 24.85,
+        "text": "fractures may cut across grains."
+      },
+      {
+        "start": 25.27,
+        "end": 28.99,
+        "text": "Limestone can become marble, a rock of recrystallized carbonate minerals."
+      },
+      {
+        "start": 29.17,
+        "end": 32.81,
+        "text": "Both can have weak foliation, so use composition and texture together."
+      },
+      {
+        "start": 33.59,
+        "end": 37.57,
+        "text": "Mafic volcanic rocks can produce greenstone or other metamorphic rocks as"
+      },
+      {
+        "start": 37.57,
+        "end": 42.45,
+        "text": "mineral assemblages change. Felsic volcanic and plutonic rocks have different compositions"
+      },
+      {
+        "start": 42.45,
+        "end": 43.99,
+        "text": "and can form different products."
+      },
+      {
+        "start": 44.17,
+        "end": 47.87,
+        "text": "A metamorphic name depends on the rock and its observable features,"
+      },
+      {
+        "start": 47.87,
+        "end": 48.79,
+        "text": "not grade alone."
+      },
+      {
+        "start": 49.45,
+        "end": 52.93,
+        "text": "Hornfels commonly forms when rock is heated near an intrusion."
+      },
+      {
+        "start": 53.59,
+        "end": 57.03,
+        "text": "Gneissic banding can form in several parent compositions, and the parent"
+      },
+      {
+        "start": 57.03,
+        "end": 59.11,
+        "text": "of a particular gneiss may remain uncertain."
+      },
+      {
+        "start": 59.75,
+        "end": 64.45,
+        "text": "Mineralogy, grain size, fabric, and field context jointly support identification."
+      }
+    ]
+  },
+  {
+    "n": 8,
+    "title": "How metamorphism changes rock",
+    "logline": "Heat, pressure, differential stress, and chemically active fluids can change rock minerals or texture.",
+    "beats": [
+      [
+        "Conditions drive solid-state change",
+        "metamorphism",
+        [
+          2,
+          3
+        ],
+        "Heat, pressure, differential stress, and chemically active fluids can change rock minerals or texture. Burial, tectonic activity, nearby magma, and fluid circulation provide different combinations of those drivers. Metamorphism and deformation may occur together or independently.",
+        [
+          "8.8-p2-Im1.png"
+        ],
+        {
+          "start": 0,
+          "end": 18.75
+        },
+        {
+          "takeaway": "Conditions drive solid-state change",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 8,
+          "cueTimes": [
+            0
+          ]
+        }
+      ],
+      [
+        "Change grain size or mineral identity",
+        "metamorphism",
+        [
+          4,
+          5
+        ],
+        "Recrystallization can enlarge existing mineral crystals. Neocrystallization forms new minerals as reactions make a different assemblage stable. These terms describe different changes; neither means the whole rock must melt and freeze again.",
+        [
+          "8.8-p6-Im1.png"
+        ],
+        {
+          "start": 18.75,
+          "end": 33.75
+        },
+        {
+          "takeaway": "Change grain size or mineral identity",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 8,
+          "cueTimes": [
+            18.75
+          ]
+        }
+      ],
+      [
+        "Dissolve, transport, and rearrange",
+        "metamorphism",
+        [
+          6,
+          7
+        ],
+        "Material can dissolve at stressed grain contacts and move in fluids. Chemical components can be redistributed, producing different mineral-rich layers. Whether the bulk composition changes depends on movement into or out of the rock, which must be supported by evidence.",
+        [
+          "8.8-p7-Im2.png"
+        ],
+        {
+          "start": 33.75,
+          "end": 48.59
+        },
+        {
+          "takeaway": "Dissolve, transport, and rearrange",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 8,
+          "cueTimes": [
+            33.75
+          ]
+        }
+      ],
+      [
+        "Deform mineral fabrics",
+        "fabric",
+        [
+          8,
+          9,
+          10
+        ],
+        "During deformation, minerals and objects can rotate, flatten, stretch, or form aligned fabrics. Metamorphism can preserve older features as relicts while adding new minerals and foliation. Read the sequence of overprinting rather than assuming all features formed simultaneously.",
+        [
+          "8.8-p9-Im1.png"
+        ],
+        {
+          "start": 48.59,
+          "end": 69.34
+        },
+        {
+          "takeaway": "Deform mineral fabrics",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 8,
+          "cueTimes": [
+            48.59
+          ]
+        }
+      ]
+    ],
+    "duration": 69.34,
+    "audio": "../../videos/chapter8/8-08.mp4",
+    "captions": [
+      {
+        "start": 0.65,
+        "end": 5.51,
+        "text": "Heat, pressure, differential stress, and chemically active fluids can change rock"
+      },
+      {
+        "start": 5.51,
+        "end": 11.33,
+        "text": "minerals or texture. Burial, tectonic activity, nearby magma, and fluid circulation"
+      },
+      {
+        "start": 11.33,
+        "end": 13.67,
+        "text": "provide different combinations of those drivers."
+      },
+      {
+        "start": 14.09,
+        "end": 17.83,
+        "text": "Metamorphism and deformation may occur together or independently."
+      },
+      {
+        "start": 19.47,
+        "end": 22.53,
+        "text": "Recrystallization can enlarge existing mineral crystals."
+      },
+      {
+        "start": 23.41,
+        "end": 27.65,
+        "text": "Neocrystallization forms new minerals as reactions make a different assemblage stable."
+      },
+      {
+        "start": 27.93,
+        "end": 29.97,
+        "text": "These terms describe different changes;"
+      },
+      {
+        "start": 29.97,
+        "end": 32.97,
+        "text": "neither means the whole rock must melt and freeze again."
+      },
+      {
+        "start": 33.75,
+        "end": 37.43,
+        "text": "Material can dissolve at stressed grain contacts and move in fluids."
+      },
+      {
+        "start": 37.67,
+        "end": 41.87,
+        "text": "Chemical components can be redistributed, producing different mineral-rich layers."
+      },
+      {
+        "start": 41.87,
+        "end": 45.57,
+        "text": "Whether the bulk composition changes depends on movement into or out"
+      },
+      {
+        "start": 45.57,
+        "end": 47.91,
+        "text": "of the rock, which must be supported by evidence."
+      },
+      {
+        "start": 48.59,
+        "end": 54.69,
+        "text": "During deformation, minerals and objects can rotate, flatten, stretch, or form"
+      },
+      {
+        "start": 54.69,
+        "end": 59.51,
+        "text": "aligned fabrics. Metamorphism can preserve older features as relicts while adding"
+      },
+      {
+        "start": 59.51,
+        "end": 63.97,
+        "text": "new minerals and foliation. Read the sequence of overprinting rather than"
+      },
+      {
+        "start": 63.97,
+        "end": 66.45,
+        "text": "assuming all features formed simultaneously."
+      }
+    ]
+  },
+  {
+    "n": 9,
+    "title": "Pressure, temperature, and tectonic setting",
+    "logline": "The supplied diagram distinguishes high-temperature, low-pressure conditions; high-pressure, relatively low-temperature conditions; and typical regional conditions.",
+    "beats": [
+      [
+        "Read pressure and temperature separately",
+        "pt",
+        [
+          2,
+          3
+        ],
+        "The supplied diagram distinguishes high-temperature, low-pressure conditions; high-pressure, relatively low-temperature conditions; and typical regional conditions. Pressure increases with burial, but temperature depends on the thermal history. High pressure does not always mean the hottest rock.",
+        [
+          "8.9-p2-Im2.png"
+        ],
+        {
+          "start": 0,
+          "end": 16.709999999999997
+        },
+        {
+          "takeaway": "Read pressure and temperature separately",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 9,
+          "cueTimes": [
+            0
+          ]
+        }
+      ],
+      [
+        "Heat beside magma",
+        "intrusion",
+        [
+          2,
+          4
+        ],
+        "A shallow intrusion heats adjacent country rock and creates a contact aureole. That setting can reach high temperature at relatively low pressure. The aureole’s extent and mineral assemblages depend on heat, host composition, and fluids.",
+        [
+          "8.9-p4-Im1.png"
+        ],
+        {
+          "start": 16.709999999999997,
+          "end": 30.91
+        },
+        {
+          "takeaway": "Heat beside magma",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 9,
+          "cueTimes": [
+            16.709999999999997
+          ]
+        }
+      ],
+      [
+        "Subduct a relatively cold slab",
+        "subduct",
+        [
+          4
+        ],
+        "At an ocean–continent convergent boundary, a relatively cold slab descends and experiences increasing pressure before it fully warms. High-pressure, low-temperature metamorphism can occur along the subduction zone; a shallow magma body has a contrasting pressure–temperature history.",
+        [
+          "8.9-p4-Im1.png"
+        ],
+        {
+          "start": 30.91,
+          "end": 47.090041666666664
+        },
+        {
+          "takeaway": "Subduct a relatively cold slab",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 9,
+          "cueTimes": [
+            30.91
+          ]
+        }
+      ],
+      [
+        "Bury rocks during collision",
+        "collision",
+        [
+          5
+        ],
+        "During continent–continent collision, thrusting and crustal thickening bury and heat rocks over broad regions. Regional metamorphism and deformation can accompany one another. Map the location and conditions separately rather than assigning one condition to an entire plate boundary.",
+        [
+          "8.9-p5-Im3.png"
+        ],
+        {
+          "start": 47.090041666666664,
+          "end": 64.80004166666666
+        },
+        {
+          "takeaway": "Bury rocks during collision",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 9,
+          "cueTimes": [
+            47.090041666666664
+          ]
+        }
+      ]
+    ],
+    "duration": 64.80004166666666,
+    "audio": "../../videos/chapter8/8-09.mp4",
+    "captions": [
+      {
+        "start": 0.65,
+        "end": 4.79,
+        "text": "The supplied diagram distinguishes high-temperature, low-pressure conditions;"
+      },
+      {
+        "start": 5.11,
+        "end": 8.81,
+        "text": "high-pressure, relatively low-temperature conditions; and typical regional conditions."
+      },
+      {
+        "start": 9.07,
+        "end": 13.07,
+        "text": "Pressure increases with burial, but temperature depends on the thermal history."
+      },
+      {
+        "start": 13.33,
+        "end": 16.23,
+        "text": "High pressure does not always mean the hottest rock."
+      },
+      {
+        "start": 16.71,
+        "end": 20.19,
+        "text": "A shallow intrusion heats adjacent country rock and creates a contact"
+      },
+      {
+        "start": 20.19,
+        "end": 24.69,
+        "text": "aureole. That setting can reach high temperature at relatively low pressure."
+      },
+      {
+        "start": 24.95,
+        "end": 29.33,
+        "text": "The aureole’s extent and mineral assemblages depend on heat, host composition,"
+      },
+      {
+        "start": 29.37,
+        "end": 30.01,
+        "text": "and fluids."
+      },
+      {
+        "start": 30.91,
+        "end": 35.09,
+        "text": "At an ocean–continent convergent boundary, a relatively cold slab descends and"
+      },
+      {
+        "start": 35.09,
+        "end": 38.33,
+        "text": "experiences increasing pressure before it fully warms."
+      },
+      {
+        "start": 38.57,
+        "end": 42.79,
+        "text": "High-pressure, low-temperature metamorphism can occur along the subduction zone;"
+      },
+      {
+        "start": 42.91,
+        "end": 46.51,
+        "text": "a shallow magma body has a contrasting pressure–temperature history."
+      },
+      {
+        "start": 47.09,
+        "end": 52.51,
+        "text": "During continent–continent collision, thrusting and crustal thickening bury and heat rocks"
+      },
+      {
+        "start": 52.51,
+        "end": 57.41,
+        "text": "over broad regions. Regional metamorphism and deformation can accompany one another."
+      },
+      {
+        "start": 57.59,
+        "end": 61.91,
+        "text": "Map the location and conditions separately rather than assigning one condition"
+      },
+      {
+        "start": 61.91,
+        "end": 62.99,
+        "text": "to an entire plate boundary."
+      }
+    ]
+  },
+  {
+    "n": 10,
+    "title": "Extension and strike-slip systems",
+    "logline": "Continental extension stretches and thins crust, commonly forming normal faults, tilted blocks, and grabens.",
+    "beats": [
+      [
+        "Rift a continent",
+        "horst",
+        [
+          2,
+          3
+        ],
+        "Continental extension stretches and thins crust, commonly forming normal faults, tilted blocks, and grabens. Magma and warm fluids may accompany rifting. Extension and the pressure–temperature response vary from place to place during the evolution of a rift.",
+        [
+          "8.10-p2-Im1.png"
+        ],
+        {
+          "start": 0,
+          "end": 15.73
+        },
+        {
+          "takeaway": "Rift a continent",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 10,
+          "cueTimes": [
+            0
+          ]
+        }
+      ],
+      [
+        "Open an ocean basin",
+        "rift",
+        [
+          2,
+          3
+        ],
+        "As continental rifting progresses to seafloor spreading, new oceanic crust forms at a ridge. Seawater can circulate through hot fractured rock and cause hydrothermal metamorphism. The hot-water pathway is especially important at mid-ocean ridges.",
+        [
+          "8.10-p3-Im1.png"
+        ],
+        {
+          "start": 15.73,
+          "end": 30.950000000000003
+        },
+        {
+          "takeaway": "Open an ocean basin",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 10,
+          "cueTimes": [
+            15.73
+          ]
+        }
+      ],
+      [
+        "Move horizontally on strike-slip faults",
+        "transform",
+        [
+          4,
+          5
+        ],
+        "A strike-slip fault accommodates primarily horizontal relative motion. Looking across the fault, the opposite side moves right in a right-lateral fault and left in a left-lateral fault. Offset streams and roads preserve the displacement of originally continuous markers.",
+        [
+          "8.10-p4-Im3.png"
+        ],
+        {
+          "start": 30.950000000000003,
+          "end": 46.83
+        },
+        {
+          "takeaway": "Move horizontally on strike-slip faults",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 10,
+          "cueTimes": [
+            30.950000000000003
+          ]
+        }
+      ],
+      [
+        "Bends add local complexity",
+        "pullapart",
+        [
+          5
+        ],
+        "A bend or step in a strike-slip system can make adjacent rocks converge or pull apart. Local shortening can build folds and ridges, while local extension can produce a basin. The main lateral motion alone does not determine the sign of every bend.",
+        [
+          "8.10-p5-Im3.png"
+        ],
+        {
+          "start": 46.83,
+          "end": 63.019999999999996
+        },
+        {
+          "takeaway": "Bends add local complexity",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 10,
+          "cueTimes": [
+            46.83
+          ]
+        }
+      ]
+    ],
+    "duration": 63.019999999999996,
+    "audio": "../../videos/chapter8/8-10.mp4",
+    "captions": [
+      {
+        "start": 0.65,
+        "end": 5.57,
+        "text": "Continental extension stretches and thins crust, commonly forming normal faults, tilted"
+      },
+      {
+        "start": 5.57,
+        "end": 9.89,
+        "text": "blocks, and grabens. Magma and warm fluids may accompany rifting."
+      },
+      {
+        "start": 10.21,
+        "end": 13.99,
+        "text": "Extension and the pressure–temperature response vary from place to place during"
+      },
+      {
+        "start": 13.99,
+        "end": 15.25,
+        "text": "the evolution of a rift."
+      },
+      {
+        "start": 15.73,
+        "end": 20.55,
+        "text": "As continental rifting progresses to seafloor spreading, new oceanic crust forms"
+      },
+      {
+        "start": 20.55,
+        "end": 24.19,
+        "text": "at a ridge. Seawater can circulate through hot fractured rock and"
+      },
+      {
+        "start": 24.19,
+        "end": 29.99,
+        "text": "cause hydrothermal metamorphism. The hot-water pathway is especially important at mid-ocean"
+      },
+      {
+        "start": 29.99,
+        "end": 30.37,
+        "text": "ridges."
+      },
+      {
+        "start": 30.95,
+        "end": 35.35,
+        "text": "A strike-slip fault accommodates primarily horizontal relative motion."
+      },
+      {
+        "start": 35.53,
+        "end": 38.65,
+        "text": "Looking across the fault, the opposite side moves right in a"
+      },
+      {
+        "start": 38.65,
+        "end": 41.65,
+        "text": "right-lateral fault and left in a left-lateral fault."
+      },
+      {
+        "start": 41.87,
+        "end": 46.05,
+        "text": "Offset streams and roads preserve the displacement of originally continuous markers."
+      },
+      {
+        "start": 46.83,
+        "end": 50.59,
+        "text": "A bend or step in a strike-slip system can make adjacent"
+      },
+      {
+        "start": 50.59,
+        "end": 52.47,
+        "text": "rocks converge or pull apart."
+      },
+      {
+        "start": 52.75,
+        "end": 56.21,
+        "text": "Local shortening can build folds and ridges, while local extension can"
+      },
+      {
+        "start": 56.21,
+        "end": 59.43,
+        "text": "produce a basin. The main lateral motion alone does not determine"
+      },
+      {
+        "start": 59.43,
+        "end": 60.65,
+        "text": "the sign of every bend."
+      }
+    ]
+  },
+  {
+    "n": 11,
+    "title": "How structures form together",
+    "logline": "Faults, joints, folds, tilted layers, and shear zones can form in related systems.",
+    "beats": [
+      [
+        "Link deformation structures",
+        "fold",
+        [
+          2,
+          3,
+          4
+        ],
+        "Faults, joints, folds, tilted layers, and shear zones can form in related systems. A fault propagating upward can bend layers above it, and slip over a bend in a thrust fault can fold the overlying rocks. Structural associations must be supported by geometry.",
+        [
+          "8.11-p3-Im2.png"
+        ],
+        {
+          "start": 0,
+          "end": 17.63
+        },
+        {
+          "takeaway": "Link deformation structures",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 11,
+          "cueTimes": [
+            0
+          ]
+        }
+      ],
+      [
+        "Build a fold-and-thrust belt",
+        "shorten",
+        [
+          4,
+          5
+        ],
+        "Compression can move thrust sheets over one another and shorten a region. Beds in and above the sheets may form anticlines and synclines. Related joints, smaller faults, and metamorphic fabrics can occur, but not every nearby structure must share the same age.",
+        [
+          "8.11-p5-Im3.png"
+        ],
+        {
+          "start": 17.63,
+          "end": 32.81
+        },
+        {
+          "takeaway": "Build a fold-and-thrust belt",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 11,
+          "cueTimes": [
+            17.63
+          ]
+        }
+      ],
+      [
+        "Compare bedding with cleavage",
+        "fold",
+        [
+          6,
+          7
+        ],
+        "Cleavage in a fold commonly lies roughly parallel to the axial surface. It cuts bedding at different angles on the limbs and may be nearly perpendicular to bedding near a hinge in the supplied example. Trace both surfaces across the fold.",
+        [
+          "8.11-p6-Im3.png"
+        ],
+        {
+          "start": 32.81,
+          "end": 47.150000000000006
+        },
+        {
+          "takeaway": "Compare bedding with cleavage",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 11,
+          "cueTimes": [
+            32.81
+          ]
+        }
+      ],
+      [
+        "Separate shared from later events",
+        "fault",
+        [
+          3,
+          7
+        ],
+        "A younger fault can cut an older fold, and an older fault can itself be folded. Use cross-cutting, overprinting, and the geometry of displaced markers to order events. Proximity alone does not prove two structures formed together.",
+        [
+          "8.11-p4-Im2.png"
+        ],
+        {
+          "start": 47.150000000000006,
+          "end": 61.900000000000006
+        },
+        {
+          "takeaway": "Separate shared from later events",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 11,
+          "cueTimes": [
+            47.150000000000006
+          ]
+        }
+      ]
+    ],
+    "duration": 61.900000000000006,
+    "audio": "../../videos/chapter8/8-11.mp4",
+    "captions": [
+      {
+        "start": 0.65,
+        "end": 5.63,
+        "text": "Faults, joints, folds, tilted layers, and shear zones can form in"
+      },
+      {
+        "start": 5.63,
+        "end": 9.57,
+        "text": "related systems. A fault propagating upward can bend layers above it,"
+      },
+      {
+        "start": 9.57,
+        "end": 12.15,
+        "text": "and slip over a bend in a thrust fault can fold"
+      },
+      {
+        "start": 12.15,
+        "end": 16.75,
+        "text": "the overlying rocks. Structural associations must be supported by geometry."
+      },
+      {
+        "start": 17.63,
+        "end": 20.97,
+        "text": "Compression can move thrust sheets over one another and shorten a"
+      },
+      {
+        "start": 20.97,
+        "end": 24.83,
+        "text": "region. Beds in and above the sheets may form anticlines and"
+      },
+      {
+        "start": 24.83,
+        "end": 29.57,
+        "text": "synclines. Related joints, smaller faults, and metamorphic fabrics can occur, but"
+      },
+      {
+        "start": 29.57,
+        "end": 32.35,
+        "text": "not every nearby structure must share the same age."
+      },
+      {
+        "start": 32.81,
+        "end": 36.77,
+        "text": "Cleavage in a fold commonly lies roughly parallel to the axial"
+      },
+      {
+        "start": 36.77,
+        "end": 40.25,
+        "text": "surface. It cuts bedding at different angles on the limbs and"
+      },
+      {
+        "start": 40.25,
+        "end": 43.11,
+        "text": "may be nearly perpendicular to bedding near a hinge in the"
+      },
+      {
+        "start": 43.11,
+        "end": 46.33,
+        "text": "supplied example. Trace both surfaces across the fold."
+      },
+      {
+        "start": 47.15,
+        "end": 50.43,
+        "text": "A younger fault can cut an older fold, and an older"
+      },
+      {
+        "start": 50.43,
+        "end": 51.91,
+        "text": "fault can itself be folded."
+      },
+      {
+        "start": 52.07,
+        "end": 56.33,
+        "text": "Use cross-cutting, overprinting, and the geometry of displaced markers to order"
+      },
+      {
+        "start": 56.33,
+        "end": 60.15,
+        "text": "events. Proximity alone does not prove two structures formed together."
+      }
+    ]
+  },
+  {
+    "n": 12,
+    "title": "Structure in the landscape",
+    "logline": "Joint sets divide rock into blocks and provide pathways along which weathering can act.",
+    "beats": [
+      [
+        "Joints guide erosion",
+        "joints",
+        [
+          2,
+          3
+        ],
+        "Joint sets divide rock into blocks and provide pathways along which weathering can act. Their orientation can influence cliffs, pillars, notches, and drainage. Recognize the fracture patterns in an outcrop before attributing them to one particular stress history.",
+        [
+          "8.12-p2-Im1.png"
+        ],
+        {
+          "start": 0,
+          "end": 15.850000000000001
+        },
+        {
+          "takeaway": "Joints guide erosion",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 12,
+          "cueTimes": [
+            0
+          ]
+        }
+      ],
+      [
+        "Find a fault in the terrain",
+        "fault",
+        [
+          3,
+          4,
+          5
+        ],
+        "Faults can produce aligned notches, scarps, crushed angular rock, displaced layers, and striations. Several observations are more persuasive than a straight valley alone. A scarp shows relative topographic offset but does not by itself identify the complete fault history.",
+        [
+          "8.12-p3-Im2.png"
+        ],
+        {
+          "start": 15.850000000000001,
+          "end": 31.990000000000002
+        },
+        {
+          "takeaway": "Find a fault in the terrain",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 12,
+          "cueTimes": [
+            15.850000000000001
+          ]
+        }
+      ],
+      [
+        "Erode tilted and folded layers",
+        "tiltRidge",
+        [
+          5,
+          6
+        ],
+        "Resistant tilted beds can support ridges and dip slopes while weaker units erode into lower ground. A ridge does not automatically mark an anticline, and a valley does not automatically mark a syncline. Follow rock layers and ages through the landscape.",
+        [
+          "8.12-p5-Im1.png"
+        ],
+        {
+          "start": 31.990000000000002,
+          "end": 47.13
+        },
+        {
+          "takeaway": "Erode tilted and folded layers",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 12,
+          "cueTimes": [
+            31.990000000000002
+          ]
+        }
+      ],
+      [
+        "Read metamorphic outcrops",
+        "fabric",
+        [
+          7,
+          8
+        ],
+        "Foliation, cleavage, and resistant folded layers can influence the shapes of metamorphic outcrops. Modern topography is a product of both structure and erosion. Distinguish a visible rock fabric from a hypothesis about when it formed.",
+        [
+          "8.12-p6-Im1.png"
+        ],
+        {
+          "start": 47.13,
+          "end": 63.56
+        },
+        {
+          "takeaway": "Read metamorphic outcrops",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 12,
+          "cueTimes": [
+            47.13
+          ]
+        }
+      ]
+    ],
+    "duration": 63.56,
+    "audio": "../../videos/chapter8/8-12.mp4",
+    "captions": [
+      {
+        "start": 0.65,
+        "end": 4.93,
+        "text": "Joint sets divide rock into blocks and provide pathways along which"
+      },
+      {
+        "start": 4.93,
+        "end": 9.53,
+        "text": "weathering can act. Their orientation can influence cliffs, pillars, notches, and"
+      },
+      {
+        "start": 9.53,
+        "end": 13.57,
+        "text": "drainage. Recognize the fracture patterns in an outcrop before attributing them"
+      },
+      {
+        "start": 13.57,
+        "end": 15.27,
+        "text": "to one particular stress history."
+      },
+      {
+        "start": 15.85,
+        "end": 21.17,
+        "text": "Faults can produce aligned notches, scarps, crushed angular rock, displaced layers,"
+      },
+      {
+        "start": 21.39,
+        "end": 24.99,
+        "text": "and striations. Several observations are more persuasive than a straight valley"
+      },
+      {
+        "start": 24.99,
+        "end": 28.81,
+        "text": "alone. A scarp shows relative topographic offset but does not by"
+      },
+      {
+        "start": 28.81,
+        "end": 31.29,
+        "text": "itself identify the complete fault history."
+      },
+      {
+        "start": 31.99,
+        "end": 36.09,
+        "text": "Resistant tilted beds can support ridges and dip slopes while weaker"
+      },
+      {
+        "start": 36.09,
+        "end": 37.91,
+        "text": "units erode into lower ground."
+      },
+      {
+        "start": 38.07,
+        "end": 41.29,
+        "text": "A ridge does not automatically mark an anticline, and a valley"
+      },
+      {
+        "start": 41.29,
+        "end": 43.23,
+        "text": "does not automatically mark a syncline."
+      },
+      {
+        "start": 43.41,
+        "end": 46.41,
+        "text": "Follow rock layers and ages through the landscape."
+      },
+      {
+        "start": 47.13,
+        "end": 51.85,
+        "text": "Foliation, cleavage, and resistant folded layers can influence the shapes of"
+      },
+      {
+        "start": 51.85,
+        "end": 56.39,
+        "text": "metamorphic outcrops. Modern topography is a product of both structure and"
+      },
+      {
+        "start": 56.39,
+        "end": 60.73,
+        "text": "erosion. Distinguish a visible rock fabric from a hypothesis about when"
+      },
+      {
+        "start": 60.73,
+        "end": 61.27,
+        "text": "it formed."
+      }
+    ]
+  },
+  {
+    "n": 13,
+    "title": "Measure structures and reconstruct timing",
+    "logline": "Geologists record field sketches, photographs, rock samples, strike and dip measurements, and the positions of contacts and structures.",
+    "beats": [
+      [
+        "Observe, measure, and record",
+        "mapping",
+        [
+          2,
+          3,
+          4
+        ],
+        "Geologists record field sketches, photographs, rock samples, strike and dip measurements, and the positions of contacts and structures. Measurements let them project features below the surface and connect separated outcrops. Record the observation before the interpretation.",
+        [
+          "8.13-p2-Im1.png"
+        ],
+        {
+          "start": 0,
+          "end": 15.270000000000001
+        },
+        {
+          "takeaway": "Observe, measure, and record",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 13,
+          "cueTimes": [
+            0
+          ]
+        }
+      ],
+      [
+        "Bracket fault activity",
+        "fault",
+        [
+          5,
+          6
+        ],
+        "A fault is younger than a unit it cuts. An unfaulted layer or intrusion that seals the fault is younger than the movement it seals at that exposure. These relations bracket an interval; they do not prove that a fault never moved elsewhere or at another time.",
+        [
+          "8.13-p5-Im1.png"
+        ],
+        {
+          "start": 15.270000000000001,
+          "end": 30.450000000000003
+        },
+        {
+          "takeaway": "Bracket fault activity",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 13,
+          "cueTimes": [
+            15.270000000000001
+          ]
+        }
+      ],
+      [
+        "Inspect minerals and overprints",
+        "fabric",
+        [
+          6,
+          7
+        ],
+        "Minerals may grow before, during, or after deformation. Their shapes and positions relative to cleavage and veins can help establish a sequence. Microscopic textures and mineral chemistry add evidence about metamorphic conditions.",
+        [
+          "8.13-p6-Im1.png"
+        ],
+        {
+          "start": 30.450000000000003,
+          "end": 44.81
+        },
+        {
+          "takeaway": "Inspect minerals and overprints",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 13,
+          "cueTimes": [
+            30.450000000000003
+          ]
+        }
+      ],
+      [
+        "Integrate an event sequence",
+        "mapping",
+        [
+          5,
+          6,
+          7
+        ],
+        "Folded veins, later cleavage, and cross-cutting features can record multiple events. Distinguish an observed overprint from the proposed explanation. Missing exposures and uncertain ages can limit the sequence to relative order rather than a precise date.",
+        [
+          "8.13-p7-Im2.png"
+        ],
+        {
+          "start": 44.81,
+          "end": 61.8
+        },
+        {
+          "takeaway": "Integrate an event sequence",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 13,
+          "cueTimes": [
+            44.81
+          ]
+        }
+      ]
+    ],
+    "duration": 61.8,
+    "audio": "../../videos/chapter8/8-13.mp4",
+    "captions": [
+      {
+        "start": 0.65,
+        "end": 5.47,
+        "text": "Geologists record field sketches, photographs, rock samples, strike and dip measurements,"
+      },
+      {
+        "start": 5.63,
+        "end": 7.67,
+        "text": "and the positions of contacts and structures."
+      },
+      {
+        "start": 7.99,
+        "end": 11.65,
+        "text": "Measurements let them project features below the surface and connect separated"
+      },
+      {
+        "start": 11.65,
+        "end": 14.55,
+        "text": "outcrops. Record the observation before the interpretation."
+      },
+      {
+        "start": 15.27,
+        "end": 17.35,
+        "text": "A fault is younger than a unit it cuts."
+      },
+      {
+        "start": 17.57,
+        "end": 21.47,
+        "text": "An unfaulted layer or intrusion that seals the fault is younger"
+      },
+      {
+        "start": 21.47,
+        "end": 23.73,
+        "text": "than the movement it seals at that exposure."
+      },
+      {
+        "start": 24.05,
+        "end": 25.91,
+        "text": "These relations bracket an interval;"
+      },
+      {
+        "start": 26.13,
+        "end": 29.25,
+        "text": "they do not prove that a fault never moved elsewhere or"
+      },
+      {
+        "start": 29.25,
+        "end": 29.91,
+        "text": "at another time."
+      },
+      {
+        "start": 30.45,
+        "end": 33.71,
+        "text": "Minerals may grow before, during, or after deformation."
+      },
+      {
+        "start": 34.27,
+        "end": 37.39,
+        "text": "Their shapes and positions relative to cleavage and veins can help"
+      },
+      {
+        "start": 37.39,
+        "end": 42.65,
+        "text": "establish a sequence. Microscopic textures and mineral chemistry add evidence about"
+      },
+      {
+        "start": 42.65,
+        "end": 43.99,
+        "text": "metamorphic conditions."
+      },
+      {
+        "start": 44.81,
+        "end": 50.29,
+        "text": "Folded veins, later cleavage, and cross-cutting features can record multiple events."
+      },
+      {
+        "start": 50.51,
+        "end": 54.05,
+        "text": "Distinguish an observed overprint from the proposed explanation."
+      },
+      {
+        "start": 54.35,
+        "end": 57.89,
+        "text": "Missing exposures and uncertain ages can limit the sequence to relative"
+      },
+      {
+        "start": 57.89,
+        "end": 60.09,
+        "text": "order rather than a precise date."
+      }
+    ]
+  },
+  {
+    "n": 14,
+    "title": "New England’s structural history",
+    "logline": "New England contains different rock belts, faults, folds, and metamorphic rocks.",
+    "beats": [
+      [
+        "Read the regional map",
+        "mapping",
+        [
+          2,
+          3
+        ],
+        "New England contains different rock belts, faults, folds, and metamorphic rocks. The supplied map and cross section show structures at the surface and interpreted relations below it. Use the legend and orientation before comparing locations.",
+        [
+          "8.14-p2-Im2.png"
+        ],
+        {
+          "start": 0,
+          "end": 13.57
+        },
+        {
+          "takeaway": "Read the regional map",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 14,
+          "cueTimes": [
+            0
+          ]
+        }
+      ],
+      [
+        "Separate collision from later rifting",
+        "collision",
+        [
+          2,
+          3
+        ],
+        "Paleozoic collisions contributed to Appalachian deformation and metamorphism. Later Mesozoic extension opened rift basins as North America separated from Africa. These are separate events; a modern map can display structures inherited from both.",
+        [
+          "8.14-p3-Im1.png"
+        ],
+        {
+          "start": 13.57,
+          "end": 27.77
+        },
+        {
+          "takeaway": "Separate collision from later rifting",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 14,
+          "cueTimes": [
+            13.57
+          ]
+        }
+      ],
+      [
+        "Compare metamorphic grade",
+        "metamorphism",
+        [
+          4
+        ],
+        "The source map shows the highest metamorphic conditions in the central part of its illustrated area, decreasing toward both east and west. Grade is constrained using mineral assemblages and textures, not topographic elevation alone.",
+        [
+          "8.14-p4-Im3.png"
+        ],
+        {
+          "start": 27.77,
+          "end": 40.97004166666667
+        },
+        {
+          "takeaway": "Compare metamorphic grade",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 14,
+          "cueTimes": [
+            27.77
+          ]
+        }
+      ],
+      [
+        "Reconstruct different pressure–temperature paths",
+        "regionalPaths",
+        [
+          4
+        ],
+        "In the supplied regional interpretation, rocks in eastern Vermont were buried and then heated, while rocks in New Hampshire were initially heated and then buried. These paths are evidence-based reconstructions for specific locations, not a universal order for all mountain belts.",
+        [
+          "8.14-p4-Im2.png"
+        ],
+        {
+          "start": 40.97004166666667,
+          "end": 58.120041666666665
+        },
+        {
+          "takeaway": "Reconstruct different pressure–temperature paths",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 14,
+          "cueTimes": [
+            40.97004166666667
+          ]
+        }
+      ]
+    ],
+    "duration": 58.120041666666665,
+    "audio": "../../videos/chapter8/8-14.mp4",
+    "captions": [
+      {
+        "start": 0.65,
+        "end": 4.71,
+        "text": "New England contains different rock belts, faults, folds, and metamorphic rocks."
+      },
+      {
+        "start": 4.89,
+        "end": 8.17,
+        "text": "The supplied map and cross section show structures at the surface"
+      },
+      {
+        "start": 8.17,
+        "end": 9.97,
+        "text": "and interpreted relations below it."
+      },
+      {
+        "start": 10.15,
+        "end": 13.13,
+        "text": "Use the legend and orientation before comparing locations."
+      },
+      {
+        "start": 13.57,
+        "end": 17.79,
+        "text": "Paleozoic collisions contributed to Appalachian deformation and metamorphism."
+      },
+      {
+        "start": 18.05,
+        "end": 22.41,
+        "text": "Later Mesozoic extension opened rift basins as North America separated from"
+      },
+      {
+        "start": 22.41,
+        "end": 24.39,
+        "text": "Africa. These are separate events;"
+      },
+      {
+        "start": 24.51,
+        "end": 27.23,
+        "text": "a modern map can display structures inherited from both."
+      },
+      {
+        "start": 27.77,
+        "end": 31.03,
+        "text": "The source map shows the highest metamorphic conditions in the central"
+      },
+      {
+        "start": 31.03,
+        "end": 35.05,
+        "text": "part of its illustrated area, decreasing toward both east and west."
+      },
+      {
+        "start": 35.23,
+        "end": 39.73,
+        "text": "Grade is constrained using mineral assemblages and textures, not topographic elevation"
+      },
+      {
+        "start": 39.73,
+        "end": 40.27,
+        "text": "alone."
+      },
+      {
+        "start": 40.97,
+        "end": 44.39,
+        "text": "In the supplied regional interpretation, rocks in eastern Vermont were buried"
+      },
+      {
+        "start": 44.39,
+        "end": 48.03,
+        "text": "and then heated, while rocks in New Hampshire were initially heated"
+      },
+      {
+        "start": 48.03,
+        "end": 53.31,
+        "text": "and then buried. These paths are evidence-based reconstructions for specific locations,"
+      },
+      {
+        "start": 53.31,
+        "end": 56.25,
+        "text": "not a universal order for all mountain belts."
+      }
+    ]
+  },
+  {
+    "n": 15,
+    "title": "Investigate the folded metamorphic landscape",
+    "logline": "In the supplied north-looking perspective, blocky hills have bedding dip slopes facing toward the center.",
+    "beats": [
+      [
+        "Observe the terrain and fold",
+        "syncline",
+        [
+          1,
+          2,
+          3
+        ],
+        "In the supplied north-looking perspective, blocky hills have bedding dip slopes facing toward the center. The cross section shows a down-curving fold, and near-vertical cleavage cuts bedding. The observations support an upright or steeply inclined syncline.",
+        [
+          "8.15-p2-Im1.png"
+        ],
+        {
+          "start": 0,
+          "end": 16.77
+        },
+        {
+          "takeaway": "Observe the terrain and fold",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 15,
+          "cueTimes": [
+            0
+          ]
+        }
+      ],
+      [
+        "Identify the rock samples",
+        "fieldSamples",
+        [
+          4,
+          5,
+          6
+        ],
+        "The eastern coarse black-and-white banded sample is gneiss; the dull fine-grained sample with cleavage is slate. Interlocking quartz grains support quartzite, while fine calcite and deformed fossils support marble. Quartzite commonly began as sandstone and marble as limestone.",
+        [
+          "8.15-p4-Im1.png",
+          "8.15-p5-Im2.png",
+          "8.15-p5-Im1.png",
+          "8.15-p6-Im1.png"
+        ],
+        {
+          "start": 16.77,
+          "end": 33.53
+        },
+        {
+          "takeaway": "Identify the rock samples",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            "",
+            "the dull fine-grained sample",
+            "Interlocking quartz grains",
+            "fine calcite"
+          ],
+          "section": 15,
+          "cueTimes": [
+            16.77,
+            19.95,
+            23.45,
+            26.369999999999997
+          ]
+        }
+      ],
+      [
+        "Compare the two sides of the stream",
+        "fault",
+        [
+          3,
+          4
+        ],
+        "A straight stream follows an intensely fractured and shattered zone between the eastern banded rocks and lower-grade rocks to the west. The observations suggest a fault zone; the checked Connect summary calls the boundary a reverse fault. Identify that key as supplied assessment evidence.",
+        [
+          "8.15-p3-Im1.png"
+        ],
+        {
+          "start": 33.53,
+          "end": 50.19
+        },
+        {
+          "takeaway": "Compare the two sides of the stream",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 15,
+          "cueTimes": [
+            33.53
+          ]
+        }
+      ],
+      [
+        "Infer shortening and history",
+        "syncline",
+        [
+          2,
+          3,
+          4
+        ],
+        "The source perspective looks north, and the fold and cleavage indicate east–west shortening in the supplied checked summary. The eastern banded rocks are higher grade than the rocks in the grassy area and southern hill. Separate those source-specific relations from rules for every syncline.",
+        [
+          "8.15-p3-Im1.png"
+        ],
+        {
+          "start": 50.19,
+          "end": 67.58
+        },
+        {
+          "takeaway": "Infer shortening and history",
+          "sourcePlan": "Original supplied textbook bitmap; schematic dynamic model alongside it.",
+          "cueAnchors": [
+            ""
+          ],
+          "section": 15,
+          "cueTimes": [
+            50.19
+          ]
+        }
+      ]
+    ],
+    "duration": 67.58,
+    "audio": "../../videos/chapter8/8-15.mp4",
+    "captions": [
+      {
+        "start": 0.65,
+        "end": 5.63,
+        "text": "In the supplied north-looking perspective, blocky hills have bedding dip slopes"
+      },
+      {
+        "start": 5.63,
+        "end": 9.95,
+        "text": "facing toward the center. The cross section shows a down-curving fold,"
+      },
+      {
+        "start": 9.95,
+        "end": 12.27,
+        "text": "and near-vertical cleavage cuts bedding."
+      },
+      {
+        "start": 12.39,
+        "end": 16.19,
+        "text": "The observations support an upright or steeply inclined syncline."
+      },
+      {
+        "start": 16.77,
+        "end": 19.65,
+        "text": "The eastern coarse black-and-white banded sample is gneiss;"
+      },
+      {
+        "start": 19.95,
+        "end": 22.85,
+        "text": "the dull fine-grained sample with cleavage is slate."
+      },
+      {
+        "start": 23.45,
+        "end": 28.23,
+        "text": "Interlocking quartz grains support quartzite, while fine calcite and deformed fossils"
+      },
+      {
+        "start": 28.23,
+        "end": 32.83,
+        "text": "support marble. Quartzite commonly began as sandstone and marble as limestone."
+      },
+      {
+        "start": 33.53,
+        "end": 37.57,
+        "text": "A straight stream follows an intensely fractured and shattered zone between"
+      },
+      {
+        "start": 37.57,
+        "end": 40.77,
+        "text": "the eastern banded rocks and lower-grade rocks to the west."
+      },
+      {
+        "start": 40.97,
+        "end": 43.17,
+        "text": "The observations suggest a fault zone;"
+      },
+      {
+        "start": 43.39,
+        "end": 46.57,
+        "text": "the checked Connect summary calls the boundary a reverse fault."
+      },
+      {
+        "start": 46.73,
+        "end": 49.37,
+        "text": "Identify that key as supplied assessment evidence."
+      },
+      {
+        "start": 50.19,
+        "end": 53.75,
+        "text": "The source perspective looks north, and the fold and cleavage indicate"
+      },
+      {
+        "start": 53.75,
+        "end": 56.39,
+        "text": "east–west shortening in the supplied checked summary."
+      },
+      {
+        "start": 56.71,
+        "end": 59.85,
+        "text": "The eastern banded rocks are higher grade than the rocks in"
+      },
+      {
+        "start": 59.85,
+        "end": 61.65,
+        "text": "the grassy area and southern hill."
+      },
+      {
+        "start": 61.97,
+        "end": 65.69,
+        "text": "Separate those source-specific relations from rules for every syncline."
+      }
+    ]
+  }
+]

@@ -1,0 +1,7 @@
+Geologists record field sketches, photographs, rock samples, strike and dip measurements, and the positions of contacts and structures. Measurements let them project features below the surface and connect separated outcrops. Record the observation before the interpretation.
+
+A fault is younger than a unit it cuts. An unfaulted layer or intrusion that seals the fault is younger than the movement it seals at that exposure. These relations bracket an interval; they do not prove that a fault never moved elsewhere or at another time.
+
+Minerals may grow before, during, or after deformation. Their shapes and positions relative to cleavage and veins can help establish a sequence. Microscopic textures and mineral chemistry add evidence about metamorphic conditions.
+
+Folded veins, later cleavage, and cross-cutting features can record multiple events. Distinguish an observed overprint from the proposed explanation. Missing exposures and uncertain ages can limit the sequence to relative order rather than a precise date.

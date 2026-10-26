@@ -1,0 +1,7 @@
+Faults, joints, folds, tilted layers, and shear zones can form in related systems. A fault propagating upward can bend layers above it, and slip over a bend in a thrust fault can fold the overlying rocks. Structural associations must be supported by geometry.
+
+Compression can move thrust sheets over one another and shorten a region. Beds in and above the sheets may form anticlines and synclines. Related joints, smaller faults, and metamorphic fabrics can occur, but not every nearby structure must share the same age.
+
+Cleavage in a fold commonly lies roughly parallel to the axial surface. It cuts bedding at different angles on the limbs and may be nearly perpendicular to bedding near a hinge in the supplied example. Trace both surfaces across the fold.
+
+A younger fault can cut an older fold, and an older fault can itself be folded. Use cross-cutting, overprinting, and the geometry of displaced markers to order events. Proximity alone does not prove two structures formed together.

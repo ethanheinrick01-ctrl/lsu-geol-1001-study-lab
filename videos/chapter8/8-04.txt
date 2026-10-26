@@ -1,0 +1,7 @@
+Strike is the direction of a horizontal line on an inclined plane. Dip is the direction and angle of steepest descent of that plane. Slip may be along dip, along strike, or oblique. Plane orientation and movement direction answer different questions.
+
+For an inclined fault, the hanging wall is the block above the plane and the footwall lies below it. The labels follow the fault plane; they are not assigned by which block appears higher on the modern landscape.
+
+On a normal fault the hanging wall moves down relative to the footwall, commonly during extension. On a reverse fault it moves up, commonly during shortening; a thrust is a low-angle reverse fault. Strike-slip faults have predominantly horizontal movement.
+
+A graben is a block that has dropped relative to blocks on either side along normal faults. A horst is relatively raised. These are relative displacements within a fault system, so present elevation alone does not define every block’s complete history.

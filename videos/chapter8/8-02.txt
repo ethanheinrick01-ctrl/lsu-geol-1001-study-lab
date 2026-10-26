@@ -1,0 +1,7 @@
+Compression squeezes and shortens rock, tension stretches it, and shear makes adjacent material move past itself. The same stress category can produce different structures under different conditions. In the shallow crust, compression can form faults; deeper, hot rocks can fold or flow.
+
+A brittle rock breaks or slips when stressed. At depth, higher confinement and temperature commonly favor ductile behavior: minerals and rock masses change shape without a throughgoing fracture. Ductile does not mean liquid, and the transition depends on the material and conditions.
+
+At increasing depth, minerals may deform, grow, or react to form new minerals stable under changed conditions. Water in pore spaces opposes part of the confining pressure and can assist fracture or reactions. Fluid effects depend on location and conditions rather than one universal outcome.
+
+Geologists investigate mineral stability and rock behavior using controlled temperature and pressure experiments, field observations, and measurements of natural rocks. Each line of evidence has a defined range of conditions. A single specimen cannot establish the strength of every rock at a given depth.

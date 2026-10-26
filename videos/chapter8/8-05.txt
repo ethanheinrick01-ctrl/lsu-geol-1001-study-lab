@@ -1,0 +1,7 @@
+Compression can shorten and bend layered rocks into folds while the layers remain traceable. The curved region of maximum bending is the hinge, and the sides are limbs. Trace the same layer through the whole structure before naming a fold.
+
+An anticline has older rocks in its core and a syncline has younger rocks in its core. In an upright fold, anticlines commonly arch upward and synclines trough downward. Overturning complicates simple shape rules, so use age relations where they are known.
+
+A dome is a roughly circular structure with older rocks in its center; a basin has younger rocks in its center. A monocline is a step-like bend connecting more gently dipping segments. Modern topography can differ because rocks erode at different rates.
+
+An axial surface joins hinges through successive layers. It can be upright or inclined. A fold is overturned where a limb has rotated beyond vertical. A plunging hinge is inclined rather than horizontal. These descriptions address different aspects of geometry.

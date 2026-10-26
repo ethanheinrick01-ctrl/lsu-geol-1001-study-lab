@@ -1,0 +1,7 @@
+The supplied diagram distinguishes high-temperature, low-pressure conditions; high-pressure, relatively low-temperature conditions; and typical regional conditions. Pressure increases with burial, but temperature depends on the thermal history. High pressure does not always mean the hottest rock.
+
+A shallow intrusion heats adjacent country rock and creates a contact aureole. That setting can reach high temperature at relatively low pressure. The aureole’s extent and mineral assemblages depend on heat, host composition, and fluids.
+
+At an ocean–continent convergent boundary, a relatively cold slab descends and experiences increasing pressure before it fully warms. High-pressure, low-temperature metamorphism can occur along the subduction zone; a shallow magma body has a contrasting pressure–temperature history.
+
+During continent–continent collision, thrusting and crustal thickening bury and heat rocks over broad regions. Regional metamorphism and deformation can accompany one another. Map the location and conditions separately rather than assigning one condition to an entire plate boundary.

@@ -1,0 +1,7 @@
+A force is a push or pull. Stress is force divided by the area over which it acts, so the same force on a smaller area produces greater stress. Confining pressure acts equally from every direction; differential stress differs with direction.
+
+Rock may translate to a new position, rotate to a new orientation, or change its shape and size. That internal change is strain. A tilted bed records rotation; flattened pebbles record internal strain. More than one response can occur together.
+
+On the supplied strength graph, depth increases downward and strength increases to the right. In shallow brittle rock, confinement generally increases resistance to breaking. Deeper, hotter rock can deform by solid-state flow and strength decreases. The curve peaks near the transition.
+
+The brittle–ductile transition is a change in dominant behavior, not a universal fixed depth or a melting line. Temperature, composition, fluids, pressure, and strain rate affect how a rock responds. The graph is a model, not a single depth that applies everywhere.
