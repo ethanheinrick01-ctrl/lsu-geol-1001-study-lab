@@ -1,0 +1,9 @@
+Early ocean-salt estimates counted salt entering the ocean but omitted important salt removal. Kelvin calculated cooling before radioactive heating was understood. Both approaches produced ages far too young. The lesson is about model completeness: a seemingly reasonable clock can fail if a major source or sink is missing.
+
+Tree rings, ice layers and lake varves can preserve repeated seasonal cycles. A varve is an annual sedimentary pair, not one year for every light or dark stripe. Ice records can be checked with dated volcanic ash. These records demonstrate long durations, while each has its own preservation and counting limits.
+
+Monitored erosion rates and satellite measurements of plate motion provide another scale of evidence. Centimeters of annual movement become large distances over millions of years. Such comparisons require assumptions about past rates and are not exact clocks for every landscape. Their value comes from agreement with independent geological relationships and isotopic ages.
+
+The supplied section describes Canadian rocks around four billion years old and Australian zircon grains around four point four billion years old. A grain can survive erosion and enter a younger host. Earth’s surface also recycles older rocks through burial, metamorphism and melting, so the oldest surviving rock need not date the planet’s formation.
+
+Meteorites and Moon rocks supply evidence beyond Earth’s recycled surface. The supplied textbook places solar-system formation between four point five three and four point five eight billion years ago, summarized as an Earth age of four point five five billion years. Consistent results across samples and methods support deep time; the argument does not depend on one specimen.

@@ -1,0 +1,9 @@
+The strongest physical correlation can be tracing a bed continuously between sites. Distinctive rock types, matching sequences and common relationships to an unconformity offer other evidence. A local landslide may occur in only one column. Similar-looking rocks alone are less persuasive than several independent relationships that fit together.
+
+Matching index-fossil assemblages, isotopic ages and magnetic-reversal patterns can strengthen correlation. The source’s basalt ages are similar rather than numerically identical, and a magnetic pattern is suggestive rather than conclusive by itself. Use the method’s uncertainty and geological context instead of demanding the same number from every sample.
+
+Coastal environments change sideways from land through shore to deeper water. Sediment deposited at the same time can therefore become different rock types. Restricted deposition, variable thickness and later erosion also change columns. Animate sediment accumulating across environments, then account for each lateral difference before drawing a correlation line.
+
+In the source block, metamorphic basement precedes the granite intrusion, and erosion truncates both before younger sediment accumulates. Later dikes, lava, faults and canyon erosion add events. Use actual contacts to build a partial order. Numbered source events are a teaching reconstruction, not a rule that all faults everywhere form in the same stage.
+
+The source lava is offset by a fault scarp, so that movement is younger than the lava. Earlier movement may have helped create relief before the eruption. River gravel that is not offset provides a later constraint. A feature can have more than one episode; write the dated movement rather than giving the entire fault one oversimplified age.

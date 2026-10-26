@@ -4,8 +4,9 @@ const root=path.resolve(__dirname,'..');
 let clock=1800000000000,checks=0;
 class Clock extends Date { constructor(...a){super(...(a.length?a:[clock]));}static now(){return ++clock;} }
 function load(storage={},backup){
- const c={console,Math,Date:Clock,JSON,setTimeout(){},document:{readyState:'loading',addEventListener(){}},localStorage:{getItem(k){return storage[k]||null;},setItem(k,v){storage[k]=v;}}};c.window=c;c.globalThis=c;vm.createContext(c);
+ const c={console,Math,Date:Clock,JSON,setTimeout(){},location:{protocol:'http:',hostname:'127.0.0.1'},document:{readyState:'loading',addEventListener(){}},localStorage:{getItem(k){return storage[k]||null;},setItem(k,v){storage[k]=v;}}};c.window=c;c.globalThis=c;vm.createContext(c);
  const read=f=>backup?cp.execFileSync('tar',['-xOf',backup,f],{encoding:'utf8'}):fs.readFileSync(path.join(root,f),'utf8');
+ c.document.write=html=>{for(const [,url]of html.matchAll(/<script\b[^>]*\bsrc=["']([^"']+)["']/g)){const f=url.split('?')[0];vm.runInContext(read(f),c,{filename:f});}};
  for(const [,url] of read('index.html').matchAll(/<script src="([^"]+)"/g)){const f=url.split('?')[0];if(f!=='js/app.js')vm.runInContext(read(f),c,{filename:f});}
  c.L.engine.build();return c.L;
 }

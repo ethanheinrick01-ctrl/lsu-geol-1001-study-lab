@@ -1,0 +1,9 @@
+A canyon wall records events that happened before the canyon existed. Most sediment begins in nearly horizontal layers. Each new layer rests on material already there, so an undisturbed sequence gets younger upward. Original horizontality and superposition answer different questions: how beds began, and which bed came first. Dune slopes and overturned beds require care.
+
+A piece of basalt must exist before erosion can put it into a younger deposit. The same logic applies when a solid fragment falls into magma and becomes an inclusion in granite. Follow the fragment from its original rock into its new host. The fragment is older; the surrounding rock forms later.
+
+A joint, fault, vein or dike can cut material that already exists. The cutting feature is therefore younger than the rock it actually cuts. Trace the contact rather than extending it in your imagination. A dike that stops below a younger bed does not demonstrate that it also intruded that bed.
+
+Magma can bake and chemically alter its older surroundings. An intrusive sill between existing beds can heat rock above and below. A lava flow can bake the ground beneath it, while sediment deposited after it cools remains unbaked. Crosscutting and contact effects are independent clues that can support the same age relationship.
+
+Sketch the five tools together: original horizontality, superposition, inclusions, crosscutting and contact effects. For each interpretation, name the observation that supports it. These principles establish relative order; they do not supply a numerical age on their own. Later folding, erosion and renewed deposition can add more events than there are visible rock layers.

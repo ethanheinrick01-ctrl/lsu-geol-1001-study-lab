@@ -1,0 +1,9 @@
+The investigation letters name units and features, not their age order. Granite G lies below Cambrian unit C, whose basal clasts came from the granite. Ordovician B overlies C, and Permian A overlies B across a disconformity. Jurassic S and Cretaceous K extend the younger sedimentary record. Use fossils and contacts together.
+
+Fault F cuts the main sedimentary sequence in the field notes. Dike D cuts and bakes older units; its relationship with the fault constrains their order in the supplied terrain. Old river gravels R occupy channels that interrupt the dike. Cite the actual contact for each step instead of inventing a universal event sequence.
+
+For granite G, the table gives one hundred twenty-five parents and eight hundred seventy-five daughters. Under the exercise assumptions, the parent fraction is one eighth of the original total. That means three half-lives. At five hundred million years per half-life, the calculated granite age is one point five billion years.
+
+For dike D, five hundred parents and five hundred daughters give a parent fraction of one half. One half-life has elapsed. With the supplied forty-million-year half-life, the calculated dike age is forty million years. This uses the table’s ideal dating assumptions; the calculation does not make every nearby rock the same age.
+
+The narrow canyon cuts the older landscape and truncates an old river channel. Lava L from volcano V then enters the already existing canyon, constraining its relative order. The young volcanic surface has little soil, unlike the old gravel. Finish with a history supported step by step, retaining the original diagram and the limits of each observation.

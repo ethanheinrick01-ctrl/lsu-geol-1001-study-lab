@@ -1,0 +1,9 @@
+A radioactive parent isotope changes into a daughter product. After one half-life, half the original parents remain. After two, one quarter remains. Each equal interval removes half of what is left, not the same number of atoms. The green parent population shrinks while purple daughters accumulate in this ideal closed-system reconstruction.
+
+A mass spectrometer ionizes a sample and separates ions by their behavior in electric and magnetic fields. A detector counts selected ions, allowing isotope ratios to be measured. The ratio becomes an age only with a suitable decay system and evaluated assumptions. Report analytical uncertainty along with the age.
+
+Potassium-argon and argon-argon systems can date volcanic rocks and cooling. Rubidium-strontium helped establish ancient granite ages. Uranium and thorium decay chains end in lead; uranium-lead dating of zircon is especially useful for crystallization. Samarium-neodymium supports ancient-rock and magma-source studies. Carbon-fourteen suits much younger carbon-bearing material, not ancient granite.
+
+A volcanic unit cools rapidly, so a suitable date commonly records eruption. A zircon in granite can record crystallization, while biotite can record later cooling through its retention temperature. Metamorphic minerals may date metamorphism. Two minerals from one rock can therefore yield different, meaningful ages without either measurement simply being wrong.
+
+A grain eroded from an old source can be deposited much later in sediment. Its isotopic age can date the source crystal rather than the younger sedimentary bed. Evaluate initial daughter composition, isotope loss or gain, and the event that closed the clock. Numerical dating complements relative relationships; it does not replace them.

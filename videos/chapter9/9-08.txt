@@ -1,0 +1,9 @@
+The geological timescale began as a way to correlate rocks using fossil succession. Major changes in assemblages marked boundaries before precise numerical ages were available. Paleozoic, Mesozoic and Cenozoic are eras, each divided into periods. Precambrian is a broad span containing its own subdivisions, rather than an equivalent fourth era.
+
+From oldest to youngest, the Paleozoic periods are Cambrian, Ordovician, Silurian, Devonian, Mississippian, Pennsylvanian and Permian. Then come Triassic, Jurassic and Cretaceous in the Mesozoic, followed by Paleogene, Neogene and Quaternary in the Cenozoic. The course uses these North American Paleozoic subdivisions; some other charts combine two as the Carboniferous.
+
+An interbedded volcanic layer can be dated isotopically. A fossil-bearing bed above an older volcanic unit and below a younger one lies between those eruption ages. The fossils then help transfer that age constraint to other sections. Watch the two limits close around the bed without pretending they provide a single exact date.
+
+A dike is younger than the fossil bed it cuts. If clasts of that dike occur in a later bed, the later bed is younger than the dike. The same rock thus constrains two different age relationships. Always ask whether you are observing an intrusion cutting a unit or a fragment enclosed within it.
+
+Fossil ages and isotopic ages also bracket unconformities. The supplied textbook uses major boundaries at sixty-six, two hundred fifty-two and five hundred forty-one million years. The older Connect label graphic has different numerical boundaries. Use that graphic for its original label positions, while keeping the assigned textbook numbers separate and explicit.

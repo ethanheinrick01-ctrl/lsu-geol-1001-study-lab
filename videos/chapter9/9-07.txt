@@ -1,0 +1,9 @@
+Read the source column from older rocks at the bottom toward younger rocks at the top. A fossil found through many beds has a broad range. Another confined to a short interval constrains age more tightly. A useful index fossil also needs abundance, wide distribution and recognizable features so it can be identified across sites.
+
+Two fossils found together must share a time interval, assuming they were not reworked from older deposits. Slide their known ranges together and retain only the overlap. The shared interval can be shorter than either fossil range by itself. Adding their full durations would discard the constraint instead of using it.
+
+The two source columns contain matching fossils but also disconformities. Some beds were eroded or never deposited at a site. A missing fossil can also reflect an unsuitable environment. Match supported horizons across the columns and mark the gaps; do not force every layer or fossil into both sequences.
+
+The second comparison has overlapping units four, five and six. The left section extends into older units; the right extends into younger ones. Match the overlap, then assemble a composite sequence from one through nine. Thickness can vary between sites, so matching ages does not require identical layer thickness.
+
+William Smith recognized recurring fossils in the same rock units while surveying, even where faults and folds interrupted their exposure. Systematic faunal succession made correlation and geological mapping possible. Stratigraphy combines rock types, fossil evidence and environments; a convincing correlation explains both the matches and the differences.
