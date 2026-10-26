@@ -1,0 +1,9 @@
+In the supplied model, the sea is on the left and land is on the right. A transgression moves the shoreline landward as relative sea level rises, whether the water rises or the land subsides. Beach sand covers an earlier erosion surface. Follow one fixed location while neighboring environments move across it.
+
+At the fixed location, an early beach is followed by a lagoon and then an offshore reef. The preserved order is beach sandstone, lagoon mudstone and reef limestone, from oldest at the bottom to youngest at the top. Different environments also coexist laterally. Their sedimentary expressions are called facies.
+
+During regression, the shoreline and neighboring facies shift seaward, toward the left in this source. Lagoon mud spreads over earlier reef limestone, and beach or dune sand advances over mud. Previously deposited material can become exposed and reworked. New layers accumulate above the older transgressive package rather than replacing its entire history.
+
+The example transgression records sandstone below mudstone below limestone. Its regressive succession reverses the environmental trend: limestone, then mudstone, then sandstone. Those particular rocks belong to this illustrated setting, not every coastline. Direction of shoreline migration and independent environmental clues carry the interpretation.
+
+A layer need not continue forever. A facies can thin out where its depositional environment ends, and a channel deposit may be restricted to the channel itself. Erosion can also remove material. Before correlating two exposures, consider both lateral facies differences and later removal rather than assuming a missing bed was never deposited anywhere.

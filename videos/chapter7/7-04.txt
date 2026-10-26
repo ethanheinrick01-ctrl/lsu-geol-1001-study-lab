@@ -1,0 +1,9 @@
+Gravel includes granules, pebbles, cobbles and boulders. Sand is finer than gravel, while silt and clay together make mud. The supplied size table gives the exact boundaries. Clay is both a size term and a mineral-group name, so a clay-sized particle and a clay mineral describe different properties.
+
+Angular clasts have sharp edges and corners. Repeated collisions and abrasion tend to remove those exposed corners, producing smaller, rounder pieces. Shape is distinct from size: a large cobble can be rounded, and a tiny sand grain can remain angular. Rounding does not by itself specify one transport distance.
+
+Poorly sorted sediment mixes many sizes. Moderately sorted sediment has a more limited range, and well-sorted sediment concentrates similar sizes. Wind-built dunes commonly contain well-sorted sand because wind cannot supply gravel and finer particles may move onward. A mixture can be rounded and still poorly sorted.
+
+Near a bedrock source, sediment commonly starts coarse, angular and poorly sorted. Transport can break it, round it and separate sizes. Farther along a stream or repeatedly worked by waves, finer and better-sorted material may remain. These are useful tendencies whose interpretation still depends on source rocks and available sediment.
+
+The textbook identifies four controls: slope steepness, current strength, sediment supply and the transporting agent. Strong turbulent water can move larger clasts than weaker flow, but it cannot carry a size the source does not provide. Glaciers can move large mixtures, while wind is selective. Describe size, roundness and sorting before interpreting the setting.

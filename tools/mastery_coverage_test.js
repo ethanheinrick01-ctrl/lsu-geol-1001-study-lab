@@ -3,9 +3,10 @@ const fs=require('fs'),path=require('path'),vm=require('vm'),assert=require('ass
 const root=path.resolve(__dirname,'..');let clock=1800000000000,checks=0;
 class Clock extends Date{constructor(...a){super(...(a.length?a:[clock]));}static now(){return ++clock;}}
 function load(disk={},backup){
- const c={console,Math,Date:Clock,JSON,setTimeout(){},document:{readyState:'loading',addEventListener(){}},localStorage:{getItem(k){return disk[k]||null;},setItem(k,v){disk[k]=v;}}};c.window=c;vm.createContext(c);
+ const c={console,Math,Date:Clock,JSON,setTimeout(){},location:{protocol:'http:',hostname:'127.0.0.1'},document:{readyState:'loading',addEventListener(){}},localStorage:{getItem(k){return disk[k]||null;},setItem(k,v){disk[k]=v;}}};c.window=c;vm.createContext(c);
  const read=f=>backup?cp.execFileSync('tar',['-xOf',backup,f],{encoding:'utf8'}):fs.readFileSync(path.join(root,f),'utf8');
- for(const [,url]of read('index.html').matchAll(/<script src="([^"]+)"/g)){const f=url.split('?')[0];if(f!=='js/app.js')vm.runInContext(read(f),c,{filename:f});}
+ const run=url=>{const f=url.split('?')[0];if(f!=='js/app.js')vm.runInContext(read(f),c,{filename:f});};c.document.write=html=>run(html.match(/src="([^"]+)"/)[1]);
+ for(const [,url]of read('index.html').matchAll(/<script src="([^"]+)"/g))run(url);
  c.L.engine.build();return c.L;
 }
 function test(name,fn){fn();checks++;console.log('PASS '+name);}
@@ -42,7 +43,7 @@ test('Every topic reaches full mastery within three successful topic or figure d
 test('Targeted concept buttons always provide two different questions in the chosen topic',()=>{
  blank();for(const t of L.EXAM1.topics)for(const c of t.concepts){const ids=X.selectDrill(t.id,false,c);assert.equal(ids.length,2,t.id+' '+c);assert.equal(new Set(ids).size,2);for(const id of ids)assert.equal(E.resolve({id}).c,c);}
 });
-test('All 102 broader-course concepts can earn mastery from two ordinary practice questions',()=>{
+test('All available broader-course concepts can earn mastery from two ordinary practice questions',()=>{
  for(const c of Object.keys(L.CONCEPTS)){
   blank();const refs=E.practiceRefs({concepts:[c],n:2});assert.equal(refs.length,2,c);const sess=E.newSession('practice','Coverage check',refs,{noRetry:true});
   for(const ref of refs){const it=E.resolve(ref);assert.equal(it.c,c);E.answerInSession(key(it),'m',false);E.advance();}
