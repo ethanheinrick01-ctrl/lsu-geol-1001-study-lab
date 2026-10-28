@@ -70,7 +70,7 @@
       '<p class="exam-picker-lede">Each exam has its own study guide, practice, and saved progress.</p></section>'+
       '<div class="exam-picker-grid">'+
       '<article class="exam-picker-card"><span class="exam-picker-status">Study lab available</span><h2>Exam 1</h2><p>Chapters 1–6. Guide, practice, mocks, and narrated films.</p><a href="#exam1" aria-label="Open Exam 1 study lab">Open study lab →</a></article>'+
-      '<article class="exam-picker-card"><span class="exam-picker-status">'+L.exam2.chapterLabel(L.EXAMS.exam2.available)+' available</span><h2>Exam 2</h2><p>Guide, practice, Boss drills, and narrated films for '+L.exam2.chapterLabel(L.EXAMS.exam2.available)+'.</p><p class="exam-picker-scope">'+L.exam2.chapterLabel(L.EXAMS.exam2.chapters.filter(function(ch){return L.EXAMS.exam2.available.indexOf(ch)<0;}))+' pending · mocks locked</p><a href="#exam2" aria-label="Open Exam 2 study lab">Open study lab →</a></article>'+
+      '<article class="exam-picker-card"><span class="exam-picker-status">'+L.exam2.chapterLabel(L.EXAMS.exam2.available)+' available</span><h2>Exam 2</h2><p>Guide, practice, Boss drills, and narrated films for '+L.exam2.chapterLabel(L.EXAMS.exam2.available)+'.</p><p class="exam-picker-scope">'+(L.EXAMS.exam2.reviewPending?'Class review pending':L.exam2.chapterLabel(L.EXAMS.exam2.chapters.filter(function(ch){return L.EXAMS.exam2.available.indexOf(ch)<0;}))+' pending')+' · mocks locked</p><a href="#exam2" aria-label="Open Exam 2 study lab">Open study lab →</a></article>'+
       '</div><p class="exam-picker-note">Exam 1 and '+L.exam2.chapterLabel(L.EXAMS.exam2.available)+' of Exam 2 are available.</p><div class="exam-picker-rule"></div></div>';
   }
 
@@ -291,7 +291,7 @@
 
   // ---------------- Boss ----------------
   function pBoss() {
-    var s = S.load(), h = [banner(), '<h1>Boss drills</h1><p class="lede">Fixed, integrative drills of 25+ questions with feedback after each answer. Most questions combine ideas or apply them to a new diagram or scenario. Only a completed run can set a best score; retrying misses runs as ordinary practice and never changes the best.</p><div class="bossgrid">'];
+    var s = S.load(), h = [banner(), '<h1>Boss drills</h1><p class="lede">Fixed chapter drills with feedback after each answer. Most questions combine ideas or apply them to a new diagram or scenario. Only a completed run can set a best score; retrying misses runs as ordinary practice and never changes the best.</p><div class="bossgrid">'];
     L.BOSSES.filter(function(b){return L.examScope.accepts(b,examId());}).forEach(function (b) {
       var rec = s.boss[b.id], n = (b.refs || []).length + (b.gens || []).reduce(function (a, g) { return a + g[1]; }, 0) + (b.cases || []).reduce(function (a, c) { var cs = E.caseById(c); return a + (cs ? cs.items.length : 0); }, 0);
       h.push('<article class="card boss"><h2>' + esc(b.title) + '</h2><p>' + esc(b.blurb||b.desc) + '</p><p class="small muted">' + n + ' questions · pass target ' + Math.round(b.pass * 100) + '% (design choice)</p>' +

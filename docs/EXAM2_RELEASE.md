@@ -1,4 +1,8 @@
-# Exam 2 · Chapters 7–8
+# Exam 2 · Chapters 7–12
+
+## October 28 · accepted study UI and final chapter
+
+All 92 mini-chapters now use the accepted Study / Review / My progress navigation, Tools menu, Penelope wallpaper, separate teaching cards, scoped practice footers, custom practice selector and reading-color roles. Chapter 12 adds 18 sections and their connected study/practice/media. See [Chapter 12 coverage and release notes](CHAPTER12_RELEASE.md). Full mocks await the October 29 class review; earlier dated entries below describe historical coverage.
 
 ## October 13 note outline · 20261013-notes1
 

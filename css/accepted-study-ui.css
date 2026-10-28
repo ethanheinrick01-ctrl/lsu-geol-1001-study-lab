@@ -158,3 +158,6 @@ body.pilot-active::before{content:"";position:fixed;inset:0;z-index:-1;pointer-e
 .pilot-section-card .pilot-prose{font-size:18px;line-height:1.8;max-width:72ch}.pilot-reference-card .e2-note-topic:empty{display:none}.pilot-active .pilot-source-group{margin:20px 0}.pilot-active .pilot-source-group>h3{font-size:18px}.pilot-section-card .pilot-prose p{margin:0 0 18px}@media(max-width:767px){.pilot-section-card .pilot-prose{font-size:17px}}
 
 .pilot-card-source>.e2-source{border:0;padding:0;margin:0}.pilot-card-source>.e2-source>summary{font-size:14px;font-weight:400}
+
+/* Original Chapter 12 transparent figures retain white backing for black source labels. */
+.pilot-active img[src*="figures/chapter12/"]{background:#fff;}

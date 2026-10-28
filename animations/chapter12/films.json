@@ -1,0 +1,4344 @@
+[
+  {
+    "n": 1,
+    "title": "Earthquake sources, focus, and epicenter",
+    "logline": "Follow energy from a growing rupture to the waves recorded at the surface.",
+    "beats": [
+      [
+        "Locate the release of energy",
+        "rupture",
+        [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "An earthquake is a sudden release of energy stored in rock. Seismic waves carry part of that energy outward through Earth and along its surface; the disturbance can be detected far from its source. The hypocenter, also called the focus, is the place where rupture begins. The epicenter is the point on the surface directly above it. A rupture can spread far beyond its starting point. A seismic station contains instruments that record ground motion. For comparable paths, a nearby station receives a given wave before a more distant station. Read the actual station positions rather than memorizing a station number.",
+        [
+          "12.1-p2-Im2.png"
+        ],
+        {
+          "start": 0,
+          "end": 34.22
+        },
+        {
+          "takeaway": "A localized rupture patch grows along a fault; wavefronts expand while the epicenter stays above the focus.",
+          "cueTimes": [
+            0
+          ],
+          "modes": [
+            "rupture"
+          ]
+        }
+      ],
+      [
+        "All three fault motions can produce earthquakes",
+        "faults",
+        [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "A normal fault lowers the hanging wall relative to the footwall and commonly accommodates extension. A reverse fault raises the hanging wall; a gently dipping reverse fault is a thrust fault. A strike-slip fault displaces its two sides mainly horizontally. Normal, reverse, thrust, and strike-slip faults can all generate earthquakes when they slip abruptly. The fault type describes relative movement. It does not, by itself, supply the earthquake magnitude, hypocentral depth, or expected damage.",
+        [
+          "fault-blocks.png",
+          "fault-blocks.png",
+          "fault-blocks.png"
+        ],
+        {
+          "start": 34.839999999999996,
+          "end": 62.199999999999996
+        },
+        {
+          "takeaway": "Separate normal, reverse, and strike-slip examples move along their own planes; reset clearly between examples.",
+          "cueTimes": [
+            34.839999999999996,
+            40.36,
+            45.86
+          ],
+          "modes": [
+            "normal",
+            "reverse",
+            "transform"
+          ],
+          "takeaways": [
+            "Extension lowers the hanging wall relative to the footwall along an inclined fault.",
+            "Compression raises the hanging wall relative to the footwall; shortening occurs along the fault.",
+            "Blocks move horizontally past one another, offsetting a marker that originally crossed the fault."
+          ]
+        }
+      ],
+      [
+        "Other sources of seismic energy",
+        "magma",
+        [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "Explosive eruptions, magma pushing into rock, faulting beneath a heavy volcano, and collapse of unstable volcanic slopes can produce seismic signals. Distinctive volcanic tremors can accompany magma movement. Large landslides shake the ground as rock breaks and moves. Underground explosions compress surrounding material and generate waves that seismic networks can detect. Reservoir filling adds a load to the crust; deep wastewater injection can alter conditions on existing faults. These are human-induced mechanisms, not evidence that every earthquake near a well or reservoir has the same cause.",
+        [
+          "12.1-p5-Im6.png"
+        ],
+        {
+          "start": 62.81999999999999,
+          "end": 99.07
+        },
+        {
+          "takeaway": "Magma intrudes a fracture and surrounding rock deforms; distinguish intrusion from whole-rock melting.",
+          "cueTimes": [
+            62.81999999999999
+          ],
+          "modes": [
+            "magma"
+          ]
+        }
+      ]
+    ],
+    "duration": 99.07,
+    "timingStatus": "Aligned to the selected narration word intervals; auditory acceptance pending.",
+    "captions": [
+      {
+        "start": 0.3,
+        "end": 3.6799999999999997,
+        "text": "An earthquake is a sudden release of energy stored in rock."
+      },
+      {
+        "start": 3.96,
+        "end": 7.3,
+        "text": "Seismic waves carry part of that energy outward through Earth and"
+      },
+      {
+        "start": 7.3,
+        "end": 10.520000000000001,
+        "text": "along its surface; the disturbance can be detected far from its"
+      },
+      {
+        "start": 10.520000000000001,
+        "end": 14.200000000000001,
+        "text": "source. The hypocenter, also called the focus, is the place where"
+      },
+      {
+        "start": 14.200000000000001,
+        "end": 18.14,
+        "text": "rupture begins. The epicenter is the point on the surface directly"
+      },
+      {
+        "start": 18.14,
+        "end": 21.42,
+        "text": "above it. A rupture can spread far beyond its starting point."
+      },
+      {
+        "start": 21.62,
+        "end": 24.84,
+        "text": "A seismic station contains instruments that record ground motion."
+      },
+      {
+        "start": 24.84,
+        "end": 28.86,
+        "text": "For comparable paths, a nearby station receives a given wave before"
+      },
+      {
+        "start": 28.86,
+        "end": 32.68,
+        "text": "a more distant station. Read the actual station positions rather than"
+      },
+      {
+        "start": 32.68,
+        "end": 34.019999999999996,
+        "text": "memorizing a station number."
+      },
+      {
+        "start": 34.839999999999996,
+        "end": 38.199999999999996,
+        "text": "A normal fault lowers the hanging wall relative to the footwall"
+      },
+      {
+        "start": 38.199999999999996,
+        "end": 42.599999999999994,
+        "text": "and commonly accommodates extension. A reverse fault raises the hanging wall;"
+      },
+      {
+        "start": 42.76,
+        "end": 45.67999999999999,
+        "text": "a gently dipping reverse fault is a thrust fault."
+      },
+      {
+        "start": 45.86,
+        "end": 49.339999999999996,
+        "text": "A strike-slip fault displaces its two sides mainly horizontally."
+      },
+      {
+        "start": 49.94,
+        "end": 53.8,
+        "text": "Normal, reverse, thrust, and strike-slip faults can all generate earthquakes when"
+      },
+      {
+        "start": 53.8,
+        "end": 56.8,
+        "text": "they slip abruptly. The fault type describes relative movement."
+      },
+      {
+        "start": 56.959999999999994,
+        "end": 60.78,
+        "text": "It does not, by itself, supply the earthquake magnitude, hypocentral depth,"
+      },
+      {
+        "start": 60.919999999999995,
+        "end": 61.89999999999999,
+        "text": "or expected damage."
+      },
+      {
+        "start": 62.81999999999999,
+        "end": 67.46,
+        "text": "Explosive eruptions, magma pushing into rock, faulting beneath a heavy volcano,"
+      },
+      {
+        "start": 67.72,
+        "end": 71.74,
+        "text": "and collapse of unstable volcanic slopes can produce seismic signals."
+      },
+      {
+        "start": 72.24,
+        "end": 75.24,
+        "text": "Distinctive volcanic tremors can accompany magma movement."
+      },
+      {
+        "start": 75.47999999999999,
+        "end": 79.05999999999999,
+        "text": "Large landslides shake the ground as rock breaks and moves."
+      },
+      {
+        "start": 79.53999999999999,
+        "end": 84.03999999999999,
+        "text": "Underground explosions compress surrounding material and generate waves that seismic networks"
+      },
+      {
+        "start": 84.03999999999999,
+        "end": 87.19999999999999,
+        "text": "can detect. Reservoir filling adds a load to the crust;"
+      },
+      {
+        "start": 87.47999999999999,
+        "end": 91.0,
+        "text": "deep wastewater injection can alter conditions on existing faults."
+      },
+      {
+        "start": 91.0,
+        "end": 95.24,
+        "text": "These are human-induced mechanisms, not evidence that every earthquake near a"
+      },
+      {
+        "start": 95.24,
+        "end": 97.61999999999999,
+        "text": "well or reservoir has the same cause."
+      }
+    ],
+    "audio": "../../videos/chapter12/12-01.mp4"
+  },
+  {
+    "n": 2,
+    "title": "Elastic strain, rupture growth, and the earthquake cycle",
+    "logline": "Elastic strain accumulates before slip; rebound still leaves a permanent offset.",
+    "beats": [
+      [
+        "Store strain before slip",
+        "elastic",
+        [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "Stress is force per area; strain is the resulting change in shape. A locked fault can resist motion while nearby rock bends and stores elastic strain energy. Elastic behavior means the material can return toward its former shape when the load is removed. Friction and rock strength help resist slip until the applied stress exceeds that resistance. The earthquake-cycle graph rises gradually during loading and drops abruptly during slip. The graph is an explanatory model, not a calendar for predicting the next earthquake.",
+        [
+          "12.2-p8-Im12.png"
+        ],
+        {
+          "start": 0,
+          "end": 29.82
+        },
+        {
+          "takeaway": "Markers bend while a fault is locked, then slip and partly rebound; permanent offset remains.",
+          "cueTimes": [
+            0
+          ],
+          "modes": [
+            "elastic"
+          ]
+        }
+      ],
+      [
+        "Rupture spreads across a fault",
+        "rupture",
+        [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "Rupture starts in a small area at the hypocenter and expands along a fault surface. The entire fault plane does not begin moving simultaneously. If rupture reaches the ground surface, it can create a fault scarp or other surface break. A rupture may expand farther in one direction than the other. Rupture stops when the remaining stress cannot overcome resistance farther along the fault. An earthquake does not have to break every part of the fault.",
+        [
+          "12.2-p3-Im3.png"
+        ],
+        {
+          "start": 29.82,
+          "end": 54.94
+        },
+        {
+          "takeaway": "A localized rupture patch grows along a fault; wavefronts expand while the epicenter stays above the focus.",
+          "cueTimes": [
+            29.82
+          ],
+          "modes": [
+            "rupture"
+          ]
+        }
+      ],
+      [
+        "Separate rebound from permanent offset",
+        "scarp",
+        [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "After slip, some elastic deformation is recovered, but the displacement across the fault is permanent. An offset stream or displaced road does not return to its old alignment simply because the surrounding rock rebounds. Repeated locking and slipping is stick-slip behavior. The recurrence interval is the average time between comparable repeated events, not a guaranteed waiting period. Fresh scarps are sharp; erosion rounds their upper edges and deposits sediment at their bases. Scarp shape and dated deposits can help reconstruct earlier events.",
+        [
+          "12.2-p7-Im9.png"
+        ],
+        {
+          "start": 55.739999999999995,
+          "end": 87.39
+        },
+        {
+          "takeaway": "An initially sharp scarp loses crest material and develops a sediment apron over schematic time.",
+          "cueTimes": [
+            55.739999999999995
+          ],
+          "modes": [
+            "scarp"
+          ]
+        }
+      ]
+    ],
+    "duration": 87.39,
+    "timingStatus": "Aligned to the selected narration word intervals; auditory acceptance pending.",
+    "captions": [
+      {
+        "start": 0.3,
+        "end": 2.38,
+        "text": "Stress is force per area;"
+      },
+      {
+        "start": 2.6999999999999997,
+        "end": 4.34,
+        "text": "strain is the resulting change in shape."
+      },
+      {
+        "start": 4.58,
+        "end": 7.88,
+        "text": "A locked fault can resist motion while nearby rock bends and"
+      },
+      {
+        "start": 7.88,
+        "end": 12.200000000000001,
+        "text": "stores elastic strain energy. Elastic behavior means the material can return"
+      },
+      {
+        "start": 12.200000000000001,
+        "end": 14.600000000000001,
+        "text": "toward its former shape when the load is removed."
+      },
+      {
+        "start": 15.08,
+        "end": 17.94,
+        "text": "Friction and rock strength help resist slip until the applied stress"
+      },
+      {
+        "start": 17.94,
+        "end": 22.92,
+        "text": "exceeds that resistance. The earthquake-cycle graph rises gradually during loading and"
+      },
+      {
+        "start": 22.92,
+        "end": 26.92,
+        "text": "drops abruptly during slip. The graph is an explanatory model, not"
+      },
+      {
+        "start": 26.92,
+        "end": 28.84,
+        "text": "a calendar for predicting the next earthquake."
+      },
+      {
+        "start": 29.82,
+        "end": 33.78,
+        "text": "Rupture starts in a small area at the hypocenter and expands"
+      },
+      {
+        "start": 33.78,
+        "end": 36.96,
+        "text": "along a fault surface. The entire fault plane does not begin"
+      },
+      {
+        "start": 36.96,
+        "end": 40.76,
+        "text": "moving simultaneously. If rupture reaches the ground surface, it can create"
+      },
+      {
+        "start": 40.76,
+        "end": 42.96,
+        "text": "a fault scarp or other surface break."
+      },
+      {
+        "start": 43.34,
+        "end": 46.519999999999996,
+        "text": "A rupture may expand farther in one direction than the other."
+      },
+      {
+        "start": 46.82,
+        "end": 50.84,
+        "text": "Rupture stops when the remaining stress cannot overcome resistance farther along"
+      },
+      {
+        "start": 50.84,
+        "end": 54.22,
+        "text": "the fault. An earthquake does not have to break every part"
+      },
+      {
+        "start": 54.22,
+        "end": 54.82,
+        "text": "of the fault."
+      },
+      {
+        "start": 55.739999999999995,
+        "end": 60.099999999999994,
+        "text": "After slip, some elastic deformation is recovered, but the displacement across"
+      },
+      {
+        "start": 60.099999999999994,
+        "end": 63.879999999999995,
+        "text": "the fault is permanent. An offset stream or displaced road does"
+      },
+      {
+        "start": 63.879999999999995,
+        "end": 67.03999999999999,
+        "text": "not return to its old alignment simply because the surrounding rock"
+      },
+      {
+        "start": 67.03999999999999,
+        "end": 70.66,
+        "text": "rebounds. Repeated locking and slipping is stick-slip behavior."
+      },
+      {
+        "start": 70.88,
+        "end": 75.0,
+        "text": "The recurrence interval is the average time between comparable repeated events,"
+      },
+      {
+        "start": 75.25999999999999,
+        "end": 76.82,
+        "text": "not a guaranteed waiting period."
+      },
+      {
+        "start": 77.13999999999999,
+        "end": 80.74,
+        "text": "Fresh scarps are sharp; erosion rounds their upper edges and deposits"
+      },
+      {
+        "start": 80.74,
+        "end": 84.46,
+        "text": "sediment at their bases. Scarp shape and dated deposits can help"
+      },
+      {
+        "start": 84.46,
+        "end": 85.94,
+        "text": "reconstruct earlier events."
+      }
+    ],
+    "audio": "../../videos/chapter12/12-02.mp4"
+  },
+  {
+    "n": 3,
+    "title": "Read earthquake maps and infer slab direction",
+    "logline": "Earthquake depths reveal the geometry of slabs and distinguish tectonic settings.",
+    "beats": [
+      [
+        "Use depth and tectonic position together",
+        "depth",
+        [
+          2,
+          3,
+          4
+        ],
+        "Most earthquakes cluster along plate boundaries, but some occur within plates. A continental coast is not automatically a plate boundary: Atlantic passive margins differ from the active western margins of the Americas. The supplied maps use yellow for 0–70 km, green for 70–300 km, and red for depths greater than 300 km. These colors are the source map legend, not the lab’s reading-emphasis categories. Mid-ocean ridges have shallow earthquakes. Subduction zones combine shallow, intermediate, and deep earthquakes along a descending slab.",
+        [
+          "12.3-p2-Im2.png"
+        ],
+        {
+          "start": 0,
+          "end": 34.14
+        },
+        {
+          "takeaway": "A dipping slab section develops shallow-to-deep hypocenters; surface projections retain their horizontal position.",
+          "cueTimes": [
+            0
+          ],
+          "modes": [
+            "depth"
+          ]
+        }
+      ],
+      [
+        "Infer the direction of subduction",
+        "subductWest",
+        [
+          2,
+          3,
+          4
+        ],
+        "Start near the trench and follow the sequence from shallow to deeper earthquakes. That depth progression traces the inclined slab; the deepest dots do not mark the trench. Near Japan the supplied pattern deepens westward, so the Pacific slab descends toward the west. Beneath western South America the pattern deepens eastward, so the slab descends beneath the continent. A map plots epicenters at the surface and uses color to encode hypocentral depth. A cross section makes the inclined earthquake zone easier to see.",
+        [
+          "12.3-p2-Im2.png",
+          "12.3-p4-Im5.png"
+        ],
+        {
+          "start": 34.7,
+          "end": 64.54
+        },
+        {
+          "takeaway": "An east-to-west descending slab carries the seismic zone deeper westward, matching the Japan map.",
+          "cueTimes": [
+            34.7,
+            50.080000000000005
+          ],
+          "modes": [
+            "subductWest",
+            "depth"
+          ],
+          "takeaways": [
+            "The seismic zone deepens westward beneath Japan; the schematic slab preserves that direction.",
+            "Hypocenters deepen along a descending slab. Read the source map to determine its actual dip direction."
+          ]
+        }
+      ],
+      [
+        "Distinguish the major regional settings",
+        "transform",
+        [
+          2,
+          3,
+          4
+        ],
+        "The Mediterranean-to-Asia belt includes continental collision and other convergence. Eastern Africa has a diffuse rift-related seismic zone. Low-seismicity interiors separate many active belts. The Aleutians mark subduction south of Alaska; the San Andreas marks continental transform motion. Hawaii illustrates volcanic and associated seismic activity within a plate. Shallow seismicity follows the Mid-Atlantic Ridge. Broad ocean interiors and passive margins generally have less seismicity, which does not mean zero possible earthquakes.",
+        [
+          "12.3-p2-Im2.png",
+          "12.3-p3-Im3.png",
+          "12.3-p3-Im3.png",
+          "12.3-p3-Im3.png",
+          "12.3-p3-Im3.png"
+        ],
+        {
+          "start": 65.38000000000001,
+          "end": 98.39000000000001
+        },
+        {
+          "takeaway": "Textured blocks slide horizontally and offset a continuous marker.",
+          "cueTimes": [
+            65.38000000000001,
+            76.94000000000001,
+            80.24000000000001,
+            83.16000000000001,
+            87.4
+          ],
+          "modes": [
+            "collision",
+            "subduct",
+            "transform",
+            "magma",
+            "ridge"
+          ],
+          "takeaways": [
+            "Continental shortening activates thrust and reverse faults across a broad collision zone.",
+            "A coherent oceanic plate descends beneath the overriding plate; interface slip and deep slab earthquakes are distinct.",
+            "Blocks move horizontally past one another, offsetting a marker that originally crossed the fault.",
+            "Intruding magma pushes apart and fractures surrounding solid rock; the entire crust does not become liquid.",
+            "New crust forms at the spreading axis and moves outward; brittle shallow faulting differs from hot deep-rock flow."
+          ]
+        }
+      ]
+    ],
+    "duration": 98.39000000000001,
+    "timingStatus": "Aligned to the selected narration word intervals; auditory acceptance pending.",
+    "captions": [
+      {
+        "start": 0.3,
+        "end": 4.7,
+        "text": "Most earthquakes cluster along plate boundaries, but some occur within plates."
+      },
+      {
+        "start": 4.8999999999999995,
+        "end": 7.9799999999999995,
+        "text": "A continental coast is not automatically a plate boundary:"
+      },
+      {
+        "start": 8.360000000000001,
+        "end": 12.040000000000001,
+        "text": "Atlantic passive margins differ from the active western margins of the"
+      },
+      {
+        "start": 12.040000000000001,
+        "end": 16.64,
+        "text": "Americas. The supplied maps use yellow for 0–70 km, green for"
+      },
+      {
+        "start": 16.64,
+        "end": 21.64,
+        "text": "70–300 km, and red for depths greater than 300 km."
+      },
+      {
+        "start": 21.900000000000002,
+        "end": 25.6,
+        "text": "These colors are the source map legend, not the lab’s reading-emphasis"
+      },
+      {
+        "start": 25.6,
+        "end": 28.6,
+        "text": "categories. Mid-ocean ridges have shallow earthquakes."
+      },
+      {
+        "start": 28.6,
+        "end": 33.48,
+        "text": "Subduction zones combine shallow, intermediate, and deep earthquakes along a descending"
+      },
+      {
+        "start": 33.48,
+        "end": 33.879999999999995,
+        "text": "slab."
+      },
+      {
+        "start": 34.7,
+        "end": 37.620000000000005,
+        "text": "Start near the trench and follow the sequence from shallow to"
+      },
+      {
+        "start": 37.620000000000005,
+        "end": 41.580000000000005,
+        "text": "deeper earthquakes. That depth progression traces the inclined slab;"
+      },
+      {
+        "start": 41.86,
+        "end": 43.96,
+        "text": "the deepest dots do not mark the trench."
+      },
+      {
+        "start": 44.34,
+        "end": 48.120000000000005,
+        "text": "Near Japan the supplied pattern deepens westward, so the Pacific slab"
+      },
+      {
+        "start": 48.120000000000005,
+        "end": 53.0,
+        "text": "descends toward the west. Beneath western South America the pattern deepens"
+      },
+      {
+        "start": 53.0,
+        "end": 55.68000000000001,
+        "text": "eastward, so the slab descends beneath the continent."
+      },
+      {
+        "start": 55.980000000000004,
+        "end": 59.58,
+        "text": "A map plots epicenters at the surface and uses color to"
+      },
+      {
+        "start": 59.58,
+        "end": 63.68000000000001,
+        "text": "encode hypocentral depth. A cross section makes the inclined earthquake zone"
+      },
+      {
+        "start": 63.68000000000001,
+        "end": 64.46000000000001,
+        "text": "easier to see."
+      },
+      {
+        "start": 65.38000000000001,
+        "end": 69.36000000000001,
+        "text": "The Mediterranean-to-Asia belt includes continental collision and other convergence."
+      },
+      {
+        "start": 69.72000000000001,
+        "end": 72.82000000000001,
+        "text": "Eastern Africa has a diffuse rift-related seismic zone."
+      },
+      {
+        "start": 73.28000000000002,
+        "end": 76.50000000000001,
+        "text": "Low-seismicity interiors separate many active belts."
+      },
+      {
+        "start": 76.94000000000001,
+        "end": 79.86000000000001,
+        "text": "The Aleutians mark subduction south of Alaska;"
+      },
+      {
+        "start": 80.24000000000001,
+        "end": 82.72000000000001,
+        "text": "the San Andreas marks continental transform motion."
+      },
+      {
+        "start": 83.16000000000001,
+        "end": 87.04,
+        "text": "Hawaii illustrates volcanic and associated seismic activity within a plate."
+      },
+      {
+        "start": 87.4,
+        "end": 90.24000000000001,
+        "text": "Shallow seismicity follows the Mid-Atlantic Ridge."
+      },
+      {
+        "start": 90.58000000000001,
+        "end": 95.10000000000001,
+        "text": "Broad ocean interiors and passive margins generally have less seismicity, which"
+      },
+      {
+        "start": 95.10000000000001,
+        "end": 96.94000000000001,
+        "text": "does not mean zero possible earthquakes."
+      }
+    ],
+    "audio": "../../videos/chapter12/12-03.mp4"
+  },
+  {
+    "n": 4,
+    "title": "Earthquake mechanisms in different tectonic settings",
+    "logline": "Plate motion creates different earthquake mechanisms at ridges, convergent margins and continental faults.",
+    "beats": [
+      [
+        "Spreading ridges and oceanic transforms",
+        "ridge",
+        [
+          2,
+          3,
+          4,
+          5
+        ],
+        "New oceanic lithosphere is hot and thin. Only its relatively shallow, cool part behaves brittlely, so ridge earthquakes are generally shallow and small to moderate. Normal faulting and magma entering fissures generate earthquakes along the ridge axis. Strike-slip motion occurs on transform faults connecting adjacent ridge segments. As a plate moves away from the ridge, cooling, subsidence, and bending can activate faults away from the axis. Not every ridge-system earthquake lies on the spreading axis.",
+        [
+          "12.4-p2-Im1.png",
+          "12.4-p2-Im1.png",
+          "12.4-p2-Im1.png"
+        ],
+        {
+          "start": 0,
+          "end": 28.46004166666667
+        },
+        {
+          "takeaway": "New oceanic material forms near an axis and moves away; shallow faulting is separate from hot deeper flow.",
+          "cueTimes": [
+            0,
+            14.56,
+            18.88
+          ],
+          "modes": [
+            "ridge",
+            "transform",
+            "normal"
+          ],
+          "takeaways": [
+            "New crust forms at the spreading axis and moves outward; brittle shallow faulting differs from hot deep-rock flow.",
+            "Blocks move horizontally past one another, offsetting a marker that originally crossed the fault.",
+            "Extension lowers the hanging wall relative to the footwall along an inclined fault."
+          ]
+        }
+      ],
+      [
+        "Subduction produces several earthquake sources",
+        "subduct",
+        [
+          2,
+          3,
+          4,
+          5
+        ],
+        "Bending before the trench can fracture the approaching plate. Thrust faults in the accretionary prism accommodate scraped-off material. The megathrust is the plate-contact thrust fault. Large slip and vertical seafloor displacement can produce destructive tsunamis; not every subduction earthquake produces one. The cold descending slab supports intermediate and deep earthquakes, approaching 700 km in the supplied chapter. This deep slab seismicity is distinct from a shallow megathrust rupture. The overriding plate can also have thrusting, magma movement, and volcanic seismicity.",
+        [
+          "12.4-p3-Im3.png"
+        ],
+        {
+          "start": 28.980000000000004,
+          "end": 64.02000000000001
+        },
+        {
+          "takeaway": "A coherent plate descends under a continent; distinguish shallow interface slip from deep slab seismicity.",
+          "cueTimes": [
+            28.980000000000004
+          ],
+          "modes": [
+            "subduct"
+          ]
+        }
+      ],
+      [
+        "Collisions and continental interiors",
+        "faults",
+        [
+          2,
+          3,
+          4,
+          5
+        ],
+        "Continental collision spreads deformation across a broad zone. Thrusting near the boundary and reactivation of faults inside either plate can produce earthquakes; strike-slip and normal motion can also accommodate regional deformation. Continental rifts commonly generate normal-fault earthquakes. Continental transform faults generate mostly shallow strike-slip earthquakes, sometimes large ones. Magma intrusion and renewed stress on old faults provide intraplate mechanisms. New Madrid illustrates that distance from a modern boundary does not make a continent’s interior immune.",
+        [
+          "collision-locations.png",
+          "continental-locations.png",
+          "continental-locations.png",
+          "continental-locations.png",
+          "continental-locations.png"
+        ],
+        {
+          "start": 64.36000000000001,
+          "end": 98.87000000000002
+        },
+        {
+          "takeaway": "Separate normal, reverse, and strike-slip examples move along their own planes; reset clearly between examples.",
+          "cueTimes": [
+            64.36000000000001,
+            77.82000000000002,
+            81.50000000000001,
+            87.24000000000001,
+            91.64000000000001
+          ],
+          "modes": [
+            "collision",
+            "normal",
+            "transform",
+            "magma",
+            "reactivate"
+          ],
+          "takeaways": [
+            "Continental shortening activates thrust and reverse faults across a broad collision zone.",
+            "Extension lowers the hanging wall relative to the footwall along an inclined fault.",
+            "Blocks move horizontally past one another, offsetting a marker that originally crossed the fault.",
+            "Intruding magma pushes apart and fractures surrounding solid rock; the entire crust does not become liquid.",
+            "Renewed stress on an older fault can cause slip within a plate, away from an active plate boundary."
+          ]
+        }
+      ]
+    ],
+    "duration": 98.87000000000002,
+    "timingStatus": "Aligned to the selected narration word intervals; auditory acceptance pending.",
+    "captions": [
+      {
+        "start": 0.3,
+        "end": 2.6599999999999997,
+        "text": "New oceanic lithosphere is hot and thin."
+      },
+      {
+        "start": 2.94,
+        "end": 7.12,
+        "text": "Only its relatively shallow, cool part behaves brittlely, so ridge earthquakes"
+      },
+      {
+        "start": 7.12,
+        "end": 9.260000000000002,
+        "text": "are generally shallow and small to moderate."
+      },
+      {
+        "start": 9.760000000000002,
+        "end": 13.64,
+        "text": "Normal faulting and magma entering fissures generate earthquakes along the ridge"
+      },
+      {
+        "start": 13.64,
+        "end": 18.88,
+        "text": "axis. Strike-slip motion occurs on transform faults connecting adjacent ridge segments."
+      },
+      {
+        "start": 18.88,
+        "end": 22.42,
+        "text": "As a plate moves away from the ridge, cooling, subsidence, and"
+      },
+      {
+        "start": 22.42,
+        "end": 24.78,
+        "text": "bending can activate faults away from the axis."
+      },
+      {
+        "start": 24.78,
+        "end": 28.16,
+        "text": "Not every ridge-system earthquake lies on the spreading axis."
+      },
+      {
+        "start": 28.980000000000004,
+        "end": 32.260000000000005,
+        "text": "Bending before the trench can fracture the approaching plate."
+      },
+      {
+        "start": 32.440000000000005,
+        "end": 36.7,
+        "text": "Thrust faults in the accretionary prism accommodate scraped-off material."
+      },
+      {
+        "start": 36.940000000000005,
+        "end": 39.96000000000001,
+        "text": "The megathrust is the plate-contact thrust fault."
+      },
+      {
+        "start": 40.1,
+        "end": 44.1,
+        "text": "Large slip and vertical seafloor displacement can produce destructive tsunamis;"
+      },
+      {
+        "start": 44.38,
+        "end": 46.84,
+        "text": "not every subduction earthquake produces one."
+      },
+      {
+        "start": 47.02,
+        "end": 51.92,
+        "text": "The cold descending slab supports intermediate and deep earthquakes, approaching 700"
+      },
+      {
+        "start": 51.92,
+        "end": 53.7,
+        "text": "km in the supplied chapter."
+      },
+      {
+        "start": 53.88,
+        "end": 58.10000000000001,
+        "text": "This deep slab seismicity is distinct from a shallow megathrust rupture."
+      },
+      {
+        "start": 58.10000000000001,
+        "end": 62.78,
+        "text": "The overriding plate can also have thrusting, magma movement, and volcanic"
+      },
+      {
+        "start": 62.78,
+        "end": 63.440000000000005,
+        "text": "seismicity."
+      },
+      {
+        "start": 64.36000000000001,
+        "end": 67.78000000000002,
+        "text": "Continental collision spreads deformation across a broad zone."
+      },
+      {
+        "start": 67.78000000000002,
+        "end": 72.20000000000002,
+        "text": "Thrusting near the boundary and reactivation of faults inside either plate"
+      },
+      {
+        "start": 72.20000000000002,
+        "end": 76.78000000000002,
+        "text": "can produce earthquakes; strike-slip and normal motion can also accommodate regional"
+      },
+      {
+        "start": 76.78000000000002,
+        "end": 81.18,
+        "text": "deformation. Continental rifts commonly generate normal-fault earthquakes."
+      },
+      {
+        "start": 81.50000000000001,
+        "end": 86.98000000000002,
+        "text": "Continental transform faults generate mostly shallow strike-slip earthquakes, sometimes large ones."
+      },
+      {
+        "start": 87.24000000000001,
+        "end": 91.64000000000001,
+        "text": "Magma intrusion and renewed stress on old faults provide intraplate mechanisms."
+      },
+      {
+        "start": 91.64000000000001,
+        "end": 95.64000000000001,
+        "text": "New Madrid illustrates that distance from a modern boundary does not"
+      },
+      {
+        "start": 95.64000000000001,
+        "end": 97.42000000000002,
+        "text": "make a continent’s interior immune."
+      }
+    ],
+    "audio": "../../videos/chapter12/12-04.mp4"
+  },
+  {
+    "n": 5,
+    "title": "Seismic waves, particle motion, and seismograms",
+    "logline": "Particle motion and wave speed determine what a seismogram records.",
+    "beats": [
+      [
+        "Separate wave travel from particle motion",
+        "bodyWaves",
+        [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "A seismic wave transfers energy through material. Individual particles oscillate near their positions; they do not travel all the way from the earthquake to a recording station. P-waves are compressional body waves. Particle motion is parallel to wave propagation, and these waves travel through solids and liquids. They arrive before S-waves along comparable paths. S-waves are shear body waves. Particle motion is perpendicular to propagation. They travel through solids but cannot propagate as shear waves through liquid.",
+        [
+          "12.5-p3-Im3.png",
+          "12.5-p3-Im4.png"
+        ],
+        {
+          "start": 0,
+          "end": 28.78
+        },
+        {
+          "takeaway": "Particle arrays show compression parallel to travel and shear perpendicular to travel; particles oscillate rather than migrate.",
+          "cueTimes": [
+            0,
+            20.3
+          ],
+          "modes": [
+            "bodyWaves",
+            "bodyWaves"
+          ]
+        }
+      ],
+      [
+        "Recognize the two surface waves",
+        "surfaceWaves",
+        [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "Love waves produce horizontal side-to-side motion perpendicular to their travel direction. Rayleigh waves produce rolling, elliptical motion with vertical and horizontal components. Both are surface-wave types, distinct from P and S body waves. Surface waves can cause destructive building motion; structural response also depends on wave period and building properties. Amplitude is the size of the displacement. Period is the time for one full cycle. Resonance can intensify shaking when the forcing period matches a structure’s natural response.",
+        [
+          "12.5-p4-Im6.png",
+          "12.5-p4-Im5.png",
+          "12.5-p7-Im11.png"
+        ],
+        {
+          "start": 29.36,
+          "end": 61.68
+        },
+        {
+          "takeaway": "Surface particles execute transverse horizontal and rolling elliptical paths in separate labeled comparisons.",
+          "cueTimes": [
+            29.36,
+            35.379999999999995,
+            51.480000000000004
+          ],
+          "modes": [
+            "surfaceWaves",
+            "surfaceWaves",
+            "surfaceWaves"
+          ]
+        }
+      ],
+      [
+        "Record arrivals without confusing instrument and record",
+        "seismometer",
+        [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "A seismometer senses ground motion. In the mechanical illustration the frame moves with the ground while a suspended mass resists motion through inertia; their relative movement makes a record. Three perpendicular components record north–south, east–west, and vertical motion. A seismogram is the resulting plot of ground motion against time, not the instrument itself. In the supplied record, background vibrations precede P-wave arrival, then S-wave arrival, then larger surface-wave motion. Increasing source distance generally increases the P–S interval.",
+        [
+          "12.5-p5-Im7.png",
+          "12.5-p7-Im10.png"
+        ],
+        {
+          "start": 62.38,
+          "end": 94.63
+        },
+        {
+          "takeaway": "A frame moves with ground while an inertial suspended mass lags; their relative motion draws a time trace.",
+          "cueTimes": [
+            62.38,
+            77.52000000000001
+          ],
+          "modes": [
+            "seismometer",
+            "seismometer"
+          ]
+        }
+      ]
+    ],
+    "duration": 94.63,
+    "timingStatus": "Aligned to the selected narration word intervals; auditory acceptance pending.",
+    "captions": [
+      {
+        "start": 0.3,
+        "end": 3.0799999999999996,
+        "text": "A seismic wave transfers energy through material."
+      },
+      {
+        "start": 3.32,
+        "end": 5.8999999999999995,
+        "text": "Individual particles oscillate near their positions;"
+      },
+      {
+        "start": 5.8999999999999995,
+        "end": 8.08,
+        "text": "they do not travel all the way from the earthquake to"
+      },
+      {
+        "start": 8.08,
+        "end": 11.520000000000001,
+        "text": "a recording station. P-waves are compressional body waves."
+      },
+      {
+        "start": 11.72,
+        "end": 15.620000000000001,
+        "text": "Particle motion is parallel to wave propagation, and these waves travel"
+      },
+      {
+        "start": 15.620000000000001,
+        "end": 19.98,
+        "text": "through solids and liquids. They arrive before S-waves along comparable paths."
+      },
+      {
+        "start": 20.3,
+        "end": 21.76,
+        "text": "S-waves are shear body waves."
+      },
+      {
+        "start": 21.92,
+        "end": 24.3,
+        "text": "Particle motion is perpendicular to propagation."
+      },
+      {
+        "start": 24.64,
+        "end": 28.18,
+        "text": "They travel through solids but cannot propagate as shear waves through"
+      },
+      {
+        "start": 28.18,
+        "end": 28.54,
+        "text": "liquid."
+      },
+      {
+        "start": 29.36,
+        "end": 34.86,
+        "text": "Love waves produce horizontal side-to-side motion perpendicular to their travel direction."
+      },
+      {
+        "start": 35.379999999999995,
+        "end": 40.3,
+        "text": "Rayleigh waves produce rolling, elliptical motion with vertical and horizontal components."
+      },
+      {
+        "start": 40.58,
+        "end": 44.74,
+        "text": "Both are surface-wave types, distinct from P and S body waves."
+      },
+      {
+        "start": 44.94,
+        "end": 47.42,
+        "text": "Surface waves can cause destructive building motion;"
+      },
+      {
+        "start": 47.78,
+        "end": 51.120000000000005,
+        "text": "structural response also depends on wave period and building properties."
+      },
+      {
+        "start": 51.480000000000004,
+        "end": 53.66,
+        "text": "Amplitude is the size of the displacement."
+      },
+      {
+        "start": 53.92,
+        "end": 56.06,
+        "text": "Period is the time for one full cycle."
+      },
+      {
+        "start": 56.06,
+        "end": 60.58,
+        "text": "Resonance can intensify shaking when the forcing period matches a structure’s"
+      },
+      {
+        "start": 60.58,
+        "end": 61.46,
+        "text": "natural response."
+      },
+      {
+        "start": 62.38,
+        "end": 64.38,
+        "text": "A seismometer senses ground motion."
+      },
+      {
+        "start": 64.60000000000001,
+        "end": 67.96000000000001,
+        "text": "In the mechanical illustration the frame moves with the ground while"
+      },
+      {
+        "start": 67.96000000000001,
+        "end": 70.34,
+        "text": "a suspended mass resists motion through inertia;"
+      },
+      {
+        "start": 70.64,
+        "end": 72.5,
+        "text": "their relative movement makes a record."
+      },
+      {
+        "start": 72.98,
+        "end": 77.3,
+        "text": "Three perpendicular components record north–south, east–west, and vertical motion."
+      },
+      {
+        "start": 77.52000000000001,
+        "end": 81.12,
+        "text": "A seismogram is the resulting plot of ground motion against time,"
+      },
+      {
+        "start": 81.28,
+        "end": 85.84,
+        "text": "not the instrument itself. In the supplied record, background vibrations precede"
+      },
+      {
+        "start": 85.84,
+        "end": 89.7,
+        "text": "P-wave arrival, then S-wave arrival, then larger surface-wave motion."
+      },
+      {
+        "start": 89.7,
+        "end": 93.18,
+        "text": "Increasing source distance generally increases the P–S interval."
+      }
+    ],
+    "audio": "../../videos/chapter12/12-05.mp4"
+  },
+  {
+    "n": 6,
+    "title": "Locate an epicenter and distinguish magnitude from intensity",
+    "logline": "Arrival differences locate the source; amplitude and moment estimate size, while intensity describes local effects.",
+    "beats": [
+      [
+        "Turn arrival differences into distance",
+        "triangulate",
+        [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "Measure the interval between the first P and S arrivals on each seismogram. A larger P–S interval generally indicates a more distant source; use the supplied travel-time relation rather than inventing one universal speed. In the example, ISCO has the shortest interval, DUG is intermediate, and WUAZ has the longest. The plotted distance is a radius around a station, not a direction toward the source. Draw distance circles around at least three stations. Their shared intersection locates the epicenter in the simplified exercise. Real networks use many records and more detailed models.",
+        [
+          "12.6-p3-Im3.png",
+          "12.6-p4-Im4.png",
+          "12.6-p3-Im3.png",
+          "12.6-p5-Im5.png"
+        ],
+        {
+          "start": 0,
+          "end": 38.54
+        },
+        {
+          "takeaway": "Travel-time observations build three radius circles around fixed stations; their common region locates a fixed source.",
+          "cueTimes": [
+            0,
+            9.38,
+            14.42,
+            21.92
+          ],
+          "modes": [
+            "triangulate",
+            "triangulate",
+            "triangulate",
+            "triangulate"
+          ]
+        }
+      ],
+      [
+        "Read the local-magnitude nomograph",
+        "magnitude",
+        [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "Measure the maximum S-wave amplitude in the chapter’s local-magnitude exercise and use the distance inferred from the arrival interval. Connect distance and amplitude on the outer scales. The line crosses the middle magnitude scale at the estimated local magnitude. Separate station measurements should converge on one event magnitude after accounting for distance. A one-unit magnitude increase corresponds to ten times the ground-motion amplitude in this scale and approximately 32 times the energy. Two magnitude units correspond to roughly 1,000 times the energy, not 64.",
+        [
+          "12.6-p7-Im7.png"
+        ],
+        {
+          "start": 39.1,
+          "end": 69.74000000000001
+        },
+        {
+          "takeaway": "Distance-corrected amplitude traces and their nomograph connection build one event estimate; separate 10× amplitude from ~32× energy.",
+          "cueTimes": [
+            39.1
+          ],
+          "modes": [
+            "magnitude"
+          ]
+        }
+      ],
+      [
+        "Keep three measurements distinct",
+        "intensity",
+        [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "Local magnitude uses an amplitude-and-distance relationship. Moment magnitude uses seismic moment, related to the area that slipped, amount of slip, and rigidity; it is useful for large earthquakes. Modified Mercalli intensity describes observed shaking and damage at a place, using Roman numerals I–XII. Different sites can have different intensities during one earthquake. Local ground conditions and building vulnerability influence damage. The site with the greatest damage is useful evidence, but damage alone does not identify the precise hypocenter or replace instrument data.",
+        [
+          "12.6-p8-Im8.png"
+        ],
+        {
+          "start": 70.18,
+          "end": 105.03
+        },
+        {
+          "takeaway": "The same incident wave drives different responses on firm and soft foundations; keep event magnitude fixed.",
+          "cueTimes": [
+            70.18
+          ],
+          "modes": [
+            "intensity"
+          ]
+        }
+      ]
+    ],
+    "duration": 105.03,
+    "timingStatus": "Aligned to the selected narration word intervals; auditory acceptance pending.",
+    "captions": [
+      {
+        "start": 0.3,
+        "end": 3.6799999999999997,
+        "text": "Measure the interval between the first P and S arrivals on"
+      },
+      {
+        "start": 3.6799999999999997,
+        "end": 8.66,
+        "text": "each seismogram. A larger P–S interval generally indicates a more distant"
+      },
+      {
+        "start": 8.66,
+        "end": 13.700000000000001,
+        "text": "source; use the supplied travel-time relation rather than inventing one universal"
+      },
+      {
+        "start": 13.700000000000001,
+        "end": 18.46,
+        "text": "speed. In the example, ISCO has the shortest interval, DUG is"
+      },
+      {
+        "start": 18.46,
+        "end": 21.66,
+        "text": "intermediate, and WUAZ has the longest."
+      },
+      {
+        "start": 21.92,
+        "end": 25.46,
+        "text": "The plotted distance is a radius around a station, not a"
+      },
+      {
+        "start": 25.46,
+        "end": 30.1,
+        "text": "direction toward the source. Draw distance circles around at least three"
+      },
+      {
+        "start": 30.1,
+        "end": 34.959999999999994,
+        "text": "stations. Their shared intersection locates the epicenter in the simplified exercise."
+      },
+      {
+        "start": 35.26,
+        "end": 38.279999999999994,
+        "text": "Real networks use many records and more detailed models."
+      },
+      {
+        "start": 39.1,
+        "end": 43.2,
+        "text": "Measure the maximum S-wave amplitude in the chapter’s local-magnitude exercise and"
+      },
+      {
+        "start": 43.2,
+        "end": 45.4,
+        "text": "use the distance inferred from the arrival interval."
+      },
+      {
+        "start": 45.620000000000005,
+        "end": 47.980000000000004,
+        "text": "Connect distance and amplitude on the outer scales."
+      },
+      {
+        "start": 48.24,
+        "end": 51.24,
+        "text": "The line crosses the middle magnitude scale at the estimated local"
+      },
+      {
+        "start": 51.24,
+        "end": 55.46,
+        "text": "magnitude. Separate station measurements should converge on one event magnitude after"
+      },
+      {
+        "start": 55.46,
+        "end": 59.480000000000004,
+        "text": "accounting for distance. A one-unit magnitude increase corresponds to ten times"
+      },
+      {
+        "start": 59.480000000000004,
+        "end": 63.58,
+        "text": "the ground-motion amplitude in this scale and approximately 32 times the"
+      },
+      {
+        "start": 63.58,
+        "end": 68.46000000000001,
+        "text": "energy. Two magnitude units correspond to roughly 1,000 times the energy,"
+      },
+      {
+        "start": 68.66,
+        "end": 69.26,
+        "text": "not 64."
+      },
+      {
+        "start": 70.18,
+        "end": 73.66000000000001,
+        "text": "Local magnitude uses an amplitude-and-distance relationship."
+      },
+      {
+        "start": 73.92,
+        "end": 78.26,
+        "text": "Moment magnitude uses seismic moment, related to the area that slipped,"
+      },
+      {
+        "start": 78.42,
+        "end": 79.78,
+        "text": "amount of slip, and rigidity;"
+      },
+      {
+        "start": 80.04,
+        "end": 81.94000000000001,
+        "text": "it is useful for large earthquakes."
+      },
+      {
+        "start": 82.46000000000001,
+        "end": 86.52000000000001,
+        "text": "Modified Mercalli intensity describes observed shaking and damage at a place,"
+      },
+      {
+        "start": 86.52000000000001,
+        "end": 91.32000000000001,
+        "text": "using Roman numerals I–XII. Different sites can have different intensities during"
+      },
+      {
+        "start": 91.32000000000001,
+        "end": 96.0,
+        "text": "one earthquake. Local ground conditions and building vulnerability influence damage."
+      },
+      {
+        "start": 96.24000000000001,
+        "end": 99.58000000000001,
+        "text": "The site with the greatest damage is useful evidence, but damage"
+      },
+      {
+        "start": 99.58000000000001,
+        "end": 103.58000000000001,
+        "text": "alone does not identify the precise hypocenter or replace instrument data."
+      }
+    ],
+    "audio": "../../videos/chapter12/12-06.mp4"
+  },
+  {
+    "n": 7,
+    "title": "Shaking, ground failure, and secondary hazards",
+    "logline": "Ground conditions and secondary failures turn shaking into different local hazards.",
+    "beats": [
+      [
+        "Why the same earthquake causes different damage",
+        "resonance",
+        [
+          2,
+          3,
+          4,
+          5
+        ],
+        "Ground motion can bend, shake, or collapse structures. Performance depends on design, connections, materials, and the local shaking, not simply whether a building is made of one named material. Loose sediment can amplify motion relative to firm bedrock. A structure’s natural period can also interact with the shaking, so proximity to a fault alone does not explain every damaged building. Ground rupture can offset roads and foundations. On steep slopes, shaking can trigger landslides and rock falls that threaten sites beyond the immediate fault trace.",
+        [
+          "12.7-p2-Im2.png",
+          "12.7-p2-Im1.png",
+          "12.7-p2-Im1.png"
+        ],
+        {
+          "start": 0,
+          "end": 31.26
+        },
+        {
+          "takeaway": "Ground oscillation drives buildings with different natural periods; a resonant building sways more without implying guaranteed collapse.",
+          "cueTimes": [
+            0,
+            11.440000000000001,
+            25.04
+          ],
+          "modes": [
+            "resonance",
+            "intensity",
+            "landslide"
+          ],
+          "takeaways": [
+            "Shaking drives buildings with different natural periods; ground conditions and structural response affect the resulting sway.",
+            "The same earthquake produces different local responses on firm rock and soft sediment; magnitude remains one event value.",
+            "An unstable mass moves downslope and leaves debris below. A slide entering water can also displace the water."
+          ]
+        }
+      ],
+      [
+        "Liquefaction and aftershocks",
+        "liquefaction",
+        [
+          2,
+          3,
+          4,
+          5
+        ],
+        "Liquefaction occurs when shaking causes loose, water-saturated sediment to lose much of its strength. Buildings can settle or tilt as their support fails; the sediment has not melted into magma. Aftershocks follow stress changes caused by the main earthquake. They can damage structures already weakened by the first shock, even when their magnitudes are smaller. Both foundation conditions and structural condition matter after the main shock. A building that remains standing is not automatically undamaged or safe.",
+        [
+          "12.7-p3-Im3.png"
+        ],
+        {
+          "start": 31.8,
+          "end": 60.120000000000005
+        },
+        {
+          "takeaway": "A saturated grain framework loses supporting contacts as pore pressure rises; a foundation settles while grains remain solid.",
+          "cueTimes": [
+            31.8
+          ],
+          "modes": [
+            "liquefaction"
+          ]
+        }
+      ],
+      [
+        "Damage can continue after shaking",
+        "landslide",
+        [
+          2,
+          3,
+          4,
+          5
+        ],
+        "Broken gas lines can feed fires; broken water mains can hinder firefighting. Dam failures and land subsidence can cause flooding. Underwater displacement can generate a tsunami. Hazard maps, stronger construction, base isolation, secured utilities, and emergency planning can reduce losses. They cannot make an area completely free of earthquake risk. Current safety guidance: Drop, Cover, and Hold On under sturdy nearby furniture when possible. The supplied course material includes doorway advice; current USGS guidance rejects the doorway as the preferred refuge. Avoid open flames when gas lines may be damaged.",
+        [
+          "12.7-p4-Im4.png",
+          "12.7-p2-Im1.png",
+          "12.7-p5-Im8.png"
+        ],
+        {
+          "start": 60.940000000000005,
+          "end": 96.89
+        },
+        {
+          "takeaway": "A coherent unstable mass breaks loose and moves downslope into a valley; deposited debris persists.",
+          "cueTimes": [
+            60.940000000000005,
+            68.9,
+            71.7
+          ],
+          "modes": [
+            "fire",
+            "tsunami",
+            "resonance"
+          ],
+          "takeaways": [
+            "Fault displacement can break gas lines and start fires; damaged water mains can hinder firefighting.",
+            "Sudden seafloor displacement moves the water column and launches outward-traveling tsunami waves.",
+            "Shaking drives buildings with different natural periods; ground conditions and structural response affect the resulting sway."
+          ]
+        }
+      ]
+    ],
+    "duration": 96.89,
+    "timingStatus": "Aligned to the selected narration word intervals; auditory acceptance pending.",
+    "captions": [
+      {
+        "start": 0.3,
+        "end": 3.5799999999999996,
+        "text": "Ground motion can bend, shake, or collapse structures."
+      },
+      {
+        "start": 3.9,
+        "end": 8.46,
+        "text": "Performance depends on design, connections, materials, and the local shaking, not"
+      },
+      {
+        "start": 8.46,
+        "end": 11.08,
+        "text": "simply whether a building is made of one named material."
+      },
+      {
+        "start": 11.440000000000001,
+        "end": 14.88,
+        "text": "Loose sediment can amplify motion relative to firm bedrock."
+      },
+      {
+        "start": 15.100000000000001,
+        "end": 18.720000000000002,
+        "text": "A structure’s natural period can also interact with the shaking, so"
+      },
+      {
+        "start": 18.720000000000002,
+        "end": 22.14,
+        "text": "proximity to a fault alone does not explain every damaged building."
+      },
+      {
+        "start": 22.400000000000002,
+        "end": 24.7,
+        "text": "Ground rupture can offset roads and foundations."
+      },
+      {
+        "start": 25.04,
+        "end": 28.82,
+        "text": "On steep slopes, shaking can trigger landslides and rock falls that"
+      },
+      {
+        "start": 28.82,
+        "end": 30.98,
+        "text": "threaten sites beyond the immediate fault trace."
+      },
+      {
+        "start": 31.8,
+        "end": 36.54,
+        "text": "Liquefaction occurs when shaking causes loose, water-saturated sediment to lose much"
+      },
+      {
+        "start": 36.54,
+        "end": 40.22,
+        "text": "of its strength. Buildings can settle or tilt as their support"
+      },
+      {
+        "start": 40.22,
+        "end": 42.94,
+        "text": "fails; the sediment has not melted into magma."
+      },
+      {
+        "start": 43.42,
+        "end": 46.44,
+        "text": "Aftershocks follow stress changes caused by the main earthquake."
+      },
+      {
+        "start": 46.7,
+        "end": 50.019999999999996,
+        "text": "They can damage structures already weakened by the first shock, even"
+      },
+      {
+        "start": 50.019999999999996,
+        "end": 51.58,
+        "text": "when their magnitudes are smaller."
+      },
+      {
+        "start": 51.86,
+        "end": 56.04,
+        "text": "Both foundation conditions and structural condition matter after the main shock."
+      },
+      {
+        "start": 56.2,
+        "end": 60.019999999999996,
+        "text": "A building that remains standing is not automatically undamaged or safe."
+      },
+      {
+        "start": 60.940000000000005,
+        "end": 63.160000000000004,
+        "text": "Broken gas lines can feed fires;"
+      },
+      {
+        "start": 63.36000000000001,
+        "end": 65.42,
+        "text": "broken water mains can hinder firefighting."
+      },
+      {
+        "start": 65.72,
+        "end": 68.5,
+        "text": "Dam failures and land subsidence can cause flooding."
+      },
+      {
+        "start": 68.9,
+        "end": 71.12,
+        "text": "Underwater displacement can generate a tsunami."
+      },
+      {
+        "start": 71.7,
+        "end": 76.36,
+        "text": "Hazard maps, stronger construction, base isolation, secured utilities, and emergency planning"
+      },
+      {
+        "start": 76.36,
+        "end": 79.62,
+        "text": "can reduce losses. They cannot make an area completely free of"
+      },
+      {
+        "start": 79.62,
+        "end": 81.74000000000001,
+        "text": "earthquake risk. Current safety guidance:"
+      },
+      {
+        "start": 81.96000000000001,
+        "end": 85.7,
+        "text": "Drop, Cover, and Hold On under sturdy nearby furniture when possible."
+      },
+      {
+        "start": 85.98,
+        "end": 88.58000000000001,
+        "text": "The supplied course material includes doorway advice;"
+      },
+      {
+        "start": 88.78,
+        "end": 92.58000000000001,
+        "text": "current USGS guidance rejects the doorway as the preferred refuge."
+      },
+      {
+        "start": 92.88000000000001,
+        "end": 95.44,
+        "text": "Avoid open flames when gas lines may be damaged."
+      }
+    ],
+    "audio": "../../videos/chapter12/12-07.mp4"
+  },
+  {
+    "n": 8,
+    "title": "North American earthquake examples",
+    "logline": "Compare how tectonic setting, sediment and slope conditions shaped North American earthquake damage.",
+    "beats": [
+      [
+        "Compare tectonic mechanisms",
+        "faults",
+        [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "Alaska in 1964 involved subduction-related thrusting and major tsunami damage. San Francisco in 1906 involved the San Andreas strike-slip system, with shaking and extensive fires. The 1994 Northridge event involved a buried thrust fault. A damaging fault can remain hidden below the surface; absence of an obvious exposed trace is not proof of safety. The 1959 Hebgen Lake event near Yellowstone involved normal faulting. The Madison Canyon landslide buried part of the valley and formed Earthquake Lake; do not relabel the fault mechanism as a volcanic eruption.",
+        [
+          "12.8-p2-Im3.png",
+          "12.8-p2-Im4.png",
+          "12.8-p3-Im5.png",
+          "12.8-p4-Im7.png",
+          "12.8-p4-Im7.png"
+        ],
+        {
+          "start": 0,
+          "end": 34.62
+        },
+        {
+          "takeaway": "Separate normal, reverse, and strike-slip examples move along their own planes; reset clearly between examples.",
+          "cueTimes": [
+            0,
+            5.92,
+            12.100000000000001,
+            22.46,
+            26.84
+          ],
+          "modes": [
+            "subduct",
+            "transform",
+            "reverse",
+            "normal",
+            "landslide"
+          ],
+          "takeaways": [
+            "A coherent oceanic plate descends beneath the overriding plate; interface slip and deep slab earthquakes are distinct.",
+            "Blocks move horizontally past one another, offsetting a marker that originally crossed the fault.",
+            "Compression raises the hanging wall relative to the footwall; shortening occurs along the fault.",
+            "Extension lowers the hanging wall relative to the footwall along an inclined fault.",
+            "An unstable mass moves downslope and leaves debris below. A slide entering water can also displace the water."
+          ]
+        }
+      ],
+      [
+        "Local geology changes the result",
+        "resonance",
+        [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "The 1985 Mexico earthquake originated in a coastal subduction setting. Mexico City suffered severe damage far from the source because lake sediments and basin geometry amplified the shaking. The event source and the damaged city are different locations. A city need not sit directly on the ruptured plate boundary to experience destructive shaking. San Francisco’s fires and Mexico City’s sediment response illustrate different pathways from one earthquake to widespread destruction. Magnitude alone does not determine the final losses.",
+        [
+          "12.8-p3-Im6.png",
+          "12.8-p2-Im4.png"
+        ],
+        {
+          "start": 35.04,
+          "end": 66.0
+        },
+        {
+          "takeaway": "Ground oscillation drives buildings with different natural periods; a resonant building sways more without implying guaranteed collapse.",
+          "cueTimes": [
+            35.04,
+            55.68
+          ],
+          "modes": [
+            "resonance",
+            "fire"
+          ],
+          "takeaways": [
+            "Shaking drives buildings with different natural periods; ground conditions and structural response affect the resulting sway.",
+            "Fault displacement can break gas lines and start fires; damaged water mains can hinder firefighting."
+          ]
+        }
+      ],
+      [
+        "Intraplate earthquakes still matter",
+        "reactivate",
+        [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "The 1811–1812 New Madrid sequence reactivated an ancient zone of weakness within North America. Modern stress can act on old structures far from a present plate boundary. Charleston experienced a damaging earthquake in 1886. The supplied chapter treats its exact tectonic cause as debated; do not turn that uncertainty into a settled fault mechanism. Use the historical examples to connect setting, ground conditions, and damage. Death tolls, estimated magnitudes, and rupture lengths differ among records; the lab prioritizes the supported mechanisms over disputed exact totals.",
+        [
+          "12.8-p5-Im8.png"
+        ],
+        {
+          "start": 66.36,
+          "end": 102.13000000000001
+        },
+        {
+          "takeaway": "A preexisting fault in a continental block locks, accumulates stress, and slips without a new plate boundary.",
+          "cueTimes": [
+            66.36
+          ],
+          "modes": [
+            "reactivate"
+          ]
+        }
+      ]
+    ],
+    "duration": 102.13000000000001,
+    "timingStatus": "Aligned to the selected narration word intervals; auditory acceptance pending.",
+    "captions": [
+      {
+        "start": 0.3,
+        "end": 5.7,
+        "text": "Alaska in 1964 involved subduction-related thrusting and major tsunami damage."
+      },
+      {
+        "start": 5.92,
+        "end": 10.180000000000001,
+        "text": "San Francisco in 1906 involved the San Andreas strike-slip system, with"
+      },
+      {
+        "start": 10.180000000000001,
+        "end": 14.64,
+        "text": "shaking and extensive fires. The 1994 Northridge event involved a buried"
+      },
+      {
+        "start": 14.64,
+        "end": 18.5,
+        "text": "thrust fault. A damaging fault can remain hidden below the surface;"
+      },
+      {
+        "start": 18.8,
+        "end": 22.18,
+        "text": "absence of an obvious exposed trace is not proof of safety."
+      },
+      {
+        "start": 22.46,
+        "end": 26.720000000000002,
+        "text": "The 1959 Hebgen Lake event near Yellowstone involved normal faulting."
+      },
+      {
+        "start": 26.84,
+        "end": 30.28,
+        "text": "The Madison Canyon landslide buried part of the valley and formed"
+      },
+      {
+        "start": 30.28,
+        "end": 33.919999999999995,
+        "text": "Earthquake Lake; do not relabel the fault mechanism as a volcanic"
+      },
+      {
+        "start": 33.919999999999995,
+        "end": 34.22,
+        "text": "eruption."
+      },
+      {
+        "start": 35.04,
+        "end": 39.94,
+        "text": "The 1985 Mexico earthquake originated in a coastal subduction setting."
+      },
+      {
+        "start": 40.22,
+        "end": 43.94,
+        "text": "Mexico City suffered severe damage far from the source because lake"
+      },
+      {
+        "start": 43.94,
+        "end": 47.04,
+        "text": "sediments and basin geometry amplified the shaking."
+      },
+      {
+        "start": 47.32,
+        "end": 50.36,
+        "text": "The event source and the damaged city are different locations."
+      },
+      {
+        "start": 50.62,
+        "end": 53.519999999999996,
+        "text": "A city need not sit directly on the ruptured plate boundary"
+      },
+      {
+        "start": 53.519999999999996,
+        "end": 58.32,
+        "text": "to experience destructive shaking. San Francisco’s fires and Mexico City’s sediment"
+      },
+      {
+        "start": 58.32,
+        "end": 62.5,
+        "text": "response illustrate different pathways from one earthquake to widespread destruction."
+      },
+      {
+        "start": 62.5,
+        "end": 65.44,
+        "text": "Magnitude alone does not determine the final losses."
+      },
+      {
+        "start": 66.36,
+        "end": 72.0,
+        "text": "The 1811–1812 New Madrid sequence reactivated an ancient zone of weakness"
+      },
+      {
+        "start": 72.0,
+        "end": 75.8,
+        "text": "within North America. Modern stress can act on old structures far"
+      },
+      {
+        "start": 75.8,
+        "end": 77.12,
+        "text": "from a present plate boundary."
+      },
+      {
+        "start": 77.6,
+        "end": 80.8,
+        "text": "Charleston experienced a damaging earthquake in 1886."
+      },
+      {
+        "start": 81.08,
+        "end": 84.8,
+        "text": "The supplied chapter treats its exact tectonic cause as debated;"
+      },
+      {
+        "start": 85.12,
+        "end": 87.94,
+        "text": "do not turn that uncertainty into a settled fault mechanism."
+      },
+      {
+        "start": 88.22,
+        "end": 92.14,
+        "text": "Use the historical examples to connect setting, ground conditions, and damage."
+      },
+      {
+        "start": 92.14,
+        "end": 96.4,
+        "text": "Death tolls, estimated magnitudes, and rupture lengths differ among records;"
+      },
+      {
+        "start": 96.4,
+        "end": 100.68,
+        "text": "the lab prioritizes the supported mechanisms over disputed exact totals."
+      }
+    ],
+    "audio": "../../videos/chapter12/12-08.mp4"
+  },
+  {
+    "n": 9,
+    "title": "Compare recent destructive earthquakes",
+    "logline": "Trace the causes of damage in Tohoku, Haiti and Turkey–Syria without equating magnitude with losses.",
+    "beats": [
+      [
+        "Tohoku: megathrust slip and tsunami",
+        "tsunami",
+        [
+          2,
+          3,
+          5,
+          6
+        ],
+        "The March 2011 Tohoku earthquake occurred on the subduction interface offshore of northeastern Japan. A large rupture displaced the seafloor and generated a destructive tsunami. The tsunami inundated coastal communities and damaged power and cooling systems at Fukushima. This links a geological event to cascading infrastructure failure. Aftershocks outline part of the affected fault region and can damage weakened structures. A tsunami forecast map shows modeled wave amplitudes, not a direct map of earthquake magnitudes.",
+        [
+          "12.9-p2-Im1.png",
+          "12.9-p2-Im2.png",
+          "12.9-p3-Im4.png"
+        ],
+        {
+          "start": 0,
+          "end": 31.740000000000002
+        },
+        {
+          "takeaway": "A locked megathrust deforms, slips upward at the seafloor, and displaces water into an outward-moving long wave.",
+          "cueTimes": [
+            0,
+            11.82,
+            25.720000000000002
+          ],
+          "modes": [
+            "tsunami",
+            "inundate",
+            "shoaling"
+          ],
+          "takeaways": [
+            "Sudden seafloor displacement moves the water column and launches outward-traveling tsunami waves.",
+            "A coastal surge reaches low ground while the higher inland site remains above this schematic water level.",
+            "As a tsunami enters shallower water, it slows, its wavelength shortens and its height can increase."
+          ]
+        }
+      ],
+      [
+        "Haiti and Turkey–Syria: fault networks and vulnerable communities",
+        "transform",
+        [
+          2,
+          3,
+          5,
+          6
+        ],
+        "The 2010 Haiti earthquake occurred near a complex plate-boundary fault system with strike-slip and thrust motion. Severe building collapse caused major losses; “near a transform boundary” does not prove that every fault slipped purely horizontally. The 2023 Turkey–Syria sequence occurred in a region of interacting faults and plates. Major strike-slip ruptures and numerous aftershocks affected a densely settled area. Building vulnerability, population exposure, and disrupted services help explain losses. A smaller magnitude can cause catastrophic damage when the rupture is close to vulnerable communities.",
+        [
+          "12.9-p5-Im5.png",
+          "12.9-p5-Im6.png",
+          "12.9-p6-Im7.png"
+        ],
+        {
+          "start": 32.32,
+          "end": 66.4
+        },
+        {
+          "takeaway": "Textured blocks slide horizontally and offset a continuous marker.",
+          "cueTimes": [
+            32.32,
+            38.96,
+            46.2
+          ],
+          "modes": [
+            "transform",
+            "resonance",
+            "transform"
+          ],
+          "takeaways": [
+            "Blocks move horizontally past one another, offsetting a marker that originally crossed the fault.",
+            "Shaking drives buildings with different natural periods; ground conditions and structural response affect the resulting sway.",
+            "Blocks move horizontally past one another, offsetting a marker that originally crossed the fault."
+          ]
+        }
+      ],
+      [
+        "Separate the event from the published estimate",
+        "resonance",
+        [
+          2,
+          3,
+          5,
+          6
+        ],
+        "The textbook and lecture use historical estimates of magnitude, deaths, and damage. Those estimates should be tied to their source date rather than presented as a permanent leaderboard. The supplied October 27 lecture also compares New Zealand events. The current textbook section instead emphasizes Turkey–Syria; these are different source selections, not grounds to silently rename one event as another. For comparison practice, identify the tectonic setting, the immediate physical hazard, and the factors that turn that hazard into losses.",
+        [
+          "12.9-p5-Im6.png"
+        ],
+        {
+          "start": 67.12,
+          "end": 99.67
+        },
+        {
+          "takeaway": "Ground oscillation drives buildings with different natural periods; a resonant building sways more without implying guaranteed collapse.",
+          "cueTimes": [
+            67.12
+          ],
+          "modes": [
+            "resonance"
+          ]
+        }
+      ]
+    ],
+    "duration": 99.67,
+    "timingStatus": "Aligned to the selected narration word intervals; auditory acceptance pending.",
+    "captions": [
+      {
+        "start": 0.3,
+        "end": 5.12,
+        "text": "The March 2011 Tohoku earthquake occurred on the subduction interface offshore"
+      },
+      {
+        "start": 5.12,
+        "end": 9.940000000000001,
+        "text": "of northeastern Japan. A large rupture displaced the seafloor and generated"
+      },
+      {
+        "start": 9.940000000000001,
+        "end": 15.06,
+        "text": "a destructive tsunami. The tsunami inundated coastal communities and damaged power"
+      },
+      {
+        "start": 15.06,
+        "end": 16.94,
+        "text": "and cooling systems at Fukushima."
+      },
+      {
+        "start": 17.16,
+        "end": 20.96,
+        "text": "This links a geological event to cascading infrastructure failure."
+      },
+      {
+        "start": 21.38,
+        "end": 24.88,
+        "text": "Aftershocks outline part of the affected fault region and can damage"
+      },
+      {
+        "start": 24.88,
+        "end": 29.48,
+        "text": "weakened structures. A tsunami forecast map shows modeled wave amplitudes, not"
+      },
+      {
+        "start": 29.48,
+        "end": 31.5,
+        "text": "a direct map of earthquake magnitudes."
+      },
+      {
+        "start": 32.32,
+        "end": 36.78,
+        "text": "The 2010 Haiti earthquake occurred near a complex plate-boundary fault system"
+      },
+      {
+        "start": 36.78,
+        "end": 38.64,
+        "text": "with strike-slip and thrust motion."
+      },
+      {
+        "start": 38.96,
+        "end": 41.54,
+        "text": "Severe building collapse caused major losses;"
+      },
+      {
+        "start": 41.54,
+        "end": 44.8,
+        "text": "“near a transform boundary” does not prove that every fault slipped"
+      },
+      {
+        "start": 44.8,
+        "end": 49.4,
+        "text": "purely horizontally. The 2023 Turkey–Syria sequence occurred in a region of"
+      },
+      {
+        "start": 49.4,
+        "end": 54.46,
+        "text": "interacting faults and plates. Major strike-slip ruptures and numerous aftershocks affected"
+      },
+      {
+        "start": 54.46,
+        "end": 59.94,
+        "text": "a densely settled area. Building vulnerability, population exposure, and disrupted services"
+      },
+      {
+        "start": 59.94,
+        "end": 64.26,
+        "text": "help explain losses. A smaller magnitude can cause catastrophic damage when"
+      },
+      {
+        "start": 64.26,
+        "end": 66.2,
+        "text": "the rupture is close to vulnerable communities."
+      },
+      {
+        "start": 67.12,
+        "end": 72.26,
+        "text": "The textbook and lecture use historical estimates of magnitude, deaths, and"
+      },
+      {
+        "start": 72.26,
+        "end": 75.98,
+        "text": "damage. Those estimates should be tied to their source date rather"
+      },
+      {
+        "start": 75.98,
+        "end": 78.0,
+        "text": "than presented as a permanent leaderboard."
+      },
+      {
+        "start": 78.26,
+        "end": 82.18,
+        "text": "The supplied October 27 lecture also compares New Zealand events."
+      },
+      {
+        "start": 82.36,
+        "end": 85.7,
+        "text": "The current textbook section instead emphasizes Turkey–Syria;"
+      },
+      {
+        "start": 85.94,
+        "end": 90.02000000000001,
+        "text": "these are different source selections, not grounds to silently rename one"
+      },
+      {
+        "start": 90.02000000000001,
+        "end": 94.7,
+        "text": "event as another. For comparison practice, identify the tectonic setting, the"
+      },
+      {
+        "start": 94.7,
+        "end": 97.84,
+        "text": "immediate physical hazard, and the factors that turn that hazard into"
+      },
+      {
+        "start": 97.84,
+        "end": 98.22,
+        "text": "losses."
+      }
+    ],
+    "audio": "../../videos/chapter12/12-09.mp4"
+  },
+  {
+    "n": 10,
+    "title": "Tsunami generation, travel, and coastal flooding",
+    "logline": "Water displacement launches a tsunami; changing depth and coastal terrain shape its effects.",
+    "beats": [
+      [
+        "Displace the water column",
+        "tsunami",
+        [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "A tsunami begins when a disturbance rapidly moves a large volume of water. Vertical seafloor displacement during megathrust rupture is a major mechanism. Before rupture, a locked interface lets the overriding plate deform. When it slips, the seafloor can change shape abruptly and displace the overlying water. Landslides entering water or moving underwater can also generate tsunamis. Volcanic explosions and collapse, as in the Krakatau example, can displace water without requiring a megathrust.",
+        [
+          "12.10-p2-Im1.png",
+          "12.10-p3-Im2.png",
+          "12.10-p4-Im3.png"
+        ],
+        {
+          "start": 0,
+          "end": 28.7
+        },
+        {
+          "takeaway": "A locked megathrust deforms, slips upward at the seafloor, and displaces water into an outward-moving long wave.",
+          "cueTimes": [
+            0,
+            18.16,
+            22.560000000000002
+          ],
+          "modes": [
+            "tsunami",
+            "landslide",
+            "waterCollapse"
+          ],
+          "takeaways": [
+            "Sudden seafloor displacement moves the water column and launches outward-traveling tsunami waves.",
+            "An unstable mass moves downslope and leaves debris below. A slide entering water can also displace the water.",
+            "Volcanic collapse displaces water and sends waves outward; a tsunami does not require a megathrust source."
+          ]
+        }
+      ],
+      [
+        "Follow the wave from deep ocean to shore",
+        "shoaling",
+        [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "In deep water, a tsunami can travel very fast with a long wavelength and modest height. It affects a much deeper water column than an ordinary wind wave. In shallow water it slows, its wavelength shortens, and its height can increase. Coastal shape and bathymetry influence the eventual runup and flooding. A tsunami is often a series of surges and strong currents, not one picturesque breaking wave. An initial withdrawal of the sea can occur, but not every tsunami begins with visible withdrawal.",
+        [
+          "12.10-p2-Im1.png"
+        ],
+        {
+          "start": 29.5,
+          "end": 57.34
+        },
+        {
+          "takeaway": "A long water wave crosses a deep-to-shallow profile; travel slows, wavelength shortens, and height grows.",
+          "cueTimes": [
+            29.5
+          ],
+          "modes": [
+            "shoaling"
+          ]
+        }
+      ],
+      [
+        "Damage and warning depend on time and place",
+        "inundate",
+        [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "The 1960 Chile event produced a tsunami that crossed the Pacific and damaged Hawaii and Japan. A community far from the earthquake can still face a tsunami. Coastal inundation can destroy buildings, move boats inland, and carry debris. Large landslide-generated local waves can also arrive very quickly. Warning systems combine earthquake information with sea-level and ocean-bottom measurements. Detection and forecasting support warnings; they do not predict the exact earthquake before it begins.",
+        [
+          "12.10-p5-Im4.png",
+          "12.10-p5-Im5.png",
+          "12.10-p6-Im7.png"
+        ],
+        {
+          "start": 58.02,
+          "end": 86.61
+        },
+        {
+          "takeaway": "A coastal surge reaches low ground while an elevated inland site remains above the modeled water; no absolute safety claim.",
+          "cueTimes": [
+            58.02,
+            67.32000000000001,
+            75.30000000000001
+          ],
+          "modes": [
+            "shoaling",
+            "inundate",
+            "inundate"
+          ],
+          "takeaways": [
+            "As a tsunami enters shallower water, it slows, its wavelength shortens and its height can increase.",
+            "A coastal surge reaches low ground while the higher inland site remains above this schematic water level.",
+            "A coastal surge reaches low ground while the higher inland site remains above this schematic water level."
+          ]
+        }
+      ]
+    ],
+    "duration": 86.61,
+    "timingStatus": "Aligned to the selected narration word intervals; auditory acceptance pending.",
+    "captions": [
+      {
+        "start": 0.3,
+        "end": 3.86,
+        "text": "A tsunami begins when a disturbance rapidly moves a large volume"
+      },
+      {
+        "start": 3.86,
+        "end": 8.120000000000001,
+        "text": "of water. Vertical seafloor displacement during megathrust rupture is a major"
+      },
+      {
+        "start": 8.120000000000001,
+        "end": 12.8,
+        "text": "mechanism. Before rupture, a locked interface lets the overriding plate deform."
+      },
+      {
+        "start": 13.120000000000001,
+        "end": 16.54,
+        "text": "When it slips, the seafloor can change shape abruptly and displace"
+      },
+      {
+        "start": 16.54,
+        "end": 21.2,
+        "text": "the overlying water. Landslides entering water or moving underwater can also"
+      },
+      {
+        "start": 21.2,
+        "end": 25.82,
+        "text": "generate tsunamis. Volcanic explosions and collapse, as in the Krakatau example,"
+      },
+      {
+        "start": 26.12,
+        "end": 28.68,
+        "text": "can displace water without requiring a megathrust."
+      },
+      {
+        "start": 29.5,
+        "end": 32.94,
+        "text": "In deep water, a tsunami can travel very fast with a"
+      },
+      {
+        "start": 32.94,
+        "end": 34.519999999999996,
+        "text": "long wavelength and modest height."
+      },
+      {
+        "start": 34.58,
+        "end": 37.88,
+        "text": "It affects a much deeper water column than an ordinary wind"
+      },
+      {
+        "start": 37.88,
+        "end": 41.58,
+        "text": "wave. In shallow water it slows, its wavelength shortens, and its"
+      },
+      {
+        "start": 41.58,
+        "end": 45.84,
+        "text": "height can increase. Coastal shape and bathymetry influence the eventual runup"
+      },
+      {
+        "start": 45.84,
+        "end": 49.44,
+        "text": "and flooding. A tsunami is often a series of surges and"
+      },
+      {
+        "start": 49.44,
+        "end": 52.16,
+        "text": "strong currents, not one picturesque breaking wave."
+      },
+      {
+        "start": 52.3,
+        "end": 55.16,
+        "text": "An initial withdrawal of the sea can occur, but not every"
+      },
+      {
+        "start": 55.16,
+        "end": 57.1,
+        "text": "tsunami begins with visible withdrawal."
+      },
+      {
+        "start": 58.02,
+        "end": 61.900000000000006,
+        "text": "The 1960 Chile event produced a tsunami that crossed the Pacific"
+      },
+      {
+        "start": 61.900000000000006,
+        "end": 63.64,
+        "text": "and damaged Hawaii and Japan."
+      },
+      {
+        "start": 63.92,
+        "end": 66.9,
+        "text": "A community far from the earthquake can still face a tsunami."
+      },
+      {
+        "start": 67.32000000000001,
+        "end": 71.12,
+        "text": "Coastal inundation can destroy buildings, move boats inland, and carry debris."
+      },
+      {
+        "start": 71.54,
+        "end": 74.94,
+        "text": "Large landslide-generated local waves can also arrive very quickly."
+      },
+      {
+        "start": 75.30000000000001,
+        "end": 79.62,
+        "text": "Warning systems combine earthquake information with sea-level and ocean-bottom measurements."
+      },
+      {
+        "start": 80.0,
+        "end": 82.26,
+        "text": "Detection and forecasting support warnings;"
+      },
+      {
+        "start": 82.44,
+        "end": 85.16,
+        "text": "they do not predict the exact earthquake before it begins."
+      }
+    ],
+    "audio": "../../videos/chapter12/12-10.mp4"
+  },
+  {
+    "n": 11,
+    "title": "Field evidence, trenches, and satellite deformation",
+    "logline": "Offsets, trenches and radar observations constrain different parts of an earthquake history.",
+    "beats": [
+      [
+        "Measure the surface record",
+        "offset",
+        [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "Map the location, orientation, and extent of a rupture. Measure displaced streams, roads, fences, and rock units to determine movement direction and amount. A single-event offset differs from cumulative displacement across many earthquakes. Match the same feature across the fault before calculating its displacement. Scarps, linear valleys, ridges, ponds, and diverted drainage can reveal faults. An isolated linear feature is a clue that needs corroboration, not proof by itself.",
+        [
+          "12.11-p3-Im4.png"
+        ],
+        {
+          "start": 0,
+          "end": 28.3
+        },
+        {
+          "takeaway": "A stream and road initially cross a fault; lateral displacement creates offset and a stranded former channel.",
+          "cueTimes": [
+            0
+          ],
+          "modes": [
+            "offset"
+          ]
+        }
+      ],
+      [
+        "Reconstruct events before written records",
+        "trench",
+        [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "A trench across a fault exposes displaced sediment and soil layers. Older layers can preserve several events while younger layers record fewer. Dated charcoal or peat can bracket deformation. Date the relevant material and interpret its relationship to the fault; flowing stream water cannot date the last fault movement. The North Anatolian example distinguishes a 1.59 m component of 1999 scarp displacement from a larger cumulative scarp. Much motion was horizontal, so scarp height alone is not total slip.",
+        [
+          "12.11-p6-Im8.png"
+        ],
+        {
+          "start": 28.92,
+          "end": 61.32
+        },
+        {
+          "takeaway": "An excavation reveals offset layers; younger deposited material seals a previous break, bracketing event history.",
+          "cueTimes": [
+            28.92
+          ],
+          "modes": [
+            "trench"
+          ]
+        }
+      ],
+      [
+        "Observe deformation remotely and at depth",
+        "deformation",
+        [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "Before-and-after satellite radar measurements can form an interferogram. Colored fringes represent measured ground displacement along the satellite’s viewing direction; they are not rock colors or a direct stress map. Laser surveying and repeated surface measurements detect deformation. Instruments in a borehole through an active fault can record conditions at depth. Combining field relations, dating, and geophysical measurements constrains history and recurrence. It does not establish the exact time of the next earthquake.",
+        [
+          "12.11-p5-Im6.png"
+        ],
+        {
+          "start": 62.12,
+          "end": 92.53
+        },
+        {
+          "takeaway": "A fault-driven displacement field changes a surface; synthetic range contours express viewing-direction displacement, not stress.",
+          "cueTimes": [
+            62.12
+          ],
+          "modes": [
+            "deformation"
+          ]
+        }
+      ]
+    ],
+    "duration": 92.53,
+    "timingStatus": "Aligned to the selected narration word intervals; auditory acceptance pending.",
+    "captions": [
+      {
+        "start": 0.3,
+        "end": 3.94,
+        "text": "Map the location, orientation, and extent of a rupture."
+      },
+      {
+        "start": 4.22,
+        "end": 8.700000000000001,
+        "text": "Measure displaced streams, roads, fences, and rock units to determine movement"
+      },
+      {
+        "start": 8.700000000000001,
+        "end": 13.4,
+        "text": "direction and amount. A single-event offset differs from cumulative displacement across"
+      },
+      {
+        "start": 13.4,
+        "end": 17.6,
+        "text": "many earthquakes. Match the same feature across the fault before calculating"
+      },
+      {
+        "start": 17.6,
+        "end": 22.580000000000002,
+        "text": "its displacement. Scarps, linear valleys, ridges, ponds, and diverted drainage can"
+      },
+      {
+        "start": 22.580000000000002,
+        "end": 26.080000000000002,
+        "text": "reveal faults. An isolated linear feature is a clue that needs"
+      },
+      {
+        "start": 26.080000000000002,
+        "end": 28.1,
+        "text": "corroboration, not proof by itself."
+      },
+      {
+        "start": 28.92,
+        "end": 33.760000000000005,
+        "text": "A trench across a fault exposes displaced sediment and soil layers."
+      },
+      {
+        "start": 34.22,
+        "end": 37.86,
+        "text": "Older layers can preserve several events while younger layers record fewer."
+      },
+      {
+        "start": 38.42,
+        "end": 41.120000000000005,
+        "text": "Dated charcoal or peat can bracket deformation."
+      },
+      {
+        "start": 41.720000000000006,
+        "end": 45.24,
+        "text": "Date the relevant material and interpret its relationship to the fault;"
+      },
+      {
+        "start": 45.44,
+        "end": 48.400000000000006,
+        "text": "flowing stream water cannot date the last fault movement."
+      },
+      {
+        "start": 48.64,
+        "end": 53.72,
+        "text": "The North Anatolian example distinguishes a 1.59 m component of 1999"
+      },
+      {
+        "start": 53.72,
+        "end": 57.06,
+        "text": "scarp displacement from a larger cumulative scarp."
+      },
+      {
+        "start": 57.28,
+        "end": 60.940000000000005,
+        "text": "Much motion was horizontal, so scarp height alone is not total"
+      },
+      {
+        "start": 60.940000000000005,
+        "end": 61.2,
+        "text": "slip."
+      },
+      {
+        "start": 62.12,
+        "end": 66.12,
+        "text": "Before-and-after satellite radar measurements can form an interferogram."
+      },
+      {
+        "start": 66.36,
+        "end": 70.78,
+        "text": "Colored fringes represent measured ground displacement along the satellite’s viewing direction;"
+      },
+      {
+        "start": 70.78,
+        "end": 73.78,
+        "text": "they are not rock colors or a direct stress map."
+      },
+      {
+        "start": 74.22,
+        "end": 77.78,
+        "text": "Laser surveying and repeated surface measurements detect deformation."
+      },
+      {
+        "start": 78.47999999999999,
+        "end": 82.03999999999999,
+        "text": "Instruments in a borehole through an active fault can record conditions"
+      },
+      {
+        "start": 82.03999999999999,
+        "end": 87.42,
+        "text": "at depth. Combining field relations, dating, and geophysical measurements constrains history"
+      },
+      {
+        "start": 87.42,
+        "end": 90.5,
+        "text": "and recurrence. It does not establish the exact time of the"
+      },
+      {
+        "start": 90.5,
+        "end": 91.08,
+        "text": "next earthquake."
+      }
+    ],
+    "audio": "../../videos/chapter12/12-11.mp4"
+  },
+  {
+    "n": 12,
+    "title": "Earthquake hazards, forecasting, and prediction limits",
+    "logline": "Combine evidence to assess hazard while keeping forecasts, predictions and early warnings distinct.",
+    "beats": [
+      [
+        "Forecast from several kinds of evidence",
+        "reactivate",
+        [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "Long-term forecasts combine historical earthquake records, prehistoric fault evidence, and tectonic setting. Recurrence and potential event sizes help estimate hazard over an interval. Hazard is generally high near many active plate boundaries, including subduction zones and collision belts. New Madrid and Charleston illustrate that some intraplate areas also have important hazard. A hazard map describes an expected shaking measure or probability over a defined time. Read its legend and date; a historical forecast map is not a newly issued forecast.",
+        [
+          "12.12-p2-Im2.png",
+          "12.12-p3-Im3.png"
+        ],
+        {
+          "start": 0,
+          "end": 33.339999999999996
+        },
+        {
+          "takeaway": "A preexisting fault in a continental block locks, accumulates stress, and slips without a new plate boundary.",
+          "cueTimes": [
+            0,
+            17.62
+          ],
+          "modes": [
+            "reactivate",
+            "reactivate"
+          ]
+        }
+      ],
+      [
+        "Interpret seismic gaps cautiously",
+        "locked",
+        [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "A seismic gap is a segment with less earthquake activity than neighboring segments or than expected from its history. In the chapter example, some quiet segments were interpreted as locked and accumulating strain. Quiet does not automatically mean safe. Nor does a gap establish exactly when, where, and how large the next earthquake will be. A creeping segment and a locked segment can behave differently. Combine deformation measurements with earthquake history rather than treating a lack of dots as a complete explanation.",
+        [
+          "12.12-p5-Im6.png"
+        ],
+        {
+          "start": 33.739999999999995,
+          "end": 62.13999999999999
+        },
+        {
+          "takeaway": "Adjacent creeping and locked segments respond differently to continued motion; a locked segment stores deformation before slip.",
+          "cueTimes": [
+            33.739999999999995
+          ],
+          "modes": [
+            "locked"
+          ]
+        }
+      ],
+      [
+        "Distinguish a forecast, prediction, and warning",
+        "elastic",
+        [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "The Parkfield exercise used repeated events to anticipate another earthquake during a specified window; the eventual 2004 event occurred later. An average interval is not a clock. Monitoring small motions, tilt, or possible foreshocks can inform research, but there is no reliable method for predicting a specific earthquake’s exact time, location, and magnitude. An early warning detects an earthquake that has already begun and can alert places before stronger shaking arrives. It is different from predicting the event before rupture starts.",
+        [
+          "12.12-p7-Im9.png"
+        ],
+        {
+          "start": 62.66,
+          "end": 94.53
+        },
+        {
+          "takeaway": "Markers bend while a fault is locked, then slip and partly rebound; permanent offset remains.",
+          "cueTimes": [
+            62.66
+          ],
+          "modes": [
+            "elastic"
+          ]
+        }
+      ]
+    ],
+    "duration": 94.53,
+    "timingStatus": "Aligned to the selected narration word intervals; auditory acceptance pending.",
+    "captions": [
+      {
+        "start": 0.3,
+        "end": 6.4799999999999995,
+        "text": "Long-term forecasts combine historical earthquake records, prehistoric fault evidence, and tectonic"
+      },
+      {
+        "start": 6.4799999999999995,
+        "end": 10.780000000000001,
+        "text": "setting. Recurrence and potential event sizes help estimate hazard over an"
+      },
+      {
+        "start": 10.780000000000001,
+        "end": 15.280000000000001,
+        "text": "interval. Hazard is generally high near many active plate boundaries, including"
+      },
+      {
+        "start": 15.280000000000001,
+        "end": 17.26,
+        "text": "subduction zones and collision belts."
+      },
+      {
+        "start": 17.62,
+        "end": 21.44,
+        "text": "New Madrid and Charleston illustrate that some intraplate areas also have"
+      },
+      {
+        "start": 21.44,
+        "end": 25.46,
+        "text": "important hazard. A hazard map describes an expected shaking measure or"
+      },
+      {
+        "start": 25.46,
+        "end": 27.36,
+        "text": "probability over a defined time."
+      },
+      {
+        "start": 27.580000000000002,
+        "end": 29.16,
+        "text": "Read its legend and date;"
+      },
+      {
+        "start": 29.16,
+        "end": 32.919999999999995,
+        "text": "a historical forecast map is not a newly issued forecast."
+      },
+      {
+        "start": 33.739999999999995,
+        "end": 37.26,
+        "text": "A seismic gap is a segment with less earthquake activity than"
+      },
+      {
+        "start": 37.26,
+        "end": 40.059999999999995,
+        "text": "neighboring segments or than expected from its history."
+      },
+      {
+        "start": 40.279999999999994,
+        "end": 43.879999999999995,
+        "text": "In the chapter example, some quiet segments were interpreted as locked"
+      },
+      {
+        "start": 43.879999999999995,
+        "end": 47.58,
+        "text": "and accumulating strain. Quiet does not automatically mean safe."
+      },
+      {
+        "start": 47.699999999999996,
+        "end": 51.44,
+        "text": "Nor does a gap establish exactly when, where, and how large"
+      },
+      {
+        "start": 51.44,
+        "end": 52.739999999999995,
+        "text": "the next earthquake will be."
+      },
+      {
+        "start": 52.89999999999999,
+        "end": 55.699999999999996,
+        "text": "A creeping segment and a locked segment can behave differently."
+      },
+      {
+        "start": 55.89999999999999,
+        "end": 59.86,
+        "text": "Combine deformation measurements with earthquake history rather than treating a lack"
+      },
+      {
+        "start": 59.86,
+        "end": 61.739999999999995,
+        "text": "of dots as a complete explanation."
+      },
+      {
+        "start": 62.66,
+        "end": 67.16,
+        "text": "The Parkfield exercise used repeated events to anticipate another earthquake during"
+      },
+      {
+        "start": 67.16,
+        "end": 70.89999999999999,
+        "text": "a specified window; the eventual 2004 event occurred later."
+      },
+      {
+        "start": 71.1,
+        "end": 73.47999999999999,
+        "text": "An average interval is not a clock."
+      },
+      {
+        "start": 73.86,
+        "end": 78.86,
+        "text": "Monitoring small motions, tilt, or possible foreshocks can inform research, but"
+      },
+      {
+        "start": 78.86,
+        "end": 82.22,
+        "text": "there is no reliable method for predicting a specific earthquake’s exact"
+      },
+      {
+        "start": 82.22,
+        "end": 86.25999999999999,
+        "text": "time, location, and magnitude. An early warning detects an earthquake that"
+      },
+      {
+        "start": 86.25999999999999,
+        "end": 89.82,
+        "text": "has already begun and can alert places before stronger shaking arrives."
+      },
+      {
+        "start": 89.82,
+        "end": 93.08,
+        "text": "It is different from predicting the event before rupture starts."
+      }
+    ],
+    "audio": "../../videos/chapter12/12-12.mp4"
+  },
+  {
+    "n": 13,
+    "title": "San Andreas segments and landscape evidence",
+    "logline": "Connected San Andreas fault segments can creep, lock or compress at a bend.",
+    "beats": [
+      [
+        "One fault system, different behavior",
+        "transform",
+        [
+          2,
+          3,
+          4,
+          5
+        ],
+        "The San Andreas system accommodates relative motion between the Pacific and North American plates. Its segments differ in creeping behavior, locking, and earthquake history. The northern segment includes the 1906 rupture; the Loma Prieta earthquake affected part of the broader system in 1989. Nearby faults can also produce damaging earthquakes. The central creeping segment moves gradually at the surface. Creep does not establish that every depth or adjacent fault is incapable of earthquake rupture.",
+        [
+          "12.13-p2-Im2.png"
+        ],
+        {
+          "start": 0,
+          "end": 27.740000000000002
+        },
+        {
+          "takeaway": "Textured blocks slide horizontally and offset a continuous marker.",
+          "cueTimes": [
+            0
+          ],
+          "modes": [
+            "transform"
+          ]
+        }
+      ],
+      [
+        "Use history without treating it as a deadline",
+        "locked",
+        [
+          2,
+          3,
+          4,
+          5
+        ],
+        "Parkfield has been studied because of repeated moderate earthquakes. The southern segment associated with the 1857 Fort Tejon event is an important example of long-term locking. Historical probability statements require their original date and time window. The textbook’s rolling “next 30 years” phrase is not a current forecast simply because it appears on this page. A restraining bend in the southern system produces compression and thrusting. This helps explain why thrust-fault earthquakes can occur within a region famous for strike-slip motion.",
+        [
+          "12.12-p7-Im9.png",
+          "12.13-p2-Im2.png"
+        ],
+        {
+          "start": 28.32,
+          "end": 57.84
+        },
+        {
+          "takeaway": "Adjacent creeping and locked segments respond differently to continued motion; a locked segment stores deformation before slip.",
+          "cueTimes": [
+            28.32,
+            48.66
+          ],
+          "modes": [
+            "locked",
+            "reverse"
+          ],
+          "takeaways": [
+            "Gradual creep and locked behavior differ: one segment slips slowly while another stores strain before rupture.",
+            "Compression raises the hanging wall relative to the footwall; shortening occurs along the fault."
+          ]
+        }
+      ],
+      [
+        "Recognize evidence in the landscape",
+        "offset",
+        [
+          2,
+          3,
+          4,
+          5
+        ],
+        "Look for offset streams, linear valleys and ridges, scarps, ponds, and drainages aligned with the fault. Match the aerial photograph with the named features in the source illustration. Trenches and displaced rock units can reveal movement over different timescales. An abandoned stream channel can preserve an earlier alignment. The East California Shear Zone contains related active faults east of the San Andreas. Hazard assessment must include the network, not just the best-known named fault.",
+        [
+          "12.13-p4-Im5.png"
+        ],
+        {
+          "start": 58.2,
+          "end": 88.15
+        },
+        {
+          "takeaway": "A stream and road initially cross a fault; lateral displacement creates offset and a stranded former channel.",
+          "cueTimes": [
+            58.2
+          ],
+          "modes": [
+            "offset"
+          ]
+        }
+      ]
+    ],
+    "duration": 88.15,
+    "timingStatus": "Aligned to the selected narration word intervals; auditory acceptance pending.",
+    "captions": [
+      {
+        "start": 0.3,
+        "end": 4.64,
+        "text": "The San Andreas system accommodates relative motion between the Pacific and"
+      },
+      {
+        "start": 4.64,
+        "end": 8.8,
+        "text": "North American plates. Its segments differ in creeping behavior, locking, and"
+      },
+      {
+        "start": 8.8,
+        "end": 12.48,
+        "text": "earthquake history. The northern segment includes the 1906 rupture;"
+      },
+      {
+        "start": 12.700000000000001,
+        "end": 15.860000000000001,
+        "text": "the Loma Prieta earthquake affected part of the broader system in"
+      },
+      {
+        "start": 15.860000000000001,
+        "end": 19.580000000000002,
+        "text": "1989. Nearby faults can also produce damaging earthquakes."
+      },
+      {
+        "start": 19.900000000000002,
+        "end": 22.54,
+        "text": "The central creeping segment moves gradually at the surface."
+      },
+      {
+        "start": 22.92,
+        "end": 26.02,
+        "text": "Creep does not establish that every depth or adjacent fault is"
+      },
+      {
+        "start": 26.02,
+        "end": 27.5,
+        "text": "incapable of earthquake rupture."
+      },
+      {
+        "start": 28.32,
+        "end": 31.78,
+        "text": "Parkfield has been studied because of repeated moderate earthquakes."
+      },
+      {
+        "start": 32.1,
+        "end": 36.14,
+        "text": "The southern segment associated with the 1857 Fort Tejon event is"
+      },
+      {
+        "start": 36.14,
+        "end": 38.46,
+        "text": "an important example of long-term locking."
+      },
+      {
+        "start": 38.76,
+        "end": 42.46,
+        "text": "Historical probability statements require their original date and time window."
+      },
+      {
+        "start": 42.8,
+        "end": 46.0,
+        "text": "The textbook’s rolling “next 30 years” phrase is not a current"
+      },
+      {
+        "start": 46.0,
+        "end": 48.480000000000004,
+        "text": "forecast simply because it appears on this page."
+      },
+      {
+        "start": 48.66,
+        "end": 52.06,
+        "text": "A restraining bend in the southern system produces compression and thrusting."
+      },
+      {
+        "start": 52.28,
+        "end": 55.78,
+        "text": "This helps explain why thrust-fault earthquakes can occur within a region"
+      },
+      {
+        "start": 55.78,
+        "end": 57.28,
+        "text": "famous for strike-slip motion."
+      },
+      {
+        "start": 58.2,
+        "end": 63.02,
+        "text": "Look for offset streams, linear valleys and ridges, scarps, ponds, and"
+      },
+      {
+        "start": 63.02,
+        "end": 64.76,
+        "text": "drainages aligned with the fault."
+      },
+      {
+        "start": 64.98,
+        "end": 68.22,
+        "text": "Match the aerial photograph with the named features in the source"
+      },
+      {
+        "start": 68.22,
+        "end": 73.10000000000001,
+        "text": "illustration. Trenches and displaced rock units can reveal movement over different"
+      },
+      {
+        "start": 73.10000000000001,
+        "end": 77.30000000000001,
+        "text": "timescales. An abandoned stream channel can preserve an earlier alignment."
+      },
+      {
+        "start": 77.6,
+        "end": 81.56,
+        "text": "The East California Shear Zone contains related active faults east of"
+      },
+      {
+        "start": 81.56,
+        "end": 85.42,
+        "text": "the San Andreas. Hazard assessment must include the network, not just"
+      },
+      {
+        "start": 85.42,
+        "end": 86.7,
+        "text": "the best-known named fault."
+      }
+    ],
+    "audio": "../../videos/chapter12/12-13.mp4"
+  },
+  {
+    "n": 14,
+    "title": "Direct samples and geophysical views of the subsurface",
+    "logline": "Direct samples and geophysical measurements constrain the subsurface through different physical properties.",
+    "beats": [
+      [
+        "Start with samples and exposures",
+        "coreSample",
+        [
+          1,
+          2,
+          3,
+          4
+        ],
+        "Volcanic inclusions can bring pieces of older rocks toward the surface. Uplift and erosion can expose rocks that once formed at depth. Mines expose rocks along excavated workings. Drill cores recover cylindrical samples along boreholes. These are direct observations with limited spatial coverage, not a complete view of Earth’s interior. Surface outcrops and mine material can offer accessible evidence of subsurface rock types. Check where a sample came from before using it to reconstruct its original position.",
+        [
+          "12.14-p3-Im6.png"
+        ],
+        {
+          "start": 0,
+          "end": 29.740000000000002
+        },
+        {
+          "takeaway": "A rotating drill penetrates layered rock and retrieves a cylindrical core whose sequence corresponds to depth.",
+          "cueTimes": [
+            0
+          ],
+          "modes": [
+            "coreSample"
+          ]
+        }
+      ],
+      [
+        "Measure physical properties indirectly",
+        "reflection",
+        [
+          1,
+          2,
+          3,
+          4
+        ],
+        "Seismic-reflection surveys send energy into the ground and record returning signals with geophones. Reflections can reveal boundaries, folds, faults, and layered geometry. Magnetic surveys measure variations in magnetic field strength related to rock properties. Gravity surveys measure small gravitational variations related to density contrasts. Electrical surveys measure conductivity or resistivity. Water-bearing material and clay can influence electrical response; a conductive anomaly does not uniquely identify one rock type.",
+        [
+          "12.14-p1-Im2.png",
+          "12.14-p3-Im8.png",
+          "12.14-p4-Im11.png"
+        ],
+        {
+          "start": 30.28,
+          "end": 62.84
+        },
+        {
+          "takeaway": "A controlled pulse travels downward and returns from an interface to receivers; time accumulates on both legs.",
+          "cueTimes": [
+            30.28,
+            46.620000000000005,
+            51.82
+          ],
+          "modes": [
+            "reflection",
+            "survey",
+            "electrical"
+          ],
+          "takeaways": [
+            "A seismic pulse travels downward and returns to receivers; round-trip time includes both travel legs.",
+            "A lower-density buried channel produces a relative gravity low as measurements accumulate along the survey line.",
+            "Current passes between electrodes. Electrical response constrains conductivity; water and clay can both affect the signal."
+          ]
+        }
+      ],
+      [
+        "Combine methods to test an interpretation",
+        "survey",
+        [
+          1,
+          2,
+          3,
+          4
+        ],
+        "The buried-channel example combines low-density sediment, relatively low magnetism, and a conductivity pattern consistent with wetter material. Each measurement constrains a different property. A seismic profile is processed data; a colored geologic cross section is an interpretation based on those data and other evidence. They are not the same kind of observation. Several subsurface configurations may fit one data set. Combining samples, geology, and multiple surveys helps reduce ambiguity.",
+        [
+          "12.14-p3-Im8.png"
+        ],
+        {
+          "start": 63.440000000000005,
+          "end": 93.97000000000001
+        },
+        {
+          "takeaway": "A low-density buried channel produces a relative gravity low; combine the section with an evolving survey profile.",
+          "cueTimes": [
+            63.440000000000005
+          ],
+          "modes": [
+            "survey"
+          ]
+        }
+      ]
+    ],
+    "duration": 93.97000000000001,
+    "timingStatus": "Aligned to the selected narration word intervals; auditory acceptance pending.",
+    "captions": [
+      {
+        "start": 0.3,
+        "end": 4.6,
+        "text": "Volcanic inclusions can bring pieces of older rocks toward the surface."
+      },
+      {
+        "start": 4.8999999999999995,
+        "end": 8.56,
+        "text": "Uplift and erosion can expose rocks that once formed at depth."
+      },
+      {
+        "start": 8.860000000000001,
+        "end": 11.48,
+        "text": "Mines expose rocks along excavated workings."
+      },
+      {
+        "start": 11.82,
+        "end": 14.88,
+        "text": "Drill cores recover cylindrical samples along boreholes."
+      },
+      {
+        "start": 15.24,
+        "end": 19.1,
+        "text": "These are direct observations with limited spatial coverage, not a complete"
+      },
+      {
+        "start": 19.1,
+        "end": 22.740000000000002,
+        "text": "view of Earth’s interior. Surface outcrops and mine material can offer"
+      },
+      {
+        "start": 22.740000000000002,
+        "end": 25.14,
+        "text": "accessible evidence of subsurface rock types."
+      },
+      {
+        "start": 25.38,
+        "end": 28.52,
+        "text": "Check where a sample came from before using it to reconstruct"
+      },
+      {
+        "start": 28.52,
+        "end": 29.46,
+        "text": "its original position."
+      },
+      {
+        "start": 30.28,
+        "end": 35.6,
+        "text": "Seismic-reflection surveys send energy into the ground and record returning signals"
+      },
+      {
+        "start": 35.6,
+        "end": 41.1,
+        "text": "with geophones. Reflections can reveal boundaries, folds, faults, and layered geometry."
+      },
+      {
+        "start": 41.44,
+        "end": 45.8,
+        "text": "Magnetic surveys measure variations in magnetic field strength related to rock"
+      },
+      {
+        "start": 45.8,
+        "end": 51.56,
+        "text": "properties. Gravity surveys measure small gravitational variations related to density contrasts."
+      },
+      {
+        "start": 51.82,
+        "end": 54.74,
+        "text": "Electrical surveys measure conductivity or resistivity."
+      },
+      {
+        "start": 54.74,
+        "end": 58.78,
+        "text": "Water-bearing material and clay can influence electrical response;"
+      },
+      {
+        "start": 58.96,
+        "end": 62.52,
+        "text": "a conductive anomaly does not uniquely identify one rock type."
+      },
+      {
+        "start": 63.440000000000005,
+        "end": 68.9,
+        "text": "The buried-channel example combines low-density sediment, relatively low magnetism, and a"
+      },
+      {
+        "start": 68.9,
+        "end": 71.42,
+        "text": "conductivity pattern consistent with wetter material."
+      },
+      {
+        "start": 71.68,
+        "end": 74.08000000000001,
+        "text": "Each measurement constrains a different property."
+      },
+      {
+        "start": 74.28,
+        "end": 76.5,
+        "text": "A seismic profile is processed data;"
+      },
+      {
+        "start": 76.7,
+        "end": 80.36000000000001,
+        "text": "a colored geologic cross section is an interpretation based on those"
+      },
+      {
+        "start": 80.36000000000001,
+        "end": 83.30000000000001,
+        "text": "data and other evidence. They are not the same kind of"
+      },
+      {
+        "start": 83.30000000000001,
+        "end": 87.72,
+        "text": "observation. Several subsurface configurations may fit one data set."
+      },
+      {
+        "start": 87.9,
+        "end": 92.52000000000001,
+        "text": "Combining samples, geology, and multiple surveys helps reduce ambiguity."
+      }
+    ],
+    "audio": "../../videos/chapter12/12-14.mp4"
+  },
+  {
+    "n": 15,
+    "title": "Seismic paths reveal the crust, mantle, and core",
+    "logline": "Reflection, refraction and shadow zones reveal boundaries and the state of Earth’s interior.",
+    "beats": [
+      [
+        "Reflect or refract at a boundary",
+        "refraction",
+        [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "Reflection sends part of the wave energy back from an interface. Refraction changes the direction of transmitted energy when the wave enters material with a different seismic velocity. For the source’s downward-traveling ray, entering faster material bends the ray toward a shallower angle to a horizontal interface. Entering slower material bends it closer to the interface normal. Wave speed depends on elastic properties and density together. A general increase in mantle velocity with depth is not a rule that density alone always makes every wave faster.",
+        [
+          "12.15-p2-Im3.png",
+          "12.15-p3-Im5.png",
+          "12.15-p3-Im4.png"
+        ],
+        {
+          "start": 0,
+          "end": 31.42
+        },
+        {
+          "takeaway": "Transmitted wavefronts cross a velocity boundary and change angle; preserve the normal and speed contrast.",
+          "cueTimes": [
+            0,
+            4.22,
+            18.18
+          ],
+          "modes": [
+            "reflection",
+            "refraction",
+            "refractionSlow"
+          ],
+          "takeaways": [
+            "A seismic pulse travels downward and returns to receivers; round-trip time includes both travel legs.",
+            "A ray entering faster material bends away from the normal; the transmitted wave continues into the second layer.",
+            "A ray entering slower material bends toward the normal; the transmitted wave continues into the second layer."
+          ]
+        }
+      ],
+      [
+        "Compare the short path with the fast path",
+        "fastPath",
+        [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "Near an earthquake, the shorter path through crust can produce the first arrival. Farther away, a path that enters faster mantle can arrive before the slower crustal path despite its greater length. The distance where the first arrival changes constrains crustal thickness when combined with velocities and a model. The Moho is the crust–mantle boundary. A reflected travel time includes the trip down and back up. For the textbook’s idealized 6 km/s crust, a 10-second vertical round trip corresponds to 30 km depth, not 60 km.",
+        [
+          "12.15-p5-Im9.png",
+          "12.15-p2-Im3.png"
+        ],
+        {
+          "start": 31.94,
+          "end": 62.900000000000006
+        },
+        {
+          "takeaway": "A shorter slow-crust route and longer fast-mantle route compete; the first arrival changes with receiver distance.",
+          "cueTimes": [
+            31.94,
+            50.94
+          ],
+          "modes": [
+            "fastPath",
+            "reflection"
+          ],
+          "takeaways": [
+            "A longer route through faster mantle can arrive before a shorter route through slower crust.",
+            "A seismic pulse travels downward and returns to receivers; round-trip time includes both travel legs."
+          ]
+        }
+      ],
+      [
+        "Use the shadow zones",
+        "coreShadow",
+        [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "Compressional waves, called P-waves, refract strongly at the core–mantle boundary, leaving a zone without direct P arrivals. A P-wave shadow is not evidence that P-waves cannot travel through liquid. Shear waves, called S-waves, do not cross the liquid outer core. The broad S-wave shadow, together with other observations, supports a molten outer core. Reflected and converted waves can take indirect paths. Keep direct-wave shadow claims separate from the claim that no seismic energy of any kind could ever be detected there.",
+        [
+          "12.15-p6-Im10.png"
+        ],
+        {
+          "start": 63.42000000000001,
+          "end": 97.95
+        },
+        {
+          "takeaway": "Body-wave rays traverse a cutaway Earth; P refracts at the core and direct S stops at the liquid boundary.",
+          "cueTimes": [
+            63.42000000000001
+          ],
+          "modes": [
+            "coreShadow"
+          ]
+        }
+      ]
+    ],
+    "duration": 97.95,
+    "timingStatus": "Aligned to the selected narration word intervals; auditory acceptance pending.",
+    "captions": [
+      {
+        "start": 0.3,
+        "end": 3.8,
+        "text": "Reflection sends part of the wave energy back from an interface."
+      },
+      {
+        "start": 4.22,
+        "end": 7.76,
+        "text": "Refraction changes the direction of transmitted energy when the wave enters"
+      },
+      {
+        "start": 7.76,
+        "end": 10.200000000000001,
+        "text": "material with a different seismic velocity."
+      },
+      {
+        "start": 10.200000000000001,
+        "end": 14.74,
+        "text": "For the source’s downward-traveling ray, entering faster material bends the ray"
+      },
+      {
+        "start": 14.74,
+        "end": 17.54,
+        "text": "toward a shallower angle to a horizontal interface."
+      },
+      {
+        "start": 18.18,
+        "end": 21.32,
+        "text": "Entering slower material bends it closer to the interface normal."
+      },
+      {
+        "start": 21.62,
+        "end": 24.900000000000002,
+        "text": "Wave speed depends on elastic properties and density together."
+      },
+      {
+        "start": 25.240000000000002,
+        "end": 28.580000000000002,
+        "text": "A general increase in mantle velocity with depth is not a"
+      },
+      {
+        "start": 28.580000000000002,
+        "end": 31.12,
+        "text": "rule that density alone always makes every wave faster."
+      },
+      {
+        "start": 31.94,
+        "end": 35.120000000000005,
+        "text": "Near an earthquake, the shorter path through crust can produce the"
+      },
+      {
+        "start": 35.120000000000005,
+        "end": 39.18,
+        "text": "first arrival. Farther away, a path that enters faster mantle can"
+      },
+      {
+        "start": 39.18,
+        "end": 42.52,
+        "text": "arrive before the slower crustal path despite its greater length."
+      },
+      {
+        "start": 42.74,
+        "end": 46.42,
+        "text": "The distance where the first arrival changes constrains crustal thickness when"
+      },
+      {
+        "start": 46.42,
+        "end": 48.38,
+        "text": "combined with velocities and a model."
+      },
+      {
+        "start": 48.56,
+        "end": 50.74,
+        "text": "The Moho is the crust–mantle boundary."
+      },
+      {
+        "start": 50.94,
+        "end": 54.16,
+        "text": "A reflected travel time includes the trip down and back up."
+      },
+      {
+        "start": 54.5,
+        "end": 58.8,
+        "text": "For the textbook’s idealized 6 km/s crust, a 10-second vertical round"
+      },
+      {
+        "start": 58.8,
+        "end": 62.5,
+        "text": "trip corresponds to 30 km depth, not 60 km."
+      },
+      {
+        "start": 63.42000000000001,
+        "end": 70.06,
+        "text": "Compressional waves, called P-waves, refract strongly at the core–mantle boundary, leaving"
+      },
+      {
+        "start": 70.06,
+        "end": 72.00000000000001,
+        "text": "a zone without direct P arrivals."
+      },
+      {
+        "start": 72.2,
+        "end": 75.9,
+        "text": "A P-wave shadow is not evidence that P-waves cannot travel through"
+      },
+      {
+        "start": 75.9,
+        "end": 80.46000000000001,
+        "text": "liquid. Shear waves, called S-waves, do not cross the liquid outer"
+      },
+      {
+        "start": 80.46000000000001,
+        "end": 85.24000000000001,
+        "text": "core. The broad S-wave shadow, together with other observations, supports a"
+      },
+      {
+        "start": 85.24000000000001,
+        "end": 89.76,
+        "text": "molten outer core. Reflected and converted waves can take indirect paths."
+      },
+      {
+        "start": 89.76,
+        "end": 93.80000000000001,
+        "text": "Keep direct-wave shadow claims separate from the claim that no seismic"
+      },
+      {
+        "start": 93.80000000000001,
+        "end": 96.5,
+        "text": "energy of any kind could ever be detected there."
+      }
+    ],
+    "audio": "../../videos/chapter12/12-15.mp4"
+  },
+  {
+    "n": 16,
+    "title": "Tomography and models of deep Earth",
+    "logline": "Crossing seismic paths and experiments constrain deep structure without making velocity a unique thermometer.",
+    "beats": [
+      [
+        "Combine rocks, experiments, and calculations",
+        "lab",
+        [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "Exhumed metamorphic rocks preserve minerals and structures formed at depth. Laboratory experiments test how rock responds to pressure and temperature. Numerical models explore possible flow and wave paths under stated physical assumptions. Models are tested with observations; they are not direct photographs of inaccessible depths. Together these approaches constrain conditions and processes that a surface exposure alone cannot reveal.",
+        [
+          "12.16-p2-Im2.png"
+        ],
+        {
+          "start": 0,
+          "end": 26.14
+        },
+        {
+          "takeaway": "A rock sample deforms under increasing load between press platens; sample and experimental limits remain explicit.",
+          "cueTimes": [
+            0
+          ],
+          "modes": [
+            "lab"
+          ]
+        }
+      ],
+      [
+        "Build a velocity image from crossing paths",
+        "tomography",
+        [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "Seismic tomography combines many rays passing through a region from different directions. Earlier-than-expected arrivals can indicate faster material; later arrivals can indicate slower material. In the supplied diagram, the granite body is a faster region relative to surrounding sedimentary rocks. Rays that sample it can arrive earlier than predicted by a uniform-background model. The red and blue colors encode relative velocity in this particular figure. They are not literal rock colors, and they are not the lab’s reading-emphasis colors. Sparse ray coverage limits resolution.",
+        [
+          "12.16-p3-Im4.png",
+          "12.16-p4-Im5.png"
+        ],
+        {
+          "start": 26.76,
+          "end": 57.88
+        },
+        {
+          "takeaway": "Crossing rays sample a faster inclusion; accumulated early/late residuals resolve a velocity model from several directions.",
+          "cueTimes": [
+            26.76,
+            47.52
+          ],
+          "modes": [
+            "tomography",
+            "tomography"
+          ]
+        }
+      ],
+      [
+        "Separate observations from deep-flow interpretations",
+        "convection",
+        [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "Slower regions can be consistent with hotter material; faster regions can reflect cooler or stiffer material. Composition and other physical properties also matter, so velocity alone is not a unique thermometer. The chapter presents models with cool subducted slabs sinking and hot, mostly solid material rising. It discusses the D-double-prime region near the core–mantle boundary and possible links to plumes. The mantle can flow over geological time while remaining mostly solid. The source treats some deep-flow interpretations as debated and does not place every mid-ocean ridge above a deep plume.",
+        [
+          "12.16-p5-Im6.png",
+          "12.16-p6-Im7.png",
+          "12.16-p7-Im9.png"
+        ],
+        {
+          "start": 58.38,
+          "end": 95.07000000000001
+        },
+        {
+          "takeaway": "A cool coherent slab descends while mostly solid hotter material rises over schematic geological time.",
+          "cueTimes": [
+            58.38,
+            78.6,
+            82.96000000000001
+          ],
+          "modes": [
+            "convection",
+            "convection",
+            "convection"
+          ]
+        }
+      ]
+    ],
+    "duration": 95.07000000000001,
+    "timingStatus": "Aligned to the selected narration word intervals; auditory acceptance pending.",
+    "captions": [
+      {
+        "start": 0.3,
+        "end": 4.9799999999999995,
+        "text": "Exhumed metamorphic rocks preserve minerals and structures formed at depth."
+      },
+      {
+        "start": 5.22,
+        "end": 9.440000000000001,
+        "text": "Laboratory experiments test how rock responds to pressure and temperature."
+      },
+      {
+        "start": 10.020000000000001,
+        "end": 14.14,
+        "text": "Numerical models explore possible flow and wave paths under stated physical"
+      },
+      {
+        "start": 14.14,
+        "end": 16.94,
+        "text": "assumptions. Models are tested with observations;"
+      },
+      {
+        "start": 16.94,
+        "end": 19.94,
+        "text": "they are not direct photographs of inaccessible depths."
+      },
+      {
+        "start": 20.12,
+        "end": 24.52,
+        "text": "Together these approaches constrain conditions and processes that a surface exposure"
+      },
+      {
+        "start": 24.52,
+        "end": 25.94,
+        "text": "alone cannot reveal."
+      },
+      {
+        "start": 26.76,
+        "end": 30.400000000000002,
+        "text": "Seismic tomography combines many rays passing through a region from different"
+      },
+      {
+        "start": 30.400000000000002,
+        "end": 34.54,
+        "text": "directions. Earlier-than-expected arrivals can indicate faster material;"
+      },
+      {
+        "start": 34.96,
+        "end": 37.32,
+        "text": "later arrivals can indicate slower material."
+      },
+      {
+        "start": 37.58,
+        "end": 40.56,
+        "text": "In the supplied diagram, the granite body is a faster region"
+      },
+      {
+        "start": 40.56,
+        "end": 42.7,
+        "text": "relative to surrounding sedimentary rocks."
+      },
+      {
+        "start": 42.900000000000006,
+        "end": 45.94,
+        "text": "Rays that sample it can arrive earlier than predicted by a"
+      },
+      {
+        "start": 45.94,
+        "end": 50.42,
+        "text": "uniform-background model. The red and blue colors encode relative velocity in"
+      },
+      {
+        "start": 50.42,
+        "end": 53.8,
+        "text": "this particular figure. They are not literal rock colors, and they"
+      },
+      {
+        "start": 53.8,
+        "end": 55.58,
+        "text": "are not the lab’s reading-emphasis colors."
+      },
+      {
+        "start": 55.88,
+        "end": 57.46,
+        "text": "Sparse ray coverage limits resolution."
+      },
+      {
+        "start": 58.38,
+        "end": 61.18,
+        "text": "Slower regions can be consistent with hotter material;"
+      },
+      {
+        "start": 61.580000000000005,
+        "end": 65.24000000000001,
+        "text": "faster regions can reflect cooler or stiffer material."
+      },
+      {
+        "start": 65.66,
+        "end": 69.96000000000001,
+        "text": "Composition and other physical properties also matter, so velocity alone is"
+      },
+      {
+        "start": 69.96000000000001,
+        "end": 73.9,
+        "text": "not a unique thermometer. The chapter presents models with cool subducted"
+      },
+      {
+        "start": 73.9,
+        "end": 77.5,
+        "text": "slabs sinking and hot, mostly solid material rising."
+      },
+      {
+        "start": 77.76,
+        "end": 81.9,
+        "text": "It discusses the D-double-prime region near the core–mantle boundary and possible"
+      },
+      {
+        "start": 81.9,
+        "end": 85.80000000000001,
+        "text": "links to plumes. The mantle can flow over geological time while"
+      },
+      {
+        "start": 85.80000000000001,
+        "end": 90.38,
+        "text": "remaining mostly solid. The source treats some deep-flow interpretations as debated"
+      },
+      {
+        "start": 90.38,
+        "end": 93.62,
+        "text": "and does not place every mid-ocean ridge above a deep plume."
+      }
+    ],
+    "audio": "../../videos/chapter12/12-16.mp4"
+  },
+  {
+    "n": 17,
+    "title": "The 1964 Alaska earthquake as a tectonic investigation",
+    "logline": "Use rupture, deformation and tsunami evidence to explain the 1964 Alaska earthquake.",
+    "beats": [
+      [
+        "Connect the rupture to the plate boundary",
+        "subduct",
+        [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "The 1964 Alaska earthquake was a very large subduction-related event, reported as moment magnitude 9.2 in the course sources. It began beneath southern Alaska and ruptured a broad megathrust surface. The downgoing Pacific plate moved beneath the overriding North American plate. The textbook cross section shows a gently dipping interface, not a continental rift or a purely strike-slip boundary. The aftershock distribution helped constrain the large affected fault area. The felt region and the region of severe property damage were different sizes.",
+        [
+          "12.17-p6-Im9.png"
+        ],
+        {
+          "start": 0,
+          "end": 33.019999999999996
+        },
+        {
+          "takeaway": "A coherent plate descends under a continent; distinguish shallow interface slip from deep slab seismicity.",
+          "cueTimes": [
+            0
+          ],
+          "modes": [
+            "subduct"
+          ]
+        }
+      ],
+      [
+        "Trace effects on land and in water",
+        "landslide",
+        [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "Shaking damaged Anchorage and triggered major landslides. Weak ground and slope failure caused buildings and neighborhoods to settle or collapse. Some coastal areas rose while others subsided. Uplift exposed marine organisms above their former tide level; subsidence allowed seawater to flood former dry land. Seafloor displacement generated a Pacific tsunami, while local submarine landslides produced additional waves. Do not assume every local wave height represents the same source mechanism.",
+        [
+          "12.17-p4-Im5.png",
+          "12.17-p5-Im6.png",
+          "12.17-p5-Im7.png"
+        ],
+        {
+          "start": 33.49999999999999,
+          "end": 64.05999999999999
+        },
+        {
+          "takeaway": "A coherent unstable mass breaks loose and moves downslope into a valley; deposited debris persists.",
+          "cueTimes": [
+            33.49999999999999,
+            42.099999999999994,
+            53.33999999999999
+          ],
+          "modes": [
+            "landslide",
+            "uplift",
+            "tsunami"
+          ],
+          "takeaways": [
+            "An unstable mass moves downslope and leaves debris below. A slide entering water can also displace the water.",
+            "Deformation raises some coastal ground and lowers other ground; both signs are measured relative to a reference.",
+            "Sudden seafloor displacement moves the water column and launches outward-traveling tsunami waves."
+          ]
+        }
+      ],
+      [
+        "Use the observations to test a tectonic model",
+        "uplift",
+        [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "Surveyors mapped uplift and subsidence rather than assuming a uniform elevation change. The coherent regional pattern supported thrusting at a convergent margin. This work helped establish the subduction interpretation during the development of plate tectonics. The nearby volcanic arc provides an additional regional clue to subduction. The map’s broad boundary of ground and ice cracking marks an affected region; it must not be read as one continuous fault fissure thousands of kilometers long.",
+        [
+          "12.17-p6-Im9.png",
+          "12.17-p2-Im2.png"
+        ],
+        {
+          "start": 64.6,
+          "end": 93.91
+        },
+        {
+          "takeaway": "A thrust rupture produces an upward coastal region and a subsiding inland region, with markers referenced to sea level.",
+          "cueTimes": [
+            64.6,
+            83.88
+          ],
+          "modes": [
+            "uplift",
+            "uplift"
+          ]
+        }
+      ]
+    ],
+    "duration": 93.91,
+    "timingStatus": "Aligned to the selected narration word intervals; auditory acceptance pending.",
+    "captions": [
+      {
+        "start": 0.3,
+        "end": 5.34,
+        "text": "The 1964 Alaska earthquake was a very large subduction-related event, reported"
+      },
+      {
+        "start": 5.34,
+        "end": 8.780000000000001,
+        "text": "as moment magnitude 9.2 in the course sources."
+      },
+      {
+        "start": 9.06,
+        "end": 13.22,
+        "text": "It began beneath southern Alaska and ruptured a broad megathrust surface."
+      },
+      {
+        "start": 13.5,
+        "end": 17.92,
+        "text": "The downgoing Pacific plate moved beneath the overriding North American plate."
+      },
+      {
+        "start": 18.12,
+        "end": 21.740000000000002,
+        "text": "The textbook cross section shows a gently dipping interface, not a"
+      },
+      {
+        "start": 21.740000000000002,
+        "end": 24.5,
+        "text": "continental rift or a purely strike-slip boundary."
+      },
+      {
+        "start": 24.82,
+        "end": 28.82,
+        "text": "The aftershock distribution helped constrain the large affected fault area."
+      },
+      {
+        "start": 28.82,
+        "end": 32.019999999999996,
+        "text": "The felt region and the region of severe property damage were"
+      },
+      {
+        "start": 32.019999999999996,
+        "end": 32.68,
+        "text": "different sizes."
+      },
+      {
+        "start": 33.49999999999999,
+        "end": 37.16,
+        "text": "Shaking damaged Anchorage and triggered major landslides."
+      },
+      {
+        "start": 37.33999999999999,
+        "end": 40.93999999999999,
+        "text": "Weak ground and slope failure caused buildings and neighborhoods to settle"
+      },
+      {
+        "start": 40.93999999999999,
+        "end": 45.53999999999999,
+        "text": "or collapse. Some coastal areas rose while others subsided."
+      },
+      {
+        "start": 45.97999999999999,
+        "end": 49.519999999999996,
+        "text": "Uplift exposed marine organisms above their former tide level;"
+      },
+      {
+        "start": 49.94,
+        "end": 52.959999999999994,
+        "text": "subsidence allowed seawater to flood former dry land."
+      },
+      {
+        "start": 53.33999999999999,
+        "end": 58.459999999999994,
+        "text": "Seafloor displacement generated a Pacific tsunami, while local submarine landslides produced"
+      },
+      {
+        "start": 58.459999999999994,
+        "end": 62.83999999999999,
+        "text": "additional waves. Do not assume every local wave height represents the"
+      },
+      {
+        "start": 62.83999999999999,
+        "end": 63.67999999999999,
+        "text": "same source mechanism."
+      },
+      {
+        "start": 64.6,
+        "end": 69.55999999999999,
+        "text": "Surveyors mapped uplift and subsidence rather than assuming a uniform elevation"
+      },
+      {
+        "start": 69.55999999999999,
+        "end": 73.91999999999999,
+        "text": "change. The coherent regional pattern supported thrusting at a convergent margin."
+      },
+      {
+        "start": 74.16,
+        "end": 78.36,
+        "text": "This work helped establish the subduction interpretation during the development of"
+      },
+      {
+        "start": 78.36,
+        "end": 82.86,
+        "text": "plate tectonics. The nearby volcanic arc provides an additional regional clue"
+      },
+      {
+        "start": 82.86,
+        "end": 86.75999999999999,
+        "text": "to subduction. The map’s broad boundary of ground and ice cracking"
+      },
+      {
+        "start": 86.75999999999999,
+        "end": 89.8,
+        "text": "marks an affected region; it must not be read as one"
+      },
+      {
+        "start": 89.8,
+        "end": 92.46,
+        "text": "continuous fault fissure thousands of kilometers long."
+      }
+    ],
+    "audio": "../../videos/chapter12/12-17.mp4"
+  },
+  {
+    "n": 18,
+    "title": "Locate the investigation earthquake and compare town hazards",
+    "logline": "Locate the offshore source, then compare each town using distance, sediment, elevation, slopes and coast shape.",
+    "beats": [
+      [
+        "Read the three source records",
+        "triangulate",
+        [
+          1,
+          3
+        ],
+        "The investigation provides P–S intervals of 0.25 s at White Sands, 0.45 s at Hillside, and 0.78 s at Mesaview. White Sands is nearest; Mesaview is farthest. Read each interval against this investigation’s own travel-time graph. It gives approximate distances of 2.5 km, 4.5 km, and 7.8 km respectively; these are source-specific graph readings, not a universal conversion. Use the map scale to draw those radii around the three named stations. Their common region lies offshore near the trench, supporting the trench-related earthquake interpretation rather than Lava Mountain or Red Mesa.",
+        [
+          "12.18-p3-Im3.png",
+          "12.18-p3-Im4.png",
+          "12.18-p3-Im5.png"
+        ],
+        {
+          "start": 0,
+          "end": 42.86
+        },
+        {
+          "takeaway": "Travel-time observations build three radius circles around fixed stations; their common region locates a fixed source.",
+          "cueTimes": [
+            0,
+            15.260000000000002,
+            30.3
+          ],
+          "modes": [
+            "triangulate",
+            "triangulate",
+            "triangulate"
+          ]
+        }
+      ],
+      [
+        "Connect terrain and ground conditions to hazards",
+        "landslide",
+        [
+          1,
+          3
+        ],
+        "Sandpoint stands on reclaimed loose coastal material, so tsunami exposure and weak-ground behavior both matter. Riverton is low at the head of a sandy bay with gentle offshore slopes, creating substantial inundation concern. Ashton lies on steep volcanic slopes with large blocks nearby; shaking can trigger slope failure. Cascade Village and Cliffside lie near fractured cliffs, and Cliffside also has soft, wet ground. Mesaview is farther from the offshore source but sits between steep Red Mesa and Lava Mountain. Greater source distance can reduce shaking relative to nearer sites without eliminating slope hazards.",
+        [
+          "12.18-p1-Im1.png",
+          "12.18-p1-Im1.png"
+        ],
+        {
+          "start": 43.3,
+          "end": 79.38
+        },
+        {
+          "takeaway": "A coherent unstable mass breaks loose and moves downslope into a valley; deposited debris persists.",
+          "cueTimes": [
+            43.3,
+            57.28
+          ],
+          "modes": [
+            "inundate",
+            "landslide"
+          ],
+          "takeaways": [
+            "A coastal surge reaches low ground while the higher inland site remains above this schematic water level.",
+            "An unstable mass moves downslope and leaves debris below. A slide entering water can also displace the water."
+          ]
+        }
+      ],
+      [
+        "Make a relative recommendation with reasons",
+        "inundate",
+        [
+          1,
+          3
+        ],
+        "Hillside occupies a higher inland setting with gentler adjacent slopes. In this scenario those features make it a defensible lower-hazard choice, not a guarantee of no shaking. White Sands is behind a reef in the supplied scenario; that is the course’s relative comparison with exposed Sandpoint. A reef is not reliable real-world protection from a tsunami and does not justify staying on the coast. Rank towns by the specified event and hazard, then cite elevation, distance, sediment, slope, and coastal geometry. The textbook allows reasoned alternatives for its overall safest/least-safe ranking; a single unlabeled risk score would conceal those assumptions.",
+        [
+          "12.18-p1-Im1.png"
+        ],
+        {
+          "start": 80.06,
+          "end": 119.81
+        },
+        {
+          "takeaway": "A coastal surge reaches low ground while an elevated inland site remains above the modeled water; no absolute safety claim.",
+          "cueTimes": [
+            80.06
+          ],
+          "modes": [
+            "inundate"
+          ]
+        }
+      ]
+    ],
+    "duration": 119.81,
+    "timingStatus": "Aligned to the selected narration word intervals; auditory acceptance pending.",
+    "captions": [
+      {
+        "start": 0.3,
+        "end": 6.0,
+        "text": "The investigation provides P–S intervals of 0.25 s at White Sands,"
+      },
+      {
+        "start": 6.22,
+        "end": 11.540000000000001,
+        "text": "0.45 s at Hillside, and 0.78 s at Mesaview."
+      },
+      {
+        "start": 11.74,
+        "end": 14.96,
+        "text": "White Sands is nearest; Mesaview is farthest."
+      },
+      {
+        "start": 15.260000000000002,
+        "end": 18.86,
+        "text": "Read each interval against this investigation’s own travel-time graph."
+      },
+      {
+        "start": 19.14,
+        "end": 24.82,
+        "text": "It gives approximate distances of 2.5 km, 4.5 km, and 7.8"
+      },
+      {
+        "start": 24.82,
+        "end": 29.92,
+        "text": "km respectively; these are source-specific graph readings, not a universal conversion."
+      },
+      {
+        "start": 30.3,
+        "end": 33.22,
+        "text": "Use the map scale to draw those radii around the three"
+      },
+      {
+        "start": 33.22,
+        "end": 37.839999999999996,
+        "text": "named stations. Their common region lies offshore near the trench, supporting"
+      },
+      {
+        "start": 37.839999999999996,
+        "end": 42.48,
+        "text": "the trench-related earthquake interpretation rather than Lava Mountain or Red Mesa."
+      },
+      {
+        "start": 43.3,
+        "end": 48.5,
+        "text": "Sandpoint stands on reclaimed loose coastal material, so tsunami exposure and"
+      },
+      {
+        "start": 48.5,
+        "end": 52.04,
+        "text": "weak-ground behavior both matter. Riverton is low at the head of"
+      },
+      {
+        "start": 52.04,
+        "end": 56.58,
+        "text": "a sandy bay with gentle offshore slopes, creating substantial inundation concern."
+      },
+      {
+        "start": 57.28,
+        "end": 60.76,
+        "text": "Ashton lies on steep volcanic slopes with large blocks nearby;"
+      },
+      {
+        "start": 61.019999999999996,
+        "end": 62.58,
+        "text": "shaking can trigger slope failure."
+      },
+      {
+        "start": 63.31999999999999,
+        "end": 67.24,
+        "text": "Cascade Village and Cliffside lie near fractured cliffs, and Cliffside also"
+      },
+      {
+        "start": 67.24,
+        "end": 71.16,
+        "text": "has soft, wet ground. Mesaview is farther from the offshore source"
+      },
+      {
+        "start": 71.16,
+        "end": 73.75999999999999,
+        "text": "but sits between steep Red Mesa and Lava Mountain."
+      },
+      {
+        "start": 73.97999999999999,
+        "end": 77.62,
+        "text": "Greater source distance can reduce shaking relative to nearer sites without"
+      },
+      {
+        "start": 77.62,
+        "end": 79.14,
+        "text": "eliminating slope hazards."
+      },
+      {
+        "start": 80.06,
+        "end": 84.08,
+        "text": "Hillside occupies a higher inland setting with gentler adjacent slopes."
+      },
+      {
+        "start": 84.28,
+        "end": 88.08,
+        "text": "In this scenario those features make it a defensible lower-hazard choice,"
+      },
+      {
+        "start": 88.28,
+        "end": 89.96000000000001,
+        "text": "not a guarantee of no shaking."
+      },
+      {
+        "start": 90.3,
+        "end": 93.36,
+        "text": "White Sands is behind a reef in the supplied scenario;"
+      },
+      {
+        "start": 93.36,
+        "end": 97.06,
+        "text": "that is the course’s relative comparison with exposed Sandpoint."
+      },
+      {
+        "start": 97.38,
+        "end": 100.82000000000001,
+        "text": "A reef is not reliable real-world protection from a tsunami and"
+      },
+      {
+        "start": 100.82000000000001,
+        "end": 102.86,
+        "text": "does not justify staying on the coast."
+      },
+      {
+        "start": 103.1,
+        "end": 107.0,
+        "text": "Rank towns by the specified event and hazard, then cite elevation,"
+      },
+      {
+        "start": 107.3,
+        "end": 110.14,
+        "text": "distance, sediment, slope, and coastal geometry."
+      },
+      {
+        "start": 110.16,
+        "end": 115.12,
+        "text": "The textbook allows reasoned alternatives for its overall safest/least-safe ranking;"
+      },
+      {
+        "start": 115.36,
+        "end": 118.36,
+        "text": "a single unlabeled risk score would conceal those assumptions."
+      }
+    ],
+    "audio": "../../videos/chapter12/12-18.mp4"
+  }
+]

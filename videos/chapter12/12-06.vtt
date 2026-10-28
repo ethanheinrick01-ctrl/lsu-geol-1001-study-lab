@@ -1,0 +1,82 @@
+WEBVTT
+
+00:00:00.300 --> 00:00:03.680
+Measure the interval between the first P and S arrivals on
+
+00:00:03.680 --> 00:00:08.660
+each seismogram. A larger P–S interval generally indicates a more distant
+
+00:00:08.660 --> 00:00:13.700
+source; use the supplied travel-time relation rather than inventing one universal
+
+00:00:13.700 --> 00:00:18.460
+speed. In the example, ISCO has the shortest interval, DUG is
+
+00:00:18.460 --> 00:00:21.660
+intermediate, and WUAZ has the longest.
+
+00:00:21.920 --> 00:00:25.460
+The plotted distance is a radius around a station, not a
+
+00:00:25.460 --> 00:00:30.100
+direction toward the source. Draw distance circles around at least three
+
+00:00:30.100 --> 00:00:34.960
+stations. Their shared intersection locates the epicenter in the simplified exercise.
+
+00:00:35.260 --> 00:00:38.280
+Real networks use many records and more detailed models.
+
+00:00:39.100 --> 00:00:43.200
+Measure the maximum S-wave amplitude in the chapter’s local-magnitude exercise and
+
+00:00:43.200 --> 00:00:45.400
+use the distance inferred from the arrival interval.
+
+00:00:45.620 --> 00:00:47.980
+Connect distance and amplitude on the outer scales.
+
+00:00:48.240 --> 00:00:51.240
+The line crosses the middle magnitude scale at the estimated local
+
+00:00:51.240 --> 00:00:55.460
+magnitude. Separate station measurements should converge on one event magnitude after
+
+00:00:55.460 --> 00:00:59.480
+accounting for distance. A one-unit magnitude increase corresponds to ten times
+
+00:00:59.480 --> 00:01:03.580
+the ground-motion amplitude in this scale and approximately 32 times the
+
+00:01:03.580 --> 00:01:08.460
+energy. Two magnitude units correspond to roughly 1,000 times the energy,
+
+00:01:08.660 --> 00:01:09.260
+not 64.
+
+00:01:10.180 --> 00:01:13.660
+Local magnitude uses an amplitude-and-distance relationship.
+
+00:01:13.920 --> 00:01:18.260
+Moment magnitude uses seismic moment, related to the area that slipped,
+
+00:01:18.420 --> 00:01:19.780
+amount of slip, and rigidity;
+
+00:01:20.040 --> 00:01:21.940
+it is useful for large earthquakes.
+
+00:01:22.460 --> 00:01:26.520
+Modified Mercalli intensity describes observed shaking and damage at a place,
+
+00:01:26.520 --> 00:01:31.320
+using Roman numerals I–XII. Different sites can have different intensities during
+
+00:01:31.320 --> 00:01:36.000
+one earthquake. Local ground conditions and building vulnerability influence damage.
+
+00:01:36.240 --> 00:01:39.580
+The site with the greatest damage is useful evidence, but damage
+
+00:01:39.580 --> 00:01:43.580
+alone does not identify the precise hypocenter or replace instrument data.
