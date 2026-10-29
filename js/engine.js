@@ -98,10 +98,10 @@
     state = state || L.store.load();
     var out = (state.attempts || []).map(function(a){ return Object.assign({}, a); });
     (state.examRuns || []).forEach(function(r){ Object.keys(r.answers || {}).forEach(function(id){
-      var entry=r.answers[id], it=resolve({id:id}); if(!entry || !it)return;
+      var entry=r.answers[id], it=resolve({id:id,snapshot:r.items&&r.items[id]}); if(!entry || !it)return;
       [entry.first].concat(entry.tries || []).forEach(function(x, n){
         if(!x || !x.grade)return;
-        out.push({i:id,root:it.masteryRoot||id,c:it.c,ok:!!x.grade.ok,sc:x.grade.sc||0,cf:x.cf||'m',m:'exam1',t:x.at||r.started||0,
+        out.push({i:id,root:it.masteryRoot||id,c:it.c,ok:!!x.grade.ok,sc:x.grade.sc||0,cf:x.cf||'m',m:r.examId||'exam1',t:x.at||r.started||0,
           self:!!x.self,h:x.assisted?1:0,correction:n>0,run:r.id,attemptId:x.id});
       });
     }); });
@@ -134,8 +134,8 @@
       var cleared=Object.keys(clearRoots).length>=2 && after.length && after[after.length-1].cf!=='l';
       st.reviewOpen=lastMiss>=0&&!cleared;
       st.highConfidenceMiss=st.reviewOpen&&h.some(function(a){return !a.ok&&a.cf==='h' && !isClearedAfter(h,a);});
-      st.mockSeen=h.some(function(a){return a.m==='mock'||a.m==='exam1';});
-      st.mockMiss=st.reviewOpen&&h.some(function(a){return !a.ok&&(a.m==='mock'||a.m==='exam1')&&!isClearedAfter(h,a);});
+      st.mockSeen=h.some(function(a){return a.m==='mock'||a.m==='exam1'||a.m==='exam2';});
+      st.mockMiss=st.reviewOpen&&h.some(function(a){return !a.ok&&(a.m==='mock'||a.m==='exam1'||a.m==='exam2')&&!isClearedAfter(h,a);});
       st.lastMiss=lastMiss>=0?h[lastMiss]:null;
       st.rawStatus=!h.length?'new':st.highConfidenceMiss?'misconception':st.reviewOpen?'shaky':earned?'mastered':'learning';
       st.status=earned || (!ignoreCredits && state.masteryCredits && state.masteryCredits[c])?'mastered':st.rawStatus;

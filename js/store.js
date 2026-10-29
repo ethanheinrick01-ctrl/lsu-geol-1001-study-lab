@@ -6,7 +6,7 @@
   var mem = null, storageOK = true, lastError = '';
   function blank() {
     return { app: L.CONFIG.id, schema: SCHEMA, created: Date.now(), updated: Date.now(), attempts: [], mocks: [], mockActive: null,
-      examRuns: [], examActive: null, masteryCredits: {}, sessionHistory: [], mockArchived: [], session: null, sessionsByExam: {}, boss: {}, guideRead: {}, teach: {}, legacy: null, settings: { mockMinutes: 80, activeExam: 'exam1' } };
+      examRuns: [], examActive: null, examActiveByExam: {}, masteryCredits: {}, sessionHistory: [], mockArchived: [], session: null, sessionsByExam: {}, boss: {}, guideRead: {}, teach: {}, legacy: null, settings: { mockMinutes: 80, activeExam: 'exam1' } };
   }
   function get(k) { try { return root.localStorage ? (root.StudyStorage || root.localStorage).getItem(k) : null; } catch (e) { storageOK = false; lastError = String(e); return null; } }
   function set(k, v) { try { if (!root.localStorage) throw Error('localStorage unavailable'); (root.StudyStorage || root.localStorage).setItem(k, v); storageOK = true; return true; } catch (e) { storageOK = false; lastError = String(e); return false; } }
@@ -18,7 +18,7 @@
     if (!Array.isArray(x.examRuns)) x.examRuns = [];
     if (!Array.isArray(x.sessionHistory)) x.sessionHistory = [];
     if (!Array.isArray(x.mockArchived)) x.mockArchived = [];
-    ['boss', 'guideRead', 'teach', 'settings', 'masteryCredits', 'sessionsByExam'].forEach(function (k) { if (!x[k] || typeof x[k] !== 'object') x[k] = b[k]; });
+    ['boss', 'guideRead', 'teach', 'settings', 'masteryCredits', 'sessionsByExam', 'examActiveByExam'].forEach(function (k) { if (!x[k] || typeof x[k] !== 'object') x[k] = b[k]; });
     if(x.session)x.sessionsByExam[x.session.examId||'exam1']=x.session;
     x.schema = SCHEMA; x.app = L.CONFIG.id; return x;
   }
@@ -82,6 +82,7 @@
     });
     into.examRuns.sort(function (a,b) { return a.started - b.started; });
     if (!into.examActive && from.examActive && into.examRuns.some(function(r){return r.id===from.examActive && !r.finished && !r.archived;})) into.examActive = from.examActive;
+    Object.keys(from.examActiveByExam||{}).forEach(function(exam){var id=from.examActiveByExam[exam];if(!into.examActiveByExam[exam]&&into.examRuns.some(function(r){return r.id===id&&(r.examId||'exam1')===exam;}))into.examActiveByExam[exam]=id;});
     (from.mockArchived || []).forEach(function(r){ if (!into.mockArchived.some(function(x){return x.id===r.id;})) into.mockArchived.push(r); });
     if (!into.mockActive && from.mockActive && !into.mocks.some(function(m){return m.id===from.mockActive.id;}) && !into.mockArchived.some(function(m){return m.id===from.mockActive.id;})) into.mockActive=from.mockActive;
     Object.keys(from.masteryCredits || {}).forEach(function(c){if(!into.masteryCredits[c] || from.masteryCredits[c]==='earned')into.masteryCredits[c]=from.masteryCredits[c];});
@@ -128,7 +129,7 @@
     if (d && d.format === 'geol1001-lab-v3-export' && d.state) {
       if (d.app !== L.CONFIG.id) return { ok: false, message: 'This export belongs to a different lab (' + d.app + '). Nothing was changed.' };
       var n = mergeInto(s, normalize(d.state)); save();
-      return { ok: true, kind: 'v3', message: 'Merged ' + n + ' new attempts plus Exam 1, mock, and Boss history. Existing records were kept.' };
+      return { ok: true, kind: 'v3', message: 'Merged ' + n + ' new attempts plus exam, mock, and Boss history. Existing records were kept.' };
     }
     var guided = null, drills = null, label = '';
     if (d && d.format === 'geol1001-progress-backup-v1' && d.storage) {

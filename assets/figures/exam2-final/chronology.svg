@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1080" height="570" viewBox="0 0 1080 570"><rect width="100%" height="100%" fill="white"/><g font-family="Arial,sans-serif" fill="#152331"><text x="25" y="35" font-size="26" font-weight="bold">Panel A · non-overturned beds</text><text x="565" y="35" font-size="26" font-weight="bold">Panel B · independent history</text>
+<rect x="25" y="100" width="470" height="110" fill="#e9d7a6" stroke="#222"/><rect x="25" y="210" width="470" height="235" fill="#c6b6aa" stroke="#222"/><path d="M25 210 H330 L281 315 H25 Z M330 210 H495 V340 H269 Z" fill="#b9cbd3" stroke="#222"/>
+<path d="M220 445 L330 210" stroke="#111" stroke-width="6"/><text x="54" y="163" font-size="32">C</text><text x="54" y="270" font-size="32">B</text><text x="54" y="385" font-size="32">A</text><text x="270" y="360" font-size="30">F</text>
+<text x="25" y="485" font-size="19">F offsets A/B; C is unbroken and seals F.</text>
+<rect x="565" y="100" width="470" height="105" fill="#d6d9bc" stroke="#222"/><rect x="565" y="220" width="470" height="105" fill="#cdbb9b" stroke="#222"/><rect x="565" y="325" width="470" height="120" fill="#b5c9d5" stroke="#222"/>
+<path d="M565 213 Q590 192 615 213 T665 213 T715 213 T765 213 T815 213 T865 213 T915 213 T965 213 T1015 213 L1035 213" fill="none" stroke="#111" stroke-width="4"/>
+<path d="M805 445 L850 215 L885 215 L845 445 Z" fill="#746467" stroke="#111" stroke-width="3"/>
+<path d="M797 440 L840 224 M854 437 L894 225" stroke="#c56440" stroke-width="7"/>
+<path d="M824 348 l9 -13 8 11 -11 6 Z M836 300 l9 -10 4 15 Z" fill="#b5c9d5" stroke="#111"/>
+<text x="594" y="163" font-size="32">Z</text><text x="594" y="282" font-size="32">Y</text><text x="594" y="390" font-size="32">X</text><text x="856" y="385" font-size="28">D</text>
+<text x="565" y="483" font-size="18">D cuts X/Y; fragments of X lie inside D.</text><text x="565" y="509" font-size="18">Y is baked beside D (rust margins).</text><text x="565" y="535" font-size="18">D is truncated below Z at an erosional surface.</text></g></svg>
