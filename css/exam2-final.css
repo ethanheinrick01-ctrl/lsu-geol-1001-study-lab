@@ -3,3 +3,6 @@
 @media print{.e2-final-links,.question-map,.actions,.pilot-tools{display:none!important}.e2-final-answer .media img{max-height:none}}
 
 body.pilot-active dialog.zoomdlg img{background:#fff}
+
+.e2-focus-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}.e2-focus-metrics b{display:block;font-size:30px;line-height:1.3}.e2-focus-metrics span{display:block;margin:8px 0;font-size:16px}.e2-focus-record{margin:18px 0}.e2-focus-record .mastery-details{margin:14px 0}.e2-focus-filters{align-items:end;margin:24px 0}.e2-focus-filters label{display:flex;flex-direction:column;gap:8px}.e2-focus-filters input,.e2-focus-filters select{min-height:44px;max-width:100%}.e2-focus-overview .row{margin-top:18px}
+@media(max-width:700px){.e2-focus-metrics{grid-template-columns:1fr;gap:20px}.e2-focus-filters{display:block}.e2-focus-filters label{margin:16px 0}}
