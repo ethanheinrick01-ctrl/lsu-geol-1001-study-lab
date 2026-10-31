@@ -103,6 +103,7 @@
         if(!x || !x.grade)return;
         out.push({i:id,root:it.masteryRoot||id,c:it.c,ok:!!x.grade.ok,sc:x.grade.sc||0,cf:x.cf||'m',m:r.examId||'exam1',t:x.at||r.started||0,
           self:!!x.self,h:x.assisted?1:0,correction:n>0,run:r.id,attemptId:x.id});
+        if(r.focusTrack)Object.assign(out[out.length-1],{focusTrack:r.focusTrack,focusUnit:r.focusUnit});
       });
     }); });
     // Older rubric self-checks were saved separately. Include the recorded rating, never infer a grade from prose.
@@ -116,7 +117,7 @@
   function conceptStats(state, ignoreCredits) {
     state=state||L.store.load();var out={},today=U.todayKey();
     Object.keys(L.CONCEPTS).forEach(function(c){out[c]={id:c,att:0,ok:0,autoAtt:0,selfAtt:0,hist:[],box:0,last:0,status:'new',rawStatus:'new',mockMiss:false,mockSeen:false,reviewOpen:false,highConfidenceMiss:false,prior:null,due:today};});
-    allAttempts(state).forEach(function(a){var st=out[a.c];if(!st)return;st.att++;if(a.ok)st.ok++;if(a.self)st.selfAtt++;else st.autoAtt++;st.hist.push(a);st.last=Math.max(st.last,a.t||0);});
+    allAttempts(state).forEach(function(a){if(a.focusTrack==='exam2-focus-v1'&&state.focusTrack!==a.focusTrack)return;var st=out[a.c];if(!st)return;st.att++;if(a.ok)st.ok++;if(a.self)st.selfAtt++;else st.autoAtt++;st.hist.push(a);st.last=Math.max(st.last,a.t||0);});
     Object.keys(out).forEach(function(c){
       var st=out[c],h=st.hist,roots={},autoRoots={},earned=false,autoEarned=false,lastMiss=-1;
       if(state.legacy && state.legacy.signal && state.legacy.signal[c])st.prior=state.legacy.signal[c];
