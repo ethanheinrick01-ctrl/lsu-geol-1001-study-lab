@@ -38,7 +38,8 @@ function shell(){
 }
 function decorateLesson(){
  if(main.querySelector('.pilot-reading-stack'))return;
- const route=location.hash.slice(1).split('/'),topic=route[1]==='topic'?L.exam2.topic(route[2]):null;
+ const route=location.hash.slice(1).split('/'),section=route[0]==='guide'?L.SECTIONS.find(s=>s.id===route[1]):null;
+ const topic=route[1]==='topic'?L.exam2.topic(route[2]):section?L.EXAM2.topics.find(t=>t.sections.includes(section.n)):null;
  if(!topic||!L.pilotPractice)return;
  const title=main.querySelector('h1'),roots=[...main.querySelectorAll('[data-e2-reading]')].filter(el=>!el.closest('.item,.feedback,.opts,.casebox,details'));
  if(!title||!roots.length)return;
@@ -79,7 +80,7 @@ function decorateLesson(){
   if(owner){owner.classList.add('pilot-reference-card');owner.id='pilot-sources';}
  });
  const toolbar=document.createElement('nav');toolbar.className='pilot-toolbar';toolbar.innerHTML='<button type="button" data-pilot-jump="pilot-read">Read</button>'+(watch?'<button type="button" data-pilot-jump="pilot-watch">Watch / listen</button>':'')+(figures?'<button type="button" data-pilot-jump="pilot-figures">Figures</button>':'');stack.before(toolbar);
- const key=document.createElement('aside');key.className='pilot-key';key.setAttribute('aria-label','Reading color key');key.innerHTML='<span><b class="pilot-key-term">Magenta:</b> terms &amp; names</span><span><b class="pilot-key-gold">Gold:</b> lecture emphasis</span><span><b class="pilot-key-checkpoint">Peach + label:</b> understanding checkpoint</span><small>Color guides reading; it does not predict exam questions.</small>';stack.before(key);
+ const key=document.createElement('aside');key.className='pilot-key';key.setAttribute('aria-label','Reading color key');key.innerHTML='<span><b class="pilot-key-term">Magenta</b> · terms &amp; names</span><span><mark class="e2-study-emphasis">Yellow highlight</mark> · lecture emphasis</span><span><b class="pilot-key-checkpoint">Peach + label</b> · understanding checkpoint</span><small>Color guides reading; it does not predict exam questions.</small>';stack.before(key);
  const order=L.EXAM2.topics,at=order.findIndex(t=>t.id===topic.id),prev=order[at-1],next=order[at+1];
  main.insertAdjacentHTML('beforeend','<nav class="pilot-bottom" aria-label="Adjacent mini-chapters">'+(prev?'<a href="#exam2/topic/'+esc(prev.id)+'">← '+esc(prev.title)+'</a>':'')+'<a href="#exam2">Return to Study</a>'+(next?'<a href="#exam2/topic/'+esc(next.id)+'">'+esc(next.title)+' →</a>':'')+'</nav>');
 }
@@ -88,15 +89,43 @@ function augmentProgress(){
  const box=document.createElement('section');box.className='card pilot-history-access';box.innerHTML='<h2>My study history</h2><p>Resume saved sessions or inspect your original answers and corrections.</p><a class="btn" href="#exam2/history">Open saved sessions and history</a>';
  main.querySelector('h1')?.after(box);box.insertAdjacentHTML('beforebegin',L.pilotPractice.resumeHTML());
 }
+function decorateLegacyLesson(){
+ const topicId=location.hash.startsWith('#exam1/topic/')?location.hash.split('/')[2]:null;
+ const practice=topicId?main.querySelector('[data-topic="'+topicId+'"]'):main.querySelector('#pracSec');
+ main.querySelectorAll('.gcard:not([data-study-decorated])').forEach(owner=>{
+  const groups=[...owner.querySelectorAll('.e2-note-group')].filter(g=>!g.closest('details'));
+  if(!groups.length)return;
+  owner.dataset.studyDecorated='true';
+  const source=owner.querySelector('.srcline')||[...owner.querySelectorAll(':scope > p')].find(p=>p.textContent.startsWith('Answer sources'));
+  const stack=document.createElement('div');stack.className='pilot-reading-stack';owner.before(stack);
+  const oldHeading=owner.querySelector(':scope > h2');if(oldHeading&&oldHeading.textContent===groups[0].querySelector('.e2-note-heading')?.textContent)oldHeading.remove();
+  groups.forEach(group=>{
+   const old=group.querySelector('.e2-note-heading'),heading=document.createElement('h2');heading.className='e2-note-heading';heading.textContent=old.textContent;old.replaceWith(heading);
+   const card=document.createElement('section');card.className='card pilot-section-card';card.append(group);
+   if(source){const details=document.createElement('details');details.className='pilot-card-source';const summary=document.createElement('summary');summary.textContent='Sources for this section';details.append(summary,source.cloneNode(true));card.append(details);}
+   if(practice){const footer=document.createElement('footer');footer.className='pilot-section-practice';const button=document.createElement('button');button.className='btn pri';button.textContent=topicId?'Practice this topic':'Practice this section';button.onclick=()=>practice.click();const help=document.createElement('p');help.className='pilot-practice-help';help.textContent='These teaching groups share the existing '+(topicId?'topic':'section')+' practice and saved progress.';footer.append(button,help);card.append(footer);}
+   stack.append(card);
+  });
+  owner.classList.add('pilot-reference-card');
+ });
+}
 function apply(){
- if(!active()){document.body.classList.remove('pilot-active','pilot-hub');if(header.dataset.pilot){header.innerHTML=originalHeader;delete header.dataset.pilot;}return;}
+ const legacy=/^#exam1\/topic\//.test(location.hash)||/^#guide\/c[1-6]s/.test(location.hash);
+ if(!active()&&!legacy){document.body.classList.remove('pilot-active','pilot-hub');if(header.dataset.pilot){header.innerHTML=originalHeader;delete header.dataset.pilot;}return;}
  if(!main.children.length)return;
  if(['#practice','#home'].includes(location.hash)){L.app.go('exam2');return;}
  document.title=(main.querySelector('h1')?.textContent||'Study')+' · GEOL 1001';
- document.body.classList.add('pilot-active');document.body.classList.toggle('pilot-hub',/^#exam2(?:\/(?:practice|chapter\/\d+))?\/?$/.test(location.hash));shell();
+ document.body.classList.add('pilot-active');document.body.classList.toggle('pilot-hub',/^#exam2(?:\/(?:practice|chapter\/\d+))?\/?$/.test(location.hash));
+ if(legacy){if(header.dataset.pilot){header.innerHTML=originalHeader;delete header.dataset.pilot;}decorateLegacyLesson();return;}shell();
  main.querySelectorAll('.exam-tools').forEach(el=>el.hidden=true);
  main.querySelectorAll('a[href="#practice"]').forEach(a=>a.href='#exam2');
- if(/^#exam2\/topic\//.test(location.hash))decorateLesson();augmentProgress();
+ if(/^#exam2\/topic\//.test(location.hash)||/^#guide\/c/.test(location.hash))decorateLesson();augmentProgress();
+ main.querySelectorAll('[data-focus-reading]').forEach(card=>{
+  if(card.dataset.termsMarked)return;
+  const plan=L.studyOutlineData.focus[card.dataset.focusReading];
+  if(plan)markTerms(card.querySelector('.e2-note-group'),plan.terms);
+  card.dataset.termsMarked='true';
+ });
  main.querySelectorAll('table').forEach(table=>{if(!table.closest('.card')){const frame=document.createElement('div');frame.className='card pilot-table-frame';table.before(frame);frame.append(table);}});
  const foot=document.querySelector('.foot');if(foot)foot.textContent='Progress saves in this browser. Tools includes backup for all exams. Course figures © their owners.';
 }

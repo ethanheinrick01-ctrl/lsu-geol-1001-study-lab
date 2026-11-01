@@ -227,7 +227,7 @@
     return tokens.join('');
   }
   function wrap(id,html){return '<div class="e2-reading-prose" data-e2-reading="'+attr(id)+'">'+html+'</div>';}
-  function cardHTML(card,first){var html=first?((card.html.match(/<p>[\s\S]*?<\/p>/)||[])[0]||card.html):card.html;return wrap(card.id,html).replace('data-e2-reading=',(first?'data-e2-excerpt="true" ':'')+'data-e2-reading=');}
+  function cardHTML(card,first){var html=first?((card.html.match(/<p>[\s\S]*?<\/p>/)||[])[0]||card.html):L.studyOutline.format(card.id,card.html);return wrap(card.id,html).replace('data-e2-reading=',(first?'data-e2-excerpt="true" ':'')+'data-e2-reading=');}
   function apply(main){
     if(!L.examScope||L.examScope.current()!=='exam2')return;
     var roots=Array.from(main.querySelectorAll('[data-e2-reading]')).filter(function(root){return !root.closest('.item,.feedback,.opts,.casebox');});

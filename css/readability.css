@@ -28,6 +28,12 @@
   #main .pilot-reading-stack > .card, #main .e2-focus-grid > .card { margin: 0; }
   #main .exam-topics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   #main .pilot-section-card .pilot-checkpoint { margin-left: 0 !important; }
+  #main .study-subpoints { margin: 10px 0 0; padding-left: 24px; font-size: inherit; line-height: inherit; }
+  #main .study-subpoints > li { margin: 0 0 10px; }
+  #main .e2-note-points + .e2-note-points { margin-top: 18px; }
+  #main .pilot-section-card mark.e2-study-term { background: none; color: #ff4fd8; font-weight: 700; }
+  #main :is(.pilot-section-card, .pilot-key) mark.e2-study-emphasis { background: #ffff00; color: #000; font-weight: 400; box-shadow: none; }
+  #main .e2-focus-lesson .pilot-checkpoint .e2-note-points { margin: 0; }
 }
 @media screen and (max-width: 767px) {
   body { font-size: 18px; }

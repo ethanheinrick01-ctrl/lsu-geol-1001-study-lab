@@ -145,7 +145,7 @@
     (L.GUIDE[id] || []).forEach(function (c) {
       var ts = U.uniq((c.c || []).reduce(function(a,id){return a.concat(topicIds(id));},[]));
       h.push('<p class="small muted">' + (ts.length ? (examId()==='exam1'?'Sep 24 review motion studies: ':'Related motion studies: ') + ts.map(function(t){return '<a href="#'+examId()+'/topic/'+t+'">Watch '+t+'</a>';}).join(' · ') : 'Broader course material; not singled out in the Sep 24 review.') + '</p>');
-      h.push('<article class="card gcard" id="' + c.id + '"><h2>' + esc(c.h) + '</h2>' + (examId()==='exam2'?L.exam2Reading.cardHTML(c):c.html) + (c.media ? IU.mediaHTML(c.media) : ''));
+      h.push('<article class="card gcard" id="' + c.id + '"><h2>' + esc(c.h) + '</h2>' + (examId()==='exam2'?L.exam2Reading.cardHTML(c):L.studyOutline.format(c.id,c.html)) + (c.media ? IU.mediaHTML(c.media) : ''));
       if (c.traps && c.traps.length) h.push('<div class="traps"><b>Tempting mistakes</b><ul>' + c.traps.map(function (t) { return '<li>' + t + '</li>'; }).join('') + '</ul></div>');
       h.push('<p class="srcline">' + IU.srcChips(c.src) + ' ' + IU.tierBadge(c.tier || sec.tier || 2) + '</p>'+(examId()==='exam2'?L.exam2.sourceHTML({examId:'exam2',src:c.src,q:c.h}):'')+'</article>');
     });
