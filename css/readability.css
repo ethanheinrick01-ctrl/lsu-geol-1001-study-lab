@@ -1,8 +1,6 @@
 /* Shared reading scale for both exams, including Focus, lessons and practice. */
 @media screen {
   body { font-size: 20px; line-height: 1.75; }
-  main#main, body.pilot-active main#main { max-width: 1160px; }
-  body.pilot-hub main#main { max-width: 1280px; }
   #main :is(.card, .item, .exam-first, .mastery-feedback) {
     font-size: 22px;
     line-height: 1.75;
@@ -33,7 +31,6 @@
 }
 @media screen and (max-width: 767px) {
   body { font-size: 18px; }
-  main#main, body.pilot-active main#main { padding-inline: 12px; }
   #main :is(.card, .item, .exam-first, .mastery-feedback) { padding: 24px 18px; font-size: 20px; }
   #main h1 { font-size: 28px; }
   #main h2 { font-size: 24px; }
