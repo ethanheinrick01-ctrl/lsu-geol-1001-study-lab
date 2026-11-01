@@ -1,0 +1,44 @@
+/* Shared reading scale for both exams, including Focus, lessons and practice. */
+@media screen {
+  body { font-size: 20px; line-height: 1.75; }
+  main#main, body.pilot-active main#main { max-width: 1160px; }
+  body.pilot-hub main#main { max-width: 1280px; }
+  #main :is(.card, .item, .exam-first, .mastery-feedback) {
+    font-size: 22px;
+    line-height: 1.75;
+    padding: 30px 32px;
+    margin-block: 24px;
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+  #main :is(.item, .exam-first, .mastery-feedback) { max-width: 1040px; }
+  #main h1 { font-size: 34px; line-height: 1.3; }
+  #main h2 { font-size: 26px; line-height: 1.4; }
+  #main h3 { font-size: 23px; line-height: 1.4; }
+  #main .e2-note-heading { font-size: 26px !important; }
+  #main :is(.e2-note-points, .pilot-prose, .e2-passage, .prompt, .stem, .why) {
+    font-size: 22px;
+    line-height: 1.75;
+  }
+  #main :is(.pilot-intro, .lede, .pilot-quick-practice p, .pilot-resume p, .pilot-history-access p, table) { font-size: 20px; }
+  #main :is(.btn, input, select, textarea, .formrow label, .mastery-details, .pilot-check-label, .pilot-pool-count, .pilot-practice-help, .small, summary) { font-size: 18px; line-height: 1.6; }
+  #main :is(.eyebrow, .tiny, .src, .badge, figcaption, .pilot-key, .pilot-source-note, .pilot-concept small, .pilot-chapter-count) { font-size: 16px; }
+  #main :is(.src, .badge) { white-space: normal; }
+  #main :is(.btn, input, select, textarea) { max-width: 100%; min-height: 44px; }
+  #main :is(input[type=checkbox], input[type=radio]) { min-height: auto; }
+  #main .pilot-reading-stack { gap: 24px; }
+  #main .pilot-reading-stack > .card, #main .e2-focus-grid > .card { margin: 0; }
+  #main .exam-topics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  #main .pilot-section-card .pilot-checkpoint { margin-left: 0 !important; }
+}
+@media screen and (max-width: 767px) {
+  body { font-size: 18px; }
+  main#main, body.pilot-active main#main { padding-inline: 12px; }
+  #main :is(.card, .item, .exam-first, .mastery-feedback) { padding: 24px 18px; font-size: 20px; }
+  #main h1 { font-size: 28px; }
+  #main h2 { font-size: 24px; }
+  #main h3 { font-size: 22px; }
+  #main .e2-note-heading { font-size: 24px !important; }
+  #main :is(.e2-note-points, .pilot-prose, .e2-passage, .prompt, .stem, .why) { font-size: 20px; }
+  #main .exam-topics, #main .e2-focus-grid { grid-template-columns: minmax(0, 1fr); }
+}
