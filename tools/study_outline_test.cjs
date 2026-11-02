@@ -49,6 +49,31 @@ for (const unit of L.exam2Mocks.focusGroups()) {
 }
 assert.equal(L.studyOutline.format('unknown', '<p>Keep me</p>'), '<p>Keep me</p>');
 assert.equal(L.studyOutline.format('unknown', ''), '');
+// The reading adapter must retain lecture highlights after paragraphs become lists.
+const sourceScope = L.examScope.current, sourceNotes = L.exam2Notes.apply;
+L.examScope.current = () => 'exam2';
+L.exam2Notes.apply = () => {};
+const points = { innerHTML: L.studyOutlineData.cards['g8-1a'].html };
+const readingRoot = {
+  dataset: { e2Reading: 'g8-1a' }, closest() { return null; },
+  querySelectorAll(selector) { return selector === '.e2-note-group .e2-note-points' ? [points] : []; }
+};
+const readingMain = { querySelectorAll() { return [readingRoot]; }, querySelector() { return {}; } };
+L.exam2Reading.apply(readingMain);
+assert.match(points.innerHTML, /e2-study-emphasis/);
+assert.match(points.innerHTML, /e2-study-emphasis[^>]*>strength generally increases downward<\/mark>/);
+const highlighted = points.innerHTML;
+L.exam2Reading.apply(readingMain);
+assert.equal(points.innerHTML, highlighted, 'Repeated decoration must not nest highlights');
+const excluded = { ...readingRoot, dataset: { e2Reading: 'g8-1a' }, closest() { return {}; } };
+points.innerHTML = '<p>Question choices stay neutral</p>';
+L.exam2Reading.apply({ ...readingMain, querySelectorAll() { return [excluded]; } });
+assert.equal(points.innerHTML, '<p>Question choices stay neutral</p>');
+L.examScope.current = sourceScope;
+L.exam2Notes.apply = sourceNotes;
+assert.doesNotMatch(L.studyOutline.keyHTML(false), /Yellow highlight/);
+assert.match(L.studyOutline.keyHTML(true), /Yellow highlight/);
+for (const n of [20,39,42,43]) assert.ok(L.studyOutlineData.focus[n].groups.some(g => g.html.includes('e2-study-emphasis')));
 const plume = L.studyOutlineData.cards['g10-4-a'].html;
 assert.match(plume, /hot solid rock<\/mark>\.<ul class="study-subpoints"><li>Melting near the lithosphere supplies liquid magma\.<\/li><li>The plume is not a pipe/);
 assert.equal(JSON.stringify([L.GUIDE, L.EXAM1, L.EXAM2, L.EXAM2_FINAL, L.engine.REG()]), protectedBefore);

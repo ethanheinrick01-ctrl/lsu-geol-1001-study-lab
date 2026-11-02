@@ -20,5 +20,8 @@ function focusLimit(unit){
  const plan=L.studyOutlineData.focus[unit.n];
  return plan&&plan.trapSource===unit.trap?plan.trapHTML:'<p>'+L.util.esc(unit.trap)+'</p>';
 }
-L.studyOutline={format:format,focusGroups:focusGroups,focusHTML:focusHTML,focusLimit:focusLimit};
+function keyHTML(hasLecture){
+ return '<aside class="pilot-key" aria-label="Reading color key"><span><b class="pilot-key-term">Magenta</b> · terms &amp; names</span>'+(hasLecture?'<span><mark class="e2-study-emphasis">Yellow highlight</mark> · lecture emphasis</span>':'')+'<span><b class="pilot-key-checkpoint">Peach + label</b> · understanding checkpoint</span><small>Color guides reading; it does not predict exam questions.</small></aside>';
+}
+L.studyOutline={format:format,focusGroups:focusGroups,focusHTML:focusHTML,focusLimit:focusLimit,keyHTML:keyHTML};
 })(window.L);

@@ -80,7 +80,7 @@ function decorateLesson(){
   if(owner){owner.classList.add('pilot-reference-card');owner.id='pilot-sources';}
  });
  const toolbar=document.createElement('nav');toolbar.className='pilot-toolbar';toolbar.innerHTML='<button type="button" data-pilot-jump="pilot-read">Read</button>'+(watch?'<button type="button" data-pilot-jump="pilot-watch">Watch / listen</button>':'')+(figures?'<button type="button" data-pilot-jump="pilot-figures">Figures</button>':'');stack.before(toolbar);
- const key=document.createElement('aside');key.className='pilot-key';key.setAttribute('aria-label','Reading color key');key.innerHTML='<span><b class="pilot-key-term">Magenta</b> · terms &amp; names</span><span><mark class="e2-study-emphasis">Yellow highlight</mark> · lecture emphasis</span><span><b class="pilot-key-checkpoint">Peach + label</b> · understanding checkpoint</span><small>Color guides reading; it does not predict exam questions.</small>';stack.before(key);
+ stack.insertAdjacentHTML('beforebegin',L.studyOutline.keyHTML(!!stack.querySelector('mark.e2-study-emphasis')));
  const order=L.EXAM2.topics,at=order.findIndex(t=>t.id===topic.id),prev=order[at-1],next=order[at+1];
  main.insertAdjacentHTML('beforeend','<nav class="pilot-bottom" aria-label="Adjacent mini-chapters">'+(prev?'<a href="#exam2/topic/'+esc(prev.id)+'">← '+esc(prev.title)+'</a>':'')+'<a href="#exam2">Return to Study</a>'+(next?'<a href="#exam2/topic/'+esc(next.id)+'">'+esc(next.title)+' →</a>':'')+'</nav>');
 }
@@ -108,6 +108,8 @@ function decorateLegacyLesson(){
   });
   owner.classList.add('pilot-reference-card');
  });
+ const stack=main.querySelector('.pilot-reading-stack');
+ if(stack&&!main.querySelector('.pilot-key'))stack.insertAdjacentHTML('beforebegin',L.studyOutline.keyHTML(!!main.querySelector('.pilot-section-card mark.e2-study-emphasis')));
 }
 function apply(){
  const legacy=/^#exam1\/topic\//.test(location.hash)||/^#guide\/c[1-6]s/.test(location.hash);
