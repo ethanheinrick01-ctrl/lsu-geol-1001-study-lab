@@ -18,16 +18,6 @@ const checkpoints=[
  ['An expanding ocean does not imply','Keep the distinction'],
  ['Do not turn it into a claim that no subduction','Keep the limit']
 ];
-function markTerms(el,terms){
- const used=new Set(),walker=document.createTreeWalker(el,NodeFilter.SHOW_TEXT),nodes=[];let n;
- while(n=walker.nextNode())if(!n.parentElement.closest('button,a,mark,h2,h3,h4,summary,.pilot-check-label'))nodes.push(n);
- const pattern=terms.slice().sort((a,b)=>b.length-a.length).map(t=>t.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).join('|');if(!pattern)return;
- const re=new RegExp('\\b('+pattern+')\\b','gi');
- nodes.forEach(node=>{let match,last=0,frag=document.createDocumentFragment(),changed=false;re.lastIndex=0;
-  while(match=re.exec(node.textContent)){const key=match[0].toLowerCase();if(used.has(key))continue;used.add(key);frag.append(node.textContent.slice(last,match.index));const m=document.createElement('mark');m.className='pilot-term';m.textContent=match[0];frag.append(m);last=match.index+match[0].length;changed=true;}
-  if(changed){frag.append(node.textContent.slice(last));node.replaceWith(frag);}
- });
-}
 function jump(id){document.getElementById(id)?.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'start'});}
 function active(){const hash=location.hash;return L.examScope?.current()==='exam2'&&!hash.startsWith('#exam1')&&hash!=='#exams'&&(hash!=='#session'||L.engine.currentSession()?.examId==='exam2');}
 function shell(){
@@ -65,9 +55,7 @@ function decorateLesson(){
    const card=document.createElement('section');card.className='card pilot-section-card';card.dataset.sourceCard=cd.id;card.dataset.concepts=cd.c.join(' ');
    let heading=group.querySelector('.e2-note-heading');if(heading){const h=document.createElement('h2');h.className='e2-note-heading';h.textContent=heading.textContent;heading.replaceWith(h);heading=h;}else{heading=document.createElement('h2');heading.className='e2-note-heading';heading.textContent=cd.h;group.prepend(heading);}
    const plan=L.studyReading?.[cd.id]?.[index];
-   if(plan){group.querySelectorAll('mark.e2-study-term').forEach(m=>m.replaceWith(document.createTextNode(m.textContent)));markTerms(group,plan.terms||[]);
-    (plan.checkpoints||[]).forEach(rule=>{const line=[...group.querySelectorAll('li,p')].find(el=>el.textContent.includes(rule.phrase));if(line&&!line.classList.contains('pilot-checkpoint')){line.classList.add('pilot-checkpoint');const label=document.createElement('b');label.className='pilot-check-label';label.textContent=rule.label;line.prepend(label);}});
-   }
+   if(plan)L.studyOutline.annotate(group,plan);
    card.append(group);
    const gallery=figures?[...figures.querySelectorAll('figure')]:[];
    const matched=gallery.find(f=>f.querySelector('img')?.alt.startsWith(heading.textContent+' ·'));
@@ -80,7 +68,7 @@ function decorateLesson(){
   if(owner){owner.classList.add('pilot-reference-card');owner.id='pilot-sources';}
  });
  const toolbar=document.createElement('nav');toolbar.className='pilot-toolbar';toolbar.innerHTML='<button type="button" data-pilot-jump="pilot-read">Read</button>'+(watch?'<button type="button" data-pilot-jump="pilot-watch">Watch / listen</button>':'')+(figures?'<button type="button" data-pilot-jump="pilot-figures">Figures</button>':'');stack.before(toolbar);
- stack.insertAdjacentHTML('beforebegin',L.studyOutline.keyHTML(!!stack.querySelector('mark.e2-study-emphasis')));
+ stack.insertAdjacentHTML('beforebegin',L.studyOutline.keyHTML(!!stack.querySelector('mark.e2-study-emphasis'),!!stack.querySelector('.study-definition,[data-study-source]')));
  const order=L.EXAM2.topics,at=order.findIndex(t=>t.id===topic.id),prev=order[at-1],next=order[at+1];
  main.insertAdjacentHTML('beforeend','<nav class="pilot-bottom" aria-label="Adjacent mini-chapters">'+(prev?'<a href="#exam2/topic/'+esc(prev.id)+'">← '+esc(prev.title)+'</a>':'')+'<a href="#exam2">Return to Study</a>'+(next?'<a href="#exam2/topic/'+esc(next.id)+'">'+esc(next.title)+' →</a>':'')+'</nav>');
 }
@@ -123,10 +111,17 @@ function apply(){
  main.querySelectorAll('a[href="#practice"]').forEach(a=>a.href='#exam2');
  if(/^#exam2\/topic\//.test(location.hash)||/^#guide\/c/.test(location.hash))decorateLesson();augmentProgress();
  main.querySelectorAll('[data-focus-reading]').forEach(card=>{
-  if(card.dataset.termsMarked)return;
   const plan=L.studyOutlineData.focus[card.dataset.focusReading];
-  if(plan)markTerms(card.querySelector('.e2-note-group'),plan.terms);
-  card.dataset.termsMarked='true';
+  if(plan)L.studyOutline.annotate(card.querySelector('.e2-note-group'),plan.groups[card.dataset.focusGroup]||plan);
+ });
+ main.querySelectorAll('[data-focus-summary]').forEach(card=>{
+  const plan=L.studyOutlineData.focus[card.dataset.focusSummary];
+  if(plan?.summary)L.studyOutline.annotate(card.querySelector('.e2-focus-skills'),plan.summary);
+ });
+ L.exam2Notes.apply(main);
+ main.querySelectorAll('[data-study-source]').forEach(source=>{
+  const plan=L.studySourceReading?.[source.dataset.studySource];
+  if(plan&&plan.source===L.EXAM2_SOURCES[source.dataset.studySource]?.pages[0].text)L.studyOutline.annotate(source,plan);
  });
  main.querySelectorAll('table').forEach(table=>{if(!table.closest('.card')){const frame=document.createElement('div');frame.className='card pilot-table-frame';table.before(frame);frame.append(table);}});
  const foot=document.querySelector('.foot');if(foot)foot.textContent='Progress saves in this browser. Tools includes backup for all exams. Course figures © their owners.';

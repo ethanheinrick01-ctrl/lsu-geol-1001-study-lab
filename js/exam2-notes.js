@@ -1945,8 +1945,9 @@
   }
   function passageHTML(key,text){
     var esc=L.util.esc;
+    if(!sources[key]&&L.studySourceReading?.[key]?.source===text)return '<div class="e2-passage" data-study-source="'+esc(key)+'">'+text.split('\n').map(function(line){return L.studySourceReading[key].headings?.includes(line)?'<h4>'+esc(line)+'</h4>':'<p class="study-source-line">'+esc(line)+'</p>';}).join('\n')+'</div>';
     if(!sources[key])return '<p class="e2-passage">'+esc(text)+'</p>';
-    return '<div data-e2-note-source="'+esc(key)+'">'+text.split(/\n\n/).map(function(p){return '<p>'+esc(p)+'</p>';}).join('')+'</div>';
+    return '<div data-e2-note-source="'+esc(key)+'"'+(L.studySourceReading?.[key]?.source===text?' data-study-source="'+esc(key)+'"':'')+'>'+text.split(/\n\n/).map(function(p){return '<p>'+esc(p)+'</p>';}).join('')+'</div>';
   }
   L.exam2Notes={apply:apply,passageHTML:passageHTML,plans:plans};
 })(window.L);

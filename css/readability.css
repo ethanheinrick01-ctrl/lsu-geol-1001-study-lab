@@ -45,3 +45,19 @@
   #main :is(.e2-note-points, .pilot-prose, .e2-passage, .prompt, .stem, .why) { font-size: 20px; }
   #main .exam-topics, #main .e2-focus-grid { grid-template-columns: minmax(0, 1fr); }
 }
+
+/* Reading roles stay separate from assessment feedback and lecture highlights. */
+#main :is(.pilot-section-card, .pilot-key) { --study-definition: #b9e87c; }
+#main .study-key-definition,
+#main .pilot-section-card mark.study-definition { color: var(--study-definition); background: none; font-weight: 500; }
+#main .pilot-section-card mark.pilot-term { color: #ff4fd8; background: none; font-weight: 700; }
+#main .study-source-line { margin: 0 0 14px; white-space: pre-wrap; }
+#main .study-source-line:empty { display: none; }
+#main .e2-passage .pilot-checkpoint { white-space: normal; }
+#main .study-local-limits { margin-bottom: 0; }
+@media print {
+  #main .pilot-section-card mark.study-definition { color: #264900; background: none; text-decoration: underline; }
+}
+
+#main .e2-passage[data-study-source] { white-space: normal; }
+#main .e2-passage[data-study-source] h4 { color: #7cc4ff; margin: 0 0 16px; }
