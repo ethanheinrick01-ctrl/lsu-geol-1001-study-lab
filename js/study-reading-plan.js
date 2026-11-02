@@ -2773,28 +2773,59 @@ window.L.studyReading={
  "g8-1a": [
   {
    "terms": [
-    "force",
-    "stress",
-    "confining pressure",
+    "Stress",
+    "Confining pressure",
     "differential stress",
-    "displacement",
-    "rotation",
-    "strain"
+    "Strain"
    ],
-   "checkpoints": []
+   "definitions": [
+    "force applied over an area",
+    "acts approximately equally in all directions",
+    "varies with direction",
+    "the resulting change in shape or size"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Displacement and rotation can also change a rock’s position or orientation",
+     "label": "Distinguish deformation responses"
+    }
+   ]
   },
   {
    "terms": [
-    "brittle",
-    "ductile"
+    "confinement",
+    "temperature",
+    "brittle–ductile transition"
    ],
-   "checkpoints": []
+   "definitions": [
+    "resists fracture and slip",
+    "permits ductile deformation and strength decreases",
+    "The curve reaches a maximum near"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "It does not imply rock melts there",
+     "label": "Separate solid flow and melting"
+    }
+   ]
   },
   {
    "terms": [
-    "stress"
+    "Depth",
+    "strength",
+    "strength threshold"
    ],
-   "checkpoints": []
+   "definitions": [
+    "increases downward",
+    "increases rightward",
+    "deform or fracture when imposed stress exceeds it"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "not a universal fixed boundary",
+     "label": "Read the graph as a conditions model"
+    }
+   ]
   }
  ],
  "g-connect-rotation": [
@@ -2803,268 +2834,601 @@ window.L.studyReading={
     "rotation",
     "strain"
    ],
-   "checkpoints": []
+   "definitions": [
+    "Their orientation changed",
+    "The change of shape demonstrates"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "This observation alone does not measure an internal change in each grain’s shape",
+     "label": "Distinguish orientation and internal shape"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Rotation",
+    "Strain",
+    "Translation"
+   ],
+   "definitions": [
+    "changes orientation",
+    "changes size or shape",
+    "changes position"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "A deforming rock can undergo more than one of these",
+     "label": "Allow combined responses"
+    }
+   ]
   }
  ],
  "g8-1-standard": [
   {
    "terms": [
     "force",
-    "stress",
-    "confining pressure",
-    "differential stress"
+    "Stress",
+    "Confining pressure",
+    "Differential stress"
    ],
-   "checkpoints": []
-  },
-  {
-   "terms": [
-    "rotation",
-    "strain"
-   ],
-   "checkpoints": []
-  },
-  {
-   "terms": [
-    "brittle"
-   ],
-   "checkpoints": []
-  },
-  {
-   "terms": [
-    "strain",
-    "brittle",
-    "ductile"
+   "definitions": [
+    "a push or pull",
+    "force divided by the area over which it acts",
+    "acts equally from every direction",
+    "differs with direction"
    ],
    "checkpoints": [
     {
-     "phrase": "not a universal fixed depth",
-     "label": "Keep the distinction"
+     "phrase": "the same force on a smaller area produces greater stress",
+     "label": "Compare force and area together"
     }
    ]
   },
   {
    "terms": [
-    "stress",
-    "confining pressure",
-    "differential stress",
-    "displacement",
-    "rotation",
-    "strain"
+    "translate",
+    "rotate",
+    "strain",
+    "rotation"
    ],
-   "checkpoints": []
+   "definitions": [
+    "to a new position",
+    "to a new orientation",
+    "That internal change",
+    "A tilted bed records"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "More than one response can occur together",
+     "label": "Separate the observed changes"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "depth",
+    "strength",
+    "confinement"
+   ],
+   "definitions": [
+    "increases downward",
+    "increases to the right",
+    "generally increases resistance to breaking"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Deeper, hotter rock can deform by solid-state flow",
+     "label": "Follow the conditions with depth"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "brittle–ductile transition"
+   ],
+   "definitions": [
+    "a change in dominant behavior, not a universal fixed depth or a melting line"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Temperature, composition, fluids, pressure, and strain rate",
+     "label": "Keep all behavior controls"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Confining pressure",
+    "Differential stress",
+    "Displacement",
+    "Rotation",
+    "Strain"
+   ],
+   "definitions": [
+    "Equal loading from all directions",
+    "Unequal stresses in different directions",
+    "Rock moved to a new position",
+    "Originally horizontal bed tilted",
+    "Pebble changed shape internally"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Pebble changed shape internally",
+     "label": "Identify the actual change"
+    }
+   ]
   }
  ],
  "g8-2a": [
   {
    "terms": [
-    "compression",
-    "tension",
-    "shear",
-    "brittle"
+    "cool shallow levels",
+    "warmer depths"
    ],
-   "checkpoints": []
+   "definitions": [
+    "brittle failure and faults",
+    "distributed deformation while remaining solid"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "The same differential stress can produce different structures under different conditions",
+     "label": "Separate stress and response"
+    }
+   ]
   },
   {
    "terms": [
-    "shear",
-    "brittle"
+    "Fluids",
+    "shear zone",
+    "brittle fault"
    ],
-   "checkpoints": []
+   "definitions": [
+    "alter minerals, move dissolved material, and form veins",
+    "distributes deformation through a broader volume",
+    "concentrates movement along a fracture"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Temperature, pressure, rock type, fluids, and the conditions of deformation",
+     "label": "Compare the controlling conditions"
+    }
+   ]
   },
   {
    "terms": [
-    "brittle",
-    "ductile"
+    "Deep",
+    "shallow"
    ],
-   "checkpoints": []
+   "definitions": [
+    "the course’s general model rather than exact universal depths"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Do not infer a unique stress type solely from the fact that a rock is brittle or ductile",
+     "label": "Avoid inferring stress from behavior alone"
+    }
+   ]
   }
  ],
  "g8-2-standard": [
   {
    "terms": [
-    "compression",
+    "Compression",
     "tension",
     "shear"
    ],
-   "checkpoints": []
-  },
-  {
-   "terms": [
-    "brittle",
-    "ductile",
-    "confinement"
+   "definitions": [
+    "squeezes and shortens rock",
+    "stretches it",
+    "makes adjacent material move past itself"
    ],
    "checkpoints": [
     {
-     "phrase": "Ductile does not mean liquid",
-     "label": "Keep the distinction"
+     "phrase": "The same stress category can produce different structures under different conditions",
+     "label": "Keep the environmental conditions"
     }
    ]
   },
   {
    "terms": [
-    "pore spaces"
+    "brittle rock",
+    "ductile behavior"
    ],
-   "checkpoints": []
-  },
-  {
-   "terms": [],
-   "checkpoints": []
+   "definitions": [
+    "breaks or slips when stressed",
+    "Minerals and rock masses change shape without a throughgoing fracture"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Ductile does not mean liquid",
+     "label": "Distinguish solid flow and melting"
+    }
+   ]
   },
   {
    "terms": [
-    "compression",
-    "tension",
-    "shear",
-    "brittle",
-    "ductile"
+    "minerals",
+    "Water in pore spaces"
    ],
-   "checkpoints": []
+   "definitions": [
+    "deform, grow, or react to form new minerals stable under changed conditions",
+    "opposes part of the confining pressure"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Fluid effects depend on location and conditions",
+     "label": "Avoid a single universal fluid effect"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "controlled temperature and pressure experiments"
+   ],
+   "definitions": [
+    "investigate mineral stability and rock behavior"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "A single specimen cannot establish the strength of every rock at a given depth",
+     "label": "Keep the experimental range"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Compression",
+    "Tension",
+    "Shear",
+    "Brittle behavior",
+    "Ductile behavior"
+   ],
+   "definitions": [
+    "Squeezing that shortens rock",
+    "Pulling that stretches rock",
+    "Adjacent material moves past itself",
+    "Fracture and slip near the surface",
+    "Solid rock changes shape without a throughgoing break"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Solid rock changes shape without a throughgoing break",
+     "label": "Recognize ductile behavior"
+    }
+   ]
   }
  ],
  "g8-3a": [
   {
    "terms": [
-    "joints",
-    "displacement",
-    "unloading",
-    "columnar joints"
+    "joint",
+    "fault",
+    "columnar joints",
+    "unloading joints"
    ],
-   "checkpoints": []
+   "definitions": [
+    "a fracture with little or no shear displacement",
+    "relative displacement across a fracture",
+    "Cooling and contraction",
+    "removal of overlying weight"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Joint sets have similar orientations",
+     "label": "Read the fracture pattern"
+    }
+   ]
   },
   {
    "terms": [
-    "joints",
-    "fractures",
-    "unloading",
-    "columnar joints"
+    "Columnar joints",
+    "Unloading"
    ],
-   "checkpoints": []
+   "definitions": [
+    "solidified igneous rock cools and contracts",
+    "changes stress near the surface"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "contraction rather than sedimentary layering",
+     "label": "Explain the polygonal geometry"
+    }
+   ]
   },
   {
-   "terms": [],
-   "checkpoints": []
+   "terms": [
+    "Strike",
+    "Dip"
+   ],
+   "definitions": [
+    "the compass orientation of a horizontal line on a plane",
+    "the inclination of the plane, measured downward from horizontal and perpendicular to strike"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Read orientation from the source diagram",
+     "label": "Use the actual plane geometry"
+    }
+   ]
   }
  ],
  "g-connect-joints": [
   {
    "terms": [
-    "joints",
-    "displacement",
-    "unloading",
-    "columnar joints"
+    "tectonic joints",
+    "columnar joints",
+    "unloading joints"
    ],
-   "checkpoints": []
+   "definitions": [
+    "Forces associated with burial and tectonics",
+    "cooling and contraction",
+    "Reduced pressure during uplift permits fracturing parallel to the surface"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Photograph C shows unloading joints",
+     "label": "Connect cause and fracture geometry"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "joint",
+    "fault"
+   ],
+   "definitions": [
+    "opens perpendicular to the direction in which rock is pulled apart",
+    "A fracture with such displacement"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "A photograph’s appearance alone need not establish its cause without context",
+     "label": "Use displacement and context"
+    }
+   ]
   }
  ],
  "g8-3-standard": [
   {
    "terms": [
-    "displacement"
+    "joint",
+    "fault"
    ],
-   "checkpoints": []
-  },
-  {
-   "terms": [
-    "joints",
-    "unloading",
-    "columnar joints"
-   ],
-   "checkpoints": []
-  },
-  {
-   "terms": [],
-   "checkpoints": []
-  },
-  {
-   "terms": [
-    "faults"
+   "definitions": [
+    "a crack with little or no shear displacement along its surface",
+    "a fracture across which rocks have slipped"
    ],
    "checkpoints": [
     {
-     "phrase": "An observed fracture alone does not establish",
-     "label": "Keep the distinction"
+     "phrase": "Follow a matching bed or other marker across the break",
+     "label": "Look for relative motion"
     }
    ]
   },
   {
    "terms": [
-    "joints",
-    "unloading",
-    "columnar joints"
+    "Columnar joints",
+    "unloading joints"
    ],
-   "checkpoints": []
+   "definitions": [
+    "form during cooling",
+    "follow reduced confinement as deeply formed rock approaches the surface"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Joints can open as rocks cool and contract",
+     "label": "Compare opening mechanisms"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "opening-mode joint",
+    "Joint sets"
+   ],
+   "definitions": [
+    "approximately perpendicular to the direction in which the rock is pulled apart",
+    "can divide an outcrop into regular blocks"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Identify the opening direction and the visible planes",
+     "label": "Infer orientation carefully"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Differential stress",
+    "fault orientation"
+   ],
+   "definitions": [
+    "can produce a fracture along which blocks slip",
+    "depends on the full stress field"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "without a displaced marker or other evidence",
+     "label": "Support the motion interpretation"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Joint",
+    "Fault",
+    "Columnar joints",
+    "Unloading joints",
+    "Tension joint"
+   ],
+   "definitions": [
+    "Open fracture with little shear offset",
+    "Fracture with relative slip",
+    "Contraction during cooling",
+    "Reduced pressure during erosion and uplift",
+    "Open crack roughly perpendicular to pull"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Fracture with relative slip",
+     "label": "Use movement to distinguish a fault"
+    }
+   ]
   }
  ],
  "g8-4a": [
   {
    "terms": [
+    "fault",
     "hanging wall",
     "footwall"
    ],
-   "checkpoints": []
+   "definitions": [
+    "a fracture with relative movement",
+    "above the plane",
+    "below it"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Name the blocks geometrically before describing their motion",
+     "label": "Identify the two sides first"
+    }
+   ]
   },
   {
    "terms": [
-    "hanging wall",
-    "footwall",
     "normal fault",
     "reverse fault",
-    "strike-slip",
-    "strike"
+    "thrust",
+    "strike-slip fault",
+    "Oblique slip"
    ],
-   "checkpoints": []
+   "definitions": [
+    "the hanging wall moves down relative to the footwall",
+    "the hanging wall moves up",
+    "A low-angle reverse fault",
+    "relative movement is predominantly horizontal",
+    "combines components"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Oblique slip combines components",
+     "label": "Allow mixed motion"
+    }
+   ]
   },
   {
-   "terms": [],
-   "checkpoints": []
+   "terms": [
+    "horsts",
+    "grabens"
+   ],
+   "definitions": [
+    "uplifted",
+    "downdropped"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "A photograph of a steep cliff by itself does not establish the movement direction",
+     "label": "Use offset markers"
+    }
+   ]
   }
  ],
  "g8-4-standard": [
   {
    "terms": [
-    "dip",
-    "strike"
+    "Strike",
+    "Dip"
    ],
-   "checkpoints": []
-  },
-  {
-   "terms": [
-    "hanging wall",
-    "footwall"
+   "definitions": [
+    "the direction of a horizontal line on an inclined plane",
+    "the direction and angle of steepest descent of that plane"
    ],
    "checkpoints": [
     {
-     "phrase": "they are not assigned by which block appears higher",
-     "label": "Keep the distinction"
+     "phrase": "Plane orientation and movement direction answer different questions",
+     "label": "Separate plane and slip"
     }
    ]
   },
   {
    "terms": [
     "hanging wall",
-    "footwall",
-    "normal fault",
-    "reverse fault",
-    "strike-slip",
-    "strike"
+    "footwall"
    ],
-   "checkpoints": []
-  },
-  {
-   "terms": [],
-   "checkpoints": []
+   "definitions": [
+    "the block above the plane",
+    "lies below it"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "They are not assigned by which block appears higher on the modern landscape",
+     "label": "Use the fault plane"
+    }
+   ]
   },
   {
    "terms": [
-    "hanging wall",
-    "footwall",
     "normal fault",
     "reverse fault",
-    "strike-slip",
-    "strike"
+    "thrust",
+    "Strike-slip faults"
    ],
-   "checkpoints": []
+   "definitions": [
+    "the hanging wall moves down relative to the footwall",
+    "it moves up",
+    "a low-angle reverse fault",
+    "predominantly horizontal movement"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "commonly during extension",
+     "label": "Connect motion to deformation"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "graben",
+    "horst"
+   ],
+   "definitions": [
+    "a block that has dropped relative to blocks on either side along normal faults",
+    "relatively raised"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "present elevation alone does not define every block’s complete history",
+     "label": "Keep displacement relative"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Hanging wall",
+    "Footwall",
+    "Normal fault",
+    "Reverse fault",
+    "Strike-slip fault",
+    "Graben",
+    "Horst"
+   ],
+   "definitions": [
+    "Block above an inclined fault plane",
+    "Block below an inclined fault plane",
+    "Hanging wall moves down",
+    "Hanging wall moves up",
+    "Predominantly horizontal slip",
+    "Dropped block between normal faults",
+    "Relatively raised block"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Block above an inclined fault plane",
+     "label": "Name geometry before motion"
+    }
+   ]
   }
  ],
  "g8-5a": [
@@ -3076,725 +3440,1808 @@ window.L.studyReading={
     "dome",
     "basin"
    ],
-   "checkpoints": []
+   "definitions": [
+    "arches upward",
+    "forms a trough",
+    "one main dipping segment between flatter portions",
+    "dips outward in several directions",
+    "dips inward"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Use rock ages where needed to distinguish overturned anticlines and synclines reliably",
+     "label": "Do not rely on shape alone"
+    }
+   ]
   },
   {
    "terms": [
-    "limb",
     "hinge",
-    "plunging fold"
+    "limbs",
+    "axial surface"
    ],
-   "checkpoints": []
+   "definitions": [
+    "the region of greatest curvature",
+    "the sides",
+    "connects hinges through successive layers"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "One does not automatically imply the other",
+     "label": "Separate axial-surface tilt and plunge"
+    }
+   ]
   },
   {
-   "terms": [],
-   "checkpoints": []
+   "terms": [
+    "Compression"
+   ],
+   "definitions": [
+    "commonly shortens layered rock through folding"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "state the viewing direction",
+     "label": "Use the correct viewpoint"
+    }
+   ]
   }
  ],
  "g-connect-fold-distinction": [
   {
    "terms": [
-    "limb",
-    "hinge",
+    "asymmetric fold",
+    "upright fold"
+   ],
+   "definitions": [
+    "an inclined axial surface and limbs dipping by different amounts",
+    "a vertical axial surface"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Axial-surface orientation and hinge orientation are separate measurements",
+     "label": "Describe two orientations"
+    }
+   ]
+  },
+  {
+   "terms": [
     "plunging fold"
    ],
-   "checkpoints": []
+   "definitions": [
+    "a hinge inclined away from horizontal"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "A fold can be both asymmetric and plunging",
+     "label": "Allow independent geometric descriptions"
+    }
+   ]
   }
  ],
  "g8-5-standard": [
   {
    "terms": [
-    "hinge"
+    "folds",
+    "hinge",
+    "limbs"
    ],
-   "checkpoints": []
+   "definitions": [
+    "shorten and bend layered rocks",
+    "The curved region of maximum bending",
+    "the sides"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Trace the same layer through the whole structure",
+     "label": "Follow the full geometry"
+    }
+   ]
   },
   {
    "terms": [
     "anticline",
     "syncline"
    ],
+   "definitions": [
+    "older rocks in its core",
+    "younger rocks in its core"
+   ],
    "checkpoints": [
     {
      "phrase": "Overturning complicates simple shape rules",
-     "label": "Keep the distinction"
+     "label": "Use age relations where known"
     }
    ]
   },
   {
    "terms": [
-    "monocline",
     "dome",
-    "basin"
+    "basin",
+    "monocline"
    ],
-   "checkpoints": []
+   "definitions": [
+    "a roughly circular structure with older rocks in its center",
+    "younger rocks in its center",
+    "a step-like bend connecting more gently dipping segments"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Modern topography can differ because rocks erode at different rates",
+     "label": "Separate structure from landscape"
+    }
+   ]
   },
   {
    "terms": [
-    "limb",
-    "hinge"
+    "axial surface",
+    "overturned",
+    "plunging hinge"
    ],
-   "checkpoints": []
+   "definitions": [
+    "joins hinges through successive layers",
+    "a limb has rotated beyond vertical",
+    "inclined rather than horizontal"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "These descriptions address different aspects of geometry",
+     "label": "Keep the geometric properties distinct"
+    }
+   ]
   },
   {
    "terms": [
-    "anticline",
-    "syncline",
-    "monocline",
-    "hinge",
-    "plunging fold",
-    "dome",
-    "basin"
+    "Anticline",
+    "Syncline",
+    "Monocline",
+    "Dome",
+    "Basin",
+    "Axial surface",
+    "Asymmetric fold",
+    "Plunging fold"
    ],
-   "checkpoints": []
+   "definitions": [
+    "Older rocks in the core",
+    "Younger rocks in the core",
+    "Step-like bend in otherwise gently dipping layers",
+    "Circular structure with older central rocks",
+    "Circular structure with younger central rocks",
+    "Surface connecting successive hinges",
+    "Two limbs dip by different amounts",
+    "A hinge is inclined rather than horizontal"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "A hinge is inclined rather than horizontal",
+     "label": "Recognize what plunge measures"
+    }
+   ]
   }
  ],
  "g8-6a": [
   {
    "terms": [
-    "foliation",
-    "cleavage"
+    "Foliation",
+    "Slaty cleavage",
+    "Schistosity",
+    "Gneissic foliation"
    ],
-   "checkpoints": []
+   "definitions": [
+    "a planar metamorphic fabric",
+    "allows fine-grained rock to split along closely spaced planes",
+    "aligned visible platy minerals",
+    "alternating mineral-rich bands"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "aligned platy minerals, mineral bands, flattened objects, or distributed shearing",
+     "label": "Recognize several planar fabrics"
+    }
+   ]
   },
   {
    "terms": [
-    "foliation",
-    "cleavage",
-    "lineation",
-    "bedding"
+    "Lineation",
+    "Bedding"
    ],
-   "checkpoints": []
+   "definitions": [
+    "a linear feature",
+    "an inherited sedimentary layer"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "cleavage can cut across it",
+     "label": "Trace inherited and new surfaces separately"
+    }
+   ]
   },
   {
    "terms": [
-    "relict features",
-    "bedding"
+    "Relict features",
+    "Shearing"
    ],
-   "checkpoints": []
+   "definitions": [
+    "preserved from the parent rock",
+    "can deform grains into lenses and rotate minerals"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "avoid treating every planar surface as original bedding",
+     "label": "Describe geometry before naming"
+    }
+   ]
   }
  ],
  "g8-6-standard": [
   {
    "terms": [
-    "cleavage",
-    "bedding"
+    "Rock cleavage",
+    "Slate"
    ],
-   "checkpoints": []
-  },
-  {
-   "terms": [
-    "bedding"
+   "definitions": [
+    "a tendency to split along closely spaced surfaces produced by deformation and mineral alignment",
+    "a fine-grained rock that commonly has well-developed cleavage"
    ],
    "checkpoints": [
     {
-     "phrase": "Distinguish this metamorphic fabric",
-     "label": "Keep the distinction"
+     "phrase": "It may cut across the original bedding",
+     "label": "Separate cleavage and bedding"
     }
    ]
   },
   {
    "terms": [
-    "foliation"
+    "Foliation"
    ],
-   "checkpoints": []
+   "definitions": [
+    "a planar fabric expressed by aligned minerals or compositional layers"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Distinguish this metamorphic fabric from depositional bedding",
+     "label": "Identify the origin of the surface"
+    }
+   ]
   },
   {
    "terms": [
-    "bedding",
-    "metamorphism"
+    "Lineation",
+    "Elongated minerals"
    ],
-   "checkpoints": []
+   "definitions": [
+    "a linear fabric",
+    "align along a direction"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "It is not the same geometric feature as a planar foliation",
+     "label": "Separate linear and planar fabrics"
+    }
+   ]
   },
   {
    "terms": [
-    "foliation",
-    "cleavage",
-    "lineation",
-    "bedding",
-    "metamorphism"
+    "Relict bedding",
+    "Minerals"
    ],
-   "checkpoints": []
+   "definitions": [
+    "survive metamorphism and record the parent rock",
+    "rotate, grow, and become elongated during deformation"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "rather than assuming all lines are bedding",
+     "label": "Compare older and younger structures"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Cleavage",
+    "Foliation",
+    "Lineation",
+    "Relict bedding",
+    "Cleavage across bedding"
+   ],
+   "definitions": [
+    "Closely spaced splitting planes",
+    "Planar alignment or mineral banding",
+    "Aligned elongated objects",
+    "Sedimentary layer preserved through metamorphism",
+    "A metamorphic plane cuts an older sedimentary layer"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "A metamorphic plane cuts an older sedimentary layer",
+     "label": "Trace the crosscutting relationship"
+    }
+   ]
   }
  ],
  "g8-7a": [
   {
    "terms": [
-    "slate",
-    "phyllite",
-    "schist",
+    "slate → phyllite → schist → gneiss",
+    "Slate",
+    "Phyllite",
+    "Schist",
     "gneiss"
    ],
-   "checkpoints": []
+   "definitions": [
+    "increasing metamorphic conditions",
+    "fine grained and dull with cleavage",
+    "has a sheen",
+    "has visible aligned minerals",
+    "has mineral banding"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "not a universal path followed by every rock",
+     "label": "Keep the parent-composition condition"
+    }
+   ]
   },
   {
    "terms": [
     "quartzite",
     "marble",
+    "greenstone",
     "hornfels",
-    "sandstone",
-    "limestone",
-    "Limestone can become marble"
+    "migmatite"
    ],
-   "checkpoints": []
+   "definitions": [
+    "interlocking grains make it strong",
+    "dominated by recrystallized carbonate minerals",
+    "Basalt and other suitable volcanic rocks",
+    "Contact metamorphism",
+    "Partial melting"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Basalt and other suitable volcanic rocks",
+     "label": "Match products to suitable parents"
+    }
+   ]
   },
   {
    "terms": [
-    "schist",
-    "quartzite",
-    "marble"
+    "Schist",
+    "Marble and quartzite"
    ],
-   "checkpoints": []
+   "definitions": [
+    "named partly by texture",
+    "often lack strong foliation"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Identify grain size, fabric, minerals, and preserved parent features together",
+     "label": "Use several identification clues"
+    }
+   ]
   }
  ],
  "g-connect-grade-photos": [
   {
    "terms": [
-    "slate",
-    "phyllite",
-    "schist",
-    "gneiss"
+    "Slate",
+    "Phyllite",
+    "Schist",
+    "Gneiss"
    ],
-   "checkpoints": []
+   "definitions": [
+    "dull with fine cleavage",
+    "has a mica sheen",
+    "has visible mineral crystals and schistosity",
+    "separates light and dark minerals into bands"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "from lower to higher grade",
+     "label": "Connect textures to the shale sequence"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "ordering task",
+    "starting compositions"
+   ],
+   "definitions": [
+    "tests grade relationships while you inspect the textures",
+    "follow different metamorphic paths"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "It does not claim blind specimen identification",
+     "label": "Keep the exercise’s purpose clear"
+    }
+   ]
   }
  ],
  "g8-7-standard": [
   {
    "terms": [
-    "slate",
+    "Slate",
     "phyllite",
     "schist",
     "gneiss"
    ],
-   "checkpoints": []
-  },
-  {
-   "terms": [
-    "quartzite",
-    "marble",
-    "sandstone",
-    "limestone"
+   "definitions": [
+    "dull and fine grained",
+    "has a sheen",
+    "has visible aligned minerals",
+    "commonly displays compositional bands"
    ],
-   "checkpoints": []
-  },
-  {
-   "terms": [],
    "checkpoints": [
     {
-     "phrase": "not grade alone",
-     "label": "Keep the distinction"
+     "phrase": "For suitable shale-rich parent material",
+     "label": "Keep the starting composition"
     }
    ]
   },
   {
    "terms": [
-    "gneiss"
+    "quartzite",
+    "marble"
    ],
-   "checkpoints": []
+   "definitions": [
+    "quartz grains recrystallize and interlock",
+    "a rock of recrystallized carbonate minerals"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Both can have weak foliation",
+     "label": "Use composition with texture"
+    }
+   ]
   },
   {
    "terms": [
-    "slate",
-    "phyllite",
-    "schist",
-    "gneiss",
-    "quartzite",
-    "marble",
-    "hornfels",
-    "sandstone",
-    "limestone"
+    "Mafic volcanic rocks",
+    "Felsic volcanic and plutonic rocks"
    ],
-   "checkpoints": []
+   "definitions": [
+    "can produce greenstone or other metamorphic rocks as mineral assemblages change",
+    "different compositions and can form different products"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "not grade alone",
+     "label": "Identify the rock and its features"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Hornfels",
+    "Gneissic banding"
+   ],
+   "definitions": [
+    "commonly forms when rock is heated near an intrusion",
+    "can form in several parent compositions"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "the parent of a particular gneiss may remain uncertain",
+     "label": "Keep identification limits"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Slate",
+    "Phyllite",
+    "Schist",
+    "Gneiss",
+    "Quartzite",
+    "Marble",
+    "Hornfels"
+   ],
+   "definitions": [
+    "Fine dull rock with cleavage",
+    "Fine rock with a silky sheen",
+    "Visible aligned mica-rich minerals",
+    "Coarse light and dark mineral bands",
+    "Interlocking quartz grains derived from sandstone",
+    "Recrystallized carbonate derived from limestone",
+    "Contact-heated, fine-grained rock"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Interlocking quartz grains derived from sandstone",
+     "label": "Connect texture and parent rock"
+    }
+   ]
   }
  ],
  "g8-8a": [
   {
    "terms": [
-    "metamorphism"
+    "Metamorphism",
+    "Magma",
+    "Shearing"
    ],
-   "checkpoints": []
+   "definitions": [
+    "changes minerals, textures, or both through heat, pressure, stress, and fluids while the rock remains predominantly solid",
+    "heats neighboring rocks",
+    "can deform and heat rock locally"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "while the rock remains predominantly solid",
+     "label": "Keep solid-state change distinct"
+    }
+   ]
   },
   {
    "terms": [
-    "recrystallization",
-    "pressure solution"
+    "Recrystallization",
+    "Neocrystallization",
+    "Pressure solution",
+    "Chemical remobilization"
    ],
-   "checkpoints": []
+   "definitions": [
+    "changes crystal size and texture",
+    "grows new minerals as old minerals become unstable",
+    "dissolves material where stress is greatest",
+    "concentrates different minerals into bands"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Rotation, flattening, and stretching change geometry",
+     "label": "Compare chemical and geometric changes"
+    }
+   ]
   },
   {
    "terms": [
-    "recrystallization",
-    "metamorphism",
-    "foliation"
+    "Foliation",
+    "melting"
    ],
-   "checkpoints": []
+   "definitions": [
+    "develops through alignment, growth, dissolution, and deformation",
+    "a separate transition"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "do not describe solid-state recrystallization as simply melting and freezing again",
+     "label": "Distinguish metamorphism and melting"
+    }
+   ]
   }
  ],
  "g-connect-process-set": [
   {
    "terms": [
-    "metamorphism",
-    "differential stress",
-    "pressure solution",
-    "foliation"
+    "Recrystallization and growth of new minerals",
+    "Remobilization",
+    "Pressure solution"
    ],
-   "checkpoints": []
+   "definitions": [
+    "can change grain size and arrangement",
+    "redistributes constituents",
+    "dissolves highly stressed grain edges"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "No single specimen must record every process",
+     "label": "Use the observed process evidence"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Regional metamorphism",
+    "Foliation",
+    "Lineation",
+    "Contact heating"
+   ],
+   "definitions": [
+    "commonly combines heating with deformation",
+    "planar",
+    "linear",
+    "can produce new or larger minerals without strong differential stress"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Metamorphism does not require complete melting",
+     "label": "Connect setting and texture"
+    }
+   ]
   }
  ],
  "g-connect-metamorphic-causes": [
   {
    "terms": [
-    "metamorphism"
+    "Pressure",
+    "Temperature",
+    "Hot fluids"
    ],
-   "checkpoints": []
-  }
- ],
- "g8-8-standard": [
-  {
-   "terms": [
-    "metamorphism",
-    "differential stress"
+   "definitions": [
+    "increases with burial",
+    "increases with depth and near magma",
+    "carry dissolved constituents into, through, or out of rock"
    ],
-   "checkpoints": []
-  },
-  {
-   "terms": [],
    "checkpoints": [
     {
-     "phrase": "neither means the whole rock must melt",
-     "label": "Keep the distinction"
+     "phrase": "changing its chemistry and mineral assemblage",
+     "label": "Follow physical and chemical changes"
     }
    ]
-  },
-  {
-   "terms": [],
-   "checkpoints": []
-  },
-  {
-   "terms": [
-    "metamorphism",
-    "foliation"
-   ],
-   "checkpoints": []
-  },
-  {
-   "terms": [
-    "recrystallization",
-    "pressure solution",
-    "foliation"
-   ],
-   "checkpoints": []
-  }
- ],
- "g8-9a": [
-  {
-   "terms": [
-    "pressure",
-    "temperature",
-    "metamorphic grade"
-   ],
-   "checkpoints": []
   },
   {
    "terms": [
     "contact metamorphism",
     "regional metamorphism"
    ],
-   "checkpoints": []
+   "definitions": [
+    "Heating beside magma",
+    "Broader heating with deformation"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Strong tectonic deformation and complete melting are not required",
+     "label": "Do not require one setting or fabric"
+    }
+   ]
+  }
+ ],
+ "g8-8-standard": [
+  {
+   "terms": [
+    "Heat, pressure, differential stress, and chemically active fluids"
+   ],
+   "definitions": [
+    "can change rock minerals or texture"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Metamorphism and deformation may occur together or independently",
+     "label": "Separate mineral change and deformation"
+    }
+   ]
   },
   {
    "terms": [
-    "subduction",
-    "pressure",
-    "temperature"
+    "Recrystallization",
+    "Neocrystallization"
    ],
-   "checkpoints": []
+   "definitions": [
+    "can enlarge existing mineral crystals",
+    "forms new minerals as reactions make a different assemblage stable"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Neither means the whole rock must melt and freeze again",
+     "label": "Distinguish solid-state changes"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Material",
+    "Chemical components"
+   ],
+   "definitions": [
+    "can dissolve at stressed grain contacts and move in fluids",
+    "can be redistributed, producing different mineral-rich layers"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "depends on movement into or out of the rock",
+     "label": "Test whether bulk composition changed"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "deformation",
+    "relicts"
+   ],
+   "definitions": [
+    "minerals and objects can rotate, flatten, stretch, or form aligned fabrics",
+    "preserve older features"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Read the sequence of overprinting",
+     "label": "Separate the recorded events"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Recrystallization",
+    "Neocrystallization",
+    "Pressure solution",
+    "Foliation",
+    "Chemical remobilization"
+   ],
+   "definitions": [
+    "Existing grains grow into larger crystals",
+    "New mineral species grow",
+    "Material dissolves at stressed contacts",
+    "Minerals align into a planar fabric",
+    "Minerals move into different bands"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Material dissolves at stressed contacts",
+     "label": "Connect stress and dissolution"
+    }
+   ]
+  }
+ ],
+ "g8-9a": [
+  {
+   "terms": [
+    "Metamorphic grade",
+    "High-temperature/low-pressure",
+    "high-pressure/low-temperature"
+   ],
+   "definitions": [
+    "reflects the conditions a rock experienced",
+    "near shallow magma bodies",
+    "where relatively cold material is subducted"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "can be constrained by mineral assemblages",
+     "label": "Infer conditions from minerals"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Contact metamorphism",
+    "Regional metamorphism",
+    "Continental collision"
+   ],
+   "definitions": [
+    "surrounds heat sources",
+    "affects broader buried or thickened regions",
+    "can thicken crust and produce extensive metamorphism"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "experience different conditions",
+     "label": "Distinguish settings within a boundary"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "pressure–temperature diagram",
+    "October 6 lecture"
+   ],
+   "definitions": [
+    "not automatically a geographic depth with a single universal temperature",
+    "reaches subduction and contact settings"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Its collision discussion is explicitly left for later",
+     "label": "Respect the stated lecture boundary"
+    }
+   ]
   }
  ],
  "g8-9-standard": [
   {
    "terms": [
-    "pressure",
+    "Pressure",
     "temperature"
+   ],
+   "definitions": [
+    "increases with burial",
+    "depends on the thermal history"
    ],
    "checkpoints": [
     {
-     "phrase": "High pressure does not always mean",
-     "label": "Keep the distinction"
+     "phrase": "High pressure does not always mean the hottest rock",
+     "label": "Read the two axes separately"
     }
    ]
   },
   {
    "terms": [
-    "pressure",
-    "temperature"
+    "contact aureole",
+    "setting"
    ],
-   "checkpoints": []
+   "definitions": [
+    "A shallow intrusion heats adjacent country rock",
+    "high temperature at relatively low pressure"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "depend on heat, host composition, and fluids",
+     "label": "Keep the local controls"
+    }
+   ]
   },
   {
    "terms": [
-    "subduction",
-    "pressure",
-    "temperature"
+    "relatively cold slab",
+    "High-pressure, low-temperature metamorphism"
    ],
-   "checkpoints": []
+   "definitions": [
+    "increasing pressure before it fully warms",
+    "can occur along the subduction zone"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "A shallow magma body has a contrasting pressure–temperature history",
+     "label": "Compare the thermal paths"
+    }
+   ]
   },
   {
    "terms": [
-    "regional metamorphism"
+    "thrusting and crustal thickening",
+    "Regional metamorphism and deformation"
    ],
-   "checkpoints": []
+   "definitions": [
+    "bury and heat rocks over broad regions",
+    "can accompany one another"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "rather than assigning one condition to an entire plate boundary",
+     "label": "Locate each metamorphic setting"
+    }
+   ]
   },
   {
    "terms": [
-    "regional metamorphism",
-    "subduction",
-    "pressure",
-    "temperature"
+    "High temperature, low pressure",
+    "High pressure, low temperature",
+    "Regional metamorphism",
+    "Contact aureole"
    ],
-   "checkpoints": []
+   "definitions": [
+    "Shallow rock heated near an intrusion",
+    "Relatively cold material carried deep in subduction",
+    "Broad burial and heating in a mountain belt",
+    "Zone heated around an intrusion"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Relatively cold material carried deep in subduction",
+     "label": "Keep pressure and temperature distinct"
+    }
+   ]
   }
  ],
  "g8-10a": [
   {
    "terms": [
-    "normal faults",
-    "extension"
+    "Extension",
+    "Hydrothermal metamorphism"
    ],
-   "checkpoints": []
+   "definitions": [
+    "can form continental rifts, normal faults, tilted blocks, and grabens",
+    "seawater circulates through hot rock at mid-ocean ridges"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Crust becomes thinner as it stretches",
+     "label": "Connect stretching and thinning"
+    }
+   ]
   },
   {
    "terms": [
-    "strike-slip"
+    "Strike-slip faults",
+    "bend"
    ],
-   "checkpoints": []
+   "definitions": [
+    "accommodate predominantly horizontal motion",
+    "make neighboring material converge or separate"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "even though the main motion is lateral",
+     "label": "Allow local uplift or subsidence"
+    }
+   ]
   },
   {
-   "terms": [],
-   "checkpoints": []
+   "terms": [
+    "entire geometry"
+   ],
+   "definitions": [
+    "Arrows, fault trace, matching displaced features, and the bend direction"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Keep plate-scale setting separate from the smaller local stress field",
+     "label": "Read geometry at both scales"
+    }
+   ]
   }
  ],
  "g-connect-fault-blocks": [
   {
    "terms": [
-    "normal faults",
-    "horst",
     "graben",
-    "extension"
+    "horst",
+    "Normal-fault movement",
+    "Continental extension"
    ],
-   "checkpoints": []
+   "definitions": [
+    "a block down relative to the blocks on either side",
+    "relatively high between neighboring blocks",
+    "lowers the hanging wall relative to its footwall",
+    "stretches and thins the crust"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "bounded by normal faults",
+     "label": "Compare both neighboring blocks"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "horst"
+   ],
+   "definitions": [
+    "Its height is relative to adjacent blocks in the normal-fault system"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "does not require regional compression",
+     "label": "Keep the tectonic interpretation"
+    }
+   ]
   }
  ],
  "g8-10-standard": [
   {
    "terms": [
-    "normal faults",
-    "extension"
+    "Continental extension",
+    "rifting"
    ],
-   "checkpoints": []
-  },
-  {
-   "terms": [],
-   "checkpoints": []
-  },
-  {
-   "terms": [
-    "strike-slip"
-   ],
-   "checkpoints": []
-  },
-  {
-   "terms": [
-    "strike-slip",
-    "extension"
+   "definitions": [
+    "stretches and thins crust",
+    "Magma and warm fluids may accompany"
    ],
    "checkpoints": [
     {
-     "phrase": "The main lateral motion alone",
-     "label": "Keep the distinction"
+     "phrase": "vary from place to place during the evolution of a rift",
+     "label": "Keep local conditions"
     }
    ]
   },
   {
    "terms": [
-    "graben",
-    "strike-slip",
-    "extension"
+    "seafloor spreading",
+    "hydrothermal metamorphism"
    ],
-   "checkpoints": []
+   "definitions": [
+    "new oceanic crust forms at a ridge",
+    "Seawater can circulate through hot fractured rock"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "especially important at mid-ocean ridges",
+     "label": "Follow the hot-water pathway"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "strike-slip fault",
+    "right-lateral fault",
+    "left-lateral fault"
+   ],
+   "definitions": [
+    "primarily horizontal relative motion",
+    "the opposite side moves right",
+    "left in a"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Looking across the fault",
+     "label": "Use the correct viewpoint"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Local shortening",
+    "local extension"
+   ],
+   "definitions": [
+    "can build folds and ridges",
+    "can produce a basin"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "The main lateral motion alone does not determine the sign of every bend",
+     "label": "Use the bend geometry"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Graben",
+    "Hydrothermal metamorphism",
+    "Right-lateral strike slip",
+    "Left-lateral strike slip",
+    "Releasing bend"
+   ],
+   "definitions": [
+    "Downdropped block during crustal extension",
+    "Circulation through hot oceanic rock",
+    "Opposite side appears displaced right",
+    "Opposite side appears displaced left",
+    "Strike-slip step where blocks separate"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Strike-slip step where blocks separate",
+     "label": "Identify the local response"
+    }
+   ]
   }
  ],
  "g8-11a": [
   {
    "terms": [
-    "folds",
-    "cleavage",
-    "shortening"
+    "monocline",
+    "Thrust belts"
    ],
-   "checkpoints": []
+   "definitions": [
+    "A fault propagating upward can bend overlying beds",
+    "combine shortening, stacked sheets, and related fabrics"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "can form during the same deformation episode",
+     "label": "Test the structural association"
+    }
+   ]
   },
   {
    "terms": [
-    "folds",
-    "cleavage"
+    "Cleavage"
    ],
-   "checkpoints": []
+   "definitions": [
+    "commonly lies approximately parallel to the axial surfaces of folds formed in the same event"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "not proof that all fabrics everywhere formed simultaneously",
+     "label": "Keep the shared-event inference qualified"
+    }
+   ]
   },
   {
-   "terms": [],
-   "checkpoints": []
+   "terms": [
+    "cross-cutting and overprinting",
+    "Older thrusts"
+   ],
+   "definitions": [
+    "distinguish separate events",
+    "can later be folded or faulted"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Visual proximity alone does not establish age or cause",
+     "label": "Use evidence to order events"
+    }
+   ]
   }
  ],
  "g-connect-structure-associations": [
   {
    "terms": [
-    "folds",
-    "cleavage"
+    "shearing and bending near faults",
+    "Movement on normal faults"
    ],
-   "checkpoints": []
+   "definitions": [
+    "commonly produce joints and small folds",
+    "can rotate fault-bounded blocks like books on a shelf"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "not unique proof of one",
+     "label": "Treat associations as evidence"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "monocline",
+    "anticline",
+    "syncline"
+   ],
+   "definitions": [
+    "above an upward-propagating fault before the fault cuts them",
+    "near the front of the thrust sheet",
+    "farther back"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "They do not mean every fault produces every structure",
+     "label": "Keep the possible associations"
+    }
+   ]
   }
  ],
  "g8-11-standard": [
   {
    "terms": [
-    "shear",
-    "folds"
+    "fault propagating upward",
+    "slip over a bend in a thrust fault"
    ],
-   "checkpoints": []
-  },
-  {
-   "terms": [],
-   "checkpoints": []
-  },
-  {
-   "terms": [],
-   "checkpoints": []
-  },
-  {
-   "terms": [],
+   "definitions": [
+    "can bend layers above it",
+    "can fold the overlying rocks"
+   ],
    "checkpoints": [
     {
-     "phrase": "Proximity alone does not prove",
-     "label": "Keep the distinction"
+     "phrase": "Structural associations must be supported by geometry",
+     "label": "Trace the mechanical connection"
     }
    ]
   },
   {
    "terms": [
-    "cleavage"
+    "Compression",
+    "Beds in and above the sheets"
    ],
-   "checkpoints": []
+   "definitions": [
+    "can move thrust sheets over one another and shorten a region",
+    "may form anticlines and synclines"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "not every nearby structure must share the same age",
+     "label": "Check relative timing"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Cleavage",
+    "hinge"
+   ],
+   "definitions": [
+    "roughly parallel to the axial surface",
+    "nearly perpendicular to bedding near"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Trace both surfaces across the fold",
+     "label": "Compare bedding and cleavage"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "younger fault",
+    "older fault"
+   ],
+   "definitions": [
+    "can cut an older fold",
+    "can itself be folded"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Proximity alone does not prove two structures formed together",
+     "label": "Use crosscutting relationships"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Fault-related fold",
+    "Fold-and-thrust belt",
+    "Cleavage",
+    "Axial surface",
+    "Cross-cutting relation"
+   ],
+   "definitions": [
+    "Fault bends overlying layers",
+    "Low-angle reverse faults stack sheets",
+    "Metamorphic splitting crosses beds",
+    "Surface through successive hinges",
+    "A later structure cuts an earlier one"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "A later structure cuts an earlier one",
+     "label": "Order the deformation events"
+    }
+   ]
   }
  ],
  "g8-12a": [
   {
-   "terms": [],
-   "checkpoints": []
-  },
-  {
    "terms": [
-    "anticline"
+    "Fault scarps",
+    "Striations",
+    "Joint sets"
    ],
-   "checkpoints": []
-  },
-  {
-   "terms": [],
-   "checkpoints": []
-  }
- ],
- "g8-intro": [
-  {
-   "terms": [],
-   "checkpoints": []
-  },
-  {
-   "terms": [],
-   "checkpoints": []
-  },
-  {
-   "terms": [
-    "anticline"
-   ],
-   "checkpoints": []
-  }
- ],
- "g8-12-standard": [
-  {
-   "terms": [],
-   "checkpoints": []
-  },
-  {
-   "terms": [],
-   "checkpoints": []
-  },
-  {
-   "terms": [
-    "anticline",
-    "syncline"
+   "definitions": [
+    "offset the land surface",
+    "record slip direction",
+    "divide rock into blocks and influence cliffs"
    ],
    "checkpoints": [
     {
-     "phrase": "A ridge does not automatically",
-     "label": "Keep the distinction"
+     "phrase": "Weathering and erosion exploit joints, faults, and cleavage",
+     "label": "Connect structures to landforms"
     }
    ]
   },
   {
-   "terms": [],
-   "checkpoints": []
+   "terms": [
+    "dip slopes and hogbacks",
+    "Metamorphic foliation"
+   ],
+   "definitions": [
+    "Erosion of inclined resistant layers",
+    "can create slabs, shiny outcrops, or complex ridges and folds"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "A ridge is not automatically an anticline",
+     "label": "Separate structure and topography"
+    }
+   ]
   },
   {
    "terms": [
-    "dip slope",
-    "hogback"
+    "geometry",
+    "orientation"
    ],
-   "checkpoints": []
+   "definitions": [
+    "tracing beds and fabrics",
+    "comparing their orientation with the landscape"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Distinguish the modern erosional surface from the original rock structure",
+     "label": "Compare structure with landscape"
+    }
+   ]
+  }
+ ],
+ "g8-intro": [
+  {
+   "terms": [
+    "Valley and Ridge Province",
+    "Folded sedimentary layers and thrust faults",
+    "Cleavage"
+   ],
+   "definitions": [
+    "in the Appalachians",
+    "record shortening",
+    "may cut the older bedding"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "compare them with the cross section",
+     "label": "Connect map and cross section"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "collision",
+    "Shortening",
+    "burial and heating"
+   ],
+   "definitions": [
+    "between Africa and eastern North America around 300 million years ago",
+    "stacked and folded rocks",
+    "promoted metamorphism"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Subsequent erosion removed weaker layers more rapidly",
+     "label": "Explain the surviving ridges"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Deposition",
+    "Deformation",
+    "metamorphism",
+    "Erosion"
+   ],
+   "definitions": [
+    "first creates layers",
+    "changes their geometry",
+    "Mineral reactions and fabric development",
+    "exposes and reshapes the structure"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "A ridge is not automatically an anticline",
+     "label": "Separate the processes"
+    }
+   ]
+  }
+ ],
+ "g8-12-standard": [
+  {
+   "terms": [
+    "Joint sets",
+    "orientation"
+   ],
+   "definitions": [
+    "divide rock into blocks and provide pathways along which weathering can act",
+    "can influence cliffs, pillars, notches, and drainage"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "before attributing them to one particular stress history",
+     "label": "Describe the fracture pattern first"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Faults",
+    "scarp"
+   ],
+   "definitions": [
+    "can produce aligned notches, scarps, crushed angular rock, displaced layers, and striations",
+    "shows relative topographic offset"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Several observations are more persuasive than a straight valley alone",
+     "label": "Combine fault evidence"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Resistant tilted beds",
+    "weaker units"
+   ],
+   "definitions": [
+    "can support ridges and dip slopes",
+    "erode into lower ground"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "A ridge does not automatically mark an anticline",
+     "label": "Follow layers and ages"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Foliation, cleavage, and resistant folded layers",
+    "Modern topography"
+   ],
+   "definitions": [
+    "can influence the shapes of metamorphic outcrops",
+    "a product of both structure and erosion"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Distinguish a visible rock fabric from a hypothesis about when it formed",
+     "label": "Separate observation and inferred history"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Joint sets",
+    "Fault-zone evidence",
+    "Dip slope",
+    "Hogback",
+    "Foliation"
+   ],
+   "definitions": [
+    "Repeated fractures divide rock into blocks",
+    "Crushed rock and offset marker beds",
+    "Slope approximately follows an inclined bed",
+    "Resistant tilted bed forms a narrow ridge",
+    "Planar mineral alignment in outcrop"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Crushed rock and offset marker beds",
+     "label": "Use several fault clues"
+    }
+   ]
   }
  ],
  "g8-13a": [
   {
    "terms": [
-    "strike",
-    "dip"
+    "Structural fieldwork",
+    "strike and dip",
+    "Laboratory work"
    ],
-   "checkpoints": []
+   "definitions": [
+    "records observations, sketches, orientations, maps, and samples",
+    "help project structures below the surface",
+    "can identify minerals, textures, and chemical conditions"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Measurements of strike and dip help project structures below the surface",
+     "label": "Connect measurements and interpretation"
+    }
+   ]
   },
   {
-   "terms": [],
-   "checkpoints": []
+   "terms": [
+    "fault",
+    "unfaulted intrusion or deposit"
+   ],
+   "definitions": [
+    "younger than units it cuts",
+    "crosses and seals a fault"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "may constrain an interval rather than one exact date",
+     "label": "Bracket the faulting"
+    }
+   ]
   },
   {
-   "terms": [],
-   "checkpoints": []
+   "terms": [
+    "Minerals",
+    "relationship to fabrics"
+   ],
+   "definitions": [
+    "grow before, during, or after deformation",
+    "helps distinguish these possibilities"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Preserve uncertainty where an exposure or age is missing",
+     "label": "Use several timing relationships"
+    }
+   ]
   }
  ],
  "g8-13-standard": [
   {
    "terms": [
-    "strike",
-    "dip"
+    "Measurements"
    ],
-   "checkpoints": []
-  },
-  {
-   "terms": [],
+   "definitions": [
+    "project features below the surface and connect separated outcrops"
+   ],
    "checkpoints": [
     {
-     "phrase": "These relations bracket an interval",
-     "label": "Keep the distinction"
+     "phrase": "Record the observation before the interpretation",
+     "label": "Separate evidence and explanation"
     }
    ]
   },
   {
-   "terms": [],
-   "checkpoints": []
-  },
-  {
-   "terms": [],
-   "checkpoints": []
+   "terms": [
+    "fault",
+    "unfaulted layer or intrusion"
+   ],
+   "definitions": [
+    "younger than a unit it cuts",
+    "younger than the movement it seals at that exposure"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "They do not prove that a fault never moved elsewhere or at another time",
+     "label": "Keep the local timing limit"
+    }
+   ]
   },
   {
    "terms": [
-    "strike",
-    "dip"
+    "Minerals",
+    "Microscopic textures and mineral chemistry"
    ],
-   "checkpoints": []
+   "definitions": [
+    "grow before, during, or after deformation",
+    "add evidence about metamorphic conditions"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Their shapes and positions relative to cleavage and veins",
+     "label": "Use fabric relationships"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Folded veins, later cleavage, and cross-cutting features",
+    "Missing exposures and uncertain ages"
+   ],
+   "definitions": [
+    "can record multiple events",
+    "can limit the sequence to relative order rather than a precise date"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Distinguish an observed overprint from the proposed explanation",
+     "label": "Keep evidence and reconstruction separate"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Strike",
+    "Dip",
+    "Fault movement is younger than that unit",
+    "Sealing deposit is younger than the observed movement",
+    "Metamorphic evidence"
+   ],
+   "definitions": [
+    "Direction of a horizontal line on a bed",
+    "Direction and angle of steepest descent",
+    "Fault cuts an older unit",
+    "Unfaulted deposit seals a fault",
+    "Mineral texture viewed under a microscope"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Unfaulted deposit seals a fault",
+     "label": "Read the sealing relationship"
+    }
+   ]
   }
  ],
  "g8-14a": [
   {
    "terms": [
-    "New England"
+    "New England maps and cross section",
+    "Younger Mesozoic rocks",
+    "Recent deposits"
    ],
-   "checkpoints": []
-  },
-  {
-   "terms": [
-    "rifting",
-    "pressure",
-    "temperature"
-   ],
-   "checkpoints": []
-  },
-  {
-   "terms": [],
-   "checkpoints": []
-  }
- ],
- "g-connect-appalachians": [
-  {
-   "terms": [
-    "rifting"
-   ],
-   "checkpoints": []
-  }
- ],
- "g8-14-standard": [
-  {
-   "terms": [],
-   "checkpoints": []
-  },
-  {
-   "terms": [],
-   "checkpoints": []
-  },
-  {
-   "terms": [],
-   "checkpoints": []
-  },
-  {
-   "terms": [
-    "Vermont",
-    "New Hampshire",
-    "pressure",
-    "temperature"
+   "definitions": [
+    "belts of rock, faults, folds, and metamorphic variation",
+    "occur in rift-related fault blocks",
+    "record still later glacial and shoreline processes"
    ],
    "checkpoints": [
     {
-     "phrase": "not a universal order",
-     "label": "Keep the distinction"
+     "phrase": "Older crystalline rocks and Paleozoic units",
+     "label": "Separate the rock histories"
     }
    ]
   },
   {
    "terms": [
-    "Vermont",
-    "New Hampshire",
-    "rifting"
+    "collision history",
+    "later rifting",
+    "pressure–temperature paths"
    ],
-   "checkpoints": []
+   "definitions": [
+    "assembly of the Appalachians",
+    "between North America and Africa",
+    "help reconstruct burial, heating, and later change"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Different locations have different histories",
+     "label": "Read each mapped location"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "sequence"
+   ],
+   "definitions": [
+    "older deformation, metamorphism, younger extension, and erosion/deposition"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Do not equate every fault on the map with the same episode",
+     "label": "Separate events and ages"
+    }
+   ]
+  }
+ ],
+ "g-connect-appalachians": [
+  {
+   "terms": [
+    "collision",
+    "continental rifting",
+    "younger Mesozoic rocks"
+   ],
+   "definitions": [
+    "Africa and eastern North America",
+    "about 300 million years ago",
+    "separated North America from Africa",
+    "rift-related tilted and down-dropped blocks"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Later continental rifting",
+     "label": "Keep collision and rifting separate"
+    }
+   ]
+  }
+ ],
+ "g8-14-standard": [
+  {
+   "terms": [
+    "New England",
+    "map and cross section"
+   ],
+   "definitions": [
+    "different rock belts, faults, folds, and metamorphic rocks",
+    "structures at the surface and interpreted relations below it"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Use the legend and orientation before comparing locations",
+     "label": "Read the regional geometry"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Paleozoic collisions",
+    "Mesozoic extension"
+   ],
+   "definitions": [
+    "contributed to Appalachian deformation and metamorphism",
+    "opened rift basins as North America separated from Africa"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "These are separate events",
+     "label": "Distinguish inherited structures"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "highest metamorphic conditions",
+    "Grade"
+   ],
+   "definitions": [
+    "in the central part of its illustrated area",
+    "constrained using mineral assemblages and textures"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "not topographic elevation alone",
+     "label": "Use metamorphic evidence"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "eastern Vermont",
+    "New Hampshire"
+   ],
+   "definitions": [
+    "buried and then heated",
+    "initially heated and then buried"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "not a universal order for all mountain belts",
+     "label": "Keep each location’s path"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Continental collision",
+    "Rifting",
+    "Highest grade",
+    "Eastern Vermont path",
+    "New Hampshire path"
+   ],
+   "definitions": [
+    "Paleozoic assembly of Appalachian mountains",
+    "Younger Mesozoic extension",
+    "Central part of the area",
+    "Burial followed by heating",
+    "Heating followed by burial"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "in the supplied figure",
+     "label": "Keep the source-specific paths"
+    }
+   ]
   }
  ],
  "g8-15a": [
   {
    "terms": [
-    "cleavage",
-    "gneiss",
     "slate",
     "quartzite",
     "marble",
-    "recrystallized calcite supports marble"
+    "gneiss"
    ],
-   "checkpoints": []
+   "definitions": [
+    "Fine dull cleavage",
+    "Quartz-rich interlocking sand grains",
+    "Recrystallized calcite",
+    "coarse mineral bands"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "First identify the rocks from mineral and texture evidence",
+     "label": "Use both mineral and texture clues"
+    }
+   ]
   },
   {
    "terms": [
+    "bedding",
     "cleavage",
-    "shortening"
+    "metamorphic grade"
    ],
-   "checkpoints": []
+   "definitions": [
+    "Trace bedding to interpret the fold",
+    "infer shortening",
+    "help constrain the structural history"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "fault type requires movement or an independently verified geometric relation",
+     "label": "Support the fault interpretation"
+    }
+   ]
   },
   {
-   "terms": [],
-   "checkpoints": []
+   "terms": [
+    "reasoning step",
+    "Written Connect summaries"
+   ],
+   "definitions": [
+    "Observation → rock or structure → parent material or process → integrated sequence",
+    "support style calibration"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Missing original screenshots are not a basis for grading their unseen numbered locations",
+     "label": "Preserve the evidence boundary"
+    }
+   ]
   }
  ],
  "g-connect-compass": [
   {
    "terms": [
-    "cleavage",
+    "Looking North",
     "shortening"
    ],
-   "checkpoints": []
+   "definitions": [
+    "Left is west and right is east",
+    "east–west"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "perpendicular to the near-vertical cleavage",
+     "label": "Use the stated viewing direction"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "joint interpretation"
+   ],
+   "definitions": [
+    "fold orientation and cleavage"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "It is not an exact stress magnitude",
+     "label": "State the inference and its limit"
+    }
+   ]
   }
  ],
  "g8-15-standard": [
@@ -3803,84 +5250,202 @@ window.L.studyReading={
     "syncline",
     "cleavage"
    ],
-   "checkpoints": []
+   "definitions": [
+    "a down-curving fold",
+    "near-vertical cleavage cuts bedding"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "In the supplied north-looking perspective",
+     "label": "Use the source viewpoint"
+    }
+   ]
   },
   {
    "terms": [
-    "cleavage",
     "gneiss",
     "slate",
     "quartzite",
-    "marble",
-    "sandstone",
-    "limestone"
+    "marble"
    ],
-   "checkpoints": []
+   "definitions": [
+    "coarse black-and-white banded sample",
+    "dull fine-grained sample with cleavage",
+    "Interlocking quartz grains",
+    "fine calcite and deformed fossils"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Quartzite commonly began as sandstone and marble as limestone",
+     "label": "Connect products to parent materials"
+    }
+   ]
   },
   {
    "terms": [
     "fault zone",
     "reverse fault"
    ],
-   "checkpoints": []
-  },
-  {
-   "terms": [
-    "syncline",
-    "cleavage",
-    "shortening"
+   "definitions": [
+    "an intensely fractured and shattered zone",
+    "The checked Connect summary calls the boundary"
    ],
    "checkpoints": [
     {
-     "phrase": "source-specific",
+     "phrase": "Identify that key as supplied assessment evidence",
+     "label": "Separate observed and supplied interpretations"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "east–west shortening",
+    "eastern banded rocks"
+   ],
+   "definitions": [
+    "the fold and cleavage indicate",
+    "higher grade than the rocks in the grassy area and southern hill"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Separate those source-specific relations from rules for every syncline",
+     "label": "Keep this investigation’s scope"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Gneiss",
+    "Slate",
+    "Quartzite",
+    "Marble",
+    "Syncline",
+    "Fault-zone evidence"
+   ],
+   "definitions": [
+    "Coarse black-and-white bands with visible minerals",
+    "Dull fine-grained rock with cleavage",
+    "Hard interlocking quartz grains",
+    "Fine calcite with deformed fossils",
+    "Down-curving layers with inward-dipping limbs",
+    "Straight stream through intensely shattered rock"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Straight stream through intensely shattered rock",
+     "label": "Identify evidence before fault type"
+    }
+   ]
+  }
+ ],
+ "g9-1-a": [
+  {
+   "terms": [
+    "Original horizontality",
+    "Superposition",
+    "Inclusions",
+    "Crosscutting relationships",
+    "Baked contacts"
+   ],
+   "definitions": [
+    "Most sedimentary beds and many lava layers begin approximately horizontal",
+    "places younger beds above older beds in an undisturbed sequence",
+    "are older than the rock that contains them",
+    "make the cutting fault, vein, or dike younger than the material it cuts",
+    "identify preexisting rock heated by younger magma"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "First check whether the beds have been overturned.",
+     "label": "Check the orientation"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Siccar Point",
+    "Uniformitarianism"
+   ],
+   "definitions": [
+    "combines steep older beds, erosion, and gently dipping younger beds",
+    "uses processes observable today to interpret earlier events"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "It does not require every process to operate at an unchanging rate.",
+     "label": "Keep the distinction"
+    }
+   ]
+  }
+ ],
+ "g-c9q-principles": [
+  {
+   "terms": [
+    "Original horizontality",
+    "Superposition",
+    "Tilted or folded beds"
+   ],
+   "definitions": [
+    "most sediments begin in approximately horizontal layers",
+    "compares positions in an undisturbed depositional stack",
+    "normally record later deformation"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Exceptions include dune faces and delta slopes.",
+     "label": "Check the exceptions"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "cross-cutting relations",
+    "contact-effects relation",
+    "Inclusions"
+   ],
+   "definitions": [
+    "A dike that cuts a host rock is younger",
+    "Baking or alteration of the host beside magma",
+    "pieces of older material enclosed within a younger rock"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Do not use superposition as a substitute for cross-cutting simply because an intrusive body is visible.",
      "label": "Keep the distinction"
     }
    ]
   },
   {
    "terms": [
-    "syncline",
-    "cleavage",
-    "gneiss",
-    "slate",
-    "quartzite",
-    "marble"
+    "Assessment Q3",
+    "The textbook"
    ],
-   "checkpoints": []
-  }
- ],
- "g9-1-a": [
-  {
-   "terms": [
-    "superposition",
-    "original horizontality",
-    "crosscutting",
-    "inclusions",
-    "baked contacts"
+   "definitions": [
+    "marks “contact effects; superposition” correct for a dike-intrusion stem",
+    "explicitly supports cross-cutting and contact effects for an intrusion cutting and baking its host"
    ],
-   "checkpoints": []
-  },
-  {
-   "terms": [],
-   "checkpoints": []
-  }
- ],
- "g-c9q-principles": [
-  {
-   "terms": [
-    "superposition",
-    "inclusions"
-   ],
-   "checkpoints": []
+   "checkpoints": [
+    {
+     "phrase": "The original feedback conflict remains unresolved.",
+     "label": "Keep the source limitation"
+    }
+   ]
   }
  ],
  "g9-1-standard": [
   {
-   "terms": [],
+   "terms": [
+    "inclusion",
+    "sequence of events"
+   ],
+   "definitions": [
+    "predates the rock that contains it",
+    "is not yet a numerical clock"
+   ],
    "checkpoints": [
     {
-     "phrase": "A sequence of events is not yet",
-     "label": "Keep the distinction"
+     "phrase": "Date the visible contact, not an imagined extension.",
+     "label": "Use the visible evidence"
     }
    ]
   }
@@ -3888,32 +5453,77 @@ window.L.studyReading={
  "g9-2-a": [
   {
    "terms": [
-    "erosion"
+    "canyon or erosion surface",
+    "dated lava",
+    "river terrace"
    ],
-   "checkpoints": []
+   "definitions": [
+    "is younger than the rocks it cuts",
+    "is younger than that surface, giving a second age limit",
+    "records a former channel or floodplain level"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "An elevated abandoned terrace predates the river cutting to its present lower level.",
+     "label": "Follow the sequence"
+    }
+   ]
   },
   {
-   "terms": [],
-   "checkpoints": []
+   "terms": [
+    "Soil development",
+    "Desert varnish",
+    "Desert pavement",
+    "Cosmogenic isotopes"
+   ],
+   "definitions": [
+    "can help compare surfaces under similar environmental conditions",
+    "a dark coating containing iron and manganese oxides",
+    "concentrates surface clasts as fine material is removed or moves downward",
+    "accumulate through cosmic-ray interactions at exposed surfaces"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Well-developed pavement and varnish support prolonged exposure, not a universal stopwatch.",
+     "label": "Keep the distinction"
+    }
+   ]
   }
  ],
  "g-c9q-surface": [
   {
    "terms": [
-    "landscape"
+    "depicted lava",
+    "covered surface"
    ],
-   "checkpoints": []
+   "definitions": [
+    "lies on an existing landscape surface",
+    "existed before that eruption"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "A dated lava can constrain the age of the surface beneath it, but it does not date every older episode that shaped that landscape.",
+     "label": "Name the dated event"
+    }
+   ]
   }
  ],
  "g9-2-standard": [
   {
    "terms": [
-    "erosion"
+    "canyon",
+    "raised terrace",
+    "Surface maturity"
+   ],
+   "definitions": [
+    "is younger than every rock it cuts",
+    "preserves an earlier channel position",
+    "records exposure under suitable conditions"
    ],
    "checkpoints": [
     {
-     "phrase": "State which event each age",
-     "label": "Keep the distinction"
+     "phrase": "State which event each age actually measures.",
+     "label": "Name the dated event"
     }
    ]
   }
@@ -3923,54 +5533,140 @@ window.L.studyReading={
    "terms": [
     "unconformity",
     "angular unconformity",
-    "disconformity",
     "nonconformity",
-    "erosion",
-    "deposition"
+    "disconformity"
    ],
-   "checkpoints": []
+   "definitions": [
+    "a surface representing missing geologic record through erosion, nondeposition, or both",
+    "separates older tilted or folded strata from younger beds at a different orientation",
+    "places sedimentary rock on an eroded surface of nonlayered crystalline rock",
+    "separates essentially parallel sedimentary beds"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "The gap is time, not necessarily a visibly open space.",
+     "label": "Keep the distinction"
+    }
+   ]
   },
   {
-   "terms": [],
-   "checkpoints": []
+   "terms": [
+    "Erosion",
+    "Nondeposition"
+   ],
+   "definitions": [
+    "can truncate layers and remove a long record",
+    "can leave missing time even where little material was removed"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Do not classify from the word “metamorphic” alone.",
+     "label": "Inspect the contact"
+    }
+   ]
   }
  ],
  "g9-c9a-unconformities": [
   {
    "terms": [
-    "unconformity",
-    "angular unconformity",
-    "disconformity",
-    "nonconformity",
-    "erosion",
-    "deposition"
+    "Angular unconformity",
+    "Nonconformity",
+    "Disconformity"
    ],
-   "checkpoints": []
+   "definitions": [
+    "Younger deposits overlie eroded older beds with a different orientation",
+    "Younger sediment overlies eroded igneous or metamorphic basement",
+    "A time gap separates essentially parallel sedimentary layers"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "In the right block, parallel beds do not mean continuous deposition.",
+     "label": "Keep the distinction"
+    }
+   ]
   }
  ],
  "g-c9q-siccar": [
   {
-   "terms": [],
-   "checkpoints": []
+   "terms": [
+    "Gray sandstone and shale",
+    "younger deposits"
+   ],
+   "definitions": [
+    "were deposited, tilted toward vertical, and eroded before reddish sandstone and conglomerate accumulated above them",
+    "include fragments of the older gray rocks"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Different orientations and the truncated lower beds record more than one episode.",
+     "label": "Follow the sequence"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "image here",
+    "supplied assessment captures"
+   ],
+   "definitions": [
+    "the original textbook close-up",
+    "show a broken image placeholder"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "their unseen figure cannot be checked for exact visual equivalence.",
+     "label": "Keep the source limitation"
+    }
+   ]
   }
  ],
  "g-c9q-gaps": [
   {
    "terms": [
-    "disconformity",
-    "nonconformity",
-    "erosion",
-    "deposition"
+    "Granite",
+    "“nonconformity” label"
    ],
-   "checkpoints": []
+   "definitions": [
+    "must crystallize at depth, then become exposed through uplift and removal of overlying rock before sediment is deposited directly on its eroded surface",
+    "a teaching reference, not a hidden identification answer"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "The original labeled photograph is useful for reconstructing events.",
+     "label": "Follow the sequence"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "disconformity",
+    "fossil assemblages and established fossil ranges"
+   ],
+   "definitions": [
+    "separates essentially parallel sedimentary layers and records an interval of nondeposition and/or erosion",
+    "to test for an age gap"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Similar mineral content, porosity, or fracture orientation alone does not establish continuous deposition.",
+     "label": "Keep the distinction"
+    }
+   ]
   }
  ],
  "g9-3-standard": [
   {
-   "terms": [],
+   "terms": [
+    "Crystalline basement",
+    "Parallel layers"
+   ],
+   "definitions": [
+    "must be exposed before sediment buries it",
+    "can still contain a major time gap"
+   ],
    "checkpoints": [
     {
-     "phrase": "A missing record is not evidence",
+     "phrase": "A missing record is not evidence that nothing happened.",
      "label": "Keep the distinction"
     }
    ]
@@ -3979,42 +5675,103 @@ window.L.studyReading={
  "g9-4-a": [
   {
    "terms": [
-    "isotope",
-    "parent",
-    "daughter",
-    "half-life"
+    "Isotopes",
+    "Unstable parent isotopes",
+    "half-life",
+    "Parent/daughter ratios",
+    "mass spectrometer"
    ],
-   "checkpoints": []
+   "definitions": [
+    "have the same number of protons but different numbers of neutrons",
+    "decay into daughter products",
+    "removes half of the remaining parent",
+    "can give an age when the initial daughter contribution and later gain or loss are addressed",
+    "measures isotope proportions"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Equal time intervals remove successively smaller amounts, not a fixed number of atoms.",
+     "label": "Keep the distinction"
+    }
+   ]
   },
   {
    "terms": [
-    "crystallization"
+    "K–Ar and Ar–Ar",
+    "U–Pb in zircon",
+    "Rb–Sr and Sm–Nd",
+    "Carbon-14",
+    "Detrital mineral grains"
    ],
-   "checkpoints": []
+   "definitions": [
+    "commonly date volcanic eruption or cooling",
+    "commonly dates crystallization",
+    "useful for suitable older rocks and mineral systems",
+    "useful for comparatively recent carbon-bearing material such as charcoal or bone",
+    "can date their source rocks rather than sediment deposition"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Always name the event being measured.",
+     "label": "Name the dated event"
+    }
+   ]
   }
  ],
  "g9-c9a-isotopes": [
   {
    "terms": [
-    "isotope",
-    "parent",
-    "daughter",
-    "half-life"
+    "original parent total",
+    "Halving sequence",
+    "Granite G",
+    "Dike D"
    ],
-   "checkpoints": []
+   "definitions": [
+    "parent now+daughter now",
+    "1→1/2→1/4→1/8",
+    "125/(125+875)=1/8",
+    "500/(500+500)=1/2"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Count elapsed half-lives, then multiply by that sample’s isotope half-life.",
+     "label": "Follow the calculation"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "two samples",
+    "numerical age"
+   ],
+   "definitions": [
+    "use different isotope half-lives",
+    "depends on what event started or reset the isotope clock"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Daughter abundance alone does not compare their ages.",
+     "label": "Keep the distinction"
+    }
+   ]
   }
  ],
  "g9-4-standard": [
   {
    "terms": [
-    "isotope",
-    "half-life",
+    "One half-life",
+    "Different mineral clocks",
     "detrital grain"
+   ],
+   "definitions": [
+    "leaves 50%",
+    "can date different events in one rock",
+    "can be much older than its host deposit"
    ],
    "checkpoints": [
     {
-     "phrase": "A detrital grain can be much older",
-     "label": "Keep the distinction"
+     "phrase": "A laboratory ratio needs a geological interpretation.",
+     "label": "Name the dated event"
     }
    ]
   }
@@ -4022,35 +5779,88 @@ window.L.studyReading={
  "g9-5-a": [
   {
    "terms": [
+    "Mineral replacement",
+    "Silica replacement",
     "mold",
-    "cast"
+    "cast",
+    "Carbon films",
+    "Impressions",
+    "Amber",
+    "Stromatolites",
+    "Trace fossils"
    ],
-   "checkpoints": []
+   "definitions": [
+    "can preserve form",
+    "produces petrified wood",
+    "the cavity or impression left after an organism dissolves or disappears",
+    "forms when that mold is filled",
+    "preserve carbon-rich outlines",
+    "preserve shapes",
+    "can entomb small organisms",
+    "layered structures built through microbial activity",
+    "record activity rather than a preserved body"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Trackways can reveal movement and behavior.",
+     "label": "Read the preserved evidence"
+    }
+   ]
   },
   {
    "terms": [
-    "fossil",
-    "preservation"
+    "Pseudofossils",
+    "Branching manganese-oxide dendrites",
+    "Concretions"
    ],
-   "checkpoints": []
+   "definitions": [
+    "resemble organisms but form without them",
+    "mineral patterns",
+    "localized cemented bodies"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Fossil absence is not proof that no life existed.",
+     "label": "Keep the distinction"
+    }
+   ]
   }
  ],
  "g-c9q-fossils": [
   {
-   "terms": [],
-   "checkpoints": []
+   "terms": [
+    "fossils",
+    "trace fossils",
+    "Dendrites"
+   ],
+   "definitions": [
+    "Preserved leaves and other body remains",
+    "Footprints and sediment-filled burrows record biological activity",
+    "branching mineral growths, commonly manganese oxides along fractures or bedding"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Their plant-like shape does not make them fossils.",
+     "label": "Keep the distinction"
+    }
+   ]
   }
  ],
  "g9-5-standard": [
   {
    "terms": [
-    "mold",
-    "cast",
-    "preservation"
+    "Mold",
+    "Cast",
+    "Tracks and burrows"
+   ],
+   "definitions": [
+    "cavity",
+    "later infill",
+    "record behavior rather than preserved bodies"
    ],
    "checkpoints": [
     {
-     "phrase": "An organic-looking shape",
+     "phrase": "An organic-looking shape does not prove a biological origin.",
      "label": "Keep the distinction"
     }
    ]
@@ -4058,23 +5868,59 @@ window.L.studyReading={
  ],
  "g9-6-a": [
   {
-   "terms": [],
-   "checkpoints": []
+   "terms": [
+    "Faunal succession",
+    "Precambrian time",
+    "Paleozoic",
+    "Mesozoic",
+    "Cenozoic"
+   ],
+   "definitions": [
+    "the systematic change of fossil assemblages through rock sequences",
+    "comprises roughly 90% of Earth history",
+    "records major marine diversification and the expansion of plants and animals onto land",
+    "includes dinosaur-dominated terrestrial ecosystems",
+    "records extensive mammal diversification"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "They do not mean that all members of a group originated or vanished simultaneously.",
+     "label": "Keep the distinction"
+    }
+   ]
   },
   {
    "terms": [
-    "natural selection",
-    "species"
+    "Natural selection",
+    "Evolutionary change",
+    "Mechanisms"
    ],
-   "checkpoints": []
+   "definitions": [
+    "explains changes in populations through differences in survival and reproductive success",
+    "an observation",
+    "explain how it occurs"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Punctuated equilibrium does not mean an individual suddenly transforms into a new species.",
+     "label": "Keep the distinction"
+    }
+   ]
   }
  ],
  "g9-6-standard": [
   {
-   "terms": [],
+   "terms": [
+    "Survival",
+    "changing resource"
+   ],
+   "definitions": [
+    "depends on needs, conditions and inherited variation",
+    "can affect an entire ecological relationship"
+   ],
    "checkpoints": [
     {
-     "phrase": "An observed succession",
+     "phrase": "An observed succession and its explanation are different claims.",
      "label": "Keep the distinction"
     }
    ]
@@ -4083,28 +5929,75 @@ window.L.studyReading={
  "g9-7-a": [
   {
    "terms": [
-    "index fossil"
+    "index fossil",
+    "long-ranging fossil",
+    "assemblage",
+    "Microfossils"
    ],
-   "checkpoints": []
+   "definitions": [
+    "especially useful when it is widespread, abundant, and restricted to a short time interval",
+    "usually gives a weaker age limit",
+    "narrows an age to the overlap of fossil ranges",
+    "can provide useful age markers"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Do not take the union of every interval or average unrelated dates.",
+     "label": "Use the overlap"
+    }
+   ]
   },
   {
-   "terms": [],
-   "checkpoints": []
+   "terms": [
+    "missing species",
+    "Overlapping partial sections",
+    "William Smith"
+   ],
+   "definitions": [
+    "can reflect an unsuitable habitat rather than missing time",
+    "can build a longer composite record",
+    "used repeated fossil successions to correlate strata and map geology"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Equivalent units need not have identical thickness.",
+     "label": "Keep the distinction"
+    }
+   ]
   }
  ],
  "g-c9q-overlap": [
   {
-   "terms": [],
-   "checkpoints": []
+   "terms": [
+    "layer containing several contemporaneous fossil species",
+    "combination"
+   ],
+   "definitions": [
+    "must fit the interval during which their ranges overlap",
+    "can constrain age more narrowly than any one long-ranging species"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "This interpretation assumes the fossils belong to the deposit rather than having been eroded from older rocks and redeposited.",
+     "label": "Check the depositional context"
+    }
+   ]
   }
  ],
  "g9-7-standard": [
   {
-   "terms": [],
+   "terms": [
+    "useful index",
+    "Overlapping sections"
+   ],
+   "definitions": [
+    "Short duration, abundance and wide distribution",
+    "can reconstruct a longer regional record"
+   ],
    "checkpoints": [
     {
-     "phrase": "Correlate evidence across sites",
-     "label": "Keep the distinction"
+     "phrase": "Use the intersection, not the sum, of fossil ranges.",
+     "label": "Use the overlap"
     }
    ]
   }
@@ -4112,78 +6005,232 @@ window.L.studyReading={
  "g9-8-a": [
   {
    "terms": [
-    "era",
-    "Phanerozoic",
-    "Precambrian",
-    "Paleozoic",
-    "Mesozoic",
-    "Cenozoic"
+    "Phanerozoic eras",
+    "“Precambrian”",
+    "Paleozoic periods",
+    "Carboniferous",
+    "Mesozoic periods",
+    "Cenozoic periods"
    ],
-   "checkpoints": []
+   "definitions": [
+    "Paleozoic → Mesozoic → Cenozoic",
+    "a broad earlier span, not a fourth era equivalent to those three",
+    "Cambrian, Ordovician, Silurian, Devonian, Mississippian, Pennsylvanian, Permian",
+    "Mississippian and Pennsylvanian together",
+    "Triassic, Jurassic, Cretaceous",
+    "Paleogene, Neogene, Quaternary"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Isotope dates later calibrated that framework.",
+     "label": "Separate order from calibration"
+    }
+   ]
   },
   {
-   "terms": [],
-   "checkpoints": []
+   "terms": [
+    "interbedded ash",
+    "Dated volcanic layers",
+    "dike",
+    "unconformity"
+   ],
+   "definitions": [
+    "can closely date a depositional horizon",
+    "below and above a fossil bed bracket its age",
+    "younger than beds it cuts",
+    "younger than the underlying record and older than overlying deposition"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Neither relationship makes the sediment exactly the dike age.",
+     "label": "Use the age limits"
+    }
+   ]
   }
  ],
  "g9-c9a-periods": [
   {
    "terms": [
-    "period",
+    "Paleozoic",
     "Mesozoic",
     "Cenozoic"
    ],
-   "checkpoints": []
+   "definitions": [
+    "Cambrian → Ordovician → Silurian → Devonian → Mississippian → Pennsylvanian → Permian",
+    "Triassic → Jurassic → Cretaceous",
+    "Paleogene → Neogene → Quaternary"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Quaternary is not a blank in this 12-label source task.",
+     "label": "Keep the complete sequence"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "supplied Connect graphic",
+    "current supplied textbook9.8",
+    "Mississippian and Pennsylvanian"
+   ],
+   "definitions": [
+    "retains older numeric boundaries, including 65, 251, and 542 Ma",
+    "instead states 66, 252, and 541 Ma",
+    "combined as the Carboniferous in many other timescales"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Use the textbook values for numeric course recall.",
+     "label": "Keep the source versions distinct"
+    }
+   ]
   }
  ],
  "g-c9q-time": [
   {
    "terms": [
-    "Precambrian",
-    "Paleozoic",
-    "Mesozoic",
-    "Cenozoic"
+    "Precambrian time",
+    "large sequence",
+    "Precambrian"
    ],
-   "checkpoints": []
+   "definitions": [
+    "precedes the Cambrian and the abundant hard-part fossil record emphasized in the course",
+    "Precambrian → Paleozoic → Mesozoic → Cenozoic",
+    "a broader informal interval containing several eons"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "It does not mean there was no earlier life.",
+     "label": "Keep the distinction"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "assessment’s A–D chart",
+    "checked D response"
+   ],
+   "definitions": [
+    "did not render",
+    "cannot establish where D was drawn"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Learn the temporal relation here without inventing the missing geometry.",
+     "label": "Keep the source limitation"
+    }
+   ]
   }
  ],
  "g9-8-standard": [
   {
-   "terms": [],
+   "terms": [
+    "Time units",
+    "Dated volcanic units"
+   ],
+   "definitions": [
+    "were recognized before their numerical ages were calibrated",
+    "can bracket fossil-bearing sediment"
+   ],
    "checkpoints": [
     {
-     "phrase": "Preserve the historical figure",
-     "label": "Keep the distinction"
+     "phrase": "Preserve the historical figure without mixing its dates into current course teaching.",
+     "label": "Keep the source versions distinct"
     }
    ]
   }
  ],
  "g9-9-a": [
   {
-   "terms": [],
-   "checkpoints": []
+   "terms": [
+    "early ocean-salt estimate",
+    "early cooling estimate",
+    "varves"
+   ],
+   "definitions": [
+    "assumed salt only accumulated",
+    "omitted internal radioactive heat",
+    "seasonal sediment"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Both illustrate how a missing process biases a model.",
+     "label": "Check the model assumptions"
+    }
+   ]
   },
   {
    "terms": [
-    "meteorites"
+    "Earth age",
+    "Meteorites",
+    "Acasta gneiss",
+    "detrital zircons"
    ],
-   "checkpoints": []
+   "definitions": [
+    "about 4.55 billion years",
+    "around 4.53–4.58 billion years",
+    "preserves an older igneous history altered by metamorphism",
+    "exceed 4.4 billion years"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Its oldest surviving rock need not equal its formation age.",
+     "label": "Keep the distinction"
+    }
+   ]
   }
  ],
  "g-c9q-records": [
   {
    "terms": [
-    "zircon"
+    "Tree growth rings, annual ice layers, and lake varves",
+    "varve"
    ],
-   "checkpoints": []
+   "definitions": [
+    "can preserve repeated yearly cycles",
+    "includes the alternating seasonal sediment layers representing one year"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Count complete annual cycles, not every light or dark stripe as a separate year.",
+     "label": "Count the complete cycle"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Acasta Gneiss",
+    "individual zircon grains",
+    "Precambrian time"
+   ],
+   "definitions": [
+    "approximately 4.0-billion-year-old",
+    "up to about 4.4 billion years",
+    "These ancient dates fall in"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "A grain’s crystallization age, the age of its present host rock, and the age of Earth are different targets.",
+     "label": "Name the dated event"
+    }
+   ]
   }
  ],
  "g9-9-standard": [
   {
-   "terms": [],
+   "terms": [
+    "complete seasonal cycle",
+    "Rates",
+    "Converging independent evidence"
+   ],
+   "definitions": [
+    "the relevant counting unit",
+    "constrain duration when the assumptions fit the event",
+    "supports the age of Earth"
+   ],
    "checkpoints": [
     {
-     "phrase": "Converging independent evidence",
+     "phrase": "A surviving crystal, its host and Earth can have different ages.",
      "label": "Keep the distinction"
     }
    ]
@@ -4192,34 +6239,97 @@ window.L.studyReading={
  "g9-10-a": [
   {
    "terms": [
-    "impact"
+    "impact",
+    "Excavation",
+    "larger complex craters",
+    "Early Earth"
    ],
-   "checkpoints": []
+   "definitions": [
+    "converts kinetic energy into shock, fracture, heating, and sometimes melting",
+    "ejects material",
+    "can develop central rebound peaks",
+    "retained formation heat, experienced more impacts, and contained more heat-producing radioactive isotopes"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Do not infer a precise start date from a single rock.",
+     "label": "Keep the uncertainty"
+    }
+   ]
   },
   {
    "terms": [
-    "oxygenation",
-    "banded iron formations"
+    "Volcanic outgassing",
+    "Photosynthetic microbes",
+    "Banded iron formations",
+    "Great Oxygenation Event"
    ],
-   "checkpoints": []
+   "definitions": [
+    "supplied water vapor, carbon dioxide, and sulfur-bearing gases",
+    "produced free oxygen",
+    "alternate iron-rich layers with silica-rich material",
+    "around 2.3–2.4 billion years ago"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Oxygen in minerals is not the same as free oxygen gas in the atmosphere.",
+     "label": "Keep the distinction"
+    }
+   ]
   }
  ],
  "g-c9q-early-earth": [
   {
    "terms": [
-    "photosynthesis",
-    "impact"
+    "relatively small impact",
+    "larger impact"
    ],
-   "checkpoints": []
+   "definitions": [
+    "makes a simple crater",
+    "can make a complex crater with a central peak"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Shape is not a rule that every simple crater is younger, or that moons have only simple craters.",
+     "label": "Keep the distinction"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Cyanobacteria",
+    "pictured iron formation",
+    "Dissolved iron"
+   ],
+   "definitions": [
+    "release oxygen through photosynthesis",
+    "has red and gray bands, largely iron oxides and quartz",
+    "oxidized and precipitated in ocean water"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "This differs from lava cooling or iron oxidation in a soil on land.",
+     "label": "Keep the distinction"
+    }
+   ]
   }
  ],
  "g9-10-standard": [
   {
-   "terms": [],
+   "terms": [
+    "Impact",
+    "Free oxygen",
+    "Oxygen production"
+   ],
+   "definitions": [
+    "excavates material and redistributes it around the crater",
+    "chemically different from oxygen bound in rock",
+    "can drive iron precipitation before abundant atmospheric oxygen accumulates"
+   ],
    "checkpoints": [
     {
-     "phrase": "Treat the oxygen curve",
-     "label": "Keep the distinction"
+     "phrase": "Treat the oxygen curve as an interpretation supported by geological evidence.",
+     "label": "Connect evidence to interpretation"
     }
    ]
   }
@@ -4227,34 +6337,72 @@ window.L.studyReading={
  "g9-11-a": [
   {
    "terms": [
-    "Cambrian",
-    "Paleozoic"
+    "Ancient stromatolites",
+    "Photosynthesis",
+    "Cambrian explosion",
+    "Early Paleozoic seas"
    ],
-   "checkpoints": []
+   "definitions": [
+    "record microbial communities by about 3.5 billion years ago in the supplied examples",
+    "increased oxygen",
+    "a geologically rapid diversification over millions of years, including many shelled organisms",
+    "included trilobites, corals, crinoids, and mollusks"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "The oldest preserved evidence is not necessarily the exact origin of life.",
+     "label": "Keep the distinction"
+    }
+   ]
   },
   {
    "terms": [
-    "Permian"
+    "Great Dying",
+    "causal hypotheses"
    ],
-   "checkpoints": []
+   "definitions": [
+    "at about 252 Ma eliminated a large fraction of marine and terrestrial species",
+    "with different support, not equally established facts"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Do not turn a listed possibility into a confirmed sole cause.",
+     "label": "Separate hypotheses from evidence"
+    }
+   ]
   }
  ],
  "g-c9q-cambrian": [
   {
    "terms": [
-    "Cambrian"
+    "beginning of the Cambrian"
    ],
-   "checkpoints": []
+   "definitions": [
+    "a geologically rapid diversification and widespread appearance of organisms with shells or other hard protective parts"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "“Explosion” is not a volcanic blast, and it was not the origin of all life.",
+     "label": "Keep the distinction"
+    }
+   ]
   }
  ],
  "g9-11-standard": [
   {
    "terms": [
-    "extinction"
+    "microbial construction",
+    "Diversification and improved preservation",
+    "broad extinction"
+   ],
+   "definitions": [
+    "can preserve biological evidence",
+    "both shape the fossil record",
+    "requires an explanation extending beyond one species or site"
    ],
    "checkpoints": [
     {
-     "phrase": "Coincident timing",
+     "phrase": "Coincident timing, a proposed mechanism and a demonstrated cause are distinct.",
      "label": "Keep the distinction"
     }
    ]
@@ -4263,40 +6411,78 @@ window.L.studyReading={
  "g9-12-a": [
   {
    "terms": [
-    "dinosaurs",
-    "mammals"
+    "Triassic ecosystems",
+    "Jurassic ecosystems",
+    "Cretaceous ecosystems",
+    "Dinosaur hip categories"
    ],
-   "checkpoints": []
+   "definitions": [
+    "included early mammals, dinosaur relatives, conifers, and marine ammonites",
+    "included diverse dinosaurs and early birds such as Archaeopteryx",
+    "included flowering plants, birds, mammals, marine reptiles, fish, and plankton",
+    "describe anatomy"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "A group name alone does not establish bird ancestry.",
+     "label": "Keep the distinction"
+    }
+   ]
   },
   {
    "terms": [
-    "Cenozoic",
-    "dinosaurs",
-    "mammals",
-    "extinction",
-    "impact",
-    "Chicxulub"
+    "end-Cretaceous crisis",
+    "Chicxulub impact",
+    "Deccan volcanism",
+    "Mammals"
    ],
-   "checkpoints": []
+   "definitions": [
+    "eliminated nonavian dinosaurs and many other groups",
+    "in Mexico supplied dust and gases capable of disrupting sunlight and food webs",
+    "a possible contributing influence",
+    "diversified extensively in the Cenozoic"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Origin, diversification, and extinction are separate milestones.",
+     "label": "Keep the distinction"
+    }
+   ]
   }
  ],
  "g-c9q-mesozoic": [
   {
    "terms": [
     "Mesozoic",
-    "Cenozoic",
-    "dinosaurs",
-    "mammals"
+    "periods, oldest to youngest",
+    "Cenozoic"
    ],
-   "checkpoints": []
+   "definitions": [
+    "the course’s “age of dinosaurs.”",
+    "Triassic, Jurassic, and Cretaceous",
+    "associated with the expansion of mammals"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Do not confuse an era with one period within it.",
+     "label": "Keep the distinction"
+    }
+   ]
   }
  ],
  "g9-12-standard": [
   {
-   "terms": [],
+   "terms": [
+    "boundary event",
+    "Lineages"
+   ],
+   "definitions": [
+    "can alter conditions across many ecosystems",
+    "change across generations"
+   ],
    "checkpoints": [
     {
-     "phrase": "New discoveries can refine",
+     "phrase": "Individuals do not become new species on command.",
      "label": "Keep the distinction"
     }
    ]
@@ -4305,34 +6491,88 @@ window.L.studyReading={
  "g9-13-a": [
   {
    "terms": [
-    "correlation"
+    "Traceable lateral continuity",
+    "Facies",
+    "sandy beach and offshore mud"
    ],
-   "checkpoints": []
+   "definitions": [
+    "strong evidence that separated exposures belong to one unit",
+    "can change sideways",
+    "may form at the same time"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Equal age does not require identical lithology or thickness.",
+     "label": "Keep the distinction"
+    }
+   ]
   },
   {
    "terms": [
+    "Missing units",
     "fault",
-    "dike"
+    "preexisting scarp and later displacement of lava"
    ],
-   "checkpoints": []
+   "definitions": [
+    "may result from nondeposition, environmental restriction, thickness changes, or erosion",
+    "can move more than once",
+    "can represent different episodes"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Keep an event uncertain if no observed relation orders it.",
+     "label": "Keep the uncertainty"
+    }
+   ]
   }
  ],
  "g-c9q-correlation": [
   {
    "terms": [
+    "physically tracing a bed continuously between two sections",
     "correlation"
    ],
-   "checkpoints": []
+   "definitions": [
+    "the surest evidence that it is the same unit",
+    "Matching distinctive rock types, fossils, and position within a sequence"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Similar color or equal height alone can be misleading.",
+     "label": "Keep the distinction"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "dashed connections",
+    "Corresponding units"
+   ],
+   "definitions": [
+    "interpreted correlations, not exposed rock connecting the columns",
+    "can have different thicknesses"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Corresponding units can have different thicknesses.",
+     "label": "Keep the distinction"
+    }
+   ]
   }
  ],
  "g9-13-standard": [
   {
    "terms": [
-    "fault"
+    "Each contact",
+    "fault’s latest movement"
+   ],
+   "definitions": [
+    "supplies a specific earlier-than or later-than relationship",
+    "can be younger than its first movement"
    ],
    "checkpoints": [
     {
-     "phrase": "A fault’s latest movement",
+     "phrase": "Same age need not mean same lithology or thickness.",
      "label": "Keep the distinction"
     }
    ]
@@ -4341,32 +6581,99 @@ window.L.studyReading={
  "g9-14-a": [
   {
    "terms": [
-    "hazards"
+    "Lava superposition, weathering, and suitable isotopic dates",
+    "Offset dated rocks",
+    "lava covering a scarp",
+    "Geological evidence"
    ],
-   "checkpoints": []
+   "definitions": [
+    "reconstruct eruption history",
+    "constrain fault activity",
+    "can limit older movement",
+    "extends the history beyond human measurements"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "This constrains hazards without predicting the exact date of the next eruption.",
+     "label": "Keep the distinction"
+    }
+   ]
   },
   {
    "terms": [
-    "radiocarbon",
-    "archaeology",
-    "resources"
+    "Intrusions and crosscutting hydrothermal veins",
+    "Basin stratigraphy",
+    "Archaeology",
+    "Reused building stones"
    ],
-   "checkpoints": []
+   "definitions": [
+    "help reconstruct mineralization",
+    "controls groundwater pathways",
+    "combines layer order, construction relationships, tree rings, and appropriate radiocarbon dates",
+    "can predate the wall containing them"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Carbon-14 is not a suitable clock for material millions of years old.",
+     "label": "Match the clock to the material"
+    }
+   ]
   }
  ],
  "g-c9q-origins": [
   {
-   "terms": [],
-   "checkpoints": []
+   "terms": [
+    "reused fragment",
+    "Appropriately young organic remains",
+    "Older human-associated sequences"
+   ],
+   "definitions": [
+    "predates the younger wall or deposit containing it",
+    "can be dated with carbon-14",
+    "can be constrained by interbedded volcanic rocks and fossil evidence"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Superposition and inclusions apply to archaeological deposits as well as older rocks.",
+     "label": "Apply the relative-age tools"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "carbon-14 applications",
+    "Bones, wood, and charcoal",
+    "Volcanic minerals"
+   ],
+   "definitions": [
+    "in the hundreds to tens of thousands of years, not millions of years",
+    "preserve organic carbon",
+    "supply other isotope systems"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "The textbook places useful carbon-14 applications here in the hundreds to tens of thousands of years, not millions of years.",
+     "label": "Match the clock to the material"
+    }
+   ]
   }
  ],
  "g9-14-standard": [
   {
-   "terms": [],
+   "terms": [
+    "Past-event ages",
+    "resource",
+    "Water age and aquifer-rock age"
+   ],
+   "definitions": [
+    "inform hazard assessment without giving an exact forecast",
+    "depends on the sequence of processes that formed and preserved it",
+    "describe different events"
+   ],
    "checkpoints": [
     {
-     "phrase": "A useful age must fit",
-     "label": "Keep the distinction"
+     "phrase": "A useful age must fit both the sample and its archaeological context.",
+     "label": "Name the dated event"
     }
    ]
   }
@@ -4374,36 +6681,94 @@ window.L.studyReading={
  "g9-15-a": [
   {
    "terms": [
-    "Precambrian",
-    "uplift",
-    "erosion"
+    "Basement metamorphic rocks",
+    "Late Precambrian strata",
+    "nonconformities",
+    "angular unconformities",
+    "Paleozoic deposits"
    ],
-   "checkpoints": []
+   "definitions": [
+    "formed about 1.7 Ga",
+    "around 1.1 Ga were deposited, tilted, and eroded",
+    "Contacts above crystalline basement",
+    "Contacts above tilted layered rocks",
+    "record changing marine, river, and dune environments"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Missing Ordovician and Silurian record and other gaps prevent treating the exposed column as continuous time.",
+     "label": "Keep the distinction"
+    }
+   ]
   },
   {
    "terms": [
-    "uplift"
+    "major canyon excavation",
+    "approximately 8 Ma plateau lava",
+    "Lava entering an existing canyon around 4–5 Ma"
    ],
-   "checkpoints": []
+   "definitions": [
+    "chiefly during the last roughly 5 million years",
+    "predates the main canyon",
+    "shows the canyon already existed then"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "This is its reconstruction, not the age of the wall rocks.",
+     "label": "Keep the distinction"
+    }
+   ]
   }
  ],
  "g-c9q-canyon": [
   {
    "terms": [
-    "Great Unconformity",
-    "Precambrian"
+    "Basement rocks",
+    "lower late-Precambrian deposits",
+    "lower unconformity",
+    "Great Unconformity"
    ],
-   "checkpoints": []
+   "definitions": [
+    "approximately 1.7 billion years old",
+    "about 1.1 billion years old",
+    "600 million years",
+    "represents an even larger gap"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "The younger upper unconformity is a different surface.",
+     "label": "Keep the distinction"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "1.7 − 1.1"
+   ],
+   "definitions": [
+    "0.6 billion years = 600 million years"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "This gap is not the age of the modern canyon incision or the age of Earth.",
+     "label": "Name the measured interval"
+    }
+   ]
   }
  ],
  "g9-15-standard": [
   {
    "terms": [
-    "erosion"
+    "Unconformity type",
+    "canyon"
+   ],
+   "definitions": [
+    "depends on local relationships along the surface",
+    "an exposure of a long, interrupted history"
    ],
    "checkpoints": [
     {
-     "phrase": "The canyon is an exposure",
+     "phrase": "Thickness and continuity of recorded time are different properties.",
      "label": "Keep the distinction"
     }
    ]
@@ -4412,40 +6777,123 @@ window.L.studyReading={
  "g9-16-a": [
   {
    "terms": [
-    "canyon",
-    "lava",
-    "dike",
-    "fault"
+    "Granite G",
+    "eroded parallel B–A contact",
+    "Basalt dike D",
+    "River gravel R"
    ],
-   "checkpoints": []
+   "definitions": [
+    "is weathered beneath C, and C contains G clasts",
+    "is a disconformity",
+    "bakes and cuts A, B, C, and G, so it is younger than those units",
+    "has a developed soil and middle-Cenozoic mammals"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "R deposition precedes canyon cutting, which precedes that lava.",
+     "label": "Follow the sequence"
+    }
+   ]
   },
   {
-   "terms": [],
-   "checkpoints": []
+   "terms": [
+    "125 parent atoms and 875 daughter atoms",
+    "three 500-million-year half-lives",
+    "equal parent and daughter amounts",
+    "40-million-year half-life"
+   ],
+   "definitions": [
+    "give a parent fraction of 1/8",
+    "1,500 Ma",
+    "give one half-life under the same model",
+    "the calculated age is 40 Ma"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "These are instructional calculations, not measured analytical certainty.",
+     "label": "Keep the model assumptions"
+    }
+   ]
   }
  ],
  "g9-c9a-terrain": [
   {
    "terms": [
-    "canyon",
-    "lava",
-    "dike",
-    "fault"
+    "G",
+    "lower sedimentary sequence",
+    "higher sequence"
    ],
-   "checkpoints": []
+   "definitions": [
+    "granite basement",
+    "C then B then A",
+    "S and then K"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Letters are names, not alphabetical age order.",
+     "label": "Keep the distinction"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "D crosses F",
+    "Canyon N",
+    "Lava L",
+    "Feature sequence",
+    "Granite G",
+    "Fault F"
+   ],
+   "definitions": [
+    "the fault preceded the dike",
+    "truncates an old channel",
+    "poured into the already formed canyon and has little weathering or soil",
+    "F→D→R→N→L",
+    "oldest among the specified rock units",
+    "oldest among the specified later features"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "These are different comparison sets.",
+     "label": "Keep the distinction"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "G",
+    "D"
+   ],
+   "definitions": [
+    "1500 million years",
+    "40 million years under the exercise assumptions"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Relative order does not supply an exact numerical date for every remaining event.",
+     "label": "Keep the distinction"
+    }
+   ]
   }
  ],
  "g9-16-standard": [
   {
    "terms": [
-    "canyon",
-    "lava",
-    "gravels"
+    "125 / (125 + 875) = 1/8",
+    "500 / (500 + 500) = 1/2",
+    "Old gravels",
+    "Lava"
+   ],
+   "definitions": [
+    "3 half-lives → 1,500 Ma",
+    "1 half-life → 40 Ma",
+    "precede canyon cutting",
+    "then enters the canyon"
    ],
    "checkpoints": [
     {
-     "phrase": "Old gravels precede",
-     "label": "Keep the distinction"
+     "phrase": "A local contact determines which feature interrupts the other.",
+     "label": "Use the visible relationship"
     }
    ]
   }
@@ -4453,43 +6901,89 @@ window.L.studyReading={
  "g10-1-a": [
   {
    "terms": [
-    "gravity"
+    "Sonar",
+    "Submersibles and remotely operated vehicles",
+    "Satellite measurements"
    ],
-   "checkpoints": []
+   "definitions": [
+    "uses sound travel time and a known sound speed to infer depth",
+    "observe and sample restricted areas directly",
+    "help infer broad seafloor relief"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "not seeing through deep seawater to photograph the bottom",
+     "label": "Separate direct observation and inference"
+    }
+   ]
   },
   {
    "terms": [
-    "seismic reflection",
-    "drilling",
-    "isotope"
+    "Ocean drilling",
+    "Seismic reflection"
    ],
-   "checkpoints": []
+   "definitions": [
+    "retrieves rock and sediment cores",
+    "uses reflected waves to image buried layers and structures"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "An isotope ratio needs its geological context",
+     "label": "Connect measurements to their questions"
+    }
+   ]
   },
   {
    "terms": [
-    "core"
+    "Manganese-rich nodules"
    ],
-   "checkpoints": []
+   "definitions": [
+    "another seafloor resource discussed in the source"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "a different investigation target from mapping depth or collecting a core",
+     "label": "Distinguish sampling goals"
+    }
+   ]
   }
  ],
  "g10-1-standard": [
   {
    "terms": [
     "core",
-    "isotope"
+    "accumulation rate",
+    "Oxygen and carbon isotope patterns"
    ],
-   "checkpoints": []
-  },
-  {
-   "terms": [
-    "seismic reflection",
-    "drilling",
-    "gravity"
+   "definitions": [
+    "preserves the order and thickness of actual sediment and volcanic layers",
+    "Comparing layer thickness with elapsed time",
+    "can help reconstruct chemistry and climate"
    ],
    "checkpoints": [
     {
-     "phrase": "A satellite measures",
-     "label": "Keep the distinction"
+     "phrase": "Interpret them with sample age and geological context",
+     "label": "Combine the core evidence"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Manganese",
+    "satellite",
+    "Seismic reflection",
+    "drilling"
+   ],
+   "definitions": [
+    "precipitating from seawater",
+    "measures sea-surface height related to gravity",
+    "maps buried geometry",
+    "recovers material"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "does not optically photograph a deep abyssal plain",
+     "label": "Distinguish indirect measurement"
     }
    ]
   }
@@ -4498,166 +6992,352 @@ window.L.studyReading={
   {
    "terms": [
     "mid-ocean ridge",
-    "basalt",
-    "pillow basalt"
+    "pillow basalt",
+    "Slow-spreading ridges",
+    "Fast-spreading ridges"
    ],
-   "checkpoints": []
+   "definitions": [
+    "plates diverge",
+    "Submarine eruptions make",
+    "commonly have a pronounced axial rift",
+    "commonly have a broader, smoother crest"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Carbonate preservation also depends on water chemistry and dissolution depth",
+     "label": "Include preservation conditions"
+    }
+   ]
   },
   {
    "terms": [
-    "black smokers"
+    "Cold seawater",
+    "Heated water",
+    "precipitation"
    ],
-   "checkpoints": []
+   "definitions": [
+    "descends through fractures",
+    "rises above a magma chamber",
+    "not combustion"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Chemical energy can support bacteria and the associated food web without sunlight",
+     "label": "Connect circulation and vent ecology"
+    }
+   ]
   },
   {
    "terms": [
-    "carbonate compensation depth"
+    "carbonate compensation depth",
+    "Pressure in deep water"
    ],
-   "checkpoints": []
+   "definitions": [
+    "carbonate dissolution can match or exceed accumulation",
+    "prevents boiling under those conditions"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "actual depth varies geographically",
+     "label": "Treat source end members conditionally"
+    }
+   ]
   }
  ],
  "g10-2-standard": [
   {
    "terms": [
-    "basalt",
-    "pillow basalt"
+    "Magma",
+    "Seawater",
+    "Chemical energy"
    ],
-   "checkpoints": []
-  },
-  {
-   "terms": [
-    "carbonate compensation depth"
+   "definitions": [
+    "freezes as pillow basalt, dikes and deeper igneous rock",
+    "circulates through fractures above hot rock",
+    "supports bacteria and the associated vent food web"
    ],
    "checkpoints": [
     {
-     "phrase": "not the depth of the crust",
-     "label": "Keep the distinction"
+     "phrase": "Hot vent water is not the same material as the magma heating it",
+     "label": "Separate the two fluids"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "axial rift",
+    "carbonate compensation depth"
+   ],
+   "definitions": [
+    "characteristic of the slow end member, not every spreading center",
+    "a local preservation boundary"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "not the depth of the crust–mantle contact",
+     "label": "Keep the boundaries distinct"
     }
    ]
   }
  ],
  "g10-3-a": [
   {
-   "terms": [],
-   "checkpoints": []
-  },
-  {
    "terms": [
-    "ridge",
-    "subduction"
+    "Continental shelves",
+    "Trenches",
+    "Abyssal plains"
    ],
-   "checkpoints": []
-  },
-  {
-   "terms": [
-    "ridge"
+   "definitions": [
+    "shallow",
+    "deepest",
+    "smooth where sediment buries rough volcanic relief"
    ],
-   "checkpoints": []
-  }
- ],
- "g10-3-standard": [
-  {
-   "terms": [],
    "checkpoints": [
     {
-     "phrase": "A blank or no-data patch",
-     "label": "Keep the distinction"
+     "phrase": "Sediment tends to be thicker on older crust and near major continental sediment sources",
+     "label": "Compare time and sediment supply"
     }
    ]
   },
   {
    "terms": [
-    "ridge",
-    "subduction"
+    "youngest seafloor",
+    "Pacific subduction"
    ],
-   "checkpoints": []
+   "definitions": [
+    "along spreading centers",
+    "has removed substantial older oceanic crust"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "do not make every local depth depend only on age",
+     "label": "Use the broad relationship carefully"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Texas and Louisiana",
+    "Ridges and isolated young crust"
+   ],
+   "definitions": [
+    "thick accumulation offshore",
+    "generally have less sediment"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Compare ridge elevation with older, cooled basin crust",
+     "label": "Explain the relief pattern"
+    }
+   ]
+  }
+ ],
+ "g10-3-standard": [
+  {
+   "terms": [
+    "Depth colors",
+    "Sediment-thickness colors",
+    "Age colors"
+   ],
+   "definitions": [
+    "show relief",
+    "show accumulated cover",
+    "show when the oceanic crust formed"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "A blank or no-data patch represents unavailable information",
+     "label": "Read each legend separately"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Spreading",
+    "Subduction"
+   ],
+   "definitions": [
+    "creates age bands on both sides of a ridge",
+    "can consume one side of an oceanic record, producing asymmetry"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "The age limit printed on a supplied map describes that map and its source",
+     "label": "Keep the map’s limits"
+    }
+   ]
   }
  ],
  "g10-4-a": [
   {
    "terms": [
-    "hotspot",
-    "seamount"
+    "seamount",
+    "Hawaii"
    ],
-   "checkpoints": []
+   "definitions": [
+    "Cooling, subsidence, erosion, and wave planation",
+    "northwest plate motion relative to the hotspot"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "A chain's orientation alone is insufficient without ages or an active end",
+     "label": "Combine ages and geometry"
+    }
+   ]
   },
   {
    "terms": [
-    "hotspot",
+    "mantle plume",
     "oceanic plateau",
-    "flood basalts",
-    "mantle plume"
+    "Kerguelen and Ontong Java"
    ],
-   "checkpoints": []
+   "definitions": [
+    "hot solid rock",
+    "broad and elevated above the adjacent deep seafloor",
+    "source examples"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "not a pipe of liquid magma extending through the whole mantle",
+     "label": "Separate plume rock and melt"
+    }
+   ]
   },
   {
    "terms": [
-    "hotspot"
+    "hotspots",
+    "western North America"
    ],
-   "checkpoints": []
+   "definitions": [
+    "west and south of Africa and on the African continent",
+    "the largest listed concentration"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "not a numerical world inventory",
+     "label": "Keep the supplied comparison scoped"
+    }
+   ]
   }
  ],
  "g10-4-standard": [
   {
    "terms": [
-    "seamount"
+    "Wave erosion",
+    "Cooling and subsidence",
+    "hot-spot age progression"
+   ],
+   "definitions": [
+    "can bevel its summit near sea level",
+    "lower the foundation after magmatism wanes",
+    "interpreted relative to the magma source"
    ],
    "checkpoints": [
     {
-     "phrase": "Locate the active end",
-     "label": "Keep the distinction"
+     "phrase": "Locate the active end and compare dated volcanoes",
+     "label": "Infer motion from the age sequence"
     }
    ]
   },
   {
    "terms": [
     "oceanic plateau",
-    "flood basalts"
+    "rising plume",
+    "flood-basalt eruptions"
    ],
-   "checkpoints": []
+   "definitions": [
+    "a broad elevated basaltic region, often mostly submerged",
+    "hot solid mantle",
+    "leave a persistent thick accumulation"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "does not imply that this growth happens on a human timescale",
+     "label": "Read the construction timescale"
+    }
+   ]
   }
  ],
  "g10-5-a": [
   {
    "terms": [
-    "island arc",
-    "mantle wedge",
-    "trench",
-    "composite volcanoes"
+    "ocean–ocean convergent boundary",
+    "Water",
+    "Arc volcanic rocks"
    ],
-   "checkpoints": []
+   "definitions": [
+    "can form a trench and volcanic island arc",
+    "helps generate melt",
+    "commonly include andesite and composite volcanoes"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "not wholesale melting of the descending plate",
+     "label": "Locate the melting process"
+    }
+   ]
   },
   {
    "terms": [
-    "subduction",
     "slab rollback",
-    "backarc basin",
-    "trench"
+    "backarc basin"
    ],
-   "checkpoints": []
+   "definitions": [
+    "can move the trench and arc",
+    "Extension behind the arc can open"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Arc volcanism and backarc extension can overlap in time",
+     "label": "Avoid a forced sequence"
+    }
+   ]
   },
   {
-   "terms": [],
-   "checkpoints": []
+   "terms": [
+    "arc examples"
+   ],
+   "definitions": [
+    "flank Asia in the western Pacific and adjoining Indian Ocean"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Read the boundary geometry as well as the geographic position",
+     "label": "Connect location and structure"
+    }
+   ]
   }
  ],
  "g10-5-standard": [
   {
    "terms": [
-    "mantle wedge",
-    "composite volcanoes"
+    "Water",
+    "magma additions"
    ],
-   "checkpoints": []
-  },
-  {
-   "terms": [
-    "subduction",
-    "trench"
+   "definitions": [
+    "promotes mantle melting above the slab",
+    "thicken the arc crust"
    ],
    "checkpoints": [
     {
-     "phrase": "hot-spot chain",
-     "label": "Keep the distinction"
+     "phrase": "The volcano is not simply the surface end of a liquid descending plate",
+     "label": "Separate solid slab and generated melt"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Rollback",
+    "back-arc basin"
+   ],
+   "definitions": [
+    "migrates the trench and arc",
+    "Extension within or behind the arc can make"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "A hot-spot chain does not require that geometry",
+     "label": "Compare arc and hotspot settings"
     }
    ]
   }
@@ -4665,43 +7345,67 @@ window.L.studyReading={
  "g10-6-a": [
   {
    "terms": [
-    "Bering Sea",
     "Sea of Japan",
-    "backarc basin",
-    "oceanic crust"
+    "western Bering Sea"
    ],
-   "checkpoints": []
+   "definitions": [
+    "opened as the arc separated from Asia through backarc extension",
+    "trapped oceanic crust when subduction shifted offshore"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "not evidence that spreading continues today",
+     "label": "Distinguish past opening and present activity"
+    }
+   ]
   },
   {
    "terms": [
     "Gulf of California",
-    "transform faults",
-    "spreading segments"
+    "Baja"
    ],
-   "checkpoints": []
+   "definitions": [
+    "combines short spreading segments and transform faults",
+    "moved north relative to mainland North America"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Being underwater does not make their crust oceanic",
+     "label": "Separate water depth and crust type"
+    }
+   ]
   }
  ],
  "g10-6-standard": [
   {
    "terms": [
     "Sea of Japan",
-    "continental crust",
-    "oceanic crust"
+    "western Bering basin"
    ],
-   "checkpoints": []
-  },
-  {
-   "terms": [
-    "Bering Sea",
-    "Gulf of California",
-    "transform faults",
-    "spreading segments",
-    "continental crust"
+   "definitions": [
+    "historical rifting and back-arc spreading",
+    "oceanic crust trapped behind an offshore-shifted subduction system"
    ],
    "checkpoints": [
     {
-     "phrase": "different boundary history",
-     "label": "Keep the distinction"
+     "phrase": "Historical opening does not establish present-day spreading activity",
+     "label": "Keep the timing qualified"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "China Sea, Java Sea and shallow Australia–Papua New Guinea region",
+    "Gulf of California"
+   ],
+   "definitions": [
+    "include continental platforms",
+    "combines transform faults with short spreading segments"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "without a new plate boundary at every coastline",
+     "label": "Separate coastline and plate boundary"
     }
    ]
   }
@@ -4709,37 +7413,73 @@ window.L.studyReading={
  "g10-7-a": [
   {
    "terms": [
-    "Mediterranean",
-    "convergence"
+    "North Sea",
+    "Baltic",
+    "Mediterranean"
    ],
-   "checkpoints": []
+   "definitions": [
+    "normal faults thinned continental crust",
+    "flooded, glacially and river-modified continental topography",
+    "Western rifting and eastern remnants of an older ocean modified by convergence"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Flooding is different from producing new oceanic crust",
+     "label": "Identify the basin mechanism"
+    }
+   ]
   },
   {
    "terms": [
     "Black Sea",
-    "Red Sea",
-    "foreland basin"
+    "Persian Gulf",
+    "Red Sea"
    ],
-   "checkpoints": []
+   "definitions": [
+    "a trapped remnant basin associated with the former Tethyan region",
+    "beside the Zagros thrust belt",
+    "continental rifting and divergence"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "North Sea extension, Persian Gulf loading, and Red Sea separation should not be interchanged",
+     "label": "Match each sea to its mechanism"
+    }
+   ]
   }
  ],
  "g10-7-standard": [
   {
    "terms": [
-    "Mediterranean",
-    "Black Sea",
-    "convergence"
+    "Baltic",
+    "North Sea",
+    "Black Sea"
    ],
-   "checkpoints": []
-  },
-  {
-   "terms": [
-    "Red Sea"
+   "definitions": [
+    "A continental valley reshaped by glaciers and flooded by rising sea level",
+    "Continental crust thinned by extension and normal faulting",
+    "A remnant basin associated with Tethys and later enclosure"
    ],
    "checkpoints": [
     {
-     "phrase": "Do not infer a basin mechanism",
-     "label": "Keep the distinction"
+     "phrase": "not an uncontested conclusion",
+     "label": "Retain the flooding uncertainty"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Persian Gulf",
+    "Red Sea"
+   ],
+   "definitions": [
+    "Zagros thrust loading flexes Arabia downward into a foreland trough",
+    "Arabia separates from Africa"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Do not infer a basin mechanism from water depth or a geographic name alone",
+     "label": "Use the structural evidence"
     }
    ]
   }
@@ -4747,58 +7487,89 @@ window.L.studyReading={
  "g10-8-a": [
   {
    "terms": [
-    "reef",
-    "carbonate platform",
-    "barrier reef",
+    "Reef-building corals",
     "fringing reef",
-    "lagoon"
+    "barrier reef"
    ],
-   "checkpoints": []
-  },
-  {
-   "terms": [
-    "reef",
-    "atoll",
-    "fringing reef",
-    "subsidence",
-    "lagoon",
-    "Darwin"
+   "definitions": [
+    "favor warm, clear, shallow water",
+    "borders the shore",
+    "separated from land by a lagoon"
    ],
    "checkpoints": [
     {
-     "phrase": "subsidence",
-     "label": "Keep the distinction"
+     "phrase": "Tropical conditions alone fail if sediment obscures the light",
+     "label": "Keep all environmental conditions"
     }
    ]
   },
   {
    "terms": [
-    "reef"
+    "fringing reef",
+    "atoll"
    ],
-   "checkpoints": []
+   "definitions": [
+    "A volcanic island initially supports",
+    "surrounding a lagoon after the island is submerged"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Reef growth must keep pace with relative submergence",
+     "label": "Follow growth and subsidence together"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Caribbean, Bahamas, Philippines, and Polynesia",
+    "Aleutian and Iceland"
+   ],
+   "definitions": [
+    "warm-water reef examples",
+    "fail the warmth condition"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "A warm site still needs enough light and sufficiently low sediment interference",
+     "label": "Test every reef condition"
+    }
+   ]
   }
  ],
  "g10-8-standard": [
   {
    "terms": [
-    "reef",
-    "lagoon"
+    "Fringing reefs",
+    "Barrier reefs",
+    "Atolls",
+    "carbonate platforms"
    ],
-   "checkpoints": []
-  },
-  {
-   "terms": [
-    "reef",
-    "atoll",
-    "barrier reef",
-    "subsidence",
-    "lagoon",
-    "Darwin"
+   "definitions": [
+    "adjoin a shoreline",
+    "enclose a landward lagoon",
+    "form rings around lagoons",
+    "more extensive shallow accumulations"
    ],
    "checkpoints": [
     {
-     "phrase": "subsidence",
-     "label": "Keep the distinction"
+     "phrase": "Clear, shallow, warm conditions",
+     "label": "Connect landforms and environment"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "volcanic foundation",
+    "atoll"
+   ],
+   "definitions": [
+    "sinks while the reef builds upward",
+    "after the volcano becomes submerged"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "a condition, not an automatic result",
+     "label": "Track both vertical motions"
     }
    ]
   }
@@ -4806,36 +7577,97 @@ window.L.studyReading={
  "g10-9-a": [
   {
    "terms": [
-    "passive margin"
+    "shelf",
+    "slope",
+    "rise",
+    "Active margins"
    ],
-   "checkpoints": []
+   "definitions": [
+    "gently sloping",
+    "steeper",
+    "sediment-rich",
+    "coincide with active plate boundaries"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "shelf width alone is not the definition",
+     "label": "Check the plate boundary"
+    }
+   ]
   },
   {
    "terms": [
+    "turbidity currents",
     "submarine fan",
-    "turbidity current"
+    "turbidites"
    ],
-   "checkpoints": []
+   "definitions": [
+    "A dense mixture of water and sediment flows downslope under gravity",
+    "As a flow spreads and slows near the slope's foot",
+    "Separate events can stack"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "It is not the speed of every turbidity current",
+     "label": "Keep the cable-break example scoped"
+    }
+   ]
   },
   {
-   "terms": [],
-   "checkpoints": []
+   "terms": [
+    "continental crust",
+    "oceanic crust",
+    "Sedimentary cover"
+   ],
+   "definitions": [
+    "granitic composition",
+    "composed of basalt and gabbro",
+    "lies above the crust and varies in thickness"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Sedimentary cover lies above the crust",
+     "label": "Separate crust and its cover"
+    }
+   ]
   }
  ],
  "g10-9-standard": [
   {
-   "terms": [],
-   "checkpoints": []
-  },
-  {
    "terms": [
-    "submarine fan",
-    "active margin"
+    "shelf",
+    "slope",
+    "rise",
+    "canyon",
+    "Turbidity currents"
+   ],
+   "definitions": [
+    "a gently sloping submerged continental edge",
+    "the steeper descent",
+    "a sediment apron",
+    "cuts an erosional pathway",
+    "mix sediment and water into a dense moving flow"
    ],
    "checkpoints": [
     {
-     "phrase": "does not, by itself, prove",
-     "label": "Keep the distinction"
+     "phrase": "Submarine landslides can retain more coherent blocks",
+     "label": "Distinguish the moving material"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "graded beds",
+    "submarine fan"
+   ],
+   "definitions": [
+    "Repeated events stack separate",
+    "the spreading deposit near the slope foot and rise"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "rather than the canyon itself or the within-bed grain-size trend",
+     "label": "Separate pathway, deposit and texture"
     }
    ]
   }
@@ -4843,35 +7675,71 @@ window.L.studyReading={
  "g10-10-a": [
   {
    "terms": [
-    "halite",
-    "gypsum"
+    "Evaporation",
+    "Halite"
    ],
-   "checkpoints": []
+   "definitions": [
+    "precipitates salts such as halite, gypsum, and sylvite",
+    "NaCl"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "a thick deposit requires enough dissolved material and an appropriate basin history",
+     "label": "Account for supply and concentration"
+    }
+   ]
   },
   {
    "terms": [
-    "petroleum"
+    "Buried salt",
+    "diapirs or domes",
+    "Salt structures"
    ],
-   "checkpoints": []
+   "definitions": [
+    "weak and comparatively low density",
+    "flows in the solid state and can rise into",
+    "can deform sediment and help create petroleum traps"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "a weak detachment, allowing overlying sediment to fold or slide",
+     "label": "Follow deformation after burial"
+    }
+   ]
   }
  ],
  "g10-10-standard": [
   {
    "terms": [
-    "halite",
-    "gypsum"
+    "Evaporation",
+    "Restricted exchange",
+    "Repeated inflow"
    ],
-   "checkpoints": []
-  },
-  {
-   "terms": [
-    "Sigsbee Escarpment",
-    "petroleum"
+   "definitions": [
+    "concentrates brine",
+    "prevents the concentrated solution from immediately mixing into the open ocean",
+    "can replenish water and dissolved components"
    ],
    "checkpoints": [
     {
-     "phrase": "salt rising is not petroleum generation",
-     "label": "Keep the distinction"
+     "phrase": "allowing extended deposition",
+     "label": "Explain a thick evaporite deposit"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "salt glacier",
+    "Sigsbee Escarpment"
+   ],
+   "definitions": [
+    "Exposed salt can spread downslope",
+    "the front of a large subsurface salt mass"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Salt rising is not petroleum generation",
+     "label": "Separate trap formation and petroleum formation"
     }
    ]
   }
@@ -4880,88 +7748,92 @@ window.L.studyReading={
   {
    "terms": [
     "Pangaea",
-    "Rift systems",
-    "oceanic crust",
-    "supercontinent",
     "Central Atlantic",
-    "South Atlantic",
     "North Atlantic"
+   ],
+   "definitions": [
+    "joined the major continents",
+    "opened before the South Atlantic",
+    "opened later"
    ],
    "checkpoints": [
     {
-     "phrase": "the Central Atlantic opened before",
-     "label": "Opening sequence"
+     "phrase": "Ages and positions should be read from the actual maps",
+     "label": "Use the reconstruction sequence"
     }
    ]
   },
   {
    "terms": [
-    "Indian Ocean",
-    "India–Asia convergence",
-    "Tethyan closure",
     "Spreading",
-    "oceanic lithosphere",
-    "subduction",
-    "Atlantic",
-    "Pacific"
+    "Subduction",
+    "future map"
+   ],
+   "definitions": [
+    "creates oceanic lithosphere",
+    "consumes it",
+    "a conditional scenario, not an assured event"
    ],
    "checkpoints": [
     {
-     "phrase": "Spreading creates oceanic lithosphere",
-     "label": "Creation and consumption"
-    },
-    {
-     "phrase": "A future map is a conditional scenario",
-     "label": "A forecast has conditions"
+     "phrase": "Forward projections assume plate motions and boundaries persist",
+     "label": "State the forecast assumptions"
     }
    ]
   },
   {
    "terms": [
     "Pangaea",
-    "rifting",
-    "Central Atlantic",
     "South Atlantic",
-    "northern Atlantic",
-    "Gondwana",
-    "Indian Ocean",
-    "India–Asia collision",
-    "Tethys"
+    "India–Asia collision"
    ],
-   "checkpoints": []
+   "definitions": [
+    "joins the major continental masses",
+    "separates South America and Africa",
+    "nearly close the Tethys"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "central → south → north opening order",
+     "label": "Connect dated snapshots"
+    }
+   ]
   }
  ],
  "g10-11-standard": [
   {
    "terms": [
     "Central Atlantic",
-    "South Atlantic",
-    "northern Atlantic",
     "Continental rifting",
-    "seafloor spreading",
-    "Gondwana",
-    "Tethys",
-    "convergence"
+    "Tethys"
    ],
-   "checkpoints": []
+   "definitions": [
+    "before the South Atlantic and later northern Atlantic sector",
+    "can precede full seafloor spreading",
+    "consumed during convergence"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Each panel is a world reconstruction, not half a globe",
+     "label": "Read the full reconstruction"
+    }
+   ]
   },
   {
    "terms": [
     "Spreading",
-    "lithosphere",
-    "subduction",
-    "Atlantic–Pacific contrast",
-    "reconstruction",
-    "forecasts"
+    "Subduction",
+    "future map"
+   ],
+   "definitions": [
+    "creates lithosphere",
+    "consumes it",
+    "depends on continuing velocities and assumptions about collisions and boundary changes"
    ],
    "checkpoints": [
     {
-     "phrase": "An expanding ocean does not imply",
-     "label": "Keep the distinction"
-    },
-    {
-     "phrase": "Do not turn it into a claim that no subduction",
-     "label": "Keep the limit"
+     "phrase": "An expanding ocean does not imply that Earth as a whole expands",
+     "label": "Balance creation and destruction"
     }
    ]
   }
@@ -4969,152 +7841,291 @@ window.L.studyReading={
  "g10-12-a": [
   {
    "terms": [
-    "Caribbean",
-    "Lesser Antilles",
-    "transforms",
-    "basaltic crust"
+    "Lesser Antilles arc",
+    "Pacific subduction",
+    "Transforms"
    ],
-   "checkpoints": []
+   "definitions": [
+    "the Caribbean's eastern side",
+    "along Central America",
+    "including the Cayman region"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Large river input helps build the sediment cover",
+     "label": "Separate sediment cover and tectonic features"
+    }
+   ]
   },
   {
    "terms": [
-    "Caribbean"
+    "Yucatán",
+    "Caribbean plateau"
    ],
-   "checkpoints": []
+   "definitions": [
+    "Jurassic rifting and separation",
+    "a model involving entry from the Pacific"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "while noting that its origin is debated",
+     "label": "Keep the model qualified"
+    }
+   ]
   }
  ],
  "g10-12-standard": [
   {
    "terms": [
-    "Caribbean",
-    "Cayman Trough",
-    "Lesser Antilles",
-    "transforms",
-    "trenches",
-    "arcs",
-    "basaltic crust"
+    "Jurassic extension and spreading",
+    "Caribbean"
+   ],
+   "definitions": [
+    "opened the Gulf",
+    "thick basaltic crust, transforms, trenches and arcs"
    ],
    "checkpoints": [
     {
-     "phrase": "different kinds of boundary feature",
-     "label": "Keep the distinction"
+     "phrase": "Spreading in the Gulf then ceased",
+     "label": "Separate inherited and active structures"
     }
    ]
   },
   {
    "terms": [
-    "Caribbean",
-    "Lesser Antilles"
+    "Atlantic lithosphere",
+    "Lesser Antilles zone",
+    "reconstructed path"
    ],
-   "checkpoints": []
+   "definitions": [
+    "descending westward beneath the Caribbean",
+    "A later line calls",
+    "a model, not a directly observed journey"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "This is an internal source conflict",
+     "label": "Retain the conflicting directions"
+    }
+   ]
   }
  ],
  "g10-13-a": [
   {
    "terms": [
-    "trench"
+    "island chain",
+    "central margin"
    ],
-   "checkpoints": []
-  },
-  {
-   "terms": [
-    "trench",
-    "ridge"
-   ],
-   "checkpoints": []
-  },
-  {
-   "terms": [
-    "trench"
-   ],
-   "checkpoints": []
-  }
- ],
- "g10-13-standard": [
-  {
-   "terms": [
-    "trench",
-    "ridge"
+   "definitions": [
+    "younger ages toward the active southeastern end support northwest plate motion relative to the hotspot",
+    "normal faults and thinned continental crust buried by Cenozoic sediment"
    ],
    "checkpoints": [
     {
-     "phrase": "does not include a location marker 7",
-     "label": "Keep the distinction"
+     "phrase": "Broad shelves, canyons, and fans add surface evidence",
+     "label": "Combine surface and subsurface evidence"
     }
    ]
   },
   {
    "terms": [
-    "subduction"
+    "youngest crust",
+    "constant-motion scenario"
    ],
-   "checkpoints": []
+   "definitions": [
+    "at the middle ridge",
+    "narrower in the past and widens in the future"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "A narrow shelf on the western continent does not alone establish an active boundary",
+     "label": "Test the boundary evidence"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "steady-motion assumption",
+    "Continued divergence"
+   ],
+   "definitions": [
+    "half its present distance from its hotspot",
+    "makes the central–eastern ocean nearly twice its depicted width after another 20 Ma"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Its original four alternatives are too small to grade reliably here",
+     "label": "Keep unavailable geometry ungraded"
+    }
+   ]
+  }
+ ],
+ "g10-13-standard": [
+  {
+   "terms": [
+    "Number 1",
+    "Number 2",
+    "Number 3",
+    "Number 4",
+    "Number 5",
+    "Number 6",
+    "Number 8",
+    "number 9"
+   ],
+   "definitions": [
+    "the broad abyssal region",
+    "the basaltic plateau and hot-spot track",
+    "the volcanic arc beside the trench",
+    "the back-arc spreading system",
+    "the quiet western continental edge",
+    "the broad central margin with canyons and sediment delivery",
+    "the eastern spreading ridge",
+    "the eastern continental shelf"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "does not include a location marker 7",
+     "label": "Preserve the actual figure labels"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Oldest oceanic crust",
+    "future collision"
+   ],
+   "definitions": [
+    "constrains early basin opening",
+    "a conditional scenario, not an observed event"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "A precise speed additionally needs a distance and an explicit motion model",
+     "label": "State what the calculation requires"
+    }
+   ]
   }
  ],
  "g11-1-a": [
   {
    "terms": [
     "Moho",
-    "crust",
-    "lithosphere",
-    "mantle"
+    "Heating",
+    "Cooling"
+   ],
+   "definitions": [
+    "separates crust from mantle",
+    "expands rock and lowers its density",
+    "contracts rock and promotes subsidence"
    ],
    "checkpoints": [
     {
-     "phrase": "not the whole thickness",
-     "label": "Keep the distinction"
+     "phrase": "Its depth measures crustal thickness",
+     "label": "Separate crust from lithosphere"
     }
    ]
   },
   {
    "terms": [
-    "crust",
-    "lithosphere",
-    "mantle"
+    "Compression",
+    "Extension",
+    "Lithosphere"
    ],
-   "checkpoints": []
+   "definitions": [
+    "stacks and folds crust",
+    "stretches crust",
+    "includes crust and strong uppermost mantle"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "without making the crust thicker",
+     "label": "Follow the material that changes"
+    }
+   ]
   },
   {
    "terms": [
-    "isostasy",
-    "mantle",
     "crustal root",
-    "buoyancy"
+    "Isostasy",
+    "iceberg analogy"
    ],
-   "checkpoints": []
+   "definitions": [
+    "displaces denser mantle",
+    "adjustment to the types and thicknesses of material at depth",
+    "illustrates buoyancy"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "does not require the mantle to be a liquid ocean",
+     "label": "Use the analogy carefully"
+    }
+   ]
   },
   {
    "terms": [
-    "exhumation"
+    "GPS measurements",
+    "Marine fossils"
    ],
-   "checkpoints": []
+   "definitions": [
+    "can detect modern elevation change",
+    "material deposited in a marine setting now stands at great elevation"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "formation age alone is not automatically an uplift date",
+     "label": "Match the evidence to the event"
+    }
+   ]
   }
  ],
  "g11-2-a": [
   {
    "terms": [
-    "Basin and Range"
+    "Andes",
+    "Himalaya–Tibet",
+    "East Africa"
    ],
-   "checkpoints": []
-  },
-  {
-   "terms": [
-    "uplift",
-    "erosion",
-    "isostatic rebound",
-    "sediment loading"
-   ],
-   "checkpoints": []
-  },
-  {
-   "terms": [
-    "erosion",
-    "crustal root",
-    "Appalachian"
+   "definitions": [
+    "crustal shortening, magmatic additions, and heating above subduction",
+    "collision between India and Asia",
+    "heating, thinned lithosphere, and mantle upwelling"
    ],
    "checkpoints": [
     {
-     "phrase": "need not mark a modern plate boundary",
-     "label": "Keep the distinction"
+     "phrase": "The same elevation does not imply the same mechanism",
+     "label": "Compare causes of high ground"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "isostatic rebound",
+    "Sediment loading"
+   ],
+   "definitions": [
+    "Removing mass permits",
+    "depresses adjacent basins and creates more room for fill"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "the range and root can still shrink through prolonged erosion",
+     "label": "Balance uplift and erosion"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Phoenix–Flagstaff",
+    "Appalachian elevation"
+   ],
+   "definitions": [
+    "compares about 28 and 40 km of crust",
+    "declined as erosion reduced its once-thick crustal root"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "not a universal equation",
+     "label": "Keep the comparison approximate"
     }
    ]
   }
@@ -5122,83 +8133,143 @@ window.L.studyReading={
  "g11-3-a": [
   {
    "terms": [
-    "relief",
-    "volcano"
+    "Volcanoes",
+    "Reverse faults",
+    "normal faults"
+   ],
+   "definitions": [
+    "pile lava, ash, and scoria onto the surface",
+    "raise one block over another",
+    "a relatively high block can form a mountain next to a downdropped basin"
    ],
    "checkpoints": [
     {
-     "phrase": "even as the region extends",
-     "label": "Keep the distinction"
+     "phrase": "does not require an entire thickened regional root",
+     "label": "Separate local relief and regional elevation"
     }
    ]
   },
   {
    "terms": [
-    "folding",
-    "mesa",
-    "differential erosion",
-    "relief"
+    "Differential erosion",
+    "mesa"
    ],
-   "checkpoints": []
+   "definitions": [
+    "removes weaker rock faster than resistant rock",
+    "A hard, nearly horizontal cap can protect"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Modern relief can reflect erosion of an older structure",
+     "label": "Separate formation from exposure"
+    }
+   ]
   }
  ],
  "g11-4-a": [
   {
    "terms": [
     "basin",
-    "pull-apart basin",
-    "foreland basin"
+    "foreland basin",
+    "pull-apart basin"
+   ],
+   "definitions": [
+    "low relative to its surroundings and can trap sediment and water",
+    "thrust-sheet weight flexes the plate downward",
+    "an appropriate releasing bend or step"
    ],
    "checkpoints": [
     {
-     "phrase": "Not every bend",
-     "label": "Keep the distinction"
+     "phrase": "Not every bend or strike-slip fault produces a basin",
+     "label": "Use the fault geometry"
     }
    ]
   },
   {
    "terms": [
-    "basin",
-    "subsidence"
+    "forearc basin",
+    "regional subsidence"
    ],
-   "checkpoints": []
+   "definitions": [
+    "between the trench/accretionary region and the arc",
+    "can follow cooling, deep movement, or density changes"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "can occur at high elevation relative to sea level",
+     "label": "Use relative elevation"
+    }
+   ]
   },
   {
    "terms": [
-    "basin",
-    "subsidence",
+    "Thicker basinward strata",
     "Michigan Basin",
-    "Gulf Coast"
+    "Gulf Coast basins"
    ],
-   "checkpoints": []
+   "definitions": [
+    "record subsidence during deposition",
+    "origin remains incompletely resolved",
+    "rifting, later passive-margin subsidence, and prolonged sedimentation"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "does not establish one exclusive cause",
+     "label": "Keep the uncertainty"
+    }
+   ]
   }
  ],
  "g11-5-a": [
   {
    "terms": [
-    "forearc",
-    "foreland",
     "accretionary prism",
-    "trench"
+    "Forearc",
+    "Foreland"
+   ],
+   "definitions": [
+    "Sediment scraped from it and supplied from land",
+    "position relative to the arc",
+    "the thrust-loaded continental side"
    ],
    "checkpoints": [
     {
-     "phrase": "Their names and causes",
-     "label": "Keep the distinction"
+     "phrase": "Their names and causes must not be exchanged",
+     "label": "Distinguish the two basins"
     }
    ]
   },
   {
    "terms": [
-    "underthrusting"
+    "retreating slab",
+    "Continental collision"
    ],
-   "checkpoints": []
+   "definitions": [
+    "can permit extension above subduction",
+    "thickens crust by underthrusting and stacked slices"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Regional convergence and local extension can coexist",
+     "label": "Separate regional and local behavior"
+    }
+   ]
   },
   {
    "terms": [
+    "thrust loading",
     "Catskill Delta"
    ],
-   "checkpoints": []
+   "definitions": [
+    "depressed a basin west of the Appalachian source",
+    "connects deposition, source direction, and active thrusting"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "not a modern coastline map",
+     "label": "Read the ancient sediment record"
+    }
+   ]
   }
  ],
  "g11-6-a": [
@@ -5206,25 +8277,49 @@ window.L.studyReading={
    "terms": [
     "horst",
     "graben",
-    "Death Valley",
-    "evaporites"
+    "down-rotated corner",
+    "up-rotated corner"
    ],
-   "checkpoints": []
-  },
-  {
-   "terms": [
-    "basin initiation"
-   ],
-   "checkpoints": []
-  },
-  {
-   "terms": [
-    "extension"
+   "definitions": [
+    "high",
+    "low",
+    "becomes a basin",
+    "becomes a ridge"
    ],
    "checkpoints": [
     {
-     "phrase": "local deformation and the regional plate setting",
-     "label": "Keep the distinction"
+     "phrase": "not necessarily connected to the ocean",
+     "label": "Separate elevation and connection"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "basin-fill units",
+    "accumulation rate"
+   ],
+   "definitions": [
+    "may show less deformation",
+    "thickness divided by depositional time"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "This is an example-specific age",
+     "label": "Use the dated sequence"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "backarc extension"
+   ],
+   "definitions": [
+    "can make a new small ocean basin"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Classify the local deformation and the regional plate setting separately",
+     "label": "Read both scales"
     }
    ]
   }
@@ -5232,46 +8327,71 @@ window.L.studyReading={
  "g11-7-a": [
   {
    "terms": [
-    "hotspot",
-    "hot spot",
+    "Continental hot spots",
+    "mantle plume",
     "Yellowstone"
+   ],
+   "definitions": [
+    "regional uplift, volcanism, and rifting",
+    "can supply heat and decompression melting",
+    "the present young end of a volcanic track"
    ],
    "checkpoints": [
     {
-     "phrase": "does not mean an eruption",
-     "label": "Keep the distinction"
+     "phrase": "does not mean an eruption is happening now",
+     "label": "Separate heat from eruption"
     }
    ]
   },
   {
    "terms": [
     "failed rift",
-    "passive margin",
-    "doming"
+    "passive margin"
    ],
-   "checkpoints": []
+   "definitions": [
+    "remain low, and guide a river",
+    "the rifted edge cools and subsides"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Not all magma in this setting has one composition",
+     "label": "Trace the magma source"
+    }
+   ]
   }
  ],
  "g11-8-a": [
   {
    "terms": [
-    "shield",
-    "platform",
-    "basement",
-    "Precambrian",
-    "vertical exaggeration"
+    "continental shield",
+    "continental platform",
+    "nonconformity"
    ],
-   "checkpoints": []
-  },
-  {
-   "terms": [
-    "basement",
-    "Urals"
+   "definitions": [
+    "exposes old crystalline igneous and metamorphic basement",
+    "younger, broadly flat sedimentary cover above that basement",
+    "Sediment over eroded crystalline rock"
    ],
    "checkpoints": [
     {
-     "phrase": "Modern position alone",
-     "label": "Keep the distinction"
+     "phrase": "appear larger than their true scale",
+     "label": "Check vertical exaggeration"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "distant stresses",
+    "Urals"
+   ],
+   "definitions": [
+    "can reactivate old basement faults and fold overlying cover",
+    "an older collision joined landmasses around them"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Modern position alone does not reveal the original tectonic setting",
+     "label": "Distinguish present and past settings"
     }
    ]
   }
@@ -5279,80 +8399,141 @@ window.L.studyReading={
  "g11-9-a": [
   {
    "terms": [
-    "terrane",
-    "accretion",
-    "pillow basalt"
+    "tectonic terrane",
+    "Accretion",
+    "Pillow basalt"
    ],
-   "checkpoints": []
-  },
-  {
-   "terms": [
-    "terrane",
-    "pillow basalt"
+   "definitions": [
+    "fault bounded and has a distinct geologic history",
+    "attaches a terrane to another landmass",
+    "supports a submarine origin"
    ],
    "checkpoints": [
     {
-     "phrase": "Equal rock ages do not prove",
-     "label": "Keep the distinction"
+     "phrase": "does not alone identify one exact original latitude",
+     "label": "Keep the evidence limit"
     }
    ]
   },
   {
    "terms": [
-    "accretion",
-    "Wrangellia",
-    "Alaska"
+    "intrusion",
+    "overlapping sedimentary unit"
    ],
-   "checkpoints": []
+   "definitions": [
+    "they were together before that intrusion formed",
+    "a younger limit on joining"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Equal rock ages do not prove two terranes formed together",
+     "label": "Separate rock age and assembly"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Alaska",
+    "Wrangellia"
+   ],
+   "definitions": [
+    "a mosaic of continental pieces, arcs, oceanic material, and later overlap deposits",
+    "originated far south of its present position and later moved north"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Some younger units cover boundaries after accretion",
+     "label": "Use the overlap record"
+    }
+   ]
   }
  ],
  "g11-10-a": [
   {
    "terms": [
     "Acasta Gneiss",
-    "Canadian Shield",
-    "Precambrian"
+    "Canadian Shield"
    ],
-   "checkpoints": []
-  },
-  {
-   "terms": [
-    "Precambrian",
-    "accreted terranes"
+   "definitions": [
+    "about 4.0 billion years old in the source",
+    "younger Precambrian crystalline rock"
    ],
    "checkpoints": [
     {
-     "phrase": "multiple formation and assembly ages",
-     "label": "Keep the distinction"
+     "phrase": "It does not automatically give the age of buried basement",
+     "label": "Ask which age is mapped"
     }
    ]
   },
   {
-   "terms": [],
-   "checkpoints": []
+   "terms": [
+    "Grenville Province",
+    "continental platform",
+    "Coastal Plain"
+   ],
+   "definitions": [
+    "added along the southeastern shield margin around 1.1 billion years ago",
+    "Paleozoic and Mesozoic cover over Precambrian basement",
+    "younger cover along a rifted margin"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "multiple formation and assembly ages",
+     "label": "Separate formation from assembly"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Western Australia",
+    "California"
+   ],
+   "definitions": [
+    "older than much of its eastern accreted region",
+    "oceanic material, island arcs, and accretionary-prism rocks"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "should not be mistaken for transported terranes",
+     "label": "Recognize rocks formed after assembly"
+    }
+   ]
   }
  ],
  "g11-11-a": [
   {
    "terms": [
-    "Pangaea",
     "Rodinia",
     "Gondwana",
-    "Appalachian",
-    "Ouachita"
+    "Pangaea"
    ],
-   "checkpoints": []
-  },
-  {
-   "terms": [
-    "Gondwana",
-    "Tethys",
-    "supercontinent"
+   "definitions": [
+    "breaking apart",
+    "groups the major southern landmasses",
+    "Late Paleozoic collisions assembled"
    ],
    "checkpoints": [
     {
-     "phrase": "conditional future predictions",
-     "label": "Keep the distinction"
+     "phrase": "Different collisions happened at different times",
+     "label": "Follow the reconstruction sequence"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Laurasia",
+    "Gondwana",
+    "Tethys"
+   ],
+   "definitions": [
+    "groups North America, Europe, and Asia",
+    "includes Africa, South America, Antarctica, Australia, India, and associated fragments",
+    "an ocean/sea, not a supercontinent"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Atlantic opening occurred in stages, not all at once",
+     "label": "Keep the sequence"
     }
    ]
   }
@@ -5360,32 +8541,53 @@ window.L.studyReading={
  "g11-12-a": [
   {
    "terms": [
-    "Taconic",
-    "Acadian",
-    "Alleghenian",
     "orogeny",
-    "Gondwana",
-    "Appalachian",
-    "Ouachita"
+    "Taconic orogeny",
+    "Acadian orogeny",
+    "Alleghenian orogeny"
    ],
-   "checkpoints": []
-  },
-  {
-   "terms": [
-    "passive margin"
-   ],
-   "checkpoints": []
-  },
-  {
-   "terms": [
-    "Taconic",
-    "Gondwana",
-    "Appalachian"
+   "definitions": [
+    "a mountain-building event",
+    "collision of an offshore island arc with eastern North America",
+    "involved Avalonian landmasses",
+    "involved Gondwana, including Africa and South America"
    ],
    "checkpoints": [
     {
-     "phrase": "checked capture instead",
-     "label": "Keep the distinction"
+     "phrase": "several events rather than one sudden uplift",
+     "label": "Separate the three collisions"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "renewed rifting",
+    "Jurassic spreading"
+   ],
+   "definitions": [
+    "formed normal-fault basins with red sediment and basalt",
+    "opened the Atlantic and left a passive margin"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "The modern eastern coast is not an active subduction boundary",
+     "label": "Distinguish old structures from the modern margin"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "pre-Taconic",
+    "Gondwana"
+   ],
+   "definitions": [
+    "arc-subduction panel",
+    "Its checked capture instead marks collision"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "The lab preserves that discrepancy",
+     "label": "Use the visible evidence"
     }
    ]
   }
@@ -5393,30 +8595,51 @@ window.L.studyReading={
  "g11-13-a": [
   {
    "terms": [
-    "Sierra Nevada",
-    "batholiths",
-    "foreland basin",
-    "subduction"
+    "passive margin",
+    "Mesozoic subduction"
    ],
-   "checkpoints": []
-  },
-  {
-   "terms": [
-    "San Andreas",
-    "transform",
-    "subduction",
-    "extension"
-   ],
-   "checkpoints": []
-  },
-  {
-   "terms": [
-    "foreland basin"
+   "definitions": [
+    "shallow-water cover on the shelf and deep-water sediment farther west",
+    "generated volcanic arcs and granitic batholiths"
    ],
    "checkpoints": [
     {
-     "phrase": "conflicting stage-name key",
-     "label": "Keep the distinction"
+     "phrase": "Thrust loading farther inland helped create a foreland basin",
+     "label": "Connect loading and basin formation"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Laramide orogeny",
+    "Cenozoic extension",
+    "San Andreas transform"
+   ],
+   "definitions": [
+    "shallow-angle subduction transmitted compression far inland and shifted magmatism eastward",
+    "formed Basin and Range normal faults and thinned crust and lithosphere",
+    "replace part of the convergent margin"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "The modern West contains different boundary types",
+     "label": "Read the changing plate setting"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "corresponding cross section",
+    "visible evidence"
+   ],
+   "definitions": [
+    "belongs to later Paleozoic collision",
+    "shortening and accretion"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "That conflicting stage-name key is not treated as settled",
+     "label": "Preserve the source conflict"
     }
    ]
   }
@@ -5424,33 +8647,53 @@ window.L.studyReading={
  "g11-14-a": [
   {
    "terms": [
-    "trench",
-    "accretionary prism",
-    "magmatic belt",
-    "thrust belt",
-    "foreland basin"
+    "continental fragment",
+    "Thrust loading"
    ],
-   "checkpoints": []
+   "definitions": [
+    "can be accreted as a terrane",
+    "creates a foreland basin beside the belt"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "These are scenario givens",
+     "label": "Use the stated future changes"
+    }
+   ]
   },
   {
    "terms": [
-    "magmatic belt",
-    "thrust belt",
-    "foreland basin",
-    "passive margin"
+    "Site A",
+    "Site B",
+    "Site C",
+    "Site D"
    ],
-   "checkpoints": []
+   "definitions": [
+    "western coastal forearc/accretionary region",
+    "future magmatic belt",
+    "fold-and-thrust belt",
+    "the eastern rifted edge"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "not the same mechanism as the mountain",
+     "label": "Separate the nearby basin and mountain"
+    }
+   ]
   },
   {
    "terms": [
-    "magmatic belt",
-    "subsidence",
-    "flexural loading"
+    "hotspot",
+    "mechanism"
+   ],
+   "definitions": [
+    "leaves an indentation and a failed-rift corridor",
+    "Magmatic addition, shortening, thinning, cooling, or flexural loading"
    ],
    "checkpoints": [
     {
      "phrase": "For every prediction",
-     "label": "Keep the distinction"
+     "label": "Give a location and a cause"
     }
    ]
   }
@@ -5458,11 +8701,1116 @@ window.L.studyReading={
  "g11-14-numbered": [
   {
    "terms": [
-    "trench",
-    "magmatic belt",
-    "passive margin"
+    "Region1",
+    "Region2",
+    "Region3",
+    "Region4",
+    "Region5"
    ],
-   "checkpoints": []
+   "definitions": [
+    "the broad ocean, underlain by oceanic crust and thin sediment",
+    "the offshore continental fragment that can become an accreted terrane",
+    "the western coastal accretionary region",
+    "the magmatic belt farther inland",
+    "the eastern rifted edge"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Do not transfer a number onto a different feature",
+     "label": "Read each marker in its own figure"
+    }
+   ]
+  }
+ ],
+ "g12-1-a": [
+  {
+   "terms": [
+    "earthquake",
+    "hypocenter",
+    "epicenter",
+    "seismic station"
+   ],
+   "definitions": [
+    "a sudden release of energy stored in rock",
+    "the place where rupture begins",
+    "the point on the surface directly above it",
+    "instruments that record ground motion"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "A rupture can spread far beyond its starting point",
+     "label": "Separate the start from the rupture area"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "normal fault",
+    "reverse fault",
+    "thrust fault",
+    "strike-slip fault"
+   ],
+   "definitions": [
+    "lowers the hanging wall relative to the footwall",
+    "raises the hanging wall",
+    "A gently dipping reverse fault",
+    "displaces its two sides mainly horizontally"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "The fault type describes relative movement",
+     "label": "Distinguish motion from magnitude"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "volcanic tremors",
+    "Reservoir filling",
+    "wastewater injection"
+   ],
+   "definitions": [
+    "can accompany magma movement",
+    "adds a load to the crust",
+    "can alter conditions on existing faults"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "not evidence that every earthquake near a well or reservoir has the same cause",
+     "label": "Test the mechanism"
+    }
+   ]
+  }
+ ],
+ "g12-2-a": [
+  {
+   "terms": [
+    "Stress",
+    "Strain",
+    "Elastic behavior"
+   ],
+   "definitions": [
+    "force per area",
+    "the resulting change in shape",
+    "the material can return toward its former shape when the load is removed"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "not a calendar for predicting the next earthquake",
+     "label": "Read the earthquake-cycle model"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "hypocenter",
+    "fault scarp",
+    "Rupture stops"
+   ],
+   "definitions": [
+    "Rupture starts in a small area",
+    "If rupture reaches the ground surface",
+    "the remaining stress cannot overcome resistance farther along the fault"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "The entire fault plane does not begin moving simultaneously",
+     "label": "Follow rupture growth"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "stick-slip behavior",
+    "recurrence interval"
+   ],
+   "definitions": [
+    "Repeated locking and slipping",
+    "the average time between comparable repeated events, not a guaranteed waiting period"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "the displacement across the fault is permanent",
+     "label": "Separate rebound and permanent offset"
+    }
+   ]
+  }
+ ],
+ "g12-3-a": [
+  {
+   "terms": [
+    "Mid-ocean ridges",
+    "Subduction zones"
+   ],
+   "definitions": [
+    "have shallow earthquakes",
+    "combine shallow, intermediate, and deep earthquakes along a descending slab"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "not the lab’s reading-emphasis categories",
+     "label": "Use the source map legend"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Japan",
+    "western South America",
+    "epicenters"
+   ],
+   "definitions": [
+    "the supplied pattern deepens westward",
+    "the pattern deepens eastward",
+    "at the surface"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "The deepest dots do not mark the trench",
+     "label": "Follow the depth progression"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Aleutians",
+    "San Andreas",
+    "Hawaii"
+   ],
+   "definitions": [
+    "subduction south of Alaska",
+    "continental transform motion",
+    "volcanic and associated seismic activity within a plate"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "does not mean zero possible earthquakes",
+     "label": "Distinguish low activity from no hazard"
+    }
+   ]
+  }
+ ],
+ "g12-4-a": [
+  {
+   "terms": [
+    "ridge earthquakes",
+    "transform faults"
+   ],
+   "definitions": [
+    "generally shallow and small to moderate",
+    "Strike-slip motion occurs"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Not every ridge-system earthquake lies on the spreading axis",
+     "label": "Locate the motion"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "megathrust",
+    "descending slab"
+   ],
+   "definitions": [
+    "the plate-contact thrust fault",
+    "supports intermediate and deep earthquakes"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Not every subduction earthquake produces one",
+     "label": "Connect displacement to tsunami generation"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Continental rifts",
+    "Continental transform faults",
+    "intraplate mechanisms"
+   ],
+   "definitions": [
+    "commonly generate normal-fault earthquakes",
+    "generate mostly shallow strike-slip earthquakes",
+    "Magma intrusion and renewed stress on old faults"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "distance from a modern boundary does not make a continent’s interior immune",
+     "label": "Include interior faults"
+    }
+   ]
+  }
+ ],
+ "g12-5-a": [
+  {
+   "terms": [
+    "P-waves",
+    "Particle motion",
+    "S-waves"
+   ],
+   "definitions": [
+    "compressional body waves",
+    "parallel to wave propagation",
+    "shear body waves",
+    "perpendicular to propagation"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "cannot propagate as shear waves through liquid",
+     "label": "Connect motion and material"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Love waves",
+    "Rayleigh waves",
+    "Amplitude",
+    "Period",
+    "Resonance"
+   ],
+   "definitions": [
+    "horizontal side-to-side motion perpendicular to their travel direction",
+    "rolling, elliptical motion with vertical and horizontal components",
+    "the size of the displacement",
+    "the time for one full cycle",
+    "when the forcing period matches a structure’s natural response"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Both are surface-wave types, distinct from P and S body waves",
+     "label": "Compare wave families"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "seismometer",
+    "seismogram",
+    "P–S interval"
+   ],
+   "definitions": [
+    "senses ground motion",
+    "the resulting plot of ground motion against time, not the instrument itself",
+    "Increasing source distance generally increases"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Three perpendicular components",
+     "label": "Read all three motion directions"
+    }
+   ]
+  }
+ ],
+ "g12-6-a": [
+  {
+   "terms": [
+    "P–S interval",
+    "epicenter"
+   ],
+   "definitions": [
+    "generally indicates a more distant source",
+    "Their shared intersection locates"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "a radius around a station, not a direction toward the source",
+     "label": "Use at least three stations"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "maximum S-wave amplitude",
+    "one-unit magnitude increase"
+   ],
+   "definitions": [
+    "use the distance inferred from the arrival interval",
+    "ten times the ground-motion amplitude in this scale"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "roughly 1,000 times the energy, not 64",
+     "label": "Multiply the energy ratio"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Local magnitude",
+    "Moment magnitude",
+    "Modified Mercalli intensity"
+   ],
+   "definitions": [
+    "an amplitude-and-distance relationship",
+    "uses seismic moment",
+    "observed shaking and damage at a place"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Different sites can have different intensities during one earthquake",
+     "label": "Separate event size and local effects"
+    }
+   ]
+  }
+ ],
+ "g12-7-a": [
+  {
+   "terms": [
+    "Loose sediment",
+    "Ground rupture",
+    "landslides and rock falls"
+   ],
+   "definitions": [
+    "can amplify motion relative to firm bedrock",
+    "can offset roads and foundations",
+    "shaking can trigger"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "proximity to a fault alone does not explain every damaged building",
+     "label": "Compare ground and structural response"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Liquefaction",
+    "Aftershocks"
+   ],
+   "definitions": [
+    "shaking causes loose, water-saturated sediment to lose much of its strength",
+    "follow stress changes caused by the main earthquake"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "The sediment has not melted into magma",
+     "label": "Explain loss of strength"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Broken gas lines",
+    "Broken water mains",
+    "Drop, Cover, and Hold On"
+   ],
+   "definitions": [
+    "can feed fires",
+    "can hinder firefighting",
+    "under sturdy nearby furniture when possible"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Current USGS guidance rejects the doorway as the preferred refuge",
+     "label": "Retain the safety correction"
+    }
+   ]
+  }
+ ],
+ "g12-8-a": [
+  {
+   "terms": [
+    "Alaska in 1964",
+    "San Francisco in 1906",
+    "Northridge",
+    "Hebgen Lake"
+   ],
+   "definitions": [
+    "subduction-related thrusting and major tsunami damage",
+    "the San Andreas strike-slip system",
+    "a buried thrust fault",
+    "normal faulting"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Absence of an obvious exposed trace is not proof of safety",
+     "label": "Include hidden faults"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Mexico City"
+   ],
+   "definitions": [
+    "lake sediments and basin geometry amplified the shaking"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "The event source and the damaged city are different locations",
+     "label": "Separate source and site effects"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "New Madrid sequence",
+    "Charleston"
+   ],
+   "definitions": [
+    "reactivated an ancient zone of weakness within North America",
+    "experienced a damaging earthquake in 1886"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "The supplied chapter treats its exact tectonic cause as debated",
+     "label": "Keep uncertain causes uncertain"
+    }
+   ]
+  }
+ ],
+ "g12-9-a": [
+  {
+   "terms": [
+    "Tohoku earthquake",
+    "Fukushima",
+    "Aftershocks"
+   ],
+   "definitions": [
+    "the subduction interface offshore of northeastern Japan",
+    "damaged power and cooling systems",
+    "outline part of the affected fault region and can damage weakened structures"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "modeled wave amplitudes, not a direct map of earthquake magnitudes",
+     "label": "Read what the map measures"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Haiti earthquake",
+    "Turkey–Syria sequence"
+   ],
+   "definitions": [
+    "a complex plate-boundary fault system with strike-slip and thrust motion",
+    "a region of interacting faults and plates"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "A smaller magnitude can cause catastrophic damage",
+     "label": "Connect hazard and vulnerability"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "historical estimates",
+    "New Zealand events",
+    "Turkey–Syria"
+   ],
+   "definitions": [
+    "tied to their source date rather than presented as a permanent leaderboard",
+    "The supplied October 27 lecture also compares",
+    "The current textbook section instead emphasizes"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "not grounds to silently rename one event as another",
+     "label": "Preserve distinct source selections"
+    }
+   ]
+  }
+ ],
+ "g12-10-a": [
+  {
+   "terms": [
+    "tsunami",
+    "Krakatau"
+   ],
+   "definitions": [
+    "a disturbance rapidly moves a large volume of water",
+    "Volcanic explosions and collapse"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "without requiring a megathrust",
+     "label": "Compare tsunami mechanisms"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "deep water",
+    "shallow water",
+    "bathymetry"
+   ],
+   "definitions": [
+    "very fast with a long wavelength and modest height",
+    "it slows, its wavelength shortens, and its height can increase",
+    "influence the eventual runup and flooding"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "not every tsunami begins with visible withdrawal",
+     "label": "Recognize varied coastal behavior"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "1960 Chile event",
+    "Warning systems"
+   ],
+   "definitions": [
+    "a tsunami that crossed the Pacific and damaged Hawaii and Japan",
+    "combine earthquake information with sea-level and ocean-bottom measurements"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "They do not predict the exact earthquake before it begins",
+     "label": "Separate warning and prediction"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Chile, 1960",
+    "Hawaii, 1960",
+    "Hokkaido, 1993",
+    "Papua New Guinea, 1998"
+   ],
+   "definitions": [
+    "Local South American tsunami soon after the great earthquake",
+    "Distant arrival across the Pacific from the Chile earthquake",
+    "Rapid local tsunami after a Japanese offshore earthquake",
+    "Earthquake-associated submarine landslides generated destructive waves"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "A near-source tsunami may arrive before a distant warning system can help",
+     "label": "Compare travel times"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Sumatra earthquake",
+    "tsunami"
+   ],
+   "definitions": [
+    "ruptured a subduction boundary",
+    "spread across the Indian Ocean"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Traveling water waves can damage shores far beyond the strongest earthquake shaking",
+     "label": "Connect local source and distant consequence"
+    }
+   ]
+  }
+ ],
+ "g12-11-a": [
+  {
+   "terms": [
+    "cumulative displacement",
+    "Scarps"
+   ],
+   "definitions": [
+    "across many earthquakes",
+    "can reveal faults"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "An isolated linear feature is a clue that needs corroboration",
+     "label": "Use several lines of evidence"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "trench",
+    "charcoal or peat",
+    "North Anatolian example"
+   ],
+   "definitions": [
+    "exposes displaced sediment and soil layers",
+    "can bracket deformation",
+    "a 1.59 m component of 1999 scarp displacement"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "scarp height alone is not total slip",
+     "label": "Separate vertical offset and total motion"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "interferogram",
+    "Colored fringes",
+    "borehole"
+   ],
+   "definitions": [
+    "Before-and-after satellite radar measurements",
+    "measured ground displacement along the satellite’s viewing direction",
+    "record conditions at depth"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "They are not rock colors or a direct stress map",
+     "label": "Identify what was measured"
+    }
+   ]
+  }
+ ],
+ "g12-12-a": [
+  {
+   "terms": [
+    "Long-term forecasts",
+    "hazard map"
+   ],
+   "definitions": [
+    "combine historical earthquake records, prehistoric fault evidence, and tectonic setting",
+    "an expected shaking measure or probability over a defined time"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "A historical forecast map is not a newly issued forecast",
+     "label": "Check the date and legend"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "seismic gap",
+    "quiet segments"
+   ],
+   "definitions": [
+    "a segment with less earthquake activity than neighboring segments or than expected from its history",
+    "interpreted as locked and accumulating strain"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Nor does a gap establish exactly when, where, and how large the next earthquake will be",
+     "label": "Keep the prediction limit"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Parkfield exercise",
+    "early warning"
+   ],
+   "definitions": [
+    "used repeated events to anticipate another earthquake during a specified window",
+    "detects an earthquake that has already begun"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "there is no reliable method for predicting a specific earthquake’s exact time, location, and magnitude",
+     "label": "Separate prediction and detection"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Chile",
+    "Iran",
+    "Nepal",
+    "Papua New Guinea"
+   ],
+   "definitions": [
+    "Oceanic subduction beneath South America",
+    "Collision involving the Arabian plate",
+    "India–Asia continental collision",
+    "Complex active plate boundaries"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "National borders are not fault boundaries",
+     "label": "Use tectonic geometry"
+    }
+   ]
+  }
+ ],
+ "g12-13-a": [
+  {
+   "terms": [
+    "San Andreas system",
+    "central creeping segment"
+   ],
+   "definitions": [
+    "accommodates relative motion between the Pacific and North American plates",
+    "moves gradually at the surface"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Creep does not establish that every depth or adjacent fault is incapable of earthquake rupture",
+     "label": "Keep creep local"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Parkfield",
+    "Fort Tejon event",
+    "restraining bend"
+   ],
+   "definitions": [
+    "repeated moderate earthquakes",
+    "an important example of long-term locking",
+    "produces compression and thrusting"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Historical probability statements require their original date and time window",
+     "label": "Date the forecast"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "abandoned stream channel",
+    "East California Shear Zone"
+   ],
+   "definitions": [
+    "can preserve an earlier alignment",
+    "related active faults east of the San Andreas"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Hazard assessment must include the network",
+     "label": "Look beyond the named fault"
+    }
+   ]
+  }
+ ],
+ "g12-14-a": [
+  {
+   "terms": [
+    "Volcanic inclusions",
+    "Mines",
+    "Drill cores"
+   ],
+   "definitions": [
+    "can bring pieces of older rocks toward the surface",
+    "expose rocks along excavated workings",
+    "recover cylindrical samples along boreholes"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "limited spatial coverage, not a complete view of Earth’s interior",
+     "label": "Keep sampling limits visible"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Seismic-reflection surveys",
+    "Magnetic surveys",
+    "Gravity surveys",
+    "Electrical surveys"
+   ],
+   "definitions": [
+    "send energy into the ground and record returning signals with geophones",
+    "measure variations in magnetic field strength related to rock properties",
+    "measure small gravitational variations related to density contrasts",
+    "measure conductivity or resistivity"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "A conductive anomaly does not uniquely identify one rock type",
+     "label": "Combine the measured properties"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "seismic profile",
+    "geologic cross section"
+   ],
+   "definitions": [
+    "processed data",
+    "an interpretation based on those data and other evidence"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Several subsurface configurations may fit one data set",
+     "label": "Separate observation and interpretation"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Geophysicists",
+    "Geophones",
+    "Gravity meters",
+    "Drill cores",
+    "Inclusions"
+   ],
+   "definitions": [
+    "Scientists who use physical measurements to study Earth",
+    "Instruments detecting returning seismic vibrations",
+    "Instruments measuring small gravity variations",
+    "Cylindrical samples recovered by drilling",
+    "Older fragments enclosed within another rock"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "A geophysical measurement constrains an interpretation",
+     "label": "Distinguish samples and measurements"
+    }
+   ]
+  }
+ ],
+ "g12-15-a": [
+  {
+   "terms": [
+    "Reflection",
+    "Refraction"
+   ],
+   "definitions": [
+    "sends part of the wave energy back from an interface",
+    "changes the direction of transmitted energy when the wave enters material with a different seismic velocity"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Wave speed depends on elastic properties and density together",
+     "label": "Use both physical properties"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Moho",
+    "reflected travel time"
+   ],
+   "definitions": [
+    "the crust–mantle boundary",
+    "includes the trip down and back up"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "a 10-second vertical round trip corresponds to 30 km depth, not 60 km",
+     "label": "Account for the round trip"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "P-waves",
+    "Direct S-waves"
+   ],
+   "definitions": [
+    "refract strongly at the core–mantle boundary",
+    "do not cross the liquid outer core"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "A P-wave shadow is not evidence that P-waves cannot travel through liquid",
+     "label": "Distinguish refraction and blocked shear waves"
+    }
+   ]
+  }
+ ],
+ "g12-16-a": [
+  {
+   "terms": [
+    "Exhumed metamorphic rocks",
+    "Laboratory experiments",
+    "Numerical models"
+   ],
+   "definitions": [
+    "preserve minerals and structures formed at depth",
+    "test how rock responds to pressure and temperature",
+    "explore possible flow and wave paths under stated physical assumptions"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "They are not direct photographs of inaccessible depths",
+     "label": "Test models against observations"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Seismic tomography",
+    "Earlier-than-expected arrivals",
+    "Later arrivals"
+   ],
+   "definitions": [
+    "combines many rays passing through a region from different directions",
+    "can indicate faster material",
+    "can indicate slower material"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Sparse ray coverage limits resolution",
+     "label": "Read the velocity image critically"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Slower regions",
+    "Faster regions",
+    "D-double-prime region"
+   ],
+   "definitions": [
+    "can be consistent with hotter material",
+    "can reflect cooler or stiffer material",
+    "near the core–mantle boundary"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "velocity alone is not a unique thermometer",
+     "label": "Keep multiple explanations possible"
+    }
+   ]
+  }
+ ],
+ "g12-17-a": [
+  {
+   "terms": [
+    "1964 Alaska earthquake",
+    "Pacific plate",
+    "aftershock distribution"
+   ],
+   "definitions": [
+    "a very large subduction-related event",
+    "moved beneath the overriding North American plate",
+    "helped constrain the large affected fault area"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "The felt region and the region of severe property damage were different sizes",
+     "label": "Distinguish affected areas"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Uplift",
+    "Subsidence",
+    "Seafloor displacement"
+   ],
+   "definitions": [
+    "exposed marine organisms above their former tide level",
+    "allowed seawater to flood former dry land",
+    "generated a Pacific tsunami"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "Do not assume every local wave height represents the same source mechanism",
+     "label": "Compare regional and local waves"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "coherent regional pattern",
+    "volcanic arc"
+   ],
+   "definitions": [
+    "supported thrusting at a convergent margin",
+    "an additional regional clue to subduction"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "It must not be read as one continuous fault fissure",
+     "label": "Read the mapped boundary correctly"
+    }
+   ]
+  }
+ ],
+ "g12-18-a": [
+  {
+   "terms": [
+    "White Sands",
+    "Mesaview",
+    "common region"
+   ],
+   "definitions": [
+    "nearest",
+    "farthest",
+    "offshore near the trench"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "These are source-specific graph readings, not a universal conversion",
+     "label": "Use this investigation’s graph"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Sandpoint",
+    "Riverton",
+    "Ashton",
+    "Cliffside"
+   ],
+   "definitions": [
+    "stands on reclaimed loose coastal material",
+    "low at the head of a sandy bay with gentle offshore slopes",
+    "on steep volcanic slopes with large blocks nearby",
+    "also has soft, wet ground"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "without eliminating slope hazards",
+     "label": "Compare distinct hazards"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Hillside",
+    "White Sands"
+   ],
+   "definitions": [
+    "a higher inland setting with gentler adjacent slopes",
+    "behind a reef in the supplied scenario"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "A reef is not reliable real-world protection from a tsunami",
+     "label": "Keep the relative comparison qualified"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Sandpoint",
+    "Hillside",
+    "Ashton",
+    "Cascade"
+   ],
+   "definitions": [
+    "Loose reclaimed coastal fill",
+    "Higher inland ground with comparatively gentle terrain",
+    "Volcanic flank with blocks indicating slope failure",
+    "Fractured Gray Cliffs above town"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "The least of one hazard is not the least of every hazard",
+     "label": "Compare hazards separately"
+    }
+   ]
+  },
+  {
+   "terms": [
+    "Cliffside",
+    "Riverton",
+    "White Sands",
+    "Mesaview"
+   ],
+   "definitions": [
+    "Cliff instability together with soft coastal ground",
+    "Low bay beside a gently sloping seafloor",
+    "Reef changes the course comparison but does not guarantee protection",
+    "Farther from the trench, yet beside steep slopes"
+   ],
+   "checkpoints": [
+    {
+     "phrase": "The least of one hazard is not the least of every hazard",
+     "label": "Compare hazards separately"
+    }
+   ]
   }
  ]
 };

@@ -86,13 +86,16 @@ function selections(plan, body, id) {
     assert.ok(body.toLowerCase().includes(phrase.toLowerCase()), `Stale annotation ${id}: ${phrase}`);
   }
 }
-const chapter7Ids = new Set(L.SECTIONS.filter(s => s.ch === 7).flatMap(s => (L.GUIDE[s.id] || []).map(c => c.id)));
-for (const id of chapter7Ids) {
+const exam2Ids = new Set(L.SECTIONS.filter(s => s.ch >= 7 && s.ch <= 12).flatMap(s => (L.GUIDE[s.id] || []).map(c => c.id)));
+for (const id of exam2Ids) {
   const plans = L.studyReading[id];
   assert.ok(plans, `Missing reading plan ${id}`);
   const groups = L.studyOutlineData.cards[id].html.match(/<section class="e2-note-group">[\s\S]*?<\/section>/g);
   assert.equal(plans.length, groups.length, `Unannotated group in ${id}`);
-  plans.forEach((plan, i) => selections(plan, text(groups[i]), `${id}/${i}`));
+  plans.forEach((plan, i) => {
+    assert.ok(plan.terms?.length && plan.definitions?.length && plan.checkpoints?.length, `Incomplete annotation ${id}/${i}`);
+    selections(plan, text(groups[i]), `${id}/${i}`);
+  });
 }
 for (const unit of L.exam2Mocks.focusGroups()) {
   const plan = L.studyOutlineData.focus[unit.n];
@@ -104,6 +107,7 @@ for (const unit of L.exam2Mocks.focusGroups()) {
   assert.match(L.studyOutline.remainingFocusLimit({...unit, trap:'changed evidence'}), /changed evidence/);
   assert.doesNotMatch(L.studyOutline.focusHTML({...unit, trap:'changed evidence'}), /study-local-limits/);
 }
+assert.deepEqual(Object.keys(L.studySourceReading).sort(), Object.keys(L.EXAM2_SOURCES).sort(), "Every public source needs an annotation plan");
 for (const [key, plan] of Object.entries(L.studySourceReading)) {
   assert.equal(plan.source, L.EXAM2_SOURCES[key].pages[0].text, `Stale source ${key}`);
   selections(plan, plan.source, key);
