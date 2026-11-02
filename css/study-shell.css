@@ -1,0 +1,162 @@
+/* Chapter 10 remains the reading system. These rules change navigation and page organization. */
+.shared-preview .top {position:sticky; top:0; background:#10151e;}
+.shared-header {max-width:976px; margin:auto; padding:14px 28px 0;}
+.shared-identity {display:flex; align-items:center; justify-content:space-between; gap:16px;}
+.shared-header .pilot-brand {font-size:20px;}
+.shared-header .pilot-brand span {font-size:16px;}
+.shared-tools {position:relative;}
+.shared-tools summary {min-height:44px; padding:10px 6px; cursor:pointer; color:#7cc4ff; box-sizing:border-box;}
+.shared-nav {display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:6px; margin-top:12px;}
+.shared-nav a {min-height:48px; padding:12px 8px; box-sizing:border-box; text-align:center; text-decoration:none; color:#b4c0d1; border-bottom:3px solid transparent; font-size:18px; line-height:24px; white-space:nowrap;}
+.shared-nav a:hover {background:#1b2029; color:#e4e9f1;}
+.shared-nav a[aria-current="page"] {color:#7cc4ff; border-color:#7cc4ff; font-weight:700;}
+.shared-preview-note {max-width:976px; margin:auto; padding:10px 28px 0; box-sizing:border-box; color:#b4c0d1; font-size:14px;}
+body:not(.shared-preview) .shared-preview-note {display:none;}
+.shared-preview.pilot-hub #main {max-width:976px;}
+.shared-preview #main {padding-top:24px;}
+.shared-preview #main h1 {margin-bottom:12px;}
+.shared-preview #main .pilot-intro {font-size:20px; margin-bottom:24px;}
+.shared-preview .shared-crumb {font-size:16px; margin:0 0 12px; color:#b4c0d1;}
+.shared-preview .shared-crumb a {padding:8px 0;}
+.shared-chapters {margin:24px 0 32px;}
+.shared-chapters h2 {margin:0 0 16px; font-size:24px;}
+.shared-chapter-list {background:#1b2029; border:1px solid #354253; border-radius:14px; overflow:hidden;}
+.shared-chapter-link {display:grid; grid-template-columns:48px 1fr 24px; align-items:center; gap:18px; padding:20px 24px; text-decoration:none; color:#e4e9f1;}
+.shared-chapter-link + .shared-chapter-link {border-top:1px solid #354253;}
+.shared-chapter-link:hover {background:#232b36;}
+.shared-chapter-link strong {font-size:22px; line-height:1.4; color:#7cc4ff;}
+.shared-chapter-link small {display:block; font-size:16px; color:#b4c0d1; line-height:1.6; margin-top:5px;}
+.shared-chapter-number {font-size:24px; color:#b4c0d1; font-variant-numeric:tabular-nums;}
+.shared-practice-options {padding-top:24px; border-top:1px solid #354253;}
+.shared-practice-options > h2 {margin:0;}
+.shared-practice-options > p {font-size:20px;}
+.shared-preview #main .shared-disclosure {margin:12px 0; padding:0; border:0; background:transparent;}
+.shared-disclosure > summary {padding:10px 0; min-height:44px; box-sizing:border-box; cursor:pointer; color:#7cc4ff; font-size:18px; line-height:1.5;}
+.shared-disclosure > .pilot-key {padding:14px 0 0;}
+.shared-practice-options .pilot-builder,.shared-practice-options .pilot-other-practice {padding:0!important; background:transparent; border:0; margin:12px 0;}
+.shared-preview.pilot-hub .exam-topics {display:grid; grid-template-columns:1fr; gap:16px;}
+.shared-preview.pilot-hub .exam-topic {padding:24px;}
+.shared-preview.pilot-hub .exam-topic h2 {font-size:24px;}
+.shared-preview.pilot-hub .exam-topic .mastery-details {margin:0;}
+.shared-preview.pilot-hub .exam-topic .small {font-size:16px;}
+.shared-preview .pilot-toolbar {align-items:center; border-bottom:1px solid #354253; padding-bottom:12px; margin-bottom:8px;}
+.shared-preview .pilot-toolbar button {font-size:18px;}
+.shared-preview .pilot-toolbar .pri {margin-left:auto; text-decoration:none;}
+.shared-jump {display:flex; align-items:center; gap:14px; font-size:18px; margin:12px 0 22px; color:#b4c0d1;}
+.shared-jump select {flex:1; min-width:0; max-width:100%; font-size:18px;}
+.shared-preview [id^="shared-group-"] {scroll-margin-top:164px;}
+.shared-preview #main .pilot-section-card {margin-bottom:24px;}
+.shared-preview .pilot-reading-stack {gap:0;}
+.shared-preview .shared-status {color:#b4c0d1; font-size:18px; line-height:1.6;}
+.shared-focus-actions {margin:16px 0;}
+.shared-preview .e2-focus-grid {display:grid; grid-template-columns:1fr; gap:16px;}
+.shared-preview .e2-focus-grid > .card {padding:24px; margin:0;}
+.shared-preview .e2-focus-grid h2 {font-size:24px; margin:6px 0 10px;}
+.shared-preview .e2-focus-grid .shared-disclosure {margin:0 0 12px!important;}
+.shared-preview .e2-focus-filters {align-items:end; margin-top:24px;}
+.shared-preview .e2-focus-filters label {font-size:18px;}
+.shared-preview .e2-focus-filters input {font-size:18px; min-height:46px;}
+.shared-preview button.opt:disabled {opacity:1; cursor:default;}
+.shared-preview #main .opt {font-size:20px; line-height:1.65;}
+.shared-preview #main .prompt {font-size:22px; line-height:1.65;}
+.shared-preview #main .feedback {font-size:20px; line-height:1.65;}
+.shared-preview .shared-empty {padding:24px; margin:24px 0;}
+.shared-preview .shared-empty p {font-size:20px;}
+.shared-preview .shared-empty .btn {margin:6px 8px 0 0;}
+.shared-preview .pilot-table-frame {overflow-x:auto;}
+.shared-preview #main :is(button,a,select,input,summary):focus-visible {outline:3px solid #9ed5ff; outline-offset:3px;}
+@media(max-width:767px) {
+ .shared-header {padding:10px 16px 0;}
+ .shared-header .pilot-brand {font-size:18px;}
+ .shared-header .pilot-brand span {font-size:14px;}
+ .shared-nav {gap:0; margin-top:8px;}
+ .shared-nav a {font-size:15px; padding:10px 2px; min-height:47px;}
+ .shared-preview-note {padding:10px 16px 0; font-size:13px;}
+ .shared-preview #main {padding-top:20px;}
+ .shared-chapter-link {padding:18px 16px; grid-template-columns:28px 1fr 16px; gap:12px;}
+ .shared-chapter-link strong {font-size:20px;}
+ .shared-chapter-link small {font-size:16px;}
+ .shared-preview.pilot-hub .exam-topic {padding:22px 18px;}
+ .shared-preview .pilot-toolbar {gap:0 12px;}
+ .shared-preview .pilot-toolbar .pri {margin:8px 0 0; width:100%;}
+ .shared-jump {display:block;}
+ .shared-jump select {display:block; width:100%; margin-top:8px;}
+ .shared-preview .e2-focus-grid > .card {padding:22px 18px;}
+ .shared-preview .e2-focus-filters {display:block;}
+ .shared-preview .e2-focus-filters label {display:block; margin:14px 0;}
+ .shared-preview .e2-focus-filters :is(input,select) {width:100%; box-sizing:border-box;}
+}
+@media(max-height:600px) {.shared-preview .top {position:static;}}
+@media print {.shared-preview-note,.shared-header,.shared-jump {display:none!important;}}
+
+/* Compact navigation and progress; keep Chapter 10's large teaching text. */
+.shared-header {padding-top:8px;}
+.shared-nav {margin-top:4px;}
+.shared-preview #main {padding-top:16px;}
+.shared-preview #main .pilot-intro {margin-bottom:16px;}
+.shared-preview #main .pilot-resume {display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 24px;padding:18px 22px;margin:16px 0;}
+.shared-preview #main .pilot-resume h2 {font-size:22px;margin:0;}
+.shared-preview #main .pilot-resume p {font-size:18px;margin:0;}
+.shared-preview .pilot-resume > .row {grid-column:2;grid-row:1 / span 2;align-self:center;}
+.shared-chapters {margin:20px 0 24px;}
+.shared-chapter-link {padding:14px 20px;gap:16px;}
+.shared-chapter-link small {margin-top:2px;}
+.shared-practice-options {padding-top:16px;}
+.shared-practice-options > p {margin:8px 0 12px;}
+.shared-preview.pilot-hub #main .exam-topics {grid-template-columns:minmax(0,1fr);gap:12px;}
+.shared-preview.pilot-hub #main .exam-topic {display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:24px;row-gap:6px;padding:18px 22px;margin:0;}
+.shared-preview.pilot-hub .exam-topic > .eyebrow {display:none;}
+.shared-preview.pilot-hub #main .exam-topic h2 {font-size:22px;line-height:1.4;margin:0;}
+.shared-preview.pilot-hub #main .exam-topic h2 a {color:#7cc4ff;}
+.shared-preview.pilot-hub .exam-topic > :is(h2,.progress,p.small) {grid-column:1;}
+.shared-preview.pilot-hub .exam-topic > .progress {max-width:360px;margin:4px 0;}
+.shared-preview.pilot-hub .exam-topic > p.small {margin:0;line-height:1.5;}
+.shared-preview.pilot-hub .exam-topic > .row {grid-column:2;grid-row:1 / span 3;align-content:center;justify-content:flex-end;max-width:350px;gap:8px;}
+.shared-preview.pilot-hub .exam-topic > .mastery-details {grid-column:1 / -1;border:0;border-top:1px solid #354253;background:none;padding:0;margin:4px 0 0;}
+.shared-preview.pilot-hub .exam-topic > .mastery-details > summary {padding:8px 0;min-height:44px;box-sizing:border-box;}
+.shared-preview #main :is(.shared-focus-tracker,.shared-section-progress) {padding:18px 22px;margin:16px 0;}
+.shared-preview #main :is(.shared-focus-tracker,.shared-section-progress) h2 {font-size:24px;margin:0 0 10px;}
+.shared-preview .shared-focus-tracker .e2-focus-metrics {gap:20px;margin:0;}
+.shared-preview .shared-focus-tracker .e2-focus-metrics > div {padding:0;border:0;background:none;}
+.shared-preview .shared-focus-tracker .e2-focus-metrics b {font-size:26px;line-height:1.3;color:#7cc4ff;}
+.shared-preview .shared-focus-tracker .e2-focus-metrics span {font-size:16px;line-height:1.4;}
+.shared-preview .shared-focus-tracker #examSave {font-size:14px;margin:10px 0 0;}
+.shared-preview .shared-focus-tracker > p {font-size:16px;margin:8px 0;line-height:1.5;}
+.shared-preview .shared-focus-tracker .row {margin-top:12px;}
+.shared-preview .e2-focus-grid {gap:12px;}
+.shared-preview #main .e2-focus-grid > .card {display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:6px 24px;padding:18px 22px;}
+.shared-preview .e2-focus-grid > .card > :is(.eyebrow,h2,.row) {grid-column:1;margin:0;}
+.shared-preview #main .e2-focus-grid h2 {font-size:22px;line-height:1.4;}
+.shared-preview .e2-focus-grid .row {gap:8px;align-self:end;padding-top:6px;}
+.shared-preview .e2-focus-grid .e2-focus-record {grid-column:2;grid-row:1 / span 3;margin:0;}
+.shared-preview #main .e2-focus-grid > [data-focus-card][hidden] {display:none;}
+.shared-preview .e2-focus-record > p {margin:0 0 6px;font-size:16px;line-height:1.5;}
+.shared-preview .e2-focus-record .progress {margin:6px 0;}
+.shared-preview .e2-focus-record .mastery-details {border:0;background:none;padding:0;margin:0;}
+.shared-preview .e2-focus-record .mastery-details > summary {padding:6px 0;font-size:16px;min-height:44px;box-sizing:border-box;}
+.shared-preview [data-mastery="mastered"] .e2-focus-record b {color:#8bd5a2;}
+.shared-preview [data-mastery="review"] .e2-focus-record b {color:#ffb78a;}
+.shared-preview #main .pilot-section-card {padding:22px 26px;margin-bottom:16px;}
+.shared-preview .pilot-section-card .pilot-section-practice {margin-top:16px;padding-top:12px;}
+.shared-preview .pilot-section-card .pilot-section-practice p {margin:6px 0;}
+.shared-preview .pilot-key {display:flex;flex-wrap:wrap;gap:8px 24px;margin:12px 0 16px;padding:0;font-size:16px;line-height:1.5;}
+.shared-preview .pilot-key small {flex-basis:100%;font-size:14px;}
+.shared-preview #main mark:is(.pilot-term,.e2-study-term) {color:#ff4fd8;background:transparent;font-weight:700;}
+.shared-preview #main mark.e2-study-emphasis {color:#000;background:#ffff00;font-weight:400;box-shadow:none;}
+.shared-preview .shared-jump {margin:10px 0 16px;}
+@media(max-width:900px) {
+ .shared-preview #main .pilot-resume {grid-template-columns:1fr;gap:8px;}
+ .shared-preview .pilot-resume > .row {grid-column:1;grid-row:auto;}
+ .shared-preview.pilot-hub #main .exam-topic {grid-template-columns:1fr;}
+ .shared-preview.pilot-hub .exam-topic > .row {grid-column:1;grid-row:auto;justify-content:flex-start;max-width:none;}
+}
+@media(max-width:767px) {
+ .shared-preview #main :is(.pilot-resume,.exam-topic,.shared-focus-tracker,.shared-section-progress,.pilot-section-card) {padding:18px;}
+ .shared-preview #main .e2-focus-grid > .card {grid-template-columns:1fr;padding:18px;gap:8px;}
+ .shared-preview .e2-focus-grid .e2-focus-record {grid-column:1;grid-row:auto;}
+ .shared-preview .e2-focus-grid .row {grid-row:4;}
+ .shared-preview .shared-focus-tracker .e2-focus-metrics {grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+ .shared-preview .shared-focus-tracker .e2-focus-metrics > div:last-child {grid-column:1 / -1;display:flex;align-items:center;gap:12px;}
+ .shared-preview .shared-focus-tracker .e2-focus-metrics > div:last-child .progress {flex:1;}
+ .shared-preview .pilot-key {gap:6px 16px;}
+}
