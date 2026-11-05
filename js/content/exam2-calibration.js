@@ -62,6 +62,15 @@ var P={
 "e2-c-i02":{x:"Pressure increases downward on this course chart. Points in the same column have the same temperature; a lower point has greater pressure."},
 "e2-c-i05":{x:"Two circles can cross at two points. A third station’s circle passes through only one of them, which is the epicenter."},
 "e2-c-i08":{x:"Isostasy: a thicker crustal column has a deeper root and stands higher at the surface."},
+"e2-ppt-i05-circles":["What do the three station-distance circles locate, and what do they leave undetermined?","The surface epicenter; not the focal depth",["The focal depth; not the surface epicenter","The exact magnitude; not the position","Three separate earthquakes at the station centers"],"Intersecting distance circles from three stations locate the epicenter at the surface. The focus (hypocenter) lies below it, and its depth needs additional information."],
+"e2-ppt-a-m02":{x:"Rounded coarse clasts occur in both rivers and beaches. Sorting and roundness are separate properties."},
+"e2-ppt-a-m25":{x:"Classify folds from bedding geometry and age relations, not from present-day hills and valleys."},
+"e2-ppt-b-m14":{x:"High pressure does not mean high temperature: cold subduction gives high pressure at low temperature."},
+"e2-ppt-b-m22":{x:"Temperature, pressure, rock type and deformation rate control brittle versus ductile behavior."},
+"e2-ppt-b-m32":{x:"Starting with all parent and no daughter, each half-life halves the remaining parent."},
+"e2-c-m12":{x:"Metamorphism changes igneous, sedimentary or older metamorphic rock in the solid state. New minerals grow without melting."},
+"e2-c-m18":{x:"A smaller event is called a foreshock only after a larger mainshock follows it."},
+"e2-c-m24":{x:"A horst stands high between normal faults. Extension creates both highs (horsts) and basins (grabens)."},
 "e2-c-i07":{x:"One eighth is (1/2)³, so three half-lives have passed: 3 × 4 = 12 million years."}
 };
 function patch(it){
