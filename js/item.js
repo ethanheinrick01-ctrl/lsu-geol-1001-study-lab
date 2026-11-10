@@ -149,18 +149,19 @@
       act.innerHTML = '';
       if (locked || isMock) return;
       if (it.t === 'teach') {
-        if(it.examId==='exam2'&&!cfg.revealed){var cb=U.el('label',{class:'e2-teach-confidence'},'Confidence before feedback: '),cs=U.el('select',{'aria-label':'Confidence before model answer'});['','l','m','h'].forEach(function(cf,i){var op=U.el('option',{value:cf},['Choose confidence…','Low','Medium','High'][i]);op.selected=state.confidence===cf;cs.appendChild(op);});cs.onchange=function(){state.confidence=cs.value;if(cfg.onConfidence)cfg.onConfidence(cs.value);updateActions();};cb.appendChild(cs);act.appendChild(cb);}
+        var requireConfidence=it.examId==='exam2'||it.examId==='final';
+        if(requireConfidence&&!cfg.revealed){var cb=U.el('label',{class:'e2-teach-confidence'},'Confidence before feedback: '),cs=U.el('select',{'aria-label':'Confidence before model answer'});['','l','m','h'].forEach(function(cf,i){var op=U.el('option',{value:cf},['Choose confidence…','Low','Medium','High'][i]);op.selected=state.confidence===cf;cs.appendChild(op);});cs.onchange=function(){state.confidence=cs.value;if(cfg.onConfidence)cfg.onConfidence(cs.value);updateActions();};cb.appendChild(cs);act.appendChild(cb);}
         var rv=U.el('button',{class:'btn pri',type:'button'},'Reveal model answer and rubric');
-        rv.disabled=!hasResp()||(it.examId==='exam2'&&!state.confidence);
+        rv.disabled=!hasResp()||(requireConfidence&&!state.confidence);
         function reveal(){
-          if(it.examId==='exam2'&&!state.confidence)return;
+          if(requireConfidence&&!state.confidence)return;
           if(it.practiceTrack==='e2-brittle'){var confidenceControl=act.querySelector('select');if(confidenceControl)confidenceControl.disabled=true;}
           ans.querySelector('textarea').disabled=true;
           if(cfg.onReveal)cfg.onReveal(state.resp);
           fbEl.innerHTML='<div class="fb"><div class="verdict">Model answer · self-assessment</div><p>'+it.model+'</p><p class="small muted">Mark only points present in your original answer. This self-assessment feeds the same concept record and is labeled separately from automatic grading.</p><div class="exam-rubric">'+(it.rubric||[]).map(function(x,i){return '<label><input type="checkbox" data-teach-rubric="'+i+'"> '+esc(x)+'</label>';}).join('')+'</div>'+srcChips(it.s)+(L.exam2?L.exam2.sourceHTML(it):'')+'</div>';
           var save=U.el('button',{class:'btn pri'},'Save rubric check');
           save.onclick=function(){var hits=Array.prototype.map.call(fbEl.querySelectorAll('[data-teach-rubric]'),function(x){return x.checked;}),n=hits.filter(Boolean).length;locked=true;
-            if(cfg.onSubmit)cfg.onSubmit({self:n===hits.length?'got':n?'part':'miss',response:state.resp,rubric:hits},it.examId==='exam2'?state.confidence:'m',state.assisted);
+            if(cfg.onSubmit)cfg.onSubmit({self:n===hits.length?'got':n?'part':'miss',response:state.resp,rubric:hits},requireConfidence?state.confidence:'m',state.assisted);
             save.disabled=true;fbEl.querySelectorAll('input').forEach(function(x){x.disabled=true;});};
           fbEl.appendChild(save);rv.remove();
         }
@@ -209,7 +210,7 @@
     });
     var verdict = g.blank ? 'Not answered' : g.ok ? 'Correct' : (g.sc > 0 ? 'Partly correct (' + Math.round(g.sc * 100) + '%), scored as incorrect' : 'Incorrect');
     h.push('<div class="fb ' + (g.ok ? 'ok' : 'no') + '"><div class="verdict">' + verdict + '</div>');
-    if(it.examId==='exam2'&&it.o)h.push('<p class="e2-correct"><strong>Correct answer: '+it.o.filter(function(o){return o.ok;}).map(function(o){return esc(o.t);}).join('; ')+'</strong></p>');
+    if((it.examId==='exam2'||it.examId==='final')&&it.o)h.push('<p class="e2-correct"><strong>Correct answer: '+it.o.filter(function(o){return o.ok;}).map(function(o){return esc(o.t);}).join('; ')+'</strong></p>');
     if (it.t === 'fill') {
       h.push('<p>Correct answer: <b class="okc">' + esc(it.acc[0]) + '</b>' + (it.acc.length > 1 ? ' <span class="muted small">(also: ' + esc(it.acc.slice(1).join(', ')) + ')</span>' : '') + '. You wrote: <b class="'+(g.ok?'okc':'noc')+'">' + esc(resp == null ? 'n/a' : resp) + '</b>.</p>');
       if (g.spelling) h.push('<p class="small warn">Counted here, but check spelling: <b>' + esc(g.spelling) + '</b>. Paper-exam spelling tolerance is unknown.</p>');

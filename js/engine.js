@@ -201,7 +201,7 @@
   // ---------------- Sessions ----------------
   function newSession(mode, title, refs, opt) {
     opt = opt || {};
-    var sess = { id: 'S' + Date.now() + '-' + Math.random().toString(36).slice(2,7), mode: mode, title: title, queue: refs.map(function (r) {var ref=U.clone(r),it=resolve(r);if(it&&it.examId==='exam2')ref.snapshot=U.clone(it);return { ref: ref, retry: false }; }), idx: 0, results: [],
+    var sess = { id: 'S' + Date.now() + '-' + Math.random().toString(36).slice(2,7), mode: mode, title: title, queue: refs.map(function (r) {var ref=U.clone(r),it=resolve(r);if(it&&(it.examId==='exam2'||it.examId==='final'))ref.snapshot=U.clone(it);return { ref: ref, retry: false }; }), idx: 0, results: [],
       retries: 0, started: Date.now(), updated: Date.now(), drafts: {}, confidence: {}, assisted: {}, revealed: {}, bossId: opt.bossId || null, noRetry: !!opt.noRetry, orders: {}, back: opt.back || 'practice' };
     var s = L.store.load(); sess.examId=opt.examId||(L.examScope?L.examScope.current():'exam1'); archiveSession(s,s.session); s.session = sess; L.store.save(); return sess;
   }
@@ -223,6 +223,7 @@
       if (q.ref.gen) again = { gen: q.ref.gen, seed: U.newSeed(), opt: q.ref.opt };
       else if (it.retryIds && it.retryIds.length) { var next=it.retryIds.find(function(id){return !!REG[id];});again=next?{id:next,snapshot:U.clone(REG[next])}:null; }
       else { var alt = pickFor(it.c, ex); again = alt || { id: it.id }; }
+      if (again && it.examId==='final' && !again.snapshot) again.snapshot=U.clone(resolve(again));
       var already = sess.queue.filter(function (x) { return x.retry && x.c === it.c; }).length;
       if (already < 2) { sess.queue.splice(Math.min(sess.idx + 1 + gap, sess.queue.length), 0, { ref: again, retry: true, c: it.c }); sess.retries++; }
     }

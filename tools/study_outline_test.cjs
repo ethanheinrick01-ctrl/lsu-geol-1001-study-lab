@@ -22,8 +22,17 @@ scripts(fs.readFileSync(path.join(root, 'index.html'), 'utf8'));
 const L = context.L;
 L.engine.build();
 const protectedBefore = JSON.stringify([L.GUIDE, L.EXAM1, L.EXAM2, L.EXAM2_FINAL, L.engine.REG()]);
-let cards = 0;
+let cards = 0, finalCards = 0;
 for (const card of Object.values(L.GUIDE).flat()) {
+  if (L.examScope.conceptOwner(card.c[0]) === 'final') {
+    assert.match(card.html, /class="e2-note-group"/);
+    assert.match(card.html, /class="pilot-term"/);
+    assert.match(card.html, /class="study-definition"/);
+    assert.match(card.html, /class="pilot-checkpoint"/);
+    assert.equal(L.studyOutline.format(card.id, card.html), card.html);
+    finalCards++;
+    continue;
+  }
   const plan = L.studyOutlineData.cards[card.id];
   assert.ok(plan, `Missing chapter outline: ${card.id}`);
   assert.equal(plan.source, card.html, `Stale chapter outline: ${card.id}`);
@@ -33,6 +42,7 @@ for (const card of Object.values(L.GUIDE).flat()) {
   assert.equal(L.studyOutline.format(card.id, card.html + ' Changed.'), card.html + ' Changed.', 'Changed sources must stay intact');
   cards++;
 }
+assert.ok(finalCards >= L.FINAL_STUDY.topics.length, 'Every Final Exam lesson needs a reading card');
 for (const topic of L.EXAM1.topics) {
   assert.equal(L.studyOutlineData.cards['exam1-' + topic.id].source, topic.html);
 }
@@ -77,7 +87,7 @@ for (const n of [20,39,42,43]) assert.ok(L.studyOutlineData.focus[n].groups.some
 const plume = L.studyOutlineData.cards['g10-4-a'].html;
 assert.match(plume, /hot solid rock<\/mark>\.<ul class="study-subpoints"><li>Melting near the lithosphere supplies liquid magma\.<\/li><li>The plume is not a pipe/);
 assert.equal(JSON.stringify([L.GUIDE, L.EXAM1, L.EXAM2, L.EXAM2_FINAL, L.engine.REG()]), protectedBefore);
-console.log(`PASS ${cards} chapter cards, ${L.EXAM1.topics.length} Exam 1 topics and ${groups} Focus teaching groups; stale-source, idempotence, escaping and content-preservation checks`);
+console.log(`PASS ${cards} prior chapter cards, ${finalCards} Final Exam reading cards, ${L.EXAM1.topics.length} Exam 1 topics and ${groups} Focus teaching groups; stale-source, idempotence, escaping and content-preservation checks`);
 
 // Annotation selections must remain tied to the actual teaching, never a page-wide glossary.
 const text = html => html.replace(/<h[2-4]\b[^>]*>[\s\S]*?<\/h[2-4]>/g, '').replace(/<[^>]*>/g, '').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'");

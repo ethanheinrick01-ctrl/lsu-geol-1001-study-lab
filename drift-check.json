@@ -1,5 +1,5 @@
 {
-  "include": "^e2-(rev|ppt|c)-",
-  "note": "GEOL 1001 Exam 2 is a hard paper exam (fill-in and diagram labeling), so no stem-length ceiling is set: difficulty stays. The check blocks caveat and authoring-voice wording only.",
+  "include": "^(e2-(rev|ppt|c)-|final-c13-)",
+  "note": "GEOL 1001 uses hard paper exams (fill-in and diagram labeling), so no stem-length ceiling is set: difficulty stays. The check blocks caveat and authoring-voice wording only.",
   "allow": []
 }

@@ -39,15 +39,18 @@
     var h = (location.hash || '#exams').slice(1), parts = h.split('/'), r = parts[0] || 'exams';
     document.body.classList.toggle('exam-picker-page', r === 'exams');
     if(L.examScope){
-      if(r==='exam1'||r==='exam2')L.examScope.select(r);
-      if(r==='guide'&&parts[1]){var target=secById(parts[1]),ch=target?target.ch:+parts[1].replace('ch','');if(ch)L.examScope.select(ch>=7?'exam2':'exam1');}
-      var label=document.getElementById('exam-label');if(label)label.textContent='Physical Geology · '+(L.examScope.current()==='exam2'?'Exam 2 · '+L.exam2.chapterLabel(L.EXAMS.exam2.available):'Exam 1');
+      if(Object.hasOwn(L.EXAMS,r))L.examScope.select(r);
+      if(r==='guide'&&parts[1]){var target=secById(parts[1]),ch=target?target.ch:+parts[1].replace('ch','');if(ch){var lane=target?L.examScope.owner(target):Object.keys(L.EXAMS).find(function(id){return L.EXAMS[id].available.includes(ch);});if(lane)L.examScope.select(lane);}}
+      var label=document.getElementById('exam-label');if(label)label.textContent='Physical Geology · '+(L.examScope.current()==='exam2'?'Exam 2 · '+L.exam2.chapterLabel(L.EXAMS.exam2.available):examLabel());
     }
     document.onkeydown = null;
     setNav(r === 'exam2' && ['home','guide','practice','review','cases','boss','progress','mock','sources','zhuang'].indexOf(parts[1])>=0 ? parts[1] : r === 'evidence' ? 'sources' : r === 'session' ? (S.load().session && ['boss','case'].includes(S.load().session.mode) ? (S.load().session.mode==='case'?'cases':'boss') : 'practice') : r);
     var views = { home: pHome, guide: pGuide, practice: pPractice, session: pSession, review: pReview, cases: pCases, zhuang: pZhuang, sources: pEvidence, boss: pBoss, mock: pMock, exam1: function(args){ L.exam1.view(main,args); }, progress: pProgress, evidence: pEvidence, data: pData };
     if(r==='exams')pExams();
     else if(r==='exam2')L.exam2.view(main,parts.slice(1));
+    else if(r==='final'&&L.finalExam)L.finalExam.view(main,parts.slice(1));
+    else if(examId()==='final'&&r==='guide')L.finalExam.view(main,['guide',parts[1]]);
+    else if(examId()==='final'&&['home','practice','mock'].includes(r))go('final');
     else if(L.examScope&&L.examScope.current()==='exam2'&&['mock'].indexOf(r)>=0)L.exam2.view(main,[r].concat(parts.slice(1)));
     else (views[r] || pHome)(parts.slice(1));
     if(L.exam2Reading)L.exam2Reading.apply(main);
@@ -71,7 +74,8 @@
       '<div class="exam-picker-grid">'+
       '<article class="exam-picker-card"><span class="exam-picker-status">Study lab available</span><h2>Exam 1</h2><p>Chapters 1–6. Guide, practice, mocks, and narrated films.</p><a href="#exam1" aria-label="Open Exam 1 study lab">Open study lab →</a></article>'+
       '<article class="exam-picker-card"><span class="exam-picker-status">'+L.exam2.chapterLabel(L.EXAMS.exam2.available)+' available</span><h2>Exam 2</h2><p>Guide, practice, Boss drills, and narrated films for '+L.exam2.chapterLabel(L.EXAMS.exam2.available)+'.</p><p class="exam-picker-scope">'+(L.EXAM2_FINAL?'35 MC + 9 investigations · final mocks available':L.EXAMS.exam2.reviewPending?'Class review pending · mocks locked':'Source review pending')+'</p><a href="#exam2" aria-label="Open Exam 2 study lab">Open study lab →</a></article>'+
-      '</div><p class="exam-picker-note">Exam 1 and '+L.exam2.chapterLabel(L.EXAMS.exam2.available)+' of Exam 2 are available.</p><div class="exam-picker-rule"></div></div>';
+      (L.EXAMS.final?'<article class="exam-picker-card"><span class="exam-picker-status">Chapter 13 available</span><h2>Final Exam</h2><p>Climate, weather, and geology. Read the notes and practice with figures from the lecture deck.</p><a href="#final" aria-label="Open Final Exam study lab">Open study lab →</a></article>':'')+
+      '</div><p class="exam-picker-note">Exam 1'+(L.EXAMS.final?', ':' and ')+L.exam2.chapterLabel(L.EXAMS.exam2.available)+' of Exam 2'+(L.EXAMS.final?', and Chapter 13 of the Final Exam':'')+' are available.</p><div class="exam-picker-rule"></div></div>';
   }
 
   // ---------------- Home ----------------
@@ -438,6 +442,18 @@
     main=target;var views={home:pHome,guide:pGuide,practice:pPractice,review:pReview,cases:pCases,boss:pBoss,progress:pProgress,data:pData,zhuang:pZhuang,sources:pEvidence,evidence:pEvidence};
     if(!views[page])return false;views[page](args||[]);return true;
   }
-  L.app = { boot: boot, route: route, go: go, startPractice: startPractice, sharedView: sharedView };
+  function resumeSession(id) {
+    var s=S.load(), current=s.session;
+    var entry=current&&current.id===id?current:s.sessionHistory.find(function(x){return x.id===id;});
+    if(!entry||(entry.examId||'exam1')!==examId()||!entry.queue.length)return;
+    if(current&&current.id!==id){
+      var at=s.sessionHistory.findIndex(function(x){return x.id===current.id;});
+      if(at<0)s.sessionHistory.push(U.clone(current));else s.sessionHistory[at]=U.clone(current);
+    }
+    s.session=U.clone(entry);
+    s.session.idx=Math.min(s.session.idx,s.session.queue.length-1);
+    S.save();go('session');window.scrollTo(0,0);
+  }
+  L.app = { boot: boot, route: route, go: go, startPractice: startPractice, sharedView: sharedView, resumeSession: resumeSession };
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot); else boot();
 })(window);

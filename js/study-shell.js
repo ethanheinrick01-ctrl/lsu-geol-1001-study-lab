@@ -19,25 +19,29 @@
     return /focus|sets|take|result/.test(hash) ? 'focus' : /review/.test(hash) ? 'review' : /progress|history/.test(hash) ? 'progress' : 'study';
   }
   function shell() {
-    const kind = activeKind(location.hash);
-    if (header.dataset.shared === kind && header.querySelector('.shared-nav')) return;
-    header.dataset.shared = kind;
-    header.innerHTML = '<div class="shared-header"><div class="shared-identity"><a class="pilot-brand" href="#exam2">GEOL 1001 <span>Physical Geology · Exam 2</span></a><details class="shared-tools"><summary>Tools</summary><div class="pilot-tools-menu"><a href="#exam2/history">Saved sessions</a><a href="#data">Back up / restore progress</a><a href="#exam2/sources">Sources &amp; coverage</a><a href="#exam2/zhuang">Instructor guidance</a><a href="#exams">Switch exam</a></div></details></div><nav class="shared-nav" aria-label="Main">' + nav.map(([label, href, id]) => '<a href="' + href + '"' + (kind === id ? ' aria-current="page"' : '') + '>' + label + '</a>').join('') + '</nav></div>';
+    const scope = L.examScope.current(), final = scope === 'final';
+    const kind = final ? 'study' : activeKind(location.hash), key = scope + '/' + kind;
+    if (header.dataset.shared === key && header.querySelector('.shared-nav')) return;
+    header.dataset.shared = key;
+    const tabs = final ? [['Study', '#final', 'study']] : nav;
+    const laneTools = final ? '<a href="#final/progress">Chapter progress</a><a href="#review">Review misses</a>' : '<a href="#exam2/zhuang">Instructor guidance</a>';
+    header.innerHTML = '<div class="shared-header"><div class="shared-identity"><a class="pilot-brand" href="#'+scope+'">GEOL 1001 <span>Physical Geology · '+L.EXAMS[scope].label+'</span></a><details class="shared-tools"><summary>Tools</summary><div class="pilot-tools-menu"><a href="#'+scope+'/history">Saved sessions</a><a href="#data">Back up / restore progress</a><a href="#'+scope+'/sources">Sources &amp; coverage</a>'+laneTools+'<a href="#exams">Switch exam</a></div></details></div><nav class="shared-nav" aria-label="Main">' + tabs.map(([label, href, id]) => '<a href="' + href + '"' + (kind === id ? ' aria-current="page"' : '') + '>' + label + '</a>').join('') + '</nav></div>';
   }
   function chapterName(ch) { return L.CHAPTERS[ch].name.replace(/^Ch(?:apter)?\s*\d+\s*[:·–—-]?\s*/i, ''); }
-  function chapterIndex() {
+  function chapterIndex(scope) {
     const stats = L.engine.conceptStats();
-    return element('section', 'shared-chapters', '<h2>Choose a chapter</h2><div class="shared-chapter-list">' + L.EXAMS.exam2.available.map(ch => {
-      const topics = L.EXAM2.topics.filter(t => t.ch === ch);
+    return element('section', 'shared-chapters', '<h2>Choose a chapter</h2><div class="shared-chapter-list">' + L.EXAMS[scope].available.map(ch => {
+      const topics = (scope === 'final' ? L.FINAL_STUDY : L.EXAM2).topics.filter(t => t.ch === ch);
       const cs = [...new Set(topics.flatMap(t => t.concepts))].filter(c => L.engine.hasPracticeContent(c));
       const mastered = cs.filter(c => stats[c]?.status === 'mastered').length;
-      return '<a class="shared-chapter-link" href="#exam2/chapter/' + ch + '"><span class="shared-chapter-number">' + ch + '</span><span><strong>' + esc(chapterName(ch)) + '</strong><small>' + topics.length + ' lessons · ' + mastered + '/' + cs.length + ' concepts mastered</small></span><span aria-hidden="true">→</span></a>';
+      return '<a class="shared-chapter-link" href="#' + scope + '/chapter/' + ch + '"><span class="shared-chapter-number">' + ch + '</span><span><strong>' + esc(chapterName(ch)) + '</strong><small>' + topics.length + ' lessons · ' + mastered + '/' + cs.length + ' concepts mastered</small></span><span aria-hidden="true">→</span></a>';
     }).join('') + '</div>');
   }
   function hub() {
     const h1 = main.querySelector('h1'); if (!h1 || h1.dataset.shared) return;
     h1.dataset.shared = 'true';
-    const chapter = /^#exam2\/chapter\/(\d+)$/.exec(location.hash)?.[1];
+    const scope = L.examScope.current(), final = scope === 'final';
+    const chapter = /^#(?:exam2|final)\/chapter\/(\d+)$/.exec(location.hash)?.[1];
     const quick = main.querySelector('.pilot-quick-practice'), builder = main.querySelector('.pilot-builder');
     const formats = main.querySelector('.pilot-other-practice'), resume = main.querySelector('.pilot-resume');
     const oldFocus = [...main.querySelectorAll(':scope > section')].find(e => e.querySelector('a[href="#exam2/focus"]'));
@@ -47,7 +51,7 @@
     if (resumeLabel) resumeLabel.textContent = resumeLabel.textContent.replace(/^(Exam \d+) · \1 · /, '$1 · ');
     if (chapter) {
       h1.textContent = chapterName(+chapter);
-      h1.before(element('p', 'shared-crumb', '<a href="#exam2">Study</a> / Chapter ' + chapter));
+      h1.before(element('p', 'shared-crumb', '<a href="#'+scope+'">Study</a> / Chapter ' + chapter));
       intro.textContent = 'Choose a lesson, read the notes, then check what you can recall.';
       resume?.remove();
       main.querySelectorAll('.pilot-topic-chapter > h2').forEach(h => h.remove());
@@ -56,11 +60,12 @@
         if (detail) detail.querySelector('summary').textContent = detail.querySelector('summary').textContent.replace('Mastery details', 'Progress details');
       });
     } else {
-      h1.textContent = 'What are you studying?';
-      intro.textContent = 'Learn a section, try it from memory, and return to what needs work.';
+      h1.textContent = final ? 'Final Exam' : 'What are you studying?';
+      if (!final) intro.textContent = 'Learn a section, try it from memory, and return to what needs work.';
       main.querySelectorAll('.pilot-topic-chapter').forEach(n => n.remove());
-      main.append(chapterIndex());
+      main.append(chapterIndex(scope));
     }
+    if (final) return;
     const practice = element('section', 'shared-practice-options', '<h2>Ready to practice?</h2><p>Use your chapter work, review mistakes, or try the exam format.</p><div class="row"><a class="btn" href="#review">Review what needs work</a><a class="btn" href="#exam2/sets">Mock exams · 35 + 9</a></div>');
     if (quick) practice.append(disclosure('Quick practice', [quick]));
     if (builder) practice.append(builder);
@@ -74,7 +79,7 @@
     const stack = main.querySelector('.pilot-reading-stack');
     if (!stack || stack.dataset.shared) return;
     stack.dataset.shared = 'true';
-    const topic = L.exam2.topic(location.hash.split('/')[2]); if (!topic) return;
+    const topic = (L.examScope.current() === 'final' ? L.finalExam : L.exam2).topic(location.hash.split('/')[2]); if (!topic) return;
     main.querySelector('.pilot-intro')?.remove();
     main.querySelector(':scope > .small.muted')?.remove();
     const mastery = main.querySelector(':scope > .mastery-details');
@@ -82,7 +87,8 @@
     const actions = main.querySelector('.pilot-lesson-actions');
     if (toolbar && actions) {
       toolbar.append(...actions.children); actions.remove();
-      toolbar.querySelector('#pilot-practice').textContent = 'Practice section ' + topic.sections.join(', ');
+      const practice = toolbar.querySelector('#pilot-practice');
+      if (practice) practice.textContent = 'Practice section ' + topic.sections.join(', ');
     }
     if (mastery) main.append(mastery);
     compactKey();
@@ -203,13 +209,15 @@
     const d = disclosure('Exam format, scoring & limits', []); card.before(d); d.append(card);
   }
   function apply() {
-    const active = L.examScope.current() === 'exam2' && !/^#exams$|^#exam1/.test(location.hash);
+    const scope = L.examScope.current();
+    const active = ['exam2','final'].includes(scope) && !/^#exams$|^#exam1/.test(location.hash);
     document.body.classList.toggle('shared-preview', active);
     if (!active || !main.children.length) return;
     shell();
     const hash = location.hash;
-    if (/^#exam2(?:\/(?:practice|chapter\/\d+))?\/?$/.test(hash)) hub();
-    else if (/^#exam2\/topic\//.test(hash)) lesson();
+    if (/^#(?:exam2|final)(?:\/(?:practice|chapter\/\d+))?\/?$/.test(hash)) hub();
+    else if (/^#(?:exam2|final)\/topic\//.test(hash)) lesson();
+    else if (scope === 'final') return;
     else if (/^#exam2\/focus(?:\/\d+)?$/.test(hash)) focus();
     else if (hash === '#review') review();
     else if (hash === '#exam2/progress') progress();

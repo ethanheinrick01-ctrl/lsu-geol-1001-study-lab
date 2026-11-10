@@ -4,35 +4,35 @@
 'use strict';
 const E=L.engine,S=L.store,esc=L.util.esc,practiceRoute='exam2';
 const chosen=new Set();let requested=20,customPlan=null,filter='';
-function concepts(ids){
- const allowed=new Set(L.examScope.concepts('exam2'));
+function concepts(ids,examId='exam2'){
+ const allowed=new Set(L.examScope.concepts(examId));
  return [...new Set(ids||[])].filter(c=>allowed.has(c)&&E.hasPracticeContent(c));
 }
-function inventory(ids){
- const selected=new Set(concepts(ids)),cases=E.CASE_OF();
- const items=E.itemsFor(it=>selected.has(it.c)&&it.examId==='exam2'&&it.t!=='teach'&&!cases[it.id]&&it.pool!=='boss'&&it.pool!=='exam1');
+function inventory(ids,examId='exam2'){
+ const selected=new Set(concepts(ids,examId)),cases=E.CASE_OF();
+ const items=E.itemsFor(it=>selected.has(it.c)&&it.examId===examId&&it.t!=='teach'&&!cases[it.id]&&it.pool!=='boss'&&it.pool!=='exam1');
  return {authored:items.length,generated:[...selected].some(c=>(L.GEN_FOR[c]||[]).length>0)};
 }
-function plan(ids,n){
- const cs=concepts(ids),pool=inventory(cs);
+function plan(ids,n,examId='exam2'){
+ const cs=concepts(ids,examId),pool=inventory(cs,examId);
  // An explicit empty selection must not fall back to mixed/all-concept practice.
- const refs=cs.length?E.practiceRefs({concepts:cs,n:n,examId:'exam2'}):[];
- return {concepts:cs,refs:refs,pool:pool,requested:n};
+ const refs=cs.length?E.practiceRefs({concepts:cs,n:n,examId:examId}):[];
+ return {concepts:cs,refs:refs,pool:pool,requested:n,examId:examId};
 }
 function countText(p){return p.pool.authored+' aligned questions available'+(p.pool.generated?' + generated variations':'')+' · '+p.refs.length+' in this set';}
 function launch(p,title,back){
  if(!p||!p.refs.length)return false;
  // The same prepared references advertised in the UI launch the run.
  // newSession archives the previous session, retaining its drafts and first answers.
- L.examScope.select('exam2');E.newSession('practice',title,p.refs,{examId:'exam2',back:back});L.app.go('session');window.scrollTo(0,0);return true;
+ const examId=p.examId||'exam2';L.examScope.select(examId);E.newSession('practice',title,p.refs,{examId:examId,back:back});L.app.go('session');window.scrollTo(0,0);return true;
 }
 function sectionFooter(title,ids,context={}){
- const p=plan(ids,8),footer=document.createElement('footer');footer.className='pilot-section-practice';
+ const p=plan(ids,8,context.examId),footer=document.createElement('footer');footer.className='pilot-section-practice';
  const section=context.section||ids.map(c=>L.SECTIONS.find(s=>s.id===L.CONCEPTS[c]?.sec)?.n).filter(Boolean).join(', '),back=context.back||practiceRoute;
  footer.innerHTML='<p class="pilot-pool-count">'+esc(countText(p))+'</p><button type="button" class="btn pri" '+(!p.refs.length?'disabled':'')+' aria-label="Practice textbook section '+esc(section)+' from '+esc(title)+'">Study this section · '+p.refs.length+' questions →</button><p class="pilot-practice-help">Practice covers textbook section '+esc(section)+', including its related teaching groups. Checked answers use your existing mastery record.</p>';
  footer.querySelector('button').onclick=()=>launch(p,section+' · '+title+' · section practice',back);return footer;
 }
-function resumeHTML(){const s=S.load().session;return s&&s.examId==='exam2'?'<section class="card pilot-resume"><h2>Continue studying</h2><p>Exam 2 · '+esc(s.title)+' · '+Math.min(s.idx+1,s.queue.length)+'/'+s.queue.length+'</p><div class="row"><a class="btn pri" href="#session">Resume saved session</a><a class="btn" href="#exam2/history">My study history</a></div></section>':'';}
+function resumeHTML(examId='exam2'){const s=S.load().session;return s&&s.examId===examId?'<section class="card pilot-resume"><h2>Continue studying</h2><p>'+esc(L.EXAMS[examId].label)+' · '+esc(s.title)+' · '+Math.min(s.idx+1,s.queue.length)+'/'+s.queue.length+'</p><div class="row"><a class="btn pri" href="#session">Resume saved session</a><a class="btn" href="#'+examId+'/history">My study history</a></div></section>':'';}
 function catalog(){
  const valid=new Set(concepts(L.examScope.concepts('exam2')));
  return L.EXAM2.topics.map(t=>({id:t.id,ch:t.ch,title:t.title,concepts:t.concepts.filter(c=>valid.has(c))})).filter(t=>t.concepts.length);

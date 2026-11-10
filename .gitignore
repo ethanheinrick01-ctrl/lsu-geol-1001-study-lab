@@ -55,3 +55,6 @@ js/content/ch10-*.js
 js/ch10-motion.js
 animations/chapter10/
 videos/chapter10/
+
+# Private Chapter 13 figures from the supplied lecture and Connect packet.
+/source-materials/chapter13/

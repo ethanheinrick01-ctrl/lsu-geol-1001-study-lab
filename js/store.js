@@ -91,14 +91,14 @@
       var at=into.sessionHistory.findIndex(function(x){return x.id===r.id;});
       if(at<0)into.sessionHistory.push(r);else into.sessionHistory[at]=mergeSession(into.sessionHistory[at],r,into);
     });
-    if(!into.session && from.session){into.session=from.session;into.settings.activeExam=from.session.examId||'exam1';}
+    if(!into.session && from.session && Object.hasOwn(L.EXAMS,from.session.examId||'exam1')){into.session=from.session;into.settings.activeExam=from.session.examId||'exam1';}
     Object.keys(from.sessionsByExam||{}).forEach(function(id){
       var incoming=from.sessionsByExam[id],cur=into.sessionsByExam[id];if(!incoming)return;
       if(!cur){into.sessionsByExam[id]=incoming;return;}
       if(cur.id!==incoming.id){if(!into.sessionHistory.some(function(r){return r.id===incoming.id;}))into.sessionHistory.push(incoming);return;}
       into.sessionsByExam[id]=mergeSession(cur,incoming,into);
     });
-    var active=into.settings.activeExam==='exam2'?'exam2':'exam1';
+    var active=Object.hasOwn(L.EXAMS,into.settings.activeExam)?into.settings.activeExam:'exam1';
     if(into.session&&into.sessionsByExam[active]&&into.session.id===into.sessionsByExam[active].id)into.session=into.sessionsByExam[active];
     if (from.legacy && !into.legacy) into.legacy = from.legacy;
     return added;
