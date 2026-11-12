@@ -66,6 +66,7 @@
   }
 
   function pExams() {
+    var finalChapters = L.EXAMS.final && L.exam2.chapterLabel(L.EXAMS.final.available);
     main.innerHTML = '<div class="exam-picker">'+
       '<div class="exam-picker-crumb"><a href="https://ethanheinrick01-ctrl.github.io/PUGZPLZ/">← All classes</a></div>'+
       '<section class="exam-picker-intro"><p class="exam-picker-course">GEOL 1001 · GENERAL GEOLOGY: PHYSICAL</p>'+
@@ -74,8 +75,8 @@
       '<div class="exam-picker-grid">'+
       '<article class="exam-picker-card"><span class="exam-picker-status">Study lab available</span><h2>Exam 1</h2><p>Chapters 1–6. Guide, practice, mocks, and narrated films.</p><a href="#exam1" aria-label="Open Exam 1 study lab">Open study lab →</a></article>'+
       '<article class="exam-picker-card"><span class="exam-picker-status">'+L.exam2.chapterLabel(L.EXAMS.exam2.available)+' available</span><h2>Exam 2</h2><p>Guide, practice, Boss drills, and narrated films for '+L.exam2.chapterLabel(L.EXAMS.exam2.available)+'.</p><p class="exam-picker-scope">'+(L.EXAM2_FINAL?'35 MC + 9 investigations · final mocks available':L.EXAMS.exam2.reviewPending?'Class review pending · mocks locked':'Source review pending')+'</p><a href="#exam2" aria-label="Open Exam 2 study lab">Open study lab →</a></article>'+
-      (L.EXAMS.final?'<article class="exam-picker-card"><span class="exam-picker-status">Chapter 13 available</span><h2>Final Exam</h2><p>Climate, weather, and geology. Read the notes and practice with figures from the lecture deck.</p><a href="#final" aria-label="Open Final Exam study lab">Open study lab →</a></article>':'')+
-      '</div><p class="exam-picker-note">Exam 1'+(L.EXAMS.final?', ':' and ')+L.exam2.chapterLabel(L.EXAMS.exam2.available)+' of Exam 2'+(L.EXAMS.final?', and Chapter 13 of the Final Exam':'')+' are available.</p><div class="exam-picker-rule"></div></div>';
+      (L.EXAMS.final?'<article class="exam-picker-card"><span class="exam-picker-status">'+finalChapters+' available</span><h2>Final Exam</h2><p>Read the notes and practice with course figures.</p><a href="#final" aria-label="Open Final Exam study lab">Open study lab →</a></article>':'')+
+      '</div><p class="exam-picker-note">Exam 1'+(L.EXAMS.final?', ':' and ')+L.exam2.chapterLabel(L.EXAMS.exam2.available)+' of Exam 2'+(L.EXAMS.final?', and '+finalChapters+' of the Final Exam':'')+' are available.</p><div class="exam-picker-rule"></div></div>';
   }
 
   // ---------------- Home ----------------

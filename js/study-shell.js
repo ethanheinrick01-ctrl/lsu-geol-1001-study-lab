@@ -34,14 +34,16 @@
       const topics = (scope === 'final' ? L.FINAL_STUDY : L.EXAM2).topics.filter(t => t.ch === ch);
       const cs = [...new Set(topics.flatMap(t => t.concepts))].filter(c => L.engine.hasPracticeContent(c));
       const mastered = cs.filter(c => stats[c]?.status === 'mastered').length;
-      return '<a class="shared-chapter-link" href="#' + scope + '/chapter/' + ch + '"><span class="shared-chapter-number">' + ch + '</span><span><strong>' + esc(chapterName(ch)) + '</strong><small>' + topics.length + ' lessons · ' + mastered + '/' + cs.length + ' concepts mastered</small></span><span aria-hidden="true">→</span></a>';
+      const coverage = scope === 'final' && L.CHAPTERS[ch].coverage;
+      return '<a class="shared-chapter-link" href="#' + scope + '/chapter/' + ch + '"><span class="shared-chapter-number">' + ch + '</span><span><strong>' + esc(chapterName(ch)) + '</strong><small>' + (coverage ? esc(coverage) + ' · ' : '') + topics.length + ' lessons · ' + mastered + '/' + cs.length + ' concepts mastered</small></span><span aria-hidden="true">→</span></a>';
     }).join('') + '</div>');
   }
   function hub() {
     const h1 = main.querySelector('h1'); if (!h1 || h1.dataset.shared) return;
     h1.dataset.shared = 'true';
     const scope = L.examScope.current(), final = scope === 'final';
-    const chapter = /^#(?:exam2|final)\/chapter\/(\d+)$/.exec(location.hash)?.[1];
+    const requested = /^#(?:exam2|final)\/chapter\/(\d+)$/.exec(location.hash)?.[1];
+    const chapter = final && !L.EXAMS.final.available.includes(Number(requested)) ? null : requested;
     const quick = main.querySelector('.pilot-quick-practice'), builder = main.querySelector('.pilot-builder');
     const formats = main.querySelector('.pilot-other-practice'), resume = main.querySelector('.pilot-resume');
     const oldFocus = [...main.querySelectorAll(':scope > section')].find(e => e.querySelector('a[href="#exam2/focus"]'));
@@ -52,7 +54,8 @@
     if (chapter) {
       h1.textContent = chapterName(+chapter);
       h1.before(element('p', 'shared-crumb', '<a href="#'+scope+'">Study</a> / Chapter ' + chapter));
-      intro.textContent = 'Choose a lesson, read the notes, then check what you can recall.';
+      const coverage = final && L.CHAPTERS[chapter].coverage;
+      intro.textContent = (coverage ? coverage + '. ' : '') + 'Choose a lesson, read the notes, then check what you can recall.';
       resume?.remove();
       main.querySelectorAll('.pilot-topic-chapter > h2').forEach(h => h.remove());
       main.querySelectorAll('.exam-topic').forEach(card => {

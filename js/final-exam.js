@@ -27,15 +27,15 @@
     return L.exam1.ui.topicLesson(t, {
       examId: 'final',
       html: cards + '<button type="button" class="btn" data-final-write="' + t.writing + '">Explain it in writing</button>',
-      mediaIntro: 'Figures from the Chapter 13 lecture deck and assigned materials. Select a figure to enlarge it.'
+      mediaIntro: 'Chapter ' + t.ch + ' course figures. Select a figure to enlarge it.'
     });
   }
 
   function view(main, args) {
-    const page = args[0];
+    const page = args[0], ch = Number(args[1]), available = L.EXAMS.final.available;
     const t = page === 'topic' ? topic(args[1]) : page === 'guide' ? topics.find(t => t.sec === args[1]) : null;
     if (page === 'guide') {
-      L.app.go(t ? lessonRoute(t) : 'final/chapter/13');
+      L.app.go(t ? lessonRoute(t) : 'final');
       return;
     }
     if (page === 'progress') {
@@ -47,15 +47,19 @@
     } else if (page === 'review') {
       main.innerHTML = L.exam1.ui.review('final');
     } else if (page === 'sources') {
-      main.innerHTML = '<h1>Chapter 13 sources</h1><section class="card"><p>The Chapter 13 PowerPoint determines the figure sequence. The November 10 lecture, ILEA 10, textbook and Connect screenshots support the explanations and checks.</p><p>Section 13.17 uses slides 52–54. The intake contains separate textbook extracts for the other numbered sections.</p></section>' +
-        topics.map(t => '<section class="card"><h2><a href="#' + lessonRoute(t) + '">' + esc(t.title) + '</a></h2>' + sourceHTML({src: t.sources}) + '</section>').join('');
+      main.innerHTML = '<h1>Final Exam sources</h1>' + available.map(n => {
+        const chapter = L.CHAPTERS[n];
+        return '<section class="card"><h2>' + esc(chapter.name) + '</h2><p>' + esc(chapter.evidence) + '</p>' +
+          (chapter.sourceNote ? '<p>' + esc(chapter.sourceNote) + '</p>' : '') + '</section>' +
+          topics.filter(t => t.ch === n).map(t => '<section class="card"><h3><a href="#' + lessonRoute(t) + '">' + esc(t.title) + '</a></h3>' + sourceHTML({src: t.sources}) + '</section>').join('');
+      }).join('');
     } else if (t) {
       main.innerHTML = lesson(t);
-    } else if (page === 'chapter' && args[1] === '13') {
-      main.innerHTML = '<h1>' + esc(L.CHAPTERS[13].name) + '</h1><p class="pilot-intro">Read the notes, then practice the lecture figures and concepts.</p>' +
-        '<section class="pilot-topic-chapter"><div class="exam-topics">' + topics.map(t => L.exam1.ui.topicCard(t, 'final')).join('') + '</div></section>';
+    } else if (page === 'chapter' && available.includes(ch)) {
+      main.innerHTML = '<h1>' + esc(L.CHAPTERS[ch].name) + '</h1><p class="pilot-intro">Read the notes, then practice the course figures and concepts.</p>' +
+        '<section class="pilot-topic-chapter"><div class="exam-topics">' + topics.filter(t => t.ch === ch).map(t => L.exam1.ui.topicCard(t, 'final')).join('') + '</div></section>';
     } else {
-      main.innerHTML = '<h1>Final Exam</h1><p class="pilot-intro">Start with Chapter 13, Climate, Weather, and Their Influences on Geology.</p>' + L.pilotPractice.resumeHTML('final');
+      main.innerHTML = '<h1>Final Exam</h1><p class="pilot-intro">Choose a chapter to read the notes and practice its figures.</p>' + L.pilotPractice.resumeHTML('final');
     }
     main.querySelectorAll('[data-e2-practice]').forEach(b => {
       const lesson = topic(b.dataset.e2Practice);

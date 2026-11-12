@@ -1,7 +1,6 @@
 /* Original Chapter 13 instruction with selected course figures. The full source packet stays private. */
 (function (L) {
   'use strict';
-  const A = L.A, topics = [];
   const deck = 'Ch 13 deck', text = 'Textbook 13', lecture = 'Nov 10 lecture';
   const ilea = 'ILEA 10', assignment = 'Connect assignment 13', assessment = 'Connect assessment 13';
   Object.assign(L.SOURCES, {
@@ -13,60 +12,14 @@
     [assessment]: {t: 'Chapter 13 Connect assessment · supplied captures', f: 'Ch13_Assessment_screenshots.zip', tier: 2, unit: 'capture'},
     'NHC Sandy': {t: 'National Hurricane Center · Hurricane Sandy report', f: 'https://www.nhc.noaa.gov/data/tcr/AL182012_Sandy.pdf', tier: 2, unit: 'section'}
   });
-  L.EXAMS.final = {id: 'final', label: 'Final Exam', chapters: [13], available: [13], mocks: false};
-  L.CHAPTERS[13] = {
+  const {chapter, term, highlight, group} = L.FINAL_STUDY;
+  const {img, section} = chapter(13, {
     name: 'Ch 13 · Climate, Weather, and Their Influences on Geology', short: 'Ch 13',
-    evidence: 'Chapter 13 lecture deck, November 10 lecture, ILEA 10, textbook extracts, and Connect captures.'
-  };
-  L.FINAL_STUDY = {topics};
+    evidence: 'Chapter 13 lecture deck, November 10 lecture, ILEA 10, textbook extracts, and Connect captures.',
+    sourceNote: 'Section 13.17 uses slides 52–54. The intake contains separate textbook extracts for the other numbered sections.'
+  }, (n, slides) => [deck + ':slides ' + slides, ...(n === 17 ? [] : [text + ':13.' + n])]);
 
-  const img = (file, alt, cap) => ({
-    kind: 'img', src: 'assets/figures/chapter13/' + file + '.webp', alt, cap
-  });
   const fig = (file, slide, description) => img(file, description, 'Chapter 13 PowerPoint · slide ' + slide + ' · ' + description);
-  const term = (name, definition, join = 'is') => '<mark class="pilot-term">' + name +
-    '</mark> ' + join + ' <mark class="study-definition">' + definition + '</mark>';
-  const highlight = phrase => '<mark class="e2-study-emphasis">' + phrase + '</mark>';
-  const group = (heading, slides, figures, points, label, check, more = []) =>
-    ({heading, slides, figures, points, label, check, more});
-
-  function section(n, title, concept, groups, author) {
-    const number = '13.' + n, sec = 'c13s' + n, c = sec + '-core', prefix = 'final-c13-' + n + '-';
-    const sources = (slides, extra = []) =>
-      [deck + ':slides ' + slides, ...(n === 17 ? [] : [text + ':' + number]), ...extra];
-    const cards = groups.map((g, i) => ({
-      id: 'g13-' + n + '-' + (i + 1), h: g.heading, c: [c], tier: 2,
-      html: '<section class="e2-note-group"><h3 class="e2-note-heading">' + g.heading +
-        '</h3><ul class="e2-note-points">' + g.points.map(p => '<li>' + p + '</li>').join('') +
-        '<li class="pilot-checkpoint"><b class="pilot-check-label">' + g.label + '</b>' + g.check + '</li></ul></section>',
-      src: sources(g.slides, g.more),
-      media: g.figures.map(m => ({...m, alt: g.heading + ' · ' + m.alt}))
-    }));
-    A.section({id: sec, n: number, ch: 13, examId: 'final', title, concepts: [[c, concept]], tier: 2});
-    A.cards(sec, cards);
-    const t = {
-      id: 'F13S' + n, sec, ch: 13, title: number + ' · ' + title, sections: [number],
-      concepts: [c], sources: [...new Set(cards.flatMap(card => card.src))],
-      media: cards.flatMap(card => card.media)
-    };
-    topics.push(t);
-    const owned = {examId: 'final', ch: 13};
-    author({
-      mc(id, slides, q, choices, why, media, extra) {
-        A.mc(prefix + id, c, q, choices, why, sources(slides, extra), {...owned, media});
-      },
-      fill(id, slides, q, answers, why, extra) {
-        A.fill(prefix + id, c, q, answers, why, sources(slides, extra), owned);
-      },
-      match(id, slides, q, pairs, why, media, extra, distractors) {
-        A.match(prefix + id, c, q, pairs, why, sources(slides, extra),
-          {...owned, media, wordBank: true, sourceFigure: !!media, extra: distractors});
-      },
-      write(id, slides, q, model, rubric, media, extra) {
-        t.writing = A.teach(prefix + id, c, q, model, rubric, sources(slides, extra), {...owned, media}).id;
-      }
-    });
-  }
 
   section(0, 'Read a regional climate map', 'Climate, weather, and the landscape', [
     group('One region, different climates', '2', [fig('fig-02','2','South Asia overview with mountains, dust, forests, and rivers')],

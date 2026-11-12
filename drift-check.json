@@ -1,5 +1,5 @@
 {
-  "include": "^(e2-(rev|ppt|c)-|final-c13-)",
+  "include": "^(e2-(rev|ppt|c)-|final-c1[34]-)",
   "note": "GEOL 1001 uses hard paper exams (fill-in and diagram labeling), so no stem-length ceiling is set: difficulty stays. The check blocks caveat and authoring-voice wording only.",
   "allow": []
 }
