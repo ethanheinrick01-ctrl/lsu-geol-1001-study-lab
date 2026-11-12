@@ -55,10 +55,10 @@
       h1.textContent = chapterName(+chapter);
       h1.before(element('p', 'shared-crumb', '<a href="#'+scope+'">Study</a> / Chapter ' + chapter));
       const coverage = final && L.CHAPTERS[chapter].coverage;
-      intro.textContent = (coverage ? coverage + '. ' : '') + 'Choose a lesson, read the notes, then check what you can recall.';
+      intro.textContent = (coverage ? coverage + '. ' : '') + (final ? 'Choose a mini-chapter to learn it or practice it.' : 'Choose a lesson, read the notes, then check what you can recall.');
       resume?.remove();
-      main.querySelectorAll('.pilot-topic-chapter > h2').forEach(h => h.remove());
-      main.querySelectorAll('.exam-topic').forEach(card => {
+      if (!final) main.querySelectorAll('.pilot-topic-chapter > h2').forEach(h => h.remove());
+      if (!final) main.querySelectorAll('.exam-topic').forEach(card => {
         const detail = card.querySelector('.mastery-details');
         if (detail) detail.querySelector('summary').textContent = detail.querySelector('summary').textContent.replace('Mastery details', 'Progress details');
       });

@@ -11,6 +11,67 @@
     return t ? E.itemsFor(it => it.examId === 'final' && it.media && t.concepts.includes(it.c)).map(it => ({id: it.id})) : [];
   }
 
+  function topicCard(t) {
+    const { mastered, concepts, total, auto, self } = L.exam1.ui.topicMetrics(t);
+    const route = '#' + lessonRoute(t);
+    const count = (n, word) => n + ' ' + word + (n === 1 ? '' : 's');
+    return '<article class="card exam-topic final-topic"><h3><a href="' + route + '">' + esc(t.title) + '</a></h3>' +
+      '<p class="small">' + mastered + '/' + concepts + ' mastered · ' + count(total, 'check') + ' · ' +
+      count(auto + self, 'first response') + '</p><div class="progress" role="progressbar" aria-label="' +
+      esc(t.title) + ' mastery" aria-valuemin="0" aria-valuemax="' + concepts + '" aria-valuenow="' + mastered +
+      '"><i style="width:' + L.util.pct(mastered, concepts) + '%"></i></div><div class="row">' +
+      '<a class="btn pri" href="' + route + '">Learn</a>' +
+      '<button type="button" class="btn" data-e2-practice="' + t.id + '">Practice topic</button>' +
+      (figureRefs(t.id).length ? '<button type="button" class="btn" data-e2-diagram="' + t.id + '">Practice figure</button>' : '') +
+      '</div>' + L.exam1.ui.masteryDetails(t, 'final') + '</article>';
+  }
+
+  function filmHTML(t) {
+    const film = L.FINAL_FILMS?.[t.id];
+    if (!film) return '';
+    const b = 'videos/final-study/' + film.id;
+    const stages = film.stages;
+    return '<section class="card ad-video final-film" data-process-film="' + t.id + '" aria-label="Narrated explanation">' +
+      '<h2>Watch the concept unfold</h2>' +
+      '<video controls playsinline preload="metadata" width="1280" height="720" poster="' + b + '.webp" aria-label="' +
+      esc(t.title) + ' narrated animation"><source src="' + b + '.mp4" type="video/mp4">' +
+      (typeof window.VTTCue === 'function' ? '' : '<track kind="captions" src="' + b + '.vtt" srclang="en" label="English narration">') +
+      'Download the video below to watch it.</video>' +
+      '<div class="ad-film-controls"><div class="ad-chapters" aria-label="Film chapters">' + stages.map(s =>
+        '<button type="button" class="btn small" data-film-seek="' + s.start + '">' + esc(s.label) + '</button>').join('') +
+      '</div><label>Film speed <select data-film-speed><option value="0.75">0.75×</option><option value="1" selected>1×</option>' +
+      '<option value="1.25">1.25×</option><option value="1.5">1.5×</option></select></label>' +
+      '<button type="button" class="btn small" data-final-captions aria-pressed="false">Captions: off</button></div>' +
+      '<div class="row"><a class="btn small" href="' + b + '.mp4" download>Save video</a>' +
+      '<a class="btn small" href="' + b + '.vtt" download>Save captions</a></div>' +
+      '<details class="ad-narration"><summary>Read the film transcript</summary>' + stages.map(s =>
+        '<h3>' + esc(s.label) + '</h3><p>' + esc(s.text) + '</p>').join('') + '</details>' +
+      '<details class="ad-narration"><summary>Visual sources and diagram notes</summary><ul>' + stages.map(s =>
+        '<li>' + esc(s.source) + ' · <a href="' + esc(s.asset) + '" target="_blank" rel="noopener">Open course figure</a></li>').join('') +
+      '</ul><p>Distances and process time are schematic. Narration uses Ethan’s synthetic voice.</p></details>' +
+      '<p class="small muted">Watching does not award mastery.</p></section>';
+  }
+
+  function wireFilm(main, t) {
+    const panel = main.querySelector('.final-film');
+    if (!panel) return;
+    L.animatedDiagrams.wire(main);
+    const video = panel.querySelector('video'), button = panel.querySelector('[data-final-captions]');
+    const cues = L.FINAL_FILMS[t.id].cues;
+    const custom = typeof window.VTTCue === 'function' && video.addTextTrack;
+    const track = custom ? video.addTextTrack('captions', 'English narration', 'en') : video.textTracks[0];
+    if (!track) { button.hidden = true; return; }
+    track.mode = 'hidden';
+    if (custom) cues.forEach(([start, end, text]) => track.addCue(new window.VTTCue(start, end, text)));
+    const update = () => {
+      const showing = track.mode === 'showing';
+      button.textContent = 'Captions: ' + (showing ? 'on' : 'off');
+      button.setAttribute('aria-pressed', String(showing));
+    };
+    button.onclick = () => { track.mode = track.mode === 'showing' ? 'hidden' : 'showing'; update(); };
+    video.textTracks.addEventListener('change', update);
+  }
+
   function sourceHTML(item) {
     const citations = (item.s || item.src || []).map(code => {
       const { loc, src } = L.srcParse(code);
@@ -26,6 +87,7 @@
     ).join('');
     return L.exam1.ui.topicLesson(t, {
       examId: 'final',
+      emphasis: filmHTML(t),
       html: cards + '<button type="button" class="btn" data-final-write="' + t.writing + '">Explain it in writing</button>',
       mediaIntro: 'Chapter ' + t.ch + ' course figures. Select a figure to enlarge it.'
     });
@@ -55,9 +117,11 @@
       }).join('');
     } else if (t) {
       main.innerHTML = lesson(t);
+      wireFilm(main, t);
     } else if (page === 'chapter' && available.includes(ch)) {
       main.innerHTML = '<h1>' + esc(L.CHAPTERS[ch].name) + '</h1><p class="pilot-intro">Read the notes, then practice the course figures and concepts.</p>' +
-        '<section class="pilot-topic-chapter"><div class="exam-topics">' + topics.filter(t => t.ch === ch).map(t => L.exam1.ui.topicCard(t, 'final')).join('') + '</div></section>';
+        '<section class="pilot-topic-chapter final-topic-list" aria-labelledby="final-mini-chapters"><h2 id="final-mini-chapters">Mini-chapters</h2><div class="exam-topics">' +
+        topics.filter(t => t.ch === ch).map(topicCard).join('') + '</div></section>';
     } else {
       main.innerHTML = '<h1>Final Exam</h1><p class="pilot-intro">Choose a chapter to read the notes and practice its figures.</p>' + L.pilotPractice.resumeHTML('final');
     }
