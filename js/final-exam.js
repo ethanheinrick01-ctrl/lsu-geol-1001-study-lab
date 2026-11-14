@@ -93,6 +93,52 @@
     });
   }
 
+  function addPracticeBuilder(main) {
+    const stats = E.conceptStats();
+    const valid = new Set(L.pilotPractice.concepts(L.examScope.concepts('final'), 'final'));
+    const groups = topics.map(t => ({...t, concepts: t.concepts.filter(c => valid.has(c))})).filter(t => t.concepts.length);
+    const builder = document.createElement('details');
+    builder.className = 'card pilot-builder final-builder';
+    builder.innerHTML = '<summary>Build your own practice</summary><p>Choose Final Exam concepts and a question count. Your answers and corrections are saved in your study history.</p>' +
+      '<form><div class="row"><label>Number of questions <select name="count"><option>8</option><option selected>15</option><option>20</option><option>30</option></select></label>' +
+      '<button class="btn" type="button" data-all>Select all concepts</button><button class="btn" type="button" data-clear>Clear selection</button></div>' +
+      L.EXAMS.final.available.map(ch => '<details class="final-builder-chapter"><summary>Chapter ' + ch + ' · ' + esc(L.CHAPTERS[ch].name) + '</summary>' +
+        groups.filter(t => t.ch === ch).map(t => {
+          const mastered = t.concepts.filter(c => stats[c]?.status === 'mastered').length;
+          const review = t.concepts.filter(c => stats[c]?.reviewOpen).length;
+          return '<details class="final-builder-topic"><summary>' + esc(t.title) + ' · ' + mastered + '/' + t.concepts.length + ' mastered · ' +
+            Math.round(mastered / t.concepts.length * 100) + '%' + (review ? ' · ' + review + ' need review' : '') + '</summary>' +
+            t.concepts.map(c => '<label class="pilot-concept"><input type="checkbox" name="concept" value="' + esc(c) + '"><span>' +
+              esc(L.CONCEPTS[c].name) + '<small>' + (stats[c]?.reviewOpen ? 'Needs review' : stats[c]?.status === 'mastered' ? 'Mastered' : 'Unfinished') + '</small></span></label>').join('') + '</details>';
+        }).join('') + '</details>').join('') +
+      '<div class="row"><button class="btn" type="button" data-unfinished>Select unfinished</button><button class="btn" type="button" data-review>Select needs review</button></div>' +
+      '<p role="status" aria-live="polite" data-count></p><button type="submit" class="btn pri" disabled>Start selected practice</button></form>';
+    main.append(builder);
+    const form = builder.querySelector('form');
+    const inputs = [...form.querySelectorAll('input[name="concept"]')];
+    let current;
+    function update() {
+      const ids = inputs.filter(input => input.checked).map(input => input.value);
+      current = L.pilotPractice.plan(ids, Number(form.elements.count.value), 'final');
+      form.querySelector('[data-count]').textContent = ids.length + ' concept' + (ids.length === 1 ? '' : 's') + ' selected · ' + current.pool.authored + ' eligible questions · ' + current.refs.length + ' in this set';
+      form.querySelector('[type="submit"]').disabled = !current.refs.length;
+    }
+    function select(predicate) {
+      inputs.forEach(input => { input.checked = predicate(input.value); });
+      update();
+    }
+    form.addEventListener('change', update);
+    form.querySelector('[data-all]').onclick = () => select(() => true);
+    form.querySelector('[data-clear]').onclick = () => select(() => false);
+    form.querySelector('[data-unfinished]').onclick = () => select(c => stats[c]?.status !== 'mastered');
+    form.querySelector('[data-review]').onclick = () => select(c => !!stats[c]?.reviewOpen);
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+      if (current.refs.length) L.pilotPractice.launch(current, 'Final Exam · Custom practice', 'final');
+    });
+    update();
+  }
+
   function view(main, args) {
     const page = args[0], ch = Number(args[1]), available = L.EXAMS.final.available;
     const t = page === 'topic' ? topic(args[1]) : page === 'guide' ? topics.find(t => t.sec === args[1]) : null;
@@ -125,6 +171,7 @@
     } else {
       main.innerHTML = '<h1>Final Exam</h1><p class="pilot-intro">Choose a chapter to read the notes and practice its figures.</p>' + L.pilotPractice.resumeHTML('final');
     }
+    if (!page || page === 'map') addPracticeBuilder(main);
     main.querySelectorAll('[data-e2-practice]').forEach(b => {
       const lesson = topic(b.dataset.e2Practice);
       b.onclick = () => L.pilotPractice.launch(

@@ -67,6 +67,7 @@
       if (!final) intro.textContent = 'Learn a section, try it from memory, and return to what needs work.';
       main.querySelectorAll('.pilot-topic-chapter').forEach(n => n.remove());
       main.append(chapterIndex(scope));
+      if (final && builder) main.append(builder);
     }
     if (final) return;
     const practice = element('section', 'shared-practice-options', '<h2>Ready to practice?</h2><p>Use your chapter work, review mistakes, or try the exam format.</p><div class="row"><a class="btn" href="#review">Review what needs work</a><a class="btn" href="#exam2/sets">Mock exams · 35 + 9</a></div>');
