@@ -173,3 +173,18 @@ body:not(.shared-preview) .shared-preview-note {display:none;}
  .shared-preview .shared-focus-tracker .e2-focus-metrics > div:last-child .progress {flex:1;}
  .shared-preview .pilot-key {gap:6px 16px;}
 }
+
+/* Final Exam practice builder follows the Aural Rehab controls. */
+.shared-preview #main .final-builder {margin:18px 0 24px;}
+.shared-preview #main .final-builder > summary {font-size:19px;font-weight:650;cursor:pointer;padding:8px 0;min-height:44px;color:#7cc4ff;}
+.shared-preview #main .final-builder-controls {display:flex;flex-wrap:wrap;align-items:center;gap:8px;}
+.shared-preview #main .final-builder select {margin-left:10px;padding:8px;}
+.shared-preview #main .final-builder-topic {padding:8px 0;border-bottom:1px solid #303947;}
+.shared-preview #main .final-builder-topic > summary {min-height:44px;padding:8px 0;cursor:pointer;color:#7cc4ff;}
+.shared-preview #main .final-builder-topic.topic-complete > summary {border-left:3px solid #7ea6b7;padding-left:10px;}
+.shared-preview #main .final-builder-caption {color:#b9c6d8;}
+.shared-preview #main .final-builder-options {display:grid;gap:8px;padding:10px 16px 16px;}
+.shared-preview #main .final-builder-options label {display:flex;align-items:baseline;flex-wrap:wrap;gap:10px;min-height:36px;}
+.shared-preview #main .final-builder-progress {font-size:13px;color:#bcc8d8;border:1px solid #526078;border-radius:5px;padding:2px 6px;margin-left:auto;}
+.shared-preview #main .final-builder-progress.is-mastered {border-color:#7ea6b7;color:#d2e6ef;}
+.shared-preview #main .final-builder [data-count] {font-size:14px;color:#b9c6d8;}

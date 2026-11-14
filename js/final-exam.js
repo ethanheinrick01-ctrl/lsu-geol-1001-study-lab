@@ -98,20 +98,26 @@
     const valid = new Set(L.pilotPractice.concepts(L.examScope.concepts('final'), 'final'));
     const groups = topics.map(t => ({...t, concepts: t.concepts.filter(c => valid.has(c))})).filter(t => t.concepts.length);
     const builder = document.createElement('details');
-    builder.className = 'card pilot-builder final-builder';
-    builder.innerHTML = '<summary>Build your own practice</summary><p>Choose Final Exam concepts and a question count. Your answers and corrections are saved in your study history.</p>' +
-      '<form><div class="row"><label>Number of questions <select name="count"><option>8</option><option selected>15</option><option>20</option><option>30</option></select></label>' +
+    builder.className = 'card final-builder';
+    builder.innerHTML = '<summary>Build your own practice</summary><p>Choose concepts from Final Exam and set your question count. Original answers stay in your history; misses and low-confidence answers may add follow-up questions.</p>' +
+      '<form><div class="final-builder-controls"><label>Number of questions <select name="count"><option>10</option><option selected>15</option><option>20</option><option>30</option></select></label>' +
       '<button class="btn" type="button" data-all>Select all concepts</button><button class="btn" type="button" data-clear>Clear selection</button></div>' +
-      L.EXAMS.final.available.map(ch => '<details class="final-builder-chapter"><summary>Chapter ' + ch + ' · ' + esc(L.CHAPTERS[ch].name) + '</summary>' +
-        groups.filter(t => t.ch === ch).map(t => {
-          const mastered = t.concepts.filter(c => stats[c]?.status === 'mastered').length;
-          const review = t.concepts.filter(c => stats[c]?.reviewOpen).length;
-          return '<details class="final-builder-topic"><summary>' + esc(t.title) + ' · ' + mastered + '/' + t.concepts.length + ' mastered · ' +
-            Math.round(mastered / t.concepts.length * 100) + '%' + (review ? ' · ' + review + ' need review' : '') + '</summary>' +
-            t.concepts.map(c => '<label class="pilot-concept"><input type="checkbox" name="concept" value="' + esc(c) + '"><span>' +
-              esc(L.CONCEPTS[c].name) + '<small>' + (stats[c]?.reviewOpen ? 'Needs review' : stats[c]?.status === 'mastered' ? 'Mastered' : 'Unfinished') + '</small></span></label>').join('') + '</details>';
-        }).join('') + '</details>').join('') +
-      '<div class="row"><button class="btn" type="button" data-unfinished>Select unfinished</button><button class="btn" type="button" data-review>Select needs review</button></div>' +
+      groups.map(t => {
+        const mastered = t.concepts.filter(c => stats[c]?.status === 'mastered').length;
+        const review = t.concepts.filter(c => stats[c]?.reviewOpen).length;
+        return '<details class="final-builder-topic' + (mastered === t.concepts.length ? ' topic-complete' : '') + '"><summary>' +
+          esc(t.title) + ' <span class="final-builder-caption">· ' + mastered + '/' + t.concepts.length + ' mastered · ' +
+          Math.round(mastered / t.concepts.length * 100) + '%' + (review ? ' · ' + review + ' need review' : '') + '</span></summary>' +
+          '<div class="final-builder-options"><label><input type="checkbox" data-topic-choice> All concepts in this topic</label>' +
+          t.concepts.map(c => {
+            const st = stats[c];
+            const status = st?.status === 'mastered' ? 'Mastered' : st?.att ? 'In progress' : 'Not started';
+            return '<label><input type="checkbox" name="concept" value="' + esc(c) + '"> ' + esc(L.CONCEPTS[c].name) +
+              '<span class="final-builder-progress' + (status === 'Mastered' ? ' is-mastered' : '') + '">' +
+              status + (st?.reviewOpen ? ' · Needs review' : '') + ' · ' + (st?.att || 0) + ' checks</span></label>';
+          }).join('') + '</div></details>';
+      }).join('') +
+      '<div class="final-builder-controls"><button class="btn" type="button" data-unfinished>Select unfinished</button><button class="btn" type="button" data-review>Select needs review</button></div>' +
       '<p role="status" aria-live="polite" data-count></p><button type="submit" class="btn pri" disabled>Start selected practice</button></form>';
     main.append(builder);
     const form = builder.querySelector('form');
@@ -120,14 +126,27 @@
     function update() {
       const ids = inputs.filter(input => input.checked).map(input => input.value);
       current = L.pilotPractice.plan(ids, Number(form.elements.count.value), 'final');
-      form.querySelector('[data-count]').textContent = ids.length + ' concept' + (ids.length === 1 ? '' : 's') + ' selected · ' + current.pool.authored + ' eligible questions · ' + current.refs.length + ' in this set';
+      form.querySelector('[data-count]').textContent = ids.length + ' concepts selected · ' + current.pool.authored + ' eligible questions' +
+        (current.refs.length ? ' · ' + current.refs.length + ' in this set' : '');
       form.querySelector('[type="submit"]').disabled = !current.refs.length;
+      form.querySelectorAll('.final-builder-topic').forEach(group => {
+        const choices = [...group.querySelectorAll('input[name="concept"]')];
+        const selected = choices.filter(input => input.checked).length;
+        const all = group.querySelector('[data-topic-choice]');
+        all.checked = selected === choices.length;
+        all.indeterminate = selected > 0 && selected < choices.length;
+      });
     }
     function select(predicate) {
       inputs.forEach(input => { input.checked = predicate(input.value); });
       update();
     }
-    form.addEventListener('change', update);
+    form.addEventListener('change', event => {
+      if (event.target.matches('[data-topic-choice]')) {
+        event.target.closest('.final-builder-topic').querySelectorAll('input[name="concept"]').forEach(input => { input.checked = event.target.checked; });
+      }
+      update();
+    });
     form.querySelector('[data-all]').onclick = () => select(() => true);
     form.querySelector('[data-clear]').onclick = () => select(() => false);
     form.querySelector('[data-unfinished]').onclick = () => select(c => stats[c]?.status !== 'mastered');
