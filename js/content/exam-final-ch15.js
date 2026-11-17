@@ -7,12 +7,13 @@
   L.SOURCES[connect] = {t: 'Chapter 15 Connect assignment', f: 'Assignment figures', tier: 2, unit: 'question'};
   L.SOURCES['Weathering lectures'] = {t: 'Professor Zhuang · November 12 and 17 lectures', f: 'Chapter 15 lecture transcripts', tier: 2, unit: 'lines'};
   const lecture = {0:'Nov 12, lines 1–5',1:'Nov 12, lines 7–15',2:'Nov 17, lines 27–39',3:'Nov 17, lines 39–43',4:'Nov 17, lines 45–51',5:'Nov 17, lines 53–69',6:'Nov 17, lines 71–91',8:'Nov 17, lines 93–113',9:'Nov 17, lines 113–117',10:'Nov 17, lines 119–131',11:'Nov 17, lines 133–139',12:'Nov 17, lines 139–143',13:'Nov 17, lines 145–149',14:'Nov 17, lines 151–155'};
+  L.SOURCES['Connect assessment 15'] = {t: 'Chapter 15 Connect assessment', f: 'Assessment captures', tier: 2, unit: 'question'};
   const {section, img} = chapter(15, {
     name: 'Ch 15 · Weathering, Soil, and Unstable Slopes', short: 'Ch 15',
-    coverage: 'Chapter introduction and supplied sections',
+    coverage: 'Introduction and sections 15.1–15.17',
     evidence: 'November 12 and 17 lectures, textbook figures, classroom exercise, and Connect.',
-    sourceNote: 'The packet omits standalone sections 15.7 and 15.15.'
-  }, (n, locator) => [text + ':' + locator, ...(lecture[n] ? ['Weathering lectures:' + lecture[n]] : [])]);
+    sourceNote: 'Sections 7 and 15 use the available lecture or Connect evidence. Their standalone textbook pages were absent from the packet.'
+  }, (n, locator) => locator.includes(':') ? [locator] : [text + ':' + locator, ...(lecture[n] ? ['Weathering lectures:' + lecture[n]] : [])]);
   const figure = (id, description) => img(id, description, 'Exploring Geology · Fig. ' + id);
 
   section(0, "Venezuela’s coastal fans", "Venezuela’s coastal fans", [
@@ -163,6 +164,28 @@
       ["karst"], "Water carrying dissolved carbon dioxide can dissolve limestone along a fracture and enlarge it into a passage.");
     write("explain", "15.6", "Explain how groundwater can remove limestone at one location and deposit calcite at another.",
       "Slightly acidic groundwater dissolves calcite from limestone along fractures. Dissolved calcium and bicarbonate travel with the water. When a drip loses carbon dioxide in a cave, calcite can precipitate.", ["Describe dissolution", "Identify transport in solution", "Explain precipitation at a drip"], figure("15.06.a1", "Assigned figure for section 15.6"));
+  });
+
+  section(7, "Karst landscapes and disappearing streams", "Karst landscapes and disappearing streams", [
+    group("Trace the water", "Weathering lectures:Nov 17, lines 83–91", [img("15.06.c1", "Karst terrain and underground openings", "Exploring Geology · 15.06.c1")], [
+      term("Karst", "terrain shaped by dissolution of soluble rock") + ".",
+      "Weakly acidic water enlarges fractures in limestone. When a stream encounters a sinkhole connected to those passages, its flow can leave the surface. A sparse network of surface streams can therefore coexist with abundant rainfall."
+    ], "Check your reasoning", "Follow a drop from a surface depression into a connected passage.", ["Connect assessment 15:question 11"]),
+    group("Read the relief", "Weathering lectures:Nov 17, lines 83–91", [img("15.06.a1", "Water pathways in limestone", "Exploring Geology · 15.06.a1")], [
+      term("Tower karst", "a landscape with steep residual hills rising above more deeply dissolved terrain") + ".",
+      "Prolonged dissolution in humid tropical settings can lower the ground around resistant remnants, leaving steep knobs, pillars and towers. Soluble evaporites can also develop karst. The drainage route and the material being dissolved both matter."
+    ], "Check your reasoning", "Look for the rock that remains between enlarged openings.", ["Connect assessment 15:question 11"])
+  ], ({mc, fill, match, write}) => {
+    mc("interpret", "Weathering lectures:Nov 17, lines 83–91", "A stream in a rainy limestone basin ends at a closed depression. Where is its water most likely to go?",
+      ["*Into connected passages beneath the depression", "Over the ridge into the next surface valley", "Into a lake sealed from the bedrock", "Back uphill along the tributary network"], "Dissolution can open a connected route from a sinkhole to underground drainage.", img("15.06.c1", "Karst terrain and underground openings", "Exploring Geology · 15.06.c1"), ["Connect assessment 15:question 11"]);
+    mc("apply", "Weathering lectures:Nov 17, lines 83–91", "Which setting best explains steep residual limestone towers in the lecture example?",
+      ["*Prolonged dissolution in a humid tropical setting", "Abrasion beneath a continental ice sheet", "Wind erosion in a polar desert", "Deposition along a dry mountain front"], "Dissolution can widen openings and lower the surrounding surface while steep remnants persist.", img("15.06.c1", "Karst terrain and underground openings", "Exploring Geology · 15.06.c1"), ["Connect assessment 15:question 11"]);
+    fill("recall", "Weathering lectures:Nov 17, lines 83–91", "Which term describes terrain shaped by dissolution of soluble rock?",
+      ["karst"], "Weakly acidic water enlarges fractures in limestone. When a stream encounters a sinkhole connected to those passages, its flow can leave the surface. A sparse network of surface streams can therefore coexist with abundant rainfall.", ["Connect assessment 15:question 11"]);
+    match("bank", "Weathering lectures:Nov 17, lines 83–91", "Match each observation to the corresponding geological term.",
+      [["Surface opening captures a stream", "Sinkhole"], ["Water follows enlarged fractures", "Underground drainage"], ["Steep residual limestone hill", "Karst tower"]], "Prolonged dissolution in humid tropical settings can lower the ground around resistant remnants, leaving steep knobs, pillars and towers. Soluble evaporites can also develop karst. The drainage route and the material being dissolved both matter.", img("15.06.c1", "Karst terrain and underground openings", "Exploring Geology · 15.06.c1"), ["Connect assessment 15:question 11"]);
+    write("explain", "Weathering lectures:Nov 17, lines 83–91", "Explain how a rainy limestone landscape can have both disappearing streams and steep isolated hills.",
+      "Water dissolves limestone along fractures and can divert streams underground through sinkholes. Uneven surface lowering leaves residual limestone hills.", ["Link water and soluble rock", "Trace the disappearing stream underground", "Explain why residual hills remain"], img("15.06.c1", "Karst terrain and underground openings", "Exploring Geology · 15.06.c1"), ["Connect assessment 15:question 11"]);
   });
 
   section(8, "Soil horizons and climate", "Soil horizons and climate", [
@@ -316,6 +339,28 @@
       ["susceptibility"], "In Alaska, earthquake shaking released rock from steep mountain slopes onto the glacier below.");
     write("explain", "15.14", "Use the Denali example to distinguish a susceptible slope from a trigger.",
       "Steep mountain relief made the Denali slopes susceptible. Earthquake shaking provided the trigger. Detached rock then descended across the glacier beneath the slopes.", ["Identify steep relief", "Identify earthquake shaking", "Explain how both contribute"], figure("15.14.b1", "Assigned figure for section 15.14"));
+  });
+
+  section(15, "Recognizing past failures and testing for movement", "Recognizing past failures and testing for movement", [
+    group("Locate the source", "Weathering lectures:Nov 17, lines 151–155", [img("slide-scarp", "Numbered landslide block diagram", "Connect assessment 15 · Q16")], [
+      term("A head scarp", "a steep break where displaced material pulled away from the slope") + ".",
+      "Start at the uphill edge of the displaced mass. A fresh break, displaced blocks and hummocky ground are clues to earlier movement. At the downslope end, the advancing material may override the old surface."
+    ], "Check your reasoning", "Trace the movement arrow back to the break in the hillside.", ["Connect assessment 15:questions 16 and 19"]),
+    group("Test the inference", "Weathering lectures:Nov 17, lines 151–155", [img("15.16.a3", "Mapped active and older landslide material", "Exploring Geology · 15.16.a3")], [
+      term("Susceptibility", "the tendency of a slope to fail under a given set of conditions") + ".",
+      "Compare the suspect slope with nearby slopes. Check its steepness, material and whether fractures or bedding dip out of the hillside. A scarp records past movement. Repeated measurements relative to stable ground test whether the mass is moving today."
+    ], "Check your reasoning", "Choose a stable reference outside the moving material.", ["Connect assessment 15:questions 16 and 19"])
+  ], ({mc, fill, match, write}) => {
+    mc("interpret", "Weathering lectures:Nov 17, lines 151–155", "Which numbered location marks where the block separated from the upper slope?",
+      ["*1", "2", "4", "5"], "Location 1 is the exposed face at the head. Location 4 is the downslope front.", img("slide-scarp", "Numbered landslide block diagram", "Connect assessment 15 · Q16"), ["Connect assessment 15:questions 16 and 19"]);
+    mc("apply", "Weathering lectures:Nov 17, lines 151–155", "Which result provides direct evidence that a mapped landslide is moving this season?",
+      ["*Markers shift relative to stable bedrock between surveys", "A single aerial image shows hummocky ground", "An old scarp cuts across the hillside", "Bedding planes dip toward the valley"], "Measured displacement over a known interval establishes movement during that interval.", img("slide-scarp", "Numbered landslide block diagram", "Connect assessment 15 · Q16"), ["Connect assessment 15:questions 16 and 19"]);
+    fill("recall", "Weathering lectures:Nov 17, lines 151–155", "Which term describes a steep break where displaced material pulled away from the slope?",
+      ["head scarp", "a head scarp"], "Start at the uphill edge of the displaced mass. A fresh break, displaced blocks and hummocky ground are clues to earlier movement. At the downslope end, the advancing material may override the old surface.", ["Connect assessment 15:questions 16 and 19"]);
+    match("bank", "Weathering lectures:Nov 17, lines 151–155", "Identify the five numbered features of the slide.",
+      [["1", "Head scarp"], ["2", "Fractures in the sliding block"], ["3", "Intact layers below the slide"], ["4", "Front of the slide"], ["5", "Valley in front of the slide"]], "Compare the suspect slope with nearby slopes. Check its steepness, material and whether fractures or bedding dip out of the hillside. A scarp records past movement. Repeated measurements relative to stable ground test whether the mass is moving today.", img("slide-scarp", "Numbered landslide block diagram", "Connect assessment 15 · Q16"), ["Connect assessment 15:questions 16 and 19"]);
+    write("explain", "Weathering lectures:Nov 17, lines 151–155", "A road crosses hummocky ground below a scarp. Explain what these features suggest and how to test whether movement continues.",
+      "The scarp and uneven displaced material suggest an earlier failure. Survey markers on the mass against stable ground outside it and compare their positions through time.", ["Identify evidence of earlier failure", "Select an external reference", "Use repeated observations"], img("slide-scarp", "Numbered landslide block diagram", "Connect assessment 15 · Q16"), ["Connect assessment 15:questions 16 and 19"]);
   });
 
   section(16, "The Slumgullion earthflow", "The Slumgullion earthflow", [

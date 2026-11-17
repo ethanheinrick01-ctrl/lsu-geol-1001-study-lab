@@ -5,12 +5,13 @@
   const text = 'Textbook 16', connect = 'Connect assignment 16';
   L.SOURCES[text] = {t: 'Exploring Geology · Chapter 16', f: 'Assigned textbook extracts', tier: 2, unit: 'section'};
   L.SOURCES[connect] = {t: 'Chapter 16 Connect assignment', f: 'Assignment figures', tier: 2, unit: 'question'};
+  L.SOURCES['Connect assessment 16'] = {t: 'Chapter 16 Connect assessment', f: 'Assessment captures', tier: 2, unit: 'question'};
   const {section, img} = chapter(16, {
     name: 'Ch 16 · Streams and Flooding', short: 'Ch 16',
-    coverage: 'Chapter introduction and supplied sections',
+    coverage: 'Introduction and sections 16.1–16.17',
     evidence: 'Assigned textbook figures and Connect practice. The November 17 transcript ends at the introduction to streams.',
-    sourceNote: 'The packet omits standalone sections 16.2, 16.5, and 16.14.'
-  }, (n, locator) => [text + ':' + locator]);
+    sourceNote: 'Sections 2, 5 and 14 use the available lecture or Connect evidence. Their standalone textbook pages were absent from the packet.'
+  }, (n, locator) => locator.includes(':') ? [locator] : [text + ':' + locator]);
   const figure = (id, description) => img(id, description, 'Exploring Geology · Fig. ' + id);
 
   section(0, "Reading the Yukon Delta", "Reading the Yukon Delta", [
@@ -53,6 +54,28 @@
       ["drainage basin", "a drainage basin"], "Small tributaries join larger channels, combining runoff from separate parts of the landscape.");
     write("explain", "16.1", "Explain how a ridge can separate the sources of two streams even when the streams are close together.",
       "The crest is a topographic divide. Runoff on one flank travels downslope to one channel and runoff on the opposite flank reaches a different channel. Distance to the channels alone does not determine the outlet.", ["Locate the topographic divide", "Follow opposite downhill paths", "Identify the receiving outlets"], figure("16.01.b1", "Assigned figure for section 16.1"));
+  });
+
+  section(2, "Stream transport and channel abrasion", "Stream transport and channel abrasion", [
+    group("Track contact", "Connect assignment 16:question 4", [img("stream-load", "Sediment paths within a stream", "Connect assignment 16 · Q4")], [
+      term("Saltation", "transport in short hops that repeatedly return a grain to the bed") + ".",
+      "Distinguish a sand grain repeatedly striking the bed from fine material held aloft in turbulent water. Both travel downstream, but the hopping grain belongs to the bed load. Dissolved ions travel with water without remaining discrete sediment grains."
+    ], "Check your reasoning", "Watch whether a grain stays aloft or repeatedly touches down.", ["Connect assessment 16:question 5"]),
+    group("Name both processes", "Connect assignment 16:question 4", [img("16.03.b1", "Particle size, velocity and transport", "Exploring Geology · 16.03.b1")], [
+      term("Traction", "rolling or sliding of sediment in contact with the bed") + ".",
+      "A moving pebble can roll along the bed while scouring the channel surface. The pebble is transported by traction. Wear of the surface it strikes is abrasion. Grain size and the strength of the current help determine which motion occurs."
+    ], "Check your reasoning", "Describe what happens to the moving clast and what happens to the channel.", ["Connect assessment 16:question 5"])
+  ], ({mc, fill, match, write}) => {
+    mc("interpret", "Connect assignment 16:question 4", "Which path in the stream corresponds to saltation?",
+      ["*A grain lifts from the bed and repeatedly lands downstream", "A pebble stays in contact with the bed as it rolls", "Fine silt remains dispersed in turbulent water", "Dissolved calcium moves with the water"], "Each hop ends with contact at the bed.", img("stream-load", "Sediment paths within a stream", "Connect assignment 16 · Q4"), ["Connect assessment 16:question 5"]);
+    mc("apply", "Connect assignment 16:question 4", "A pebble rolls downstream and leaves scratches on bedrock. Which pair describes the pebble and the bedrock, in that order?",
+      ["*Traction and abrasion", "Saltation and solution", "Suspension and traction", "Abrasion and suspension"], "Rolling is traction. Scraping of the channel surface is abrasion.", img("stream-load", "Sediment paths within a stream", "Connect assignment 16 · Q4"), ["Connect assessment 16:question 5"]);
+    fill("recall", "Connect assignment 16:question 4", "Which term describes transport in short hops that repeatedly return a grain to the bed?",
+      ["saltation"], "Distinguish a sand grain repeatedly striking the bed from fine material held aloft in turbulent water. Both travel downstream, but the hopping grain belongs to the bed load. Dissolved ions travel with water without remaining discrete sediment grains.", ["Connect assessment 16:question 5"]);
+    match("bank", "Connect assignment 16:question 4", "Match each observation to the corresponding geological term.",
+      [["Calcium ions traveling in water", "Dissolved load"], ["Silt held in the water column", "Suspended load"], ["Sand making short hops", "Saltation"], ["Gravel rolling along the bottom", "Traction"]], "A moving pebble can roll along the bed while scouring the channel surface. The pebble is transported by traction. Wear of the surface it strikes is abrasion. Grain size and the strength of the current help determine which motion occurs.", img("stream-load", "Sediment paths within a stream", "Connect assignment 16 · Q4"), ["Connect assessment 16:question 5"]);
+    write("explain", "Connect assignment 16:question 4", "Compare two ways bed load moves and explain how it can erode the channel.",
+      "Grains moving by saltation hop off the bed and land again. Traction keeps a rolling or sliding clast in contact with the bed. Impacts and scraping abrade the channel.", ["Describe saltation", "Describe traction", "Connect impacts or scraping to abrasion"], img("stream-load", "Sediment paths within a stream", "Connect assignment 16 · Q4"), ["Connect assessment 16:question 5"]);
   });
 
   section(3, "Changing flow and sediment transport", "Changing flow and sediment transport", [
@@ -98,6 +121,28 @@
       ["longitudinal profile", "a longitudinal profile"], "A stream commonly descends steeply near its headwaters and becomes gentler downstream.");
     write("explain", "16.4", "Explain how to recognize a locally steep reach on a stream profile.",
       "The axes show elevation and downstream distance. Compare the vertical drop over equal horizontal intervals. A sharp local drop may mark a resistant ledge or a change in base level.", ["Identify elevation and distance", "Compare elevation drop over equal distances", "Offer a geologic control"], figure("16.04.a2", "Assigned figure for section 16.4"));
+  });
+
+  section(5, "Sinuosity and the shape of a river bend", "Sinuosity and the shape of a river bend", [
+    group("Trace both distances", "Connect assignment 16:question 2", [img("bend-profiles", "Channel bend and cross-section locations", "Connect assignment 16 · Q2")], [
+      term("Sinuosity", "the winding of a channel, measured by channel length divided by valley distance over the same reach") + ".",
+      "Use the same upstream and downstream endpoints for both distances. A nearly straight channel has a ratio close to one. A channel with wide loops travels farther between the endpoints and has greater sinuosity."
+    ], "Check your reasoning", "Follow the channel centerline first, then compare the valley distance.", ["Connect assessment 16:question 8"]),
+    group("Orient the profile", "Connect assignment 16:question 2", [img("16.08.a3", "Bends across a floodplain", "Exploring Geology · 16.08.a3")], [
+      term("A cutbank", "an eroding bank on the outside of a bend") + ".",
+      "In a typical bend, the deeper, faster current swings toward the outside bank. Erosion there and deposition on an inside point bar allow the channel to migrate laterally. At the next bend the deep side can switch banks."
+    ], "Check your reasoning", "Locate the outer bank before choosing which side of the cross section should be deepest.", ["Connect assessment 16:question 8"])
+  ], ({mc, fill, match, write}) => {
+    mc("interpret", "Connect assignment 16:question 2", "The river winds for 6 km between endpoints 4 km apart along the valley. What is its sinuosity?",
+      ["*1.5", "0.67", "2.0", "10"], "Divide the channel distance by the valley distance: 6 divided by 4 is 1.5.", img("bend-profiles", "Channel bend and cross-section locations", "Connect assignment 16 · Q2"), ["Connect assessment 16:question 8"]);
+    mc("apply", "Connect assignment 16:question 2", "Two cross sections cut successive bends that curve in opposite directions. What should happen to the deepest part of the typical profile?",
+      ["*It switches banks to follow each outer bend", "It stays against the same geographic bank", "It follows the inside point bar at both bends", "It always stays midway between the banks"], "The outer bank changes sides as the channel curves in the opposite direction.", img("bend-profiles", "Channel bend and cross-section locations", "Connect assignment 16 · Q2"), ["Connect assessment 16:question 8"]);
+    fill("recall", "Connect assignment 16:question 2", "Which term describes the winding of a channel, measured by channel length divided by valley distance over the same reach?",
+      ["sinuosity"], "Use the same upstream and downstream endpoints for both distances. A nearly straight channel has a ratio close to one. A channel with wide loops travels farther between the endpoints and has greater sinuosity.", ["Connect assessment 16:question 8"]);
+    match("bank", "Connect assignment 16:question 2", "Match each observation to the corresponding geological term.",
+      [["Deeper side of a bend profile", "Outer bank"], ["Accumulating sand on the inside", "Point bar"], ["Channel length relative to valley length", "Sinuosity"]], "In a typical bend, the deeper, faster current swings toward the outside bank. Erosion there and deposition on an inside point bar allow the channel to migrate laterally. At the next bend the deep side can switch banks.", img("bend-profiles", "Channel bend and cross-section locations", "Connect assignment 16 · Q2"), ["Connect assessment 16:question 8"]);
+    write("explain", "Connect assignment 16:question 2", "Explain how two rivers connecting the same endpoints can have different sinuosity, and predict the deeper side of a bend.",
+      "A more winding route has greater channel length for the same valley distance. In a typical bend, the deeper and faster part of the flow lies toward the outer bank, where erosion commonly occurs.", ["Hold the two endpoints fixed", "Compare the channel and valley distances", "Locate the deeper current"], img("bend-profiles", "Channel bend and cross-section locations", "Connect assignment 16 · Q2"), ["Connect assessment 16:question 8"]);
   });
 
   section(6, "Headwater channels and waterfalls", "Headwater channels and waterfalls", [
@@ -275,6 +320,28 @@
     match("connect-bank", "16.13", "Classify the flow event in each numbered graph.",
       [["1", "Flow stays below flood stage"], ["2", "Gradual rise above flood stage"], ["3", "Rapid rise above flood stage"]], "Compare each curve with the threshold and follow the timing of its rise and fall.",
       img("bank-16.13", "Numbered course diagram", "Connect · question 1"), [connect + ":question 1"]);
+  });
+
+  section(14, "The 1976 Big Thompson flash flood", "The 1976 Big Thompson flash flood", [
+    group("Explain the concentration", "Connect assessment 16:questions 17–18", [img("flash-curves", "Four schematic discharge curves", "Connect assessment 16 · Q17")], [
+      term("A stationary weather front", "a boundary between air masses that moves little over time") + ".",
+      "In the 1976 Big Thompson event, intense rainfall persisted over a small region. The location and persistence of the storm concentrated runoff into the same drainage system. This is the historical cause tested by the assessment."
+    ], "Check your reasoning", "Identify what kept heavy rain over the same area.", ["Connect assignment 16:question 1"]),
+    group("Read the timing", "Connect assessment 16:questions 17–18", [img("flash-curves", "Comparison of rapid and gradual discharge peaks", "Connect assessment 16 · Q17")], [
+      term("A flash flood", "flooding characterized by a rapid rise in water level or discharge over a short period") + ".",
+      "Read time from left to right on the four practice hydrographs. A sharp rise over a short interval distinguishes a flash response from a broader, gradual peak. These are schematic comparisons. They do not give the measured peak discharge for the 1976 flood."
+    ], "Check your reasoning", "Compare the width and steepness of each rise, not just peak height.", ["Connect assignment 16:question 1"])
+  ], ({mc, fill, match, write}) => {
+    mc("interpret", "Connect assessment 16:questions 17–18", "Which weather pattern triggered the 1976 Big Thompson flood?",
+      ["*A nearly stationary front producing intense local rain", "A rapidly retreating front with brief light showers", "Several days of snowmelt throughout a large basin", "Rain spread evenly over several states for weeks"], "The event-specific Connect item identifies a stationary front and intense rain concentrated in a small region.", img("flash-curves", "Four schematic discharge curves", "Connect assessment 16 · Q17"), ["Connect assignment 16:question 1"]);
+    mc("apply", "Connect assessment 16:questions 17–18", "Which lettered hydrograph best illustrates the rapid response expected during a flash flood?",
+      ["*D", "A", "B", "C"], "D rises abruptly to a sharp peak. A rises and falls gradually, B stays nearly steady, and C rises to a plateau.", img("flash-curves", "Four schematic discharge curves", "Connect assessment 16 · Q17"), ["Connect assignment 16:question 1"]);
+    fill("recall", "Connect assessment 16:questions 17–18", "Which term describes flooding characterized by a rapid rise in water level or discharge over a short period?",
+      ["flash flood", "a flash flood"], "In the 1976 Big Thompson event, intense rainfall persisted over a small region. The location and persistence of the storm concentrated runoff into the same drainage system. This is the historical cause tested by the assessment.", ["Connect assignment 16:question 1"]);
+    match("bank", "Connect assessment 16:questions 17–18", "Match each lettered hydrograph to its discharge pattern.",
+      [["A", "Broad rise and fall"], ["B", "Nearly steady discharge"], ["C", "Rise to a sustained plateau"], ["D", "Short, sharp peak"]], "Read time from left to right on the four practice hydrographs. A sharp rise over a short interval distinguishes a flash response from a broader, gradual peak. These are schematic comparisons. They do not give the measured peak discharge for the 1976 flood.", img("flash-curves", "Four schematic discharge curves", "Connect assessment 16 · Q17"), ["Connect assignment 16:question 1"]);
+    write("explain", "Connect assessment 16:questions 17–18", "Link the storm pattern to the flood response in the 1976 Big Thompson case.",
+      "A nearly stationary front kept intense rain concentrated over a small area. Runoff reached the same drainage network in a short interval, causing a rapid rise in river discharge.", ["Identify persistence of the front", "Identify intense local rainfall", "Connect runoff concentration to a rapid rise"], img("flash-curves", "Four schematic discharge curves", "Connect assessment 16 · Q17"), ["Connect assignment 16:question 1"]);
   });
 
   section(15, "Discharge and flood recurrence", "Discharge and flood recurrence", [

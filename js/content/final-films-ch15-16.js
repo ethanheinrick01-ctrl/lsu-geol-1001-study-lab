@@ -1084,5 +1084,180 @@ Object.assign(window.L.FINAL_FILMS, {
         "that covers a more distant part of the floodplain."
       ]
     ]
+  },
+  "F15S7": {
+    "id": "15-07",
+    "stages": [
+      {
+        "label": "Follow the stream",
+        "text": "In limestone terrain, water can enter a sinkhole and continue through an underground passage.",
+        "asset": "assets/figures/chapter15/15.06.c1.webp",
+        "source": "Exploring Geology · 15.06.c1",
+        "start": 0
+      },
+      {
+        "label": "Read the relief",
+        "text": "As dissolution enlarges openings, intervening masses of limestone may remain as steep hills or towers.",
+        "asset": "assets/figures/chapter15/15.06.a1.webp",
+        "source": "Exploring Geology · 15.06.a1",
+        "start": 7.2
+      }
+    ],
+    "cues": [
+      [
+        0,
+        6.0,
+        "In limestone terrain, water can enter a sinkhole and continue through an underground passage."
+      ],
+      [
+        7.2,
+        13.36,
+        "As dissolution enlarges openings, intervening masses of limestone may remain as steep hills or towers."
+      ]
+    ]
+  },
+  "F15S15": {
+    "id": "15-15",
+    "stages": [
+      {
+        "label": "Find the break",
+        "text": "A steep head scarp marks the upper boundary where material detached during a slope failure.",
+        "asset": "assets/figures/chapter15/slide-scarp.webp",
+        "source": "Connect assessment 15 · Q16",
+        "start": 0
+      },
+      {
+        "label": "Test for motion",
+        "text": "Compare the positions of markers across the suspected slide against stable ground to see whether movement continues.",
+        "asset": "assets/figures/chapter15/15.16.a3.webp",
+        "source": "Exploring Geology · 15.16.a3",
+        "start": 6.640000000000001
+      }
+    ],
+    "cues": [
+      [
+        0,
+        5.44,
+        "A steep head scarp marks the upper boundary where material detached during a slope failure."
+      ],
+      [
+        6.640000000000001,
+        9.66,
+        "Compare the positions of markers across the suspected"
+      ],
+      [
+        9.66,
+        13.120000000000001,
+        "slide against stable ground to see whether movement continues."
+      ]
+    ]
+  },
+  "F16S2": {
+    "id": "16-02",
+    "stages": [
+      {
+        "label": "Track the grains",
+        "text": "Sand grains can hop along the channel bed while finer particles remain suspended in the flowing water.",
+        "asset": "assets/figures/chapter16/stream-load.webp",
+        "source": "Connect assignment 16 · Q4",
+        "start": 0
+      },
+      {
+        "label": "Watch the bed",
+        "text": "Larger fragments may roll or slide along the bottom, scraping the channel as they move.",
+        "asset": "assets/figures/chapter16/16.03.b1.webp",
+        "source": "Exploring Geology · 16.03.b1",
+        "start": 7.36
+      }
+    ],
+    "cues": [
+      [
+        0,
+        2.3,
+        "Sand grains can hop along the channel bed"
+      ],
+      [
+        2.3,
+        6.16,
+        "while finer particles remain suspended in the flowing water."
+      ],
+      [
+        7.36,
+        12.72,
+        "Larger fragments may roll or slide along the bottom, scraping the channel as they move."
+      ]
+    ]
+  },
+  "F16S5": {
+    "id": "16-05",
+    "stages": [
+      {
+        "label": "Follow the bend",
+        "text": "Across a meander bend, the deeper part of the channel generally lies toward the outer bank.",
+        "asset": "assets/figures/chapter16/bend-profiles.webp",
+        "source": "Connect assignment 16 · Q2",
+        "start": 0
+      },
+      {
+        "label": "Move the bend",
+        "text": "Erosion on the outside and deposition on the inside shift the bend sideways across the valley floor.",
+        "asset": "assets/figures/chapter16/16.08.a3.webp",
+        "source": "Exploring Geology · 16.08.a3",
+        "start": 5.92
+      }
+    ],
+    "cues": [
+      [
+        0,
+        2.38,
+        "Across a meander bend, the deeper part of"
+      ],
+      [
+        2.38,
+        4.72,
+        "the channel generally lies toward the outer bank."
+      ],
+      [
+        5.92,
+        8.5,
+        "Erosion on the outside and deposition on the"
+      ],
+      [
+        8.5,
+        12.08,
+        "inside shift the bend sideways across the valley floor."
+      ]
+    ]
+  },
+  "F16S14": {
+    "id": "16-14",
+    "stages": [
+      {
+        "label": "Hold the storm in place",
+        "text": "In the Big Thompson flood of nineteen seventy-six, intense rain persisted over a small area of the drainage basin.",
+        "asset": "assets/figures/chapter16/flash-curves.webp",
+        "source": "Connect assessment 16 · Q17",
+        "start": 0
+      },
+      {
+        "label": "Follow the runoff",
+        "text": "As runoff converged on the channel, the river rose rapidly and produced a flash flood.",
+        "asset": "assets/figures/chapter16/flash-curves.webp",
+        "source": "Connect assessment 16 · Q17",
+        "start": 8.4
+      }
+    ],
+    "cues": [
+      [
+        0,
+        7.2,
+        "In the Big Thompson flood of nineteen seventy-six, intense rain persisted over a small area of the drainage basin."
+      ],
+      [
+        8.4,
+        14.4,
+        "As runoff converged on the channel, the river rose rapidly and produced a flash flood."
+      ]
+    ]
   }
 });
