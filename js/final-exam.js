@@ -30,11 +30,13 @@
     const film = L.FINAL_FILMS?.[t.id];
     if (!film) return '';
     const b = 'videos/final-study/' + film.id;
+    const version = film.revision ? '?v=' + encodeURIComponent(film.revision) : '';
+    const video = b + '.mp4' + version;
     const stages = film.stages;
     return '<section class="card ad-video final-film" data-process-film="' + t.id + '" aria-label="Narrated explanation">' +
       '<h2>Watch the concept unfold</h2>' +
-      '<video controls playsinline preload="metadata" width="1280" height="720" poster="' + b + '.webp" aria-label="' +
-      esc(t.title) + ' narrated animation"><source src="' + b + '.mp4" type="video/mp4">' +
+      '<video controls playsinline preload="metadata" width="1280" height="720" poster="' + b + '.webp' + version + '" aria-label="' +
+      esc(t.title) + ' narrated animation"><source src="' + video + '" type="video/mp4">' +
       (typeof window.VTTCue === 'function' ? '' : '<track kind="captions" src="' + b + '.vtt" srclang="en" label="English narration">') +
       'Download the video below to watch it.</video>' +
       '<div class="ad-film-controls"><div class="ad-chapters" aria-label="Film chapters">' + stages.map(s =>
@@ -42,7 +44,7 @@
       '</div><label>Film speed <select data-film-speed><option value="0.75">0.75×</option><option value="1" selected>1×</option>' +
       '<option value="1.25">1.25×</option><option value="1.5">1.5×</option></select></label>' +
       '<button type="button" class="btn small" data-final-captions aria-pressed="false">Captions: off</button></div>' +
-      '<div class="row"><a class="btn small" href="' + b + '.mp4" download>Save video</a>' +
+      '<div class="row"><a class="btn small" href="' + video + '" download>Save video</a>' +
       '<a class="btn small" href="' + b + '.vtt" download>Save captions</a></div>' +
       '<details class="ad-narration"><summary>Read the film transcript</summary>' + stages.map(s =>
         '<h3>' + esc(s.label) + '</h3><p>' + esc(s.text) + '</p>').join('') + '</details>' +

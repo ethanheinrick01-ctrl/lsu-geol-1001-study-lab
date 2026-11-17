@@ -6,14 +6,14 @@ Object.assign(window.L.FINAL_FILMS, {
         "label": "Follow the valley",
         "text": "Heavy rain mobilizes loose material on the steep slopes above the Venezuelan coast.",
         "asset": "assets/figures/chapter15/15.00.a1.webp",
-        "source": "Exploring Geology · 15.00.a1",
+        "source": "Exploring Geology · Fig. 15.00.a1",
         "start": 0
       },
       {
         "label": "Find the fan",
         "text": "Where the valley opens onto an alluvial fan, a debris flow can spread across the same flat ground that attracted settlement.",
-        "asset": "assets/figures/chapter15/15.00.a4.webp",
-        "source": "Exploring Geology · 15.00.a4",
+        "asset": "assets/figures/chapter15/15.00.a1.webp",
+        "source": "Exploring Geology · Fig. 15.00.a1",
         "start": 6.0
       }
     ],
@@ -33,7 +33,8 @@ Object.assign(window.L.FINAL_FILMS, {
         12.24,
         "a debris flow can spread across the same flat ground that attracted settlement."
       ]
-    ]
+    ],
+    "revision": "20261117-course-figures"
   },
   "F15S1": {
     "id": "15-01",
@@ -41,15 +42,15 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Find the fracture",
         "text": "A joint divides solid rock into blocks without appreciable movement across the crack.",
-        "asset": "assets/figures/chapter15/15.01.b2.webp",
-        "source": "Exploring Geology · 15.01.b2",
+        "asset": "assets/figures/chapter15/15.01.a2.webp",
+        "source": "Exploring Geology · Fig. 15.01.a2",
         "start": 0
       },
       {
         "label": "Open the path",
         "text": "As ice grows inside a wet fracture, it can pry the walls apart and expose fresh surfaces.",
-        "asset": "assets/figures/chapter15/15.01.d1.webp",
-        "source": "Exploring Geology · 15.01.d1",
+        "asset": "assets/figures/chapter15/15.01.a2.webp",
+        "source": "Exploring Geology · Fig. 15.01.a2",
         "start": 6.8
       }
     ],
@@ -69,7 +70,8 @@ Object.assign(window.L.FINAL_FILMS, {
         12.399999999999999,
         "it can pry the walls apart and expose fresh surfaces."
       ]
-    ]
+    ],
+    "revision": "20261117-course-figures"
   },
   "F15S2": {
     "id": "15-02",
@@ -78,14 +80,14 @@ Object.assign(window.L.FINAL_FILMS, {
         "label": "Dissolve the mineral",
         "text": "Slightly acidic water moving through limestone carries dissolved material away and leaves a wider opening.",
         "asset": "assets/figures/chapter15/15.02.b2.webp",
-        "source": "Exploring Geology · 15.02.b2",
+        "source": "Exploring Geology · Fig. 15.02.b2",
         "start": 0
       },
       {
         "label": "Change the mineral",
         "text": "In contrast, hydrolysis can turn feldspar into clay that stays behind as a solid residue.",
-        "asset": "assets/figures/chapter15/15.02.c1.webp",
-        "source": "Exploring Geology · 15.02.c1",
+        "asset": "assets/figures/chapter15/15.03.b1.webp",
+        "source": "Exploring Geology · Fig. 15.03.b1",
         "start": 8.0
       }
     ],
@@ -100,7 +102,8 @@ Object.assign(window.L.FINAL_FILMS, {
         13.920041666666666,
         "In contrast, hydrolysis can turn feldspar into clay that stays behind as a solid residue."
       ]
-    ]
+    ],
+    "revision": "20261117-course-figures"
   },
   "F15S3": {
     "id": "15-03",
@@ -109,14 +112,14 @@ Object.assign(window.L.FINAL_FILMS, {
         "label": "Compare the grains",
         "text": "Quartz grains may survive after the cement holding a sandstone together breaks down.",
         "asset": "assets/figures/chapter15/15.03.a1.webp",
-        "source": "Exploring Geology · 15.03.a1",
+        "source": "Exploring Geology · Fig. 15.03.a1",
         "start": 0
       },
       {
         "label": "Trace the residue",
         "text": "A granite rich in feldspar can instead develop clay as its crystals react with water.",
-        "asset": "assets/figures/chapter15/15.03.a2.webp",
-        "source": "Exploring Geology · 15.03.a2",
+        "asset": "assets/figures/chapter15/15.03.b1.webp",
+        "source": "Exploring Geology · Fig. 15.03.b1",
         "start": 6.16
       }
     ],
@@ -131,7 +134,8 @@ Object.assign(window.L.FINAL_FILMS, {
         11.84,
         "A granite rich in feldspar can instead develop clay as its crystals react with water."
       ]
-    ]
+    ],
+    "revision": "20261117-course-figures"
   },
   "F15S4": {
     "id": "15-04",
@@ -140,14 +144,14 @@ Object.assign(window.L.FINAL_FILMS, {
         "label": "Supply water and heat",
         "text": "Warm, wet conditions generally accelerate chemical reactions when the mineral and exposure time are similar.",
         "asset": "assets/figures/chapter15/15.04.a1.webp",
-        "source": "Exploring Geology · 15.04.a1",
+        "source": "Exploring Geology · Fig. 15.04.a1",
         "start": 0
       },
       {
         "label": "Track what remains",
         "text": "A steep slope can lose weathered material faster than a gentle surface, leaving a thinner cover despite ongoing weathering.",
         "asset": "assets/figures/chapter15/15.04.b1.webp",
-        "source": "Exploring Geology · 15.04.b1",
+        "source": "Exploring Geology · Fig. 15.04.b1",
         "start": 7.76
       }
     ],
@@ -167,7 +171,8 @@ Object.assign(window.L.FINAL_FILMS, {
         15.120041666666665,
         "a gentle surface, leaving a thinner cover despite ongoing weathering."
       ]
-    ]
+    ],
+    "revision": "20261117-course-figures"
   },
   "F15S5": {
     "id": "15-05",
@@ -176,14 +181,14 @@ Object.assign(window.L.FINAL_FILMS, {
         "label": "Start with a joint block",
         "text": "Water reaches a corner from three directions, an edge from two, and a flat face from one.",
         "asset": "assets/figures/chapter15/15.05.a1.webp",
-        "source": "Exploring Geology · 15.05.a1",
+        "source": "Exploring Geology · Fig. 15.05.a1",
         "start": 0
       },
       {
         "label": "Follow the rounding",
         "text": "As the corners retreat faster than the faces, a rounded core can form while the block is still in place.",
         "asset": "assets/figures/chapter15/15.05.a3.webp",
-        "source": "Exploring Geology · 15.05.a3",
+        "source": "Exploring Geology · Figs. 15.05.a1–a3",
         "start": 7.44
       }
     ],
@@ -208,7 +213,8 @@ Object.assign(window.L.FINAL_FILMS, {
         13.280000000000001,
         "a rounded core can form while the block is still in place."
       ]
-    ]
+    ],
+    "revision": "20261117-course-figures"
   },
   "F15S6": {
     "id": "15-06",
@@ -217,14 +223,14 @@ Object.assign(window.L.FINAL_FILMS, {
         "label": "Enlarge an opening",
         "text": "Water carrying dissolved carbon dioxide can dissolve limestone along a fracture and enlarge it into a passage.",
         "asset": "assets/figures/chapter15/15.06.a1.webp",
-        "source": "Exploring Geology · 15.06.a1",
+        "source": "Exploring Geology · Fig. 15.06.a1",
         "start": 0
       },
       {
         "label": "Build a deposit",
         "text": "When water loses carbon dioxide inside an air-filled cave, calcite can precipitate and build a deposit beneath a drip.",
         "asset": "assets/figures/chapter15/15.06.c1.webp",
-        "source": "Exploring Geology · 15.06.c1",
+        "source": "Exploring Geology · Fig. 15.06.c1",
         "start": 7.5200000000000005
       }
     ],
@@ -244,7 +250,8 @@ Object.assign(window.L.FINAL_FILMS, {
         15.280000000000001,
         "When water loses carbon dioxide inside an air-filled cave, calcite can precipitate and build a deposit beneath a drip."
       ]
-    ]
+    ],
+    "revision": "20261117-course-figures"
   },
   "F15S8": {
     "id": "15-08",
@@ -253,14 +260,14 @@ Object.assign(window.L.FINAL_FILMS, {
         "label": "Trace water downward",
         "text": "Water entering the soil carries dissolved substances and fine particles away from upper layers.",
         "asset": "assets/figures/chapter15/15.08.a2.webp",
-        "source": "Exploring Geology · 15.08.a2",
+        "source": "Exploring Geology · Fig. 15.08.a2",
         "start": 0
       },
       {
         "label": "Find the accumulation",
         "text": "Some of that material collects deeper in the soil, creating a horizon with a different color or texture.",
         "asset": "assets/figures/chapter15/15.08.c2.webp",
-        "source": "Exploring Geology · 15.08.c2",
+        "source": "Exploring Geology · Fig. 15.08.c2",
         "start": 6.48
       }
     ],
@@ -280,7 +287,8 @@ Object.assign(window.L.FINAL_FILMS, {
         12.32,
         "creating a horizon with a different color or texture."
       ]
-    ]
+    ],
+    "revision": "20261117-course-figures"
   },
   "F15S9": {
     "id": "15-09",
@@ -288,15 +296,15 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Cover the ground",
         "text": "Roots hold soil in place while leaves and litter soften the impact of falling rain.",
-        "asset": "assets/figures/chapter15/15.09.a1.webp",
-        "source": "Exploring Geology · 15.09.a1",
+        "asset": "assets/figures/chapter15/15.08.a2.webp",
+        "source": "Exploring Geology · Fig. 15.08.a2",
         "start": 0
       },
       {
         "label": "Remove the cover",
         "text": "When the same slope is stripped, concentrated runoff can cut channels through topsoil faster than new soil forms.",
         "asset": "assets/figures/chapter15/15.09.a2.webp",
-        "source": "Exploring Geology · 15.09.a2",
+        "source": "Exploring Geology · Fig. 15.09.a2",
         "start": 6.16
       }
     ],
@@ -316,7 +324,8 @@ Object.assign(window.L.FINAL_FILMS, {
         13.520041666666668,
         "cut channels through topsoil faster than new soil forms."
       ]
-    ]
+    ],
+    "revision": "20261117-course-figures"
   },
   "F15S10": {
     "id": "15-10",
@@ -325,14 +334,14 @@ Object.assign(window.L.FINAL_FILMS, {
         "label": "Resolve the weight",
         "text": "On a steeper surface, a larger component of a block's weight acts parallel to the slope.",
         "asset": "assets/figures/chapter15/15.10.a1.webp",
-        "source": "Exploring Geology · 15.10.a1",
+        "source": "Exploring Geology · Fig. 15.10.a1",
         "start": 0
       },
       {
         "label": "Reduce resistance",
         "text": "Water pressure in pores can reduce the contact force between grains, allowing the same slope to fail.",
-        "asset": "assets/figures/chapter15/15.10.b1.webp",
-        "source": "Exploring Geology · 15.10.b1",
+        "asset": "assets/figures/chapter15/15.10.c2.webp",
+        "source": "Exploring Geology · Fig. 15.10.c2",
         "start": 7.04
       }
     ],
@@ -357,7 +366,8 @@ Object.assign(window.L.FINAL_FILMS, {
         12.879999999999999,
         "force between grains, allowing the same slope to fail."
       ]
-    ]
+    ],
+    "revision": "20261117-course-figures"
   },
   "F15S11": {
     "id": "15-11",
@@ -365,15 +375,15 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Locate the rupture",
         "text": "A slide carries a mass across a distinct surface, often leaving a steep scarp near its head.",
-        "asset": "assets/figures/chapter15/15.11.a1.webp",
-        "source": "Exploring Geology · 15.11.a1",
+        "asset": "assets/figures/chapter15/15.12.a3.webp",
+        "source": "Exploring Geology · Fig. 15.12.a3",
         "start": 0
       },
       {
         "label": "Track internal movement",
         "text": "In a flow, neighboring pieces change positions throughout the moving material.",
-        "asset": "assets/figures/chapter15/15.11.a2.webp",
-        "source": "Exploring Geology · 15.11.a2",
+        "asset": "assets/figures/chapter15/15.13.a8.webp",
+        "source": "Exploring Geology · Fig. 15.13.a8",
         "start": 6.72
       }
     ],
@@ -393,7 +403,8 @@ Object.assign(window.L.FINAL_FILMS, {
         11.120000000000001,
         "In a flow, neighboring pieces change positions throughout the moving material."
       ]
-    ]
+    ],
+    "revision": "20261117-course-figures"
   },
   "F15S12": {
     "id": "15-12",
@@ -401,15 +412,15 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Trace a planar slide",
         "text": "A slab can move along a bedding plane that dips out of a hillside.",
-        "asset": "assets/figures/chapter15/15.12.a1.webp",
-        "source": "Exploring Geology · 15.12.a1",
+        "asset": "assets/figures/chapter15/15.12.b1.webp",
+        "source": "Exploring Geology · Fig. 15.12.b1",
         "start": 0
       },
       {
         "label": "Trace a slump",
         "text": "When the rupture surface curves, blocks rotate as they descend and may tilt backward near the head.",
-        "asset": "assets/figures/chapter15/15.12.a3.webp",
-        "source": "Exploring Geology · 15.12.a3",
+        "asset": "assets/figures/chapter15/15.12.a5.webp",
+        "source": "Exploring Geology · Fig. 15.12.a5",
         "start": 5.5200000000000005
       }
     ],
@@ -429,7 +440,8 @@ Object.assign(window.L.FINAL_FILMS, {
         11.68,
         "they descend and may tilt backward near the head."
       ]
-    ]
+    ],
+    "revision": "20261117-course-figures"
   },
   "F15S13": {
     "id": "15-13",
@@ -438,14 +450,14 @@ Object.assign(window.L.FINAL_FILMS, {
         "label": "Follow slow creep",
         "text": "Small repeated displacements move soil downhill and can tilt posts over many years.",
         "asset": "assets/figures/chapter15/15.13.a1.webp",
-        "source": "Exploring Geology · 15.13.a1",
+        "source": "Exploring Geology · Fig. 15.13.a1",
         "start": 0
       },
       {
         "label": "Follow a debris flow",
         "text": "During intense runoff, a mixture of mud, gravel, and boulders can surge rapidly through a narrow channel.",
-        "asset": "assets/figures/chapter15/15.13.a12.webp",
-        "source": "Exploring Geology · 15.13.a12",
+        "asset": "assets/figures/chapter15/15.13.a8.webp",
+        "source": "Exploring Geology · Fig. 15.13.a8",
         "start": 6.5600000000000005
       }
     ],
@@ -465,7 +477,8 @@ Object.assign(window.L.FINAL_FILMS, {
         13.2,
         "and boulders can surge rapidly through a narrow channel."
       ]
-    ]
+    ],
+    "revision": "20261117-course-figures"
   },
   "F15S14": {
     "id": "15-14",
@@ -474,14 +487,14 @@ Object.assign(window.L.FINAL_FILMS, {
         "label": "Locate steep relief",
         "text": "In Alaska, earthquake shaking released rock from steep mountain slopes onto the glacier below.",
         "asset": "assets/figures/chapter15/15.14.a1.webp",
-        "source": "Exploring Geology · 15.14.a1",
+        "source": "Exploring Geology · Fig. 15.14.a1",
         "start": 0
       },
       {
         "label": "Compare the trigger",
         "text": "In another mountain belt, prolonged rain can raise pore pressure until a slope fails without an earthquake.",
-        "asset": "assets/figures/chapter15/15.14.b1.webp",
-        "source": "Exploring Geology · 15.14.b1",
+        "asset": "assets/figures/chapter15/15.10.c2.webp",
+        "source": "Exploring Geology · Fig. 15.10.c2",
         "start": 6.5600000000000005
       }
     ],
@@ -501,7 +514,8 @@ Object.assign(window.L.FINAL_FILMS, {
         12.32,
         "pore pressure until a slope fails without an earthquake."
       ]
-    ]
+    ],
+    "revision": "20261117-course-figures"
   },
   "F15S16": {
     "id": "15-16",
@@ -510,14 +524,14 @@ Object.assign(window.L.FINAL_FILMS, {
         "label": "Separate old and active ground",
         "text": "At Slumgullion, an active earthflow occupies part of a much larger, older landslide deposit.",
         "asset": "assets/figures/chapter15/15.16.a1.webp",
-        "source": "Exploring Geology · 15.16.a1",
+        "source": "Exploring Geology · Fig. 15.16.a1",
         "start": 0
       },
       {
         "label": "Track relative movement",
         "text": "Repeated surveys show which parts move fastest and where deformation is concentrated.",
-        "asset": "assets/figures/chapter15/15.16.a3.webp",
-        "source": "Exploring Geology · 15.16.a3",
+        "asset": "assets/figures/chapter15/15.16.c1.webp",
+        "source": "Exploring Geology · Fig. 15.16.c1",
         "start": 7.120041666666667
       }
     ],
@@ -532,7 +546,8 @@ Object.assign(window.L.FINAL_FILMS, {
         12.160041666666668,
         "Repeated surveys show which parts move fastest and where deformation is concentrated."
       ]
-    ]
+    ],
+    "revision": "20261117-course-figures"
   },
   "F15S17": {
     "id": "15-17",
@@ -541,14 +556,14 @@ Object.assign(window.L.FINAL_FILMS, {
         "label": "Identify the source",
         "text": "Look upslope for steep, fractured ground or a scarp left by an earlier failure.",
         "asset": "assets/figures/chapter15/15.17.a1.webp",
-        "source": "Exploring Geology · 15.17.a1",
+        "source": "Exploring Geology · Fig. 15.17.a1",
         "start": 0
       },
       {
         "label": "Trace the path",
         "text": "Follow the downhill route to see whether a road or building lies within reach of the moving debris.",
         "asset": "assets/figures/chapter15/15.17.a1.webp",
-        "source": "Exploring Geology · 15.17.a1",
+        "source": "Exploring Geology · Fig. 15.17.a1",
         "start": 6.96
       }
     ],
@@ -568,7 +583,8 @@ Object.assign(window.L.FINAL_FILMS, {
         12.719999999999999,
         "or building lies within reach of the moving debris."
       ]
-    ]
+    ],
+    "revision": "20261117-course-figures"
   },
   "F16S0": {
     "id": "16-00",
@@ -577,14 +593,14 @@ Object.assign(window.L.FINAL_FILMS, {
         "label": "Find the river mouth",
         "text": "At the Yukon coast, the river spreads into quieter receiving water and deposits part of its sediment load.",
         "asset": "assets/figures/chapter16/16.00.a1.webp",
-        "source": "Exploring Geology · 16.00.a1",
+        "source": "Exploring Geology · Fig. 16.00.a1",
         "start": 0
       },
       {
         "label": "Watch the shoreline",
         "text": "Where deposition exceeds removal by waves and currents, the delta can build outward into the sea.",
-        "asset": "assets/figures/chapter16/16.00.a2.webp",
-        "source": "Exploring Geology · 16.00.a2",
+        "asset": "assets/figures/chapter16/16.09.a3.webp",
+        "source": "Exploring Geology · Fig. 16.09.a3",
         "start": 7.36
       }
     ],
@@ -609,7 +625,8 @@ Object.assign(window.L.FINAL_FILMS, {
         13.440000000000001,
         "the delta can build outward into the sea."
       ]
-    ]
+    ],
+    "revision": "20261117-course-figures"
   },
   "F16S1": {
     "id": "16-01",
@@ -617,15 +634,15 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Trace the branches",
         "text": "Small tributaries join larger channels, combining runoff from separate parts of the landscape.",
-        "asset": "assets/figures/chapter16/16.01.b1.webp",
-        "source": "Exploring Geology · 16.01.b1",
+        "asset": "assets/figures/chapter16/16.01.d1.webp",
+        "source": "Exploring Geology · Fig. 16.01.d1",
         "start": 0
       },
       {
         "label": "Find the divide",
         "text": "A ridge separates neighboring drainage basins, so rain on opposite sides can reach different outlets.",
-        "asset": "assets/figures/chapter16/16.01.d1.webp",
-        "source": "Exploring Geology · 16.01.d1",
+        "asset": "assets/figures/chapter16/16.01.b1.webp",
+        "source": "Exploring Geology · Fig. 16.01.b1",
         "start": 6.96
       }
     ],
@@ -640,7 +657,8 @@ Object.assign(window.L.FINAL_FILMS, {
         12.8,
         "A ridge separates neighboring drainage basins, so rain on opposite sides can reach different outlets."
       ]
-    ]
+    ],
+    "revision": "20261117-course-figures"
   },
   "F16S3": {
     "id": "16-03",
@@ -648,15 +666,15 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Raise the flow",
         "text": "During a storm, higher flow can move coarser grains that normally rest on the bed.",
-        "asset": "assets/figures/chapter16/16.03.a3.webp",
-        "source": "Exploring Geology · 16.03.a3",
+        "asset": "assets/figures/chapter16/stream-load.webp",
+        "source": "Connect assignment 16 · Q4",
         "start": 0
       },
       {
         "label": "Follow the falling flow",
         "text": "As the flood subsides, larger particles commonly settle before finer sediment leaves suspension.",
         "asset": "assets/figures/chapter16/16.03.b1.webp",
-        "source": "Exploring Geology · 16.03.b1",
+        "source": "Exploring Geology · Fig. 16.03.b1",
         "start": 6.24
       }
     ],
@@ -671,7 +689,8 @@ Object.assign(window.L.FINAL_FILMS, {
         11.84,
         "As the flood subsides, larger particles commonly settle before finer sediment leaves suspension."
       ]
-    ]
+    ],
+    "revision": "20261117-course-figures"
   },
   "F16S4": {
     "id": "16-04",
@@ -680,14 +699,14 @@ Object.assign(window.L.FINAL_FILMS, {
         "label": "Read the long profile",
         "text": "A stream commonly descends steeply near its headwaters and becomes gentler downstream.",
         "asset": "assets/figures/chapter16/16.04.a2.webp",
-        "source": "Exploring Geology · 16.04.a2",
+        "source": "Exploring Geology · Fig. 16.04.a2",
         "start": 0
       },
       {
         "label": "Change the base level",
         "text": "Lowering the outlet creates an opportunity for incision that can work its way upstream.",
-        "asset": "assets/figures/chapter16/16.04.a1.webp",
-        "source": "Exploring Geology · 16.04.a1",
+        "asset": "assets/figures/chapter16/16.04.c5.webp",
+        "source": "Exploring Geology · Fig. 16.04.c5",
         "start": 7.680000000000001
       }
     ],
@@ -702,7 +721,8 @@ Object.assign(window.L.FINAL_FILMS, {
         13.440000000000001,
         "Lowering the outlet creates an opportunity for incision that can work its way upstream."
       ]
-    ]
+    ],
+    "revision": "20261117-course-figures"
   },
   "F16S6": {
     "id": "16-06",
@@ -711,14 +731,14 @@ Object.assign(window.L.FINAL_FILMS, {
         "label": "Trace the headwaters",
         "text": "Runoff converges into small channels on steep slopes, where streams can cut narrow valleys.",
         "asset": "assets/figures/chapter16/16.06.a1.webp",
-        "source": "Exploring Geology · 16.06.a1",
+        "source": "Exploring Geology · Fig. 16.06.a1",
         "start": 0
       },
       {
         "label": "Find a resistant ledge",
         "text": "A bed of stronger rock can form a step, producing rapids or a waterfall along the stream.",
-        "asset": "assets/figures/chapter16/16.06.b1.webp",
-        "source": "Exploring Geology · 16.06.b1",
+        "asset": "assets/figures/chapter16/16.06.c3.webp",
+        "source": "Exploring Geology · Fig. 16.06.c3",
         "start": 6.48
       }
     ],
@@ -738,7 +758,8 @@ Object.assign(window.L.FINAL_FILMS, {
         12.72,
         "producing rapids or a waterfall along the stream."
       ]
-    ]
+    ],
+    "revision": "20261117-course-figures"
   },
   "F16S7": {
     "id": "16-07",
@@ -747,14 +768,14 @@ Object.assign(window.L.FINAL_FILMS, {
         "label": "Build a gravel bar",
         "text": "Where abundant sediment accumulates, a bar can divide a stream into two active channels.",
         "asset": "assets/figures/chapter16/16.07.a4.webp",
-        "source": "Exploring Geology · 16.07.a4",
+        "source": "Exploring Geology · Fig. 16.07.a4",
         "start": 0
       },
       {
         "label": "Move the channels",
         "text": "Changing flow scours one path and deposits sediment in another, shifting the braided pattern.",
         "asset": "assets/figures/chapter16/16.07.b2.webp",
-        "source": "Exploring Geology · 16.07.b2",
+        "source": "Exploring Geology · Fig. 16.07.b2",
         "start": 6.08
       }
     ],
@@ -769,7 +790,8 @@ Object.assign(window.L.FINAL_FILMS, {
         11.68,
         "Changing flow scours one path and deposits sediment in another, shifting the braided pattern."
       ]
-    ]
+    ],
+    "revision": "20261117-course-figures"
   },
   "F16S8": {
     "id": "16-08",
@@ -778,14 +800,14 @@ Object.assign(window.L.FINAL_FILMS, {
         "label": "Find the outer bank",
         "text": "In a bend, erosion can cut into the outside bank while sand builds a point bar on the inside.",
         "asset": "assets/figures/chapter16/16.08.a2.webp",
-        "source": "Exploring Geology · 16.08.a2",
+        "source": "Exploring Geology · Fig. 16.08.a2",
         "start": 0
       },
       {
         "label": "Close the bend",
         "text": "If the river cuts across a narrow neck, the abandoned loop can become an oxbow lake.",
-        "asset": "assets/figures/chapter16/16.08.a3.webp",
-        "source": "Exploring Geology · 16.08.a3",
+        "asset": "assets/figures/chapter16/16.08.a6.webp",
+        "source": "Exploring Geology · Fig. 16.08.a6",
         "start": 6.640000000000001
       }
     ],
@@ -810,7 +832,8 @@ Object.assign(window.L.FINAL_FILMS, {
         11.68,
         "the abandoned loop can become an oxbow lake."
       ]
-    ]
+    ],
+    "revision": "20261117-course-figures"
   },
   "F16S9": {
     "id": "16-09",
@@ -819,14 +842,14 @@ Object.assign(window.L.FINAL_FILMS, {
         "label": "Trap the sediment",
         "text": "A reservoir slows incoming water and traps part of the river's sediment load.",
         "asset": "assets/figures/chapter16/16.09.c1.webp",
-        "source": "Exploring Geology · 16.09.c1",
+        "source": "Exploring Geology · Fig. 16.09.c1",
         "start": 0
       },
       {
         "label": "Inspect the reach below",
         "text": "Water released below a dam may erode the channel if it can carry more sediment than it receives.",
-        "asset": "assets/figures/chapter16/16.09.a3.webp",
-        "source": "Exploring Geology · 16.09.a3",
+        "asset": "assets/figures/chapter16/16.09.c1.webp",
+        "source": "Exploring Geology · Fig. 16.09.c1",
         "start": 5.680000000000001
       }
     ],
@@ -846,7 +869,8 @@ Object.assign(window.L.FINAL_FILMS, {
         11.040000000000001,
         "if it can carry more sediment than it receives."
       ]
-    ]
+    ],
+    "revision": "20261117-course-figures"
   },
   "F16S10": {
     "id": "16-10",
@@ -854,15 +878,15 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Change the balance",
         "text": "If a stream receives more sediment than it can transport, the bed rises as sediment accumulates.",
-        "asset": "assets/figures/chapter16/16.10.a2.webp",
-        "source": "Exploring Geology · 16.10.a2",
+        "asset": "assets/figures/chapter16/16.10.b6.webp",
+        "source": "Exploring Geology · Fig. 16.10.b6",
         "start": 0
       },
       {
         "label": "Reverse the imbalance",
         "text": "If transport increases relative to supply, the same reach can erode its bed.",
-        "asset": "assets/figures/chapter16/16.10.b2.webp",
-        "source": "Exploring Geology · 16.10.b2",
+        "asset": "assets/figures/chapter16/16.10.b6.webp",
+        "source": "Exploring Geology · Fig. 16.10.b6",
         "start": 7.04
       }
     ],
@@ -882,7 +906,8 @@ Object.assign(window.L.FINAL_FILMS, {
         11.84,
         "If transport increases relative to supply, the same reach can erode its bed."
       ]
-    ]
+    ],
+    "revision": "20261117-course-figures"
   },
   "F16S11": {
     "id": "16-11",
@@ -891,14 +916,14 @@ Object.assign(window.L.FINAL_FILMS, {
         "label": "Mark the floodplain",
         "text": "Before incision, floodwater spreads across a low surface beside the channel.",
         "asset": "assets/figures/chapter16/16.11.a3.webp",
-        "source": "Exploring Geology · 16.11.a3",
+        "source": "Exploring Geology · Fig. 16.11.a3",
         "start": 0
       },
       {
         "label": "Lower the bed",
         "text": "After the river cuts down, remnants of that former floodplain stand above the new channel as terraces.",
-        "asset": "assets/figures/chapter16/16.11.b1.webp",
-        "source": "Exploring Geology · 16.11.b1",
+        "asset": "assets/figures/chapter16/16.11.a3.webp",
+        "source": "Exploring Geology · Fig. 16.11.a3",
         "start": 5.76
       }
     ],
@@ -918,7 +943,8 @@ Object.assign(window.L.FINAL_FILMS, {
         12.24,
         "former floodplain stand above the new channel as terraces."
       ]
-    ]
+    ],
+    "revision": "20261117-course-figures"
   },
   "F16S12": {
     "id": "16-12",
@@ -926,15 +952,15 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Follow the stream",
         "text": "A stream can cut through a narrow rock wall between bends and leave a natural bridge overhead.",
-        "asset": "assets/figures/chapter16/16.12.a4.webp",
-        "source": "Exploring Geology · 16.12.a4",
+        "asset": "assets/figures/chapter16/16.12.a6.webp",
+        "source": "Exploring Geology · Fig. 16.12.a6",
         "start": 0
       },
       {
         "label": "Compare an arch",
         "text": "An opening formed by weathering and rockfall without a stream cutting through is a natural arch.",
-        "asset": "assets/figures/chapter16/16.12.a2.webp",
-        "source": "Exploring Geology · 16.12.a2",
+        "asset": "assets/figures/chapter16/16.12.b7.webp",
+        "source": "Exploring Geology · Fig. 16.12.b7",
         "start": 6.8
       }
     ],
@@ -954,7 +980,8 @@ Object.assign(window.L.FINAL_FILMS, {
         12.879999999999999,
         "An opening formed by weathering and rockfall without a stream cutting through is a natural arch."
       ]
-    ]
+    ],
+    "revision": "20261117-course-figures"
   },
   "F16S13": {
     "id": "16-13",
@@ -962,15 +989,15 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Raise the stage",
         "text": "Water can rise inside a channel without covering the adjacent floodplain.",
-        "asset": "assets/figures/chapter16/16.13.a3.webp",
-        "source": "Exploring Geology · 16.13.a3",
+        "asset": "assets/figures/chapter16/16.13.a2.webp",
+        "source": "Exploring Geology · Fig. 16.13.a2",
         "start": 0
       },
       {
         "label": "Cross the bank",
         "text": "When the river overtops its banks, water spreads across land that is usually dry.",
-        "asset": "assets/figures/chapter16/16.13.a4.webp",
-        "source": "Exploring Geology · 16.13.a4",
+        "asset": "assets/figures/chapter16/16.13.a1.webp",
+        "source": "Exploring Geology · Fig. 16.13.a1",
         "start": 5.440041666666667
       }
     ],
@@ -985,7 +1012,8 @@ Object.assign(window.L.FINAL_FILMS, {
         10.960041666666665,
         "When the river overtops its banks, water spreads across land that is usually dry."
       ]
-    ]
+    ],
+    "revision": "20261117-course-figures"
   },
   "F16S15": {
     "id": "16-15",
@@ -994,14 +1022,14 @@ Object.assign(window.L.FINAL_FILMS, {
         "label": "Measure the section",
         "text": "Stream discharge equals the cross-sectional area of flowing water multiplied by its mean velocity.",
         "asset": "assets/figures/chapter16/16.15.a2.webp",
-        "source": "Exploring Geology · 16.15.a2",
+        "source": "Exploring Geology · Fig. 16.15.a2",
         "start": 0
       },
       {
         "label": "Interpret the odds",
         "text": "A hundred-year flood has a one percent chance of being equaled or exceeded in any given year under the assumed conditions.",
         "asset": "assets/figures/chapter16/16.15.b2.webp",
-        "source": "Exploring Geology · 16.15.b2",
+        "source": "Exploring Geology · Fig. 16.15.b2",
         "start": 7.2
       }
     ],
@@ -1016,7 +1044,8 @@ Object.assign(window.L.FINAL_FILMS, {
         13.600000000000001,
         "A hundred-year flood has a one percent chance of being equaled or exceeded in any given year under the assumed conditions."
       ]
-    ]
+    ],
+    "revision": "20261117-course-figures"
   },
   "F16S16": {
     "id": "16-16",
@@ -1024,15 +1053,15 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Follow the Colorado",
         "text": "The Colorado River gathers tributaries, cuts deep canyons, and carries sediment toward its mouth.",
-        "asset": "assets/figures/chapter16/16.16.a1.webp",
-        "source": "Exploring Geology · 16.16.a1",
+        "asset": "assets/figures/chapter16/16.16.a2.webp",
+        "source": "Exploring Geology · Fig. 16.16.a2",
         "start": 0
       },
       {
         "label": "Follow the sediment",
         "text": "Reservoirs interrupt that route by trapping sediment that otherwise could travel farther downstream.",
-        "asset": "assets/figures/chapter16/16.16.a10.webp",
-        "source": "Exploring Geology · 16.16.a10",
+        "asset": "assets/figures/chapter16/16.09.c1.webp",
+        "source": "Exploring Geology · Fig. 16.09.c1",
         "start": 7.36
       }
     ],
@@ -1047,7 +1076,8 @@ Object.assign(window.L.FINAL_FILMS, {
         12.48,
         "Reservoirs interrupt that route by trapping sediment that otherwise could travel farther downstream."
       ]
-    ]
+    ],
+    "revision": "20261117-course-figures"
   },
   "F16S17": {
     "id": "16-17",
@@ -1056,14 +1086,14 @@ Object.assign(window.L.FINAL_FILMS, {
         "label": "Trace low ground",
         "text": "Water that overtops a channel spreads first into low areas that connect to the river.",
         "asset": "assets/figures/chapter16/16.17.a1.webp",
-        "source": "Exploring Geology · 16.17.a1",
+        "source": "Exploring Geology · Fig. 16.17.a1",
         "start": 0
       },
       {
         "label": "Compare two sites",
         "text": "A nearby terrace can stand above a flood that covers a more distant part of the floodplain.",
         "asset": "assets/figures/chapter16/16.17.a2.webp",
-        "source": "Exploring Geology · 16.17.a2",
+        "source": "Exploring Geology · Fig. 16.17.a2",
         "start": 6.08
       }
     ],
@@ -1083,7 +1113,8 @@ Object.assign(window.L.FINAL_FILMS, {
         10.8,
         "that covers a more distant part of the floodplain."
       ]
-    ]
+    ],
+    "revision": "20261117-course-figures"
   },
   "F15S7": {
     "id": "15-07",
@@ -1092,14 +1123,14 @@ Object.assign(window.L.FINAL_FILMS, {
         "label": "Follow the stream",
         "text": "In limestone terrain, water can enter a sinkhole and continue through an underground passage.",
         "asset": "assets/figures/chapter15/15.06.c1.webp",
-        "source": "Exploring Geology · 15.06.c1",
+        "source": "Exploring Geology · Fig. 15.06.c1",
         "start": 0
       },
       {
         "label": "Read the relief",
         "text": "As dissolution enlarges openings, intervening masses of limestone may remain as steep hills or towers.",
-        "asset": "assets/figures/chapter15/15.06.a1.webp",
-        "source": "Exploring Geology · 15.06.a1",
+        "asset": "assets/figures/chapter15/15.02.b3.webp",
+        "source": "Exploring Geology · Fig. 15.02.b3",
         "start": 7.2
       }
     ],
@@ -1114,7 +1145,8 @@ Object.assign(window.L.FINAL_FILMS, {
         13.36,
         "As dissolution enlarges openings, intervening masses of limestone may remain as steep hills or towers."
       ]
-    ]
+    ],
+    "revision": "20261117-course-figures"
   },
   "F15S15": {
     "id": "15-15",
@@ -1129,8 +1161,8 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Test for motion",
         "text": "Compare the positions of markers across the suspected slide against stable ground to see whether movement continues.",
-        "asset": "assets/figures/chapter15/15.16.a3.webp",
-        "source": "Exploring Geology · 15.16.a3",
+        "asset": "assets/figures/chapter15/15.16.b1.webp",
+        "source": "Exploring Geology · Fig. 15.16.b1",
         "start": 6.640000000000001
       }
     ],
@@ -1150,7 +1182,8 @@ Object.assign(window.L.FINAL_FILMS, {
         13.120000000000001,
         "slide against stable ground to see whether movement continues."
       ]
-    ]
+    ],
+    "revision": "20261117-course-figures"
   },
   "F16S2": {
     "id": "16-02",
@@ -1165,8 +1198,8 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Watch the bed",
         "text": "Larger fragments may roll or slide along the bottom, scraping the channel as they move.",
-        "asset": "assets/figures/chapter16/16.03.b1.webp",
-        "source": "Exploring Geology · 16.03.b1",
+        "asset": "assets/figures/chapter16/stream-load.webp",
+        "source": "Connect assignment 16 · Q4",
         "start": 7.36
       }
     ],
@@ -1186,7 +1219,8 @@ Object.assign(window.L.FINAL_FILMS, {
         12.72,
         "Larger fragments may roll or slide along the bottom, scraping the channel as they move."
       ]
-    ]
+    ],
+    "revision": "20261117-course-figures"
   },
   "F16S5": {
     "id": "16-05",
@@ -1202,7 +1236,7 @@ Object.assign(window.L.FINAL_FILMS, {
         "label": "Move the bend",
         "text": "Erosion on the outside and deposition on the inside shift the bend sideways across the valley floor.",
         "asset": "assets/figures/chapter16/16.08.a3.webp",
-        "source": "Exploring Geology · 16.08.a3",
+        "source": "Exploring Geology · Fig. 16.08.a3",
         "start": 5.92
       }
     ],
@@ -1227,7 +1261,8 @@ Object.assign(window.L.FINAL_FILMS, {
         12.08,
         "inside shift the bend sideways across the valley floor."
       ]
-    ]
+    ],
+    "revision": "20261117-course-figures"
   },
   "F16S14": {
     "id": "16-14",
@@ -1235,15 +1270,15 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Hold the storm in place",
         "text": "In the Big Thompson flood of nineteen seventy-six, intense rain persisted over a small area of the drainage basin.",
-        "asset": "assets/figures/chapter16/flash-curves.webp",
-        "source": "Connect assessment 16 · Q17",
+        "asset": "assets/figures/chapter16/16.04.c7.webp",
+        "source": "Exploring Geology · Fig. 16.04.c7 · Illustrative basin",
         "start": 0
       },
       {
         "label": "Follow the runoff",
         "text": "As runoff converged on the channel, the river rose rapidly and produced a flash flood.",
-        "asset": "assets/figures/chapter16/flash-curves.webp",
-        "source": "Connect assessment 16 · Q17",
+        "asset": "assets/figures/chapter16/16.13.a5.webp",
+        "source": "Exploring Geology · Fig. 16.13.a5 · Illustrative curve",
         "start": 8.4
       }
     ],
@@ -1258,6 +1293,7 @@ Object.assign(window.L.FINAL_FILMS, {
         14.4,
         "As runoff converged on the channel, the river rose rapidly and produced a flash flood."
       ]
-    ]
+    ],
+    "revision": "20261117-course-figures"
   }
 });
