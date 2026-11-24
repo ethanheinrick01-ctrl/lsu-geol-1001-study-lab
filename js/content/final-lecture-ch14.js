@@ -146,3 +146,16 @@
     ["*An interval with a higher marine heavy-to-light oxygen ratio", "An interval with a lower marine heavy-to-light oxygen ratio", "An interval with a shorter age tick spacing", "An interval with a larger horizontal distance between ticks"],
     "When growing ice sheets store more light oxygen on land, ocean water becomes relatively enriched in heavy oxygen.");
 })(window.L.FINAL_STUDY.lectureFigure);
+/* Numbered lecture comparison with the complete word bank. */
+(function (lab) {
+  const media = {"kind": "img", "src": "assets/figures/lecture14/ice-types.webp", "alt": "Numbered lecture panels 1 through 3", "cap": "Lecture slides 8 · original figures with panel numbers"};
+  const topic = lab.FINAL_STUDY.topics.find(t => t.id === "F14S1");
+  topic.media.push(media);
+  lab.A.match("final-lecture-bank-14-ice-types",
+    "c14s1-core",
+    "Match the three lecture images to the type of glacier. Use the terrain around the ice to make your choice.",
+    [["Figure 1", "Ice sheet"], ["Figure 2", "Valley glacier"], ["Figure 3", "Piedmont glacier"]],
+    "The ice sheet covers a broad area. Valley walls confine the second glacier. In the third panel the ice spreads into a lobe after emerging from the mountains.",
+    ["Lecture14:8"],
+    {examId: "final", ch: 14, media, wordBank: true, lectureFigure: true, sourceFigure: true});
+})(window.L);

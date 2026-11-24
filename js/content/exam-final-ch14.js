@@ -13,8 +13,8 @@
   const {chapter, term, highlight, group} = L.FINAL_STUDY;
   const {img, section} = chapter(14, {
     name: 'Ch 14 · Glaciers, Coasts, and Changing Sea Levels', short: 'Ch 14', coverage: 'Sections 14.1–14.7',
-    evidence: 'November 10 and 12 lectures, assigned textbook figures, and Connect captures.',
-    sourceNote: 'Study stops at 14.7. Figure captions identify the assigned textbook art and Connect diagrams. Lecture references show where the instructor discusses the material; the original PowerPoint was not supplied.'
+    evidence: 'Chapter 14 lecture PowerPoint, November 10 and 12 lectures, assigned textbook figures, and Connect captures.',
+    sourceNote: 'Study covers 14.1–14.7. Figure captions identify the lecture slide, textbook figure, or Connect source.'
   }, (n, location) => [text + ':14.' + n + ' · ' + location]);
   const fig = (file, locator, description) => img(file, description, 'Exploring Geology · ' + locator + ' · ' + description);
   const bank = (file, question, description) => img(file, description, 'Chapter 14 Connect assignment · ' + question + ' · ' + description);

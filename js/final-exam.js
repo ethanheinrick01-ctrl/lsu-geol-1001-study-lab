@@ -9,7 +9,7 @@
   function figureRefs(id) {
     const t = topic(id);
     if (!t) return [];
-    const items = E.itemsFor(it => it.examId === 'final' && it.media && t.concepts.includes(it.c));
+    const items = E.itemsFor(it => it.examId === 'final' && it.media && it.t !== 'teach' && t.concepts.includes(it.c));
     return items.sort((a, b) => Number(!!b.lectureFigure) - Number(!!a.lectureFigure)).map(it => ({id: it.id}));
   }
 
@@ -50,8 +50,8 @@
       '<a class="btn small" href="' + b + '.vtt" download>Save captions</a></div>' +
       '<details class="ad-narration"><summary>Read the film transcript</summary>' + stages.map(s =>
         '<h3>' + esc(s.label) + '</h3><p>' + esc(s.text) + '</p>').join('') + '</details>' +
-      '<details class="ad-narration"><summary>Visual sources and diagram notes</summary><ul>' + stages.map(s =>
-        '<li>' + esc(s.source) + ' · <a href="' + esc(s.asset) + '" target="_blank" rel="noopener">Open course figure</a></li>').join('') +
+      '<details class="ad-narration"><summary>Visual sources and diagram notes</summary><ul>' + stages.flatMap(stage => stage.figures || [stage]).map(figure =>
+        '<li>' + esc(figure.source) + ' · <a href="' + esc(figure.asset) + '" target="_blank" rel="noopener">Open course figure</a></li>').join('') +
       '</ul><p>Distances and process time are schematic. Narration uses Ethan’s synthetic voice.</p></details>' +
       '<p class="small muted">Watching does not award mastery.</p></section>';
   }
@@ -209,9 +209,7 @@
         return;
       }
       b.onclick = () => {
-        const used = new Set(figures.map(ref => ref.id));
-        const supporting = L.pilotPractice.plan(lesson.concepts, 8, 'final').refs.filter(ref => !used.has(ref.id));
-        L.pilotPractice.launch({examId: 'final', refs: figures.concat(supporting)}, lesson.title + ' · Figure practice', lessonRoute(lesson));
+        L.pilotPractice.launch({examId: 'final', refs: figures}, lesson.title + ' · Figure practice', lessonRoute(lesson));
       };
     });
     main.querySelectorAll('[data-final-write]').forEach(b => {

@@ -1525,14 +1525,34 @@ window.L.FINAL_FILMS = {
         "text": "Burial compacts snow into firn, then glacial ice. Above the equilibrium line, annual gain exceeds loss. Below the equilibrium line, annual ice loss exceeds gain. Watch the stake move downhill while the ice front retreats uphill because the front loses ice faster than flow can replace it.",
         "asset": "assets/figures/lecture14/s10-i22.webp",
         "source": "Lecture slides 10, 11",
-        "start": 0
+        "start": 0,
+        "figures": [
+          {
+            "source": "Chapter 14 lecture · slide 10",
+            "asset": "assets/figures/lecture14/s10-i22.webp"
+          },
+          {
+            "source": "Chapter 14 lecture · slide 11",
+            "asset": "assets/figures/lecture14/s11-i24.webp"
+          }
+        ]
       },
       {
         "label": "Slide, deform, and calve",
         "text": "Even when the glacier is locked to its bed, ice higher up can deform and flow. Meltwater can help the base slide, too. Where the glacier reaches water, a block can break away as an iceberg. A floating extension still connected to land ice is an ice shelf.",
         "asset": "assets/figures/lecture14/s12-i26.webp",
         "source": "Lecture slides 12, 13",
-        "start": 24.02
+        "start": 24.02,
+        "figures": [
+          {
+            "source": "Chapter 14 lecture · slide 12",
+            "asset": "assets/figures/lecture14/s12-i26.webp"
+          },
+          {
+            "source": "Chapter 14 lecture · slide 13",
+            "asset": "assets/figures/lecture14/s13-i28.webp"
+          }
+        ]
       }
     ],
     "cues": [
@@ -1619,7 +1639,17 @@ window.L.FINAL_FILMS = {
         "text": "Ice carries debris on its surface, inside it, and at the bed. As the ice melts it can leave poorly sorted till. Meltwater can carry some of that debris farther and lay it down in sorted layers as outwash.",
         "asset": "assets/figures/lecture14/s15-i35.webp",
         "source": "Lecture slides 15, 16",
-        "start": 17.68
+        "start": 17.68,
+        "figures": [
+          {
+            "source": "Chapter 14 lecture · slide 15",
+            "asset": "assets/figures/lecture14/s15-i35.webp"
+          },
+          {
+            "source": "Chapter 14 lecture · slide 16",
+            "asset": "assets/figures/lecture14/s16-i42.webp"
+          }
+        ]
       }
     ],
     "cues": [
@@ -1756,7 +1786,17 @@ window.L.FINAL_FILMS = {
         "text": "The outer terminal moraine marks the farthest position of this advance. As ice retreats, pauses can leave curved recessional ridges inside it. Under moving ice, elongated drumlins can record the flow trend.",
         "asset": "assets/figures/lecture14/s19-i52.webp",
         "source": "Lecture slides 19, 19",
-        "start": 0
+        "start": 0,
+        "figures": [
+          {
+            "source": "Chapter 14 lecture · slide 19",
+            "asset": "assets/figures/lecture14/s19-i52.webp"
+          },
+          {
+            "source": "Chapter 14 lecture · slide 19",
+            "asset": "assets/figures/lecture14/s19-i53.webp"
+          }
+        ]
       },
       {
         "label": "Trace the ice and meltwater",
@@ -1838,7 +1878,17 @@ window.L.FINAL_FILMS = {
         "text": "Meltwater lays down outwash. Fine windblown silt can settle into a layer called loess. In cold ground, summer thaw can reach the surface layer and allow roots to grow while the deeper permafrost remains frozen.",
         "asset": "assets/figures/lecture14/s20-i54.webp",
         "source": "Lecture slides 20, 21",
-        "start": 0
+        "start": 0,
+        "figures": [
+          {
+            "source": "Chapter 14 lecture · slide 20",
+            "asset": "assets/figures/lecture14/s20-i54.webp"
+          },
+          {
+            "source": "Chapter 14 lecture · slide 21",
+            "asset": "assets/figures/lecture14/s21-i57.webp"
+          }
+        ]
       },
       {
         "label": "Breach the ice dam",
