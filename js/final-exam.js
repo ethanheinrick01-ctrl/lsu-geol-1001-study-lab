@@ -8,7 +8,9 @@
 
   function figureRefs(id) {
     const t = topic(id);
-    return t ? E.itemsFor(it => it.examId === 'final' && it.media && t.concepts.includes(it.c)).map(it => ({id: it.id})) : [];
+    if (!t) return [];
+    const items = E.itemsFor(it => it.examId === 'final' && it.media && t.concepts.includes(it.c));
+    return items.sort((a, b) => Number(!!b.lectureFigure) - Number(!!a.lectureFigure)).map(it => ({id: it.id}));
   }
 
   function topicCard(t) {

@@ -1,4 +1,4 @@
-/* Measured stages and captions for the Final Exam Learn films. */
+/* Measured narration and stage timings. */
 window.L.FINAL_FILMS = {
   "F13S0": {
     "id": "13-00",
@@ -15,51 +15,52 @@ window.L.FINAL_FILMS = {
         "text": "Now follow the water on the ground. Channels collect runoff and carry it to the broad river plain. A single flood tells us about weather. Persistent forest and dry land help us compare climates.",
         "asset": "assets/figures/chapter13/image14.webp",
         "source": "Slide 2",
-        "start": 12.575
+        "start": 14.45
       }
     ],
     "cues": [
       [
         0.16,
-        3.68,
+        4.125,
         "Trace the blue air from the ocean to the mountain front."
       ],
       [
-        4.085,
-        6.385,
+        4.53,
+        7.3,
         "The barrier lifts moist air."
       ],
       [
-        6.765,
-        10.585,
+        7.68,
+        11.5,
         "It expands and cools, and droplets build into rain on the"
       ],
       [
-        10.585,
-        12.245,
+        11.5,
+        13.16,
         "slope that faces the wind."
       ],
       [
-        12.785,
-        15.005,
+        14.66,
+        17.42,
         "Now follow the water on the ground."
       ],
       [
-        15.315,
-        18.975,
+        17.73,
+        21.955,
         "Channels collect runoff and carry it to the broad river plain."
       ],
       [
-        19.26,
-        21.92,
+        22.24,
+        25.5,
         "A single flood tells us about weather."
       ],
       [
-        22.17,
-        26.03,
+        25.75,
+        29.61,
         "Persistent forest and dry land help us compare climates."
       ]
-    ]
+    ],
+    "revision": "lecture-20261124"
   },
   "F13S1": {
     "id": "13-01",
@@ -76,56 +77,57 @@ window.L.FINAL_FILMS = {
         "text": "On the map, each isobar joins places with equal pressure. The same pressure change across a shorter distance gives a stronger gradient. That force points across the lines from high pressure toward low pressure.",
         "asset": "assets/figures/chapter13/image19.webp",
         "source": "Slides 5 and 6",
-        "start": 13.71
+        "start": 15.07
       }
     ],
     "cues": [
       [
         0.16,
-        3.54,
+        3.955,
         "Watch the same particles in a shrinking cylinder."
       ],
       [
-        3.975,
-        6.975,
+        4.39,
+        7.88,
         "They hit the walls more often, increasing pressure."
       ],
       [
-        7.335,
-        10.675,
+        8.24,
+        11.58,
         "In a sealed rigid cylinder, heating raises pressure by making"
       ],
       [
-        10.675,
-        12.875,
+        11.58,
+        13.78,
         "the particles move faster instead."
       ],
       [
-        13.92,
-        17.98,
+        15.28,
+        19.805,
         "On the map, each isobar joins places with equal pressure."
       ],
       [
-        18.365,
-        21.385,
+        20.19,
+        23.21,
         "The same pressure change across a shorter distance gives a"
       ],
       [
-        21.385,
-        22.645,
+        23.21,
+        25.005,
         "stronger gradient."
       ],
       [
-        22.96,
-        26.34,
+        25.32,
+        28.7,
         "That force points across the lines from high pressure toward"
       ],
       [
-        26.34,
-        27.48,
+        28.7,
+        29.84,
         "low pressure."
       ]
-    ]
+    ],
+    "revision": "lecture-20261124"
   },
   "F13S2": {
     "id": "13-02",
@@ -142,61 +144,62 @@ window.L.FINAL_FILMS = {
         "text": "On a rotating Earth, moving air bends to its right in the Northern Hemisphere and to its left in the Southern Hemisphere. Near the equator, the trade winds converge. In middle latitudes, the prevailing winds generally come from the west.",
         "asset": "assets/figures/chapter13/image22.webp",
         "source": "Slides 8 and 9",
-        "start": 15.125
+        "start": 16.98
       }
     ],
     "cues": [
       [
         0.16,
-        3.18,
+        3.68,
         "By day, land warms faster than water."
       ],
       [
-        3.53,
-        7.65,
+        4.03,
+        8.15,
         "Rising air draws cooler marine air onshore at the surface."
       ],
       [
-        8.325,
-        10.985,
+        9.0,
+        12.025,
         "After dark, the land cools faster."
       ],
       [
-        11.47,
-        14.65,
+        12.51,
+        15.69,
         "The surface flow reverses and blows offshore."
       ],
       [
-        15.335,
-        18.315,
+        17.19,
+        20.17,
         "On a rotating Earth, moving air bends to its right in the"
       ],
       [
-        18.315,
-        20.875,
+        20.17,
+        22.73,
         "Northern Hemisphere and to its left in the Southern"
       ],
       [
-        20.875,
-        21.895,
+        22.73,
+        23.75,
         "Hemisphere."
       ],
       [
-        22.465,
-        25.105,
+        24.6,
+        27.665,
         "Near the equator, the trade winds converge."
       ],
       [
-        25.53,
-        28.89,
+        28.09,
+        31.45,
         "In middle latitudes, the prevailing winds generally come from"
       ],
       [
-        28.89,
-        30.27,
+        31.45,
+        32.83,
         "the west."
       ]
-    ]
+    ],
+    "revision": "lecture-20261124"
   },
   "F13S3": {
     "id": "13-03",
@@ -213,7 +216,7 @@ window.L.FINAL_FILMS = {
         "text": "Cloud droplets can collide and join into larger drops. A drop falls when its settling speed beats the updraft. Ice crystals can grow into snow. Supercooling means a drop has cooled below freezing and is still liquid. A strong updraft holds ice aloft while those drops freeze onto it and build hail.",
         "asset": "assets/figures/chapter13/image28.webp",
         "source": "Slides 11 and 19",
-        "start": 16.7
+        "start": 18.32
       }
     ],
     "cues": [
@@ -228,56 +231,57 @@ window.L.FINAL_FILMS = {
         "particles."
       ],
       [
-        5.72,
-        9.1,
+        6.01,
+        9.745,
         "Droplets form and condensation releases heat."
       ],
       [
-        9.595,
-        12.235,
+        10.24,
+        12.88,
         "Evaporation is the reverse change."
       ],
       [
-        12.77,
-        16.07,
+        13.73,
+        17.03,
         "Evaporation takes energy from the surroundings."
       ],
       [
-        16.91,
-        20.97,
+        18.53,
+        23.065,
         "Cloud droplets can collide and join into larger drops."
       ],
       [
-        21.345,
-        25.585,
+        23.44,
+        28.235,
         "A drop falls when its settling speed beats the updraft."
       ],
       [
-        25.88,
-        27.92,
+        28.53,
+        30.995,
         "Ice crystals can grow into snow."
       ],
       [
-        28.345,
-        31.885,
+        31.42,
+        34.96,
         "Supercooling means a drop has cooled below freezing and is"
       ],
       [
-        31.885,
-        33.025,
+        34.96,
+        36.57,
         "still liquid."
       ],
       [
-        33.405,
-        37.345,
+        36.95,
+        40.89,
         "A strong updraft holds ice aloft while those drops freeze onto"
       ],
       [
-        37.345,
-        38.825,
+        40.89,
+        42.37,
         "it and build hail."
       ]
-    ]
+    ],
+    "revision": "lecture-20261124"
   },
   "F13S4": {
     "id": "13-04",
@@ -294,66 +298,67 @@ window.L.FINAL_FILMS = {
         "text": "At a warm front, the warm air advances over colder surface air along a gentler slope. Red semicircles show its direction. A stationary boundary has symbols on opposite sides. Mountains and global circulation also place rainfall where moist air rises.",
         "asset": "assets/figures/chapter13/fig-14.webp",
         "source": "Slides 14 through 17",
-        "start": 16.92
+        "start": 19.22
       }
     ],
     "cues": [
       [
         0.16,
-        3.04,
+        3.535,
         "As rising air expands, it cools."
       ],
       [
-        3.395,
-        6.84,
+        3.89,
+        8.0,
         "If it reaches saturation, droplets form."
       ],
       [
-        7.06,
-        10.78,
+        8.22,
+        11.94,
         "In the cold-front diagram, advancing dense air wedges beneath"
       ],
       [
-        10.78,
-        12.06,
+        11.94,
+        13.22,
         "warm air."
       ],
       [
-        12.6,
-        16.46,
+        14.07,
+        17.93,
         "Blue triangles show which way that boundary moves."
       ],
       [
-        17.13,
-        21.05,
+        19.43,
+        23.35,
         "At a warm front, the warm air advances over colder surface air"
       ],
       [
-        21.05,
-        22.91,
+        23.35,
+        25.21,
         "along a gentler slope."
       ],
       [
-        23.45,
-        26.33,
+        26.06,
+        28.94,
         "Red semicircles show its direction."
       ],
       [
-        27.04,
-        30.6,
+        29.79,
+        33.35,
         "A stationary boundary has symbols on opposite sides."
       ],
       [
-        31.175,
-        34.915,
+        34.2,
+        37.94,
         "Mountains and global circulation also place rainfall where"
       ],
       [
-        34.915,
-        36.535,
+        37.94,
+        39.56,
         "moist air rises."
       ]
-    ]
+    ],
+    "revision": "lecture-20261124"
   },
   "F13S5": {
     "id": "13-05",
@@ -370,66 +375,67 @@ window.L.FINAL_FILMS = {
         "text": "A supercell has a persistent rotating updraft. Wind shear helps organize that rotation. The updraft can support growing hail, and some storms develop tornadoes. A microburst comes from sinking air that spreads when it reaches the ground.",
         "asset": "assets/figures/chapter13/fig-19.webp",
         "source": "Slides 19 and 20",
-        "start": 19.26
+        "start": 21.76
       }
     ],
     "cues": [
       [
         0.16,
-        4.54,
+        5.105,
         "Surface air spirals inward over warm ocean water."
       ],
       [
-        4.825,
-        9.325,
+        5.39,
+        9.89,
         "The eyewall lifts moist air, and condensation releases heat"
       ],
       [
-        9.325,
-        11.105,
+        9.89,
+        12.185,
         "that supports the circulation."
       ],
       [
-        11.44,
-        14.34,
+        12.52,
+        16.01,
         "Inside the eye, the air generally sinks."
       ],
       [
-        14.6,
-        18.8,
+        16.27,
+        20.47,
         "The eyewall is where the strongest winds typically occur."
       ],
       [
-        19.47,
-        23.15,
+        21.97,
+        25.65,
         "A supercell has a persistent rotating updraft."
       ],
       [
-        23.7,
-        26.6,
+        26.5,
+        29.875,
         "Wind shear helps organize that rotation."
       ],
       [
-        26.975,
-        31.255,
+        30.25,
+        34.53,
         "The updraft can support growing hail, and some storms develop"
       ],
       [
-        31.255,
-        33.175,
+        34.53,
+        37.075,
         "tornadoes."
       ],
       [
-        33.4,
-        36.22,
+        37.3,
+        40.12,
         "A microburst comes from sinking air that spreads when it"
       ],
       [
-        36.22,
-        37.38,
+        40.12,
+        41.28,
         "reaches the ground."
       ]
-    ]
+    ],
+    "revision": "lecture-20261124"
   },
   "F13S6": {
     "id": "13-06",
@@ -446,7 +452,7 @@ window.L.FINAL_FILMS = {
         "text": "The Gulf Stream carries warm water poleward off eastern North America. The California, Peru, and Benguela currents carry cooler water toward lower latitudes. Read direction and temperature together. Use the map arrows to see where a current goes next.",
         "asset": "assets/figures/chapter13/fig-22.webp",
         "source": "Slide 22",
-        "start": 15.58
+        "start": 17.29
       }
     ],
     "cues": [
@@ -456,56 +462,57 @@ window.L.FINAL_FILMS = {
         "Wind transfers momentum to water at the ocean surface."
       ],
       [
-        4.685,
-        8.305,
+        4.87,
+        8.49,
         "Rotation and ocean basin boundaries turn that flow into broad"
       ],
       [
-        8.305,
-        9.325,
+        8.49,
+        10.035,
         "gyres."
       ],
       [
-        9.65,
-        13.17,
+        10.36,
+        13.88,
         "Trace the clockwise subtropical loop in the north, then the"
       ],
       [
-        13.17,
-        15.29,
+        13.88,
+        17.0,
         "counterclockwise loop in the south."
       ],
       [
-        15.79,
-        19.81,
+        17.5,
+        21.52,
         "The Gulf Stream carries warm water poleward off eastern North"
       ],
       [
-        19.81,
-        20.75,
+        21.52,
+        22.98,
         "America."
       ],
       [
-        21.08,
-        25.16,
+        23.31,
+        27.39,
         "The California, Peru, and Benguela currents carry cooler water"
       ],
       [
-        25.16,
-        27.22,
+        27.39,
+        29.45,
         "toward lower latitudes."
       ],
       [
-        27.82,
         30.3,
+        33.32,
         "Read direction and temperature together."
       ],
       [
-        30.61,
-        34.17,
+        33.63,
+        37.19,
         "Use the map arrows to see where a current goes next."
       ]
-    ]
+    ],
+    "revision": "lecture-20261124"
   },
   "F13S7": {
     "id": "13-07",
@@ -522,56 +529,57 @@ window.L.FINAL_FILMS = {
         "text": "In El Niño, weaker trades often let warm surface water spread east and reduce eastern upwelling. In La Niña, stronger trades push warm water farther west, leaving cooler water near the surface in the east.",
         "asset": "assets/figures/chapter13/fig-26.webp",
         "source": "Slide 26",
-        "start": 15.65
+        "start": 17.31
       }
     ],
     "cues": [
       [
         0.16,
-        3.64,
+        4.07,
         "Wind drives much of the flow near the ocean surface."
       ],
       [
-        4.06,
-        7.24,
+        4.49,
+        7.67,
         "Where seawater becomes cold and salty, it can grow dense"
       ],
       [
-        7.24,
-        9.16,
+        7.67,
+        10.075,
         "enough to sink and move at depth."
       ],
       [
-        9.525,
-        12.625,
+        10.44,
+        13.54,
         "Surface currents can also carry heat to a coast when the wind"
       ],
       [
-        12.625,
-        15.105,
+        13.54,
+        16.02,
         "carries marine air inland."
       ],
       [
-        15.86,
-        20.08,
+        17.52,
+        21.74,
         "In El Niño, weaker trades often let warm surface water spread"
       ],
       [
-        20.08,
-        22.82,
+        21.74,
+        24.865,
         "east and reduce eastern upwelling."
       ],
       [
-        23.285,
-        26.785,
+        25.33,
+        28.83,
         "In La Niña, stronger trades push warm water farther west,"
       ],
       [
-        26.945,
-        30.005,
+        28.99,
+        32.05,
         "leaving cooler water near the surface in the east."
       ]
-    ]
+    ],
+    "revision": "lecture-20261124"
   },
   "F13S8": {
     "id": "13-08",
@@ -588,61 +596,62 @@ window.L.FINAL_FILMS = {
         "text": "Follow the same pole as Earth goes around the Sun. The axis keeps its tilt direction in this model. When a hemisphere tilts toward the Sun, days are longer and sunlight strikes more directly. The two hemispheres have opposite seasons.",
         "asset": "assets/figures/chapter13/seasons.webp",
         "source": "Slide 29",
-        "start": 17.895
+        "start": 20.12
       }
     ],
     "cues": [
       [
         0.16,
-        5.0,
+        5.35,
         "Strong summer heating over land draws moist ocean air inland."
       ],
       [
-        5.5,
-        8.58,
+        5.85,
+        9.34,
         "Mountains lift that air and intensify rain."
       ],
       [
-        9.02,
-        12.2,
+        9.78,
+        13.59,
         "In the dry season the prevailing wind reverses."
       ],
       [
-        12.42,
-        15.94,
+        13.81,
+        17.33,
         "Changes in winds, currents, or persistent high pressure can"
       ],
       [
-        15.94,
-        17.44,
+        17.33,
+        18.83,
         "also bring drought."
       ],
       [
-        18.105,
-        21.105,
+        20.33,
+        23.815,
         "Follow the same pole as Earth goes around the Sun."
       ],
       [
-        21.47,
-        24.73,
+        24.18,
+        27.98,
         "The axis keeps its tilt direction in this model."
       ],
       [
-        25.04,
-        28.6,
+        28.29,
+        31.85,
         "When a hemisphere tilts toward the Sun, days are longer and"
       ],
       [
-        28.6,
-        30.78,
+        31.85,
+        34.03,
         "sunlight strikes more directly."
       ],
       [
-        31.495,
-        34.635,
+        34.88,
+        38.02,
         "The two hemispheres have opposite seasons."
       ]
-    ]
+    ],
+    "revision": "lecture-20261124"
   },
   "F13S9": {
     "id": "13-09",
@@ -659,7 +668,7 @@ window.L.FINAL_FILMS = {
         "text": "Tropical rain forests have a high canopy over a darker understory. Temperate rain forests can form on moist, ocean-facing slopes. Watch a road open a continuous forest into isolated patches as clearing expands. The wet climate can persist while the forest disappears.",
         "asset": "assets/figures/chapter13/fig-31.webp",
         "source": "Slides 30 and 31",
-        "start": 13.71
+        "start": 15.43
       }
     ],
     "cues": [
@@ -669,51 +678,52 @@ window.L.FINAL_FILMS = {
         "Trade winds meet in a moving tropical belt."
       ],
       [
-        4.44,
-        8.08,
+        4.69,
+        8.9,
         "The convergence lifts moist air, producing clouds and rain."
       ],
       [
-        8.36,
-        12.2,
+        9.18,
+        13.02,
         "As the belt shifts with the seasons, the favored zone of rain"
       ],
       [
-        12.2,
-        13.32,
+        13.02,
+        14.14,
         "moves too."
       ],
       [
-        13.92,
-        17.26,
+        15.64,
+        18.98,
         "Tropical rain forests have a high canopy over a darker"
       ],
       [
-        17.26,
-        18.44,
+        18.98,
+        20.695,
         "understory."
       ],
       [
-        18.755,
-        22.955,
+        21.01,
+        25.7,
         "Temperate rain forests can form on moist, ocean-facing slopes."
       ],
       [
-        23.315,
-        26.795,
+        26.06,
+        29.54,
         "Watch a road open a continuous forest into isolated patches as"
       ],
       [
-        26.795,
-        28.095,
+        29.54,
+        30.84,
         "clearing expands."
       ],
       [
-        28.595,
-        32.255,
+        31.69,
+        35.35,
         "The wet climate can persist while the forest disappears."
       ]
-    ]
+    ],
+    "revision": "lecture-20261124"
   },
   "F13S10": {
     "id": "13-10",
@@ -730,7 +740,7 @@ window.L.FINAL_FILMS = {
         "text": "Sinking air, inland distance, and cool coastal currents can also help make deserts. Desertification is a change to dryland. When vegetation thins, bare ground erodes more readily. Losing soil can make it harder for the cover to recover.",
         "asset": "assets/figures/chapter13/image73.webp",
         "source": "Slides 33 and 34",
-        "start": 14.53
+        "start": 16.33
       }
     ],
     "cues": [
@@ -741,45 +751,46 @@ window.L.FINAL_FILMS = {
       ],
       [
         4.08,
-        5.48,
+        5.86,
         "water as rain."
       ],
       [
-        5.95,
-        9.67,
+        6.33,
+        10.6,
         "On the lee side, the same air descends and warms."
       ],
       [
-        9.97,
-        14.11,
+        10.9,
+        15.04,
         "Its relative humidity drops, favoring a dry basin."
       ],
       [
-        14.74,
-        18.48,
+        16.54,
+        20.28,
         "Sinking air, inland distance, and cool coastal currents can"
       ],
       [
-        18.48,
-        20.56,
+        20.28,
+        22.88,
         "also help make deserts."
       ],
       [
-        20.89,
-        23.99,
+        23.21,
+        26.31,
         "Desertification is a change to dryland."
       ],
       [
-        24.565,
-        28.385,
+        27.16,
+        30.98,
         "When vegetation thins, bare ground erodes more readily."
       ],
       [
-        29.005,
-        32.665,
+        31.83,
+        35.49,
         "Losing soil can make it harder for the cover to recover."
       ]
-    ]
+    ],
+    "revision": "lecture-20261124"
   },
   "F13S11": {
     "id": "13-11",
@@ -796,56 +807,57 @@ window.L.FINAL_FILMS = {
         "text": "Deflation removes loose grains from the ground, while roots can protect a patch. Abrasion wears the rock itself as passing grains strike it. Where the wind slows, some of the carried material settles instead.",
         "asset": "assets/figures/chapter13/fig-37.webp",
         "source": "Slides 37 and 38",
-        "start": 15.495
+        "start": 17.84
       }
     ],
     "cues": [
       [
         0.16,
-        3.48,
+        3.98,
         "Watch three sizes respond to the same wind."
       ],
       [
-        3.83,
-        7.25,
+        4.33,
+        7.75,
         "Coarse grains roll or slide at the surface."
       ],
       [
-        7.775,
-        11.015,
+        8.6,
+        12.43,
         "Sand moves in short hops called saltation."
       ],
       [
-        11.275,
-        15.135,
+        12.69,
+        16.55,
         "Fine dust stays suspended much higher and travels farther."
       ],
       [
-        15.705,
-        19.445,
+        18.05,
+        21.79,
         "Deflation removes loose grains from the ground, while roots"
       ],
       [
-        19.445,
-        21.125,
+        21.79,
+        23.925,
         "can protect a patch."
       ],
       [
-        21.52,
-        25.36,
+        24.32,
+        28.16,
         "Abrasion wears the rock itself as passing grains strike it."
       ],
       [
-        25.91,
-        29.21,
+        29.01,
+        32.31,
         "Where the wind slows, some of the carried material settles"
       ],
       [
-        29.21,
-        30.11,
+        32.31,
+        33.21,
         "instead."
       ]
-    ]
+    ],
+    "revision": "lecture-20261124"
   },
   "F13S12": {
     "id": "13-12",
@@ -862,7 +874,7 @@ window.L.FINAL_FILMS = {
         "text": "Wind carries sand up the gentle slope. Sand spills over the crest and avalanches down the steep downwind face. As the dune migrates, repeated avalanches build inclined layers. Loess is windblown silt, a different deposit from dune sand.",
         "asset": "assets/figures/chapter13/image94.webp",
         "source": "Slide 40",
-        "start": 16.36
+        "start": 18.13
       }
     ],
     "cues": [
@@ -873,60 +885,61 @@ window.L.FINAL_FILMS = {
       ],
       [
         3.9,
-        4.64,
+        5.21,
         "wind."
       ],
       [
-        4.92,
-        8.64,
+        5.49,
+        9.21,
         "A parabolic dune has arms anchored by vegetation, so the tips"
       ],
       [
-        8.64,
-        10.04,
+        9.21,
+        10.61,
         "point upwind."
       ],
       [
-        10.56,
-        14.2,
+        11.46,
+        15.1,
         "Sand supply and changes in wind direction help explain the"
       ],
       [
-        14.2,
-        15.94,
+        15.1,
+        16.84,
         "other shapes on the slide."
       ],
       [
-        16.57,
-        19.31,
+        18.34,
+        21.71,
         "Wind carries sand up the gentle slope."
       ],
       [
-        19.53,
-        23.01,
+        21.93,
+        25.41,
         "Sand spills over the crest and avalanches down the steep"
       ],
       [
-        23.01,
-        24.43,
+        25.41,
+        27.26,
         "downwind face."
       ],
       [
-        24.85,
-        28.27,
+        27.68,
+        31.1,
         "As the dune migrates, repeated avalanches build inclined"
       ],
       [
-        28.27,
-        29.13,
+        31.1,
+        31.96,
         "layers."
       ],
       [
-        29.68,
-        34.26,
+        32.81,
+        37.39,
         "Loess is windblown silt, a different deposit from dune sand."
       ]
-    ]
+    ],
+    "revision": "lecture-20261124"
   },
   "F13S13": {
     "id": "13-13",
@@ -943,7 +956,7 @@ window.L.FINAL_FILMS = {
         "text": "A pediment is eroded bedrock at a mountain front. On other surfaces, closely packed stones form desert pavement. Varnish darkens the rock surface, while caliche forms from carbonate in the soil. The three look different in a cutaway.",
         "asset": "assets/figures/chapter13/fig-42.webp",
         "source": "Slide 42",
-        "start": 16.355
+        "start": 18.05
       }
     ],
     "cues": [
@@ -958,46 +971,47 @@ window.L.FINAL_FILMS = {
         "flatter ground."
       ],
       [
-        5.81,
-        9.69,
+        6.03,
+        10.49,
         "It slows and drops sediment, building an alluvial fan."
       ],
       [
-        9.96,
-        13.94,
+        10.76,
+        14.74,
         "Farther down in a closed basin, water can pond on a playa and"
       ],
       [
-        13.94,
-        15.96,
+        14.74,
+        16.76,
         "leave fine sediment or salts."
       ],
       [
-        16.565,
-        19.965,
+        18.26,
+        22.225,
         "A pediment is eroded bedrock at a mountain front."
       ],
       [
-        20.25,
-        24.63,
+        22.51,
+        27.51,
         "On other surfaces, closely packed stones form desert pavement."
       ],
       [
-        24.86,
-        28.22,
+        27.74,
+        31.1,
         "Varnish darkens the rock surface, while caliche forms from"
       ],
       [
-        28.22,
-        29.74,
+        31.1,
+        33.03,
         "carbonate in the soil."
       ],
       [
-        30.18,
-        32.62,
+        33.47,
+        35.91,
         "The three look different in a cutaway."
       ]
-    ]
+    ],
+    "revision": "lecture-20261124"
   },
   "F13S14": {
     "id": "13-14",
@@ -1014,7 +1028,7 @@ window.L.FINAL_FILMS = {
         "text": "A tree adds a layer as it grows. Ring width can respond to moisture as well as temperature. Cave deposits, ice, and fossils record other conditions. Compare independent evidence before assigning a climate cause to any one proxy.",
         "asset": "assets/figures/chapter13/fig-44.webp",
         "source": "Slide 44",
-        "start": 13.49
+        "start": 15.13
       }
     ],
     "cues": [
@@ -1029,46 +1043,47 @@ window.L.FINAL_FILMS = {
         "average."
       ],
       [
-        5.14,
-        7.92,
+        5.37,
+        8.54,
         "A negative value is cooler than the reference."
       ],
       [
-        8.38,
-        11.86,
+        9.0,
+        12.48,
         "A series can have brief dips and rises while its longer trend"
       ],
       [
-        11.86,
-        13.22,
+        12.48,
+        14.86,
         "still goes up."
       ],
       [
-        13.7,
-        16.16,
+        15.34,
+        18.205,
         "A tree adds a layer as it grows."
       ],
       [
-        16.605,
-        20.945,
+        18.65,
+        22.99,
         "Ring width can respond to moisture as well as temperature."
       ],
       [
-        21.755,
-        25.555,
+        23.84,
+        27.64,
         "Cave deposits, ice, and fossils record other conditions."
       ],
       [
-        26.31,
-        29.67,
+        28.49,
+        31.85,
         "Compare independent evidence before assigning a climate cause"
       ],
       [
-        29.67,
-        31.19,
+        31.85,
+        33.37,
         "to any one proxy."
       ]
-    ]
+    ],
+    "revision": "lecture-20261124"
   },
   "F13S15": {
     "id": "13-15",
@@ -1085,7 +1100,7 @@ window.L.FINAL_FILMS = {
         "text": "The Mauna Loa record shows small seasonal swings as plants take up and release carbon, over a larger long-term rise. The ice-core curves show carbon dioxide and temperature varying through glacial cycles. The axes differ, and the curves alone cannot identify the cause of every turn.",
         "asset": "assets/figures/chapter13/image113.webp",
         "source": "Slides 46 through 48 and ILEA 10",
-        "start": 16.76
+        "start": 18.66
       }
     ],
     "cues": [
@@ -1095,56 +1110,57 @@ window.L.FINAL_FILMS = {
         "Some incoming sunlight reflects back toward space."
       ],
       [
-        4.28,
-        7.0,
+        4.53,
+        7.25,
         "The surface absorbs some of the rest and emits infrared"
       ],
       [
-        7.0,
-        8.06,
+        7.25,
+        8.31,
         "radiation."
       ],
       [
-        8.585,
-        11.585,
+        9.16,
+        12.68,
         "Greenhouse gases absorb and reemit infrared."
       ],
       [
-        11.915,
-        16.275,
+        13.01,
+        17.37,
         "More carbon dioxide changes how readily heat escapes to space."
       ],
       [
-        16.97,
-        20.65,
+        18.87,
+        22.55,
         "The Mauna Loa record shows small seasonal swings as plants"
       ],
       [
-        20.65,
-        24.21,
+        22.55,
+        26.11,
         "take up and release carbon, over a larger long-term rise."
       ],
       [
-        24.87,
-        28.01,
+        26.96,
+        30.1,
         "The ice-core curves show carbon dioxide and temperature"
       ],
       [
-        28.01,
-        30.41,
+        30.1,
+        32.99,
         "varying through glacial cycles."
       ],
       [
-        30.77,
-        34.33,
+        33.35,
+        36.91,
         "The axes differ, and the curves alone cannot identify the"
       ],
       [
-        34.33,
-        36.11,
+        36.91,
+        38.69,
         "cause of every turn."
       ]
-    ]
+    ],
+    "revision": "lecture-20261124"
   },
   "F13S16": {
     "id": "13-16",
@@ -1161,7 +1177,7 @@ window.L.FINAL_FILMS = {
         "text": "Floating ice already displaces water, so melting it changes the level very little in this model. Grounded ice adds water when it drains into the sea. Warmer seawater expands and can also raise sea level. Storm counts measure frequency. They do not tell us how strong the storms became.",
         "asset": "assets/figures/chapter13/fig-49.webp",
         "source": "Slides 49 through 51",
-        "start": 14.14
+        "start": 15.81
       }
     ],
     "cues": [
@@ -1171,51 +1187,52 @@ window.L.FINAL_FILMS = {
         "Bright ice reflects more sunlight than dark ocean."
       ],
       [
-        4.555,
-        8.055,
+        4.85,
+        8.86,
         "As the ice retreats, more sunlight is absorbed."
       ],
       [
-        8.395,
-        12.515,
+        9.2,
+        13.32,
         "That extra warming can drive further retreat, reinforcing the"
       ],
       [
-        12.515,
-        13.715,
+        13.32,
+        14.52,
         "original change."
       ],
       [
-        14.35,
-        18.37,
+        16.02,
+        20.04,
         "Floating ice already displaces water, so melting it changes"
       ],
       [
-        18.37,
-        20.95,
+        20.04,
+        23.09,
         "the level very little in this model."
       ],
       [
-        21.33,
-        25.23,
+        23.47,
+        27.94,
         "Grounded ice adds water when it drains into the sea."
       ],
       [
-        25.51,
-        29.67,
+        28.22,
+        32.95,
         "Warmer seawater expands and can also raise sea level."
       ],
       [
-        29.95,
-        31.97,
+        33.23,
+        35.785,
         "Storm counts measure frequency."
       ],
       [
-        32.285,
-        35.465,
+        36.1,
+        39.28,
         "They do not tell us how strong the storms became."
       ]
-    ]
+    ],
+    "revision": "lecture-20261124"
   },
   "F13S17": {
     "id": "13-17",
@@ -1232,7 +1249,7 @@ window.L.FINAL_FILMS = {
         "text": "Wet slopes can erode quickly because runoff carries material away. Removing mass can help the underlying rock rise. Rock motion and surface height are separate: erosion can lower the surface even while the rock beneath it rises.",
         "asset": "assets/figures/chapter13/fig-54.webp",
         "source": "Slide 54",
-        "start": 15.93
+        "start": 17.73
       }
     ],
     "cues": [
@@ -1243,50 +1260,51 @@ window.L.FINAL_FILMS = {
       ],
       [
         3.34,
-        4.9,
+        5.44,
         "close seaways."
       ],
       [
-        5.21,
-        8.69,
+        5.75,
+        9.715,
         "Uplift can turn a low crossing into a mountain barrier."
       ],
       [
-        9.055,
-        12.875,
+        10.08,
+        13.9,
         "Those changes alter sunlight, ocean heat transport, and where"
       ],
       [
-        12.875,
-        15.415,
+        13.9,
+        16.44,
         "moist air rises and rains."
       ],
       [
-        16.14,
-        19.82,
+        17.94,
+        21.62,
         "Wet slopes can erode quickly because runoff carries material"
       ],
       [
-        19.82,
-        20.76,
+        21.62,
+        23.12,
         "away."
       ],
       [
-        21.05,
-        24.63,
+        23.41,
+        26.99,
         "Removing mass can help the underlying rock rise."
       ],
       [
-        25.15,
-        28.83,
+        27.84,
+        31.52,
         "Rock motion and surface height are separate: erosion can lower"
       ],
       [
-        28.83,
-        32.05,
+        31.52,
+        34.74,
         "the surface even while the rock beneath it rises."
       ]
-    ]
+    ],
+    "revision": "lecture-20261124"
   },
   "F13S18": {
     "id": "13-18",
@@ -1303,56 +1321,57 @@ window.L.FINAL_FILMS = {
         "text": "Wind pushes water against the coast, raising it above the expected tide. At high tide the total water can reach even farther inland. Surge and waves can remain dangerous after a cyclone's classification changes.",
         "asset": "assets/figures/chapter13/image137.webp",
         "source": "Slides 55 and 56",
-        "start": 15.795
+        "start": 18.1
       }
     ],
     "cues": [
       [
         0.16,
-        3.86,
+        4.38,
         "Sandy traveled north over warm western Atlantic water."
       ],
       [
-        4.19,
-        7.99,
+        4.71,
+        8.94,
         "Track its circulation and the separate continental front."
       ],
       [
-        8.41,
-        11.45,
+        9.36,
+        12.875,
         "Interaction changed the storm's path and structure."
       ],
       [
-        11.825,
-        15.385,
+        13.25,
+        16.81,
         "It had become post-tropical by the time it reached New Jersey."
       ],
       [
-        16.005,
-        18.745,
+        18.31,
+        21.05,
         "Wind pushes water against the coast, raising it above the"
       ],
       [
-        18.745,
-        20.005,
+        21.05,
+        22.76,
         "expected tide."
       ],
       [
-        20.405,
-        23.945,
+        23.16,
+        26.7,
         "At high tide the total water can reach even farther inland."
       ],
       [
-        24.555,
-        28.215,
+        27.55,
+        31.21,
         "Surge and waves can remain dangerous after a cyclone's"
       ],
       [
-        28.215,
-        29.875,
+        31.21,
+        32.87,
         "classification changes."
       ]
-    ]
+    ],
+    "revision": "lecture-20261124"
   },
   "F13S19": {
     "id": "13-19",
@@ -1369,61 +1388,62 @@ window.L.FINAL_FILMS = {
         "text": "Use the site photographs as a test. Forest, dunes, and ice each support different climate inferences. For farming, look for adequate water and suitable relief. For cyclone exposure, check warm water and the path storms can take toward a coast.",
         "asset": "assets/figures/chapter13/fig-57.webp",
         "source": "Slides 57 through 59",
-        "start": 15.39
+        "start": 17.92
       }
     ],
     "cues": [
       [
         0.16,
-        2.98,
+        3.59,
         "Start with the arrows showing prevailing wind."
       ],
       [
-        3.22,
-        6.98,
+        3.83,
+        8.045,
         "Over warm water, onshore flow can pick up moisture."
       ],
       [
-        7.375,
-        10.735,
+        8.44,
+        12.345,
         "On the windward slope the air rises and rains."
       ],
       [
-        11.04,
-        15.02,
+        12.65,
+        16.63,
         "Behind the barrier, descending air can leave a dry region."
       ],
       [
-        15.6,
-        17.92,
+        18.13,
+        20.81,
         "Use the site photographs as a test."
       ],
       [
-        18.41,
-        21.99,
+        21.3,
+        24.88,
         "Forest, dunes, and ice each support different climate"
       ],
       [
-        21.99,
-        23.13,
+        24.88,
+        26.535,
         "inferences."
       ],
       [
-        23.465,
-        27.285,
+        26.87,
+        31.2,
         "For farming, look for adequate water and suitable relief."
       ],
       [
-        27.625,
-        31.345,
+        31.54,
+        35.26,
         "For cyclone exposure, check warm water and the path storms can"
       ],
       [
-        31.345,
-        32.765,
+        35.26,
+        36.68,
         "take toward a coast."
       ]
-    ]
+    ],
+    "revision": "lecture-20261124"
   },
   "F14S1": {
     "id": "14-01",
