@@ -5,16 +5,16 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Follow the valley",
         "text": "Heavy rain mobilizes loose material on the steep slopes above the Venezuelan coast.",
-        "asset": "assets/figures/chapter15/15.00.a1.webp",
-        "source": "Exploring Geology · Fig. 15.00.a1",
+        "asset": "assets/figures/lecture15/s2-i9.webp",
+        "source": "Chapter 15 lecture · slide 2",
         "start": 0
       },
       {
         "label": "Find the fan",
         "text": "Where the valley opens onto an alluvial fan, a debris flow can spread across the same flat ground that attracted settlement.",
-        "asset": "assets/figures/chapter15/15.00.a1.webp",
-        "source": "Exploring Geology · Fig. 15.00.a1",
-        "start": 6.0
+        "asset": "assets/figures/lecture15/s2-i9.webp",
+        "source": "Chapter 15 lecture · slide 2",
+        "start": 6.9
       }
     ],
     "cues": [
@@ -24,17 +24,17 @@ Object.assign(window.L.FINAL_FILMS, {
         "Heavy rain mobilizes loose material on the steep slopes above the Venezuelan coast."
       ],
       [
-        6.0,
-        8.64,
+        6.9,
+        9.54,
         "Where the valley opens onto an alluvial fan,"
       ],
       [
-        8.64,
-        12.24,
+        9.54,
+        13.14,
         "a debris flow can spread across the same flat ground that attracted settlement."
       ]
     ],
-    "revision": "20261117-course-figures"
+    "revision": "lecture-20261124"
   },
   "F15S1": {
     "id": "15-01",
@@ -42,16 +42,16 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Find the fracture",
         "text": "A joint divides solid rock into blocks without appreciable movement across the crack.",
-        "asset": "assets/figures/chapter15/15.01.a2.webp",
-        "source": "Exploring Geology · Fig. 15.01.a2",
+        "asset": "assets/figures/lecture15/s3-i14.webp",
+        "source": "Chapter 15 lecture · slide 3",
         "start": 0
       },
       {
         "label": "Open the path",
         "text": "As ice grows inside a wet fracture, it can pry the walls apart and expose fresh surfaces.",
-        "asset": "assets/figures/chapter15/15.01.a2.webp",
-        "source": "Exploring Geology · Fig. 15.01.a2",
-        "start": 6.8
+        "asset": "assets/figures/lecture15/s3-i14.webp",
+        "source": "Chapter 15 lecture · slide 3",
+        "start": 7.699999999999999
       }
     ],
     "cues": [
@@ -61,17 +61,17 @@ Object.assign(window.L.FINAL_FILMS, {
         "A joint divides solid rock into blocks without appreciable movement across the crack."
       ],
       [
-        6.8,
-        9.28,
+        7.7,
+        10.18,
         "As ice grows inside a wet fracture,"
       ],
       [
-        9.28,
-        12.399999999999999,
+        10.18,
+        13.3,
         "it can pry the walls apart and expose fresh surfaces."
       ]
     ],
-    "revision": "20261117-course-figures"
+    "revision": "lecture-20261124"
   },
   "F15S2": {
     "id": "15-02",
@@ -79,16 +79,16 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Dissolve the mineral",
         "text": "Slightly acidic water moving through limestone carries dissolved material away and leaves a wider opening.",
-        "asset": "assets/figures/chapter15/15.02.b2.webp",
-        "source": "Exploring Geology · Fig. 15.02.b2",
+        "asset": "assets/figures/lecture15/s8-i24.webp",
+        "source": "Chapter 15 lecture · slide 8",
         "start": 0
       },
       {
         "label": "Change the mineral",
         "text": "In contrast, hydrolysis can turn feldspar into clay that stays behind as a solid residue.",
-        "asset": "assets/figures/chapter15/15.03.b1.webp",
-        "source": "Exploring Geology · Fig. 15.03.b1",
-        "start": 8.0
+        "asset": "assets/figures/lecture15/s12-i36.webp",
+        "source": "Chapter 15 lecture · slide 12",
+        "start": 8.9
       }
     ],
     "cues": [
@@ -98,12 +98,12 @@ Object.assign(window.L.FINAL_FILMS, {
         "Slightly acidic water moving through limestone carries dissolved material away and leaves a wider opening."
       ],
       [
-        8.0,
-        13.920041666666666,
+        8.9,
+        14.82,
         "In contrast, hydrolysis can turn feldspar into clay that stays behind as a solid residue."
       ]
     ],
-    "revision": "20261117-course-figures"
+    "revision": "lecture-20261124"
   },
   "F15S3": {
     "id": "15-03",
@@ -111,16 +111,16 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Compare the grains",
         "text": "Quartz grains may survive after the cement holding a sandstone together breaks down.",
-        "asset": "assets/figures/chapter15/15.03.a1.webp",
-        "source": "Exploring Geology · Fig. 15.03.a1",
+        "asset": "assets/figures/lecture15/s11-i33.webp",
+        "source": "Chapter 15 lecture · slide 11",
         "start": 0
       },
       {
         "label": "Trace the residue",
         "text": "A granite rich in feldspar can instead develop clay as its crystals react with water.",
-        "asset": "assets/figures/chapter15/15.03.b1.webp",
-        "source": "Exploring Geology · Fig. 15.03.b1",
-        "start": 6.16
+        "asset": "assets/figures/lecture15/s12-i36.webp",
+        "source": "Chapter 15 lecture · slide 12",
+        "start": 7.0600000000000005
       }
     ],
     "cues": [
@@ -130,12 +130,12 @@ Object.assign(window.L.FINAL_FILMS, {
         "Quartz grains may survive after the cement holding a sandstone together breaks down."
       ],
       [
-        6.16,
-        11.84,
+        7.06,
+        12.74,
         "A granite rich in feldspar can instead develop clay as its crystals react with water."
       ]
     ],
-    "revision": "20261117-course-figures"
+    "revision": "lecture-20261124"
   },
   "F15S4": {
     "id": "15-04",
@@ -143,16 +143,16 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Supply water and heat",
         "text": "Warm, wet conditions generally accelerate chemical reactions when the mineral and exposure time are similar.",
-        "asset": "assets/figures/chapter15/15.04.a1.webp",
-        "source": "Exploring Geology · Fig. 15.04.a1",
+        "asset": "assets/figures/lecture15/s14-i39.webp",
+        "source": "Chapter 15 lecture · slide 14",
         "start": 0
       },
       {
         "label": "Track what remains",
         "text": "A steep slope can lose weathered material faster than a gentle surface, leaving a thinner cover despite ongoing weathering.",
-        "asset": "assets/figures/chapter15/15.04.b1.webp",
-        "source": "Exploring Geology · Fig. 15.04.b1",
-        "start": 7.76
+        "asset": "assets/figures/lecture15/s15-i40.webp",
+        "source": "Chapter 15 lecture · slide 15",
+        "start": 8.66
       }
     ],
     "cues": [
@@ -162,17 +162,17 @@ Object.assign(window.L.FINAL_FILMS, {
         "Warm, wet conditions generally accelerate chemical reactions when the mineral and exposure time are similar."
       ],
       [
-        7.76,
-        10.879999999999999,
+        8.66,
+        11.78,
         "A steep slope can lose weathered material faster than"
       ],
       [
-        10.879999999999999,
-        15.120041666666665,
+        11.78,
+        16.02,
         "a gentle surface, leaving a thinner cover despite ongoing weathering."
       ]
     ],
-    "revision": "20261117-course-figures"
+    "revision": "lecture-20261124"
   },
   "F15S5": {
     "id": "15-05",
@@ -180,16 +180,16 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Start with a joint block",
         "text": "Water reaches a corner from three directions, an edge from two, and a flat face from one.",
-        "asset": "assets/figures/chapter15/15.05.a1.webp",
-        "source": "Exploring Geology · Fig. 15.05.a1",
+        "asset": "assets/figures/lecture15/s17-i43.webp",
+        "source": "Chapter 15 lecture · slide 17",
         "start": 0
       },
       {
         "label": "Follow the rounding",
         "text": "As the corners retreat faster than the faces, a rounded core can form while the block is still in place.",
-        "asset": "assets/figures/chapter15/15.05.a3.webp",
-        "source": "Exploring Geology · Figs. 15.05.a1–a3",
-        "start": 7.44
+        "asset": "assets/figures/lecture15/s17-i45.webp",
+        "source": "Chapter 15 lecture · slide 17",
+        "start": 8.34
       }
     ],
     "cues": [
@@ -204,17 +204,17 @@ Object.assign(window.L.FINAL_FILMS, {
         "an edge from two, and a flat face from one."
       ],
       [
-        7.44,
-        9.7,
+        8.34,
+        10.6,
         "As the corners retreat faster than the faces,"
       ],
       [
-        9.7,
-        13.280000000000001,
+        10.6,
+        14.18,
         "a rounded core can form while the block is still in place."
       ]
     ],
-    "revision": "20261117-course-figures"
+    "revision": "lecture-20261124"
   },
   "F15S6": {
     "id": "15-06",
@@ -222,16 +222,16 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Enlarge an opening",
         "text": "Water carrying dissolved carbon dioxide can dissolve limestone along a fracture and enlarge it into a passage.",
-        "asset": "assets/figures/chapter15/15.06.a1.webp",
-        "source": "Exploring Geology · Fig. 15.06.a1",
+        "asset": "assets/figures/lecture15/s18-i48.webp",
+        "source": "Chapter 15 lecture · slide 18",
         "start": 0
       },
       {
         "label": "Build a deposit",
         "text": "When water loses carbon dioxide inside an air-filled cave, calcite can precipitate and build a deposit beneath a drip.",
-        "asset": "assets/figures/chapter15/15.06.c1.webp",
-        "source": "Exploring Geology · Fig. 15.06.c1",
-        "start": 7.5200000000000005
+        "asset": "assets/figures/lecture15/s19-i49.webp",
+        "source": "Chapter 15 lecture · slide 19",
+        "start": 8.42
       }
     ],
     "cues": [
@@ -246,12 +246,12 @@ Object.assign(window.L.FINAL_FILMS, {
         "along a fracture and enlarge it into a passage."
       ],
       [
-        7.5200000000000005,
-        15.280000000000001,
+        8.42,
+        16.18,
         "When water loses carbon dioxide inside an air-filled cave, calcite can precipitate and build a deposit beneath a drip."
       ]
     ],
-    "revision": "20261117-course-figures"
+    "revision": "lecture-20261124"
   },
   "F15S8": {
     "id": "15-08",
@@ -259,16 +259,16 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Trace water downward",
         "text": "Water entering the soil carries dissolved substances and fine particles away from upper layers.",
-        "asset": "assets/figures/chapter15/15.08.a2.webp",
-        "source": "Exploring Geology · Fig. 15.08.a2",
+        "asset": "assets/figures/lecture15/s22-i55.webp",
+        "source": "Chapter 15 lecture · slide 22",
         "start": 0
       },
       {
         "label": "Find the accumulation",
         "text": "Some of that material collects deeper in the soil, creating a horizon with a different color or texture.",
-        "asset": "assets/figures/chapter15/15.08.c2.webp",
-        "source": "Exploring Geology · Fig. 15.08.c2",
-        "start": 6.48
+        "asset": "assets/figures/lecture15/s25-i60.webp",
+        "source": "Chapter 15 lecture · slide 25",
+        "start": 7.380000000000001
       }
     ],
     "cues": [
@@ -278,17 +278,17 @@ Object.assign(window.L.FINAL_FILMS, {
         "Water entering the soil carries dissolved substances and fine particles away from upper layers."
       ],
       [
-        6.48,
-        9.5,
+        7.38,
+        10.4,
         "Some of that material collects deeper in the soil,"
       ],
       [
-        9.5,
-        12.32,
+        10.4,
+        13.22,
         "creating a horizon with a different color or texture."
       ]
     ],
-    "revision": "20261117-course-figures"
+    "revision": "lecture-20261124"
   },
   "F15S9": {
     "id": "15-09",
@@ -296,16 +296,16 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Cover the ground",
         "text": "Roots hold soil in place while leaves and litter soften the impact of falling rain.",
-        "asset": "assets/figures/chapter15/15.08.a2.webp",
-        "source": "Exploring Geology · Fig. 15.08.a2",
+        "asset": "assets/figures/lecture15/s16-i41.webp",
+        "source": "Chapter 15 lecture · slide 16",
         "start": 0
       },
       {
         "label": "Remove the cover",
         "text": "When the same slope is stripped, concentrated runoff can cut channels through topsoil faster than new soil forms.",
-        "asset": "assets/figures/chapter15/15.09.a2.webp",
-        "source": "Exploring Geology · Fig. 15.09.a2",
-        "start": 6.16
+        "asset": "assets/figures/lecture15/s27-i65.webp",
+        "source": "Chapter 15 lecture · slide 27",
+        "start": 7.0600000000000005
       }
     ],
     "cues": [
@@ -315,17 +315,17 @@ Object.assign(window.L.FINAL_FILMS, {
         "Roots hold soil in place while leaves and litter soften the impact of falling rain."
       ],
       [
-        6.16,
-        9.72,
+        7.06,
+        10.62,
         "When the same slope is stripped, concentrated runoff can"
       ],
       [
-        9.72,
-        13.520041666666668,
+        10.62,
+        14.42,
         "cut channels through topsoil faster than new soil forms."
       ]
     ],
-    "revision": "20261117-course-figures"
+    "revision": "lecture-20261124"
   },
   "F15S10": {
     "id": "15-10",
@@ -333,16 +333,16 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Resolve the weight",
         "text": "On a steeper surface, a larger component of a block's weight acts parallel to the slope.",
-        "asset": "assets/figures/chapter15/15.10.a1.webp",
-        "source": "Exploring Geology · Fig. 15.10.a1",
+        "asset": "assets/figures/lecture15/s29-i73.webp",
+        "source": "Chapter 15 lecture · slide 29",
         "start": 0
       },
       {
         "label": "Reduce resistance",
         "text": "Water pressure in pores can reduce the contact force between grains, allowing the same slope to fail.",
-        "asset": "assets/figures/chapter15/15.10.c2.webp",
-        "source": "Exploring Geology · Fig. 15.10.c2",
-        "start": 7.04
+        "asset": "assets/figures/lecture15/s31-i79.webp",
+        "source": "Chapter 15 lecture · slide 31",
+        "start": 7.9399999999999995
       }
     ],
     "cues": [
@@ -357,17 +357,17 @@ Object.assign(window.L.FINAL_FILMS, {
         "a block's weight acts parallel to the slope."
       ],
       [
-        7.04,
-        9.780000000000001,
+        7.94,
+        10.68,
         "Water pressure in pores can reduce the contact"
       ],
       [
-        9.780000000000001,
-        12.879999999999999,
+        10.68,
+        13.78,
         "force between grains, allowing the same slope to fail."
       ]
     ],
-    "revision": "20261117-course-figures"
+    "revision": "lecture-20261124"
   },
   "F15S11": {
     "id": "15-11",
@@ -375,16 +375,16 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Locate the rupture",
         "text": "A slide carries a mass across a distinct surface, often leaving a steep scarp near its head.",
-        "asset": "assets/figures/chapter15/15.12.a3.webp",
-        "source": "Exploring Geology · Fig. 15.12.a3",
+        "asset": "assets/figures/lecture15/s36-i95.webp",
+        "source": "Chapter 15 lecture · slide 36",
         "start": 0
       },
       {
         "label": "Track internal movement",
         "text": "In a flow, neighboring pieces change positions throughout the moving material.",
-        "asset": "assets/figures/chapter15/15.13.a8.webp",
-        "source": "Exploring Geology · Fig. 15.13.a8",
-        "start": 6.72
+        "asset": "assets/figures/lecture15/s40-i107.webp",
+        "source": "Chapter 15 lecture · slide 40",
+        "start": 7.619999999999999
       }
     ],
     "cues": [
@@ -399,12 +399,12 @@ Object.assign(window.L.FINAL_FILMS, {
         "often leaving a steep scarp near its head."
       ],
       [
-        6.72,
-        11.120000000000001,
+        7.62,
+        12.02,
         "In a flow, neighboring pieces change positions throughout the moving material."
       ]
     ],
-    "revision": "20261117-course-figures"
+    "revision": "lecture-20261124"
   },
   "F15S12": {
     "id": "15-12",
@@ -412,16 +412,16 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Trace a planar slide",
         "text": "A slab can move along a bedding plane that dips out of a hillside.",
-        "asset": "assets/figures/chapter15/15.12.b1.webp",
-        "source": "Exploring Geology · Fig. 15.12.b1",
+        "asset": "assets/figures/lecture15/s37-i99.webp",
+        "source": "Chapter 15 lecture · slide 37",
         "start": 0
       },
       {
         "label": "Trace a slump",
         "text": "When the rupture surface curves, blocks rotate as they descend and may tilt backward near the head.",
-        "asset": "assets/figures/chapter15/15.12.a5.webp",
-        "source": "Exploring Geology · Fig. 15.12.a5",
-        "start": 5.5200000000000005
+        "asset": "assets/figures/lecture15/s36-i95.webp",
+        "source": "Chapter 15 lecture · slide 36",
+        "start": 6.42
       }
     ],
     "cues": [
@@ -431,17 +431,17 @@ Object.assign(window.L.FINAL_FILMS, {
         "A slab can move along a bedding plane that dips out of a hillside."
       ],
       [
-        5.5200000000000005,
-        8.84,
+        6.42,
+        9.74,
         "When the rupture surface curves, blocks rotate as"
       ],
       [
-        8.84,
-        11.68,
+        9.74,
+        12.58,
         "they descend and may tilt backward near the head."
       ]
     ],
-    "revision": "20261117-course-figures"
+    "revision": "lecture-20261124"
   },
   "F15S13": {
     "id": "15-13",
@@ -449,16 +449,16 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Follow slow creep",
         "text": "Small repeated displacements move soil downhill and can tilt posts over many years.",
-        "asset": "assets/figures/chapter15/15.13.a1.webp",
-        "source": "Exploring Geology · Fig. 15.13.a1",
+        "asset": "assets/figures/lecture15/s39-i101.webp",
+        "source": "Chapter 15 lecture · slide 39",
         "start": 0
       },
       {
         "label": "Follow a debris flow",
         "text": "During intense runoff, a mixture of mud, gravel, and boulders can surge rapidly through a narrow channel.",
-        "asset": "assets/figures/chapter15/15.13.a8.webp",
-        "source": "Exploring Geology · Fig. 15.13.a8",
-        "start": 6.5600000000000005
+        "asset": "assets/figures/lecture15/s40-i107.webp",
+        "source": "Chapter 15 lecture · slide 40",
+        "start": 7.460000000000001
       }
     ],
     "cues": [
@@ -468,17 +468,17 @@ Object.assign(window.L.FINAL_FILMS, {
         "Small repeated displacements move soil downhill and can tilt posts over many years."
       ],
       [
-        6.5600000000000005,
-        10.06,
+        7.46,
+        10.96,
         "During intense runoff, a mixture of mud, gravel,"
       ],
       [
-        10.06,
-        13.2,
+        10.96,
+        14.1,
         "and boulders can surge rapidly through a narrow channel."
       ]
     ],
-    "revision": "20261117-course-figures"
+    "revision": "lecture-20261124"
   },
   "F15S14": {
     "id": "15-14",
@@ -486,16 +486,16 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Locate steep relief",
         "text": "In Alaska, earthquake shaking released rock from steep mountain slopes onto the glacier below.",
-        "asset": "assets/figures/chapter15/15.14.a1.webp",
-        "source": "Exploring Geology · Fig. 15.14.a1",
+        "asset": "assets/figures/lecture15/s41-i111.webp",
+        "source": "Chapter 15 lecture · slide 41",
         "start": 0
       },
       {
         "label": "Compare the trigger",
         "text": "In another mountain belt, prolonged rain can raise pore pressure until a slope fails without an earthquake.",
-        "asset": "assets/figures/chapter15/15.10.c2.webp",
-        "source": "Exploring Geology · Fig. 15.10.c2",
-        "start": 6.5600000000000005
+        "asset": "assets/figures/lecture15/s31-i79.webp",
+        "source": "Chapter 15 lecture · slide 31",
+        "start": 7.460000000000001
       }
     ],
     "cues": [
@@ -505,17 +505,17 @@ Object.assign(window.L.FINAL_FILMS, {
         "In Alaska, earthquake shaking released rock from steep mountain slopes onto the glacier below."
       ],
       [
-        6.5600000000000005,
-        9.200000000000001,
+        7.46,
+        10.1,
         "In another mountain belt, prolonged rain can raise"
       ],
       [
-        9.200000000000001,
-        12.32,
+        10.1,
+        13.22,
         "pore pressure until a slope fails without an earthquake."
       ]
     ],
-    "revision": "20261117-course-figures"
+    "revision": "lecture-20261124"
   },
   "F15S16": {
     "id": "15-16",
@@ -523,31 +523,31 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Separate old and active ground",
         "text": "At Slumgullion, an active earthflow occupies part of a much larger, older landslide deposit.",
-        "asset": "assets/figures/chapter15/15.16.a1.webp",
-        "source": "Exploring Geology · Fig. 15.16.a1",
+        "asset": "assets/figures/lecture15/s47-i128.webp",
+        "source": "Chapter 15 lecture · slide 47",
         "start": 0
       },
       {
         "label": "Track relative movement",
         "text": "Repeated surveys show which parts move fastest and where deformation is concentrated.",
-        "asset": "assets/figures/chapter15/15.16.c1.webp",
-        "source": "Exploring Geology · Fig. 15.16.c1",
-        "start": 7.120041666666667
+        "asset": "assets/figures/lecture15/s47-i130.webp",
+        "source": "Chapter 15 lecture · slide 47",
+        "start": 8.020041666666668
       }
     ],
     "cues": [
       [
         0,
-        5.920041666666667,
+        5.92,
         "At Slumgullion, an active earthflow occupies part of a much larger, older landslide deposit."
       ],
       [
-        7.120041666666667,
-        12.160041666666668,
+        8.02,
+        13.06,
         "Repeated surveys show which parts move fastest and where deformation is concentrated."
       ]
     ],
-    "revision": "20261117-course-figures"
+    "revision": "lecture-20261124"
   },
   "F15S17": {
     "id": "15-17",
@@ -555,16 +555,16 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Identify the source",
         "text": "Look upslope for steep, fractured ground or a scarp left by an earlier failure.",
-        "asset": "assets/figures/chapter15/15.17.a1.webp",
-        "source": "Exploring Geology · Fig. 15.17.a1",
+        "asset": "assets/figures/lecture15/s42-i115.webp",
+        "source": "Chapter 15 lecture · slide 42",
         "start": 0
       },
       {
         "label": "Trace the path",
         "text": "Follow the downhill route to see whether a road or building lies within reach of the moving debris.",
-        "asset": "assets/figures/chapter15/15.17.a1.webp",
-        "source": "Exploring Geology · Fig. 15.17.a1",
-        "start": 6.96
+        "asset": "assets/figures/lecture15/s42-i115.webp",
+        "source": "Chapter 15 lecture · slide 42",
+        "start": 7.859999999999999
       }
     ],
     "cues": [
@@ -574,17 +574,17 @@ Object.assign(window.L.FINAL_FILMS, {
         "Look upslope for steep, fractured ground or a scarp left by an earlier failure."
       ],
       [
-        6.96,
-        9.6,
+        7.86,
+        10.5,
         "Follow the downhill route to see whether a road"
       ],
       [
-        9.6,
-        12.719999999999999,
+        10.5,
+        13.62,
         "or building lies within reach of the moving debris."
       ]
     ],
-    "revision": "20261117-course-figures"
+    "revision": "lecture-20261124"
   },
   "F16S0": {
     "id": "16-00",
@@ -1122,16 +1122,16 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Follow the stream",
         "text": "In limestone terrain, water can enter a sinkhole and continue through an underground passage.",
-        "asset": "assets/figures/chapter15/15.06.c1.webp",
-        "source": "Exploring Geology · Fig. 15.06.c1",
+        "asset": "assets/figures/lecture15/s20-i50.webp",
+        "source": "Chapter 15 lecture · slide 20",
         "start": 0
       },
       {
         "label": "Read the relief",
         "text": "As dissolution enlarges openings, intervening masses of limestone may remain as steep hills or towers.",
-        "asset": "assets/figures/chapter15/15.02.b3.webp",
-        "source": "Exploring Geology · Fig. 15.02.b3",
-        "start": 7.2
+        "asset": "assets/figures/lecture15/s20-i52.webp",
+        "source": "Chapter 15 lecture · slide 20",
+        "start": 8.1
       }
     ],
     "cues": [
@@ -1141,12 +1141,12 @@ Object.assign(window.L.FINAL_FILMS, {
         "In limestone terrain, water can enter a sinkhole and continue through an underground passage."
       ],
       [
-        7.2,
-        13.36,
+        8.1,
+        14.26,
         "As dissolution enlarges openings, intervening masses of limestone may remain as steep hills or towers."
       ]
     ],
-    "revision": "20261117-course-figures"
+    "revision": "lecture-20261124"
   },
   "F15S15": {
     "id": "15-15",
@@ -1154,16 +1154,16 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Find the break",
         "text": "A steep head scarp marks the upper boundary where material detached during a slope failure.",
-        "asset": "assets/figures/chapter15/slide-scarp.webp",
-        "source": "Connect assessment 15 · Q16",
+        "asset": "assets/figures/lecture15/s45-i122.webp",
+        "source": "Chapter 15 lecture · slide 45",
         "start": 0
       },
       {
         "label": "Test for motion",
         "text": "Compare the positions of markers across the suspected slide against stable ground to see whether movement continues.",
-        "asset": "assets/figures/chapter15/15.16.b1.webp",
-        "source": "Exploring Geology · Fig. 15.16.b1",
-        "start": 6.640000000000001
+        "asset": "assets/figures/lecture15/s47-i130.webp",
+        "source": "Chapter 15 lecture · slide 47",
+        "start": 7.540000000000001
       }
     ],
     "cues": [
@@ -1173,17 +1173,17 @@ Object.assign(window.L.FINAL_FILMS, {
         "A steep head scarp marks the upper boundary where material detached during a slope failure."
       ],
       [
-        6.640000000000001,
-        9.66,
+        7.54,
+        10.56,
         "Compare the positions of markers across the suspected"
       ],
       [
-        9.66,
-        13.120000000000001,
+        10.56,
+        14.02,
         "slide against stable ground to see whether movement continues."
       ]
     ],
-    "revision": "20261117-course-figures"
+    "revision": "lecture-20261124"
   },
   "F16S2": {
     "id": "16-02",

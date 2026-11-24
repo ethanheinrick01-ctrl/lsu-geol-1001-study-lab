@@ -11,8 +11,8 @@
   const {section, img} = chapter(15, {
     name: 'Ch 15 · Weathering, Soil, and Unstable Slopes', short: 'Ch 15',
     coverage: 'Introduction and sections 15.1–15.17',
-    evidence: 'November 12 and 17 lectures, textbook figures, classroom exercise, and Connect.',
-    sourceNote: 'Sections 7 and 15 use the available lecture or Connect evidence. Their standalone textbook pages were absent from the packet.'
+    evidence: 'Chapter 15 lecture PowerPoint, November 12 and 17 lectures, textbook figures, classroom exercise, and Connect.',
+    sourceNote: 'Sections 15.7 and 15.15 use the lecture slides alongside the available transcript and Connect evidence. Their standalone textbook pages were absent from the packet.'
   }, (n, locator) => locator.includes(':') ? [locator] : [text + ':' + locator, ...(lecture[n] ? ['Weathering lectures:' + lecture[n]] : [])]);
   const figure = (id, description) => img(id, description, 'Exploring Geology · Fig. ' + id);
 
