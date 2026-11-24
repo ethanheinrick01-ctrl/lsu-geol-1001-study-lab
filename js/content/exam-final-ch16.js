@@ -9,8 +9,8 @@
   const {section, img} = chapter(16, {
     name: 'Ch 16 · Streams and Flooding', short: 'Ch 16',
     coverage: 'Introduction and sections 16.1–16.17',
-    evidence: 'Assigned textbook figures and Connect practice. The November 17 transcript ends at the introduction to streams.',
-    sourceNote: 'Sections 2, 5 and 14 use the available lecture or Connect evidence. Their standalone textbook pages were absent from the packet.'
+    evidence: 'Chapter 16 lecture PowerPoint, assigned textbook figures, and Connect practice. The November 17 transcript ends at the introduction to streams.',
+    sourceNote: 'Sections 16.2, 16.5, and 16.14 include lecture figures and Connect practice. Slide 46 supplies the Big Thompson storm and rainfall maps. Their standalone textbook pages were absent from the packet.'
   }, (n, locator) => locator.includes(':') ? [locator] : [text + ':' + locator]);
   const figure = (id, description) => img(id, description, 'Exploring Geology · Fig. ' + id);
 

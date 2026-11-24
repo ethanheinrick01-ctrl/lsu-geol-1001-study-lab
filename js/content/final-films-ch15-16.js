@@ -592,16 +592,16 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Find the river mouth",
         "text": "At the Yukon coast, the river spreads into quieter receiving water and deposits part of its sediment load.",
-        "asset": "assets/figures/chapter16/16.00.a1.webp",
-        "source": "Exploring Geology · Fig. 16.00.a1",
+        "asset": "assets/figures/lecture16/s2-i9.webp",
+        "source": "Chapter 16 lecture · slide 2",
         "start": 0
       },
       {
         "label": "Watch the shoreline",
         "text": "Where deposition exceeds removal by waves and currents, the delta can build outward into the sea.",
-        "asset": "assets/figures/chapter16/16.09.a3.webp",
-        "source": "Exploring Geology · Fig. 16.09.a3",
-        "start": 7.36
+        "asset": "assets/figures/lecture16/s2-i9.webp",
+        "source": "Chapter 16 lecture · slide 2",
+        "start": 8.26
       }
     ],
     "cues": [
@@ -616,17 +616,17 @@ Object.assign(window.L.FINAL_FILMS, {
         "receiving water and deposits part of its sediment load."
       ],
       [
-        7.36,
-        10.440000000000001,
+        8.26,
+        11.34,
         "Where deposition exceeds removal by waves and currents,"
       ],
       [
-        10.440000000000001,
-        13.440000000000001,
+        11.34,
+        14.34,
         "the delta can build outward into the sea."
       ]
     ],
-    "revision": "20261117-course-figures"
+    "revision": "lecture-20261124"
   },
   "F16S1": {
     "id": "16-01",
@@ -634,16 +634,16 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Trace the branches",
         "text": "Small tributaries join larger channels, combining runoff from separate parts of the landscape.",
-        "asset": "assets/figures/chapter16/16.01.d1.webp",
-        "source": "Exploring Geology · Fig. 16.01.d1",
+        "asset": "assets/figures/lecture16/s7-i16.webp",
+        "source": "Chapter 16 lecture · slide 7",
         "start": 0
       },
       {
         "label": "Find the divide",
         "text": "A ridge separates neighboring drainage basins, so rain on opposite sides can reach different outlets.",
-        "asset": "assets/figures/chapter16/16.01.b1.webp",
-        "source": "Exploring Geology · Fig. 16.01.b1",
-        "start": 6.96
+        "asset": "assets/figures/lecture16/s4-i11.webp",
+        "source": "Chapter 16 lecture · slide 4",
+        "start": 7.859999999999999
       }
     ],
     "cues": [
@@ -653,12 +653,12 @@ Object.assign(window.L.FINAL_FILMS, {
         "Small tributaries join larger channels, combining runoff from separate parts of the landscape."
       ],
       [
-        6.96,
-        12.8,
+        7.86,
+        13.7,
         "A ridge separates neighboring drainage basins, so rain on opposite sides can reach different outlets."
       ]
     ],
-    "revision": "20261117-course-figures"
+    "revision": "lecture-20261124"
   },
   "F16S3": {
     "id": "16-03",
@@ -666,16 +666,16 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Raise the flow",
         "text": "During a storm, higher flow can move coarser grains that normally rest on the bed.",
-        "asset": "assets/figures/chapter16/stream-load.webp",
-        "source": "Connect assignment 16 · Q4",
+        "asset": "assets/figures/lecture16/s14-i31.webp",
+        "source": "Chapter 16 lecture · slide 14",
         "start": 0
       },
       {
         "label": "Follow the falling flow",
         "text": "As the flood subsides, larger particles commonly settle before finer sediment leaves suspension.",
-        "asset": "assets/figures/chapter16/16.03.b1.webp",
-        "source": "Exploring Geology · Fig. 16.03.b1",
-        "start": 6.24
+        "asset": "assets/figures/lecture16/s14-i31.webp",
+        "source": "Chapter 16 lecture · slide 14",
+        "start": 7.140000000000001
       }
     ],
     "cues": [
@@ -685,12 +685,12 @@ Object.assign(window.L.FINAL_FILMS, {
         "During a storm, higher flow can move coarser grains that normally rest on the bed."
       ],
       [
-        6.24,
-        11.84,
+        7.14,
+        12.74,
         "As the flood subsides, larger particles commonly settle before finer sediment leaves suspension."
       ]
     ],
-    "revision": "20261117-course-figures"
+    "revision": "lecture-20261124"
   },
   "F16S4": {
     "id": "16-04",
@@ -698,16 +698,16 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Read the long profile",
         "text": "A stream commonly descends steeply near its headwaters and becomes gentler downstream.",
-        "asset": "assets/figures/chapter16/16.04.a2.webp",
-        "source": "Exploring Geology · Fig. 16.04.a2",
+        "asset": "assets/figures/lecture16/s16-i33.webp",
+        "source": "Chapter 16 lecture · slide 16",
         "start": 0
       },
       {
         "label": "Change the base level",
         "text": "Lowering the outlet creates an opportunity for incision that can work its way upstream.",
-        "asset": "assets/figures/chapter16/16.04.c5.webp",
-        "source": "Exploring Geology · Fig. 16.04.c5",
-        "start": 7.680000000000001
+        "asset": "assets/figures/lecture16/s17-i34.webp",
+        "source": "Chapter 16 lecture · slide 17",
+        "start": 8.58
       }
     ],
     "cues": [
@@ -717,12 +717,12 @@ Object.assign(window.L.FINAL_FILMS, {
         "A stream commonly descends steeply near its headwaters and becomes gentler downstream."
       ],
       [
-        7.680000000000001,
-        13.440000000000001,
+        8.58,
+        14.34,
         "Lowering the outlet creates an opportunity for incision that can work its way upstream."
       ]
     ],
-    "revision": "20261117-course-figures"
+    "revision": "lecture-20261124"
   },
   "F16S6": {
     "id": "16-06",
@@ -730,16 +730,16 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Trace the headwaters",
         "text": "Runoff converges into small channels on steep slopes, where streams can cut narrow valleys.",
-        "asset": "assets/figures/chapter16/16.06.a1.webp",
-        "source": "Exploring Geology · Fig. 16.06.a1",
+        "asset": "assets/figures/lecture16/s22-i42.webp",
+        "source": "Chapter 16 lecture · slide 22",
         "start": 0
       },
       {
         "label": "Find a resistant ledge",
         "text": "A bed of stronger rock can form a step, producing rapids or a waterfall along the stream.",
-        "asset": "assets/figures/chapter16/16.06.c3.webp",
-        "source": "Exploring Geology · Fig. 16.06.c3",
-        "start": 6.48
+        "asset": "assets/figures/lecture16/s22-i42.webp",
+        "source": "Chapter 16 lecture · slide 22",
+        "start": 7.380000000000001
       }
     ],
     "cues": [
@@ -749,17 +749,17 @@ Object.assign(window.L.FINAL_FILMS, {
         "Runoff converges into small channels on steep slopes, where streams can cut narrow valleys."
       ],
       [
-        6.48,
-        9.540000000000001,
+        7.38,
+        10.44,
         "A bed of stronger rock can form a step,"
       ],
       [
-        9.540000000000001,
-        12.72,
+        10.44,
+        13.62,
         "producing rapids or a waterfall along the stream."
       ]
     ],
-    "revision": "20261117-course-figures"
+    "revision": "lecture-20261124"
   },
   "F16S7": {
     "id": "16-07",
@@ -767,16 +767,16 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Build a gravel bar",
         "text": "Where abundant sediment accumulates, a bar can divide a stream into two active channels.",
-        "asset": "assets/figures/chapter16/16.07.a4.webp",
-        "source": "Exploring Geology · Fig. 16.07.a4",
+        "asset": "assets/figures/lecture16/s23-i43.webp",
+        "source": "Chapter 16 lecture · slide 23",
         "start": 0
       },
       {
         "label": "Move the channels",
         "text": "Changing flow scours one path and deposits sediment in another, shifting the braided pattern.",
-        "asset": "assets/figures/chapter16/16.07.b2.webp",
-        "source": "Exploring Geology · Fig. 16.07.b2",
-        "start": 6.08
+        "asset": "assets/figures/lecture16/s24-i45.webp",
+        "source": "Chapter 16 lecture · slide 24",
+        "start": 6.98
       }
     ],
     "cues": [
@@ -786,12 +786,12 @@ Object.assign(window.L.FINAL_FILMS, {
         "Where abundant sediment accumulates, a bar can divide a stream into two active channels."
       ],
       [
-        6.08,
-        11.68,
+        6.98,
+        12.58,
         "Changing flow scours one path and deposits sediment in another, shifting the braided pattern."
       ]
     ],
-    "revision": "20261117-course-figures"
+    "revision": "lecture-20261124"
   },
   "F16S8": {
     "id": "16-08",
@@ -799,16 +799,16 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Find the outer bank",
         "text": "In a bend, erosion can cut into the outside bank while sand builds a point bar on the inside.",
-        "asset": "assets/figures/chapter16/16.08.a2.webp",
-        "source": "Exploring Geology · Fig. 16.08.a2",
+        "asset": "assets/figures/lecture16/s20-i38.webp",
+        "source": "Chapter 16 lecture · slide 20",
         "start": 0
       },
       {
         "label": "Close the bend",
         "text": "If the river cuts across a narrow neck, the abandoned loop can become an oxbow lake.",
-        "asset": "assets/figures/chapter16/16.08.a6.webp",
-        "source": "Exploring Geology · Fig. 16.08.a6",
-        "start": 6.640000000000001
+        "asset": "assets/figures/lecture16/s21-i41.webp",
+        "source": "Chapter 16 lecture · slide 21",
+        "start": 7.540000000000001
       }
     ],
     "cues": [
@@ -823,17 +823,17 @@ Object.assign(window.L.FINAL_FILMS, {
         "bank while sand builds a point bar on the inside."
       ],
       [
-        6.640000000000001,
-        9.58,
+        7.54,
+        10.48,
         "If the river cuts across a narrow neck,"
       ],
       [
-        9.58,
-        11.68,
+        10.48,
+        12.58,
         "the abandoned loop can become an oxbow lake."
       ]
     ],
-    "revision": "20261117-course-figures"
+    "revision": "lecture-20261124"
   },
   "F16S9": {
     "id": "16-09",
@@ -841,16 +841,16 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Trap the sediment",
         "text": "A reservoir slows incoming water and traps part of the river's sediment load.",
-        "asset": "assets/figures/chapter16/16.09.c1.webp",
-        "source": "Exploring Geology · Fig. 16.09.c1",
+        "asset": "assets/figures/lecture16/s31-i54.webp",
+        "source": "Chapter 16 lecture · slide 31",
         "start": 0
       },
       {
         "label": "Inspect the reach below",
         "text": "Water released below a dam may erode the channel if it can carry more sediment than it receives.",
-        "asset": "assets/figures/chapter16/16.09.c1.webp",
-        "source": "Exploring Geology · Fig. 16.09.c1",
-        "start": 5.680000000000001
+        "asset": "assets/figures/lecture16/s31-i54.webp",
+        "source": "Chapter 16 lecture · slide 31",
+        "start": 6.58
       }
     ],
     "cues": [
@@ -860,17 +860,17 @@ Object.assign(window.L.FINAL_FILMS, {
         "A reservoir slows incoming water and traps part of the river's sediment load."
       ],
       [
-        5.680000000000001,
-        8.420000000000002,
+        6.58,
+        9.32,
         "Water released below a dam may erode the channel"
       ],
       [
-        8.420000000000002,
-        11.040000000000001,
+        9.32,
+        11.94,
         "if it can carry more sediment than it receives."
       ]
     ],
-    "revision": "20261117-course-figures"
+    "revision": "lecture-20261124"
   },
   "F16S10": {
     "id": "16-10",
@@ -878,16 +878,16 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Change the balance",
         "text": "If a stream receives more sediment than it can transport, the bed rises as sediment accumulates.",
-        "asset": "assets/figures/chapter16/16.10.b6.webp",
-        "source": "Exploring Geology · Fig. 16.10.b6",
+        "asset": "assets/figures/lecture16/s36-i64.webp",
+        "source": "Chapter 16 lecture · slide 36",
         "start": 0
       },
       {
         "label": "Reverse the imbalance",
         "text": "If transport increases relative to supply, the same reach can erode its bed.",
-        "asset": "assets/figures/chapter16/16.10.b6.webp",
-        "source": "Exploring Geology · Fig. 16.10.b6",
-        "start": 7.04
+        "asset": "assets/figures/lecture16/s36-i63.webp",
+        "source": "Chapter 16 lecture · slide 36",
+        "start": 7.9399999999999995
       }
     ],
     "cues": [
@@ -902,12 +902,12 @@ Object.assign(window.L.FINAL_FILMS, {
         "can transport, the bed rises as sediment accumulates."
       ],
       [
-        7.04,
-        11.84,
+        7.94,
+        12.74,
         "If transport increases relative to supply, the same reach can erode its bed."
       ]
     ],
-    "revision": "20261117-course-figures"
+    "revision": "lecture-20261124"
   },
   "F16S11": {
     "id": "16-11",
@@ -915,16 +915,16 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Mark the floodplain",
         "text": "Before incision, floodwater spreads across a low surface beside the channel.",
-        "asset": "assets/figures/chapter16/16.11.a3.webp",
-        "source": "Exploring Geology · Fig. 16.11.a3",
+        "asset": "assets/figures/lecture16/s38-i66.webp",
+        "source": "Chapter 16 lecture · slide 38",
         "start": 0
       },
       {
         "label": "Lower the bed",
         "text": "After the river cuts down, remnants of that former floodplain stand above the new channel as terraces.",
-        "asset": "assets/figures/chapter16/16.11.a3.webp",
-        "source": "Exploring Geology · Fig. 16.11.a3",
-        "start": 5.76
+        "asset": "assets/figures/lecture16/s38-i68.webp",
+        "source": "Chapter 16 lecture · slide 38",
+        "start": 6.66
       }
     ],
     "cues": [
@@ -934,17 +934,17 @@ Object.assign(window.L.FINAL_FILMS, {
         "Before incision, floodwater spreads across a low surface beside the channel."
       ],
       [
-        5.76,
-        8.62,
+        6.66,
+        9.52,
         "After the river cuts down, remnants of that"
       ],
       [
-        8.62,
-        12.24,
+        9.52,
+        13.14,
         "former floodplain stand above the new channel as terraces."
       ]
     ],
-    "revision": "20261117-course-figures"
+    "revision": "lecture-20261124"
   },
   "F16S12": {
     "id": "16-12",
@@ -952,16 +952,16 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Follow the stream",
         "text": "A stream can cut through a narrow rock wall between bends and leave a natural bridge overhead.",
-        "asset": "assets/figures/chapter16/16.12.a6.webp",
-        "source": "Exploring Geology · Fig. 16.12.a6",
+        "asset": "assets/figures/lecture16/s41-i78.webp",
+        "source": "Chapter 16 lecture · slide 41",
         "start": 0
       },
       {
         "label": "Compare an arch",
         "text": "An opening formed by weathering and rockfall without a stream cutting through is a natural arch.",
-        "asset": "assets/figures/chapter16/16.12.b7.webp",
-        "source": "Exploring Geology · Fig. 16.12.b7",
-        "start": 6.8
+        "asset": "assets/figures/lecture16/s42-i84.webp",
+        "source": "Chapter 16 lecture · slide 42",
+        "start": 7.699999999999999
       }
     ],
     "cues": [
@@ -976,12 +976,12 @@ Object.assign(window.L.FINAL_FILMS, {
         "wall between bends and leave a natural bridge overhead."
       ],
       [
-        6.8,
-        12.879999999999999,
+        7.7,
+        13.78,
         "An opening formed by weathering and rockfall without a stream cutting through is a natural arch."
       ]
     ],
-    "revision": "20261117-course-figures"
+    "revision": "lecture-20261124"
   },
   "F16S13": {
     "id": "16-13",
@@ -989,31 +989,31 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Raise the stage",
         "text": "Water can rise inside a channel without covering the adjacent floodplain.",
-        "asset": "assets/figures/chapter16/16.13.a2.webp",
-        "source": "Exploring Geology · Fig. 16.13.a2",
+        "asset": "assets/figures/lecture16/s44-i86.webp",
+        "source": "Chapter 16 lecture · slide 44",
         "start": 0
       },
       {
         "label": "Cross the bank",
         "text": "When the river overtops its banks, water spreads across land that is usually dry.",
-        "asset": "assets/figures/chapter16/16.13.a1.webp",
-        "source": "Exploring Geology · Fig. 16.13.a1",
-        "start": 5.440041666666667
+        "asset": "assets/figures/lecture16/s43-i85.webp",
+        "source": "Chapter 16 lecture · slide 43",
+        "start": 6.340041666666666
       }
     ],
     "cues": [
       [
         0,
-        4.2400416666666665,
+        4.24,
         "Water can rise inside a channel without covering the adjacent floodplain."
       ],
       [
-        5.440041666666667,
-        10.960041666666665,
+        6.34,
+        11.86,
         "When the river overtops its banks, water spreads across land that is usually dry."
       ]
     ],
-    "revision": "20261117-course-figures"
+    "revision": "lecture-20261124"
   },
   "F16S15": {
     "id": "16-15",
@@ -1021,16 +1021,16 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Measure the section",
         "text": "Stream discharge equals the cross-sectional area of flowing water multiplied by its mean velocity.",
-        "asset": "assets/figures/chapter16/16.15.a2.webp",
-        "source": "Exploring Geology · Fig. 16.15.a2",
+        "asset": "assets/figures/lecture16/s47-i97.webp",
+        "source": "Chapter 16 lecture · slide 47",
         "start": 0
       },
       {
         "label": "Interpret the odds",
         "text": "A hundred-year flood has a one percent chance of being equaled or exceeded in any given year under the assumed conditions.",
-        "asset": "assets/figures/chapter16/16.15.b2.webp",
-        "source": "Exploring Geology · Fig. 16.15.b2",
-        "start": 7.2
+        "asset": "assets/figures/lecture16/s49-i101.webp",
+        "source": "Chapter 16 lecture · slide 49",
+        "start": 8.1
       }
     ],
     "cues": [
@@ -1040,12 +1040,12 @@ Object.assign(window.L.FINAL_FILMS, {
         "Stream discharge equals the cross-sectional area of flowing water multiplied by its mean velocity."
       ],
       [
-        7.2,
-        13.600000000000001,
+        8.1,
+        14.5,
         "A hundred-year flood has a one percent chance of being equaled or exceeded in any given year under the assumed conditions."
       ]
     ],
-    "revision": "20261117-course-figures"
+    "revision": "lecture-20261124"
   },
   "F16S16": {
     "id": "16-16",
@@ -1060,9 +1060,9 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Follow the sediment",
         "text": "Reservoirs interrupt that route by trapping sediment that otherwise could travel farther downstream.",
-        "asset": "assets/figures/chapter16/16.09.c1.webp",
-        "source": "Exploring Geology · Fig. 16.09.c1",
-        "start": 7.36
+        "asset": "assets/figures/lecture16/s31-i54.webp",
+        "source": "Chapter 16 lecture · slide 31",
+        "start": 8.26
       }
     ],
     "cues": [
@@ -1072,12 +1072,12 @@ Object.assign(window.L.FINAL_FILMS, {
         "The Colorado River gathers tributaries, cuts deep canyons, and carries sediment toward its mouth."
       ],
       [
-        7.36,
-        12.48,
+        8.26,
+        13.38,
         "Reservoirs interrupt that route by trapping sediment that otherwise could travel farther downstream."
       ]
     ],
-    "revision": "20261117-course-figures"
+    "revision": "lecture-20261124"
   },
   "F16S17": {
     "id": "16-17",
@@ -1085,16 +1085,16 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Trace low ground",
         "text": "Water that overtops a channel spreads first into low areas that connect to the river.",
-        "asset": "assets/figures/chapter16/16.17.a1.webp",
-        "source": "Exploring Geology · Fig. 16.17.a1",
+        "asset": "assets/figures/lecture16/s43-i85.webp",
+        "source": "Chapter 16 lecture · slide 43",
         "start": 0
       },
       {
         "label": "Compare two sites",
         "text": "A nearby terrace can stand above a flood that covers a more distant part of the floodplain.",
-        "asset": "assets/figures/chapter16/16.17.a2.webp",
-        "source": "Exploring Geology · Fig. 16.17.a2",
-        "start": 6.08
+        "asset": "assets/figures/lecture16/s43-i85.webp",
+        "source": "Chapter 16 lecture · slide 43",
+        "start": 6.98
       }
     ],
     "cues": [
@@ -1104,17 +1104,17 @@ Object.assign(window.L.FINAL_FILMS, {
         "Water that overtops a channel spreads first into low areas that connect to the river."
       ],
       [
-        6.08,
-        8.34,
+        6.98,
+        9.24,
         "A nearby terrace can stand above a flood"
       ],
       [
-        8.34,
-        10.8,
+        9.24,
+        11.7,
         "that covers a more distant part of the floodplain."
       ]
     ],
-    "revision": "20261117-course-figures"
+    "revision": "lecture-20261124"
   },
   "F15S7": {
     "id": "15-07",
@@ -1191,16 +1191,16 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Track the grains",
         "text": "Sand grains can hop along the channel bed while finer particles remain suspended in the flowing water.",
-        "asset": "assets/figures/chapter16/stream-load.webp",
-        "source": "Connect assignment 16 · Q4",
+        "asset": "assets/figures/lecture16/s9-i21.webp",
+        "source": "Chapter 16 lecture · slide 9",
         "start": 0
       },
       {
         "label": "Watch the bed",
         "text": "Larger fragments may roll or slide along the bottom, scraping the channel as they move.",
-        "asset": "assets/figures/chapter16/stream-load.webp",
-        "source": "Connect assignment 16 · Q4",
-        "start": 7.36
+        "asset": "assets/figures/lecture16/s10-i22.webp",
+        "source": "Chapter 16 lecture · slide 10",
+        "start": 8.26
       }
     ],
     "cues": [
@@ -1215,12 +1215,12 @@ Object.assign(window.L.FINAL_FILMS, {
         "while finer particles remain suspended in the flowing water."
       ],
       [
-        7.36,
-        12.72,
+        8.26,
+        13.62,
         "Larger fragments may roll or slide along the bottom, scraping the channel as they move."
       ]
     ],
-    "revision": "20261117-course-figures"
+    "revision": "lecture-20261124"
   },
   "F16S5": {
     "id": "16-05",
@@ -1228,16 +1228,16 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Follow the bend",
         "text": "Across a meander bend, the deeper part of the channel generally lies toward the outer bank.",
-        "asset": "assets/figures/chapter16/bend-profiles.webp",
-        "source": "Connect assignment 16 · Q2",
+        "asset": "assets/figures/lecture16/s20-i38.webp",
+        "source": "Chapter 16 lecture · slide 20",
         "start": 0
       },
       {
         "label": "Move the bend",
         "text": "Erosion on the outside and deposition on the inside shift the bend sideways across the valley floor.",
-        "asset": "assets/figures/chapter16/16.08.a3.webp",
-        "source": "Exploring Geology · Fig. 16.08.a3",
-        "start": 5.92
+        "asset": "assets/figures/lecture16/s21-i41.webp",
+        "source": "Chapter 16 lecture · slide 21",
+        "start": 6.82
       }
     ],
     "cues": [
@@ -1252,17 +1252,17 @@ Object.assign(window.L.FINAL_FILMS, {
         "the channel generally lies toward the outer bank."
       ],
       [
-        5.92,
-        8.5,
+        6.82,
+        9.4,
         "Erosion on the outside and deposition on the"
       ],
       [
-        8.5,
-        12.08,
+        9.4,
+        12.98,
         "inside shift the bend sideways across the valley floor."
       ]
     ],
-    "revision": "20261117-course-figures"
+    "revision": "lecture-20261124"
   },
   "F16S14": {
     "id": "16-14",
@@ -1270,16 +1270,16 @@ Object.assign(window.L.FINAL_FILMS, {
       {
         "label": "Hold the storm in place",
         "text": "In the Big Thompson flood of nineteen seventy-six, intense rain persisted over a small area of the drainage basin.",
-        "asset": "assets/figures/chapter16/16.04.c7.webp",
-        "source": "Exploring Geology · Fig. 16.04.c7 · Illustrative basin",
+        "asset": "assets/figures/lecture16/s46-i93.webp",
+        "source": "Chapter 16 lecture · slide 46",
         "start": 0
       },
       {
         "label": "Follow the runoff",
         "text": "As runoff converged on the channel, the river rose rapidly and produced a flash flood.",
-        "asset": "assets/figures/chapter16/16.13.a5.webp",
-        "source": "Exploring Geology · Fig. 16.13.a5 · Illustrative curve",
-        "start": 8.4
+        "asset": "assets/figures/lecture16/s46-i94.webp",
+        "source": "Chapter 16 lecture · slide 46",
+        "start": 9.3
       }
     ],
     "cues": [
@@ -1289,11 +1289,11 @@ Object.assign(window.L.FINAL_FILMS, {
         "In the Big Thompson flood of nineteen seventy-six, intense rain persisted over a small area of the drainage basin."
       ],
       [
-        8.4,
-        14.4,
+        9.3,
+        15.3,
         "As runoff converged on the channel, the river rose rapidly and produced a flash flood."
       ]
     ],
-    "revision": "20261117-course-figures"
+    "revision": "lecture-20261124"
   }
 });
