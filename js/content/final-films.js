@@ -1451,70 +1451,71 @@ window.L.FINAL_FILMS = {
       {
         "label": "Turn snow into moving ice",
         "text": "A glacier is ice on land that flows under its own weight. Where snow survives the melt season, it can accumulate and become thick ice. As the moving ice stretches over a steepening bed, cracks called crevasses open.",
-        "asset": "assets/figures/chapter14/crevasses.webp",
-        "source": "Textbook 14.1A · lecture November 10",
+        "asset": "assets/figures/lecture14/s6-i13.webp",
+        "source": "Lecture slide 6",
         "start": 0
       },
       {
         "label": "Compare three ice shapes",
         "text": "An ice sheet spreads across a broad region. Mountain walls confine a valley glacier to a narrow tongue. Where that tongue emerges from the valley onto gentler ground, it can spread into a piedmont lobe. Follow the valley walls before naming the glacier.",
-        "asset": "assets/figures/chapter14/glacier-types.webp",
-        "source": "Textbook 14.1B and 14.1C · lecture November 10",
-        "start": 14.91
+        "asset": "assets/figures/lecture14/s8-i19.webp",
+        "source": "Lecture slide 8",
+        "start": 16.89
       }
     ],
     "cues": [
       [
         0.16,
-        4.3,
+        4.86,
         "A glacier is ice on land that flows under its own weight."
       ],
       [
-        4.59,
-        7.71,
+        5.15,
+        8.27,
         "Where snow survives the melt season, it can accumulate and"
       ],
       [
-        7.71,
-        9.21,
+        8.27,
+        10.17,
         "become thick ice."
       ],
       [
-        9.66,
-        12.84,
+        10.62,
+        13.8,
         "As the moving ice stretches over a steepening bed, cracks"
       ],
       [
-        12.84,
-        14.64,
+        13.8,
+        16.62,
         "called crevasses open."
       ],
       [
-        15.12,
-        18.02,
+        17.1,
+        20.47,
         "An ice sheet spreads across a broad region."
       ],
       [
-        18.4,
-        22.1,
+        20.85,
+        24.945,
         "Mountain walls confine a valley glacier to a narrow tongue."
       ],
       [
-        22.555,
-        25.455,
+        25.4,
+        28.3,
         "Where that tongue emerges from the valley onto gentler ground,"
       ],
       [
-        25.475,
-        27.895,
+        28.32,
+        31.27,
         "it can spread into a piedmont lobe."
       ],
       [
-        28.215,
-        31.095,
+        31.59,
+        34.47,
         "Follow the valley walls before naming the glacier."
       ]
-    ]
+    ],
+    "revision": "lecture-20261124"
   },
   "F14S2": {
     "id": "14-02",
@@ -1522,85 +1523,86 @@ window.L.FINAL_FILMS = {
       {
         "label": "Gain and lose ice",
         "text": "Burial compacts snow into firn, then glacial ice. Above the equilibrium line, annual gain exceeds loss. Below the equilibrium line, annual ice loss exceeds gain. Watch the stake move downhill while the ice front retreats uphill because the front loses ice faster than flow can replace it.",
-        "asset": "assets/figures/chapter14/glacier-balance.webp",
-        "source": "Figure 14.02.b2 · lecture November 10",
+        "asset": "assets/figures/lecture14/s10-i22.webp",
+        "source": "Lecture slides 10, 11",
         "start": 0
       },
       {
         "label": "Slide, deform, and calve",
         "text": "Even when the glacier is locked to its bed, ice higher up can deform and flow. Meltwater can help the base slide, too. Where the glacier reaches water, a block can break away as an iceberg. A floating extension still connected to land ice is an ice shelf.",
-        "asset": "assets/figures/chapter14/calving.webp",
-        "source": "Figures 14.02.c2 through d3 · lecture November 10",
-        "start": 21.265
+        "asset": "assets/figures/lecture14/s12-i26.webp",
+        "source": "Lecture slides 12, 13",
+        "start": 24.02
       }
     ],
     "cues": [
       [
         0.16,
-        4.44,
+        4.995,
         "Burial compacts snow into firn, then glacial ice."
       ],
       [
-        4.735,
-        8.955,
+        5.29,
+        10.06,
         "Above the equilibrium line, annual gain exceeds loss."
       ],
       [
-        9.255,
-        13.215,
+        10.36,
+        14.95,
         "Below the equilibrium line, annual ice loss exceeds gain."
       ],
       [
-        13.435,
-        16.675,
+        15.17,
+        18.41,
         "Watch the stake move downhill while the ice front retreats"
       ],
       [
-        16.675,
-        19.915,
+        18.41,
+        21.65,
         "uphill because the front loses ice faster than flow can"
       ],
       [
-        19.915,
-        20.995,
+        21.65,
+        23.75,
         "replace it."
       ],
       [
-        21.475,
-        25.715,
+        24.23,
+        28.47,
         "Even when the glacier is locked to its bed, ice higher up can"
       ],
       [
-        25.715,
-        27.275,
+        28.47,
+        30.03,
         "deform and flow."
       ],
       [
-        27.815,
-        30.315,
+        30.88,
+        33.8,
         "Meltwater can help the base slide, too."
       ],
       [
-        30.745,
-        34.445,
+        34.23,
+        37.93,
         "Where the glacier reaches water, a block can break away as an"
       ],
       [
-        34.445,
-        35.365,
+        37.93,
+        38.85,
         "iceberg."
       ],
       [
-        35.92,
-        40.2,
+        39.7,
+        43.98,
         "A floating extension still connected to land ice is an ice"
       ],
       [
-        40.2,
-        41.0,
+        43.98,
+        44.78,
         "shelf."
       ]
-    ]
+    ],
+    "revision": "lecture-20261124"
   },
   "F14S3": {
     "id": "14-03",
@@ -1608,65 +1610,66 @@ window.L.FINAL_FILMS = {
       {
         "label": "Polish and pluck a knob",
         "text": "In this photograph the ice flowed from right to left. Grit grinds the gentle approach slope. Ice pulls blocks from the steep downstream face. The polished slope and the broken face together give the direction.",
-        "asset": "assets/figures/chapter14/roche.webp",
-        "source": "Figure 14.03.a4 · lecture November 10",
+        "asset": "assets/figures/lecture14/s14-i33.webp",
+        "source": "Lecture slide 14",
         "start": 0
       },
       {
         "label": "Leave different deposits",
         "text": "Ice carries debris on its surface, inside it, and at the bed. As the ice melts it can leave poorly sorted till. Meltwater can carry some of that debris farther and lay it down in sorted layers as outwash.",
-        "asset": "assets/figures/chapter14/sediment-pair.webp",
-        "source": "Figures 14.03.b1, c2, and c4 · lecture November 10",
-        "start": 15.765
+        "asset": "assets/figures/lecture14/s15-i35.webp",
+        "source": "Lecture slides 15, 16",
+        "start": 17.68
       }
     ],
     "cues": [
       [
         0.16,
-        4.0,
+        4.595,
         "In this photograph the ice flowed from right to left."
       ],
       [
-        4.255,
-        7.395,
+        4.85,
+        7.99,
         "Grit grinds the gentle approach slope."
       ],
       [
-        7.975,
-        11.175,
+        8.84,
+        12.44,
         "Ice pulls blocks from the steep downstream face."
       ],
       [
-        11.625,
-        14.405,
+        12.89,
+        15.67,
         "The polished slope and the broken face together give the"
       ],
       [
-        14.405,
-        15.125,
+        15.67,
+        16.39,
         "direction."
       ],
       [
-        15.975,
-        20.355,
+        17.89,
+        22.27,
         "Ice carries debris on its surface, inside it, and at the bed."
       ],
       [
-        20.95,
-        24.51,
+        23.12,
+        27.2,
         "As the ice melts it can leave poorly sorted till."
       ],
       [
-        24.84,
-        28.18,
+        27.53,
+        30.87,
         "Meltwater can carry some of that debris farther and lay it"
       ],
       [
-        28.18,
-        30.6,
+        30.87,
+        33.29,
         "down in sorted layers as outwash."
       ]
-    ]
+    ],
+    "revision": "lecture-20261124"
   },
   "F14S4": {
     "id": "14-04",
@@ -1674,75 +1677,76 @@ window.L.FINAL_FILMS = {
       {
         "label": "Cut bowls, ridges, and troughs",
         "text": "A mountain glacier can cut a bowl called a cirque. Water left in a cirque forms a tarn. The sharp ridge between glacial bowls is an arête, and erosion on several sides can leave a horn. A deeper trunk glacier leaves a broad trough below a perched tributary.",
-        "asset": "assets/figures/chapter14/alpine-block.webp",
-        "source": "Textbook 14.4C and Connect Q1 · lecture November 12",
+        "asset": "assets/figures/lecture14/s17-i43.webp",
+        "source": "Lecture slide 17",
         "start": 0
       },
       {
         "label": "Leave ridges behind",
         "text": "Debris along one glacier edge can leave a lateral moraine. When two glaciers join, their inner debris bands meet as a medial moraine. A terminal moraine marks the farthest advance in that episode. If the ocean floods a carved trough, it becomes a fjord.",
-        "asset": "assets/figures/chapter14/alpine-front.webp",
-        "source": "Figure 14.04.b2 and Connect Q2 · lecture November 12",
-        "start": 19.855
+        "asset": "assets/figures/lecture14/s18-i49.webp",
+        "source": "Lecture slide 18",
+        "start": 21.88
       }
     ],
     "cues": [
       [
         0.16,
-        3.92,
+        4.425,
         "A mountain glacier can cut a bowl called a cirque."
       ],
       [
-        4.265,
-        7.625,
+        4.77,
+        8.76,
         "Water left in a cirque forms a tarn."
       ],
       [
-        7.845,
-        11.585,
+        8.98,
+        12.72,
         "The sharp ridge between glacial bowls is an arête, and erosion"
       ],
       [
-        11.585,
-        14.005,
+        12.72,
+        15.14,
         "on several sides can leave a horn."
       ],
       [
-        14.725,
-        18.085,
+        15.99,
+        19.35,
         "A deeper trunk glacier leaves a broad trough below a perched"
       ],
       [
-        18.085,
-        19.325,
+        19.35,
+        20.59,
         "tributary."
       ],
       [
-        20.065,
-        24.245,
+        22.09,
+        26.74,
         "Debris along one glacier edge can leave a lateral moraine."
       ],
       [
-        24.625,
-        27.585,
+        27.12,
+        30.08,
         "When two glaciers join, their inner debris bands meet as a"
       ],
       [
-        27.585,
-        29.185,
+        30.08,
+        32.16,
         "medial moraine."
       ],
       [
-        29.555,
-        33.175,
+        32.53,
+        36.6,
         "A terminal moraine marks the farthest advance in that episode."
       ],
       [
-        33.575,
-        37.335,
+        37.0,
+        40.76,
         "If the ocean floods a carved trough, it becomes a fjord."
       ]
-    ]
+    ],
+    "revision": "lecture-20261124"
   },
   "F14S5": {
     "id": "14-05",
@@ -1750,16 +1754,16 @@ window.L.FINAL_FILMS = {
       {
         "label": "Read the ridges of retreat",
         "text": "The outer terminal moraine marks the farthest position of this advance. As ice retreats, pauses can leave curved recessional ridges inside it. Under moving ice, elongated drumlins can record the flow trend.",
-        "asset": "assets/figures/chapter14/great-lakes.webp",
-        "source": "Figure 14.05.a11 · lecture November 12",
+        "asset": "assets/figures/lecture14/s19-i52.webp",
+        "source": "Lecture slides 19, 19",
         "start": 0
       },
       {
         "label": "Trace the ice and meltwater",
         "text": "A meltwater channel inside or beneath the ice leaves a winding esker after the ice disappears. Streams spread outwash in front. A detached ice block buried by sediment can melt away, leaving a kettle. Water may later fill the hollow.",
-        "asset": "assets/figures/chapter14/continental-block.webp",
-        "source": "Figure 14.05.a1 and Connect Q3 and Q4 · lecture November 12",
-        "start": 14.775
+        "asset": "assets/figures/lecture14/s19-i52.webp",
+        "source": "Lecture slide 19",
+        "start": 16.49
       }
     ],
     "cues": [
@@ -1774,56 +1778,57 @@ window.L.FINAL_FILMS = {
         "advance."
       ],
       [
-        4.905,
-        8.445,
+        5.15,
+        8.69,
         "As ice retreats, pauses can leave curved recessional ridges"
       ],
       [
-        8.445,
-        9.625,
+        8.69,
+        10.5,
         "inside it."
       ],
       [
-        9.845,
-        13.485,
+        10.72,
+        14.36,
         "Under moving ice, elongated drumlins can record the flow"
       ],
       [
-        13.485,
-        14.325,
+        14.36,
+        15.2,
         "trend."
       ],
       [
-        14.985,
-        18.325,
+        16.7,
+        20.04,
         "A meltwater channel inside or beneath the ice leaves a winding"
       ],
       [
-        18.325,
-        20.445,
+        20.04,
+        22.16,
         "esker after the ice disappears."
       ],
       [
-        21.12,
-        23.52,
+        23.01,
+        25.93,
         "Streams spread outwash in front."
       ],
       [
-        23.85,
-        28.05,
+        26.26,
+        30.46,
         "A detached ice block buried by sediment can melt away, leaving"
       ],
       [
-        28.05,
-        29.01,
+        30.46,
+        31.875,
         "a kettle."
       ],
       [
-        29.405,
-        32.165,
+        32.27,
+        35.03,
         "Water may later fill the hollow."
       ]
-    ]
+    ],
+    "revision": "lecture-20261124"
   },
   "F14S6": {
     "id": "14-06",
@@ -1831,75 +1836,76 @@ window.L.FINAL_FILMS = {
       {
         "label": "Thaw the surface only",
         "text": "Meltwater lays down outwash. Fine windblown silt can settle into a layer called loess. In cold ground, summer thaw can reach the surface layer and allow roots to grow while the deeper permafrost remains frozen.",
-        "asset": "assets/figures/chapter14/permafrost.webp",
-        "source": "Figure 14.06.b3 · lecture November 12",
+        "asset": "assets/figures/lecture14/s20-i54.webp",
+        "source": "Lecture slides 20, 21",
         "start": 0
       },
       {
         "label": "Breach the ice dam",
         "text": "Glacial Lake Missoula filled behind an ice dam. When the dam failed, stored water rushed downstream and cut the Channeled Scablands. Giant ripples preserve evidence of the flood. Farther south, the Great Salt Lake is a remnant of a different lake, Bonneville.",
-        "asset": "assets/figures/chapter14/missoula-flood.webp",
-        "source": "Figures 14.06.c1 and t1 through t3 · lecture November 12",
-        "start": 14.52
+        "asset": "assets/figures/lecture14/s23-i61.webp",
+        "source": "Lecture slide 23",
+        "start": 16.57
       }
     ],
     "cues": [
       [
         0.16,
-        2.58,
+        3.19,
         "Meltwater lays down outwash."
       ],
       [
-        2.82,
-        7.2,
+        3.43,
+        8.375,
         "Fine windblown silt can settle into a layer called loess."
       ],
       [
-        7.485,
-        10.525,
+        8.66,
+        11.7,
         "In cold ground, summer thaw can reach the surface layer and"
       ],
       [
-        10.525,
-        13.185,
+        11.7,
+        14.36,
         "allow roots to grow while the deeper permafrost remains"
       ],
       [
-        13.185,
-        14.105,
+        14.36,
+        15.28,
         "frozen."
       ],
       [
-        14.73,
-        18.29,
+        16.78,
+        20.34,
         "Glacial Lake Missoula filled behind an ice dam."
       ],
       [
-        18.92,
-        22.94,
+        21.19,
+        25.21,
         "When the dam failed, stored water rushed downstream and cut"
       ],
       [
-        22.94,
-        24.76,
+        25.21,
+        27.405,
         "the Channeled Scablands."
       ],
       [
-        25.235,
-        28.815,
+        27.88,
+        31.87,
         "Giant ripples preserve evidence of the flood."
       ],
       [
-        29.255,
-        32.655,
+        32.31,
+        35.71,
         "Farther south, the Great Salt Lake is a remnant of a different"
       ],
       [
-        32.655,
-        34.535,
+        35.71,
+        37.59,
         "lake, Bonneville."
       ]
-    ]
+    ],
+    "revision": "lecture-20261124"
   },
   "F14S7": {
     "id": "14-07",
@@ -1907,16 +1913,16 @@ window.L.FINAL_FILMS = {
       {
         "label": "Read the field clues",
         "text": "Scratches on polished bedrock give the axis of former ice flow. A plucked face can resolve which way along that axis ice traveled. A boulder dropped from floating ice can interrupt much finer sediment below.",
-        "asset": "assets/figures/chapter14/dropstone.webp",
-        "source": "Figures 14.07.a3 through a6 · lecture November 12",
+        "asset": "assets/figures/lecture14/s24-i66.webp",
+        "source": "Lecture slide 24",
         "start": 0
       },
       {
         "label": "Store light oxygen on land",
         "text": "Evaporation moves proportionally more light oxygen into the vapor. When growing ice sheets store more of that light oxygen on land, the remaining ocean grows relatively richer in heavy oxygen. Higher marine shell ratios mark glacial intervals in this graph. The Greenland graph instead plots inferred temperature along its horizontal axis.",
-        "asset": "assets/figures/chapter14/marine-isotopes.webp",
-        "source": "Figures 14.07.b1, b2 and b4 · lecture November 12",
-        "start": 15.93
+        "asset": "assets/figures/lecture14/s24-i67.webp",
+        "source": "Lecture slide 24",
+        "start": 17.55
       }
     ],
     "cues": [
@@ -1931,70 +1937,71 @@ window.L.FINAL_FILMS = {
         "flow."
       ],
       [
-        5.28,
-        9.46,
+        5.61,
+        9.79,
         "A plucked face can resolve which way along that axis ice"
       ],
       [
-        9.46,
-        10.46,
+        9.79,
+        11.265,
         "traveled."
       ],
       [
-        10.835,
-        14.235,
+        11.64,
+        15.04,
         "A boulder dropped from floating ice can interrupt much finer"
       ],
       [
-        14.235,
-        15.455,
+        15.04,
+        16.26,
         "sediment below."
       ],
       [
-        16.14,
-        19.98,
+        17.76,
+        21.6,
         "Evaporation moves proportionally more light oxygen into the"
       ],
       [
-        19.98,
-        20.74,
+        21.6,
+        22.885,
         "vapor."
       ],
       [
-        21.065,
-        24.245,
+        23.21,
+        26.39,
         "When growing ice sheets store more of that light oxygen on"
       ],
       [
-        24.245,
-        27.645,
+        26.39,
+        29.79,
         "land, the remaining ocean grows relatively richer in heavy"
       ],
       [
-        27.645,
-        28.585,
+        29.79,
+        30.73,
         "oxygen."
       ],
       [
-        29.195,
-        32.355,
+        31.58,
+        34.74,
         "Higher marine shell ratios mark glacial intervals in this"
       ],
       [
-        32.355,
-        33.095,
+        34.74,
+        36.01,
         "graph."
       ],
       [
-        33.415,
-        37.555,
+        36.33,
+        40.47,
         "The Greenland graph instead plots inferred temperature along"
       ],
       [
-        37.555,
-        39.175,
+        40.47,
+        42.09,
         "its horizontal axis."
       ]
-    ]
+    ],
+    "revision": "lecture-20261124"
   }
 };
