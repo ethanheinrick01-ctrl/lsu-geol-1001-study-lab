@@ -28,10 +28,10 @@
   ], ({mc, fill, match, write}) => {
     mc("apply", "19.0", "A spacecraft detects a fractured icy surface beyond Mars. Which body could have that surface?",
       ["*A moon orbiting a giant planet.", "The visible cloud deck of Jupiter.", "The solar photosphere.", "The dry basalt plains of Mercury."],
-      "Io’s rocky surface is renewed by volcanism. Europa’s icy surface preserves fractures and displaced blocks. Comparing landforms reveals differences in how each moon releases energy and how its surface responds.", undefined);
+      "Europa provides a nearby example in Jupiter’s system. An icy crust can preserve fractures on a solid moon well beyond the rocky inner planets.", undefined);
     mc("figure", "19.05.a3", "The diagram puts several moons beside Jupiter. Which comparison uses the same level of organization?",
       ["*Compare terrain on Io with terrain on Europa.", "Compare one band on Jupiter with the orbit of Mars.", "Compare the Sun’s visible surface with Jupiter’s orbit.", "Compare Saturn’s ring plane with Mercury’s orbital period."],
-      "Beyond the inner planets, the moons of giant planets provide solid surfaces where impacts, eruptions, and deformation can leave a record. Io has volcanic plains while Europa has a bright icy shell. Both orbit Jupiter. Distance from the Sun is only one influence on what happens at the surface of a moon.", img("19.05.a3", "Find rocky and icy surfaces farther out", "Exploring Geology · Fig. 19.05.a3"));
+      "Io and Europa are both satellites of Jupiter, so comparing their surface landforms tests how two neighboring moons evolved differently.", img("19.05.a3", "Find rocky and icy surfaces farther out", "Exploring Geology · Fig. 19.05.a3"));
     fill("recall", "19.0", "What term describes a planet with a solid rocky surface and a largely rocky interior?", ["terrestrial planet", "a terrestrial planet", "an terrestrial planet"], "Mercury, Venus, Earth, and Mars have rocky surfaces, yet their atmospheres and the ages of their exposed terrains differ widely.");
     mc("extend-1-19-00-a2", "19.00.a2", "In the nebular model, which step helps explain how rocky planets grew?",
       ["*Smaller solid bodies collided and accumulated.", "The Sun expelled fully formed rocky planets.", "An existing giant planet froze into four separate worlds.", "A single impact created the entire solar system."],
@@ -56,10 +56,10 @@
   ], ({mc, fill, match, write}) => {
     mc("apply", "19.1", "A crater ejecta blanket appears bright on a radar image. Which observation could account for the strong echo?",
       ["*Rough blocks scatter radio waves toward the spacecraft.", "Dark minerals emit additional visible sunlight.", "An ice-rich floor absorbs all incoming radio waves.", "The instrument assigns bright tones to high air temperature."],
-      "Radar brightness depends on the return of an emitted pulse and varies with roughness and slope. Thermal infrared records energy emitted by the surface and can reveal a temperature boundary. The two images measure different surface properties.", undefined);
+      "A rough blanket scatters part of the radar pulse back toward the instrument. A high return can appear bright even where the exposed rock looks dark in visible light.", undefined);
     mc("figure", "19.01.c1", "What does the contrast between the floor and rim in this thermal infrared image allow you to compare?",
       ["*Surface temperatures mapped by the instrument.", "Rock colors seen by an astronaut in daylight.", "Absolute ages measured from impact debris.", "Wind speeds measured inside the crater."],
-      "Before interpreting a colored crater, find out which wavelengths were measured and what the colors represent. Thermal images map emitted radiation. A color assigned to a range of temperatures can make a crater stand out even if the underlying rocks look alike in daylight. A field sample tests what the rocks are made of.", img("19.01.c1", "Interpret a false-color crater image", "Exploring Geology · Fig. 19.01.c1"));
+      "These are assigned colors in a thermal infrared measurement. Compare the temperature signal of the floor with that from the surrounding material.", img("19.01.c1", "Interpret a false-color crater image", "Exploring Geology · Fig. 19.01.c1"));
     fill("recall", "19.1", "What term describes the portion of transmitted radio energy scattered back toward the instrument?", ["radar backscatter", "a radar backscatter", "an radar backscatter"], "A radar signal can pass through cloud cover, and the strength of the echo depends on the slope and roughness of the surface.");
     mc("thermal-crater", "Connect 19:assessment Q3", "Which measurement would help explain why the floor and ejecta have different mapped colors?",
       ["*Surface temperature at the time of imaging.", "Visible rock color under white light.", "The number of craters per square kilometer.", "The depth of bedrock beneath the floor."],
@@ -89,10 +89,10 @@
   ], ({mc, fill, match, write}) => {
     mc("apply", "19.2", "Two rocky spheres have the same initial temperature and composition. The second has twice the radius. How does its surface area per unit volume compare?",
       ["*It has half the first sphere’s ratio.", "It has twice the first sphere’s ratio.", "It has four times the first sphere’s ratio.", "It has the same ratio as the first sphere."],
-      "A small body has more surface area for heat loss per unit volume. Io also receives energy from gravitational flexing as it orbits Jupiter. This heat can drive volcanism despite Io’s small size.", undefined);
+      "For a sphere the area-to-volume ratio is 3 divided by radius. Doubling the radius reduces the ratio to half its earlier value.", undefined);
     mc("figure", "19.02.c1", "Why can the smaller active world in the comparison continue to erupt?",
       ["*Orbital flexing supplies additional internal heat.", "Its small radius prevents heat escaping to space.", "Its impacts permanently stop the crust from cooling.", "Its reflected sunlight drives deep mantle melting."],
-      "Size is only part of the story, because repeated tidal flexing can keep a small moon like Io volcanically active. Mercury has a heavily cratered surface. Io is small as well, but its varying gravitational interactions deform its interior. Some of the mechanical energy becomes heat and powers eruptions that can cover old craters.", img("19.02.c1", "Compare Mercury and Io", "Exploring Geology · Fig. 19.02.c1"));
+      "Repeated changes in Jupiter’s gravitational pull deform Io. Friction and internal deformation dissipate some of that energy as heat.", img("19.02.c1", "Compare Mercury and Io", "Exploring Geology · Fig. 19.02.c1"));
     fill("recall", "19.2", "What term describes the surface area available for heat loss per unit of interior volume?", ["surface-area-to-volume ratio", "a surface-area-to-volume ratio", "an surface-area-to-volume ratio"], "With similar materials and heat sources, a smaller world has more surface area per unit volume and tends to cool more quickly.");
     match("six-surface-processes", "Connect 19:assignment Q1", "Match each numbered image to the process that shaped the surface.",
       [["Location 1", "Erosion and deposition by running water"], ["Location 2", "Wind"], ["Location 3", "Tectonics"], ["Location 4", "Mass wasting"], ["Location 5", "Volcanism"], ["Location 6", "Impact cratering"]], "Compare channel junctions, repeating dunes, and deformed bands across the top. On the bottom, distinguish a failed slope, a volcanic edifice, and a circular impact rim with ejecta.", img("six-surface-processes", "Numbered locations · six surface processes", "Connect · Chapter 19 · assignment Q1"));
@@ -118,10 +118,10 @@
   ], ({mc, fill, match, write}) => {
     mc("apply", "19.3", "Old crust on Earth has fewer visible craters than a comparable patch on Mercury. Which process could explain the difference?",
       ["*Erosion and burial removed or covered old craters on Earth.", "Earth’s atmosphere prevented all impacts from reaching old crust.", "Mercury’s craters grew while Earth’s craters stayed small.", "A rocky surface cannot retain ejecta after an impact."],
-      "On Mercury, crater counts and overlapping rims help order surface events. On Venus, radar penetrates the clouds and maps features such as domes. Their shapes and contacts provide evidence of volcanism and resurfacing.", undefined);
+      "Erosion degrades rims, lava and sediment bury impact scars, and plate motion recycles crust on Earth. A low count can reflect poor preservation.", undefined);
     mc("figure", "19.03.b4", "Which feature in this radar view supports volcanic construction on Venus?",
       ["*A cluster of broad round domes with distinct margins.", "A network of tributaries joining a central river.", "A line of glaciers advancing down separate valleys.", "A train of wind ripples with evenly spaced crests."],
-      "Radar reveals volcanic domes on Venus beneath its cloud cover, showing that a smooth cloud image can hide a geologically varied surface. A visible-light view of Venus mostly shows its atmosphere. A radar view records echoes from the ground through the clouds. Rounded edifice outlines below the cloud deck can reveal past volcanic construction.", img("19.03.b4", "Read the surface beneath the clouds", "Exploring Geology · Fig. 19.03.b4"));
+      "Trace the broad rounded margins of several neighboring edifices. These are volcanic domes mapped through the clouds by radar.", img("19.03.b4", "Read the surface beneath the clouds", "Exploring Geology · Fig. 19.03.b4"));
     fill("recall", "19.3", "What term describes replacement or modification of older terrain by geological processes?", ["resurfacing", "a resurfacing", "an resurfacing"], "Mercury preserves many impact scars because much of its old surface has escaped later resurfacing.");
     mc("venus-echo", "Connect 19:assessment Q4", "The apron around the crater returned a strong radar echo. What should a landing team investigate there?",
       ["*Rough blocks and slopes that scatter the radar pulse.", "Bright pigments that reflected sunlight toward the radar.", "A temperature increase directly measured by the pulse.", "Faint blue ice that emitted the measured radio pulse."],
@@ -149,10 +149,10 @@
   ], ({mc, fill, match, write}) => {
     mc("apply", "19.4", "A bright ray crosses both the highlands and a dark mare. Which sequence fits the contacts, from oldest to youngest?",
       ["*Highland crust, mare lava, ray-forming impact.", "Mare lava, ray-forming impact, highland crust.", "Ray-forming impact, highland crust, mare lava.", "Highland crust, ray-forming impact, mare lava."],
-      "The permanent dark maria are basalt plains. The changing boundary between day and night follows the viewing geometry of the Moon’s orbit. Ordinary lunar phases occur while the Sun continues to illuminate half the Moon.", undefined);
+      "The highland crust predates lava that filled low basins. A ray laid across both must have formed in a still later impact.", undefined);
     mc("figure", "19.04.c4", "With sunlight coming from the left in the diagram, where would a person on Earth see a full Moon?",
       ["*On the right side of Earth, opposite the Sun.", "On the left side of Earth, toward the Sun.", "Above Earth in the diagram, a quarter orbit from the Sun.", "Below Earth in the diagram, a quarter orbit from the Sun."],
-      "As the Moon orbits Earth, sunlight still illuminates one hemisphere, but we see a different fraction of that bright half. At new moon the Moon lies on the sunward side of Earth, so the illuminated half faces mostly away from us. At full moon it lies on the far side of Earth from the Sun. Between these positions, part of the bright half is visible.", img("19.04.c4", "Change the observer’s view", "Exploring Geology · Fig. 19.04.c4"));
+      "With the Moon opposite the Sun in Earth’s sky, its sunlit hemisphere faces Earth. In this plan view that position is to the right.", img("19.04.c4", "Change the observer’s view", "Exploring Geology · Fig. 19.04.c4"));
     fill("recall", "19.4", "What term describes a dark basalt plain on the Moon formed by ancient lava flows?", ["mare", "a mare", "an mare"], "Lava flooded low regions on the Moon and buried older impact scars, leaving smoother dark plains with fewer visible craters.");
     mc("lunar-contact", "Connect 19:assessment Q10", "Compare similar areas on the two sides. Which observation supports a longer surface exposure time on the right?",
       ["*More preserved craters occupy the highland surface.", "The plain on the left is darker under the same lighting.", "Both units reach the horizon at the top of the image.", "The contact changes direction within the field of view."],
@@ -181,10 +181,10 @@
   ], ({mc, fill, match, write}) => {
     mc("apply", "19.5", "Which observation best supports recent resurfacing on Io?",
       ["*An active plume deposits material onto nearby terrain.", "Bright sunlight illuminates a round hemisphere.", "Jupiter casts a shadow across the moon’s orbit.", "An old impact rim stands above a distant plain."],
-      "Io’s eruptions carry material from the interior to the surface. Europa’s fractured and displaced blocks record motion of its ice shell. Neither observation requires the two moons to erupt the same material.", undefined);
+      "An erupting plume in contact with the surface provides direct evidence that material is being emplaced now. New deposits can cover earlier terrain.", undefined);
     mc("figure", "19.05.a9", "Which feature on Europa offers the clearest evidence that surface material moved as blocks?",
       ["*Matching edges on blocks separated by disrupted ice.", "A circular shadow passing over the surface.", "A smoothly changing brightness toward the limb.", "A uniform frost layer without boundaries."],
-      "On Europa, disrupted blocks and intersecting bands record movement of the icy shell and support an inference of mobile material beneath it. Europa’s bands and broken blocks can be compared across cracks. Matching displaced margins suggests motion after the shell broke. The texture gives evidence about the shell even where the material underneath remains hidden.", img("19.05.a9", "Reassemble the fractured ice", "Exploring Geology · Fig. 19.05.a9"));
+      "Margins that fit together across a gap allow the motion of the blocks to be reconstructed. Lighting can also cause brightness variations.", img("19.05.a9", "Reassemble the fractured ice", "Exploring Geology · Fig. 19.05.a9"));
     fill("recall", "19.5", "What term describes repeated deformation caused by changing gravitational forces?", ["tidal flexing", "a tidal flexing", "an tidal flexing"], "Jupiter’s changing pull flexes Io as it orbits, supplying heat that helps drive the eruptions visible on its surface.");
     mc("extend-1-19-05-a2", "19.05.a2", "A storm changes shape within Jupiter’s banded disk. Which feature is being monitored?",
       ["*A circulating system in Jupiter’s atmosphere.", "A resurfaced volcanic plain on Io.", "A faulted ice block on Europa.", "An ancient impact basin on Callisto."],
@@ -211,10 +211,10 @@
   ], ({mc, fill, match, write}) => {
     mc("apply", "19.6", "A spacecraft repeatedly encounters fewer particles while crossing the same dark ring gap. Which explanation fits?",
       ["*The gap contains less orbiting material than neighboring bands.", "The gap is filled by a continuous dark rocky plate.", "The rings are fixed to the planet and turn as a single solid disk.", "Particles in all bands complete an orbit in the same time."],
-      "Rings concentrate sunlight-reflecting particles in bands with different populations. On Enceladus, a narrow jet can be traced to fractures that eject ice and vapor. The first observation maps an orbiting population and the second locates a source.", undefined);
+      "Fewer particle encounters independently support the lower density suggested by the dark band. Neighboring bright bands contain more light-scattering material.", undefined);
     mc("figure", "19.06.a7", "A probe crosses the plume shown above Enceladus. What material is it best positioned to sample?",
       ["*Ice grains and water vapor leaving fractures.", "Silicate grains thrown out by Saturn’s cloud belts.", "Liquid methane flowing across Titan’s surface.", "Dust swept from the surface of a lunar mare."],
-      "Jets of ice particles and water vapor rise from fractures near the south pole of Enceladus, linking the surface to water below. Enceladus has a bright icy surface, fractures near the south pole, and material streaming out into space. The plumes provide a way to sample material from beneath the surface without landing or drilling.", img("19.06.a7", "Trace the plume on Enceladus", "Exploring Geology · Fig. 19.06.a7"));
+      "The jets leave fractures on an icy moon. Passing through the jets can collect the ice grains and water vapor that travel above the surface.", img("19.06.a7", "Trace the plume on Enceladus", "Exploring Geology · Fig. 19.06.a7"));
     fill("recall", "19.6", "What term describes a flattened collection of particles orbiting a planet?", ["planetary ring", "a planetary ring", "an planetary ring"], "Saturn’s rings are made of countless orbiting particles, mostly ice, whose concentrations vary between bright bands and dark gaps.");
     mc("extend-2-19-06-a4", "19.06.a4", "A radar map shows a shoreline and connected drainage beneath thick haze. Which Saturnian moon fits?",
       ["*Titan.", "Enceladus.", "Mimas.", "Iapetus."],
@@ -239,10 +239,10 @@
   ], ({mc, fill, match, write}) => {
     mc("apply", "19.7", "How can the ring plane help estimate the direction of Uranus’s spin axis?",
       ["*The spin axis is close to perpendicular to the ring plane.", "The spin axis lies along the widest apparent ring arc.", "The spin axis points from Uranus toward its largest moon.", "The spin axis follows the orbit of Uranus around the Sun."],
-      "A photograph shows surface textures and icy terrains. Repeated position measurements establish that it travels opposite Neptune’s rotation. A retrograde orbit supports capture, while individual landforms record surface events.", undefined);
+      "A ring plane is close to the equatorial plane. The axis through the poles is perpendicular to that plane even when the entire system is tilted.", undefined);
     mc("figure", "19.07.b2", "Which additional observation would test the capture interpretation for Triton most directly?",
       ["*Track its orbital direction relative to Neptune’s rotation.", "Measure the color of a single bright ice patch.", "Compare the widths of two nearby surface ridges.", "Count the craters visible inside one photograph."],
-      "Triton orbits Neptune in the opposite direction to the planet’s spin, evidence that it may have been captured. An orbital direction requires a series of observations. Monitoring Triton against Neptune’s spin shows that Triton moves the opposite way. A surface image instead shows texture, color differences, and clues to icy geologic activity.", img("19.07.b2", "Inspect Triton’s surface", "Exploring Geology · Fig. 19.07.b2"));
+      "Measuring Triton’s orbit relative to Neptune’s spin establishes whether it travels retrograde. Surface textures record geological change and cannot measure the direction of the orbit.", img("19.07.b2", "Inspect Triton’s surface", "Exploring Geology · Fig. 19.07.b2"), ["NASA Triton:Overview"]);
     fill("recall", "19.7", "What term describes the angle between a body’s spin axis and the perpendicular to its orbital plane?", ["axial tilt", "a axial tilt", "an axial tilt"], "Uranus rotates with a large tilt, so its equator, rings, and regular moons have a striking orientation relative to its orbit.");
     mc("extend-1-19-07-a4", "19.07.a4", "Which mapped feature belongs to the course description of Miranda?",
       ["*An angular corona disrupting old cratered ice.", "A hydrocarbon lake beneath a thick orange haze.", "A bright sulfur-rich plume over a silicate vent.", "A dark basalt mare within the lunar highlands."],
@@ -251,7 +251,7 @@
       ["*Away from the Sun, even on the outward trip.", "Toward the Sun throughout the outward trip.", "Toward the nearest giant planet.", "Toward the comet’s previous position in every orbit."],
       "Sunlight and the solar wind direct the released material generally away from the Sun.");
     write("explain", "19.7", "Explain how the evidence for Triton’s surface geology differs from the evidence for its orbital history.",
-      "A photograph shows surface textures and icy terrains. Repeated position measurements establish that it travels opposite Neptune’s rotation. A retrograde orbit supports capture, while individual landforms record surface events.", ["Identify a property visible in the photograph", "Describe the motion measurements", "Link retrograde motion to the capture inference"], img("19.07.a2", "Compare pole, rings, and moons", "Exploring Geology · Fig. 19.07.a2"));
+      "A photograph shows surface textures and icy terrains. Repeated position measurements establish that it travels opposite Neptune’s rotation. A retrograde orbit supports capture, while individual landforms record surface events.", ["Identify a property visible in the photograph", "Describe the motion measurements", "Link retrograde motion to the capture inference"], img("19.07.a2", "Compare pole, rings, and moons", "Exploring Geology · Fig. 19.07.a2"), ["NASA Triton:Overview"]);
   });
 
   section(8, "Reading the water record on Mars", "Reading the water record on Mars", [
@@ -270,10 +270,10 @@
   ], ({mc, fill, match, write}) => {
     mc("apply", "19.8", "Which pair of observations makes the strongest case for former liquid water at a specific Martian site?",
       ["*A branching channel and water-deposited sediments at its outlet.", "A volcanic summit and a bright streak of airborne dust.", "A circular crater and a field of wind ripples on its floor.", "A normal fault and a scarp that crosses a lava plain."],
-      "First trace connected channels and an outlet deposit in orbital images. Then send a rover to examine sediment textures or minerals in the deposit. The map and the sampled rock test the interpretation at different scales.", undefined);
+      "Converging channels give a regional flow pattern, and sediments at the outlet test what the flow transported. The two observations support the same past process.", undefined);
     mc("figure", "19.08.b6", "What comparison becomes possible after the rover makes the hole shown in the photograph?",
       ["*Compare weathered surface material with newly exposed rock.", "Compare all tributary slopes across an entire hemisphere.", "Compare deep mantle rocks with the Martian atmosphere.", "Compare orbital speeds of two moons around Mars."],
-      "A rover can drill through a weathered surface and examine the rock below, testing ideas suggested by images from orbit. Rovers can examine grain shapes, rock layers, and minerals at the scale of a hand sample. Drilling exposes material below the surface coating. Together, these observations test whether an orbital feature formed in the presence of water.", img("19.08.b6", "Sample the material below the surface", "Exploring Geology · Fig. 19.08.b6"));
+      "The drill passes through the weathered exterior and produces fresh material. The rover can compare this material with the surface coating at the same site.", img("19.08.b6", "Sample the material below the surface", "Exploring Geology · Fig. 19.08.b6"));
     fill("recall", "19.8", "What term describes connected channels that gather and route flow across a landscape?", ["drainage network", "a drainage network", "an drainage network"], "Where small channels join larger ones, their branching geometry can preserve evidence of past flow even after the water is gone.");
     mc("extend-1-19-08-a7", "19.08.a7", "Which interpretation fits a broad mountain with gently sloping lava-covered flanks and a summit depression?",
       ["*Construction of a shield volcano.", "Incision of a branching river network.", "Retreat of a polar ice cap.", "Excavation of a narrow fault-bounded trough."],
@@ -300,10 +300,10 @@
   ], ({mc, fill, match, write}) => {
     mc("apply", "19.9", "An impact crater interrupts a dark flow, and the flow fills older craters in western terrain. Which event happened last at that site?",
       ["*The impact that cuts the dark flow.", "The impacts buried beneath the dark flow.", "The formation of the western terrain.", "The first accumulation of the dark flow."],
-      "The surrounding surface existed first. A later event cut the valley into it, and sediment accumulated in the available space. Those relations establish order without assigning numerical ages.", undefined);
+      "The younger crater cuts the solidified flow. The flow in turn buried some preexisting western craters, so those impacts and the western terrain came earlier.", undefined);
     mc("figure", "19.09.a6", "Which relationship in the channel image would support later deposition within the valley?",
       ["*Material on the floor covers the bottom of a channel cut into older terrain.", "Loose material forms a continuous layer beneath the entire landscape.", "Sediment on a hilltop grades downward into intact basement rock.", "A crater is present in a different part of the same hemisphere."],
-      "A channel cut into an existing surface is younger than that surface, even if the two features have no measured numerical ages. The map also shows channels connecting a sedimentary area to lower terrain. A channel postdates the surface it incises. Sediment filling its floor was deposited after space for the channel existed.", img("19.09.a6", "Order incision and deposition", "Exploring Geology · Fig. 19.09.a6"));
+      "Incision creates the low space. Material that covers the incised floor records a later episode of deposition within it.", img("19.09.a6", "Order incision and deposition", "Exploring Geology · Fig. 19.09.a6"));
     fill("recall", "19.9", "What term describes the sequence of events from older to younger without assigning a numerical date?", ["relative age", "a relative age", "an relative age"], "Where dark basalt overlaps heavily cratered terrain and fills some of its craters, the buried surface must be older than the flow.");
     mc("planet-terrain-map", "Connect 19:assignment Q3", "A sample is weathered basalt from a unit that extends into the western craters. Where should the rover return for another sample of the same unit?",
       ["*The dark strip marked D.", "The polar cap marked P.", "The layered terrain marked S.", "The channel marked V."],

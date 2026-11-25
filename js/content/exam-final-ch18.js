@@ -26,10 +26,10 @@
   ], ({mc, fill, match, write}) => {
     mc("apply", "18.0", "Which pairing best fits the two sides of the Arabian plate?",
       ["*Red Sea extension and Zagros convergence.", "Red Sea convergence and Zagros extension.", "Red Sea subduction and Zagros seafloor spreading.", "Red Sea collision and Zagros transform motion."],
-      "The Red Sea records extension and separation. To the east, a thick sedimentary basin preserves potential petroleum-system rocks near a convergent margin. Those histories produce different structures and resources.", undefined);
+      "The Red Sea is opening as Arabia separates from Africa. Along the Zagros margin, convergence produces shortening and mountain building.", undefined);
     mc("figure", "18.00.a3", "Where on the cross section is there a more extensive sedimentary succession to investigate for petroleum?",
       ["*Toward the Persian Gulf on the eastern side.", "Directly beneath exposed western basement.", "At the axial ridge in the Red Sea.", "Within uplifted crystalline rock along the western escarpment."],
-      "Eastward, sedimentary layers thicken toward the Persian Gulf, preserving rocks that could generate and store petroleum. On the cross section, older basement lies close to the surface in the west. The sedimentary succession thickens eastward. Different parts of that succession can supply organic-rich beds, porous reservoirs, and seals.", img("18.00.a3", "Follow the sedimentary basin", "Exploring Geology · Fig. 18.00.a3"));
+      "Follow the sedimentary beds as they thicken toward the Persian Gulf. The eastern succession offers more sedimentary rock in which to investigate sources, reservoirs, and seals.", img("18.00.a3", "Follow the sedimentary basin", "Exploring Geology · Fig. 18.00.a3"));
     fill("recall", "18.0", "What term describes a zone where the crust stretches as tectonic plates separate?", ["rift", "a rift", "an rift"], "Along the western margin of Arabia, extension opened the Red Sea between the Arabian and African plates.");
     mc("arabia-boundaries", "Connect 18:assessment Q2", "Which motion of Arabia fits both opening of the Red Sea and shortening at the Zagros margin?",
       ["*Toward the northeast, away from the rift and toward the collision.", "Toward the southwest, into the rift and away from the collision.", "Toward the northwest, parallel to both margins.", "Toward the southeast, parallel to both margins."],
@@ -52,10 +52,10 @@
   ], ({mc, fill, match, write}) => {
     mc("apply", "18.1", "Which sequence can produce a conventional accumulation?",
       ["*Preservation, burial heating, migration, and trapping.", "Trapping, surface oxidation, erosion, and cooling.", "Migration, evaporation, crystallization, and uplift.", "Burial, exposure, wave sorting, and cement removal."],
-      "Organic-rich source rock generated hydrocarbons during burial. They migrated into connected sandstone pores and accumulated beneath a seal. The source and reservoir need not be the same unit.", undefined);
+      "Organic material first needs to be preserved and buried. Heating can generate petroleum, which then migrates through permeable rock and can collect beneath a seal.", undefined);
     mc("figure", "18.01.c3", "Which sequence would a well passing downward through all three fluid zones encounter?",
       ["*Gas, oil, water.", "Oil, gas, water.", "Water, oil, gas.", "Gas, water, oil."],
-      "In the folded reservoir, gas occupies the highest pores, oil lies beneath it, and water fills the lower part. Hydrocarbons can leave the source rock and move through permeable units. Density sorting in a water-bearing reservoir gives gas, oil, and water a characteristic vertical order beneath the seal.", img("18.01.c3", "Separate the fluids", "Exploring Geology · Fig. 18.01.c3"));
+      "Within a connected reservoir, buoyant gas occupies the highest zone, oil lies below it, and formation water occupies the lowest of the three zones.", img("18.01.c3", "Separate the fluids", "Exploring Geology · Fig. 18.01.c3"));
     fill("recall", "18.1", "What term describes a rock containing organic matter capable of generating hydrocarbons?", ["source rock", "a source rock", "an source rock"], "Organic material buried with fine sediment can generate oil and gas when time and temperature are sufficient.");
     write("explain", "18.1", "A porous sandstone contains oil but little original organic matter. Explain how the oil could be there.",
       "Organic-rich source rock generated hydrocarbons during burial. They migrated into connected sandstone pores and accumulated beneath a seal. The source and reservoir need not be the same unit.", ["Identify source and maturation", "Trace migration", "Explain storage and seal"], img("18.01.b3", "Bury organic sediment", "Exploring Geology · Fig. 18.01.b3"));
@@ -76,10 +76,10 @@
   ], ({mc, fill, match, write}) => {
     mc("apply", "18.2", "A folded reservoir is exposed at its crest. Why might a promising anticline contain little oil?",
       ["*Erosion removed the seal and opened an escape path.", "Folding made the reservoir too flat to permit buoyancy.", "Oil cannot migrate through a curved sedimentary bed.", "The fold can hold gas only below denser formation water."],
-      "Both require reservoir rock and a seal. In an anticline the geometry of folded beds provides closure. In a pinch-out the permeable bed terminates laterally against a sealing material.", undefined);
+      "A fold can close a migration route only while the reservoir remains sealed. Exposure of the crest can let hydrocarbons escape.", undefined);
     mc("figure", "18.02.c4", "What ends migration in the lens-shaped sandstone shown in the section?",
       ["*The permeable sandstone pinches out into sealing rock.", "The sandstone folds into a symmetrical anticlinal crest.", "A rising salt plug pierces the middle of the lens.", "A vertical fault juxtaposes sandstone against granite."],
-      "Follow the sandstone until it thins into surrounding low-permeability rock, which can block further migration. A permeable layer can pinch out or terminate against an unconformity. If the adjoining rock seals that termination, migrating fluids can accumulate without a pronounced fold.", img("18.02.c4", "Locate the sandstone pinch-out", "Exploring Geology · Fig. 18.02.c4"));
+      "Trace the sandstone updip until its porous layer thins to zero against the seal. That lateral termination can stop migration.", img("18.02.c4", "Locate the sandstone pinch-out", "Exploring Geology · Fig. 18.02.c4"));
     fill("recall", "18.2", "What term describes a fold in which the strata arch upward?", ["anticline", "a anticline", "an anticline"], "Oil can migrate up a permeable bed toward the fold crest, but it accumulates only where an effective seal closes the trap.");
     mc("salt-closure", "Connect 18:assignment Q5", "How can the salt body create a trapping geometry along its flank?",
       ["*It deforms the beds upward and seals an adjacent permeable layer.", "It changes dense formation water directly into petroleum.", "It stores all buoyant oil at the base of the dome.", "It prevents the sedimentary beds from folding during burial."],
@@ -105,13 +105,13 @@
   ], ({mc, fill, match, write}) => {
     mc("apply", "18.3", "Why might a shale well have a long horizontal section within one layer?",
       ["*To contact more of a thin, poorly permeable target.", "To ensure that the source interval becomes a structural dome.", "To remove the need for hydrocarbons in the target.", "To convert low-permeability shale into a coarse sandstone."],
-      "A lateral contacts a long stretch of the target interval. Fractures provide additional connected paths between the low-permeability rock and the well. Neither feature by itself generates hydrocarbons.", undefined);
+      "A vertical well crosses only the thickness of the bed. Turning the borehole along the bed brings a longer segment of low-permeability rock into contact with the well.", undefined);
     mc("figure", "18.03.b1", "In the well cross section, where does the borehole gain most of its contact length within the target bed?",
       ["*Along the lower lateral that follows bedding.", "At the vertical casing near the ground surface.", "At the drill rig above the sedimentary layers.", "On the short vertical crossing of upper gravel."],
-      "A well can turn and follow the target bed, putting a longer length of the well in contact with the same thin interval. Well orientation affects how much productive rock the borehole intersects. Induced fractures can connect nearby rock to the well. This improves local fluid pathways while the surrounding shale remains relatively impermeable.", img("18.03.b1", "Trace the horizontal well", "Exploring Geology · Fig. 18.03.b1"));
+      "The curved borehole turns into a long lateral within the target. That in-bed segment creates most of the contact length shown.", img("18.03.b1", "Trace the horizontal well", "Exploring Geology · Fig. 18.03.b1"));
     fill("recall", "18.3", "What term describes a fine-grained hydrocarbon-bearing rock with low permeability?", ["shale reservoir", "a shale reservoir", "an shale reservoir"], "Even where shale contains hydrocarbons, its tiny, poorly connected openings can transmit them very slowly.");
     write("explain", "18.3", "Explain why horizontal wells and induced fractures are complementary in shale.",
-      "A lateral contacts a long stretch of the target interval. Fractures provide additional connected paths between the low-permeability rock and the well. Neither feature by itself generates hydrocarbons.", ["Explain lateral contact", "Identify the flow limitation", "Explain the role of fractures"], img("18.03.a2", "Separate storage from flow", "Exploring Geology · Fig. 18.03.a2"));
+      "A lateral contacts a long stretch of the target interval. Fractures provide additional connected paths between the low-permeability rock and the well. Hydrocarbons form in the source rock before extraction.", ["Explain lateral contact", "Identify the flow limitation", "Explain the role of fractures"], img("18.03.a2", "Separate storage from flow", "Exploring Geology · Fig. 18.03.a2"));
   });
 
   section(4, "From peat to coal and methane", "From peat to coal and methane", [
@@ -129,13 +129,13 @@
   ], ({mc, fill, match, write}) => {
     mc("apply", "18.4", "A thick seam retains abundant plant fragments. Which origin best explains it?",
       ["*Accumulation of vegetation in a waterlogged setting.", "Sorting of dense metal grains by a mountain stream.", "Crystallization of carbon from cooling basalt.", "Precipitation from an evaporating marine basin."],
-      "Plant debris accumulates in a wet setting and is buried and compacted. Increasing temperature changes the organic material into coal and can generate methane, some of which remains within the seam.", undefined);
+      "Waterlogging slows decay and allows plant debris to accumulate as peat. Burial and compaction can turn that material into a coal seam.", undefined);
     mc("figure", "18.04.a5", "What do the paired blocks showing a buried dark seam illustrate?",
       ["*An organic bed can persist beneath later sedimentary cover.", "Coal occurs only in the soil above exposed bedrock.", "The seam is a lava flow cutting across older bedding.", "Every dark bed is an underground water table."],
-      "Burial compacts the plant-rich layer, and increasing heat changes its composition and can generate methane. With increasing burial and heating, peat can progress through lignite and bituminous coal toward anthracite under stronger metamorphic conditions. Increasing rank generally raises carbon concentration.", img("18.04.a5", "Bury and compact the seam", "Exploring Geology · Fig. 18.04.a5"));
+      "Follow the dark horizon from the former swamp into the burial stage. Younger sediment covers it while the organic layer remains identifiable.", img("18.04.a5", "Bury and compact the seam", "Exploring Geology · Fig. 18.04.a5"));
     fill("recall", "18.4", "What term describes partly decomposed plant material that accumulates in wet environments?", ["peat", "a peat", "an peat"], "In waterlogged ground, plant remains can accumulate faster than they decay, forming a layer of peat.");
     mc("extend-2-18-04-b1", "18.04.b1", "A deeper extension of a mined seam has too much cover for stripping. What can still be present?",
-      ["*Methane held in the coal even where stripping is impractical.", "A shallow open pit wherever coal exists at any depth.", "Only oil generated in an unrelated sandstone bed.", "Coal that necessarily lost all of its gas during burial."],
+      ["*Methane held in the coal even where stripping is impractical.", "A shallow open pit wherever coal exists at any depth.", "Only oil generated in an unrelated sandstone bed.", "Coal that lost its methane as soon as the seam was buried."],
       "Burial depth changes access. It does not eliminate methane storage in the seam.");
     write("explain", "18.4", "Trace the formation of a coal seam and explain its association with methane.",
       "Plant debris accumulates in a wet setting and is buried and compacted. Increasing temperature changes the organic material into coal and can generate methane, some of which remains within the seam.", ["Identify the starting material", "Connect burial and transformation", "Explain the methane association"], img("18.04.a1", "Accumulate plant material", "Exploring Geology · Fig. 18.04.a1"));
@@ -156,10 +156,10 @@
   ], ({mc, fill, match, write}) => {
     mc("apply", "18.5", "A fine-grained lake bed contains abundant solid organic material that yields oil upon heating. What is it?",
       ["*Oil shale.", "Oil sand.", "Gas hydrate.", "A coal-bed methane reservoir."],
-      "Oil shale holds solid kerogen that can be converted by heating. Oil sand contains thick petroleum between grains. In gas hydrate, a solid water structure encloses gas molecules.", undefined);
+      "The solid organic material in oil shale is kerogen. Heating converts some of it to hydrocarbons, unlike extracting oil already present in a conventional reservoir.", undefined);
     mc("figure", "18.05.b2", "Why can the hydrate sample in the photograph release a combustible gas when its conditions change?",
       ["*The water structure can release enclosed methane.", "The ice converts water molecules directly into methane.", "The mineral grains undergo nuclear fission.", "Liquid oil evaporates from sandstone pores."],
-      "Cold temperatures and sufficient pressure can stabilize gas hydrate, while changing those conditions can release the trapped methane. Gas hydrate differs from ordinary ice containing bubbles. It is stable over a range of pressure and temperature, including beneath some cold seafloors and in permafrost settings.", img("18.05.b2", "Release gas from hydrate", "Exploring Geology · Fig. 18.05.b2"));
+      "Methane occupies cages formed by water molecules. When pressure or temperature changes enough to destabilize the hydrate, methane can escape and burn.", img("18.05.b2", "Release gas from hydrate", "Exploring Geology · Fig. 18.05.b2"));
     fill("recall", "18.5", "What term describes an ice-like solid in which water molecules enclose gas molecules?", ["gas hydrate", "a gas hydrate", "an gas hydrate"], "Cold temperatures and sufficient pressure can stabilize gas hydrate, while changing those conditions can release the trapped methane.");
     mc("extend-1-18-05-a1", "18.05.a1", "Which change can release methane held in a coal seam?",
       ["*Reducing fluid pressure in the seam.", "Increasing the groundwater head in the seam.", "Cooling a seafloor hydrate into a stable solid.", "Heating a surface retort of kerogen-rich shale."],
@@ -182,10 +182,10 @@
   ], ({mc, fill, match, write}) => {
     mc("apply", "18.6", "A seismic profile reveals closure beneath a cap. What remains unresolved?",
       ["*Whether a reservoir is charged with recoverable hydrocarbons.", "Whether any layer in the area can reflect seismic waves.", "Whether the seismic equipment recorded a travel time.", "Whether the land surface lies above the target."],
-      "Map the reservoir and seal, trace their closure on seismic sections, and assess source maturity and migration. A well could encounter porous rock with water if the trap never received petroleum.", undefined);
+      "Seismic reflections can suggest a closed structure and a possible cap. A well and fluid measurements test whether the reservoir actually contains recoverable hydrocarbons.", undefined);
     mc("figure", "18.06.d1", "Why must a proposed trap in an interpreted section be tested with additional evidence?",
       ["*The structure can exist without a charged reservoir.", "A seismic section provides no information about structures.", "A borehole cannot identify the rocks it encounters.", "All folded strata have the same fluid content."],
-      "A section can suggest a folded or faulted trap, but drilling is needed to test the rock and the fluids it contains. A prospect requires favorable source, reservoir, seal and timing. Well logs and samples help test the predicted sequence and fluid content. A structure imaged by seismic data can still be dry.", img("18.06.d1", "Interpret a subsurface section", "Exploring Geology · Fig. 18.06.d1"));
+      "An interpreted cross section predicts the shape of beds. It cannot reveal from that shape whether petroleum reached and filled the trap.", img("18.06.d1", "Interpret a subsurface section", "Exploring Geology · Fig. 18.06.d1"));
     fill("recall", "18.6", "What term describes a method that uses returning seismic waves to infer subsurface boundaries?", ["reflection seismology", "a reflection seismology", "an reflection seismology"], "A surface source sends vibrations into the ground, and receivers record echoes from boundaries between contrasting layers.");
     write("explain", "18.6", "Build a case for drilling a prospect and name one reason the test could fail.",
       "Map the reservoir and seal, trace their closure on seismic sections, and assess source maturity and migration. A well could encounter porous rock with water if the trap never received petroleum.", ["Identify mapped targets", "Check charge and closure", "Give a plausible failure"], img("18.06.b3", "Send a seismic pulse", "Exploring Geology · Fig. 18.06.b3"));
@@ -206,10 +206,10 @@
   ], ({mc, fill, match, write}) => {
     mc("apply", "18.7", "What directly turns the generator shaft in a conventional nuclear steam plant?",
       ["*A turbine driven by steam.", "The extraction of ore at a mine.", "The splitting nucleus itself.", "A groundwater redox front."],
-      "Groundwater or other geological processes concentrate uranium into a deposit. In the power plant, fission releases heat. Steam drives a turbine connected to a generator.", undefined);
+      "Fission releases heat. The plant uses that heat to produce steam, and the moving steam drives the turbine connected to the generator.", undefined);
     mc("figure", "18.07.b1", "What feature explains the curved zone in the sandstone deposit?",
       ["*A moving chemical boundary where uranium precipitated.", "A folded coal bed bent by regional compression.", "An oil lens held beneath a sealing shale.", "A placer bar built by gravel in a river."],
-      "Groundwater can carry dissolved uranium through sandstone and leave a curved mineralized zone where the chemical conditions change. Some uranium is deposited by groundwater within permeable sedimentary units. Others occur near unconformities or in collapse structures. The rock setting records processes that concentrated the element.", img("18.07.b1", "Find the mineralized front", "Exploring Geology · Fig. 18.07.b1"));
+      "Groundwater carried dissolved uranium through sandstone. Where chemical conditions changed, uranium precipitated along a curved boundary.", img("18.07.b1", "Find the mineralized front", "Exploring Geology · Fig. 18.07.b1"));
     fill("recall", "18.7", "What term describes the splitting of a heavy atomic nucleus with a release of energy?", ["fission", "a fission", "an fission"], "Splitting a heavy nucleus releases energy as heat, which a power plant uses to make steam and drive a turbine.");
     mc("extend-2-18-07-d2", "18.07.d2", "Which geological characteristic most directly affects whether water could carry material away from a long-term repository?",
       ["*Connected groundwater pathways through the host rock.", "The average height of local wind turbines.", "The number of active coal mines in the region.", "The temperature of the nearest surface power line."],
@@ -234,10 +234,10 @@
   ], ({mc, fill, match, write}) => {
     mc("apply", "18.8", "Which change can reduce a dam’s generating capacity during a dry period?",
       ["*Less water is available to pass through the turbines.", "The concrete becomes exposed to direct sunlight.", "The downstream channel becomes easier to observe.", "More of the reservoir shoreline appears on a map."],
-      "A river dam maintains a reservoir above its outflow. A tidal barrage uses a changing difference between sea and basin levels. In both cases moving water turns turbines linked to generators.", undefined);
+      "A dam needs both a head difference and water passing through its turbines. A dry period can reduce discharge and therefore power output.", undefined);
     mc("figure", "18.08.b2", "Why can turbine flow in a tidal barrage reverse direction?",
       ["*Sea level rises and falls relative to the impounded water.", "The dam moves to opposite banks each tidal cycle.", "The two bodies of water have permanently equal levels.", "Power generation changes the direction of gravity."],
-      "As the tide falls, stored water can flow back toward the sea through a turbine whenever the water levels differ enough. A tidal barrier produces power when there is a difference between water levels on its two sides. Marine-current turbines can instead extract energy directly from moving water.", img("18.08.b2", "Reverse the water-level difference", "Exploring Geology · Fig. 18.08.b2"));
+      "The tide changes the relative water levels on the sea and basin sides. The higher side can switch, reversing flow across the barrage.", img("18.08.b2", "Reverse the water-level difference", "Exploring Geology · Fig. 18.08.b2"));
     fill("recall", "18.8", "What term describes the energy per unit weight of water expressed as a height?", ["hydraulic head", "a hydraulic head", "an hydraulic head"], "Water descending from the reservoir drives the turbine, whose rotating shaft transfers mechanical energy to the generator.");
     mc("dam-site", "Connect 18:assignment Q6", "Which observation favors the dam site before engineers evaluate its possible leakage paths?",
       ["*The narrow, deep canyon at location 1.", "Permeable rock in the abutment at location 2.", "A fractured fault zone beneath location 4.", "The weak rock unit exposed at location 5."],
@@ -266,10 +266,10 @@
   ], ({mc, fill, match, write}) => {
     mc("apply", "18.9", "Hot rock lies at shallow depth beneath two sites. Which observation favors geothermal circulation at one site?",
       ["*Connected fractures allow water to move through the hot rock.", "The exposed rocks have the darkest surface color.", "The site has the highest annual wind speed.", "A nearby valley faces the afternoon sunlight."],
-      "Circulating fluid transports heat from underground rock. Moving air delivers kinetic energy to a wind rotor. Each system must convert its input into mechanical or electrical output.", undefined);
+      "A heat source and connected flow paths are both needed. Connected fractures let water descend, exchange heat with the rock, and return toward a well or spring.", undefined);
     mc("figure", "18.09.b1", "In the wind-farm photograph, which part performs the first conversion of wind energy into mechanical motion?",
       ["*The rotor blades in the moving air.", "The generator’s electrical output cable.", "The foundation anchoring each tower.", "The rocks exposed on the distant hills."],
-      "Flowing air turns the blades, while the generator converts the rotating shaft’s mechanical energy into electricity. Wind turbines use moving air. Photovoltaic panels convert sunlight to electricity, solar thermal systems collect heat, and biomass supplies chemical energy. Each depends on a different resource and site condition.", img("18.09.b1", "Convert moving air to electricity", "Exploring Geology · Fig. 18.09.b1"));
+      "Moving air exerts force on the rotor blades. The turning rotor supplies mechanical energy to the generator.", img("18.09.b1", "Convert moving air to electricity", "Exploring Geology · Fig. 18.09.b1"));
     fill("recall", "18.9", "What term describes energy obtained from heat within Earth?", ["geothermal energy", "a geothermal energy", "an geothermal energy"], "Water circulating through hot rock absorbs heat and may return along fractures, bringing energy closer to the surface.");
     mc("extend-2-18-09-c2", "18.09.c2", "A roof panel heats water that circulates into a tank. Which conversion occurs at the collector?",
       ["*Sunlight to heat in an active solar thermal system.", "Sunlight directly to electricity in a photovoltaic cell.", "Wind energy to heat in a stationary turbine.", "Heat from a deep aquifer to solar radiation."],
@@ -293,11 +293,11 @@
     ], "Read the figure", "Identify which change is geological and which is economic.", [])
   ], ({mc, fill, match, write}) => {
     mc("apply", "18.10", "The grade and tonnage of a deposit stay constant but processing becomes cheaper. Which outcome is possible?",
-      ["*A previously uneconomic deposit becomes ore.", "The host rock automatically gains a higher metal concentration.", "The deposit necessarily becomes smaller in volume.", "The mineral grains become younger than their host."],
-      "Grade measures concentration in the rock. Revenue, recovery, and costs determine economic feasibility. Changing prices or processing costs can alter feasibility without changing geology.", undefined);
+      ["*A previously uneconomic deposit becomes ore.", "The host rock automatically gains a higher metal concentration.", "The deposit occupies a smaller volume of host rock.", "The mineral grains become younger than their host."],
+      "A lower processing cost can make the same grade and tonnage profitable at the same sale price. That change can move a deposit across the economic threshold for ore.", undefined);
     mc("figure", "18.10.b3", "What does the large open pit indicate about evaluating a deposit?",
-      ["*The volume of rock moved can matter alongside its grade.", "All material in every bench has the same grade.", "Every exposed mineral is a saleable product.", "The pit shape alone gives the current metal price."],
-      "A mine must recover enough value to cover extraction and processing, so a change in price or cost can change what counts as ore. Changing prices or technology can change economic viability even when the rocks remain physically identical. Larger tonnage may compensate for lower grade in some settings.", img("18.10.b3", "Distinguish a deposit from ore", "Exploring Geology · Fig. 18.10.b3"));
+      ["*The volume of rock moved can matter alongside its grade.", "All material in every bench has the same grade.", "Every exposed mineral is a saleable product.", "The outline of the pit gives the current metal price."],
+      "A wide pit exposes how much rock must be excavated. Waste removal, handling, and processing costs affect the value of the recoverable material.", img("18.10.b3", "Distinguish a deposit from ore", "Exploring Geology · Fig. 18.10.b3"));
     fill("recall", "18.10", "What term describes the concentration of a valuable constituent in a deposit?", ["grade", "a grade", "an grade"], "A rock may contain a valuable mineral, but its grade tells you how much of that material occurs per unit of rock.");
     mc("extend-1-18-10-c4", "18.10.c4", "Which deposit most directly records concentration by evaporation?",
       ["*Gypsum precipitated from a restricted body of water.", "Gold left behind as a stream transports lighter gravel.", "Copper in a fracture next to a cooling intrusion.", "Nickel sulfides concentrated in a magma chamber."],
@@ -321,10 +321,10 @@
   ], ({mc, fill, match, write}) => {
     mc("apply", "18.11", "A miner finds rounded gold grains in gravel downstream from mineralized bedrock. Which process best explains the gravel deposit?",
       ["*Mechanical transport and density sorting.", "Direct precipitation from magma beneath the channel.", "Burial conversion of organic-rich sediment.", "Leaching of copper beneath a regional water table."],
-      "A fluid first deposits gold in a fracture. Weathering releases grains, and moving water transports and sorts them. Dense grains collect in favorable parts of a stream deposit.", undefined);
+      "Weathering releases gold grains. Flow sorts the sediment, concentrating dense gold in favorable gravel deposits downstream.", undefined);
     mc("figure", "18.11.a3", "In the stream diagram, why is the gravel a better placer target than the unweathered rock beneath it?",
       ["*It can retain dense grains as the stream sorts sediment.", "It is always hotter than the underlying bedrock.", "Every gravel deposit contains gold at ore grade.", "The stream converts quartz pebbles directly into gold."],
-      "When a stream reworks sediment containing gold, dense grains can remain in gravel while lighter material is carried farther downstream. Weathering can free gold from a bedrock source. Stream transport and hydraulic sorting can concentrate dense particles in gravel, sometimes far from the original vein.", img("18.11.a3", "Concentrate dense grains", "Exploring Geology · Fig. 18.11.a3"));
+      "The gravel records transport and sorting. Dense grains can lodge in coarse deposits while less dense material moves farther downstream.", img("18.11.a3", "Concentrate dense grains", "Exploring Geology · Fig. 18.11.a3"));
     fill("recall", "18.11", "What term describes a mineral-filled fracture formed by deposition from hot fluids?", ["hydrothermal vein", "a hydrothermal vein", "an hydrothermal vein"], "As hot water moves through fractures near an intrusion, changes in temperature or chemistry can cause metal-bearing minerals to precipitate.");
     mc("extend-2-18-11-c1", "18.11.c1", "Which setting points most strongly to primary magmatic concentration of platinum?",
       ["*A mineralized layer within a mafic intrusion.", "Rounded grains in an abandoned river channel.", "A quartz vein cutting a weathered volcanic rock.", "A groundwater precipitate below the water table."],
@@ -348,10 +348,10 @@
   ], ({mc, fill, match, write}) => {
     mc("apply", "18.12", "A copper-rich layer is found below a weathered, copper-poor cap. Which interpretation fits the vertical arrangement?",
       ["*Downward transport followed by precipitation at depth.", "Concentration by wave sorting on a beach.", "Sorting of iron droplets in a magma chamber.", "Uniform enrichment of the entire rock column."],
-      "Iron-bearing material precipitated in water and accumulated with silica-rich layers. In secondary enrichment, weathering mobilizes copper from an existing rock and redeposits it deeper in the profile.", undefined);
+      "Water can leach copper from oxidized rock near the surface. Deeper chemical conditions may cause dissolved copper to precipitate and enrich the lower zone.", undefined);
     mc("figure", "18.12.c1", "What does the water table separate in the illustrated copper profile?",
       ["*An upper leached zone and a lower precipitation zone.", "Two coal seams of different thermal rank.", "A gas cap and an oil-water contact.", "Crystalline basement and a modern stream placer."],
-      "Water leaches copper from the upper rock and carries it downward, where changed chemical conditions can cause it to precipitate again. In a weathered copper deposit, dissolved copper moves away from an oxidized upper zone. Chemical changes near or below the water table can precipitate copper and enrich a deeper interval.", img("18.12.c1", "Move copper below the surface", "Exploring Geology · Fig. 18.12.c1"));
+      "In this profile, downward-moving water removes copper above the water table. As conditions change below it, copper minerals precipitate.", img("18.12.c1", "Move copper below the surface", "Exploring Geology · Fig. 18.12.c1"));
     fill("recall", "18.12", "What term describes a layered sedimentary deposit with alternating iron-rich and silica-rich beds?", ["banded iron formation", "a banded iron formation", "an banded iron formation"], "Iron once dissolved in water was precipitated into sediment, leaving repeated iron-rich layers interbedded with silica-rich material.");
     match("six-metal-settings", "Connect 18:assignment Q3", "Match all six geological settings to their mineral-forming processes.",
       [["Location 1", "Precious metals in hot waters"], ["Location 2", "Gold pieces in ancient rivers"], ["Location 3", "Platinum in crystallizing magma"], ["Location 4", "Iron layers on seafloor"], ["Location 5", "Base metals in seafloor black smokers"], ["Location 6", "Base metals from flowing groundwater"]], "Find the fracture near the intrusion, the buried stream gravel, and the igneous layers. Across the lower row distinguish bedded iron, a hydrothermal seafloor vent, and a mineralized groundwater pathway.", img("six-metal-settings", "Numbered locations · six metal settings", "Connect · Chapter 18 · assignment Q3"));
@@ -376,15 +376,15 @@
     ], "Read the figure", "Compare the anomaly with a geological model and independent samples.", [])
   ], ({mc, fill, match, write}) => {
     mc("apply", "18.13", "A magnetic survey has a prominent high. Which next step best tests an ore interpretation?",
-      ["*Check geology and sample or drill the inferred source.", "Estimate profit from the height of the peak alone.", "Assume all strongly magnetic rock contains saleable ore.", "Ignore the background rock because only the peak matters."],
-      "An anomaly indicates a contrast in physical or chemical properties. Several rock types could produce it. Samples and drilling must establish composition, extent, and grade before economics can be evaluated.", undefined);
+      ["*Check geology and sample or drill the inferred source.", "Calculate profit directly from the height of the peak.", "Use the magnetic peak as a measurement of ore grade.", "Ignore the background rock because only the peak matters."],
+      "A magnetic high measures a physical contrast. Map the local rocks and test the source with sampling or drilling to establish composition and grade.", undefined);
     mc("figure", "18.13.c1", "In the profile above the buried body, what does the peak measure?",
-      ["*A change in magnetic signal over a possible target.", "A direct measurement of recoverable tonnage.", "A uniquely determined percentage of valuable metal.", "The exact thickness of every bed in the profile."],
-      "A magnetic high can identify a target beneath cover, but drilling and sampling are needed to determine what produces the anomaly. Magnetic, gravity, or electrical methods respond to physical properties that may differ between a deposit and its host. Similar anomalies can have different causes. Drilling provides direct material for testing.", img("18.13.c1", "Connect an anomaly with its possible source", "Exploring Geology · Fig. 18.13.c1"));
+      ["*A change in magnetic signal over a possible target.", "A direct measurement of recoverable tonnage.", "The measured percentage of valuable metal.", "The exact thickness of every bed in the profile."],
+      "The profile plots magnetic signal along a traverse. A peak can locate a possible source without measuring its valuable-metal content.", img("18.13.c1", "Connect an anomaly with its possible source", "Exploring Geology · Fig. 18.13.c1"));
     fill("recall", "18.13", "What term describes a zone where fluid–rock reactions changed the minerals around a deposit?", ["alteration halo", "a alteration halo", "an alteration halo"], "Mineralized fractures and altered rocks give the geologist a target to map and sample across the surrounding terrain.");
     mc("magnetic-traverse", "Connect 18:assessment Q16", "Which part of the traverse would you sample first for a localized magnetic source?",
       ["*The narrow peak above the neighboring background.", "The long middle stretch with little change.", "The far-right return toward background.", "The left-hand baseline before the rise."],
-      "The narrow positive departure identifies a local contrast worth testing. Its height alone cannot establish metal grade.", img("magnetic-traverse", "Magnetic survey trace across a concealed target", "Connect · Chapter 18 · assessment Q16"));
+      "The narrow positive departure identifies a local contrast worth testing. Measuring metal grade requires a sample.", img("magnetic-traverse", "Magnetic survey trace across a concealed target", "Connect · Chapter 18 · assessment Q16"));
     mc("extend-2-18-13-d1", "18.13.d1", "What distinguishes tailings from the original overburden?",
       ["*Tailings remain after ore is processed.", "Tailings cover a deposit before any mining.", "Tailings consist only of the recovered metal.", "Tailings are unbroken rock below a future shaft."],
       "Overburden is removed to reach the ore. Tailings are residual material after processing.");
@@ -407,10 +407,10 @@
   ], ({mc, fill, match, write}) => {
     mc("apply", "18.14", "Which material should a supplier deliver when a specification calls for the binder in concrete?",
       ["*Cement.", "Coarse aggregate.", "Sand.", "Dimension stone."],
-      "Aggregate can use small, durable fragments with the required size range. Dimension stone requires sound blocks large enough to cut into slabs. Closely spaced fractures can prevent that use.", undefined);
+      "Cement mixed with water forms the binding paste. Sand and gravel supply the aggregate held together by the paste.", undefined);
     mc("figure", "18.14.c2", "What purpose does the equipment in the aggregate-processing photograph serve?",
       ["*Crushing and sorting rock into useful sizes.", "Melting limestone into metallic iron.", "Separating oil from dissolved natural gas.", "Converting feldspar directly into dimension stone."],
-      "A quarry can crush and screen material to supply different sizes, so grain size and durability matter as much as chemical composition. A stream deposit or quarry can supply aggregate if its size, durability, composition, and transport cost suit the use. Dimension stone instead must yield intact blocks of suitable appearance and strength.", img("18.14.c2", "Separate useful grain sizes", "Exploring Geology · Fig. 18.14.c2"));
+      "Crushers reduce particle size. Screens sort the resulting pieces into fractions that meet different aggregate specifications.", img("18.14.c2", "Separate useful grain sizes", "Exploring Geology · Fig. 18.14.c2"));
     fill("recall", "18.14", "What term describes sand, gravel, or crushed stone used as the granular part of a construction material?", ["aggregate", "a aggregate", "an aggregate"], "Coarse and fine aggregate make up much of concrete, while cement mixed with water binds the grains together.");
     mc("extend-1-18-14-b1", "18.14.b1", "Which rock-to-product pairing is supported by the chapter?",
       ["*Gypsum and wallboard.", "Halite and structural dimension granite.", "Sandstone and metallic copper concentrate.", "Coal and the binder in Portland cement."],
@@ -434,10 +434,10 @@
   ], ({mc, fill, match, write}) => {
     mc("apply", "18.15", "Why can a basin contain both shallow coal mines and methane wells tapping deeper coal?",
       ["*The same coal-bearing succession occurs at different depths.", "Each producing well must sit directly inside an active coal pit.", "The crystalline mountain cores generated all basin methane.", "Surface mining requires greater depth than gas extraction."],
-      "Uplifts expose and erode older rocks. Adjacent basins preserve and bury sedimentary sequences, allowing coal to survive and source rocks to mature. Depth and traps affect which resource is accessible.", undefined);
+      "Sedimentary beds can be close to the surface in one area and deeply buried in another. Coal that is too deep for a surface mine may still contain producible methane.", undefined);
     mc("figure", "18.15.b2", "On the resource map, why can coal-bed methane extend beyond the mapped mine areas?",
-      ["*Wells can reach a seam beneath thicker overburden.", "Methane forms only in areas where coal has been removed.", "Every unmined part of the state contains a gas reservoir.", "The mapped gases necessarily migrated from distant volcanoes."],
-      "A coal seam may be too deep for economical surface mining yet still be reachable by wells that extract methane. The extent of mapped coal-bearing rocks differs from the area of economically accessible coal. Wells can reach methane in buried seams where surface mining is impractical.", img("18.15.b2", "Compare the coal and gas fields", "Exploring Geology · Fig. 18.15.b2"));
+      ["*Wells can reach a seam beneath thicker overburden.", "Methane forms only in areas where coal has been removed.", "Every unmined part of the state contains a gas reservoir.", "The gas reached the basin from distant volcanic vents."],
+      "A well can reach coal beneath cover that would be expensive to strip. Methane production can therefore extend beyond the area of surface mines.", img("18.15.b2", "Compare the coal and gas fields", "Exploring Geology · Fig. 18.15.b2"));
     fill("recall", "18.15", "What term describes an elevated block that exposes or raises older basement rocks?", ["basement uplift", "a basement uplift", "an basement uplift"], "Wyoming’s uplifts expose older rocks while adjacent basins preserve thick sedimentary sequences that can contain fossil fuels.");
     mc("extend-2-18-15-b3", "18.15.b3", "Which pairing best fits two different Wyoming settings?",
       ["*Geothermal heat near young volcanism and coal in sedimentary basins.", "Geothermal heat confined to coal seams and coal in granite cores.", "Coal seams in young lava flows and geothermal heat from placer gold.", "Uranium only in modern stream gravels and coal only in hot springs."],
@@ -460,10 +460,10 @@
   ], ({mc, fill, match, write}) => {
     mc("apply", "18.16", "A ridge is underlain by porous sandstone that dips away on both sides. What additional evidence most improves its case as a trap?",
       ["*A continuous seal over a closed part of the sandstone.", "A coal seam exposed on a different ridge.", "A river flowing parallel to the road.", "Loose sand collected from a nearby modern stream."],
-      "Opposing dips support a folded sandstone reservoir. A low-permeability cover could close the updip path, and organic-rich strata could supply hydrocarbons. A well can test thickness, fluids, and seal integrity.", undefined);
+      "Dips in opposite directions suggest a fold crest. A reservoir still needs closure along the structure and an effective seal to retain migrating petroleum.", undefined);
     mc("figure", "18.16.a1", "Which observation specifically supports a fold crest at Tan Mountain?",
       ["*The same sandstone dips away on both sides of the ridge.", "The youngest alluvium follows the modern channels.", "The landscape contains a road that crosses the ridge.", "A circular salt exposure lies elsewhere in the area."],
-      "Trace the sandstone around Tan Mountain and below the surface, then look for a seal above the highest connected part of the reservoir. Sandstone dipping away from both flanks of the ridge supports an anticline interpretation. The column and cross section help project that bed below cover and test whether it closes beneath an impermeable unit.", img("18.16.a1", "Trace the reservoir bed", "Exploring Geology · Fig. 18.16.a1"));
+      "Follow the same bed on both flanks. Its outward dip on either side supports a crest beneath the ridge rather than a single uniformly tilted layer.", img("18.16.a1", "Trace the reservoir bed", "Exploring Geology · Fig. 18.16.a1"));
     fill("recall", "18.16", "What term describes a geometry that prevents buoyant hydrocarbons from continuing updip?", ["structural closure", "a structural closure", "an structural closure"], "Trace the sandstone around Tan Mountain and below the surface, then look for a seal above the highest connected part of the reservoir.");
     mc("tan-mountain-targets", "Connect 18:assignment Q13–15", "Which pair of possible trapping mechanisms fits locations E beside the salt and F beside the offset beds?",
       ["*Salt-flank closure at E and fault sealing at F.", "Fault sealing at E and placer sorting at F.", "Stratigraphic thinning at E and tidal deposition at F.", "Placer sorting at E and salt dissolution at F."],
